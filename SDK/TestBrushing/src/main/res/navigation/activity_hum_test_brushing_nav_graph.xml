@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/activity_hum_test_brushing_nav_graph"
+  app:startDestination="@id/fragment_brushingstart">
+
+  <fragment
+    android:id="@+id/fragment_brushingstart"
+    android:name="com.kolibree.android.testbrushing.start.TestBrushingStartFragment"
+    android:label="BrushingStart"
+    tools:layout="@layout/fragment_brushing_start">
+    <action
+      android:id="@+id/action_fragment_brushingstart_to_fragment_ongoing_brushing"
+      app:destination="@id/fragment_ongoing_brushing"
+      app:enterAnim="@anim/fade_in"
+      app:exitAnim="@anim/fade_out"/>
+  </fragment>
+
+  <fragment
+    android:id="@+id/fragment_ongoing_brushing"
+    android:name="com.kolibree.android.testbrushing.ongoing.OngoingBrushingFragment"
+    android:label="OngoingBrushing"
+    tools:layout="@layout/fragment_ongoing_brushing" />
+
+</navigation>

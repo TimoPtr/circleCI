@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+  <color name="window_background">@color/white</color>
+
+  <!-- Common guideline -->
+  <color name="cards_background">#f5f5f5</color>
+  <color name="pairing_cards_background">@color/white</color>
+
+  <!-- KOLIBREE GUIDELINE -->
+
+  <color name="grey_light">#939597</color>
+  <color name="grey_dark">#454545</color>
+  <color name="blue_light">#35d7ff</color>
+  <color name="blue_dark">#00bcf4</color>
+  <color name="yellow_dark">#febe10</color>
+  <color name="yellow_light">#ffd400</color>
+  <color name="red">#f68b7e</color>
+  <color name="error_red">#fb5a5e</color>
+  <color name="kolibree_gray">#f4f4f4</color>
+  <color name="statusbar_color">#33000000</color>
+  <color name="statusbar_color_alternate">#0096C3</color>
+  <color name="kolibree_disabled">#99ffffff</color>
+  <color name="black30">#4d000000</color>
+  <color name="black60">#99000000</color>
+
+  <color name="green_pirate">#eafbff</color>
+
+  <color name="white_semi_transparent">#D0FFFFFF</color>
+  <color name="trans">#80000000</color>
+
+  <!-- SLIDESHOW -->
+  <color name="slideshowGrey">#707070</color>
+  <color name="slideshowGreyAlternate">#CBCBCB</color>
+
+  <color name="grey_lighter">#999999</color>
+  <color name="grey_lighter_pressed">#7F7F7F</color>
+
+  <!-- Dashboard -->
+  <color name="dashboard_chart_background">#e6e6e6</color>
+
+  <!-- Welcome -->
+  <color name="welcome_birthday_input_bg">#eeeeee</color>
+  <color name="welcome_birthday_label">#939597</color>
+  <color name="welcome_validate_error">#fb5a5e</color>
+
+  <!-- Bottom navigation -->
+  <color name="bottom_nav_disabled">#8A8A8A</color>
+  <color name="bottom_nav_enabled">@color/colorPrimary</color>
+
+  <color name="we_chat_background">#3cb034</color>
+  <color name="we_chat_background_pressed">#34992d</color>
+
+  <color name="tb_model_selection_item_background">#F5F5F5</color>
+  <color name="tb_model_selection_item_stroke">#E7E7E7</color>
+
+  <color name="profile_hint">#333333</color>
+
+  <color name="divider">#E9E6E6</color>
+  <color name="ripple">#0f000000</color>
+
+  <!--
+  After setting CareOS windowBackground to black to force the letterbox style, many views that (correctly)
+   didn't set a background to avoid overdrawe are now forced to set one to avoid a black background :-(
+   -->
+  <color name="forced_background_color">@color/white</color>
+  <color name="home_background">@color/white</color>
+  <color name="dashboard_cards_background">@color/home_background</color>
+  <color name="jaw3d_background">@color/home_background</color>
+  <color name="home_captionTextColor">@color/black</color>
+  <color name="checkup_fragment_delete_color">@color/black</color>
+  <color name="mouth_fragment_date_text_color">@color/colorPrimary</color>
+  <color name="mouth_fragment_caption_text_color">@color/home_captionTextColor</color>
+  <color name="coachplus_title_text_color">@color/colorPrimary</color>
+  <color name="profile_item_name_color">@color/grey_dark</color>
+  <color name="pairing_text_color">@color/grey_dark</color>
+  <color name="pairing_message_color">@color/colorPrimary</color>
+  <color name="pairing_profile_avatar_tint">@color/colorPrimary</color>
+
+  <!-- Test Angle -->
+  <color name="angle_pale_blue">#D7F1FF</color>
+  <color name="angle_bg_teeth_pink">#FF6F94</color>
+  <color name="angle_state_correct">#44B170</color>
+  <color name="angle_state_incorrect">#C9000D</color>
+  <color name="angle_state_neutral">#FFFFFF</color>
+</resources>

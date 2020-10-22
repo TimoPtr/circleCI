@@ -1,0 +1,326 @@
+/*
+In this file 'Critical' dependencies version changes have to be tested before any pull request
+ */
+
+ext.versions = [
+    androidGradlePlugin: '4.1.0', // Critical
+    pact               : '3.6.12',
+    poeditorPlugin     : '0.3.4', // Critical
+    poeditorGradle     : '-SNAPSHOT',
+
+    //This value is a single source of truth for artifacts - both publishing and fetching
+    name               : '6.6.2', //Critical
+    code               : 9,
+
+    kolibreePublisher  : "1.0.6", // Critical
+    spotlessPlugin     : "5.6.1",
+    detektPlugin       : "1.7.0",
+    paranoidPlugin     : "0.2.5",
+    lint               : "26.6.2",
+    kotlin             : "1.4.10", // Critical
+    coroutines         : "1.3.6",
+
+    minSdk             : 23,
+    targetSdk          : 30,
+    compileSdk         : 30,
+
+    rxJava             : '2.2.19',
+    rxRelay            : '2.1.1',
+    rxReplayShare      : '2.2.0',
+    rxAndroid          : '2.1.1',
+    rxKotlin           : '2.4.0',
+    rxLint             : '1.7.3',
+    rxDogTag           : '0.2.0',
+
+    exifinterface      : '1.1.0',
+    material           : '1.2.0',
+    recyclerView       : '1.1.0',
+    viewPager1         : '1.0.0',
+    viewPager2         : '1.0.0',
+    cardView           : '1.0.0',
+    fragment           : '1.3.0-alpha08',
+    supportCore        : '1.3.0',
+    appCompat          : '1.2.0', // Critical
+    annotation         : '1.1.0',
+    room               : '2.2.5',
+    archComponents     : '2.2.0',
+    androidxCore       : '2.1.0',
+    constraintLayout   : '2.0.1',
+    navigation         : '2.2.0',
+    multiDex           : '2.0.1',
+    ktx                : "1.3.1",
+    activityKtx        : "1.2.0-beta01",
+    autofill           : "1.0.0",
+    exif               : "1.2.0",
+    playCore           : "1.8.1",
+
+    dagger             : '2.29.1', // Critical
+    okHttp             : '3.14.8',
+    retrofit           : '2.9.0',
+    gson               : '2.8.6',
+    butterKnife        : '10.2.0',
+    picasso            : '2.8',
+    glide              : '4.11.0',
+    timber             : '4.7.1',
+    jackson            : '2.8.9',
+    threetenabp        : '1.1.1',
+    fullThreetenBp     : '1.3.8',
+    mockWebServer      : '3.8.1',
+
+    espresso           : '3.2.0',
+    supportTest        : '1.2.0',
+    supportExtJunit    : '1.1.1',
+    leakCanary         : '2.3',
+    marathonGradle     : '0.50.4-kolibree',
+    screenshotTesting  : '0.14.0-KOLIBREE',
+
+    junit              : '4.12',
+    mockito            : '3.3.0',
+    mockitoKotlin      : '1.6.0',
+    mockitoKotlin2     : '2.2.0',
+    livedataTesting    : '1.1.0',
+    kotlinTest         : '3.3.2',
+
+    googleServices     : '4.3.4',
+    googleAuth         : '17.0.0',
+    googleWallet       : '18.0.0',
+    crashlyticsGradle  : '2.3.0',
+    firebaseBom        : '25.12.0',
+
+    nrfBle             : '2.1.1', // Critical
+    nrfScanner         : '1.4.3', // Critical
+    nrfDfu             : '1.11.0', // Critical
+
+    json               : '20180813',
+
+    instabug           : '9.1.5', // MOST CRITICAL !
+    flipper            : '0.60.0',
+    soloader           : '0.9.0',
+    facebook           : '4.40.0',
+    materialDialogs    : '3.3.0',
+    jsr305             : '3.0.2',
+
+    bindingCollections : '3.2.0',
+
+    timesSquare        : '1.7.10',
+
+    mockk              : '1.9.2',
+
+    dexmaker           : '2.12.1',
+
+    viewPagerIndicator : '1.0.3',
+
+    kml                : '1.5.0',
+
+    gameMiddleware     : '0.10.0',
+    gameLoader         : '0.18.0',
+
+    exoPlayer          : '2.10.4',
+
+    shopify            : '5.0.0',
+    viewpump           : "2.0.3",
+    philology          : "2.1.0",
+    lottie             : '3.4.0',
+    mpchart            : "3.1.0-kolibree",
+    zendesk            : "5.0.0",
+    flexbox            : "2.0.1",
+
+    licensesGradle     : "0.10.2",
+    licenses           : "17.0.0",
+
+    workManager        : "2.3.4"
+]
+
+ext.gradlePlugins = [
+    android          : "com.android.tools.build:gradle:$versions.androidGradlePlugin",
+    kolibreePublisher: "com.kolibree.gradle:kolibree-publisher:$versions.kolibreePublisher",
+    kotlin           : "org.jetbrains.kotlin:kotlin-gradle-plugin:$versions.kotlin",
+    spotless         : "com.diffplug.spotless:spotless-plugin-gradle:$versions.spotlessPlugin",
+    detekt           : "io.gitlab.arturbosch.detekt:detekt-gradle-plugin:$versions.detektPlugin",
+    poeditor         : "be.lukin.poeditor:poeditor-client:$versions.poeditorPlugin",
+    poeditorGradle   : "com.github.vimn-north:poeditor-gradle:$versions.poeditorGradle",
+    pact             : "au.com.dius:pact-jvm-provider-gradle_2.12:$versions.pact",
+    paranoid         : "io.michaelrocks:paranoid-gradle-plugin:$versions.paranoidPlugin",
+    googleServices   : "com.google.gms:google-services:$versions.googleServices",
+    crashlyticsGradle: "com.google.firebase:firebase-crashlytics-gradle:$versions.crashlyticsGradle",
+    marathonGradle   : "com.malinskiy.marathon:marathon-gradle-plugin:$versions.marathonGradle",
+    screenshotGradle : "com.facebook.testing.screenshot:plugin:$versions.screenshotTesting",
+    licensesGradle   : "com.google.android.gms:oss-licenses-plugin:$versions.licensesGradle"
+]
+
+ext.libraries = [
+    coroutines               : "org.jetbrains.kotlinx:kotlinx-coroutines-core:$versions.coroutines",
+    coroutinesAndroid        : "org.jetbrains.kotlinx:kotlinx-coroutines-android:$versions.coroutines",
+    coroutinesTest           : "org.jetbrains.kotlinx:kotlinx-coroutines-test:$versions.coroutines",
+
+    dagger                   : "com.google.dagger:dagger:$versions.dagger",
+    daggerCompiler           : "com.google.dagger:dagger-compiler:$versions.dagger",
+    daggerAndroid            : "com.google.dagger:dagger-android:$versions.dagger",
+    daggerAndroidSupport     : "com.google.dagger:dagger-android-support:$versions.dagger",
+    daggerAndroidProcessor   : "com.google.dagger:dagger-android-processor:$versions.dagger",
+
+    rxJava                   : "io.reactivex.rxjava2:rxjava:$versions.rxJava",
+    rxRelay                  : "com.jakewharton.rxrelay2:rxrelay:$versions.rxRelay",
+    rxReplayShare            : "com.jakewharton.rx2:replaying-share:$versions.rxReplayShare",
+    rxAndroid                : "io.reactivex.rxjava2:rxandroid:$versions.rxAndroid",
+    rxKotlin                 : "io.reactivex.rxjava2:rxkotlin:$versions.rxKotlin",
+    rxLint                   : "nl.littlerobots.rxlint:rxlint:$versions.rxLint",
+    rxDogTag                 : "com.uber.rxdogtag:rxdogtag:$versions.rxDogTag",
+
+    okHttp                   : "com.squareup.okhttp3:okhttp:$versions.okHttp",
+    okHttpLoggingInterceptor : "com.squareup.okhttp3:logging-interceptor:$versions.okHttp",
+    mockWebServer            : "com.squareup.okhttp3:mockwebserver:$versions.mockWebServer",
+
+    retrofit                 : "com.squareup.retrofit2:retrofit:$versions.retrofit",
+    retrofitMock             : "com.squareup.retrofit2:retrofit-mock:$versions.retrofit",
+    retrofitGsonConverter    : "com.squareup.retrofit2:converter-gson:$versions.retrofit",
+    retrofitRxJavaAdapter    : "com.squareup.retrofit2:adapter-rxjava2:$versions.retrofit",
+    gson                     : "com.google.code.gson:gson:$versions.gson",
+
+    googleAuth               : "com.google.android.gms:play-services-auth:$versions.googleAuth",
+    googleWallet             : "com.google.android.gms:play-services-wallet:$versions.googleWallet",
+    firebaseBom              : "com.google.firebase:firebase-bom:$versions.firebaseBom",
+    firebaseAnalytics        : "com.google.firebase:firebase-analytics-ktx",
+    firebaseMessaging        : "com.google.firebase:firebase-messaging-ktx",
+    firebaseCrashlytics      : "com.google.firebase:firebase-crashlytics-ktx",
+
+    jackson                  : "com.fasterxml.jackson.core:jackson-databind:$versions.jackson",
+
+    threetenAbp              : "com.jakewharton.threetenabp:threetenabp:$versions.threetenabp",
+    fullThreetenBp           : "org.threeten:threetenbp:$versions.fullThreetenBp",
+
+    supportDesign            : "com.google.android.material:material:$versions.material",
+    supportFragment          : "androidx.fragment:fragment:$versions.fragment",
+    supportRecyclerView      : "androidx.recyclerview:recyclerview:$versions.recyclerView",
+    supportViewPager         : "androidx.viewpager:viewpager:$versions.viewPager1",
+    supportViewPager2        : "androidx.viewpager2:viewpager2:$versions.viewPager2",
+    supportCardView          : "androidx.cardview:cardview:$versions.cardView",
+    supportAnnotations       : "androidx.annotation:annotation:$versions.annotation",
+    supportConstraintLayout  : "androidx.constraintlayout:constraintlayout:$versions.constraintLayout",
+    supportAppCompat         : "androidx.appcompat:appcompat:$versions.appCompat",
+    supportExifInterface     : "androidx.exifinterface:exifinterface:$versions.exifinterface",
+    supportAutofill          : "androidx.autofill:autofill:$versions.autofill",
+    supportCore              : "androidx.core:core:$versions.supportCore",
+    supportExif              : "androidx.exifinterface:exifinterface:$versions.exif",
+
+    roomRuntime              : "androidx.room:room-runtime:$versions.room",
+    roomRxJava2              : "androidx.room:room-rxjava2:$versions.room",
+    roomCompiler             : "androidx.room:room-compiler:$versions.room",
+    roomTesting              : "androidx.room:room-testing:$versions.room",
+
+    lifecycleRuntime         : "androidx.lifecycle:lifecycle-runtime:$versions.archComponents",
+    lifecycleCompiler        : "androidx.lifecycle:lifecycle-compiler:$versions.archComponents",
+    lifecycleExtensions      : "androidx.lifecycle:lifecycle-extensions:$versions.archComponents",
+    lifecycleJava8           : "androidx.lifecycle:lifecycle-common-java8:$versions.archComponents",
+    lifecycleReactiveStreams : "androidx.lifecycle:lifecycle-reactivestreams:$versions.archComponents",
+    architectureCoreTesting  : "androidx.arch.core:core-testing:$versions.androidxCore",
+    multiDex                 : "androidx.multidex:multidex:$versions.multiDex",
+    ktxCore                  : "androidx.core:core-ktx:$versions.ktx",
+    fragmentKtx              : "androidx.fragment:fragment-ktx:$versions.fragment",
+    activityKtx              : "androidx.activity:activity-ktx:$versions.activityKtx",
+    playCore                 : "com.google.android.play:core-ktx:$versions.playCore",
+
+    navigationFragment       : "androidx.navigation:navigation-fragment-ktx:$versions.navigation",
+    navigationUI             : "androidx.navigation:navigation-ui-ktx:$versions.navigation",
+
+    /*
+    butterknife won't work in modules that provide UI, but it can be used as compileOnly in
+    base classes, such as BaseActivity
+     */
+    butterKnife              : "com.jakewharton:butterknife:$versions.butterKnife",
+    butterKnifeCompiler      : "com.jakewharton:butterknife-compiler:$versions.butterKnife",
+
+    picasso                  : "com.squareup.picasso:picasso:$versions.picasso",
+    glide                    : "com.github.bumptech.glide:glide:$versions.glide",
+    timber                   : "com.jakewharton.timber:timber:$versions.timber",
+
+
+    nrfBle                   : "no.nordicsemi.android:ble:$versions.nrfBle",
+    nrfScanner               : "no.nordicsemi.android.support.v18:scanner:$versions.nrfScanner",
+    nrfDfu                   : "no.nordicsemi.android:dfu:$versions.nrfDfu",
+
+    // Kotlin
+    kotlinRuntime            : "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$versions.kotlin",
+    kotlinReflect            : "org.jetbrains.kotlin:kotlin-reflect:$versions.kotlin",
+
+    // Custom lint rules
+    lintApi                  : "com.android.tools.lint:lint-api:$versions.lint",
+    lintChecks               : "com.android.tools.lint:lint-checks:$versions.lint",
+    lintTests                : "com.android.tools.lint:lint-tests:$versions.lint",
+
+    // Developer Tools
+    leakCanary               : "com.squareup.leakcanary:leakcanary-android:$versions.leakCanary",
+    leakCanaryInstrumentation: "com.squareup.leakcanary:leakcanary-android-instrumentation:$versions.leakCanary",
+    leakCanaryWatcher        : "com.squareup.leakcanary:leakcanary-object-watcher-android:$versions.leakCanary",
+
+    // Test dependencies
+    junit                    : "junit:junit:$versions.junit",
+    okHttpMockWebServer      : "com.squareup.okhttp3:mockwebserver:$versions.okHttp",
+
+    mockitoCore              : "org.mockito:mockito-core:$versions.mockito",
+    mockitoInline            : "org.mockito:mockito-inline:$versions.mockito",
+    mockitoKotlin            : "com.nhaarman:mockito-kotlin:$versions.mockitoKotlin",
+    mockitoKotlin2           : "com.nhaarman.mockitokotlin2:mockito-kotlin:$versions.mockitoKotlin2",
+    mockitoAndroid           : "org.mockito:mockito-android:$versions.mockito",
+
+    liveDataTesting          : "com.jraska.livedata:testing-ktx:$versions.livedataTesting",
+
+    kotlinPropertyTesting    : "io.kotlintest:kotlintest-runner-junit4:$versions.kotlinTest",
+
+    supportTestCore          : "androidx.test:core:$versions.supportTest",
+    supportTestRunner        : "androidx.test.ext:junit:$versions.supportExtJunit",
+    supportTestRules         : "androidx.test:rules:$versions.supportTest",
+    espressoCore             : "androidx.test.espresso:espresso-core:$versions.espresso",
+    espressoContrib          : "androidx.test.espresso:espresso-contrib:$versions.espresso",
+    espressoIntents          : "androidx.test.espresso:espresso-intents:$versions.espresso",
+    screenshotCommon         : "com.facebook.testing.screenshot:layout-hierarchy-common:$versions.screenshotTesting",
+    //to be used as compileOnly in Java projects, never as implementation
+    json                     : "org.json:json:$versions.json",
+
+    flipper                  : "com.facebook.flipper:flipper:$versions.flipper",
+    flipperNetwork           : "com.facebook.flipper:flipper-network-plugin:$versions.flipper",
+    soloader                 : "com.facebook.soloader:soloader:$versions.soloader",
+    facebook                 : "com.facebook.android:facebook-android-sdk:$versions.facebook",
+    instabug                 : "com.instabug.library:instabug:$versions.instabug",
+    instabugOkHttpInterceptor: "com.instabug.library:instabug-with-okhttp-interceptor:$versions.instabug",
+    materialDialogsCore      : "com.afollestad.material-dialogs:core:$versions.materialDialogs",
+    materialDialogsInput     : "com.afollestad.material-dialogs:input:$versions.materialDialogs",
+    materialDialogsLifecycle : "com.afollestad.material-dialogs:lifecycle:$versions.materialDialogs",
+    materialDialogsDateTime  : "com.afollestad.material-dialogs:datetime:$versions.materialDialogs",
+    jsr305                   : "com.google.code.findbugs:jsr305:$versions.jsr305",
+
+    bindingCollections       : "me.tatarka.bindingcollectionadapter2:bindingcollectionadapter:$versions.bindingCollections",
+    bindingCollectionsRV     : "me.tatarka.bindingcollectionadapter2:bindingcollectionadapter-recyclerview:$versions.bindingCollections",
+
+    timesSquare              : "com.squareup:android-times-square:$versions.timesSquare",
+
+    dexmaker                 : "com.linkedin.dexmaker:dexmaker:$versions.dexmaker",
+
+    //Beware if you add mockito and mockk https://github.com/mockito/mockito/issues/1606
+    mockkAndroid             : "io.mockk:mockk-android:$versions.mockk",
+    mockk                    : "io.mockk:mockk:$versions.mockk",
+
+    viewPagerIndicator       : "com.romandanylyk:pageindicatorview:$versions.viewPagerIndicator",
+
+    kml                      : "com.kolibree.android:kml:$versions.kml",
+    gameMiddleware           : "com.kolibree.android:gamemiddleware:$versions.gameMiddleware",
+    gameLoader               : "com.kolibree.android:gamesLoader:$versions.gameLoader",
+
+    exoPlayerCore            : "com.google.android.exoplayer:exoplayer-core:$versions.exoPlayer",
+    exoPlayerUI              : "com.google.android.exoplayer:exoplayer-ui:$versions.exoPlayer",
+
+    shopify                  : "com.shopify.mobilebuysdk:buy3:$versions.shopify",
+    viewpump                 : "io.github.inflationx:viewpump:$versions.viewpump",
+    philology                : "com.jcminarro:Philology:$versions.philology",
+    lottie                   : "com.airbnb.android:lottie:$versions.lottie",
+    mpchart                  : "com.github.philjay:MPChartLib:$versions.mpchart",
+    zendesk                  : "com.zendesk:support:$versions.zendesk",
+    flexbox                  : "com.google.android:flexbox:$versions.flexbox",
+
+    licenses                 : "com.google.android.gms:play-services-oss-licenses:$versions.licenses",
+
+    workRuntime              : "androidx.work:work-runtime:$versions.workManager",
+    workRuntimeKtx           : "androidx.work:work-runtime-ktx:$versions.workManager",
+    workRxJava2              : "androidx.work:work-rxjava2:$versions.workManager",
+    workTesting              : "androidx.work:work-testing:$versions.workManager"
+]

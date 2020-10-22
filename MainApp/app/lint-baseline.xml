@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="5" by="lint 4.0.0" client="gradle" variant="humDebug" version="4.0.0">
+
+    <issue
+        id="PermissionImpliesUnsupportedChromeOsHardware"
+        message="Permission exists without corresponding hardware `&lt;uses-feature android:name=&quot;android.hardware.camera.autofocus&quot; required=&quot;false&quot;>` tag."
+        errorLine1="  &lt;uses-permission android:name=&quot;android.permission.CAMERA&quot;/>"
+        errorLine2="   ~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="23"
+            column="4"/>
+    </issue>
+
+    <issue
+        id="VectorPath"
+        message="Very long vector path (1093 characters), which is bad for performance. Considering reducing precision, removing minor details or rasterizing vector."
+        errorLine1="      android:pathData=&quot;M152,140.211C152,146.712 146.712,152 140.211,152H11.789C5.288,152 0,146.712 0,140.211V62.396C5.766,66.26 9.57,72.835 9.57,80.281L9.57,80.365V98.617C9.57,101.589 11.981,104 14.955,104L14.971,103.999L14.979,104L14.988,104C17.961,104 20.372,101.589 20.372,98.617L20.373,80.281C20.373,68.418 30.025,58.767 41.891,58.767C53.757,58.767 63.409,68.418 63.409,80.281V98.617C63.409,101.589 65.82,104 68.793,104C71.767,104 74.177,101.589 74.177,98.617V80.281C74.177,68.418 83.83,58.767 95.696,58.767C107.561,58.767 117.214,68.418 117.214,80.286L117.231,83.38C117.231,83.611 117.246,83.838 117.274,84.061C117.388,85.262 117.905,86.432 118.824,87.352C120.924,89.451 124.327,89.451 126.426,87.352C127.503,86.274 128.028,84.853 127.999,83.441C127.999,83.433 127.999,83.425 127.999,83.416C127.999,83.401 127.999,83.386 127.999,83.37L127.983,80.281C127.983,62.482 113.499,48 95.696,48C84.478,48 74.582,53.753 68.793,62.459C63.004,53.753 53.108,48 41.891,48C30.661,48 20.757,53.767 14.971,62.489C11.359,57.044 6.142,52.751 0,50.293V11.789C0,5.288 5.288,0 11.789,0H140.211C146.712,0 152,5.288 152,11.789V140.211Z&quot; />"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/hum/res/drawable-anydpi-v24/ic_hum_push_notification.xml"
+            line="21"
+            column="25"/>
+    </issue>
+
+    <issue
+        id="VectorPath"
+        message="Very long vector path (836 characters), which is bad for performance. Considering reducing precision, removing minor details or rasterizing vector."
+        errorLine1="        android:pathData=&quot;M0,11.13C9.986,12.989 17.57,21.766 17.57,32.281L17.57,32.365V50.617C17.57,53.589 19.981,56 22.955,56C22.957,56 22.96,56 22.963,56C22.966,56 22.969,56 22.971,56C22.974,56 22.977,56 22.979,56C22.982,56 22.985,56 22.988,56C25.961,56 28.372,53.589 28.372,50.617V37.665L28.373,32.281C28.373,20.418 38.025,10.767 49.891,10.767C61.757,10.767 71.409,20.418 71.409,32.281V50.617C71.409,53.589 73.82,56 76.793,56C79.767,56 82.177,53.589 82.177,50.617V32.281C82.177,20.418 91.83,10.767 103.696,10.767C115.561,10.767 125.214,20.418 125.214,32.286L125.231,35.38C125.233,38.352 127.644,40.759 130.615,40.759H130.62C133.594,40.756 136.002,38.343 135.999,35.37L135.983,32.281C135.983,14.482 121.499,0 103.696,0C92.478,0 82.582,5.753 76.793,14.459C71.004,5.753 61.108,0 49.891,0C38.661,0 28.757,5.767 22.971,14.489C17.874,6.805 9.581,1.414 0,0.24V11.13Z&quot;"
+        errorLine2="                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/hum/res/drawable/ic_launcher_foreground.xml"
+            line="18"
+            column="27"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.secret_custom_environment_title` appears to be unused"
+        errorLine1="  &lt;string name=&quot;secret_custom_environment_title&quot; translatable=&quot;false&quot;>Custom endpoint details&lt;/string>"
+        errorLine2="          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/app_strings.xml"
+            line="4"
+            column="11"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.secret_custom_environment_url_hint` appears to be unused"
+        errorLine1="  &lt;string name=&quot;secret_custom_environment_url_hint&quot; translatable=&quot;false&quot;>https://api.s.kolibree.com&lt;/string>"
+        errorLine2="          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/app_strings.xml"
+            line="5"
+            column="11"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.secret_custom_environment_clientid_hint` appears to be unused"
+        errorLine1="  &lt;string name=&quot;secret_custom_environment_clientid_hint&quot; translatable=&quot;false&quot;>Client Id&lt;/string>"
+        errorLine2="          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/app_strings.xml"
+            line="6"
+            column="11"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.secret_custom_environment_clientsecret_hint` appears to be unused"
+        errorLine1="  &lt;string name=&quot;secret_custom_environment_clientsecret_hint&quot; translatable=&quot;false&quot;>Client Secret&lt;/string>"
+        errorLine2="          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/app_strings.xml"
+            line="7"
+            column="11"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.color.com_facebook_button_background_color_pressed` appears to be unused"
+        errorLine1="  &lt;color name=&quot;com_facebook_button_background_color_pressed&quot;>#2f477a&lt;/color>"
+        errorLine2="         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/debug/res/values/colors.xml"
+            line="5"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.color.com_facebook_button_background_color` appears to be unused"
+        errorLine1="  &lt;color name=&quot;com_facebook_button_background_color&quot;>#4267B2&lt;/color>"
+        errorLine2="         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/debug/res/values/colors.xml"
+            line="6"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.layout.fragment_dialog_custom_environment` appears to be unused"
+        errorLine1="&lt;androidx.constraintlayout.widget.ConstraintLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="^">
+        <location
+            file="src/main/res/layout/fragment_dialog_custom_environment.xml"
+            line="10"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.mipmap.ic_launcher_round` appears to be unused"
+        errorLine1="&lt;adaptive-icon xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;>"
+        errorLine2="^">
+        <location
+            file="src/hum/res/mipmap-anydpi-v26/ic_launcher_round.xml"
+            line="2"
+            column="1"/>
+        <location
+            file="src/hum/res/mipmap-hdpi/ic_launcher_round.png"/>
+        <location
+            file="src/hum/res/mipmap-mdpi/ic_launcher_round.png"/>
+        <location
+            file="src/hum/res/mipmap-xhdpi/ic_launcher_round.png"/>
+        <location
+            file="src/hum/res/mipmap-xxhdpi/ic_launcher_round.png"/>
+        <location
+            file="src/hum/res/mipmap-xxxhdpi/ic_launcher_round.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.game_view_content_description` appears to be unused"
+        errorLine1="  &lt;string name=&quot;game_view_content_description&quot; translatable=&quot;false&quot;>Game view&lt;/string>"
+        errorLine2="          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/debug/res/values/strings.xml"
+            line="13"
+            column="11"/>
+    </issue>
+
+    <issue
+        id="UnusedIds"
+        message="The resource `R.id.content_container` appears to be unused"
+        errorLine1="    android:id=&quot;@+id/content_container&quot;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_shape_spike.xml"
+            line="41"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="UnusedIds"
+        message="The resource `R.id.custom_environment_cancel` appears to be unused"
+        errorLine1="    android:id=&quot;@+id/custom_environment_cancel&quot;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_dialog_custom_environment.xml"
+            line="58"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="UnusedIds"
+        message="The resource `R.id.custom_environment_ok` appears to be unused"
+        errorLine1="    android:id=&quot;@+id/custom_environment_ok&quot;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_dialog_custom_environment.xml"
+            line="70"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="ConvertToWebp"
+        message="One or more images in this project can be converted to the WebP format which typically results in smaller file sizes, even for lossless conversion (but launcher icons should use PNG).">
+        <location
+            file="src/hum/res/drawable-xxhdpi/ic_hum_push_notification.png"/>
+    </issue>
+
+    <issue
+        id="GoogleAppIndexingWarning"
+        message="App is not indexable by Google Search; consider adding at least one Activity with an ACTION-VIEW intent filter. See issue explanation for more details."
+        errorLine1="  &lt;application"
+        errorLine2="  ^">
+        <location
+            file="src/hum/AndroidManifest.xml"
+            line="13"
+            column="3"/>
+    </issue>
+
+</issues>

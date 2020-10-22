@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.malinskiy.marathon</groupId>
+  <artifactId>marathon-gradle-plugin</artifactId>
+  <versioning>
+    <latest>0.50.4-kolibree</latest>
+    <release>0.50.4-kolibree</release>
+    <versions>
+      <version>0.50.4-kolibree</version>
+    </versions>
+    <lastUpdated>20201022083253</lastUpdated>
+  </versioning>
+</metadata>

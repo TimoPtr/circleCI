@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <item android:state_enabled="false"> <!-- disabled -->
+    <shape android:shape="rectangle">
+
+      <!-- view background color -->
+      <solid android:color="@color/we_chat_background_pressed"/>
+      <corners android:radius="@dimen/round_button_radius"/>
+    </shape>
+  </item>
+
+  <item android:state_pressed="true"> <!-- pressed -->
+    <shape android:shape="rectangle">
+
+      <!-- view background color -->
+      <solid android:color="@color/we_chat_background_pressed"/>
+      <corners android:radius="@dimen/round_button_radius"/>
+    </shape>
+  </item>
+
+  <item> <!-- default -->
+    <shape android:shape="rectangle">
+
+      <!-- view background color -->
+      <solid android:color="@color/we_chat_background"/>
+      <corners android:radius="@dimen/round_button_radius"/>
+    </shape>
+  </item>
+</selector>

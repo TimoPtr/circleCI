@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  tools:context="com.kolibree.android.app.ui.celebration.EarnPointsCelebrationActivity">
+
+  <data>
+
+    <variable
+      name="item"
+      type="com.kolibree.android.rewards.morewaystoearnpoints.model.EarnPointsChallenge" />
+
+    <variable
+      name="viewModel"
+      type="com.kolibree.android.app.ui.celebration.EarnPointsCelebrationViewModel" />
+
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/half_screen_guideline"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      app:layout_constraintGuide_percent="0.45" />
+
+    <androidx.constraintlayout.widget.Barrier
+      android:id="@+id/text_content_barrier"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:barrierDirection="top"
+      app:constraint_referenced_ids="celebration_title, half_screen_guideline" />
+
+    <com.airbnb.lottie.LottieAnimationView
+      android:id="@+id/celebration_animation"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="@dimen/match_constraints"
+      android:scaleType="centerCrop"
+      app:layout_constraintBottom_toTopOf="@id/text_content_barrier"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:lottie_loop="true"
+      app:lottie_playAnimation="@{viewModel.animate(item)}"
+      app:lottie_rawRes="@raw/celebration_animation"
+      tools:background="?colorTertiaryLight"
+      tools:minHeight="200dp" />
+
+    <TextView
+      android:id="@+id/celebration_title"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_quad"
+      android:layout_marginTop="@dimen/dot_trip"
+      android:layout_marginEnd="@dimen/dot_quad"
+      android:text="@string/earn_points_celebration_title"
+      android:textAppearance="?textAppearanceHeadline2"
+      app:layout_constraintBottom_toTopOf="@+id/celebration_body"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/celebration_animation"
+      app:layout_constraintVertical_bias="0.0"
+      app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+      android:id="@+id/celebration_body"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_quad"
+      android:layout_marginTop="@dimen/dot_double"
+      android:layout_marginEnd="@dimen/dot_quad"
+      android:text="@{viewModel.body(context, item)}"
+      android:textAppearance="?textAppearanceBody1"
+      app:layout_constraintBottom_toTopOf="@+id/celebration_button"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/celebration_title"
+      tools:text="@string/earn_points_celebration_body" />
+
+    <Button
+      android:id="@+id/celebration_button"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_quad"
+      android:layout_marginEnd="@dimen/dot_quad"
+      android:layout_marginBottom="@dimen/dot_quad"
+      android:onClick="@{v -> viewModel.onButtonClick()}"
+      android:text="@string/earn_points_celebration_confirmation_button"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

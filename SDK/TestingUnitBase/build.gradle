@@ -1,0 +1,23 @@
+apply plugin: 'com.android.library'
+
+android {
+    defaultPublishConfig "debug"
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+}
+
+dependencies {
+    api project(path: ':testing-shared')
+
+    api libraries.fullThreetenBp
+
+    api libraries.mockitoInline
+
+    // Unit tests
+    testImplementation libraries.junit
+    testImplementation libraries.rxJava
+}

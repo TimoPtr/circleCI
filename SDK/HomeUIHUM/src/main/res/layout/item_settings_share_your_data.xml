@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <data>
+
+    <variable
+      name="item"
+      type="com.kolibree.android.app.ui.settings.binding.ShareYourDataBindingModel" />
+
+    <variable
+      name="interaction"
+      type="com.kolibree.android.app.ui.settings.HeaderSwitchSettingsItemInteraction" />
+
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?selectableItemBackground">
+
+    <TextView
+      android:id="@+id/header"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_quad"
+      android:layout_marginTop="@dimen/dot_trip"
+      android:layout_marginEnd="@dimen/dot_trip"
+      android:text="@{item.headerTextRes}"
+      android:textAllCaps="true"
+      android:textAppearance="?textAppearanceOverline1"
+      android:textColor="?colorOnSecondary"
+      app:layout_constraintBottom_toTopOf="@+id/value"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+      android:id="@+id/value"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/dot_double"
+      android:layout_marginEnd="@dimen/dot_quad"
+      android:checked="@{item.isChecked}"
+      android:onCheckedChanged="@{(view, checked) -> interaction.onItemToggle(checked, item)}"
+      android:text="@{item.description}"
+      android:textAppearance="?textAppearanceBody2"
+      android:textColor="?colorOnSecondary"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="@id/header"
+      app:layout_constraintTop_toBottomOf="@id/header"
+      tools:text="@string/settings_share_your_data_description" />
+
+    <TextView
+      android:id="@+id/learn_more_button"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:background="?selectableItemBackground"
+      android:minWidth="@dimen/standard_touch_size"
+      android:onClick="@{v -> interaction.onItemClick(item)}"
+      android:paddingStart="@dimen/dot_quad"
+      android:paddingTop="@dimen/dot_double"
+      android:paddingEnd="@dimen/dot_quad"
+      android:paddingBottom="@dimen/dot_double"
+      android:text="@string/settings_share_your_data_learn_more"
+      android:textAllCaps="true"
+      android:textAppearance="?textAppearanceSubtitle2"
+      android:textColor="?textColorAccent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/value" />
+
+    <View
+      android:id="@+id/divider_bottom"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/divider_thickness"
+      android:background="?dividerColor"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/learn_more_button" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

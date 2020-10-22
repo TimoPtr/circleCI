@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="testRunner" value="PLATFORM" />
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/AccountInternal" />
+            <option value="$PROJECT_DIR$/AccountSDK" />
+            <option value="$PROJECT_DIR$/AmazonDash" />
+            <option value="$PROJECT_DIR$/AngleAndSpeed" />
+            <option value="$PROJECT_DIR$/AngleAndSpeedUIHUM" />
+            <option value="$PROJECT_DIR$/AngleAndSpeedUIV1" />
+            <option value="$PROJECT_DIR$/Annotation" />
+            <option value="$PROJECT_DIR$/Auditor" />
+            <option value="$PROJECT_DIR$/Authentication" />
+            <option value="$PROJECT_DIR$/BaseUI" />
+            <option value="$PROJECT_DIR$/BaseUIHUM" />
+            <option value="$PROJECT_DIR$/BaseUIV1" />
+            <option value="$PROJECT_DIR$/BrushSyncReminder" />
+            <option value="$PROJECT_DIR$/BrushingQuiz" />
+            <option value="$PROJECT_DIR$/Calendar" />
+            <option value="$PROJECT_DIR$/CoachPlus" />
+            <option value="$PROJECT_DIR$/CoachPlusUIV1" />
+            <option value="$PROJECT_DIR$/CommonModels" />
+            <option value="$PROJECT_DIR$/CommonsAndroid" />
+            <option value="$PROJECT_DIR$/Core" />
+            <option value="$PROJECT_DIR$/Crypto" />
+            <option value="$PROJECT_DIR$/Databinding" />
+            <option value="$PROJECT_DIR$/Features" />
+            <option value="$PROJECT_DIR$/Game" />
+            <option value="$PROJECT_DIR$/GameCommons" />
+            <option value="$PROJECT_DIR$/GoogleAuth" />
+            <option value="$PROJECT_DIR$/Gruware" />
+            <option value="$PROJECT_DIR$/GuidedBrushingUI" />
+            <option value="$PROJECT_DIR$/Heuristic" />
+            <option value="$PROJECT_DIR$/HomeUI" />
+            <option value="$PROJECT_DIR$/HomeUIHUM" />
+            <option value="$PROJECT_DIR$/Jaws" />
+            <option value="$PROJECT_DIR$/LegacyGameComponents" />
+            <option value="$PROJECT_DIR$/LegacyUnityGameSDK" />
+            <option value="$PROJECT_DIR$/LintRules" />
+            <option value="$PROJECT_DIR$/MagikSdk" />
+            <option value="$PROJECT_DIR$/MouthMap" />
+            <option value="$PROJECT_DIR$/Network" />
+            <option value="$PROJECT_DIR$/OfflineBrushings" />
+            <option value="$PROJECT_DIR$/OfflineBrushingsV1" />
+            <option value="$PROJECT_DIR$/Pairing" />
+            <option value="$PROJECT_DIR$/Pirate" />
+            <option value="$PROJECT_DIR$/PirateLogic" />
+            <option value="$PROJECT_DIR$/PirateV1" />
+            <option value="$PROJECT_DIR$/Plaqless" />
+            <option value="$PROJECT_DIR$/ProcessedBrushingsKML" />
+            <option value="$PROJECT_DIR$/QuestionOfTheDay" />
+            <option value="$PROJECT_DIR$/Rewards" />
+            <option value="$PROJECT_DIR$/RewardsHUM" />
+            <option value="$PROJECT_DIR$/RewardsV1" />
+            <option value="$PROJECT_DIR$/Shop" />
+            <option value="$PROJECT_DIR$/SmartBrushingAnalyzer" />
+            <option value="$PROJECT_DIR$/StaticResources" />
+            <option value="$PROJECT_DIR$/StaticResourcesBranded" />
+            <option value="$PROJECT_DIR$/StaticResourcesColgate" />
+            <option value="$PROJECT_DIR$/StaticResourcesHUM" />
+            <option value="$PROJECT_DIR$/StaticResourcesV1" />
+            <option value="$PROJECT_DIR$/Stats" />
+            <option value="$PROJECT_DIR$/StatsOffline" />
+            <option value="$PROJECT_DIR$/Synchronizator" />
+            <option value="$PROJECT_DIR$/TestBrushing" />
+            <option value="$PROJECT_DIR$/TestingBuilders" />
+            <option value="$PROJECT_DIR$/TestingEspressoBase" />
+            <option value="$PROJECT_DIR$/TestingPact" />
+            <option value="$PROJECT_DIR$/TestingShared" />
+            <option value="$PROJECT_DIR$/TestingUnitBase" />
+            <option value="$PROJECT_DIR$/ToothbrushSDK" />
+            <option value="$PROJECT_DIR$/ToothbrushUpdate" />
+            <option value="$PROJECT_DIR$/ToothbrushUpdateUIHUM" />
+            <option value="$PROJECT_DIR$/ToothbrushUpdateUIV1" />
+            <option value="$PROJECT_DIR$/Tracker" />
+            <option value="$PROJECT_DIR$/TrackerDomain" />
+            <option value="$PROJECT_DIR$/TranslationsSupport" />
+            <option value="$PROJECT_DIR$/UnityGameSDK" />
+            <option value="$PROJECT_DIR$/WebServicesSDK" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

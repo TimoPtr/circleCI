@@ -1,0 +1,52 @@
+apply plugin: 'com.android.library'
+
+apply from: '../buildscripts/kapt.gradle'
+
+android {
+    buildFeatures {
+        dataBinding = true
+    }
+
+    androidExtensions {
+        experimental = true
+    }
+}
+
+dependencies {
+    implementation project(path: ':static-resources')
+    implementation project(path: ':static-resources-branded')
+    implementation project(path: ':base-ui')
+    implementation project(path: ':base-ui-hum')
+    implementation project(path: ':web-service-sdk')
+    implementation project(path: ':game')
+    implementation project(path: ':toothbrush-sdk')
+    implementation project(path: ':jaws')
+    implementation project(path: ':processed-brushings-kml')
+    implementation project(path: ':commons')
+    implementation project(path: ':databinding')
+    implementation project(path: ':tracker-domain')
+
+    implementation libraries.supportAppCompat
+
+    implementation libraries.kotlinRuntime
+    implementation libraries.threetenAbp
+
+    implementation libraries.rxJava
+    implementation libraries.rxLint
+
+    implementation libraries.dagger
+    kapt libraries.daggerCompiler
+    implementation libraries.daggerAndroid
+    kapt libraries.daggerAndroidProcessor
+    implementation libraries.daggerAndroidSupport
+
+    implementation libraries.navigationFragment
+    implementation libraries.navigationUI
+    implementation libraries.supportConstraintLayout
+
+    implementation libraries.lottie
+
+    testImplementation libraries.mockitoKotlin2
+    testImplementation project(path: ':testing-unit-base')
+    testImplementation project(path: ':testing-builders')
+}

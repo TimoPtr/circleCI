@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <data>
+
+    <variable
+      name="binding"
+      type="com.kolibree.android.app.ui.home.tab.home.card.brushbetter.BrushBetterItemBinding" />
+
+    <variable
+      name="interaction"
+      type="com.kolibree.android.app.ui.home.tab.home.card.brushbetter.BrushBetterCardInteraction" />
+
+  </data>
+
+  <androidx.cardview.widget.CardView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dot"
+    android:clickable="true"
+    android:elevation="@dimen/dot_half"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:onClick="@{(v) -> interaction.onItemClick(binding.item)}"
+    app:cardCornerRadius="@dimen/dot">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="@dimen/brush_better_item_width"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="@dimen/dot_double">
+
+      <ImageView
+        android:id="@+id/brush_better_item_icon"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/brush_better_icon_height"
+        android:scaleType="centerCrop"
+        android:src="@{binding.iconRes}"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@tools:sample/backgrounds/scenic" />
+
+      <TextView
+        android:id="@+id/brush_better_item_points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dot_double"
+        android:layout_marginEnd="@dimen/dot_double"
+        android:background="@drawable/shape_rounded"
+        android:backgroundTint="?smilePointsBackgroundColor"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:paddingStart="@dimen/dot"
+        android:paddingTop="@dimen/dot_quarter"
+        android:paddingEnd="@dimen/dot"
+        android:paddingBottom="@dimen/dot_quarter"
+        android:text="@{binding.getPoints(context)}"
+        android:textAppearance="?textAppearanceSubtitle2"
+        android:textColor="@color/white"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="@+id/brush_better_item_icon"
+        app:layout_constraintEnd_toEndOf="@+id/brush_better_item_icon"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/brush_better_item_icon"
+        app:layout_constraintTop_toBottomOf="@+id/brush_better_item_icon"
+        tools:text="+50 points" />
+
+      <TextView
+        android:id="@+id/brush_better_item_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dot_double"
+        android:layout_marginTop="@dimen/dot_double"
+        android:layout_marginEnd="@dimen/dot_double"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="@{binding.titleRes}"
+        android:textAppearance="?textAppearanceSubtitle2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/brush_better_item_points"
+        tools:text="@string/brush_better_card_item_guided_brushing_title" />
+
+      <TextView
+        android:id="@+id/brush_better_item_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dot_double"
+        android:layout_marginEnd="@dimen/dot_double"
+        android:ellipsize="end"
+        android:lines="2"
+        android:text="@{binding.bodyRes}"
+        android:textAppearance="?textAppearanceCaption"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/brush_better_item_title"
+        tools:text="@string/brush_better_card_item_guided_brushing_body" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+  </androidx.cardview.widget.CardView>
+
+</layout>

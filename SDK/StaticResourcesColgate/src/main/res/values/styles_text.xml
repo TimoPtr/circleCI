@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="UnusedResources">
+
+  <!--
+  HEADLINE
+  -->
+
+  <!--ZEPLIN: TextAppearance.H1.* -->
+  <style name="TextAppearance.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
+    <item name="fontFamily">@font/colgate_ready_beta5_bold</item>
+    <item name="android:textSize">72sp</item>
+    <item name="android:letterSpacing">0</item>
+    <item name="android:lineSpacingExtra">8sp</item>
+    <item name="android:includeFontPadding">false</item>
+    <item name="android:textColor">?android:textColorPrimary</item>
+  </style>
+  <!-- PLEASE DO NOT ADD COLOR VARIANTS OF THIS STYLE, JUST COLOR IT IN LAYOUT -->
+
+  <!--ZEPLIN: TextAppearance.H2.* -->
+  <style name="TextAppearance.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
+    <item name="fontFamily">@font/colgate_ready_beta5_bold_italic</item>
+    <item name="android:textSize">34sp</item>
+    <item name="android:letterSpacing">0</item>
+    <item name="android:lineSpacingExtra">4sp</item>
+    <item name="android:includeFontPadding">false</item>
+    <item name="android:textColor">?android:textColorPrimary</item>
+  </style>
+  <!-- PLEASE DO NOT ADD COLOR VARIANTS OF THIS STYLE, JUST COLOR IT IN LAYOUT -->
+
+  <!--ZEPLIN: TextAppearance.H3.* -->
+  <style name="TextAppearance.Headline3" parent="TextAppearance.MaterialComponents.Headline3">
+    <item name="fontFamily">@font/colgate_ready_beta5_bold_italic</item>
+    <item name="android:textSize">24sp</item>
+    <item name="android:letterSpacing">0.01</item>
+    <item name="android:lineSpacingExtra">2sp</item>
+    <item name="android:includeFontPadding">false</item>
+    <item name="android:textColor">?android:textColorPrimary</item>
+  </style>
+  <!-- PLEASE DO NOT ADD COLOR VARIANTS OF THIS STYLE, JUST COLOR IT IN LAYOUT -->
+
+  <!--ZEPLIN: TextAppearance.H4.* -->
+  <style name="TextAppearance.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
+    <item name="fontFamily">@font/colgate_ready_beta5_bold_italic</item>
+    <item name="android:textSize">20sp</item>
+    <item name="android:letterSpacing">0.01</item>
+    <item name="android:lineSpacingExtra">4sp</item>
+    <item name="android:includeFontPadding">false</item>
+    <item name="android:textColor">?android:textColorPrimary</item>
+  </style>
+  <!-- PLEASE DO NOT ADD COLOR VARIANTS OF THIS STYLE, JUST COLOR IT IN LAYOUT -->
+
+  <!--ZEPLIN: TextAppearance.H5.* -->
+  <style name="TextAppearance.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
+    <item name="fontFamily">@font/colgate_ready_beta5_bold</item>
+    <item name="android:textSize">18sp</item>
+    <item name="android:letterSpacing">0.01</item>
+    <item name="android:lineSpacingExtra">4sp</item>
+    <item name="android:includeFontPadding">false</item>
+    <item name="android:textColor">?android:textColorPrimary</item>
+  </style>
+  <!-- PLEASE DO NOT ADD COLOR VARIANTS OF THIS STYLE, JUST COLOR IT IN LAYOUT -->
+
+  <!--ZEPLIN: TextAppearance.H6.* -->
+  <style name="TextAppearance.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+    <item name="fontFamily">@font/colgate_ready_beta5_bold</item>
+    <item name="android:textSize">16sp</item>
+    <item name="android:letterSpacing">0.01</item>
+    <item name="android:lineSpacingExtra">4sp</item>
+    <item name="android:includeFontPadding">false</item>
+    <item name="android:textColor">?android:textColorPrimary</item>
+  </style>
+  <!-- PLEASE DO NOT ADD COLOR VARIANTS OF THIS STYLE, JUST COLOR IT IN LAYOUT -->
+
+  <!--
+  SUBTITLE
+  -->
+
+  <!--ZEPLIN: TextAppearance.Subtitle1.* -->
+  <style name="TextAppearance.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+    <item name="fontFamily">@font/hind_regular</item>
+    <item name="android:textSize">16sp</item>
+    <item name="android:letterSpacing">0</item>
+    <item name="android:lineSpacingExtra">0sp</item>
+    <item name="android:includeFontPadding">false</item>
+    <item name="android:textColor">?android:textColorPrimary</item>
+  </style>
+  <!-- PLEASE DO NOT ADD COLOR VARIANTS OF THIS STYLE, JUST COLOR IT IN LAYOUT -->
+
+  <!--ZEPLIN: TextAppearance.InverseSubtitle.* -->
+  <style name="TextAppearance.Inverse.Subtitle1" parent="TextAppearance.Subtitle1">
+    <item name="android:textSize">18sp</item>
+    <item name="lineHeight">20sp</item>
+  </style>
+  <!-- PLEASE DO NOT ADD COLOR VARIANTS OF THIS STYLE, JUST COLOR IT IN LAYOUT -->
+
+  <!--ZEPLIN: TextAppearance.Subtitle2.* -->
+  <style name="TextAppearance.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+    <item name="fontFamily">@font/hind_semibold</item>
+    <item name="android:textSize">14sp</item>
+    <item name="android:lineSpacingExtra">2sp</item>
+    <item name="android:includeFontPadding">false</item>
+    <item name="android:textColor">?android:textColorPrimary</item>
+  </style>
+  <!-- PLEASE DO NOT ADD COLOR VARIANTS OF THIS STYLE, JUST COLOR IT IN LAYOUT -->
+
+  <!--
+  BODY
+  -->
+
+  <!--ZEPLIN: TextAppearance.Body1.* -->
+  <style name="TextAppearance.Body1" parent="TextAppearance.MaterialComponents.Body1">
+    <item name="fontFamily">@font/hind_regular</item>
+    <item name="android:textSize">16sp</item>
+    <item name="android:letterSpacing">0</item>
+    <item name="android:lineSpacingExtra">5.6sp</item>
+    <item name="android:includeFontPadding">false</item>
+    <item name="android:textColor">?android:textColorPrimary</item>
+  </style>
+  <!-- PLEASE DO NOT ADD COLOR VARIANTS OF THIS STYLE, JUST COLOR IT IN LAYOUT -->
+
+  <!--ZEPLIN: TextAppearance.Body2.* -->
+  <style name="TextAppearance.Body2" parent="TextAppearance.MaterialComponents.Body2">
+    <item name="fontFamily">@font/hind_regular</item>
+    <item name="android:textSize">14sp</item>
+    <item name="android:lineSpacingExtra">4sp</item>
+    <item name="android:includeFontPadding">false</item>
+    <item name="android:textColor">?android:textColorPrimary</item>
+  </style>
+  <!-- PLEASE DO NOT ADD COLOR VARIANTS OF THIS STYLE, JUST COLOR IT IN LAYOUT -->
+
+  <!--
+  BUTTON
+  -->
+
+  <!--ZEPLIN: TextAppearance.Button.* -->
+  <style name="TextAppearance.Button" parent="TextAppearance.MaterialComponents.Button">
+    <item name="fontFamily">@font/hind_semibold</item>
+    <item name="android:textSize">14sp</item>
+    <item name="android:letterSpacing">0.06</item>
+    <item name="android:lineSpacingExtra">1sp</item>
+    <item name="android:includeFontPadding">false</item>
+    <item name="android:textColor">?android:textColorPrimary</item>
+  </style>
+  <!-- PLEASE DO NOT ADD COLOR VARIANTS OF THIS STYLE, JUST COLOR IT IN LAYOUT -->
+
+  <!--
+  CAPTION
+  -->
+
+  <!--ZEPLIN: TextAppearance.Caption.* -->
+  <style name="TextAppearance.Caption" parent="TextAppearance.MaterialComponents.Caption">
+    <item name="fontFamily">@font/hind_regular</item>
+    <item name="android:textSize">14sp</item>
+    <item name="android:lineSpacingExtra">2sp</item>
+    <item name="android:includeFontPadding">false</item>
+    <item name="android:textColor">?android:textColorPrimary</item>
+  </style>
+  <!-- PLEASE DO NOT ADD COLOR VARIANTS OF THIS STYLE, JUST COLOR IT IN LAYOUT -->
+
+  <!--
+  OVERLINE
+  -->
+
+  <!--ZEPLIN: TextAppearance.Overline1.* -->
+  <style name="TextAppearance.Overline" parent="TextAppearance.MaterialComponents.Overline">
+    <item name="fontFamily">@font/hind_semibold</item>
+    <item name="android:textSize">12sp</item>
+    <item name="android:letterSpacing">0.15</item>
+    <item name="android:lineSpacingExtra">4.2sp</item>
+    <item name="android:includeFontPadding">false</item>
+    <item name="android:textColor">?android:textColorPrimary</item>
+  </style>
+  <!-- PLEASE DO NOT ADD COLOR VARIANTS OF THIS STYLE, JUST COLOR IT IN LAYOUT -->
+
+  <!--ZEPLIN: TextAppearance.Overline2.* -->
+  <style name="TextAppearance.Overline2" parent="TextAppearance.MaterialComponents.Overline">
+    <item name="fontFamily">@font/hind_semibold</item>
+    <item name="android:textSize">10sp</item>
+    <item name="android:letterSpacing">0.12</item>
+    <item name="android:lineSpacingExtra">3.5sp</item>
+    <item name="android:includeFontPadding">false</item>
+    <item name="android:textColor">?android:textColorPrimary</item>
+  </style>
+  <!-- PLEASE DO NOT ADD COLOR VARIANTS OF THIS STYLE, JUST COLOR IT IN LAYOUT -->
+
+  <style name="TextAppearance.Timer" parent="TextAppearance.Headline2">
+    <item name="fontFamily">@font/hind_semibold</item>
+  </style>
+
+</resources>

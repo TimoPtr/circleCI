@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:clickable="true"
+  android:focusable="true"
+  android:orientation="vertical">
+
+  <androidx.appcompat.widget.Toolbar
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:minHeight="?attr/actionBarSize"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    app:title="@string/coach_plus_title"
+    app:titleTextColor="@color/white">
+
+    <androidx.appcompat.widget.AppCompatImageView
+      android:id="@+id/settings"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="end"
+      android:layout_marginEnd="@dimen/tiny_margin"
+      android:layout_alignParentEnd="true"
+      android:padding="@dimen/start_message_icon_padding"
+      android:background="?attr/selectableItemBackground"
+      android:src="@drawable/ic_coach_settings"
+      app:tint="@color/white"/>
+
+  </androidx.appcompat.widget.Toolbar>
+
+  <ImageView
+    android:id="@+id/model_preview"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:background="#EFEFEF"
+    android:scaleType="fitStart"
+    tools:src="@drawable/ic_ara_preview"/>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+      android:id="@+id/model_description"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/average_margin"
+      android:layout_marginEnd="@dimen/average_margin"
+      android:gravity="center"
+      android:text="@string/coach_start_message_title"
+      android:textColor="@android:color/black"
+      android:textSize="@dimen/xbig_text"/>
+
+  </LinearLayout>
+
+</LinearLayout>

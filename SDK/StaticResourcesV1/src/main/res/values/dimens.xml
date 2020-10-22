@@ -1,0 +1,152 @@
+<resources>
+
+  <!--Margins-->
+  <dimen name="xxxhuge_margin">55dp</dimen>
+  <dimen name="xxhuge_margin_plus">50dp</dimen>
+  <dimen name="xxhuge_margin">45dp</dimen>
+  <dimen name="xhuge_margin_plus">40dp</dimen>
+  <dimen name="xhuge_margin">35dp</dimen>
+  <dimen name="huge_margin">30dp</dimen>
+  <dimen name="xbig_margin">25dp</dimen>
+  <dimen name="big_margin">20dp</dimen>
+  <dimen name="average_margin">15dp</dimen>
+  <dimen name="small_margin">10dp</dimen>
+  <dimen name="tiny_margin">5dp</dimen>
+  <dimen name="xtiny_margin">2dp</dimen>
+  <dimen name="xxtiny_margin">1dp</dimen>
+  <dimen name="no_margin">0dp</dimen>
+  <dimen name="menu_button">25dp</dimen>
+  <dimen name="menu_button_container">50dp</dimen>
+  <dimen name="menu_item">100dp</dimen>
+  <dimen name="menu_text">25sp</dimen>
+  <dimen name="menu_header">90dp</dimen>
+  <dimen name="menu_header_bar">30dp</dimen>
+  <dimen name="left_menu_margin_top">120dp</dimen>
+  <dimen name="left_menu_width">340dp</dimen>
+  <dimen name="tab_indicator_height">3dp</dimen>
+  <dimen name="title_padding">20dp</dimen>
+
+  <!-- Text sizes-->
+  <dimen name="xxxhuge_text">50sp</dimen>
+  <dimen name="xxhuge_text">40sp</dimen>
+  <dimen name="xhuge_text">35sp</dimen>
+  <dimen name="huge_text">30sp</dimen>
+  <dimen name="xxxbig_text">27sp</dimen>
+  <dimen name="xxbig_text">25sp</dimen>
+  <dimen name="xbig_text">22sp</dimen>
+  <dimen name="big_text">20sp</dimen>
+  <dimen name="xnormal_text">18sp</dimen>
+  <dimen name="normal_text">16sp</dimen>
+  <dimen name="medium_text">14sp</dimen>
+  <dimen name="average_text">10sp</dimen>
+  <dimen name="below_average_text">8sp</dimen>
+  <dimen name="small_text">5sp</dimen>
+  <dimen name="auto_size_step">1sp</dimen>
+  <dimen name="txt_size_klite_tuto_bottom_next">@dimen/big_text</dimen>
+
+  <!-- res/values/dimens.xml -->
+  <dimen name="diameter">48dp</dimen>
+  <dimen name="elevation_low">1dp</dimen>
+  <dimen name="elevation_high">4dp</dimen>
+  <dimen name="add_button_margin">16dp</dimen>
+
+  <!-- Buttons -->
+  <dimen name="round_button_height">50dp</dimen>
+  <dimen name="round_button_radius">24dp</dimen>
+  <dimen name="round_button_width">280dp</dimen>
+  <dimen name="round_button_wider_width">300dp</dimen>
+
+
+  <dimen name="signup_terms_top_margin">30dp</dimen>
+  <dimen name="signup_facebook_top_margin">30dp</dimen>
+
+  <!-- About Screen -->
+  <dimen name="about_text_size">@dimen/big_text</dimen>
+
+  <!-- Default screen margins, per the Android Design guidelines. -->
+  <dimen name="activity_horizontal_margin">16dp</dimen>
+  <dimen name="activity_vertical_margin">16dp</dimen>
+
+  <!-- Per the design guidelines, navigation drawers should be between 240dp and 320dp:
+       https://developer.android.com/design/patterns/navigation-drawer.html -->
+  <dimen name="navigation_drawer_width">240dp</dimen>
+  <dimen name="navigation_drawer_header_height">192dp</dimen>
+
+  <dimen name="list_item_settings_size">60dp</dimen>
+  <dimen name="list_item_avatar_size">60dp</dimen>
+
+  <dimen name="layout_game_switch_margin_top">90dp</dimen>
+  <dimen name="layout_game_switch">200dp</dimen>
+  <dimen name="height_klite_tuto_bottom_next">45dp</dimen>
+  <dimen name="margin_kolibree_avatar_list">15dp</dimen>
+
+  <!-- Coach -->
+  <dimen name="coach_bar">100dp</dimen>
+  <dimen name="coach_bar_chrono">200dp</dimen>
+  <dimen name="toolbar_min_touch_zone">32dp</dimen>
+
+  <!-- CardGame -->
+  <dimen name="card_game_width">147dp</dimen>
+  <dimen name="card_game_image_height">119dp</dimen>
+  <dimen name="card_game_height_container_max_height">280dp</dimen>
+
+  <!--SLIDESHOW-->
+  <dimen name="slideshow_tablayout_margin">85dp</dimen>
+  <dimen name="slideshow_dot_radius">4dp</dimen>
+
+  <!--COACH-->
+  <dimen name="cursor_size">5dp</dimen>
+  <dimen name="global_ring_size">280dp</dimen>
+  <dimen name="thumbnail_average_size">110dp</dimen>
+  <dimen name="thumbnail_small_and_tiny_size">55dp</dimen>
+
+  <!--SBA-->
+  <dimen name="sba_content_width">250dp</dimen>
+  <dimen name="sba_progress_loader_size">100dp</dimen>
+  <dimen name="sba_text_row">@dimen/xnormal_text</dimen>
+  <dimen name="sba_icon_size">30dp</dimen>
+
+  <!--CHECKUP-->
+  <dimen name="checkup_orphan_btn_margin">@dimen/small_margin</dimen>
+  <dimen name="checkup_ring_thickness">2dp</dimen>
+  <dimen name="checkup_ring_thickness_big">4dp</dimen>
+  <dimen name="checkup_ring_diameter">60dp</dimen>
+  <dimen name="checkup_ring_diameter_big">90dp</dimen>
+  <dimen name="checkup_ring_caption_text_size">18sp</dimen>
+  <dimen name="checkup_ring_caption_text_size_big">22sp</dimen>
+  <dimen name="checkup_duration_margin">58dp</dimen> <!--2 times checkup_orphan_top_margin + ic_double_chain size-->
+
+  <!--DASHBOARD-->
+  <dimen name="dashboard_text_size">26sp</dimen>
+  <dimen name="dashboard_chart_text_size">@dimen/xxbig_text</dimen>
+
+  <!--WELCOME-->
+  <dimen name="welcome_margin">30dp</dimen>
+  <dimen name="welcome_birthday_input_padding_vertical">4dp</dimen>
+  <dimen name="welcome_birthday_input_padding_horizontal">8dp</dimen>
+  <dimen name="welcome_birthday_input_separation">5dp</dimen>
+  <dimen name="welcome_birthday_input_bg_radius">5dp</dimen>
+
+  <!--HOME-->
+  <dimen name="home_actionbar_height">70dp</dimen>
+  <dimen name="home_avatar_height">60dp</dimen>
+  <dimen name="home_toolbar_padding">16dp</dimen>
+  <dimen name="appbar_padding_top">8dp</dimen>
+
+  <dimen name="tb_toolbar_height">45dp</dimen>
+  <dimen name="tb_toolbar_message_margin">@dimen/home_toolbar_padding</dimen>
+  <dimen name="tb_toolbar_text_size">@dimen/normal_text</dimen>
+  <dimen name="tb_toolbar_text_size_small">@dimen/average_text</dimen>
+  <dimen name="tb_toolbar_image">40dp</dimen>
+  <dimen name="tb_toolbar_image_margin">4dp</dimen>
+  <dimen name="toolbar_avatar_margin">24dp</dimen>
+  <dimen name="toolbar_avatar_elevation">30dp</dimen>
+  <dimen name="toolbar_name_startMargin">8dp</dimen>
+
+  <item name="dashboard_caption_line_multiplier" format="float" type="dimen">1.0</item>
+
+  <dimen name="start_message_icon_padding">8dp</dimen>
+
+  <!--Test Angle-->
+  <dimen name="angle_brush_rotation">305</dimen>
+</resources>

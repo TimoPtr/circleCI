@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2019 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <data>
+
+    <variable
+      name="viewModel"
+      type="com.kolibree.android.app.mvi.confirmation.GameConfirmationViewModel" />
+
+    <variable
+      name="resourcesProvider"
+      type="com.kolibree.android.app.mvi.confirmation.GameConfirmationResourceProvider" />
+
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/confirmation_background">
+
+    <TextView
+      android:id="@+id/confirmation_hint"
+      textHighlight="@{resourcesProvider.summaryHighlightTextResId()}"
+      textHighlightColor="@{@color/colorPrimary}"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@android:color/white"
+      android:gravity="center"
+      android:paddingLeft="@dimen/huge_margin"
+      android:paddingTop="@dimen/small_margin"
+      android:paddingRight="@dimen/huge_margin"
+      android:paddingBottom="@dimen/small_margin"
+      android:text="@{resourcesProvider.summaryTextResId()}"
+      android:textColor="@android:color/black"
+      android:textSize="@dimen/xxbig_text"
+      app:layout_constraintBottom_toBottomOf="parent"
+      tools:text="This is sample confirmation screen" />
+
+    <View
+      android:id="@+id/separator"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/separator_height"
+      android:background="@color/colorPrimary"
+      app:layout_constraintBottom_toTopOf="@+id/confirmation_hint"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+      android:id="@+id/dentist_image"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:src="@{resourcesProvider.drawableResId()}"
+      app:layout_constraintBottom_toTopOf="@+id/confirmation_hint"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHeight_percent="0.4"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintWidth_percent="0.8"
+      tools:src="@drawable/illustr_analyzingdata"
+      tools:ignore="ContentDescription" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+      android:id="@+id/results_done"
+      android:layout_width="@dimen/min_touch_zone"
+      android:layout_height="@dimen/min_touch_zone"
+      android:layout_margin="@dimen/average_margin"
+      android:background="?attr/selectableItemBackground"
+      android:padding="@dimen/tiny_margin"
+      android:onClick="@{(v) -> viewModel.closeFeature()}"
+      android:src="@drawable/ic_done_rounded"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:tint="@color/colorPrimaryDark" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+

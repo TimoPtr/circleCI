@@ -1,0 +1,11 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="cn.colgate.colgateconnect.auth">
+
+  <application>
+    <activity
+      android:name=".AuthenticationFlowActivity"
+      android:screenOrientation="portrait"
+      android:windowSoftInputMode="stateHidden" />
+  </application>
+
+</manifest>

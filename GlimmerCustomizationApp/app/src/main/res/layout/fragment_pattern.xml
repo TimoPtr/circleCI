@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout>
+
+  <data>
+
+    <variable
+      name="viewModel"
+      type="com.kolibree.android.glimmer.tweaker.pattern.PatternViewModel" />
+
+    <import type="android.view.View" />
+
+    <import type="com.kolibree.android.sdk.connection.brushingmode.customizer.pattern.BrushingModePatternSettings" />
+
+    <import type="com.kolibree.android.glimmer.binding.SimpleItemWithBinding" />
+
+
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+      android:id="@+id/pattern_apply"
+      style="?android:attr/buttonBarButtonStyle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:enabled="@{viewModel.settings.modifiable}"
+      android:onClick="@{() -> viewModel.onApplyButtonClick()}"
+      android:text="@string/apply_custom_brushing_pattern"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/match_constraints"
+      app:layout_constraintBottom_toTopOf="@id/pattern_apply"
+      app:layout_constraintTop_toTopOf="parent">
+
+      <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="@dimen/dot_double"
+        android:paddingEnd="@dimen/dot_double">
+
+        <TextView
+          android:id="@+id/pattern_select_hint"
+          style="@style/SettingsHint"
+          android:layout_width="wrap_content"
+          android:layout_height="@dimen/match_constraints"
+          android:layout_marginEnd="@dimen/dot_trip"
+          android:text="@string/select_pattern"
+          android:textColor="@color/colorAccent"
+          app:layout_constraintBottom_toBottomOf="@+id/pattern_select_spinner"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="@+id/pattern_select_spinner" />
+
+        <Spinner
+          android:id="@+id/pattern_select_spinner"
+          style="@style/SettingSpinner"
+          android:layout_width="@dimen/match_constraints"
+          android:layout_height="wrap_content"
+          android:textAlignment="textEnd"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toEndOf="@id/pattern_select_hint"
+          app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+          android:id="@+id/pattern_type_hint"
+          style="@style/SettingsHint"
+          android:layout_width="wrap_content"
+          android:layout_height="@dimen/match_constraints"
+          android:layout_marginEnd="@dimen/dot_trip"
+          android:text="@string/oscillating_mode"
+          app:layout_constraintBottom_toBottomOf="@+id/pattern_type_spinner"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="@+id/pattern_type_spinner" />
+
+        <Spinner
+          android:id="@+id/pattern_type_spinner"
+          style="@style/SettingSpinner"
+          android:layout_width="@dimen/match_constraints"
+          android:layout_height="wrap_content"
+          android:selectedItemPosition="@={viewModel.patternTypePosition}"
+          android:textAlignment="textEnd"
+          app:enabled="@{viewModel.settings.modifiable}"
+          app:itemBinding="@{SimpleItemWithBinding.simpleItemBinding}"
+          app:itemDropDownLayout="@{SimpleItemWithBinding.simpleLayout}"
+          app:items="@{viewModel.patternTypes}"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toEndOf="@id/pattern_type_hint"
+          app:layout_constraintTop_toBottomOf="@id/pattern_select_spinner" />
+
+        <com.kolibree.android.glimmer.utils.NumberPicker
+          android:id="@+id/pattern_motor_fs_picker"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:enabled="@{viewModel.settings.modifiable}"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/pattern_type_spinner"
+          app:max="@{BrushingModePatternSettings.MAX_PATTERN_FREQUENCY}"
+          app:min="@{BrushingModePatternSettings.MIN_PATTERN_FREQUENCY}"
+          app:value="@{viewModel.settings.patternFrequency}" />
+
+        <TextView
+          style="@style/SettingsHint"
+          android:layout_width="@dimen/match_constraints"
+          android:layout_height="wrap_content"
+          android:text="@string/pattern_motor_fs"
+          app:layout_constraintBottom_toBottomOf="@id/pattern_motor_fs_picker"
+          app:layout_constraintEnd_toStartOf="@id/pattern_motor_fs_picker"
+          app:layout_constraintHorizontal_bias="0"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="@id/pattern_motor_fs_picker" />
+
+        <com.kolibree.android.glimmer.utils.NumberPicker
+          android:id="@+id/ref_minimal_duty_picker"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:enabled="@{viewModel.settings.modifiable}"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/pattern_motor_fs_picker"
+          app:max="@{BrushingModePatternSettings.MAX_DUTY_CYCLE}"
+          app:min="@{BrushingModePatternSettings.MIN_DUTY_CYCLE}"
+          app:value="@{viewModel.settings.minimalDutyCycleHalfPercent}" />
+
+        <TextView
+          style="@style/SettingsHint"
+          android:layout_width="@dimen/match_constraints"
+          android:layout_height="wrap_content"
+          android:text="@string/ref_minimal_duty"
+          app:layout_constraintBottom_toBottomOf="@id/ref_minimal_duty_picker"
+          app:layout_constraintEnd_toStartOf="@id/ref_minimal_duty_picker"
+          app:layout_constraintHorizontal_bias="0"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="@id/ref_minimal_duty_picker" />
+
+        <com.kolibree.android.glimmer.utils.NumberPicker
+          android:id="@+id/duty_strength_1_picker"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:enabled="@{viewModel.settings.modifiable}"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/ref_minimal_duty_picker"
+          app:max="@{BrushingModePatternSettings.MAX_DUTY_CYCLE}"
+          app:min="@{BrushingModePatternSettings.MIN_DUTY_CYCLE}"
+          app:value="@{viewModel.settings.strength1DutyCycleHalfPercent}" />
+
+        <TextView
+          style="@style/SettingsHint"
+          android:layout_width="@dimen/match_constraints"
+          android:layout_height="wrap_content"
+          android:text="@string/duty_strength_1"
+          app:layout_constraintBottom_toBottomOf="@id/duty_strength_1_picker"
+          app:layout_constraintEnd_toStartOf="@id/duty_strength_1_picker"
+          app:layout_constraintHorizontal_bias="0"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="@id/duty_strength_1_picker" />
+
+        <com.kolibree.android.glimmer.utils.NumberPicker
+          android:id="@+id/duty_strength_10_picker"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:enabled="@{viewModel.settings.modifiable}"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/duty_strength_1_picker"
+          app:max="@{BrushingModePatternSettings.MAX_DUTY_CYCLE}"
+          app:min="@{BrushingModePatternSettings.MIN_DUTY_CYCLE}"
+          app:value="@{viewModel.settings.strength10DutyCycleHalfPercent}" />
+
+        <TextView
+          style="@style/SettingsHint"
+          android:layout_width="@dimen/match_constraints"
+          android:layout_height="wrap_content"
+          android:text="@string/duty_strength_10"
+          app:layout_constraintBottom_toBottomOf="@id/duty_strength_10_picker"
+          app:layout_constraintEnd_toStartOf="@id/duty_strength_10_picker"
+          app:layout_constraintHorizontal_bias="0"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="@id/duty_strength_10_picker" />
+
+        <com.kolibree.android.glimmer.utils.NumberPicker
+          android:id="@+id/oscillation_period_picker"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:enabled="@{viewModel.settings.modifiable}"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/duty_strength_10_picker"
+          app:max="@{BrushingModePatternSettings.MAX_OSCILLATION}"
+          app:min="@{BrushingModePatternSettings.MIN_OSCILLATION}"
+          app:value="@{viewModel.settings.oscillatingPeriodTenthSecond}" />
+
+        <TextView
+          style="@style/SettingsHint"
+          android:layout_width="@dimen/match_constraints"
+          android:layout_height="wrap_content"
+          android:text="@string/oscillation_period"
+          app:layout_constraintBottom_toBottomOf="@id/oscillation_period_picker"
+          app:layout_constraintEnd_toStartOf="@id/oscillation_period_picker"
+          app:layout_constraintHorizontal_bias="0"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="@id/oscillation_period_picker" />
+
+        <!-- param1 -->
+
+        <com.kolibree.android.glimmer.utils.NumberPicker
+          android:id="@+id/param1_picker"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:visibility="@{viewModel.showParam1 ? View.VISIBLE : View.GONE}"
+          app:enabled="@{viewModel.settings.modifiable}"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/oscillation_period_picker"
+          app:max="@{BrushingModePatternSettings.MAX_OSCILLATION}"
+          app:min="@{BrushingModePatternSettings.MIN_OSCILLATION}"
+          app:value="@{viewModel.settings.oscillationParam1}" />
+
+        <TextView
+          style="@style/SettingsHint"
+          android:layout_width="@dimen/match_constraints"
+          android:layout_height="wrap_content"
+          android:text="@{viewModel.param1Title}"
+          android:visibility="@{viewModel.showParam1 ? View.VISIBLE : View.GONE}"
+          app:layout_constraintBottom_toBottomOf="@id/param1_picker"
+          app:layout_constraintEnd_toStartOf="@id/param1_picker"
+          app:layout_constraintHorizontal_bias="0"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="@id/param1_picker" />
+
+        <!-- param2 -->
+
+        <com.kolibree.android.glimmer.utils.NumberPicker
+          android:id="@+id/param2_picker"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:visibility="@{viewModel.showParam2 ? View.VISIBLE : View.GONE}"
+          app:enabled="@{viewModel.settings.modifiable}"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/param1_picker"
+          app:max="@{BrushingModePatternSettings.MAX_OSCILLATION}"
+          app:min="@{BrushingModePatternSettings.MIN_OSCILLATION}"
+          app:value="@{viewModel.settings.oscillationParam2}" />
+
+        <TextView
+          style="@style/SettingsHint"
+          android:layout_width="@dimen/match_constraints"
+          android:layout_height="wrap_content"
+          android:text="@{viewModel.param2Title}"
+          android:visibility="@{viewModel.showParam2 ? View.VISIBLE : View.GONE}"
+          app:layout_constraintBottom_toBottomOf="@id/param2_picker"
+          app:layout_constraintEnd_toStartOf="@id/param2_picker"
+          app:layout_constraintHorizontal_bias="0"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="@id/param2_picker" />
+
+        <!-- param3 -->
+
+        <com.kolibree.android.glimmer.utils.NumberPicker
+          android:id="@+id/param3_picker"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:visibility="@{viewModel.showParam3 ? View.VISIBLE : View.GONE}"
+          app:enabled="@{viewModel.settings.modifiable}"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/param2_picker"
+          app:max="@{BrushingModePatternSettings.MAX_OSCILLATION}"
+          app:min="@{BrushingModePatternSettings.MIN_OSCILLATION}"
+          app:value="@{viewModel.settings.oscillationParam3}" />
+
+        <TextView
+          style="@style/SettingsHint"
+          android:layout_width="@dimen/match_constraints"
+          android:layout_height="wrap_content"
+          android:text="@{viewModel.param3Title}"
+          android:visibility="@{viewModel.showParam3 ? View.VISIBLE : View.GONE}"
+          app:layout_constraintBottom_toBottomOf="@id/param3_picker"
+          app:layout_constraintEnd_toStartOf="@id/param3_picker"
+          app:layout_constraintHorizontal_bias="0"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="@id/param3_picker" />
+
+        <TextView
+          android:id="@+id/curve_select_hint"
+          style="@style/SettingsHint"
+          android:layout_width="wrap_content"
+          android:layout_height="@dimen/match_constraints"
+          android:layout_marginEnd="@dimen/dot_trip"
+          android:text="@string/pattern_curve"
+          app:layout_constraintBottom_toBottomOf="@id/curve_select_spinner"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="@+id/curve_select_spinner" />
+
+        <Spinner
+          android:id="@+id/curve_select_spinner"
+          style="@style/SettingSpinner"
+          android:layout_width="@dimen/match_constraints"
+          android:layout_height="wrap_content"
+          android:selectedItemPosition="@={viewModel.curvesPosition}"
+          android:textAlignment="textEnd"
+          app:enabled="@{viewModel.settings.modifiable}"
+          app:itemBinding="@{SimpleItemWithBinding.simpleItemBinding}"
+          app:itemDropDownLayout="@{SimpleItemWithBinding.simpleLayout}"
+          app:items="@{viewModel.curves}"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toEndOf="@id/curve_select_hint"
+          app:layout_constraintTop_toBottomOf="@id/param3_picker" />
+
+      </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
+

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="30dp">
+
+    <Button
+      android:id="@+id/coach_plus"
+      style="@style/ActivityButton"
+      android:text="@string/open_coach" />
+
+    <Button
+        android:id="@+id/guided_brushing"
+        style="@style/ActivityButton"
+        android:text="@string/open_guided_brushing" />
+
+    <Button
+      android:id="@+id/pirate"
+      android:layout_width="@dimen/round_button_width"
+      android:layout_height="@dimen/round_button_height"
+      android:layout_gravity="center_horizontal"
+      android:layout_marginTop="30dp"
+      android:background="@drawable/bg_primary_color"
+      android:elevation="1dp"
+      android:text="@string/open_pirate_compat"
+      android:textColor="@android:color/white" />
+
+    <Button
+      android:id="@+id/launch_test_brushing"
+      style="@style/ActivityButton"
+      android:text="@string/open_test_brushing" />
+
+    <Button
+      android:id="@+id/quiz"
+      style="@style/ActivityButton"
+      android:text="@string/brushing_quiz" />
+
+    <Button
+      android:id="@+id/brushing_mode"
+      style="@style/ActivityButton"
+      android:text="@string/brushing_mode" />
+
+    <Button
+      android:id="@+id/test_your_angle"
+      style="@style/ActivityButton"
+      android:text="@string/test_your_angle" />
+
+    <Button
+      android:id="@+id/speed_control"
+      style="@style/ActivityButton"
+      android:text="@string/speed_control" />
+  </LinearLayout>
+</ScrollView>

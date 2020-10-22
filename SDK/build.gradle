@@ -1,0 +1,242 @@
+buildscript {
+    // Gradle will not find vars defined in an external file when referring to them
+    // in the buildscript block, unless you link it from the buildscript block, too.
+    apply from: 'dependencies.gradle'
+
+    repositories {
+        /**
+         * NOTE: this local maven is added only to prevent issues with plugins that cannot be resolved
+         * at any point in time, for ex. in Jenkins. Do not populate any content there unless it's absolutely
+         * necessary.
+         */
+        maven { url "${rootProject.rootDir}/../mavenBackup/" }
+        google()
+        // NOTE:
+        // Jenkins shared library replaces jcenter entries with the combinarion of Kolibree Artifactory + mavenCentral.
+        // This is because jcenter had serious downtimes in Mar'19, that were blocking development.
+        jcenter()
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+        maven {
+            url = kolibree_artifactory_url + "/libs-release"
+            credentials {
+                username kolibree_artifactory_username
+                password kolibree_artifactory_password
+            }
+        }
+    }
+
+    dependencies {
+        classpath gradlePlugins.android
+        classpath gradlePlugins.kotlin
+        classpath gradlePlugins.kolibreePublisher
+        classpath gradlePlugins.spotless
+        classpath gradlePlugins.detekt
+        classpath gradlePlugins.paranoid
+    }
+}
+
+ext {
+    detektRulePath = "../buildscripts/detekt"
+}
+
+allprojects {
+    repositories {
+        google()
+        // NOTE: please check note in buildscript section
+        jcenter()
+        maven {
+            url = kolibree_artifactory_url + "/libs-release"
+            credentials {
+                username kolibree_artifactory_username
+                password kolibree_artifactory_password
+            }
+        }
+        maven {
+            url = kolibree_artifactory_url + "/libs-snapshot"
+            credentials {
+                username kolibree_artifactory_username
+                password kolibree_artifactory_password
+            }
+        }
+    }
+}
+
+subprojects {
+    def packageName = 'com.kolibree.android'
+    group packageName
+
+    apply plugin: 'kolibree-publisher'
+
+    publisher {
+        groupId = packageName
+        artifactId = project.name
+        version = versions.name
+
+        repositoryUrl = kolibree_artifactory_url
+        repositoryUsername = kolibree_artifactory_username
+        repositoryPassword = kolibree_artifactory_password
+    }
+
+    apply from: '../buildscripts/detekt/detekt.gradle'
+    apply from: '../buildscripts/spotless.gradle'
+
+    // Android modules specific configuration
+    pluginManager.withPlugin('com.android.library') {
+        apply plugin: 'kotlin-android'
+        apply plugin: 'kotlin-android-extensions'
+        apply from: '../buildscripts/jacoco.gradle'
+
+        android {
+            compileSdkVersion versions.compileSdk
+
+            defaultConfig {
+                minSdkVersion versions.minSdk
+                targetSdkVersion versions.targetSdk
+
+                versionCode versions.code
+                versionName versions.name
+
+                testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+                consumerProguardFiles 'proguard-rules.pro', '../modules-proguard-rules.pro'
+                resValue("bool", "disable_glthread", "${project.hasProperty('disable_glthread')}")
+            }
+
+            signingConfigs {
+                release {
+                    if (project.hasProperty('storeFilePath')) {
+                        storeFile file(project["storeFilePath"])
+                        keyAlias 'kolibree'
+                        storePassword project["aliasPass"]
+                        keyPassword project["keyPass"]
+                    }
+                }
+
+                debug {
+                    storeFile file("${rootProject.rootDir}/../keystores/debug.keystore")
+                    keyAlias 'androiddebugkey'
+                    storePassword 'android'
+                    keyPassword 'android'
+                }
+            }
+
+            buildTypes {
+                debug {
+                    debuggable true
+                    minifyEnabled false
+                    signingConfig signingConfigs.debug
+                }
+
+                release {
+                    minifyEnabled true
+                    signingConfig signingConfigs.release
+                }
+            }
+
+            packagingOptions {
+                exclude 'META-INF/ASL2.0'
+                exclude 'META-INF/AL2.0'
+                exclude 'META-INF/LGPL2.1'
+                exclude 'META-INF/LICENSE'
+                exclude 'META-INF/LICENSE.txt'
+                exclude 'META-INF/licenses/ASM'
+                exclude 'META-INF/NOTICE'
+                exclude 'META-INF/notice.txt'
+                exclude 'META-INF/rxjava.properties'
+                exclude 'win32-x86-64/attach_hotspot_windows.dll'
+                exclude 'win32-x86/attach_hotspot_windows.dll'
+            }
+
+            compileOptions {
+                targetCompatibility 1.8
+                sourceCompatibility 1.8
+            }
+
+            kotlinOptions {
+                jvmTarget = '1.8'
+            }
+
+            sourceSets {
+                main.java.srcDirs += "src/main/kotlin"
+                test.java.srcDirs += "src/test/kotlin"
+            }
+
+            flavorDimensions 'branding'
+
+            // Disable BuildConfig by default
+            buildFeatures {
+                // Determines whether to generate a BuildConfig class.
+                buildConfig = false
+            }
+
+        }
+
+        // In order to be able to disable lint for resources-branded module we need to make sure to not add
+        // any lint dependencies
+        if (project.name != "static-resources-branded") {
+            apply from: '../buildscripts/lint/lint.gradle'
+
+            dependencies {
+                lintChecks project(':lint-rules')
+            }
+        }
+    }
+
+    // Java modules specific configuration
+    pluginManager.withPlugin('java-library') {
+        apply plugin: 'kotlin'
+    }
+
+    tasks.withType(Test).configureEach {
+        maxParallelForks = Runtime.runtime.availableProcessors().intdiv(2) ?: 1
+        forkEvery = 100
+    }
+
+    configurations.all {
+        resolutionStrategy {
+            forcedModules = [
+                "org.jetbrains.kotlin:kotlin-stdlib:$versions.kotlin",
+                "org.jetbrains.kotlin:kotlin-reflect:$versions.kotlin",
+                libraries.fullThreetenBp,
+                libraries.okHttp,
+                libraries.rxJava,
+                libraries.supportAnnotations,
+                "org.mockito:mockito-core:$versions.mockito",
+                "androidx.arch.core:core-runtime:$versions.androidxCore",
+                libraries.supportAppCompat,
+                libraries.fragmentKtx,
+                //https://github.com/mockito/mockito/issues/1606
+                libraries.dexmaker
+            ]
+        }
+    }
+
+    project.afterEvaluate {
+        def androidTestDeps = project.configurations.findByName("androidTestImplementation")?.allDependencies?.size()
+        if(androidTestDeps == null || androidTestDeps == 0) {
+            tasks.configureEach {
+                if (name.toLowerCase().contains("androidtest")) {
+                    enabled = false
+                }
+            }
+        } else {
+            // androidTest task is kept
+        }
+
+        def unitTestDeps = project.configurations.findByName("testImplementation")?.allDependencies?.size()
+        if(unitTestDeps == null || unitTestDeps == 0) {
+            tasks.configureEach {
+                if (name.toLowerCase().contains("unittest")) {
+                    enabled = false
+                }
+            }
+        } else {
+            // unitTest task is kept
+        }
+    }
+}
+
+task clean(type: Delete) {
+    delete "build" //clear modules root build
+}

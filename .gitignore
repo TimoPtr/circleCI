@@ -1,0 +1,10 @@
+.DS_Store
+
+# AS creates this folder for backup when upgrading versions
+projectFilesBackup
+
+#ignore dumps
+*.hprof
+
+#script
+deep-clean.kts

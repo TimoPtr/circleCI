@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2019 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <data>
+
+    <import type="android.view.View" />
+
+    <import type="com.kolibree.android.angleandspeed.testangles.mvi.brushing.TestAnglesBrushingViewState" />
+
+    <import type="com.kolibree.android.angleandspeed.testangles.model.ToothSide" />
+
+    <variable
+      name="viewModel"
+      type="com.kolibree.android.angleandspeed.testangles.mvi.brushing.molar.TestAnglesMolarBrushingViewModel" />
+
+    <variable
+      name="molarAnimationRect"
+      type="android.graphics.Rect" />
+
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradual_blue">
+
+    <ImageView
+      android:id="@+id/angle_cone_right"
+      showRightCone="@{viewModel.toothSide}"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:src="@drawable/ic_angle_cone_right"
+      android:visibility="invisible"
+      app:layout_constraintBottom_toBottomOf="@id/molar"
+      app:layout_constraintDimensionRatio="1:1"
+      app:layout_constraintRight_toRightOf="@id/molar"
+      app:layout_constraintTop_toTopOf="@+id/molar"
+      app:layout_constraintWidth_percent="0.4"
+      tools:ignore="RtlHardcoded" />
+
+    <ImageView
+      android:id="@+id/angle_cone_left"
+      showLeftCone="@{viewModel.toothSide}"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:src="@drawable/ic_angle_cone_left"
+      android:visibility="invisible"
+      app:layout_constraintBottom_toBottomOf="@id/molar"
+      app:layout_constraintDimensionRatio="1:1"
+      app:layout_constraintLeft_toLeftOf="@id/molar"
+      app:layout_constraintTop_toTopOf="@+id/molar"
+      app:layout_constraintWidth_percent="0.4"
+      tools:ignore="RtlHardcoded" />
+
+    <ImageView
+      android:id="@+id/molar"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_marginBottom="@dimen/average_margin"
+      android:adjustViewBounds="true"
+      android:scaleType="fitEnd"
+      android:src="@drawable/ic_molar"
+      app:layout_constraintBottom_toTopOf="@id/angle_progress_bar"
+      app:layout_constraintDimensionRatio="1:1.1" />
+
+    <View
+      android:id="@+id/angle_progress_bar_background"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:background="@color/angle_bg_teeth_pink"
+      app:layout_constraintBottom_toTopOf="@id/separator"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/molar" />
+
+    <ProgressBar
+      android:id="@+id/angle_progress_bar"
+      style="@style/Kolibree.ProgressBar.Horizontal.Rounded.Red"
+      progressState="@{viewModel.progressState}"
+      progressMaxDuration="@{TestAnglesBrushingViewState.TARGET_DURATION}"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="@dimen/xxhuge_margin_plus"
+      android:layout_marginRight="@dimen/xxhuge_margin_plus"
+      android:layout_marginBottom="@dimen/xbig_margin"
+      app:layout_constraintBottom_toTopOf="@id/angle_hint" />
+
+    <TextView
+      android:id="@+id/angle_hint"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@android:color/white"
+      android:gravity="center"
+      android:paddingLeft="@dimen/huge_margin"
+      android:paddingTop="@dimen/small_margin"
+      android:paddingRight="@dimen/huge_margin"
+      android:paddingBottom="@dimen/small_margin"
+      android:text="@string/test_angles_molar_hint"
+      android:textColor="@android:color/black"
+      android:textSize="@dimen/xxbig_text"
+      app:layout_constraintBottom_toBottomOf="parent" />
+
+    <View
+      android:id="@+id/separator"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/separator_height"
+      android:background="@color/colorPrimary"
+      app:layout_constraintBottom_toTopOf="@+id/angle_hint"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+      android:id="@+id/angle_degree"
+      brushDegree="@{viewModel.brushDegrees}"
+      stateColor="@{viewModel.stateColor}"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/xbig_margin"
+      android:textSize="@dimen/xxxhuge_text"
+      android:textStyle="bold"
+      android:visibility="invisible"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+      android:id="@+id/brush_head"
+      brushDegree="@{viewModel.brushDegrees}"
+      brushRadian="@{viewModel.brushRadians}"
+      brushSide="@{viewModel.toothSide}"
+      isZoneCorrect="@{viewModel.isZoneCorrect}"
+      molarAnimationArea="@{molarAnimationRect}"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:scaleType="fitCenter"
+      android:src="@drawable/ic_brush_front_blue"
+      android:visibility="invisible"
+      app:layout_constraintBottom_toBottomOf="@+id/molar"
+      app:layout_constraintDimensionRatio="1:1"
+      app:layout_constraintHorizontal_bias="0.47"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toTopOf="@+id/molar"
+      app:layout_constraintVertical_bias="0.26"
+      app:layout_constraintWidth_percent="0.3"
+      tools:ignore="RtlHardcoded" />
+
+    <View
+      android:id="@+id/molar_animation_area"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:background="@color/trans"
+      android:visibility="invisible"
+      app:layout_constraintBottom_toBottomOf="@id/angle_cone_right"
+      app:layout_constraintHorizontal_bias="0.47"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toTopOf="@id/brush_head"
+      app:layout_constraintWidth_percent="0.45"
+      tools:visibility="visible" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
+

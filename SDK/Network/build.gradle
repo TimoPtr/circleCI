@@ -1,0 +1,54 @@
+
+apply plugin: 'com.android.library'
+
+apply from: '../buildscripts/kapt.gradle'
+
+android {
+    // We need BuildConfig or we get an error while minifying with R8
+    buildFeatures {
+        buildConfig = true
+    }
+}
+
+dependencies {
+    implementation project(path: ':features')
+    implementation project(path: ':commons')
+    implementation project(path: ':crypto')
+    implementation project(path: ':account-internal')
+
+    implementation libraries.kotlinRuntime
+
+    implementation libraries.supportAnnotations
+
+    implementation libraries.dagger
+    kapt libraries.daggerCompiler
+
+    api libraries.okHttp
+    implementation libraries.okHttpLoggingInterceptor
+
+    implementation libraries.timber
+
+    api libraries.retrofit
+    api libraries.gson
+    implementation libraries.retrofitGsonConverter
+    implementation libraries.retrofitRxJavaAdapter
+
+    implementation libraries.threetenAbp
+
+    releaseImplementation libraries.instabug
+    releaseImplementation libraries.instabugOkHttpInterceptor
+
+    implementation libraries.rxJava
+    implementation libraries.rxRelay
+    implementation libraries.rxLint
+
+    testImplementation project(path: ':testing-unit-base')
+    testImplementation libraries.mockitoKotlin2
+    testImplementation libraries.dagger
+
+    androidTestImplementation project(path: ':testing-espresso-base')
+    androidTestImplementation libraries.mockitoKotlin2
+    androidTestImplementation libraries.dagger
+    androidTestImplementation libraries.retrofitMock
+    androidTestImplementation libraries.mockWebServer
+}

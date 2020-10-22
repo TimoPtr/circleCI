@@ -1,0 +1,44 @@
+{
+  "tier_list": {
+    "1": {
+      "rank": "Ivory",
+      "challenges_needed": 0,
+      "smiles_reward_per_brushing": 1,
+      "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Tier_Ivory.png",
+      "message": "Congratulations! You reached Ivory tier",
+      "creation_date": "2020-02-13"
+    },
+    "2": {
+      "rank": "Bronze",
+      "challenges_needed": 10,
+      "smiles_reward_per_brushing": 2,
+      "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Tier_Bronze.png",
+      "message": "Congratulations! You reached Bronze tier",
+      "creation_date": "2020-02-13"
+    },
+    "3": {
+      "rank": "Silver",
+      "challenges_needed": 20,
+      "smiles_reward_per_brushing": 3,
+      "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Tier_Silver.png",
+      "message": "Congratulations! You reached Silver tier",
+      "creation_date": "2020-02-13"
+    },
+    "4": {
+      "rank": "Gold",
+      "challenges_needed": 30,
+      "smiles_reward_per_brushing": 4,
+      "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Tier_Gold.png",
+      "message": "Congratulations! You reached Gold tier",
+      "creation_date": "2020-02-13"
+    },
+    "5": {
+      "rank": "Platinum",
+      "challenges_needed": 40,
+      "smiles_reward_per_brushing": 5,
+      "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Tier_Platinum.png",
+      "message": "Congratulations! You reached Platinum tier",
+      "creation_date": "2020-02-13"
+    }
+  }
+}

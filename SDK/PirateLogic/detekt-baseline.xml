@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <Blacklist></Blacklist>
+  <Whitelist>
+    <ID>ComplexMethod:World1Constant.kt$World1Constant.KLPirateLevel1PrescribedZone$toMouthZone</ID>
+    <ID>ComplexMethod:World2Constant.kt$World2Constant.KLPirateLevel2PrescribedZone$toMouthZone</ID>
+    <ID>ComplexMethod:World3Constant.kt$World3Constant.KLPirateLevel3PrescribedZone$toMouthZone</ID>
+    <ID>LongMethod:BasePirateFragment.kt$BasePirateFragment$setUpGameState</ID>
+    <ID>LongMethod:BasePirateFragment.kt$BasePirateFragment$startBrushingInternal</ID>
+    <ID>LongMethod:BasePirateFragment.kt$BasePirateFragment.PirateFragmentCallback$goPirate_commitWriteTransaction</ID>
+    <ID>LongMethod:KMLPirateModule.kt$KMLPirateModule$providesSupervisedBrushingAppContext12</ID>
+    <ID>LongMethod:KMLPirateModule.kt$KMLPirateModule$providesSupervisedBrushingAppContext16</ID>
+    <ID>LongMethod:KMLPirateModule.kt$KMLPirateModule$providesSupervisedBrushingAppContext8</ID>
+    <ID>LongMethod:PirateControllerFactory.kt$PirateControllerFactory$getWorldController</ID>
+    <ID>LongMethod:PirateFragmentViewModel.kt$PirateFragmentViewModel$onUserAnsweredToSimpleUpdatePirateData</ID>
+    <ID>LongMethod:PirateFragmentViewModel.kt$PirateFragmentViewModel$updatePirateData</ID>
+    <ID>LongMethod:Tutorial.kt$Tutorial.Companion$create</ID>
+    <ID>LongMethod:WorldController.kt$WorldController$createBrushingData</ID>
+  </Whitelist>
+</SmellBaseline>

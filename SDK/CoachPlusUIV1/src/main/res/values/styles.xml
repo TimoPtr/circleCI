@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <style name="CoachPlusActivityTheme" parent="FullScreenActivityTheme">
+    <item name="android:statusBarColor">@color/coach_plus_default_background_color</item>
+  </style>
+  <style name="CoachPlusActivitySettingsTheme" parent="CoachPlusActivityTheme">
+    <item name="android:statusBarColor">@color/coachPrimary</item>
+  </style>
+</resources>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <data>
+
+    <import type="com.kolibree.android.extensions.ContextExtensionsKt" />
+
+    <import type="com.kolibree.android.homeui.hum.R" />
+
+    <variable
+      name="viewModel"
+      type="com.kolibree.android.app.ui.onboarding.getready.GetReadyViewModel" />
+
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/get_ready_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false">
+
+    <View
+      android:id="@+id/content"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="@dimen/match_constraints"
+      android:layout_marginStart="@dimen/dot_quad"
+      android:layout_marginEnd="@dimen/dot_quad"
+      android:layout_marginBottom="@dimen/dot_double"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHeight_percent="0.85"
+      app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+      android:id="@+id/header"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:text="@{@string/onboarding_get_ready_header}"
+      android:textAppearance="?textAppearanceHeadline2"
+      app:layout_constraintEnd_toEndOf="@id/content"
+      app:layout_constraintStart_toStartOf="@id/content"
+      app:layout_constraintTop_toTopOf="@id/content"
+      app:textHighlight="@{@string/onboarding_get_ready_header_highlight}"
+      app:textHighlightColor="@{ContextExtensionsKt.getColorFromAttr(context, R.attr.colorSecondaryDark)}"
+      tools:text="@string/onboarding_get_ready_header" />
+
+    <TextView
+      android:id="@+id/subtitle"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/dot_double"
+      android:text="@string/onboarding_get_ready_subtitle"
+      android:textAppearance="?textAppearanceSubtitle1"
+      app:layout_constraintEnd_toEndOf="@id/content"
+      app:layout_constraintStart_toStartOf="@id/content"
+      app:layout_constraintTop_toBottomOf="@id/header" />
+
+    <Button
+      android:id="@+id/sign_in_button"
+      style="?materialButtonTextStyle"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:alpha="0"
+      android:onClick="@{v -> viewModel.signInButtonClicked()}"
+      android:text="@string/onboarding_get_ready_sign_in_button"
+      app:layout_constraintBottom_toBottomOf="@id/content"
+      app:layout_constraintEnd_toEndOf="@id/content"
+      app:layout_constraintStart_toStartOf="@id/content"
+      tools:alpha="1" />
+
+    <Button
+      android:id="@+id/no_brush_button"
+      style="?materialButtonOutlinedStyle"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="@dimen/dot"
+      android:alpha="0"
+      android:onClick="@{v -> viewModel.noBrushButtonClicked()}"
+      android:text="@string/onboarding_get_ready_no_brush_button"
+      app:layout_constraintBottom_toTopOf="@id/sign_in_button"
+      app:layout_constraintEnd_toEndOf="@id/content"
+      app:layout_constraintStart_toStartOf="@id/content"
+      tools:alpha="1" />
+
+    <Button
+      android:id="@+id/connect_brush_button"
+      style="?materialButtonStyle"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="@dimen/dot"
+      android:alpha="0"
+      android:onClick="@{v -> viewModel.connectMyBrushButtonClicked()}"
+      android:text="@string/onboarding_get_ready_connect_brush_button"
+      app:layout_constraintBottom_toTopOf="@id/no_brush_button"
+      app:layout_constraintEnd_toEndOf="@id/content"
+      app:layout_constraintStart_toStartOf="@id/content"
+      tools:alpha="1" />
+
+    <com.kolibree.android.app.widget.AnimatorGroup
+      android:id="@+id/bottom_buttons"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:constraint_referenced_ids="connect_brush_button,no_brush_button,sign_in_button"
+      tools:ignore="MissingConstraints" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

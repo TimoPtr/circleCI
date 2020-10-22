@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <Blacklist></Blacklist>
+  <Whitelist>
+    <ID>ComplexMethod:ComparableLocation.kt$ComparableLocation$samePosition</ID>
+    <ID>LongMethod:ExperimentalClassUseIssue.kt$ExperimentalClassUseIssue.IssueDetector$checkIfApplicable</ID>
+    <ID>LongMethod:ExperimentalClassUseIssue.kt$ExperimentalClassUseIssue.IssueDetector$checkRestrictTo</ID>
+    <ID>LongMethod:ExperimentalClassUseIssue.kt$ExperimentalClassUseIssue.IssueDetector$reportRestriction</ID>
+    <ID>LongMethod:ExperimentalClassUseIssue.kt$ExperimentalClassUseIssue.IssueDetector$visitAnnotationUsage</ID>
+    <ID>LongMethod:ExperimentalClassUseIssue.kt$ExperimentalClassUseIssue.IssueDetector.Companion$getRestrictionScope</ID>
+    <ID>SwallowedException:UFieldExtension.kt$catch (e: RuntimeException) { false }</ID>
+  </Whitelist>
+</SmellBaseline>

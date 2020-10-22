@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout>
+
+  <data>
+
+    <import type="android.view.View" />
+
+    <variable
+      name="viewModel"
+      type="com.kolibree.android.shop.presentation.container.ShopContainerViewModel" />
+  </data>
+
+  <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/discount_banner"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?colorSecondary"
+    android:paddingStart="@dimen/dot_double"
+    android:paddingTop="@dimen/dot"
+    android:paddingEnd="@dimen/dot_double"
+    android:paddingBottom="@dimen/dot"
+    android:visibility="gone"
+    app:layout_constraintTop_toTopOf="parent"
+    app:visibilityAnim="@{viewModel.discountBannerVisible ? View.VISIBLE : View.GONE}"
+    tools:visibility="visible">
+
+    <!-- NOT VISIBLE IN HUM, KEPT FOR POSTERITY-->
+    <ImageView
+      android:id="@+id/discount_close"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentEnd="true"
+      android:onClick="@{(v) -> viewModel.onCloseDiscountBannerClick()}"
+      android:visibility="invisible"
+      tools:ignore="ContentDescription" />
+
+    <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:layout_centerVertical="true"
+      android:orientation="horizontal">
+
+      <TextView
+        android:id="@+id/discount_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@{@string/shop_discount_amount(viewModel.discountAmount)}"
+        android:textAppearance="?textAppearanceSubtitle2"
+        android:textColor="@color/white" />
+
+      <TextView
+        android:id="@+id/discount_caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dot_half"
+        android:text="@string/shop_discount_caption"
+        android:textAppearance="?textAppearanceBody2"
+        android:textColor="@color/white" />
+    </LinearLayout>
+
+  </RelativeLayout>
+</layout>

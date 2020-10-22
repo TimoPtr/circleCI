@@ -1,0 +1,19 @@
+{
+  "fw": {
+    "fw": "1.19.0",
+    "link": "<baseUrl>fw/Connect_E1_HW_0x00020006_FW_0x01130000_fast_updater_package.bin?AWSAccessKeyId=AKIAI34BUWYJTE7AFAIA&Signature=Aa6ohJ9CGkspYB1ALjWoE%2BucDC8%3D&Expires=1580198313",
+    "crc16": null,
+    "crc32": null,
+    "filename": "Connect_E1_HW_0x00020006_FW_0x01130000_fast_updater_package.bin",
+    "beta": true
+  },
+  "gru": {
+    "gru": "1.0.6",
+    "link": "<baseUrl>gru/gru_data_ce1_1.0.6_fast_updater_package.bin?AWSAccessKeyId=AKIAI34BUWYJTE7AFAIA&Signature=yMilOG6jM9woGHgbOG9p47Y70sI%3D&Expires=1580198313",
+    "crc16": null,
+    "crc32": null,
+    "filename": "gru_data_ce1_1.0.6_fast_updater_package.bin",
+    "beta": true
+  },
+  "bootloader": {}
+}

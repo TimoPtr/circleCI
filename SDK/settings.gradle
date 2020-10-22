@@ -1,0 +1,170 @@
+rootProject.name = "AndroidModulesSDK"
+
+/*
+--> DO NOT update the names. We use them to publish the artifacts to maven and to use the dependencies
+*/
+
+include ":commons",
+    ":common-models",
+    ":stats",
+    ":jaws",
+    ":toothbrush-sdk",
+    ":web-service-sdk",
+    ":heuristic",
+    ":offline-brushings",
+    ":offline-brushings-v1",
+    ":translations-support",
+    ":pairing",
+    ':pirate',
+    ':pirate-v1',
+    ':pirate-logic',
+    ":tracker",
+    ':tracker-domain',
+    ":game",
+    ":core",
+    ":authentication",
+    ":coach-plus-logic",
+    ":coach-plus-ui-v1",
+    ":guided-brushing-ui",
+    ":guided-brushing-tips",
+    ":base-ui",
+    ":base-ui-v1",
+    ":base-ui-hum",
+    ":databinding",
+    ":google-auth",
+    ":toothbrush-update-logic",
+    ":toothbrush-update-ui-v1",
+    ":toothbrush-update-ui-hum",
+    ":static-resources",
+    ":static-resources-v1",
+    ":static-resources-hum",
+    ":static-resources-colgate",
+    ":testing-unit-base",
+    ":testing-espresso-base",
+    ":testing-shared",
+    ":testing-builders",
+    ":testing-pact",
+    ":processed-brushings-kml",
+    ":account-sdk",
+    ":test-brushing",
+    ":test-brushing-v1",
+    ":rewards-logic",
+    ":rewards-hum",
+    ":home-ui",
+    ":home-ui-hum",
+    ":synchronizator",
+    ":network",
+    ":account-internal",
+    ":auditor",
+    ":stats-offline",
+    ":lint-rules",
+    ":mouthmap-v1",
+    ":crypto",
+    ":gruware",
+    ":plaqless-ui-v1",
+    ":magik-sdk",
+    ":brushing-quiz",
+    ":angle-and-speed-logic",
+    ":angle-and-speed-ui-v1",
+    ":angle-and-speed-ui",
+    ":unity-game-sdk",
+    ":game-commons-v1",
+    ":shop",
+    ":annotation",
+    ":features",
+    ":legacy-game-components",
+    ":question-of-the-day",
+    ":brush-sync-reminder",
+    ":static-resources-branded",
+    ":amazon-dash",
+    ":toothbrush-battery",
+    ":brush-reminder",
+    ":dynamic-cards",
+    ":headspace",
+    ":partnerships"
+
+project(":commons").projectDir = new File("CommonsAndroid")
+project(":common-models").projectDir = new File("CommonModels")
+project(":pirate").projectDir = new File("Pirate")
+project(":pirate-v1").projectDir = new File("PirateV1")
+project(":pirate-logic").projectDir = new File("PirateLogic")
+project(":tracker").projectDir = new File("Tracker")
+project(":tracker-domain").projectDir = new File("TrackerDomain")
+project(":stats").projectDir = new File("Stats")
+project(":jaws").projectDir = new File("Jaws")
+project(":toothbrush-sdk").projectDir = new File("ToothbrushSDK")
+project(":web-service-sdk").projectDir = new File("WebServicesSDK")
+project(":heuristic").projectDir = new File("Heuristic")
+project(":pairing").projectDir = new File("Pairing")
+project(":game").projectDir = new File("Game")
+project(":core").projectDir = new File("Core")
+project(":authentication").projectDir = new File("Authentication")
+project(":offline-brushings").projectDir = new File("OfflineBrushings")
+project(":offline-brushings-v1").projectDir = new File("OfflineBrushingsV1")
+project(":translations-support").projectDir = new File("TranslationsSupport")
+project(":coach-plus-logic").projectDir = new File("CoachPlus")
+project(":coach-plus-ui-v1").projectDir = new File("CoachPlusUIV1")
+project(":guided-brushing-ui").projectDir = new File("GuidedBrushingUI")
+project(":guided-brushing-tips").projectDir = new File("GuidedBrushingTips")
+project(":base-ui").projectDir = new File("BaseUI")
+project(":base-ui-v1").projectDir = new File("BaseUIV1")
+project(":base-ui-hum").projectDir = new File("BaseUIHUM")
+project(":databinding").projectDir = new File("Databinding")
+project(":google-auth").projectDir = new File("GoogleAuth")
+project(":toothbrush-update-logic").projectDir = new File("ToothbrushUpdate")
+project(":toothbrush-update-ui-v1").projectDir = new File("ToothbrushUpdateUIV1")
+project(":toothbrush-update-ui-hum").projectDir = new File("ToothbrushUpdateUIHUM")
+
+project(":static-resources").projectDir = new File("StaticResources")
+project(":static-resources-v1").projectDir = new File("StaticResourcesV1")
+project(":static-resources-hum").projectDir = new File("StaticResourcesHUM")
+project(":static-resources-colgate").projectDir = new File("StaticResourcesColgate")
+
+// This project is a fake one that should be use by sdk module
+// so we can can change while developing between brand just by changing this
+// this allow you to navigates into resources of the right brand
+// It will be also be in the pom generated
+project(":static-resources-branded").projectDir = new File("StaticResourcesBranded")
+
+project(":testing-unit-base").projectDir = new File("TestingUnitBase")
+project(":testing-espresso-base").projectDir = new File("TestingEspressoBase")
+project(":testing-shared").projectDir = new File("TestingShared")
+project(":testing-builders").projectDir = new File("TestingBuilders")
+project(":testing-pact").projectDir = new File("TestingPact")
+project(":processed-brushings-kml").projectDir = new File("ProcessedBrushingsKML")
+project(":test-brushing-v1").projectDir = new File("SmartBrushingAnalyzer")
+project(":test-brushing").projectDir = new File("TestBrushing")
+project(":rewards-logic").projectDir = new File("Rewards")
+project(":rewards-hum").projectDir = new File("RewardsHUM")
+project(":home-ui").projectDir = new File("HomeUI")
+project(":home-ui-hum").projectDir = new File("HomeUIHUM")
+project(":network").projectDir = new File("Network")
+project(":synchronizator").projectDir = new File("Synchronizator")
+project(":account-internal").projectDir = new File("AccountInternal")
+project(":account-sdk").projectDir = new File("AccountSDK")
+project(":auditor").projectDir = new File("Auditor")
+project(":stats-offline").projectDir = new File("StatsOffline")
+project(":lint-rules").projectDir = new File("LintRules")
+project(":mouthmap-v1").projectDir = new File("MouthMap")
+project(":crypto").projectDir = new File("Crypto")
+project(":gruware").projectDir = new File("Gruware")
+project(":plaqless-ui-v1").projectDir = new File("Plaqless")
+project(":magik-sdk").projectDir = new File("MagikSdk")
+project(":brushing-quiz").projectDir = new File("BrushingQuiz")
+project(":angle-and-speed-logic").projectDir = new File("AngleAndSpeed")
+project(":angle-and-speed-ui-v1").projectDir = new File("AngleAndSpeedUIV1")
+project(":angle-and-speed-ui").projectDir = new File("AngleAndSpeedUIHUM")
+project(":unity-game-sdk").projectDir = new File("UnityGameSDK")
+project(":game-commons-v1").projectDir = new File("GameCommons")
+project(":shop").projectDir = new File("Shop")
+project(":annotation").projectDir = new File("Annotation")
+project(":features").projectDir = new File("Features")
+project(":legacy-game-components").projectDir = new File("LegacyGameComponents")
+project(":question-of-the-day").projectDir = new File("QuestionOfTheDay")
+project(":brush-sync-reminder").projectDir = new File("BrushSyncReminder")
+project(":amazon-dash").projectDir = new File("AmazonDash")
+project(":toothbrush-battery").projectDir = new File("ToothbrushBattery")
+project(":brush-reminder").projectDir = new File("BrushReminder")
+project(":dynamic-cards").projectDir = new File("DynamicCards")
+project(":headspace").projectDir = new File("Headspace")
+project(":partnerships").projectDir = new File("Partnerships")

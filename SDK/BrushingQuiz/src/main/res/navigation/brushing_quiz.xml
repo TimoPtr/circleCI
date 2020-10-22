@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2019 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:id="@+id/migration_to_colgate"
+  app:startDestination="@+id/quiz_fragment">
+
+  <fragment
+    android:id="@+id/quiz_fragment"
+    android:name="com.kolibree.android.brushingquiz.presentation.quiz.QuizFragment"
+    android:label="Quiz">
+    <action
+      android:id="@+id/brushing_quiz_completed"
+      app:destination="@id/brushing_quiz_confirmation_fragment"
+      app:enterAnim="@anim/slide_in_right"
+      app:exitAnim="@anim/slide_out_left"
+      app:popEnterAnim="@anim/slide_in_left"
+      app:popExitAnim="@anim/slide_out_right" />
+  </fragment>
+
+  <fragment
+    android:id="@+id/brushing_quiz_confirmation_fragment"
+    android:name="com.kolibree.android.brushingquiz.presentation.confirmation.QuizConfirmationFragment"
+    android:label="Quiz results confirmation">
+  </fragment>
+
+</navigation>

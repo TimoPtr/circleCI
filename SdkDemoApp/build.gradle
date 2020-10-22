@@ -1,0 +1,58 @@
+buildscript {
+    apply from: "${rootProject.rootDir}/buildscripts/dependencies.gradle"
+
+    repositories {
+        maven { url "${rootProject.rootDir}/../mavenBackup/" }
+        google()
+        jcenter()
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+        // This Maven repository serves the Kolibree Plugins. See gradle.properties file for credentials
+        maven {
+            url 'https://kolibree.jfrog.io/kolibree/libs-release'
+            credentials {
+                username kolibree_artifactory_username
+                password kolibree_artifactory_password
+            }
+        }
+    }
+
+    dependencies {
+        classpath gradlePlugins.android
+        classpath gradlePlugins.kotlin
+        classpath gradlePlugins.marathonGradle
+        classpath gradlePlugins.detekt
+        classpath gradlePlugins.spotless
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+
+        //Maven local takes higher priority to artifactory, therefore gradle will pick locally published
+        //version (if it exists) before checking artifactory.
+        //This saves some bandwidth and will prevent issues in CI (when SDK demo will try to use different
+        //artifact than what we want to actually test)
+        mavenLocal()
+
+        // This Maven repository serves the Kolibree SDK. See gradle.properties file for credentials
+        maven {
+            url 'https://kolibree.jfrog.io/kolibree/libs-release'
+            credentials {
+                username kolibree_artifactory_username
+                password kolibree_artifactory_password
+            }
+        }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+    detektRulePath = "../../SDK/buildscripts/detekt"
+}

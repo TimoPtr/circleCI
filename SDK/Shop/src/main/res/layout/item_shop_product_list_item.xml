@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <data>
+
+    <import type="android.view.View" />
+
+    <variable
+      name="item"
+      type="com.kolibree.android.shop.presentation.list.ShopProductBindingModel" />
+
+    <variable
+      name="interaction"
+      type="com.kolibree.android.shop.presentation.list.ShopProductInteraction" />
+
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    tools:theme="@style/AppTheme">
+
+    <ImageView
+      android:id="@+id/product_image"
+      android:layout_width="@dimen/shop_product_image_width"
+      android:layout_height="@dimen/shop_product_height"
+      android:layout_marginStart="@dimen/dot_double"
+      android:layout_marginTop="@dimen/dot_trip"
+      android:scaleType="centerInside"
+      app:imageUrl="@{item.imageUrl}"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+      android:id="@+id/product_title"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_double"
+      android:layout_marginTop="@dimen/dot_quad"
+      android:layout_marginEnd="@dimen/dot_double"
+      android:ellipsize="end"
+      android:maxLines="3"
+      android:text="@{item.title}"
+      android:textAppearance="?textAppearanceHeadline5"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@+id/product_image"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:text="Smart Electronic Toothbrush E1 colgate connect mas super test sdfs tol" />
+
+    <TextView
+      android:id="@+id/product_points"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_double"
+      android:layout_marginEnd="@dimen/dot_double"
+      android:text="@{item.formatPoints(context)}"
+      android:textAppearance="?textAppearanceCaption"
+      android:textColor="?textColorAccentSecondary"
+      app:layout_constraintBottom_toTopOf="@+id/product_price"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@+id/product_image"
+      tools:text="1200 Points" />
+
+    <TextView
+      android:id="@+id/product_price"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_double"
+      android:layout_marginEnd="@dimen/dot_double"
+      android:layout_marginBottom="@dimen/dot_double"
+      android:text="@{item.textualPrice()}"
+      android:textAppearance="?textAppearanceSubtitle2"
+      app:layout_constraintBottom_toTopOf="@+id/product_quantity"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@+id/product_image"
+      tools:text="$120.95" />
+
+    <TextView
+      android:id="@+id/product_quantity"
+      android:layout_width="0dp"
+      android:layout_height="@dimen/dot_quin"
+      android:layout_marginStart="@dimen/dot_double"
+      android:layout_marginEnd="@dimen/dot_double"
+      android:layout_marginBottom="@dimen/dot"
+      android:background="@drawable/shape_rounded_stroke_silver"
+      android:gravity="center"
+      android:text="@{String.valueOf(item.quantity)}"
+      android:textAppearance="?textAppearanceHeadline5"
+      android:textColor="@color/selector_text_color_primary_disabled"
+      android:enabled="@{item.quantity > 0}"
+      app:layout_constraintBottom_toBottomOf="@id/product_image"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@id/product_image"
+      tools:text="3"
+      tools:textColor="#454343" />
+
+    <ImageView
+      android:id="@+id/product_decrease"
+      android:layout_width="@dimen/dot_six"
+      android:layout_height="0dp"
+      android:background="@drawable/ripple_rounded_left"
+      android:onClick="@{() -> interaction.onDecreaseQuantityClick(item.product)}"
+      android:padding="@dimen/dot"
+      android:src="@drawable/ic_shop_remove"
+      app:layout_constraintBottom_toBottomOf="@+id/product_quantity"
+      app:layout_constraintStart_toStartOf="@id/product_quantity"
+      app:layout_constraintTop_toBottomOf="@id/product_quantity"
+      app:layout_constraintTop_toTopOf="@id/product_quantity" />
+
+    <View
+      android:layout_width="1dp"
+      android:layout_height="0dp"
+      android:background="?colorBackgroundDark"
+      app:layout_constraintBottom_toBottomOf="@id/product_decrease"
+      app:layout_constraintStart_toEndOf="@id/product_decrease"
+      app:layout_constraintTop_toTopOf="@id/product_decrease" />
+
+    <ImageView
+      android:id="@+id/product_increase"
+      android:layout_width="@dimen/dot_six"
+      android:layout_height="0dp"
+      android:background="@drawable/ripple_rounded_right"
+      android:onClick="@{() -> interaction.onIncreaseQuantityClick(item.product)}"
+      android:padding="@dimen/dot"
+      android:src="@drawable/ic_shop_add"
+      app:layout_constraintBottom_toBottomOf="@+id/product_quantity"
+      app:layout_constraintEnd_toEndOf="@id/product_quantity"
+      app:layout_constraintTop_toBottomOf="@id/product_quantity"
+      app:layout_constraintTop_toTopOf="@id/product_quantity" />
+
+    <View
+      android:layout_width="1dp"
+      android:layout_height="0dp"
+      android:background="?colorBackgroundDark"
+      app:layout_constraintBottom_toBottomOf="@id/product_increase"
+      app:layout_constraintStart_toStartOf="@id/product_increase"
+      app:layout_constraintTop_toTopOf="@id/product_increase" />
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:layout_marginTop="@dimen/dot_trip"
+      android:background="@color/divider"
+      android:visibility="@{item.withBottomDivider ? View.VISIBLE : View.INVISIBLE}"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/product_image" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

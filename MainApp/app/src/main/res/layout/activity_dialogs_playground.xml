@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout>
+
+  <data>
+
+    <variable
+      name="viewModel"
+      type="com.kolibree.android.app.ui.settings.secret.dialogs.DialogsPlaygroundViewModel" />
+
+  </data>
+
+  <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="HardcodedText">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding="@dimen/dot_quad"
+      android:orientation="vertical"
+      android:clipToPadding="false">
+
+      <Button
+        android:id="@+id/alert_with_strings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="@{(v) -> viewModel.alertWithStrings()}"
+        android:text="Alert With Strings"/>
+
+      <Button
+        android:id="@+id/alert_with_string_ids"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="@{(v) -> viewModel.alertWithStringIds()}"
+        android:text="Alert With String IDs"/>
+
+      <Button
+        android:id="@+id/text_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="@{(v) -> viewModel.textInputDialog()}"
+        android:text="Text Input"/>
+
+      <Button
+        android:id="@+id/alert_with_feature_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="@{(v) -> viewModel.alertWithTintedFeatureImage()}"
+        android:text="Alert With Yellow Tinted Image"/>
+
+      <Button
+        android:id="@+id/alert_with_feature_image_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="@{(v) -> viewModel.alertWithFeatureImageId()}"
+        android:text="Alert With Feature Image ID"/>
+
+      <Button
+        android:id="@+id/alert_with_stylized_title_and_feature_image_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="@{(v) -> viewModel.alertWithStylizedHeadline()}"
+        android:text="Alert With Stylized Headline"/>
+
+      <Button
+        android:id="@+id/single_select_with_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="@{(v) -> viewModel.singleSelectWithButtons()}"
+        android:text="Single-select With Buttons"/>
+
+      <Button
+        android:id="@+id/single_select_without_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="@{(v) -> viewModel.singleSelectWithoutButtons()}"
+        android:text="Single-select Without Buttons"/>
+
+      <Button
+        android:id="@+id/multi_select_with_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="@{(v) -> viewModel.multiSelectWithStrings()}"
+        android:text="Multi-select With Strings"/>
+
+      <Button
+        android:id="@+id/duration_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="@{(v) -> viewModel.duration()}"
+        android:text="Duration dialog"/>
+
+      <Button
+        android:id="@+id/icon_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="@{(v) -> viewModel.alertWithIcon()}"
+        android:text="Icon dialog"/>
+
+      <Button
+        android:id="@+id/carousel_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="@{(v) -> viewModel.carousel()}"
+        android:text="Carousel dialog"
+        tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+  </ScrollView>
+</layout>
+

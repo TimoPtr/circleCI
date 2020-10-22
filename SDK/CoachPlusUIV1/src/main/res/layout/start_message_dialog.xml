@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:padding="@dimen/rounded_dialog_margin_big"
+  android:gravity="center"
+  android:orientation="vertical">
+
+  <TextView
+    android:textStyle="bold"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/rounded_dialog_margin_big"
+    android:text="@string/coach_dialog_start_message_title"
+    android:textColor="@android:color/black"
+    android:textSize="@dimen/xxxbig_text"/>
+
+  <TextView
+    android:id="@+id/start_message_body"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/rounded_dialog_margin_big"
+    android:gravity="center"
+    android:text="@string/coach_dialog_start_message_body"
+    android:textColor="@color/black"
+    android:textSize="@dimen/big_text"/>
+
+  <Button
+    android:id="@+id/start_message_button"
+    style="@style/PrimaryColorRoundButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/rounded_dialog_margin_big"
+    android:layout_marginBottom="@dimen/rounded_dialog_margin_big"
+    android:paddingLeft="@dimen/rounded_dialog_margin_normal"
+    android:paddingRight="@dimen/rounded_dialog_margin_normal"
+    android:minWidth="@dimen/read_dialog_ok_width"
+    android:text="@string/coach_manual_dialog_start_message_start"
+    android:textSize="@dimen/xnormal_text"/>
+
+</LinearLayout>

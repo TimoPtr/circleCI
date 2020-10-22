@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="UnusedResources">
+
+  <!--
+    # HUM color styleguide
+
+    Sync with https://app.zeplin.io/project/5e78c08a2066196c8ed17021/styleguide/colors?seid=5e81a877e4146f6f4bdd0331
+  -->
+
+  <color name="maroon">#7D0905</color>
+  <color name="fire_brick">#b92f2a</color>
+  <color name="valencia">#d94a44</color>
+  <color name="mandy">#e75650</color>
+  <color name="mandy10">#19e75650</color>
+  <color name="wewak">#f3aaa7</color>
+  <color name="yellow_orange">#ffb642</color>
+  <color name="yellow_orange10">#1affB642</color>
+  <color name="downy">#73ceca</color>
+  <color name="downy20">#3373ceca</color>
+  <color name="seafoam">#5fbfbb</color>
+  <color name="east_side">#a08bcb</color>
+  <color name="dark_blue">#337ec1</color>
+  <color name="havelock">#5398d5</color>
+  <color name="porcelain">#f4f5f6</color>
+  <color name="silver">#c8c8c8</color>
+  <color name="silver80">#c0c8c8c8</color>
+  <color name="gunsmoke">#818282</color>
+  <color name="emperor">#525252</color>
+  <color name="black87">#de000000</color>
+  <color name="black50">#80000000</color>
+  <color name="black25">#40000000</color>
+  <color name="white80">#ccffffff</color>
+  <color name="white60">#99ffffff</color>
+  <color name="white30">#50ffffff</color>
+  <color name="white10">#1Affffff</color>
+  <color name="shaft">#2f2f2f</color>
+
+  <color name="divider">#eeeeee</color>
+  <color name="pause_overlay">#B3000000</color>
+  <color name="translucent_system_bar">@color/black25</color>
+
+  <!-- Jaws -->
+  <color name="cleanZoneColor">@color/white</color>
+  <color name="neglectedZoneColor">@color/dark_blue</color>
+  <color name="darkBlue50">#80337EC1</color>
+  <color name="plaqueColor">#007EFF</color>
+
+  <!-- AVATAR COLORS-->
+  <color name="avatar_color_0">@color/fire_brick</color>
+  <color name="avatar_color_1">@color/downy</color>
+  <color name="avatar_color_2">@color/east_side</color>
+  <color name="avatar_color_3">@color/havelock</color>
+  <color name="avatar_color_4">@color/gunsmoke</color>
+
+</resources>

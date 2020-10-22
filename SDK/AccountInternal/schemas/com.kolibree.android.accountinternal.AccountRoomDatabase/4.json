@@ -1,0 +1,294 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 4,
+    "identityHash": "5e4f43560750c816e14de88bebb660ca",
+    "entities": [
+      {
+        "tableName": "profiles",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `picture` TEXT, `picture_last_modifier` TEXT, `first_name` TEXT NOT NULL, `points` INTEGER NOT NULL, `is_owner_profile` INTEGER NOT NULL, `address_country` TEXT, `gender` TEXT, `survey_handedness` TEXT, `account` INTEGER NOT NULL, `brushing_number` INTEGER NOT NULL, `brushing_goal_time` INTEGER NOT NULL, `coach_music` TEXT, `transition_sounds` INTEGER NOT NULL, `created_at` TEXT NOT NULL, `birthday` TEXT, `exact_birthday` INTEGER NOT NULL, `age` INTEGER NOT NULL, `needs_update` INTEGER NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "pictureUrl",
+            "columnName": "picture",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "pictureLastModifier",
+            "columnName": "picture_last_modifier",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "firstName",
+            "columnName": "first_name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "points",
+            "columnName": "points",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isOwnerProfile",
+            "columnName": "is_owner_profile",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "addressCountry",
+            "columnName": "address_country",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "gender",
+            "columnName": "gender",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "handedness",
+            "columnName": "survey_handedness",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "accountId",
+            "columnName": "account",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "brushingNumber",
+            "columnName": "brushing_number",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "brushingTime",
+            "columnName": "brushing_goal_time",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "coachMusic",
+            "columnName": "coach_music",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "transitionSounds",
+            "columnName": "transition_sounds",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "creationDate",
+            "columnName": "created_at",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "birthday",
+            "columnName": "birthday",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "exactBirthday",
+            "columnName": "exact_birthday",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "age",
+            "columnName": "age",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "needsUpdate",
+            "columnName": "needs_update",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "account",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER NOT NULL, `facebook_id` TEXT, `refresh_token` TEXT NOT NULL, `access_token` TEXT NOT NULL, `token_expires` TEXT NOT NULL, `email` TEXT, `owner_profile_id` INTEGER, `email_verified` INTEGER NOT NULL, `data_version` INTEGER, `current_profile_id` INTEGER, `allow_data_collecting` INTEGER NOT NULL, `weekly_digest_subscription` INTEGER NOT NULL, `pub_id` TEXT, `app_id` TEXT, `parental_consent` INTEGER, `beta` INTEGER NOT NULL, `phone_number` TEXT, `wc_openid` TEXT, `wc_unionid` TEXT, `wc_access_token` TEXT, `wc_refresh_token` TEXT, `wc_expires_in` INTEGER, `wc_scope` TEXT, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "facebookId",
+            "columnName": "facebook_id",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "refreshToken",
+            "columnName": "refresh_token",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "accessToken",
+            "columnName": "access_token",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "tokenExpires",
+            "columnName": "token_expires",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "email",
+            "columnName": "email",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "ownerProfileId",
+            "columnName": "owner_profile_id",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "emailVerified",
+            "columnName": "email_verified",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "dataVersion",
+            "columnName": "data_version",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "currentProfileId",
+            "columnName": "current_profile_id",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "allowDataCollecting",
+            "columnName": "allow_data_collecting",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "digestEnabled",
+            "columnName": "weekly_digest_subscription",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "pubId",
+            "columnName": "pub_id",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "appId",
+            "columnName": "app_id",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "parentalConsent",
+            "columnName": "parental_consent",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "beta",
+            "columnName": "beta",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "phoneNumber",
+            "columnName": "phone_number",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "wcOpenId",
+            "columnName": "wc_openid",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "wcUnionId",
+            "columnName": "wc_unionid",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "wcAccessToken",
+            "columnName": "wc_access_token",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "wcRefreshToken",
+            "columnName": "wc_refresh_token",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "wcExpiresIn",
+            "columnName": "wc_expires_in",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "wcScope",
+            "columnName": "wc_scope",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '5e4f43560750c816e14de88bebb660ca')"
+    ]
+  }
+}

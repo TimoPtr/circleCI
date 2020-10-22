@@ -1,0 +1,1198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="5" by="lint 4.0.0" client="gradle" variant="debug" version="4.0.0">
+
+    <issue
+        id="StringFormatInvalid"
+        message="Incorrect formatting string `dashboard_average_surface_hint`; missing conversion character in &apos;`% b`&apos; ?"
+        errorLine1="    &lt;string name=&quot;dashboard_average_surface_hint&quot;>&quot;Karies kan finnas överallt!"
+        errorLine2="    ^">
+        <location
+            file="src/main/res/values-sv/strings.xml"
+            line="427"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="StringFormatInvalid"
+        message="Incorrect formatting string `dashboard_average_surface_hint`; missing conversion character in &apos;`% g`&apos; ?"
+        errorLine1="    &lt;string name=&quot;dashboard_average_surface_hint&quot;>&quot;Karies kann überall entstehen!"
+        errorLine2="    ^">
+        <location
+            file="src/main/res/values-de/strings.xml"
+            line="427"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="StringFormatInvalid"
+        message="Incorrect formatting string `dashboard_average_surface_hint`; missing conversion character in &apos;`% g`&apos; ?"
+        errorLine1="    &lt;string name=&quot;dashboard_average_surface_hint&quot;>&quot;Tandbederf is overal te vinden!"
+        errorLine2="    ^">
+        <location
+            file="src/main/res/values-nl/strings.xml"
+            line="427"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="StringFormatInvalid"
+        message="Incorrect formatting string `dashboard_average_surface_hint`; missing conversion character in &apos;`% b`&apos; ?"
+        errorLine1="    &lt;string name=&quot;dashboard_average_surface_hint&quot;>&quot;Tooth decay can be found everywhere!"
+        errorLine2="    ^">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="432"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="StringFormatInvalid"
+        message="Incorrect formatting string `coach_pluse_game_description`; missing conversion character in &apos;`% s`&apos; ?"
+        errorLine1="    &lt;string name=&quot;coach_pluse_game_description&quot;>&quot;A brand-new 3D brushing experience that guarantees 100% surface coverage.&quot;&lt;/string>"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="659"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="StringFormatInvalid"
+        message="Incorrect formatting string `test_brushing_tip`; missing conversion character in &apos;`% a`&apos; ?"
+        errorLine1="    &lt;string name=&quot;test_brushing_tip&quot;>&quot;Visste du att de flesta vuxna bara borstar 40% av deras tänder?&quot;&lt;/string>"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values-sv/strings.xml"
+            line="744"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="StringFormatInvalid"
+        message="Incorrect formatting string `offline_brushing_notification_single_no_smiles_content`; missing conversion character in &apos;`% s`&apos; ?"
+        errorLine1="    &lt;string name=&quot;offline_brushing_notification_single_no_smiles_content&quot;>&quot;Reach at least 50% surface coverage&quot;&lt;/string>"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="1065"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="StringFormatInvalid"
+        message="Incorrect formatting string `offline_brushing_notification_multiple_no_smiles_content`; missing conversion character in &apos;`% c`&apos; ?"
+        errorLine1="    &lt;string name=&quot;offline_brushing_notification_multiple_no_smiles_content&quot;>&quot;Reach 50% coverage to win Smiles&quot;&lt;/string>"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="1069"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="Typos"
+        message="&quot;Ok&quot; is usually capitalized as &quot;OK&quot;"
+        errorLine1="    &lt;string name=&quot;kolibree_practitioners_accept&quot;>&quot;Ok&quot;&lt;/string>"
+        errorLine2="                                                  ^">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="686"
+            column="51"/>
+    </issue>
+
+    <issue
+        id="Typos"
+        message="&quot;in Folge&quot; is a common misspelling; did you mean &quot;infolge&quot; ?"
+        errorLine1="    &lt;string name=&quot;personal_challenge_streak_easy&quot;>&quot;Einmal am Tag bürsten für %1$s in Folge → %2$d lächelt&quot;&lt;/string>"
+        errorLine2="                                                                                  ^">
+        <location
+            file="src/main/res/values-de/strings.xml"
+            line="1107"
+            column="83"/>
+    </issue>
+
+    <issue
+        id="PluralsCandidate"
+        message="Formatting %d followed by words (&quot;offline&quot;): This should probably be a plural rather than a string"
+        errorLine1="    &lt;string name=&quot;popup_brushing_record_message_multiple&quot;>&quot;You just synced %d offline brushing sessions.&quot;&lt;/string>"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="384"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="PluralsCandidate"
+        message="Formatting %d followed by words (&quot;smiles&quot;): This should probably be a plural rather than a string"
+        errorLine1="    &lt;string name=&quot;personal_challenge_streak_easy&quot;>&quot;Brush once a day for %1$s in a row → %2$d smiles&quot;&lt;/string>"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="1113"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="PluralsCandidate"
+        message="Formatting %d followed by words (&quot;smiles&quot;): This should probably be a plural rather than a string"
+        errorLine1="    &lt;string name=&quot;personal_challenge_streak_hard&quot;>&quot;Brush twice a day for %1$s in a row → %2$d smiles&quot;&lt;/string>"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="1114"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="PluralsCandidate"
+        message="Formatting %d followed by words (&quot;smiles&quot;): This should probably be a plural rather than a string"
+        errorLine1="    &lt;string name=&quot;personal_challenge_coverage_easy&quot;>&quot;Do a brushing session with at least 80%% coverage once a day for %1$s → %2$d smiles&quot;&lt;/string>"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="1115"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="PluralsCandidate"
+        message="Formatting %d followed by words (&quot;smiles&quot;): This should probably be a plural rather than a string"
+        errorLine1="    &lt;string name=&quot;personal_challenge_coverage_hard&quot;>&quot;Do a brushing session with at least 80%% coverage twice a day for %1$s → %2$d smiles&quot;&lt;/string>"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="1116"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="PluralsCandidate"
+        message="Formatting %d followed by words (&quot;smiles&quot;): This should probably be a plural rather than a string"
+        errorLine1="    &lt;string name=&quot;personal_challenge_duration_easy&quot;>&quot;Brush for at least 2 minutes once a day for %1$s → %2$d smiles&quot;&lt;/string>"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="1117"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="PluralsCandidate"
+        message="Formatting %d followed by words (&quot;smiles&quot;): This should probably be a plural rather than a string"
+        errorLine1="    &lt;string name=&quot;personal_challenge_duration_hard&quot;>&quot;Brush for at least 2 minutes twice a day for %1$s → %2$d smiles&quot;&lt;/string>"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="1118"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="PluralsCandidate"
+        message="Formatting %d followed by words (&quot;smiles&quot;): This should probably be a plural rather than a string"
+        errorLine1="    &lt;string name=&quot;cart_smiles_amount_hint&quot;>&quot;%d smiles points (%s) available&quot;&lt;/string>"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="1239"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="PluralsCandidate"
+        message="Formatting %d followed by words (&quot;current&quot;): This should probably be a plural rather than a string"
+        errorLine1="    &lt;string name=&quot;profile_stats_card_current_points&quot;>&quot;%d current points&quot;&lt;/string>"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="1260"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="PluralsCandidate"
+        message="Formatting %d followed by words (&quot;Flash&quot;): This should probably be a plural rather than a string"
+        errorLine1="    &lt;string name=&quot;dsp_section_content&quot;>&quot;Firmware version: %1$s"
+        errorLine2="    ^">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="1396"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="StringFormatCount"
+        message="Inconsistent number of arguments in formatting string `firmware_upgrade_error`; found both 0 and 1"
+        errorLine1="    &lt;string name=&quot;firmware_upgrade_error&quot;>&quot;Firmware-Upgrade fehlgeschlagen:"
+        errorLine2="    ^">
+        <location
+            file="src/main/res/values-de/strings.xml"
+            line="181"
+            column="5"/>
+        <location
+            file="src/main/res/values-zh-rCN/strings.xml"
+            line="186"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="StringFormatCount"
+        message="Inconsistent number of arguments in formatting string `dashboard_average_surface_hint`; found both 0 and 1"
+        errorLine1="    &lt;string name=&quot;dashboard_average_surface_hint&quot;>&quot;Tooth decay can be found everywhere!"
+        errorLine2="    ^">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="432"
+            column="5"/>
+        <location
+            file="src/main/res/values-it/strings.xml"
+            line="423"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="StringFormatCount"
+        message="Inconsistent number of arguments in formatting string `coach_pluse_game_description`; found both 0 and 1"
+        errorLine1="    &lt;string name=&quot;coach_pluse_game_description&quot;>&quot;A brand-new 3D brushing experience that guarantees 100% surface coverage.&quot;&lt;/string>"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="659"
+            column="5"/>
+        <location
+            file="src/main/res/values-zh-rCN/strings.xml"
+            line="689"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="StringFormatCount"
+        message="Inconsistent number of arguments in formatting string `kolibree_pro_start_popup_message`; found both 0 and 1"
+        errorLine1="    &lt;string name=&quot;kolibree_pro_start_popup_message&quot;>&quot;Do you agree to share your brushing data with your dental professional %s so your professional can provide feedback on your brushing habits?&quot;&lt;/string>"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="661"
+            column="5"/>
+        <location
+            file="src/main/res/values-zh-rCN/strings.xml"
+            line="691"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="StringFormatCount"
+        message="Inconsistent number of arguments in formatting string `kolibree_pro_practitioners_revoke_title`; found both 0 and 1"
+        errorLine1="    &lt;string name=&quot;kolibree_pro_practitioners_revoke_title&quot;>&quot;Stop sharing data with %s?&quot;&lt;/string>"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="671"
+            column="5"/>
+        <location
+            file="src/main/res/values-zh-rCN/strings.xml"
+            line="702"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="StringFormatCount"
+        message="Inconsistent number of arguments in formatting string `kolibree_practitioners_popup_message`; found both 0 and 1"
+        errorLine1="    &lt;string name=&quot;kolibree_practitioners_popup_message&quot;>&quot;Do you agree to share your brushing data with your dental professional %1$s so your professional can provide feedback on your brushing habits?&quot;&lt;/string>"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="685"
+            column="5"/>
+        <location
+            file="src/main/res/values-zh-rCN/strings.xml"
+            line="716"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="StringFormatCount"
+        message="Inconsistent number of arguments in formatting string `test_brushing_tip`; found both 0 and 1"
+        errorLine1="    &lt;string name=&quot;test_brushing_tip&quot;>&quot;Did you know that most people only brush 40% of their teeth surface?&quot;&lt;/string>"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="749"
+            column="5"/>
+        <location
+            file="src/main/res/values-zh-rCN/strings.xml"
+            line="746"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="TypographyDashes"
+        message="Replace &quot;-&quot; with an &quot;en dash&quot; character (–, &amp;#8211;) ?"
+        errorLine1="    &lt;string name=&quot;kolibree_pro_practitioners_short&quot;>&quot;Here are the professionals who you can allow access to your brushing data. If your dental professional is not listed, please contact us 1-800-468-6502. Learn more.&quot;&lt;/string>"
+        errorLine2="                                                    ^">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="666"
+            column="53"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;reset_password_ko&quot;>&quot;Ops! Si è verificato un errore...&quot;&lt;/string>"
+        errorLine2="                                     ^">
+        <location
+            file="src/main/res/values-it/strings.xml"
+            line="53"
+            column="38"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;please_wait&quot;>&quot;Veuillez patienter...&quot;&lt;/string>"
+        errorLine2="                               ^">
+        <location
+            file="src/main/res/values-fr/strings.xml"
+            line="61"
+            column="32"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;please_wait&quot;>&quot;Even geduld...&quot;&lt;/string>"
+        errorLine2="                               ^">
+        <location
+            file="src/main/res/values-nl/strings.xml"
+            line="61"
+            column="32"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;toothbrush_firmware_update_progress_label&quot;>&quot;Installieren...&quot;&lt;/string>"
+        errorLine2="                                                             ^">
+        <location
+            file="src/main/res/values-de/strings.xml"
+            line="183"
+            column="62"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;toothbrush_firmware_update_progress_label&quot;>&quot;Bezig met installeren...&quot;&lt;/string>"
+        errorLine2="                                                             ^">
+        <location
+            file="src/main/res/values-nl/strings.xml"
+            line="183"
+            column="62"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;toothbrush_firmware_update_progress_label&quot;>&quot;Installerar ...&quot;&lt;/string>"
+        errorLine2="                                                             ^">
+        <location
+            file="src/main/res/values-sv/strings.xml"
+            line="183"
+            column="62"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;toothbrush_firmware_update_progress_label&quot;>&quot;Installazione...&quot;&lt;/string>"
+        errorLine2="                                                             ^">
+        <location
+            file="src/main/res/values-it/strings.xml"
+            line="184"
+            column="62"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;toothbrush_firmware_update_progress_label&quot;>&quot;Installing...&quot;&lt;/string>"
+        errorLine2="                                                             ^">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="184"
+            column="62"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;toothbrush_firmware_update_progress_label&quot;>&quot;Installation...&quot;&lt;/string>"
+        errorLine2="                                                             ^">
+        <location
+            file="src/main/res/values-fr/strings.xml"
+            line="185"
+            column="62"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;pop_up_connect_fail_title&quot;>&quot;Oh oh...&quot;&lt;/string>"
+        errorLine2="                                             ^">
+        <location
+            file="src/main/res/values-it/strings.xml"
+            line="192"
+            column="46"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;load_avatar_error&quot;>&quot;Oh, wie peinlich..."
+        errorLine2="                                     ^">
+        <location
+            file="src/main/res/values-de/strings.xml"
+            line="214"
+            column="38"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;load_avatar_error&quot;>&quot;Oj, det var pinsamt..."
+        errorLine2="                                     ^">
+        <location
+            file="src/main/res/values-sv/strings.xml"
+            line="214"
+            column="38"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;toothbrush_status_connecting&quot;>&quot;Conexión...&quot;&lt;/string>"
+        errorLine2="                                                ^">
+        <location
+            file="src/main/res/values-es/strings.xml"
+            line="219"
+            column="49"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;toothbrush_status_pairing&quot;>&quot;Sincronización...&quot;&lt;/string>"
+        errorLine2="                                             ^">
+        <location
+            file="src/main/res/values-es/strings.xml"
+            line="220"
+            column="46"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;toothbrush_status_connecting&quot;>&quot;Connessione...&quot;&lt;/string>"
+        errorLine2="                                                ^">
+        <location
+            file="src/main/res/values-it/strings.xml"
+            line="224"
+            column="49"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;toothbrush_status_connecting&quot;>&quot;Verbindung wird hergestellt...&quot;&lt;/string>"
+        errorLine2="                                                ^">
+        <location
+            file="src/main/res/values-de/strings.xml"
+            line="225"
+            column="49"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;toothbrush_status_pairing&quot;>&quot;Associazione...&quot;&lt;/string>"
+        errorLine2="                                             ^">
+        <location
+            file="src/main/res/values-it/strings.xml"
+            line="225"
+            column="46"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;toothbrush_status_connecting&quot;>&quot;Bezig met verbinden...&quot;&lt;/string>"
+        errorLine2="                                                ^">
+        <location
+            file="src/main/res/values-nl/strings.xml"
+            line="225"
+            column="49"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;toothbrush_status_connecting&quot;>&quot;Ansluter ...&quot;&lt;/string>"
+        errorLine2="                                                ^">
+        <location
+            file="src/main/res/values-sv/strings.xml"
+            line="225"
+            column="49"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;toothbrush_status_pairing&quot;>&quot;Kopplung...&quot;&lt;/string>"
+        errorLine2="                                             ^">
+        <location
+            file="src/main/res/values-de/strings.xml"
+            line="226"
+            column="46"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;toothbrush_status_pairing&quot;>&quot;Bezig met koppelen...&quot;&lt;/string>"
+        errorLine2="                                             ^">
+        <location
+            file="src/main/res/values-nl/strings.xml"
+            line="226"
+            column="46"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;toothbrush_status_pairing&quot;>&quot;Parar ihop ...&quot;&lt;/string>"
+        errorLine2="                                             ^">
+        <location
+            file="src/main/res/values-sv/strings.xml"
+            line="226"
+            column="46"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;toothbrush_status_connecting&quot;>&quot;Connexion...&quot;&lt;/string>"
+        errorLine2="                                                ^">
+        <location
+            file="src/main/res/values-fr/strings.xml"
+            line="227"
+            column="49"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;toothbrush_status_pairing&quot;>&quot;Pairing...&quot;&lt;/string>"
+        errorLine2="                                             ^">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="227"
+            column="46"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;toothbrush_status_pairing&quot;>&quot;Appairage...&quot;&lt;/string>"
+        errorLine2="                                             ^">
+        <location
+            file="src/main/res/values-fr/strings.xml"
+            line="228"
+            column="46"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;checkup_error_no_data_title&quot;>&quot;Ops, non abbiamo abbastanza dati...&quot;&lt;/string>"
+        errorLine2="                                               ^">
+        <location
+            file="src/main/res/values-it/strings.xml"
+            line="228"
+            column="48"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;setup_toothbrush_connecting&quot;>&quot;Conectando...&quot;&lt;/string>"
+        errorLine2="                                               ^">
+        <location
+            file="src/main/res/values-es/strings.xml"
+            line="294"
+            column="48"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;setup_searching&quot;>&quot;Buscando cepillo de dientes...&quot;&lt;/string>"
+        errorLine2="                                   ^">
+        <location
+            file="src/main/res/values-es/strings.xml"
+            line="300"
+            column="36"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;setup_toothbrush_searching&quot;>&quot;Ricerca..."
+        errorLine2="                                              ^">
+        <location
+            file="src/main/res/values-it/strings.xml"
+            line="303"
+            column="47"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;setup_toothbrush_connecting&quot;>&quot;Connessione...&quot;&lt;/string>"
+        errorLine2="                                               ^">
+        <location
+            file="src/main/res/values-it/strings.xml"
+            line="305"
+            column="48"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;setup_toothbrush_connecting&quot;>&quot;Verbindung wird hergestellt...&quot;&lt;/string>"
+        errorLine2="                                               ^">
+        <location
+            file="src/main/res/values-de/strings.xml"
+            line="306"
+            column="48"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;setup_toothbrush_searching&quot;>&quot;Recherche..."
+        errorLine2="                                              ^">
+        <location
+            file="src/main/res/values-fr/strings.xml"
+            line="306"
+            column="47"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;setup_toothbrush_connecting&quot;>&quot;Bezig met verbinden...&quot;&lt;/string>"
+        errorLine2="                                               ^">
+        <location
+            file="src/main/res/values-nl/strings.xml"
+            line="306"
+            column="48"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;setup_toothbrush_connecting&quot;>&quot;Ansluter ...&quot;&lt;/string>"
+        errorLine2="                                               ^">
+        <location
+            file="src/main/res/values-sv/strings.xml"
+            line="306"
+            column="48"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;setup_toothbrush_connecting&quot;>&quot;Connexion...&quot;&lt;/string>"
+        errorLine2="                                               ^">
+        <location
+            file="src/main/res/values-fr/strings.xml"
+            line="308"
+            column="48"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;setup_searching&quot;>&quot;Ricerca spazzolini...&quot;&lt;/string>"
+        errorLine2="                                   ^">
+        <location
+            file="src/main/res/values-it/strings.xml"
+            line="311"
+            column="36"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;setup_searching&quot;>&quot;Auf der Suche nach Zahnbürsten...&quot;&lt;/string>"
+        errorLine2="                                   ^">
+        <location
+            file="src/main/res/values-de/strings.xml"
+            line="313"
+            column="36"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;setup_searching&quot;>&quot;Bezig met zoeken naar tandenborstels...&quot;&lt;/string>"
+        errorLine2="                                   ^">
+        <location
+            file="src/main/res/values-nl/strings.xml"
+            line="313"
+            column="36"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;setup_searching&quot;>&quot;Letar efter tandborstar ...&quot;&lt;/string>"
+        errorLine2="                                   ^">
+        <location
+            file="src/main/res/values-sv/strings.xml"
+            line="313"
+            column="36"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;setup_searching&quot;>&quot;Recherche de brosses à dents...&quot;&lt;/string>"
+        errorLine2="                                   ^">
+        <location
+            file="src/main/res/values-fr/strings.xml"
+            line="314"
+            column="36"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;setup_toothbrush_searching&quot;>&quot;正在搜索...?%d %%&quot;&lt;/string>"
+        errorLine2="                                              ^">
+        <location
+            file="src/main/res/values-zh-rCN/strings.xml"
+            line="316"
+            column="47"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;setup_searching&quot;>&quot;Searching for toothbrushes...&quot;&lt;/string>"
+        errorLine2="                                   ^">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="316"
+            column="36"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;firmware_upgrade_downloading&quot;>&quot;Descargando...&quot;&lt;/string>"
+        errorLine2="                                                ^">
+        <location
+            file="src/main/res/values-es/strings.xml"
+            line="368"
+            column="49"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;firmware_upgrade_rebooting&quot;>&quot;Reiniciando...&quot;&lt;/string>"
+        errorLine2="                                              ^">
+        <location
+            file="src/main/res/values-es/strings.xml"
+            line="369"
+            column="47"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;firmware_upgrade_installing&quot;>&quot;Instalando...&quot;&lt;/string>"
+        errorLine2="                                               ^">
+        <location
+            file="src/main/res/values-es/strings.xml"
+            line="370"
+            column="48"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;firmware_upgrade_downloading&quot;>&quot;Download...&quot;&lt;/string>"
+        errorLine2="                                                ^">
+        <location
+            file="src/main/res/values-it/strings.xml"
+            line="382"
+            column="49"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;firmware_upgrade_rebooting&quot;>&quot;Riavvio...&quot;&lt;/string>"
+        errorLine2="                                              ^">
+        <location
+            file="src/main/res/values-it/strings.xml"
+            line="383"
+            column="47"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;firmware_upgrade_installing&quot;>&quot;Installazione...&quot;&lt;/string>"
+        errorLine2="                                               ^">
+        <location
+            file="src/main/res/values-it/strings.xml"
+            line="384"
+            column="48"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;firmware_upgrade_downloading&quot;>&quot;Téléchargement...&quot;&lt;/string>"
+        errorLine2="                                                ^">
+        <location
+            file="src/main/res/values-fr/strings.xml"
+            line="386"
+            column="49"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;firmware_upgrade_rebooting&quot;>&quot;Redémarrage...&quot;&lt;/string>"
+        errorLine2="                                              ^">
+        <location
+            file="src/main/res/values-fr/strings.xml"
+            line="387"
+            column="47"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;firmware_upgrade_downloading&quot;>&quot;Download...&quot;&lt;/string>"
+        errorLine2="                                                ^">
+        <location
+            file="src/main/res/values-de/strings.xml"
+            line="388"
+            column="49"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;firmware_upgrade_installing&quot;>&quot;Installation...&quot;&lt;/string>"
+        errorLine2="                                               ^">
+        <location
+            file="src/main/res/values-fr/strings.xml"
+            line="388"
+            column="48"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;firmware_upgrade_downloading&quot;>&quot;Bezig met downloaden...&quot;&lt;/string>"
+        errorLine2="                                                ^">
+        <location
+            file="src/main/res/values-nl/strings.xml"
+            line="388"
+            column="49"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;firmware_upgrade_downloading&quot;>&quot;Hämtar ...&quot;&lt;/string>"
+        errorLine2="                                                ^">
+        <location
+            file="src/main/res/values-sv/strings.xml"
+            line="388"
+            column="49"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;firmware_upgrade_rebooting&quot;>&quot;Neustart...&quot;&lt;/string>"
+        errorLine2="                                              ^">
+        <location
+            file="src/main/res/values-de/strings.xml"
+            line="389"
+            column="47"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;firmware_upgrade_rebooting&quot;>&quot;Bezig met opnieuw opstarten...&quot;&lt;/string>"
+        errorLine2="                                              ^">
+        <location
+            file="src/main/res/values-nl/strings.xml"
+            line="389"
+            column="47"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;firmware_upgrade_rebooting&quot;>&quot;Omstart ...&quot;&lt;/string>"
+        errorLine2="                                              ^">
+        <location
+            file="src/main/res/values-sv/strings.xml"
+            line="389"
+            column="47"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;firmware_upgrade_installing&quot;>&quot;Bezig met installeren...&quot;&lt;/string>"
+        errorLine2="                                               ^">
+        <location
+            file="src/main/res/values-nl/strings.xml"
+            line="390"
+            column="48"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;firmware_upgrade_installing&quot;>&quot;Installerar ...&quot;&lt;/string>"
+        errorLine2="                                               ^">
+        <location
+            file="src/main/res/values-sv/strings.xml"
+            line="390"
+            column="48"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;firmware_upgrade_downloading&quot;>&quot;Downloading...&quot;&lt;/string>"
+        errorLine2="                                                ^">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="391"
+            column="49"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;firmware_upgrade_rebooting&quot;>&quot;Rebooting...&quot;&lt;/string>"
+        errorLine2="                                              ^">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="392"
+            column="47"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;firmware_upgrade_installing&quot;>&quot;Installing...&quot;&lt;/string>"
+        errorLine2="                                               ^">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="393"
+            column="48"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;sign_up_profile_wait&quot;>&quot;Espere, por favor...&quot;&lt;/string>"
+        errorLine2="                                        ^">
+        <location
+            file="src/main/res/values-es/strings.xml"
+            line="430"
+            column="41"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;sign_up_profile_wait&quot;>&quot;Attendi...&quot;&lt;/string>"
+        errorLine2="                                        ^">
+        <location
+            file="src/main/res/values-it/strings.xml"
+            line="453"
+            column="41"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;sign_up_profile_wait&quot;>&quot;Even geduld...&quot;&lt;/string>"
+        errorLine2="                                        ^">
+        <location
+            file="src/main/res/values-nl/strings.xml"
+            line="457"
+            column="41"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;sign_up_profile_wait&quot;>&quot;Merci de patienter...&quot;&lt;/string>"
+        errorLine2="                                        ^">
+        <location
+            file="src/main/res/values-fr/strings.xml"
+            line="459"
+            column="41"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;connecting_dialog_title&quot;>&quot;Conectando...&quot;&lt;/string>"
+        errorLine2="                                           ^">
+        <location
+            file="src/main/res/values-es/strings.xml"
+            line="693"
+            column="44"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;m1_fake_dialog_configuring&quot;>&quot;Configuring...&quot;&lt;/string>"
+        errorLine2="                                              ^">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="712"
+            column="47"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;m1_fake_dialog_calibrating&quot;>&quot;Configuring...&quot;&lt;/string>"
+        errorLine2="                                              ^">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="713"
+            column="47"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;connecting_dialog_title&quot;>&quot;Connessione...&quot;&lt;/string>"
+        errorLine2="                                           ^">
+        <location
+            file="src/main/res/values-it/strings.xml"
+            line="720"
+            column="44"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;connecting_dialog_title&quot;>&quot;Bezig met verbinden...&quot;&lt;/string>"
+        errorLine2="                                           ^">
+        <location
+            file="src/main/res/values-nl/strings.xml"
+            line="725"
+            column="44"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;connecting_dialog_title&quot;>&quot;Ansluter ...&quot;&lt;/string>"
+        errorLine2="                                           ^">
+        <location
+            file="src/main/res/values-sv/strings.xml"
+            line="725"
+            column="44"/>
+    </issue>
+
+    <issue
+        id="TypographyEllipsis"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
+        errorLine1="    &lt;string name=&quot;connecting_dialog_title&quot;>&quot;连接中...&quot;&lt;/string>"
+        errorLine2="                                           ^">
+        <location
+            file="src/main/res/values-zh-rCN/strings.xml"
+            line="741"
+            column="44"/>
+    </issue>
+
+    <issue
+        id="ConvertToWebp"
+        message="One or more images in this project can be converted to the WebP format which typically results in smaller file sizes, even for lossless conversion (but launcher icons should use PNG).">
+        <location
+            file="src/main/res/drawable-xxxhdpi/activity_test_angles.png"/>
+    </issue>
+
+    <issue
+        id="IconDensities"
+        message="Missing the following drawables in `drawable-hdpi`: ic_ara_preview.png, ic_b1_preview.png, ic_done_rounded.png, ic_e1_preview.png, ic_e2_preview.png... (4 more)">
+        <location
+            file="src/main/res/drawable-hdpi"/>
+    </issue>
+
+    <issue
+        id="IconDensities"
+        message="Missing the following drawables in `drawable-mdpi`: activity_cp.png, coach_launch.png, ic_ara_preview.png, ic_b1_preview.png, ic_done_rounded.png... (7 more)">
+        <location
+            file="src/main/res/drawable-mdpi"/>
+    </issue>
+
+    <issue
+        id="IconDensities"
+        message="Missing the following drawables in `drawable-xhdpi`: ic_done_rounded.png, test_brushing_launch.png">
+        <location
+            file="src/main/res/drawable-xhdpi"/>
+    </issue>
+
+    <issue
+        id="IconDensities"
+        message="Missing the following drawables in `drawable-xxhdpi`: ic_ara_preview.png, ic_b1_preview.png, ic_e1_preview.png, ic_e2_preview.png, ic_m1_preview.png... (2 more)">
+        <location
+            file="src/main/res/drawable-xxhdpi"/>
+    </issue>
+
+    <issue
+        id="IconDuplicates"
+        message="The following unrelated icon files have identical contents: ic_b1_preview.png, ic_e2_preview.png">
+        <location
+            file="src/main/res/drawable-xhdpi/ic_e2_preview.png"/>
+        <location
+            file="src/main/res/drawable-xhdpi/ic_b1_preview.png"/>
+    </issue>
+
+    <issue
+        id="ButtonCase"
+        message="The standard Android way to capitalize Ok is &quot;OK&quot; (tip: use `@android:string/ok` instead)"
+        errorLine1="    &lt;string name=&quot;kolibree_practitioners_accept&quot;>&quot;Ok&quot;&lt;/string>"
+        errorLine2="                                                 ^">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="686"
+            column="50"/>
+    </issue>
+
+</issues>

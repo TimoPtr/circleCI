@@ -1,0 +1,52 @@
+/*
+ * Copyright (c) 2019 Kolibree. All rights reserved
+ *
+ * Copying this file via any medium without the prior written consent of Kolibree is strictly
+ * prohibited
+ *
+ * Proprietary and confidential
+ */
+
+apply plugin: 'com.android.library'
+
+apply from: '../buildscripts/kapt.gradle'
+
+android {
+
+    buildFeatures {
+        dataBinding = true
+    }
+
+    androidExtensions {
+        experimental = true
+    }
+}
+
+dependencies {
+    implementation project(path: ':features')
+    implementation project(path: ':commons')
+    implementation project(path: ':static-resources')
+    implementation project(path: ':static-resources-v1')
+    implementation project(path: ':base-ui')
+    implementation project(path: ':base-ui-v1')
+    implementation project(path: ':databinding')
+    implementation project(path: ':processed-brushings-kml')
+    implementation project(path: ':jaws')
+    implementation project(path: ':plaqless-ui-v1')
+
+    implementation libraries.supportConstraintLayout
+
+    implementation libraries.threetenAbp
+
+    implementation libraries.rxJava
+    implementation libraries.rxRelay
+
+    implementation libraries.dagger
+    kapt libraries.daggerCompiler
+
+    implementation libraries.timber
+
+    testImplementation project(path: ':testing-unit-base')
+    testImplementation libraries.junit
+    testImplementation libraries.mockitoKotlin2
+}

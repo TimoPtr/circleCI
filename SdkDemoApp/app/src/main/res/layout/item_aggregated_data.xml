@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:background="@android:color/holo_blue_light"
+  android:orientation="vertical"
+  android:padding="10dp">
+
+  <TextView
+    android:id="@+id/title_profile_id"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/profile_id"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+    android:id="@+id/profile_id"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintLeft_toRightOf="@id/title_profile_id"
+    app:layout_constraintTop_toTopOf="@id/title_profile_id" />
+
+  <TextView
+    android:id="@+id/title_creation_time"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/creation_time"
+    app:layout_constraintLeft_toLeftOf="@id/title_profile_id"
+    app:layout_constraintTop_toBottomOf="@id/title_profile_id" />
+
+  <TextView
+    android:id="@+id/creation_time"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintLeft_toRightOf="@id/title_creation_time"
+    app:layout_constraintTop_toTopOf="@id/title_creation_time" />
+
+
+  <TextView
+    android:id="@+id/title_duration"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/duration"
+    app:layout_constraintLeft_toLeftOf="@id/title_creation_time"
+    app:layout_constraintTop_toBottomOf="@id/title_creation_time" />
+
+  <TextView
+    android:id="@+id/duration"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintLeft_toRightOf="@id/title_duration"
+    app:layout_constraintTop_toTopOf="@id/title_duration" />
+
+
+  <TextView
+    android:id="@+id/title_average_surface"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/average_surface"
+    app:layout_constraintLeft_toLeftOf="@id/title_duration"
+    app:layout_constraintTop_toBottomOf="@id/title_duration" />
+
+  <TextView
+    android:id="@+id/average_surface"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintLeft_toRightOf="@id/title_average_surface"
+    app:layout_constraintTop_toTopOf="@id/title_average_surface" />
+
+  <TextView
+    android:id="@+id/title_average_checkup"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/average_checkup"
+    app:layout_constraintLeft_toLeftOf="@id/title_average_surface"
+    app:layout_constraintTop_toBottomOf="@id/title_average_surface" />
+
+  <TextView
+    android:id="@+id/average_checkup"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintLeft_toRightOf="@id/title_average_checkup"
+    app:layout_constraintTop_toTopOf="@id/title_average_checkup" />
+
+  <TextView
+    android:id="@+id/title_assigned_date"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/assigned_date"
+    app:layout_constraintLeft_toLeftOf="@id/title_average_checkup"
+    app:layout_constraintTop_toBottomOf="@id/title_average_checkup" />
+
+  <TextView
+    android:id="@+id/assigned_date"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintLeft_toRightOf="@id/title_assigned_date"
+    app:layout_constraintTop_toTopOf="@id/title_assigned_date" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

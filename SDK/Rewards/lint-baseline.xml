@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="5" by="lint 4.0.0" client="gradle" variant="debug" version="4.0.0">
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="interface RewardsFeedback {"
+        errorLine2="          ~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/kotlin/com/kolibree/android/rewards/feedback/RewardsFeedback.kt"
+            line="16"
+            column="11"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="interface ProfileSmilesRepository {"
+        errorLine2="          ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/kotlin/com/kolibree/android/rewards/persistence/RewardsRepository.kt"
+            line="15"
+            column="11"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="class FakeEvent("
+        errorLine2="      ~~~~~~~~~">
+        <location
+            file="src/main/kotlin/com/kolibree/android/rewards/models/SmilesHistoryEvent.kt"
+            line="321"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="object EmptyTier : Tier {"
+        errorLine2="       ~~~~~~~~~">
+        <location
+            file="src/main/kotlin/com/kolibree/android/rewards/models/Tier.kt"
+            line="48"
+            column="8"/>
+    </issue>
+
+</issues>

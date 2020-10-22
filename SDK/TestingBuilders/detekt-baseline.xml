@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <Blacklist></Blacklist>
+  <Whitelist>
+    <ID>ComplexCondition:ProcessedBrushingsCreator.kt$cleanPercent == null &amp;&amp; missedPercent == null &amp;&amp; plaqueLeftPercent == null &amp;&amp; plaqueAggregate == null</ID>
+  </Whitelist>
+</SmellBaseline>

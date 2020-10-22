@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<!--TODO("Use proper theme after https://kolibree.atlassian.net/browse/KLTB002-12293 is done")!-->
+<resources>
+  <color name="red">#d2010d</color>
+  <color name="lightgray">#d6d6d6</color>
+  <color name="darkgray">#595655</color>
+</resources>

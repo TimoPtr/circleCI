@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2019 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <data>
+
+    <variable
+      name="item"
+      type="com.kolibree.android.app.ui.settings.secret.fakebrushings.GameToServer" />
+  </data>
+
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="start"
+    android:padding="@dimen/dot_double"
+    android:text="@{item.toDisplayString()}"
+    android:textColor="@android:color/black"
+    android:textIsSelectable="false" />
+</layout>
+

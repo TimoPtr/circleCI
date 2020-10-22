@@ -1,0 +1,25 @@
+load 'jenkins/danger/utils.rb'
+
+lint_report_path = "/build/reports/lint-results-debug.xml"
+detekt_report_path = "/build/reports/detekt/detekt.xml"
+modified_modules = get_modified_modules(git.added_files + git.modified_files + git.deleted_files)
+
+# Unfortunately, we can't use the annotation : `**/lint-results-*.xml` to digest all the xml at once
+# because as we can see here : https://github.com/loadsmart/danger-android_lint/blob/master/lib/android_lint/plugin.rb ,
+# the 'android_lint' plugin take just one lint reports. Same thing for Detekt.
+modified_modules.each do |android_module|
+
+  lint_file = android_module + lint_report_path
+  if File.exist?(lint_file)
+    android_lint.skip_gradle_task = true
+    android_lint.report_file = android_module + lint_report_path
+    android_lint.lint(inline_mode: true)
+  end
+
+  detekt_file = android_module + detekt_report_path
+  if File.exist?(detekt_file)
+    kotlin_detekt.skip_gradle_task = true
+    kotlin_detekt.report_file = android_module + detekt_report_path
+    kotlin_detekt.detekt
+  end
+end

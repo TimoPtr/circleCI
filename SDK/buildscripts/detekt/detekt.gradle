@@ -1,0 +1,18 @@
+//assumes dependencies.gradle has been imported
+
+apply plugin: "io.gitlab.arturbosch.detekt"
+
+detekt {
+    version = versions.detekt
+
+    input = files("$projectDir/src/")
+    config = files("$detektRulePath/detekt-ruleset.yml")
+    reports {
+        xml.enabled = true
+        html.enabled = true
+    }
+    parallel = true
+    baseline = file("detekt-baseline.xml")
+}
+
+tasks.detekt.jvmTarget = "1.8"

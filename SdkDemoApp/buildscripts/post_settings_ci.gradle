@@ -1,0 +1,10 @@
+android {
+    defaultConfig {
+        //x86 and armeabi-v7a are the only ABIs currently supported by Unity.
+        //Other ABIs has to be filtered out, otherwise Unity will not be able
+        //to load its .so files and Pirate module will crash.
+        ndk {
+            abiFilters 'arm64-v8a', 'armeabi-v7a', 'x86', 'x86_64'
+        }
+    }
+}

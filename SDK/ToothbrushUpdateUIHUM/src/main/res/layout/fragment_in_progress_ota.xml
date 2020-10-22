@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout>
+
+  <data>
+
+    <import type="android.view.View" />
+
+    <variable
+      name="viewModel"
+      type="com.kolibree.android.app.ui.ota.inprogress.InProgressOtaViewModel" />
+
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.airbnb.lottie.LottieAnimationView
+      android:id="@+id/update_animation"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:visibility="@{viewModel.showResult ? View.INVISIBLE : View.VISIBLE}"
+      app:layout_constraintBottom_toTopOf="@id/title"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_chainStyle="packed"
+      app:lottie_autoPlay="true"
+      app:lottie_loop="true"
+      app:lottie_rawRes="@raw/circle_loading_animation_dark"
+      tools:ignore="ContentDescription" />
+
+    <ImageView
+      android:id="@+id/in_progress_result_icon"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="@dimen/match_constraints"
+      android:src="@{viewModel.resultIcon}"
+      android:visibility="invisible"
+      app:layout_constraintBottom_toBottomOf="@id/update_animation"
+      app:layout_constraintEnd_toEndOf="@id/update_animation"
+      app:layout_constraintStart_toStartOf="@id/update_animation"
+      app:layout_constraintTop_toTopOf="@id/update_animation"
+      app:visibilityAnim="@{viewModel.showResult}"
+      tools:ignore="ContentDescription" />
+
+    <TextView
+      android:id="@+id/title"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_quad"
+      android:layout_marginTop="@dimen/dot_quad"
+      android:layout_marginEnd="@dimen/dot_quad"
+      android:gravity="center"
+      android:text="@{viewModel.title}"
+      android:textAppearance="?textAppearanceHeadline4"
+      app:layout_constraintBottom_toTopOf="@id/content"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/update_animation" />
+
+    <TextView
+      android:id="@+id/content"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_quad"
+      android:layout_marginTop="@dimen/dot"
+      android:layout_marginEnd="@dimen/dot_quad"
+      android:gravity="center"
+      android:text="@{viewModel.content}"
+      android:textAppearance="?textAppearanceBody1"
+      app:layout_constraintBottom_toTopOf="@id/progress_bar"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/title" />
+
+    <ProgressBar
+      android:id="@+id/progress_bar"
+      style="?android:attr/progressBarStyleHorizontal"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/dot_quin"
+      android:indeterminate="false"
+      android:max="100"
+      android:progress="@{viewModel.progress}"
+      android:progressBackgroundTint="?backgroundColor"
+      android:progressTint="?colorSecondaryDark"
+      android:visibility="@{viewModel.isOtaFailed ? View.INVISIBLE : View.VISIBLE}"
+      app:layout_constraintBottom_toTopOf="@id/progress_text"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/content"
+      app:layout_constraintWidth_percent="0.5" />
+
+    <TextView
+      android:id="@+id/progress_text"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_quad"
+      android:layout_marginTop="@dimen/dot"
+      android:layout_marginEnd="@dimen/dot_quad"
+      android:gravity="center"
+      android:text="@{@string/in_progress_ota_progress(viewModel.progress)}"
+      android:textAppearance="?textAppearanceSubtitle2"
+      android:visibility="@{viewModel.isOtaFailed ? View.INVISIBLE : View.VISIBLE}"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/progress_bar" />
+
+    <Button
+      android:id="@+id/done_button"
+      style="?materialButtonStyle"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_quad"
+      android:layout_marginEnd="@dimen/dot_quad"
+      android:layout_marginBottom="@dimen/dot_quad"
+      android:onClick="@{v -> viewModel.onDoneClick()}"
+      android:text="@string/ota_done"
+      android:visibility="invisible"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:visibilityAnim="@{viewModel.showResult}" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+

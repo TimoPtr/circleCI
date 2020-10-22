@@ -1,0 +1,117 @@
+<!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<resources>
+  <string name="app_name" translatable="false">Glimmer Tweaker</string>
+  <string name="disconnect" translatable="false">Disconnect</string>
+  <string name="mode" translatable="false">Mode</string>
+  <string name="sequence" translatable="false">Sequence</string>
+<!--  <string name="pattern" translatable="false">Pattern</string>-->
+<!--  <string name="curve" translatable="false">Curve</string>-->
+
+  <string name="brushing_mode_regular">Clean Mode</string>
+  <string name="brushing_mode_slow">Gum Care Mode</string>
+  <string name="brushing_mode_strong">Whitening Mode</string>
+  <string name="brushing_mode_polishing">Polishing Mode</string>
+  <string name="brushing_mode_user_defined">Custom Mode</string>
+
+  <string name="brushing_mode_strength_option_one_level">One level</string>
+  <string name="brushing_mode_strength_option_three_levels">Three levels</string>
+  <string name="brushing_mode_strength_option_ten_levels">Ten levels</string>
+
+  <string name="brushing_mode_last_segment_strategy_use_system_default">Use system default</string>
+  <string name="brushing_mode_last_segment_strategy_end_after_last_segment">End after last segment</string>
+  <string name="brushing_mode_last_segment_strategy_keep_running_after_last_segment">Keep running after last segment</string>
+
+  <string name="brushing_mode_sequence_clean_mode">Clean Mode</string>
+  <string name="brushing_mode_sequence_whitening_mode">Whitening Mode</string>
+  <string name="brushing_mode_sequence_gum_care">Gum Care</string>
+  <string name="brushing_mode_sequence_polishing_mode">Polishing Mode</string>
+  <string name="brushing_mode_sequence_custom">Custom</string>
+  <string name="last_segment_strategy">Last segment strategy</string>
+  <string name="select_curve">Select curve:</string>
+  <string name="select_sequence">Select sequence:</string>
+  <string name="curve">Curve</string>
+  <string name="mode_led">Mode LEDs</string>
+  <string name="brushing_pattern">Pattern</string>
+  <string name="apply_custom_curve_settings">Apply custom curve settings</string>
+  <string name="reference_voltage_mv">Reference voltage (mV)</string>
+  <string name="fixed_divider">Fixed divider</string>
+  <string name="a_value_for_10_dc">A(X) value for 10% DC</string>
+  <string name="a_value_for_20_dc">A(X) value for 20% DC</string>
+  <string name="a_value_for_30_dc">A(X) value for 30% DC</string>
+  <string name="a_value_for_40_dc">A(X) value for 40% DC</string>
+  <string name="a_value_for_50_dc">A(X) value for 50% DC</string>
+  <string name="a_value_for_60_dc">A(X) value for 60% DC</string>
+  <string name="a_value_for_70_dc">A(X) value for 70% DC</string>
+  <string name="a_value_for_80_dc">A(X) value for 80% DC</string>
+  <string name="a_value_for_90_dc">A(X) value for 90% DC</string>
+  <string name="select_pattern">Select pattern:</string>
+  <string name="select_mode">Select mode:</string>
+  <string name="ref_minimal_duty">Reference minimal duty:</string>
+  <string name="pattern_motor_fs">Motor pattern frequency (Hz):</string>
+  <string name="duty_strength_1">"DC strength 1 (0.5% step):"</string>
+  <string name="duty_strength_10">"DC strength 10 (0.5% step):"</string>
+  <string name="oscillation_period">Oscillation period 10th of sec:</string>
+  <string name="apply_custom_brushing_pattern">Apply custom pattern settings</string>
+  <string name="pwm_change_period">PWM change period (Hundredth seconds)</string>
+  <string name="high_fs_pulse">High frequency pulse period (ms)</string>
+  <string name="initial_time_low_dc">Initial time in low DC (tenth of seconds)</string>
+  <string name="high_fs_pulses_count">High frequency pulses count</string>
+  <string name="duration_s">Duration (seconds):</string>
+  <string name="sequence_pattern_1">1st pattern</string>
+  <string name="sequence_pattern_2">2nd pattern</string>
+  <string name="sequence_pattern_3">3rd pattern</string>
+  <string name="sequence_pattern_4">4th pattern</string>
+  <string name="sequence_pattern_5">5th pattern</string>
+  <string name="sequence_pattern_6">6th pattern</string>
+  <string name="sequence_pattern_7">7th pattern</string>
+  <string name="sequence_pattern_8">8th pattern</string>
+  <string name="mode_segment_1">1st segment</string>
+  <string name="mode_segment_2">2nd segment</string>
+  <string name="mode_segment_3">3rd segment</string>
+  <string name="mode_segment_4">4th segment</string>
+  <string name="mode_segment_5">5th segment</string>
+  <string name="mode_segment_6">6th segment</string>
+  <string name="mode_segment_7">7th segment</string>
+  <string name="mode_segment_8">8th segment</string>
+  <string name="mode_segment_last">End segment</string>
+  <string name="pattern">Pattern:</string>
+  <string name="remove_last_pattern">Remove last pattern</string>
+  <string name="add_pattern">Add pattern</string>
+  <string name="apply_custom_sequence_settings">Apply custom sequence settings</string>
+  <string name="oscillating_mode">Oscillating mode:</string>
+  <string name="pattern_curve">Curve:</string>
+  <string name="strength_management_mode">Strength management mode:</string>
+  <string name="sequence_settings">Sequence:</string>
+  <string name="strength">Strength:</string>
+  <string name="remove_last_segment">Remove last segment</string>
+  <string name="add_segment">Add segment</string>
+  <string name="apply_custom_brushing_mode_settings">Apply custom brushing mode settings</string>
+  <string name="led_1_pwm">LED 1 PWM:</string>
+  <string name="led_2_pwm">LED 2 PWM:</string>
+  <string name="led_3_pwm">LED 3 PWM:</string>
+  <string name="led_4_pwm">LED 4 PWM:</string>
+  <string name="led_5_pwm">LED 5 PWM:</string>
+  <string name="duration_ms">Pattern duration (ms):</string>
+  <string name="play_mode_leds_pattern">Play Mode LEDs pattern</string>
+  <string name="mode_led_hint">Please note that the sum of the 5 LEDs PWM must not exceed 100</string>
+  <string name="led_signal">Smile LED</string>
+  <string name="play_led_signal">Play Smile LED</string>
+  <string name="play_led_signal_red">red:</string>
+  <string name="play_led_signal_green">green:</string>
+  <string name="play_led_signal_blue">blue:</string>
+  <string name="play_led_signal_pattern">LED pattern:</string>
+  <string name="play_led_signal_period_ms">Period duration (ms):</string>
+  <string name="special_led">Special LEDs</string>
+  <string name="special_led_hint">led:</string>
+  <string name="special_led_pwm">PWM:</string>
+  <string name="special_led_apply">Apply pwm</string>
+
+</resources>

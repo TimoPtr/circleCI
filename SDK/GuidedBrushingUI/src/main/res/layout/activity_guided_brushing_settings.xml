@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <data>
+
+    <variable
+      name="viewModel"
+      type="com.kolibree.android.guidedbrushing.settings.GuidedBrushingSettingsViewModel" />
+
+    <import type="android.view.View" />
+
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.MaterialToolbar
+      android:id="@+id/toolbar"
+      enableBackNavigation="@{true}"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:navigationIcon="@{@drawable/ic_back_arrow}"
+      app:title="@string/gb_settings_toolbar_title"
+      app:titleTextAppearance="?textAppearanceHeadline4" />
+
+    <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/match_constraints"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:visibility="gone">
+
+          <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dot_quad"
+            android:layout_marginTop="@dimen/dot_double"
+            android:layout_marginBottom="@dimen/dot_half"
+            android:text="@string/gb_settings_header1"
+            android:textAppearance="?textAppearanceOverline1"
+            android:textColor="?colorOnSecondary" />
+
+          <com.google.android.material.switchmaterial.SwitchMaterial
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="@{viewModel.isDisplayBrushingMovementOn}"
+            android:onCheckedChanged="@{(_, isOn) -> viewModel.onDisplayBrushingMovementClick(isOn)}"
+            android:paddingStart="@dimen/dot_quad"
+            android:paddingEnd="@dimen/dot_quad"
+            android:text="@string/gb_settings_brushing_movement"
+            android:textAppearance="?textAppearanceHeadline6"
+            android:textColor="?textColorAccentSecondary" />
+
+          <com.google.android.material.switchmaterial.SwitchMaterial
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="@{viewModel.isDisplayHelpTextsOn}"
+            android:onCheckedChanged="@{(_, isOn) -> viewModel.onDisplayHelpTextsClick(isOn)}"
+            android:paddingStart="@dimen/dot_quad"
+            android:paddingEnd="@dimen/dot_quad"
+            android:text="@string/gb_settings_help_texts"
+            android:textAppearance="?textAppearanceHeadline6"
+            android:textColor="?textColorAccentSecondary" />
+
+          <View
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/divider_thickness"
+            android:layout_marginTop="@dimen/dot_quad"
+            android:layout_marginBottom="@dimen/dot"
+            android:background="?dividerColor" />
+
+        </LinearLayout>
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="@dimen/dot_quad"
+          android:layout_marginTop="@dimen/dot_double"
+          android:layout_marginBottom="@dimen/dot_half"
+          android:text="@string/gb_settings_header2"
+          android:textAppearance="?textAppearanceOverline1"
+          android:textColor="?colorOnSecondary" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/dot_six"
+          android:checked="@{viewModel.isMusicOn}"
+          android:onCheckedChanged="@{(_, isOn) -> viewModel.onMusicClick(isOn)}"
+          android:paddingStart="@dimen/dot_quad"
+          android:paddingEnd="@dimen/dot_quad"
+          android:text="@string/gb_settings_music"
+          android:textAppearance="?textAppearanceHeadline6"
+          android:textColor="?textColorAccentSecondary" />
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="?selectableItemBackground"
+          android:onClick="@{() -> viewModel.onChooseMusicClick()}"
+          android:orientation="vertical">
+
+          <TextView
+            android:id="@+id/gb_settings_choose_music"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dot_six"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/dot_quad"
+            android:paddingEnd="@dimen/dot_quad"
+            android:text="@string/gb_settings_choose_music"
+            android:textAppearance="?textAppearanceHeadline6"
+            android:textColor="?textColorAccentSecondary"
+            android:visibility="@{viewModel.isMusicOn ? View.VISIBLE : View.GONE}" />
+
+          <TextView
+            android:id="@+id/gb_settings_music"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/dot_six"
+            android:paddingEnd="@dimen/dot_six"
+            android:textAppearance="?textAppearanceCaption"
+            android:visibility="@{viewModel.isMusicOn ? View.VISIBLE : View.GONE}"
+            app:musicUri="@{viewModel.musicUriSelected}" />
+        </LinearLayout>
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/dot_six"
+          android:checked="@{viewModel.isTransitionSoundsOn}"
+          android:onCheckedChanged="@{(_, isOn) -> viewModel.onTransitionSoundsClick(isOn)}"
+          android:paddingStart="@dimen/dot_quad"
+          android:paddingEnd="@dimen/dot_quad"
+          android:text="@string/gb_settings_transition_sound"
+          android:textAppearance="?textAppearanceHeadline6"
+          android:textColor="?textColorAccentSecondary" />
+
+      </LinearLayout>
+
+    </ScrollView>
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
+

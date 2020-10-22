@@ -1,0 +1,52 @@
+apply plugin: 'com.android.library'
+
+apply from: '../buildscripts/kapt.gradle'
+
+android {
+
+    defaultConfig {
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    buildFeatures {
+        dataBinding = true
+    }
+
+    androidExtensions {
+        experimental = true
+    }
+}
+
+dependencies {
+    implementation project(path: ':features')
+    implementation project(path: ':databinding')
+    implementation project(path: ':static-resources')
+    implementation project(path: ':static-resources-v1')
+    implementation project(path: ':base-ui')
+    implementation project(path: ':base-ui-v1')
+    implementation project(path: ':commons')
+    implementation project(path: ':tracker-domain')
+
+    implementation libraries.rxJava
+    implementation libraries.rxAndroid
+    implementation libraries.rxLint
+
+    implementation libraries.supportConstraintLayout
+
+    implementation libraries.dagger
+    kapt libraries.daggerCompiler
+    implementation libraries.daggerAndroid
+    kapt libraries.daggerAndroidProcessor
+
+    implementation libraries.threetenAbp
+
+    implementation libraries.viewPagerIndicator
+
+    implementation libraries.glide
+
+    implementation libraries.exoPlayerCore
+    implementation libraries.exoPlayerUI
+
+    testImplementation project(path: ':testing-unit-base')
+    testImplementation libraries.mockitoKotlin2
+}

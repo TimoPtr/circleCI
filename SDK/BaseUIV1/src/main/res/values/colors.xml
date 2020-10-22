@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2019 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<resources>
+  <color name="progress_bar_clean_score_dark">#00C459</color>
+  <color name="progress_bar_clean_score_light">#90E2AE</color>
+  <color name="tb_not_connected">#d2010d</color>
+  <color name="tb_connection_in_progress">#FF9800</color>
+
+  <!-- Kolibree style colors -->
+  <color name="home_card_title_color">#b7b7b7</color>
+</resources>

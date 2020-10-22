@@ -1,0 +1,81 @@
+apply plugin: 'com.android.library'
+
+apply from: '../buildscripts/kapt.gradle'
+
+android {
+    // Everything has to be kept in this module so we disable Proguard
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+
+        debug {
+            minifyEnabled false
+        }
+    }
+
+    /**
+     * FailEarly should die only in debug.
+     * Specified explicitly to avoid unexpected
+     * issues with fallback.
+     */
+    sourceSets {
+        debug.java.srcDirs += "src/debug/kotlin"
+        debug.java.srcDirs += "src/sharedDebuggable/kotlin"
+
+        release.java.srcDirs += "src/release/kotlin"
+        release.java.srcDirs += "src/sharedRelease/kotlin"
+    }
+}
+
+dependencies {
+    implementation project(path: ':features')
+    api project(path: ':auditor')
+    api project(path: ':common-models')
+
+    implementation libraries.kotlinRuntime
+
+    api libraries.supportAnnotations
+
+    api libraries.timber
+
+    implementation libraries.gson
+
+    implementation libraries.threetenAbp
+
+    implementation libraries.dagger
+    kapt libraries.daggerCompiler
+
+    implementation libraries.rxJava
+    implementation libraries.rxRelay
+    implementation libraries.rxLint
+    implementation libraries.rxAndroid
+
+    implementation libraries.workRuntime
+    implementation libraries.workRuntimeKtx
+    implementation libraries.workRxJava2
+    androidTestImplementation libraries.workTesting
+
+    implementation libraries.roomRuntime
+    implementation libraries.lifecycleJava8
+    implementation libraries.lifecycleExtensions
+
+    implementation libraries.leakCanaryWatcher
+
+    // Unit tests
+    testImplementation project(path: ':testing-unit-base')
+    testImplementation libraries.junit
+    testImplementation libraries.mockitoInline
+    testImplementation libraries.mockitoKotlin2
+    testImplementation libraries.rxJava
+    testImplementation libraries.rxRelay
+    testImplementation libraries.rxLint
+    testImplementation libraries.fullThreetenBp
+    testImplementation project(path: ':testing-unit-base')
+
+    androidTestImplementation project(path: ":testing-builders")
+    androidTestImplementation libraries.supportTestCore
+    androidTestImplementation libraries.supportTestRunner
+    androidTestImplementation libraries.supportTestRules
+    androidTestImplementation libraries.threetenAbp
+}

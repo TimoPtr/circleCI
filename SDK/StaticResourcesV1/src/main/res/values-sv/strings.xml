@@ -1,0 +1,1137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ok">"OK"</string>
+
+    <!-- Home menu -->
+    <string name="action_account_settings">"Konto"</string>
+    <string name="action_users_settings">"Profiler"</string>
+    <string name="action_go_to_slideshow">"Ta en tur"</string>
+    <string name="action_about">"Om"</string>
+    <string name="action_logout">"Logga ut"</string>
+    <string name="action_spread_the_word">"Sprid ordet"</string>
+    <string name="action_help">"Hjälpcenter"</string>
+    <string name="action_change_profile">"Ändra profil"</string>
+    <string name="action_edit_profile">"Redigera profil"</string>
+
+    <!-- LOGIN AND REGISTRATION -->
+    <string name="login">"Logga in"</string>
+    <string name="connect_">"Anslut   &gt;"</string>
+    <string name="male">"Man"</string>
+    <string name="female">"Kvinna"</string>
+    <string name="signup">"Bli medlem"</string>
+    <string name="create_profile">"Skapa profil"</string>
+    <string name="edit_profile">"Redigera profil"</string>
+    <string name="email_hint">"E-post"</string>
+    <string name="password_hint">"Lösenord"</string>
+    <string name="password_confirm_hint">"Bekräfta lösenord"</string>
+    <string name="firstname_hint">"Förnamn"</string>
+    <string name="lastname_hint">"Efternamn"</string>
+    <string name="birthday_hint">"Din födelsedag"</string>
+    <string name="create">"Skapa &gt;"</string>
+    <string name="btn_next">"Nästa &gt;"</string>
+    <string name="choose_picture_hint">"Ange profilbild"</string>
+    <string name="choose_picture_gallery">"Välj ett foto"</string>
+    <string name="choose_picture_take">"Ta ett foto"</string>
+    <string name="gender_hint">"Ditt kön"</string>
+    <string name="handedness_hint">"Vilken hand använder du för att borsta tänderna?"</string>
+    <string name="country_hint">"Var bor du?"</string>
+    <string name="forgotten_password">"Glömt ditt lösenord?"</string>
+    <string name="email_missing">"E-postadress saknas"</string>
+    <string name="email_invalid">"E-postadress är ogiltig"</string>
+    <string name="firstname_missing">"Förnamn saknas"</string>
+    <string name="lastname_missing">"Efternamn saknas"</string>
+    <string name="birthday_missing">"Fel ålder"</string>
+    <string name="picture_missing">"Välj en bild"</string>
+    <string name="gender_missing">"Kön är odefinierat"</string>
+    <string name="handedness_missing">"Handinställning saknas"</string>
+    <string name="country_missing">"Land är odefinierat"</string>
+    <string name="password_missing">"Lösenord saknas"</string>
+    <string name="password_confirmation_missing">"Lösenordsbekräftelse saknas"</string>
+    <string name="passwords_dont_match">"Oj, lösenorden matchar inte."</string>
+    <string name="reset_password">"Återställ lösenord"</string>
+    <string name="reset_password_ok">"Kontrollera din inkorg och följ instruktionerna för att återställa lösenordet."</string>
+    <string name="reset_password_ko">"Det uppstod ett fel när du återställde ditt lösenord."</string>
+    <string name="terms_of_use_terms">"Användarvillkor"</string>
+    <string name="terms_of_use_policy">"Sekretesspolicy"</string>
+    <string name="account_created_title">"Hurra!"</string>
+    <string name="account_created_message">"Ditt konto har skapats.
+Nu är du redo att borsta tänderna!"</string>
+    <string name="facebook_login">"Logga in med Facebook"</string>
+    <string name="facebook_signup">"Registrera dig med Facebook"</string>
+    <string name="please_wait">"Vänta …"</string>
+    <string name="choose_picture_local">"Välj från Colgate Connect"</string>
+    <string name="terms_of_use">"Jag godkänner "<![CDATA[<u><a href=\"%1$s\">%2$s</a></u>]]>" och jag erkänner "<![CDATA[<u><a href=\"%3$s\">%4$s</a></u>]]>"."</string>
+
+    <!-- ACCOUNT ACTIVITY -->
+    <string name="account">"Konto"</string>
+    <string name="change_password">"Ändra lösenord"</string>
+    <string name="new_password">"Nytt lösenord"</string>
+    <string name="old_password">"Gammalt lösenord"</string>
+    <string name="confirm_new_pasword">"Bekräfta nytt lösenord"</string>
+    <string name="help_title">"Hjälp oss"</string>
+    <string name="help_message">"Hjälp oss att förbättra noggrannheten hos rörelsesensorerna genom att anonymt skicka oss dina tandborstningsdata.
+(Du kan ändra dina inställningar när som helst i appens inställningar)"</string>
+    <string name="old_password_missing">"Gammalt lösenord saknas"</string>
+    <string name="new_password_missing">"Nytt lösenord saknas"</string>
+    <string name="new_password_confirm_missing">"Bekräftelse för nytt lösenord saknas"</string>
+    <string name="password_updated">"Ditt lösenord har uppdaterats"</string>
+    <string name="password_updated_title">"Succé"</string>
+    <string name="musicchoosertitle">"Välj musik för coachen"</string>
+
+    <!-- EDIT PROFILE ACTIVITY -->
+    <string name="personal_info">"Personuppgifter"</string>
+    <string name="brushing_settings">"Tandborstinställningar"</string>
+    <string name="right_handed">"Högerhänt"</string>
+    <string name="left_handed">"Vänsterhänt"</string>
+    <string name="coach_brushing_time">"Tandborstningstid"</string>
+    <string name="coach_brushing_time_duration">"Tidsinställning för tandborstning %1$s"</string>
+    <string name="coach_sound_value">"Musik under tandborstningen med coachen: %1$s"</string>
+    <string name="none">"ingen"</string>
+    <string name="music">"Musik"</string>
+    <string name="sounds">"Ljud"</string>
+    <string name="no_music_file">"Ingen fil vald"</string>
+    <string name="transition_sounds">"Övergångsljud"</string>
+    <string name="no_artist">"Ingen artist"</string>
+    <string name="no_title">"Ingen titel"</string>
+    <string name="brushing_time_hint">"Tandborstningstid"</string>
+    <string name="profiles">"Profiler"</string>
+    <string name="delete_profile_title">"Ta bort profil"</string>
+    <string name="delete_profile_message">"Vill du verkligen ta bort denna profil?"</string>
+
+    <!-- ADD PROFILE ACTIVITY -->
+    <string name="add_profile">"Lägg till en ny profil"</string>
+
+    <!-- Leaderboard -->
+    <string name="leaderboard">"Rankning"</string>
+
+    <!-- About -->
+    <string name="kolibree_version">"Version %1$s (%2$s)
+Konto %3$s"</string>
+    <string name="kolibree_about">"Vi tror att tekniken kan bidra till att förhindra tandsjukdomar och hål och vi vill förverkliga denna tro."</string>
+    <string name="about_terms">"Användarvillkor och sekretesspolicy"</string>
+    <string name="about">"Om"</string>
+    <string name="kolibree_rights">"Colgate Connect, Colgate Connect-logotypen och alla varumärken som tillhör Colgate Connect är Colgate Connects egendom.
+Alla rättigheter förbehålles."</string>
+
+    <!-- Checkup -->
+    <string name="get_tb">"Köp en i butiken!"</string>
+
+    <!-- Checkup -->
+    <string name="checkup">"Tandundersökning"</string>
+    <string name="neglected_areas">"Försummade områden"</string>
+    <string name="well_brushed_areas">"Välborstade områden"</string>
+    <string name="refresh">"Uppdatera"</string>
+    <string name="checkup_duration">"Tidsperiod"</string>
+    <string name="checkup_not_connected">"Inga data finns för denna borstning."</string>
+    <string name="checkup_empty">"Anslut min tandborste nu"</string>
+    <string name="connect_tb_hint">"Borsta tänderna med din Colgate Connect tandborste för att se de områden du kanske har missat."</string>
+
+    <!-- Options Menu -->
+    <string name="menu_connect">"Anslut en enhet"</string>
+
+    <!-- SetupToothbrushActivity -->
+    <string name="none_paired">"Inga enheter har parats ihop"</string>
+    <string name="none_found">"Inga enheter hittades"</string>
+
+    <!-- ConnectDeviceDialogActivity -->
+    <string name="toothbrushes">"Tandborstar"</string>
+    <string name="none_connected">"Ingen enhet är ansluten"</string>
+    <string name="select_a_device">"Tillgängliga enheter"</string>
+    <string name="connect">"Anslut"</string>
+    <string name="restart">"Starta om"</string>
+    <string name="quit">"Avsluta"</string>
+    <string name="pause">"Paus"</string>
+    <string name="next">"Nästa"</string>
+    <string name="cancel">"Avbryt"</string>
+    <string name="notnow">"Inte nu"</string>
+    <string name="information">"Information"</string>
+    <string name="error">"Fel"</string>
+
+    <!-- SwitchGame Coach Fragment -->
+    <string name="no_tb_connected">"Tandborsten inte ansluten"</string>
+    <string name="description_no_tb_connected_pirate">"Anslut din tandborste för att börja borsta tänderna med Go Pirate!"</string>
+    <string name="description_no_tb_connected_coach">"Vill du borsta tänderna utan din Colgate Connect tandborste?"</string>
+
+    <!-- Coach Game Fragment -->
+    <string name="resume">"Återuppta"</string>
+    <string name="coach_something_wrong">"Något gick fel. Försök igen senare."</string>
+
+    <!-- Coach Game Fragment -->
+    <string name="points">"Poäng"</string>
+
+    <!-- Settings ToothBrush Fragment -->
+    <string name="user_mode_title">"Tandborstens användare"</string>
+
+    <!-- Settings ToothBrush Fragment -->
+    <string name="toothbrush_information">"Tandborstens information"</string>
+    <string name="title_toothbrush">"Tandborstens ID"</string>
+    <string name="battery_level">"Batterinivå"</string>
+    <string name="find_toothbrush">"Identifiera tandborste"</string>
+    <string name="blink_toothbrush">"Gör att din tandborste blinkar"</string>
+    <string name="toothbrush_blinking">"Blinkar"</string>
+    <string name="ota_toothbrush_title">"Firmwareversion"</string>
+    <string name="hardware_version_title">"Hårdvaruversion"</string>
+    <string name="software_version_title">"Firmwareversion"</string>
+    <string name="user_mode_not_known">"Ange användare"</string>
+    <string name="settings_shared_toothbrush">"Delad tandborste"</string>
+    <string name="toothbrush_owner_everyone">"Alla"</string>
+    <string name="toothbrush_firmware_update_available">"Uppdatera din tandborste"</string>
+    <string name="toothbrush_firmware_update_title">"Uppdatera din tandborste"</string>
+    <string name="toothbrush_firmware_update_button">"Uppdatera"</string>
+    <string name="firmware_upgrade_error">"Firmwareuppdatering misslyckades:
+%s"</string>
+    <string name="toothbrush_firmware_update_progress_label">"Installerar ..."</string>
+    <string name="toothbrush_firmware_update_rebooting_label">"Omstart"</string>
+    <string name="toothbrush_firmware_update_success">"Din Colgate Connect tandborste har uppgraderats!"</string>
+
+    <!-- Settings Pairing Fragment -->
+    <string name="pairing_kolibree_1">"Tryck och håll in knappen på din tandborste tills LED-lampan blinkar blått för att göra den synlig."</string>
+    <string name="pairing_kolibree_2">"Om en pop-up uppmanar dig att para ihop din tandborste, ange PIN-koden:"</string>
+    <string name="pairing_kolibree_4">"0000"</string>
+    <string name="pop_up_connect_fail_title">"Hoppsan!"</string>
+    <string name="pop_up_connect_fail_msg">"Anslutningen mellan din tandborste och enhet lyckades inte. Kontrollera att tandborsten är på och försök igen."</string>
+
+    <!-- Switch Game Fragment -->
+    <string name="coach_game_name">"Coach"</string>
+    <string name="pirate_game_name">"GoPirate"</string>
+    <string name="coach_plus_game_name">"Coach Plus"</string>
+    <string name="sba_game_name">@string/test_brushing_screen_title</string>
+    <string name="rabbids_game_name">"Rabbids"</string>
+    <string name="offline_game_name">"Offline-borstning"</string>
+    <string name="coach_game_description">"Coachen hjälper dig att behärska tandborstningen genom att visa dig exakt var du ska borsta. Övning ger färdighet!"</string>
+    <string name="pirate_game_description">"Tandborstningen blir ett spel: ta tag i delarna som du hittar längs vägen medan du borstar."</string>
+    <string name="activities_warning">"Nya tandborstningsdata kommer att tilldelas den valda profilen ovan."</string>
+    <string name="transition_game">"transition_game"</string>
+    <string name="game_brush_not_allow_title">"Hoppsan"</string>
+    <string name="game_brush_not_allow_msg">"Tandborstning mer än tre gånger om dagen kan skada tandköttet."</string>
+    <string name="upper_arch">"Över-
+käken"</string>
+    <string name="lower_arch">"Under-
+käken"</string>
+    <string name="delete_profile">"Ta bort"</string>
+    <string name="logout_title">"Logga ut"</string>
+    <string name="logout_message">"Vill du verkligen logga ut?"</string>
+    <string name="load_avatar_error">"Oj, det var pinsamt...
+Kontrollera din nätverksanslutning för att ladda avatar-bilder."</string>
+
+    <!-- Connection Lost Dialog -->
+    <string name="lost_connection_dialog_title">"SOS!"</string>
+    <string name="lost_connection_dialog_msg">"Din tandborste hittades inte. Anslut den igen för att slutföra konfigurationen."</string>
+    <string name="send">"Skicka"</string>
+    <string name="points_pts">"+%d pts"</string>
+    <string name="account_settings_help">"Hjälp oss att förbättra noggrannheten hos rörelsesensorerna genom att anonymt skicka oss dina tandborstningsdata."</string>
+    <string name="account_settings_digest">"Få en fullständig tandborstningsrapport varje vecka, samt den viktigaste informationen om din munhygien."</string>
+    <string name="account_settings_digest_title">"Veckovis sammanfattning"</string>
+    <string name="toothbrush_status_connecting">"Ansluter ..."</string>
+    <string name="toothbrush_status_pairing">"Parar ihop ..."</string>
+    <string name="checkup_hint_1">"För att se din tandvårdsundersökning, borsta tänderna med en av app-aktiviteterna."</string>
+    <string name="checkup_hint_2">"Denna tandvårdsundersökning tar bara hänsyn till din borstning medan du använder appen."</string>
+    <string name="checkup_error_no_data_title">"Oj, vi har inte tillräckligt med data."</string>
+    <string name="checkup_error_no_data_hint">"För att se din tandvårdsundersökning, borsta tänderna med en av app-aktiviteterna."</string>
+    <string name="checkup_error_no_internet_title">"Oj, du är inte ansluten till internet."</string>
+    <string name="checkup_error_no_internet_hint">"Anslut till internet för att uppdatera dina tandborstningsdata."</string>
+    <string name="um_welcome_title">"Hej %s!"</string>
+    <string name="um_warning_title">"Var försiktig"</string>
+    <string name="um_yes">"Ja"</string>
+    <string name="um_no">"Nej"</string>
+    <string name="um_cancel">"Avbryt"</string>
+    <string name="um_edit">"Ändra"</string>
+    <string name="um_next">"Nästa"</string>
+    <string name="um_great">"Utmärkt"</string>
+    <string name="um_understood">"Jag förstår"</string>
+    <string name="um_already_associated">"Denna tandborste är redan kopplad till en person."</string>
+    <string name="um_already_associated_known">"Denna tandborste är redan kopplad till %s."</string>
+    <string name="um_already_associated2_known">"Vill du länka denna tandborste direkt till %ss profil?"</string>
+    <string name="um_already_associated2">"Vill du ändra inställningarna och koppla denna tandborste till en annan person?"</string>
+    <string name="um_already_associated2_self">"Vill du ändra inställningarna och koppla denna tandborste till din profil?"</string>
+    <string name="um_warning_message">"Inställningarna på din tandborste kommer att ändras så att du kan använda den på alla profiler.
+
+Borstning utan att använda appen sparas inte längre."</string>
+    <string name="um_warning_hint">"Du kan ändra detta delningsläge vid en senare tidpunkt i inställningarna för var och en av dina tandborstar."</string>
+    <string name="um_pairing_warning_hint">"Den tidigare anslutningen kommer att förloras."</string>
+    <string name="um_pairing_um_users_title_one">"En ny tandborste har upptäckts!
+Vem använder den?"</string>
+    <string name="um_pairing_um_users_title_several">"Vem kommer att använda den här tandborsten?"</string>
+    <string name="um_pairing_um_users_entry">"Bara %s"</string>
+    <string name="um_pairing_um_users_entry_several">"Delad tandborste"</string>
+    <string name="um_shared_tb">"Delad tandborste"</string>
+    <string name="um_shared_tb_hint">"Andra kontoanvändare kan använda denna borste om de byter borsthuvudet. Välj helt enkelt den nya användaren innan du borstar tänderna."</string>
+    <string name="um_dont_forget">"Glöm inte!"</string>
+    <string name="um_dont_forget_hint">"Om du borstar tänderna utan att använda appen sparas inte dina borstdata."</string>
+    <string name="um_new_tb_associated">"En ny tandborste har upptäckts och lagts till i din profil."</string>
+    <string name="um_warning_message_plural">"Inställningarna på dina tandborstar kommer att ändras så att du kan använda dem på alla profiler.
+
+Borstning utan att använda appen sparas inte längre."</string>
+    <string name="um_pairing_um_pairing_confirmation_1">"Du kan använda tandborsten med eller utan Colgate Connect-appen."</string>
+    <string name="um_pairing_um_pairing_confirmation_2">"Din tandborste lagrar automatiskt dina tandborstningsdata, men kom ihåg att synkronisera den med Colgate Connect-appen minst en gång i veckan för att hålla den uppdaterad."</string>
+    <string name="um_welcome_hint">"Vill du lägga till en ny Colgate Connect-tandborste på din profil?"</string>
+
+    <!-- Notifications -->
+    <string name="tb_sync.notification.standard.2">"Kom ihåg att synkronisera din borstning för att maximera din Colgate Connect-upplevelse!"</string>
+    <string name="tb_sync.notification.standard.6">"Synkronisera din tandborste för att spara dina användardata även om du har borstat utan att öppna Colgate Connect-appen."</string>
+    <string name="tb_sync.notification.standard.7">"Vill du veta om du har borstat bra de senaste dagarna? Synkronisera din borstning med Colgate Connect-appen."</string>
+    <string name="tb_sync.notification.standard.8">"Kom ihåg att synkronisera din borstning från tid till annan så att Colgate Connect kan analysera din tandhälsa."</string>
+    <string name="tb_sync.notification.standard.1">"Tryck för att synkronisera din borstning."</string>
+    <string name="tb_sync.notification.standard.3">"Vill du veta mer om tandhälsa? Tryck för att synkronisera din borstning."</string>
+    <string name="tb_sync.notification.standard.4">"Är du nära din tandborste? Tryck för att synkronisera din borstning!"</string>
+    <string name="tb_sync.notification.standard.5">"Tryck för att synkronisera din borstning och uppdatera din tandrapport."</string>
+    <string name="tb_sync.notification.standard.9">"Synkronisera din borstning nu för att se dina framsteg."</string>
+    <string name="tb_sync.notification.standard.10">"Hur effektiv var din senaste borstning? Synkronisera för att ta reda på det."</string>
+    <string name="tb_sync.notification.standard.11">"Ä din tandborste i närheten? Synkronisera din borstning!"</string>
+    <string name="tb_sync.notification.standard.12">"Synkronisera din tandborste för att uppdatera dina borstningsdata."</string>
+    <string name="tb_sync.enable.bluetooth.title">"Aktivera Bluetooth"</string>
+    <string name="about_attributions_hint">"Den här applikationen använder följande källor:"</string>
+    <string name="about_attributions_website">"webbplats"</string>
+    <string name="about_attributions_license">"licens"</string>
+
+    <!-- Setup toothbrush tunnel -->
+    <string name="setup_toothbrush_connect_m1_title">"Anslut din M1"</string>
+    <string name="setup_toothbrush_connect_kolibree_title">"Anslut din Kolibree V1"</string>
+    <string name="setup_toothbrush_choose_model">"Vilken tandborste har du?"</string>
+    <string name="setup_toothbrush_choose_model_ara">"Ara"</string>
+    <string name="setup_toothbrush_another_toothbrush_title">"En sak till!"</string>
+    <string name="setup_toothbrush_another_toothbrush_buy">"Vi går till butiken!"</string>
+    <string name="setup_toothbrush_another_toothbrush_to_coach">"Borsta med coachen"</string>
+    <string name="setup_toothbrush_choose_model_help"><![CDATA[Jag vet inte <b>vilken tandborste jag har</b>]]></string>
+    <string name="setup_toothbrush_choose_model_help_title">"Hur identifierar jag min tandborste"</string>
+    <string name="setup_toothbrush_get_one">"Köp en i butiken!"</string>
+    <string name="setup_toothbrush_proceed_without">"Tack, men jag ska @fortsätta utan det"</string>
+    <string name="setup_toothbrush_model_ara">"Ara"</string>
+    <string name="setup_toothbrush_ara_charger">"Ställ tandborsten på laddaren och tryck på Start-knappen."</string>
+    <string name="setup_toothbrush_m1_instructions">"Skaka din Connect M1 för att aktivera anslutningen. LED-lampan blinkar i blått."</string>
+    <string name="setup_toothbrush_ara_charger_start">"Starta"</string>
+    <string name="setup_toothbrush_ara_no_charger">"Jag har ingen laddare"</string>
+    <string name="setup_toothbrush_searching">"Söker…
+%d %%"</string>
+    <string name="setup_toothbrush_connecting">"Ansluter ..."</string>
+    <string name="setup_toothbrush_ara_wait">"Vänta!
+Appen letar efter din
+tandborste."</string>
+    <string name="setup_toothbrush_rename_hint">"Du kan ändra dessa nya parametrar i dina tandborstinställningar."</string>
+    <string name="setup_toothbrush_rename_ara_done">"Klart"</string>
+    <string name="setup_toothbrush_rename_ara_choose_name">"Välj ett namn"</string>
+    <string name="setup_searching">"Letar efter tandborstar ..."</string>
+    <string name="setup_barcode_hint">"Kontrollera din tandborstes namn, vilket finns på förpackningen"</string>
+    <string name="setup_permission_popup">"Android kräver platsbehörighet för att ansluta en Bluetooth Low Energy-enhet. Vänligen aktivera den i följande dialog för att ansluta din tandborste."</string>
+    <string name="setup_popup_help_title">"Ser du inte din tandborste?"</string>
+    <string name="setup_popup_help_message">"Om din tandborste är precis bredvid dig men inte visas här, kan det bero på att den redan är ansluten till en annan enhet.
+
+Avaktivera Bluetooth eller ta bort tandborsten från den andra enheten.
+
+Då kommer du att se tandborsten här!"</string>
+    <string name="setup_connected_title">"Grattis %s!
+Din tandborste är ansluten"</string>
+    <string name="setup_connected_hint">"Din tandborste heter: \"%1$s\"
+Du kan ändra det i inställningarna!"</string>
+    <string name="setup_connected_button">"Nu kör vi!"</string>
+    <string name="setup_summary_message">"Dina borstningsdata lagras automatiskt i tandborsten. Kom ihåg att ansluta borsten till appen minst en gång i veckan för att spara dina data."</string>
+    <string name="setup_toothbrush_choose_model_e1">"Connect E1"</string>
+    <string name="setup_toothbrush_connect_ara_title">"Ansluter din E1"</string>
+    <string name="setup_toothbrush_another_toothbrush_text">"Du kan borsta med vår coach!
+
+Men utan en Colgate Connect-tandborste kommer du inte att få hela Connect-upplevelsen.
+
+Förhoppningsvis är det inte för sent att köpa en nu :)"</string>
+    <string name="setup_toothbrush_choose_model_help_top">"Colgate Connect E1"</string>
+    <string name="setup_toothbrush_choose_model_help_bottom">"Colgate Connect M1"</string>
+    <string name="setup_toothbrush_choose_model_buy">"Köp en till Colgate Connect- 
+tandborste i butiken!"</string>
+    <string name="setup_summary_title">"Du kan använda tandborsten med eller utan Colgate Connect-appen"</string>
+    <string name="setup_toothbrush_choose_model_another">"Jag har inte en Colgate Connect-tandborste"</string>
+    <string name="setup_toothbrush_choose_model_m1">"Connect M1"</string>
+
+    <!-- Toothbrush -->
+    <string name="forget_toothbrush">"Glöm den här tandborsten"</string>
+    <string name="forget_toothbrush_popup_title">"Vill du glömma %s?"</string>
+    <string name="forget_toothbrush_popup_message">"Denna enhet kommer inte längre automatiskt att ansluta till tandborsten."</string>
+    <string name="forget_toothbrush_forget">"Glöm"</string>
+    <string name="my_toothbrushes">"Mina tandborstar"</string>
+    <string name="my_toothbrush">"Min tandborste"</string>
+    <string name="my_ara">"Min Ara"</string>
+    <string name="my_connect_m1">"Min Connect M1"</string>
+    <string name="my_connect_e1">"Min Connect E1"</string>
+    <string name="my_kolibree">"Min Kolibree V1"</string>
+    <string name="toothbrush_name">"Namn"</string>
+    <string name="toothbrush_personalized_name">"Anpassat namn"</string>
+    <string name="toothbrush_none">"Inget"</string>
+    <string name="toothbrush_serial_number">"Serienummer"</string>
+    <string name="toothbrush_mac">"MAC-adress"</string>
+    <string name="toothbrush_hardware_version">"Hårdvaruversion"</string>
+    <string name="toothbrush_software_version">"Mjukvaruversion"</string>
+    <string name="toothbrush_software_version_ara">"%1$s (%2$s)"</string>
+    <string name="toothbrush_update_now">"Uppdatera nu"</string>
+    <string name="toothbrush_update_hint">"En ny uppdatering (%s) finns tillgänglig för din tandborste."</string>
+
+    <!-- User mode dialog -->
+    <string name="user_mode_dialog_title">"Tandborstens användare"</string>
+
+    <!-- Popup toothbrush not available -->
+    <string name="popup_toothbrush_unavailable_title">"Ingen tandborste är ansluten"</string>
+    <string name="popup_toothbrush_unavailable_alternate_title">"Ingen tandborste
+är ansluten"</string>
+    <string name="popup_toothbrush_unavailable_message">"Se till att din tandborste är påslagen och för den närmare enheten, då kommer den att anslutas automatiskt."</string>
+
+    <!-- Popup choose toothbrush -->
+    <string name="popup_choose_toothbrush_title">"Välj en tandborste för att fortsätta"</string>
+    <string name="popup_choose_toothbrush_manual">"Manuell tandborste"</string>
+
+    <!-- Popup brushing records -->
+    <string name="popup_brushing_record_title">"Bra gjort!"</string>
+    <string name="popup_brushing_record_message_singular">"Du synkroniserade just 1 offline-borstning."</string>
+    <string name="popup_brushing_record_message_multiple">"Du synkroniserade just %d offline-borstningar."</string>
+
+    <!-- Popup mandatory update -->
+    <string name="popup_mandatory_update_title">"Obligatorisk uppdatering"</string>
+    <string name="popup_mandatory_update_message">"Din tandborste behöver uppdateras för att fungera ordentligt."</string>
+    <string name="popup_mandatory_update_button">"Uppdatera nu"</string>
+    <string name="popup_mandatory_enable_internet">"Anslut till internet för att börja uppdateringen."</string>
+    <string name="firmware_upgrade_downloading">"Hämtar ..."</string>
+    <string name="firmware_upgrade_rebooting">"Omstart ..."</string>
+    <string name="firmware_upgrade_installing">"Installerar ..."</string>
+    <string name="firmware_upgrade_cancel">"Avbryt"</string>
+    <string name="firmware_upgrade_upgrade">"Uppgradera"</string>
+    <string name="firmware_upgrade_error_dialog">"Firmwareuppgradering misslyckades:
+%s"</string>
+    <string name="firmware_success">"Din tandborste är uppdaterad."</string>
+    <string name="firmware_upgrade_retry">"Försök igen"</string>
+
+    <!-- Home -->
+    <string name="tab_home">"Hem"</string>
+    <string name="tab_brush">"Aktiviteter"</string>
+
+    <!-- Home -->
+    <string name="tab_checkup">"Tandundersökning"</string>
+
+    <!-- Dashboard -->
+    <string name="dashboard_hint">"Veckans genomsnitt"</string>
+    <string name="dashboard_last_session_hint">"Senaste tandborstning"</string>
+    <string name="dashboard_duration">"Tidsperiod"</string>
+    <string name="dashboard_frequency">"Frekvens"</string>
+    <string name="dashboard_surface">"Yta"</string>
+    <string name="dashboard_coverage">"Täckning"</string>
+    <string name="dashboard_minutes">"Minuter"</string>
+    <string name="dashboard_per_day">"Per dag"</string>
+    <string name="dashboard_percentage">"Procent"</string>
+    <string name="dashboard_no_bluetooth">"Aktivera Bluetooth på din enhet"</string>
+    <string name="dashboard_week">"Vecka"</string>
+    <string name="dashboard_average_duration">"Genomsnittlig varaktighet:
+%s/tandborstning"</string>
+    <string name="dashboard_average_duration_hint">"Tandläkare menar att man ska borsta i 2 minuter, två gånger om dagen för att minska risken för karies."</string>
+    <string name="dashboard_average_regularity">"Genomsnittlig tandborstning:
+%s gånger/dag"</string>
+    <string name="dashboard_average_frequency_hint">"Tandläkare menar att om man borstar tänderna två gånger om dagen minskar det risken för karies.
+
+Det är skadligt för tandköttet att borsta tänderna mer än tre gånger om dagen."</string>
+    <string name="dashboard_average_surface">"Genomsnittlig yta borstad:
+%s"</string>
+    <string name="dashboard_average_surface_hint">"Karies kan finnas överallt!
+
+Varje yta på varje tand är viktig, så du bör sikta på 100 % borstade ytor :)"</string>
+    <string name="dashboard_last_session_empty">"-"</string>
+
+    <!-- Profile -->
+    <string name="edit_profile_smart_brushing_analyser">@string/sba_game_name</string>
+    <string name="profile_information_name">"Förnamn"</string>
+    <string name="profile_information_name_hint">"Ditt förnamn"</string>
+    <string name="profile_information_age">"Ålder"</string>
+    <string name="profile_information_age_hint">"Hur gammal är du?"</string>
+    <string name="profile_information_gender_hint">"Kön"</string>
+    <string name="profile_information_handedness_hint">"Hänthet"</string>
+    <string name="profile_years_old">"år gammal"</string>
+    <string name="profile_picture_dialog_title">"Ställ in profilbild"</string>
+    <string name="profile_set_picture">"Lägg till en bild"</string>
+    <string name="profile_created_title">"Hurra!"</string>
+    <string name="profile_created_message">"Din profil har skapats. Nu är du redo att borsta tänderna!"</string>
+    <string name="profile_last_sba">"Senaste Smart Brushing Analysis"</string>
+    <string name="profile_my_profiles">"Profiler"</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_subtitle">"Din Smart Brushing
+kompanjon"</string>
+    <string name="onboarding_login"><![CDATA[Har du redan ett konto? <b>Logga in</b>]]></string>
+    <string name="onboarding_start">"Börja upplevelsen"</string>
+
+    <!-- Sign up tunnel -->
+    <string name="sign_up_profile_info_title">"Låt oss lära känna
+varandra"</string>
+    <string name="sign_up_profile_wait">@string/please_wait</string>
+    <string name="sign_up_profile_info_next">"Gå med i Colgate Connect"</string>
+
+    <!-- Delete account popup -->
+    <string name="delete_account">"Ta bort mitt konto"</string>
+    <string name="delete_account_popup_message">"Är du verkligen säker på att du vill ta bort ditt konto? Denna funktion kan inte återkallas."</string>
+    <string name="delete_account_popup_yes">"Ja, ta bort mitt konto"</string>
+
+    <!-- Checkup Popup -->
+    <string name="checkup_popup_title">"Tandundersökning"</string>
+    <string name="checkup_popup_message_last">"Denna tandundersökning visar din senaste borstning. Var uppmärksam på de gula områdena eftersom dessa har försummats och har större risk för plack!"</string>
+    <string name="checkup_popup_message">"Denna tandundersökning visar din borstning. Var uppmärksam på de gula områdena eftersom dessa har försummats och har större risk för plack!"</string>
+
+    <!-- Turn on your toothbrush popup -->
+    <string name="setup_ara_popup_title">"Viktigt!"</string>
+    <string name="setup_ara_popup_message">"Innan du fortsätter trycker du två gånger på tandborstknappen."</string>
+
+    <!-- Add ara user activity -->
+    <string name="add_ara_user_add_profile">"Lägg till en profil"</string>
+    <string name="add_ara_user_hint">"Du kan ändra denna länk senare i dina tandborstinställningar."</string>
+    <string name="add_ara_user_subtitle">"Vem kommer att använda den här tandborsten?"</string>
+    <string name="add_ara_shared">"Delad"</string>
+
+    <!-- No BLE popup -->
+    <string name="no_ble_popup_message">"Denna enhet är inte kompatibel med lågenergi-Bluetooth"</string>
+
+    <!-- BRUSH HEAD RENEWAL DIALOG -->
+    <string name="brush_head_dialog_title">"Byt ut ditt borsthuvud, %1$s"</string>
+    <string name="brush_head_dialog_message">"Grattis! Du har borstat mer än 120 gånger. Det är dags att byta ut borsthuvudet."</string>
+    <string name="brush_head_buy_now">"Köp nu"</string>
+    <string name="brush_head_remind">"Senare"</string>
+    <string name="brush_head_no">"Nej tack"</string>
+    <string name="title_activity_slideshow">"Bildspel"</string>
+
+    <!-- Popup toothbrush belongs to another user -->
+    <string name="popup_assign_toothbrush_data_dialog">"Den aktiva profilen är %1$s men du använder %2$ss tandborste! För vem ska uppgifterna sparas?"</string>
+
+    <!-- ORPHAN BRUSHINGS -->
+    <string name="orphan_brushings">"Otilldelade borstningar"</string>
+    <string name="orphan_brushings_assign_hint">"Tilldela valda borstningar"</string>
+    <string name="orphan_brushings_delete_hint">"Ta bort valda borstningar"</string>
+    <string name="orphan_brushing_subtitle">"Tidsperiod: %1$s min %2$s s, Yta %3$d%%"</string>
+    <string name="orphan_brushings_detelete_title">"Är du säker?"</string>
+    <string name="orphan_brushings_detelete_message">"Vill du verkligen ta bort dessa borstningar? Denna åtgärd är oåterkallelig."</string>
+    <string name="orphan_brushings_empty">"Inga otilldelade borstningar. Utmärkt!"</string>
+
+    <!-- PROFILE LIST DIALOG -->
+    <string name="profile_list_dialog_title">"Välj en profil"</string>
+
+    <!-- SLIDESHOW -->
+    <string name="slideshow_next">"Nästa"</string>
+    <string name="slideshow_skip">"Hoppa över"</string>
+    <string name="slideshow_alright_button">"OK!"</string>
+    <string name="slideshow_here_to_help_title">"Vi är här för att hjälpa till!"</string>
+    <string name="slideshow_here_to_help_message">"Vill du ha ännu renare tänder?
+Vi har skapat några smarta, nya funktioner för att ta din munhygien till nästa nivå."</string>
+    <string name="slideshow_here_to_help_button">"Upptäck våra aktiviteter"</string>
+    <string name="slideshow_meet_coach_title">"Möt coachen"</string>
+    <string name="slideshow_meet_coach_message">"Vi har ett coach-program som hjälper dig till starkare långsiktiga borstningsvanor.
+
+Coach är en 2D-vy som markerar vilka områden du ska borsta i munnen."</string>
+    <string name="slideshow_pirate_title">"Spela med Go Pirate!"</string>
+    <string name="slideshow_pirate_message">"Förvandla din tandborste till en spelkonsol! Samla mynt och jaga Black Beards skatt!"</string>
+    <string name="slideshow_pirate_additional_message">"(Och fler spel kommer snart!)"</string>
+    <string name="slideshow_dashboard_title">"Din instrumentpanel"</string>
+
+    <!-- Slideshow -->
+    <string name="slideshow_dashboard_message">"Tydlig och värdefull information om dig och dina borstvanor på ett och samma ställe."</string>
+    <string name="slideshow_taking_care_brush_title">"Ta hand om din borste"</string>
+    <string name="slideshow_taking_care_brush_message">"Rengör handtaget regelbundet samt laddarens bas med en fuktig trasa.
+
+Detta är särskilt viktigt om din tandkräm innehåller natriumbikarbonat eller andra bikarbonater eller väteperoxid"</string>
+    <string name="slideshow_personalize_brush_title">"Gör din borste personlig"</string>
+    <string name="slideshow_personalize_brush_message">"Om du vill ändra den förvalda borstningstiden, se inställningarna på din profil. Ange önskad tid under borstningstid"</string>
+    <string name="slideshow_dentist_tip_title">"Tandläkartips"</string>
+    <string name="slideshow_dentist_tip_message">"Håll tandborsten i 45° vinkel mot tänderna och gör små rörelser från tandköttet mot kanten av tänderna.
+
+Glöm inte att borsta både framför och bakom tandytorna"</string>
+
+    <!-- SPREAD THE WORD -->
+    <string name="spread_the_word">"Sprid ordet"</string>
+    <string name="spread_review_app">"Betygsätt appen"</string>
+    <string name="spread_tell_a_friend">"Tipsa en vän"</string>
+    <string name="spread_newsletter">"Nyhetsbrev"</string>
+    <string name="spread_facebook">"Facebook"</string>
+    <string name="spread_twitter">"Twitter"</string>
+    <string name="spread_instagram">"Instagram"</string>
+    <string name="spread_youtube">"Youtube"</string>
+
+    <!-- TOOTHBRUSH LIST -->
+    <string name="toothbrush_removed">"Tandborste borttagen"</string>
+    <string name="undo">"ÅNGRA"</string>
+    <string name="checkup_coverage_100">"Grattis! Perfekt tandborstning. Alla dina tänder har borstats tillräckligt länge."</string>
+    <string name="checkup_coverage_85">"Bra gjort, din borstning är nästan perfekt. Fortsätt så."</string>
+    <string name="checkup_coverage_50">"Du kan bli bättre. Nästa gång du borstar ska du ägna extra uppmärksamhet åt de gula områdena. Dessa tänder har inte borstats tillräckligt länge."</string>
+    <string name="checkup_coverage_below_50">"Plack-varning! Nästa gång du borstar ska du ägna extra uppmärksamhet åt de gula områdena. Dessa har försummats."</string>
+    <string name="checkup_coverage_no_data">"Inga data finns för denna borstning."</string>
+
+    <!-- User in OTA screen, but no OTA associated to toothbrush -->
+    <string name="firmware_upgrade_ota_not_available">"Ingen uppdatering tillgänglig"</string>
+
+    <!-- Dialog displayed after user pressed cancel button in update ota -->
+    <string name="firmware_upgrade_cancel_dialog_message">"Är du säker på att du vill avbryta uppdateringen?"</string>
+    <string name="welcome_email_hint">"Vad är din e-postadress?"</string>
+    <string name="welcome_email_facebook_hint">"Vi publicerar inte något på Facebook"</string>
+    <string name="welcome_email_or">"– eller –"</string>
+    <string name="welcome_email_facebook_button">"Fortsätt med Facebook"</string>
+    <string name="welcome_password_hint">"Vad är ditt lösenord?"</string>
+    <string name="welcome_password_magic_link_button">"E-maila mig en länk för att logga in"</string>
+    <string name="welcome_inbox_title">"Kolla din inkorg"</string>
+    <string name="welcome_inbox_hint">"Du behöver inte minnas ett långt eller svårskrivet lösenord. Vi har precis skickat ett e-postmeddelande för att hjälpa dig att logga in.
+
+Öppna den från din smartphone och klicka på den angivna länken för att logga in. Men skynda, länken löper ut efter 30 minuter."</string>
+    <string name="coppa_pending_parental_consent">"Väntar på föräldrars samtycke"</string>
+    <string name="coppa_prevent_dialog_title">"Funktionen inaktiverad"</string>
+    <string name="coppa_prevent_dialog_message">"Föräldra samtycke krävs för att utföra denna åtgärd"</string>
+    <string name="welcome_birthday_title">"När föddes du?"</string>
+    <string name="welcome_birthday_day">"Dag"</string>
+    <string name="welcome_birthday_month">"Månad"</string>
+    <string name="welcome_birthday_year">"År"</string>
+    <string name="logout_warning_dialog_title">"Varning"</string>
+    <string name="logout_warning_dialog_message">"Du har mer än 10 borstningar registrerade på ditt konto. Länk ditt konto till din e-postadress, eller du kommer att förlora dina uppgifter: du kommer inte få tillgång till ditt konto efter utloggning."</string>
+    <string name="logout_warning_dialog_enter_email">"Ange e-postadress"</string>
+    <string name="logout_warning_dialog_button_continue">"Nej tack"</string>
+    <string name="save_your_data">"Spara dina data"</string>
+    <string name="save_your_data_title">"Förlora inte dina data!"</string>
+    <string name="save_your_data_subtitle">"Klicka nedan för att logga in och säkra dina uppgifter"</string>
+    <string name="save_your_data_fb_button">"Logga in med Facebook"</string>
+    <string name="save_your_data_email_button">"Anmäl dig via e-post"</string>
+    <string name="save_your_data_cancel_button">"Nej tack"</string>
+    <string name="save_your_data_email_hint">"Vad är din e-postadress?"</string>
+    <string name="save_your_data_submit">"Skicka"</string>
+    <string name="your_data_saved_title">"Dina data är nu sparade"</string>
+    <string name="your_data_saved_subtitle">"Ditt konto är nu uppdaterat och kopplat till dina uppgifter"</string>
+    <string name="your_data_saved_ok">"OK"</string>
+    <string name="welcome_birthday_invalid_day">"Dagen är inte giltig"</string>
+    <string name="welcome_birthday_invalid_month">"Månaden är inte giltig"</string>
+    <string name="welcome_birthday_invalid_year">"Året är inte giltigt"</string>
+    <string name="welcome_birthday_invalid_date">"Födelsedatumet är inte giltigt"</string>
+    <string name="terms_of_use_not_clicked">"Du måste godkänna villkoren"</string>
+    <string name="parent_consent_title">"E-post"</string>
+    <string name="parent_consent_instructions">"Ange din förälder eller vårdnadshavares e-postadress, så kontaktar vi honom eller henne för nästa steg!"</string>
+    <string name="parent_consent_hint">"Förälder eller vårdnadshavares e-postadress"</string>
+    <string name="register_email_dialog_title">"Registrera din e-postadress"</string>
+    <string name="register_email_dialog_message">"Du har mer än 10 borstningar som registrerats på ditt konto. Länka ditt konto till din e-postadress, annars kommer du att förlora dina uppgifter: du kommer inte att få tillgång till ditt konto efter utloggning."</string>
+    <string name="register_email_dialog_ok">"Ange e-postadress"</string>
+    <string name="register_email_dialog_cancel">"Inte nu"</string>
+    <string name="help_us_customize_title">"Hjälp oss att anpassa\ndin upplevelse"</string>
+    <string name="setup_toothbrush_m1_search">"Söka"</string>
+    <string name="sba_game_description">"Använd Testborstning för att diagnostisera dina borstvanor och identifiera områden för förbättring."</string>
+    <string name="validate_birthday_error">"På grund av ett serverfel misslyckades operationen. Var god försök igen."</string>
+    <string name="edit_profile_birthday">"Din födelsedag"</string>
+    <string name="error_no_internet">"Ingen internetanslutning"</string>
+    <string name="something_went_wrong">"Något gick fel. Försök igen senare."</string>
+    <string name="um_attention_title">"Varning"</string>
+    <string name="get_my_data">"Hämta mina data"</string>
+    <string name="no_email_title">"Ingen e-post på ditt konto"</string>
+    <string name="no_email_message">"Ditt konto har inte en kopplad e-postadress. Konfigurera e-post på ditt konto innan du fortsätter"</string>
+    <string name="title_success">"Succé"</string>
+    <string name="operation_failed_title">"Åtgärden misslyckades"</string>
+    <string name="operation_failed">"På grund av ett serverfel misslyckades åtgärden. Försök igen senare."</string>
+    <string name="email_gdpr">"Ett e-postmeddelande som gör att du kan hämta alla dina data skickas till %s inom kort."</string>
+    <string name="privacy_not_clicked">"Du måste godkänna sekretesspolicyen"</string>
+    <string name="terms_and_condition_agreement">"Jag godkänner "<![CDATA[<u><a href=\"%1$s\">%2$s</a></u>]]></string>
+    <string name="privacy_agreement">"Jag erkänner "<![CDATA[<u><a href=\"%1$s\">%2$s</a></u>]]></string>
+    <string name="choose_method_title">"Logga in"</string>
+    <string name="choose_method_sms">"Logga in via SMS"</string>
+    <string name="choose_method_we_chat">"Logga in via WeChat"</string>
+    <string name="sms_login_title">"Logga in via SMS"</string>
+    <string name="sms_login_hint">"Vad är ditt telefonnummer?"</string>
+    <string name="sms_login_get_code">"Få autentiseringskod"</string>
+    <string name="sms_login_code_desc">"Ange koden du just fått via SMS och tryck på OK-knappen."</string>
+    <string name="sms_login_ok">"OK"</string>
+    <string name="exit">"Avsluta"</string>
+    <string name="retry">"Försök igen"</string>
+    <string name="no_facebook_account_linked">"Detta Facebook-konto är inte kopplat till ett Colgate Connect-konto"</string>
+    <string name="sms_login_invalid_number">"Ogiltigt telefonnummer"</string>
+    <string name="mouth_zone_bottom_incisor_exterior">"Nedre, mitten, utsidan"</string>
+    <string name="mouth_zone_bottom_incisor_interior">"Nedre, mitten, insidan"</string>
+    <string name="mouth_zone_bottom_molar_left_exterior">"Nedre, vänster, utsidan"</string>
+    <string name="mouth_zone_bottom_molar_left_interior">"Nedre, vänster, insidan"</string>
+    <string name="mouth_zone_bottom_molar_left_occlusal">"Nedre, vänster, tuggytan"</string>
+    <string name="mouth_zone_bottom_molar_right_occlusal">"Nedre, högre, tuggytan"</string>
+    <string name="mouth_zone_bottom_molar_right_exterior">"Nedre, höger, utsidan"</string>
+    <string name="mouth_zone_bottom_molar_right_interior">"Nedre, höger, insidan"</string>
+    <string name="mouth_zone_top_incisor_exterior">"Övre, mitten, utsidan"</string>
+    <string name="mouth_zone_top_incisor_interior">"Övre, mitten, insidan"</string>
+    <string name="mouth_zone_top_molar_left_exterior">"Övre, vänster, utsidan"</string>
+    <string name="mouth_zone_top_molar_left_interior">"Övre, vänster, insidan"</string>
+    <string name="mouth_zone_top_molar_left_occlusal">"Övre, vänster, tuggytan"</string>
+    <string name="mouth_zone_top_molar_right_exterior">"Övre, höger, utsidan"</string>
+    <string name="mouth_zone_top_molar_right_interior">"Övre, höger, insidan"</string>
+    <string name="mouth_zone_top_molar_right_occlusal">"Övre, höger, tuggytan"</string>
+    <string name="mouth_zone_wrong">"Fel zon upptäckt"</string>
+    <string name="upgrade_app_title">"Uppgradera för att fortsätta"</string>
+    <string name="upgrade_app_msg">"För att fortsätta använda appen, var god och uppgradera till den senaste versionen; vi har klämt till några hemska buggar."</string>
+    <string name="coach_pluse_game_description">"En 3D-upplevelse som garanterar att du täcker 100 %% av ytorna."</string>
+    <string name="kolibree_pro_start_popup_title">"Colgate Connect Pro"</string>
+    <string name="kolibree_pro_start_popup_message">"Vill du dela dina borstdata med din tandläkare / tandläkare %s, så att de kan få regelbunden övervakning?"</string>
+    <string name="kolibree_pro_start_popup_accept">"Acceptera"</string>
+    <string name="kolibree_pro_start_popup_decline">"Inte nu"</string>
+    <string name="kolibree_pro_settings_title">"Colgate Connect Pro"</string>
+    <string name="kolibree_pro_settings_hint">"Välj det här alternativet för att dela dina borstdata med ditt tandläkare / tandläkare, så att de kan få regelbunden övervakning."</string>
+    <string name="kolibree_pro_practitioners_short">"Här är de proffs som har tillgång till dina borstdata. Läs mer"</string>
+    <string name="kolibree_pro_practitioners_short_token">"Läs mer"</string>
+    <string name="kolibree_pro_practitioners_full">"Här är de proffs som har tillgång till dina borstdata.
+
+Genom denna information kan de följa tandkvaliteten dag efter dag och ge dig personlig rådgivning för att förbättra dina vanor och göra det möjligt för dig att uppnå optimal tandhygien.
+Det är möjligt att sluta dela dina data närhelst du vill göra det. För mer information, besök vår hemsida på http://www.connectpro.colgate.com"</string>
+    <string name="kolibree_pro_practitioners_revoke_title">"Sluta dela data med %s?"</string>
+    <string name="kolibree_pro_practitioners_revoke_message">"Genom att sluta dela data med den här tandläkaren, säger du upp den personliga Colgate Connect Pro-uppföljningen. Om du vill återuppta uppföljningen senare, måste denna tandläkare skicka dig en inbjudan till Colgate Connect Pro för att kunna komma åt dina uppgifter igen.
+
+Är du säker på att du vill fortsätta?"</string>
+    <string name="kolibree_pro_practitioners_header">"Mina tandläkare"</string>
+    <string name="kolibree_pro_quit_popup_title">"Är du verkligen säker på att du vill avsluta?"</string>
+    <string name="kolibree_pro_quit_popup_message">"Genom att stoppa Colgate Connect Pro-processen delar du inte dina data med din tandläkare, och de kommer inte att kunna övervaka dina borstningssessioner."</string>
+    <string name="kolibree_pro_quit_popup_continue">"Fortsätt"</string>
+    <string name="kolibree_pro_quit_popup_quit">"Avsluta i alla fall"</string>
+    <string name="kolibree_pro_quit_popup_remind_me_later">"Påminn mig senare"</string>
+    <string name="kolibree_pro_channel_name">"Colgate Connect Pro"</string>
+    <string name="kolibree_pro_channel_description">"Colgate Connect Pro-meddelanden"</string>
+    <string name="kolibree_pro_notification_title">"Colgate Connect Pro"</string>
+    <string name="kolibree_pro_notification_description">"Registrera din tandborste"</string>
+    <string name="kolibree_practitioners_popup_message">"Samtycker du till att dela dina borstdata med din tandläkarutbildning %1$s för övervakningsändamål?"</string>
+    <string name="kolibree_practitioners_accept">"OK"</string>
+    <string name="kolibree_practitioners_decline">"Nej tack"</string>
+    <string name="running_in_background">"är ansluten till din tandborste"</string>
+
+    <!-- Dialog displayed after user pressed cancel button in update ota -->
+    <string name="coach_settings_choose_music">"Välj musik"</string>
+    <string name="coach_settings_coach_sounds_title">"Coach Ljud"</string>
+    <string name="coach_settings_shuffle">"Blanda"</string>
+    <string name="coach_settings_music">"Musik"</string>
+    <string name="coach_settings_transitions_sounds">"Övergångar låter"</string>
+    <string name="coach_settings_display_brushing_movements">"Visa borströrelser"</string>
+    <string name="coach_settings_display_helps_texts">"Displayen hjälper texter"</string>
+    <string name="coach_settings_sounds">"Ljud"</string>
+    <string name="setup_i_dont_have_connect_e1">"Jag har inte en Connect E1"</string>
+    <string name="tb_toolbar_connect">"Anslut en tandborste"</string>
+    <string name="tb_toolbar_connected">"Ansluten"</string>
+    <string name="tb_toolbar_retrieving_brushing">"Hämtar borstning sessioner"</string>
+    <string name="tb_toolbar_disconnected">"Osammanhängande"</string>
+    <string name="tb_toolbar_enable_bleutooth">"Aktivera Bluetooth"</string>
+    <string name="tb_toolbar_last_sync_title">"Sista synkro."</string>
+    <string name="tb_toolbar_last_sync_today">"Idag"</string>
+    <string name="tb_toolbar_last_sync_yesterday">"Igår"</string>
+    <string name="tb_toolbar_last_sync_never">"Aldrig"</string>
+    <string name="tb_toolbar_connecting">"Anslutning pågår"</string>
+    <string name="m1_fake_dialog_title">"Starta inställningen"</string>
+    <string name="m1_fake_dialog_initiating_setup">"Vänligen håll din tandborste kvar eller placera den på en plan yta under installationen"</string>
+    <string name="m1_fake_dialog_configuring">"Konfigurera…"</string>
+    <string name="m1_fake_dialog_calibrating">"Konfigurera…"</string>
+    <string name="m1_fake_dialog_completed">"Installationen är klar!"</string>
+    <string name="m1_fake_dialog_ready_to_use">"Din M1 är redo att användas"</string>
+    <string name="m1_fake_dialog_dont_move_brush">"Flytta inte din M1 under installationen"</string>
+    <string name="welcome_title">"Välkommen"</string>
+    <string name="welcome_subtitle">"Upplev framtida\n muntliga hälsa"</string>
+    <string name="welcome_connect_tb">"Anslut min smarta tandborste"</string>
+    <string name="welcome_no_smrt_tb">"Jag har inte en smart tandborste"</string>
+    <string name="welcome_have_account">"Har du redan ett konto? Logga in"</string>
+    <string name="welcome_have_account_login">"Logga in"</string>
+    <string name="tb_model_selection_toolbar_title">"Anslut din tandborste"</string>
+    <string name="tb_model_selection_title">"Vilken tandborste har du?"</string>
+    <string name="activate_bt_title">"Bluetooth"</string>
+    <string name="activate_bt_button">"Aktivera Bluetooth"</string>
+    <string name="activate_bt_description">"För att ansluta din tandborste, vänligen aktivera Bluetooth på din enhet"</string>
+    <string name="location_permission_title">"Platsstillstånd"</string>
+    <string name="location_permission_button">"Tillåta"</string>
+    <string name="connecting_dialog_title">"Ansluter ..."</string>
+    <string name="connecting_dialog_stop">"Sluta"</string>
+    <string name="connection_successful_dialog_title">"Anslutningen lyckades"</string>
+    <string name="connection_successful_dialog_message">"Vrid din tandborste av"</string>
+    <string name="connection_error_dialog_title">"Anslutningsfel"</string>
+    <string name="tb_connection_title">"Vakna din tandborste"</string>
+    <string name="tb_connection_subtitle">"Tryck på XXX knappen på tandborsten"</string>
+    <string name="tb_connection_subtitle_manual">"Skaka din tandborste för att aktivera Bluetooth-anslutningsprocessen"</string>
+    <string name="tb_connection_nothing">"Ingenting händer?"</string>
+    <string name="detection_popup_title">"En %1$s tandborste har detekterats!"</string>
+    <string name="detection_popup_question">"Kan du se din tandborste blinka i blått?"</string>
+    <string name="detection_popup_yes">"Ja, anslut"</string>
+    <string name="detection_popup_no">"Nej, fortsätt leta efter min tandborste"</string>
+    <string name="e1_troubleshooting_title">"Försöker du ansluta en Connect E1 tandborste?"</string>
+    <string name="e1_troubleshooting_no_tb">"Jag har inte en Colgate Connect tandborste"</string>
+    <string name="e1_troubleshooting_yes">"Ja"</string>
+    <string name="e1_troubleshooting_no">"Nej"</string>
+    <string name="blink_toothbrush_led">"Blink"</string>
+    <string name="test_brushing_start">"Börja borsta nu"</string>
+    <string name="test_brushing_tip">"Visste du att de flesta vuxna bara borstar 40% av deras tänder?"</string>
+    <string name="test_brushing_lets_see_how_you_brush">"Nu får vi se hur du borstar:"</string>
+    <string name="test_brushing_instructions_1">"Borsta tänderna som du brukar göra"</string>
+    <string name="test_brushing_instructions_2">"Upptäck hur effektivt du borstar"</string>
+    <string name="test_brushing_instructions_3">"Använd vår Coach för att förbättra din teksnik"</string>
+    <string name="test_brushing_screen_title">"Testborstning"</string>
+    <string name="dialog_conn_error_title">"Vi kunde inte hitta din tandborste."</string>
+    <string name="dialog_conn_error_description">"Om du slår på och stänger av Bluetooth löser du vanligtvis anslutningsproblem."</string>
+    <string name="dialog_conn_error_description_small">"Om din tandborste ligger nära dig men fortfarande inte visas här kan det bero på att den måste vara påslagen, den har en låg batterinivå eller den är redan ansluten till en annan enhet."</string>
+    <string name="profile_data_saved_info">"Dina uppgifter sparas"</string>
+    <string name="profile">"Profil"</string>
+    <string name="birth_date_hint">"Vi kommer att suprise dig för din födelsedag!"</string>
+    <string name="email_already_used_error">"Den här e-postadressen används redan"</string>
+    <string name="tab_rewards">"Belöningar"</string>
+    <string name="rewards_tab_challenges">"Utmaningar"</string>
+    <string name="rewards_tab_tier">"Nivå"</string>
+    <string name="rewards_tab_smiles">"Butik"</string>
+    <string name="header_smiles">"%1$s Smiles punkter"</string>
+    <string name="rewards_support_url">"https://colgateconnect.zendesk.com/hc/en-us/articles/115005703746"</string>
+    <string name="test_brushing_session_electric_line1">"Aktivera din tandborste"</string>
+    <string name="test_brushing_session_electric_line2">"och börja borsta som du brukar göra!"</string>
+    <string name="test_brushing_session_manual">"Börja borsta tänderna som du brukar göra!"</string>
+    <string name="durring_session_description_step1">"Borsta försiktigt dina tänder och tandkött som du skulle använda en vanlig tandborste"</string>
+    <string name="durring_session_highlighted_step1">"dina tänder och tandkött"</string>
+    <string name="durring_session_description_step2">"Sluta borsta när du normalt gör det"</string>
+    <string name="durring_session_description_step3">"Sonic vibrationer hjälper till att ta bort dental plaque"</string>
+    <string name="durring_session_highlighted_step3">"Sonic vibrationer"</string>
+    <string name="durring_session_description_step3_manual">"Tandborstens unika design hjälper till att ta bort mer plack, fläckar och bakterier."</string>
+    <string name="durring_session_highlighted_step3_manual">"Tandborstens unika design"</string>
+    <string name="durring_session_description_step4">"Vi analyserar din borstning för att hjälpa dig att förbättra din borstningsteknik"</string>
+    <string name="durring_session_highlighted_step4">"dig att förbättra din borstningsteknik"</string>
+
+    <!-- optimize analyser -->
+    <string name="optimize_your_brushing_analysis">"Optimera analysen"</string>
+    <string name="which_hand_do_you_hold_your_toothbrush_with">"Vilken hand håller du tandborsten i?"</string>
+    <string name="left">"Vänster"</string>
+    <string name="right">"Höger"</string>
+    <string name="how_many_times_a_day_do_you_brush_your_teeth">"Hur många gånger om dagen borstar du tänderna?"</string>
+    <string name="get_my_results">"Få mina resultat"</string>
+    <string name="finish_brushing_dialog_title">"Är du färdig?"</string>
+    <string name="finish_brushing_dialog_yes">"Jag är färdig"</string>
+    <string name="finish_brushing_dialog_resume">"Ännu inte, återuppta"</string>
+    <string name="my_connect_e2">"Min Connect E2"</string>
+    <string name="setup_toothbrush_connect_e2_title">"Anslut din E2"</string>
+    <string name="results_analysis_successful_title">"Analys utförd"</string>
+    <string name="results_analysis_successful_body">"Upptäck hur bra din borstningsteknik är."</string>
+    <string name="results_mouth_coverage_title">"Täckt yta"</string>
+    <string name="results_mouth_coverage_hint">"Hur läser schemat?"</string>
+    <string name="analysis_in_progress">"Analys pågår"</string>
+    <string name="brushing_progress_msg_1">"Borstningstid"</string>
+    <string name="brushing_progress_msg_2">"Täckt yta"</string>
+    <string name="brushing_progress_msg_3">"Vinkelanalys"</string>
+    <string name="brushing_progress_msg_4">"Borsta rörelser"</string>
+    <string name="select_a_toothbrush_to_continue">"Välj en tandborste för att fortsätta."</string>
+    <string name="results_mouth_coverage_tooth_clean">"Ren"</string>
+    <string name="results_mouth_coverage_tooth_dirty">"Behöver\nmer borstning"</string>
+    <string name="mouth_coverage_perfect">"Grattis! Det är en perfekt borstning."</string>
+    <string name="mouth_coverage_good">"Du missade några områden. Försök vår coach att nå 100%."</string>
+    <string name="mouth_coverage_medium">"Du kan inte ens bättre. Prova vår tränare så att du inte kommer att sakna någon zon."</string>
+    <string name="mouth_coverage_bad">"Du kan göra bättre. Försök vår Coach att inte missa något område."</string>
+    <string name="mouth_coverage_no_data">"Inga data finns för denna borstning."</string>
+    <string name="read_diagram_dialog_body">"Det är som att titta i spegeln, höger sida av käften på skärmen är den högra sidan av munnen"</string>
+    <string name="read_diagram_dialog_title">"Schemaförklaring"</string>
+    <string name="read_diagram_dialog_ok">"OK"</string>
+    <string name="read_diagram_dialog_top">"Topp"</string>
+    <string name="read_diagram_dialog_bottom">"Botten"</string>
+    <string name="read_diagram_dialog_left">"Vänster"</string>
+    <string name="read_diagram_dialog_right">"Höger"</string>
+    <string name="hint_tap_to_change_view">"Ändra vyn"</string>
+    <string name="test_brushing_analysis_screen_title">"Analys"</string>
+    <string name="dialog_lost_connexion_quit_btn">"Avsluta (och börja igen senare)"</string>
+    <string name="dialog_lost_connexion_title">"Förlorad anslutning"</string>
+    <string name="dialog_lost_connexion_description">"Anslutningen med din tandborste har gått vilse.
+Vänta på att du kopplar om eller omstartar din borstning senare."</string>
+
+    <!-- Pirate game does not work on user's Android version -->
+    <string name="pirate_not_supported_os_version">"Vänligen uppdatera till Android 6 eller senare för att använda GoPirate."</string>
+    <string name="speed_proper">"Bra
+hastighet"</string>
+    <string name="speed_too_fast">"För
+snabbt"</string>
+    <string name="speed_card_title">"Borsthastighet"</string>
+    <string name="speed_card_hint">"Läs mer"</string>
+    <string name="speed_learn_more_dialog_title">"Borsthastighet"</string>
+    <string name="speed_learn_more_dialog_body_top">"En hård och snabb borstning kan känna sig effektivare, men borstning med denna rörelse främjar en ohälsosam uppbyggnad mellan tänderna och tandköttet."</string>
+    <string name="speed_learn_more_dialog_body_bottom">"Prova att borsta långsammare, fokusera på en tand åt gången, så att borsthuvudet rengör utrymmet mellan tänderna."</string>
+    <string name="speed_learn_more_dialog_help">"Behöver du hjälp med att förstå schemat?"</string>
+    <string name="speed_description_by_groups">"Dina rörelser var för snabba medan du borstar %1$s. Sakta ner för att hålla tänderna sunda."</string>
+    <string name="speed_description_average">"Dina rörelser var för snabba för %1$s av din borstning. Sakta ner för att hålla tänderna sunda."</string>
+    <string name="speed_description_all_good">"Inget att rapportera!"</string>
+    <string name="speed_group_occlusal">"din tuggyta"</string>
+    <string name="speed_group_outside_molars">"ytan på dina molarer"</string>
+    <string name="speed_group_inside_molars">"insidan av dina molarer"</string>
+    <string name="speed_group_outside_incisives">"utsidan av dina snedställare"</string>
+    <string name="speed_group_inside_incisives">"insidan av dina snedställare"</string>
+    <string name="speed_quadrant_top_left">"din högra vänstra kvadrant"</string>
+    <string name="speed_quadrant_top_right">"din högra högkvadrant"</string>
+    <string name="speed_quadrant_bottom_left">"din vänstra kvadrant"</string>
+    <string name="speed_quadrant_bottom_right">"din högra kvadrant"</string>
+    <string name="speed_too_slow">"För
+långsam"</string>
+    <string name="game_loader_download_game">"Ladda ner"</string>
+    <string name="game_loader_game_requires_update">"Obligatorisk uppdatering"</string>
+    <string name="game_loader_game_download_in_progress">"Nedladdning"</string>
+    <string name="game_loader_update_available">"Uppdatering tillgänglig"</string>
+    <string name="ota.low.battery.subtitle">"Ladda/byt ut din tandborstes batteri för att utföra uppdateringen."</string>
+    <string name="ota.low.battery.title">"Tandborsten har inte tillräckligt med batteriladdning."</string>
+    <string name="toothbrush.battery.change.required">"Byt batteriet omedelbart."</string>
+    <string name="toothbrush.battery.few.days">"Bara några dagar finns kvar av batteriets livslängd, var beredd att ersätta det."</string>
+    <string name="toothbrush.battery.few.weeks">"Det är fortfarande några veckors livslängd kvar på batteriet om du använder vårt vanliga AAA alkaliska batteri från Energizer. Andra batterityper kan leda till kortare livslängd."</string>
+    <string name="toothbrush.battery.six.months">"Det finns mer än 6 månaders livslängd kvar på batteriet om du använder vårt vanliga AAA alkaliska batteri från Energizer. Andra batterityper kan leda till kortare livslängd."</string>
+    <string name="toothbrush.battery.three.months">"Det finns mer än 3 månaders livslängd kvar på batteriet om du använder vårt vanliga AAA alkaliska batteri från Energizer. Andra batterityper kan leda till kortare livslängd."</string>
+    <string name="toothbrush.battery.state.change.required">"tomt"</string>
+    <string name="toothbrush.battery.state.few.days">"några dagar"</string>
+    <string name="toothbrush.battery.state.few.weeks">"några veckor"</string>
+    <string name="toothbrush.battery.state.six.months">"6+ månader"</string>
+    <string name="toothbrush.battery.state.three.months">"3+ månader"</string>
+    <string name="toothbrush.battery.state.unknown">"okänt"</string>
+    <string name="delete_game_dialog_title">"Är du säker att du vill radera %1$s?"</string>
+    <string name="delete_game_dialog_body">"Du kommer att kunna ladda ner den igen senare."</string>
+    <string name="delete_game_dialog_ok">"Ta bort"</string>
+    <string name="delete_game_dialog_cancel">"Avbryt"</string>
+    <string name="tb_toolbar_enable_location">"Vänligen aktivera platstjänst"</string>
+    <string name="my_connect_b1">"Min Connect B1"</string>
+    <string name="setup_toothbrush_connect_b1_title">"Anslut din B1"</string>
+    <string name="challenge_details_won">"vann"</string>
+    <string name="challenge_details_close">"Stäng"</string>
+    <string name="challenge_details_completed_on">"Slutförd den"</string>
+    <string name="challenge_details_start">"Börja med denna utmaning"</string>
+    <string name="challenge_details_not_completed">"Inte slutförd ännu"</string>
+    <string name="challenge_details_continue">"Fortsätt denna utmaning"</string>
+    <string name="current_tier_smiles_label_description">"Varje borstning ger dig %1$s"</string>
+    <string name="next_tier_label">"Nästa nivå"</string>
+    <string name="next_tier_description">"Utför %1$s fler utmaningar för att nå %2$s -nivån"</string>
+    <string name="future_tier_description">"Varje borstning ger dig +%1$s"</string>
+    <string name="coach_start_message_title">"Sätt på tandborsten för att starta din Coach+ session"</string>
+    <string name="coach_dialog_start_message_title">"Låt oss börja"</string>
+    <string name="coach_dialog_start_message_body">"Sätt på tandborsten för att starta din Coach+ session"</string>
+    <string name="coach_dialog_start_message_cancel">"Avbryt"</string>
+    <string name="coach_manual_dialog_start_message_body">"Klicka på knappen för att starta din manuella Coach+ session"</string>
+    <string name="coach_manual_dialog_start_message_start">"Starta"</string>
+    <string name="buy">"Köpa"</string>
+    <string name="smiles_count">"Du har %s Smiles"</string>
+    <string name="smiles_history_link">"Se intjänade Smilespoäng"</string>
+    <string name="challenge_details_action_offline">"Vad är offline borstning?"</string>
+    <string name="offline_brushing_toolbar_title">"Offline-borstning"</string>
+    <string name="offline_brushing_title">"Du kan använda din Colgate Connect tandborste med eller utan appen"</string>
+    <string name="offline_brushing_point1">"Borsta med Colgate Connect medan appen inte är öppen: din borstningsteknik analyseras fortfarande"</string>
+    <string name="offline_brushing_point2">"Du kan sedan synkronisera din tandborste genom att helt enkelt öppna din App och upptäcka nya insikter"</string>
+    <string name="smiles_history">"Smiles historia"</string>
+    <string name="smiles_history_brushing">"Borstning"</string>
+    <string name="smiles_history_challenge_completed">"Utmaning avslutad: %s"</string>
+    <string name="smiles_history_offline_brushing">"Offline borstning"</string>
+    <string name="smiles_history_online_brushing">"Borsta med %s"</string>
+    <string name="smiles_history_transfer_from">"%s Smiles mottagna från %s"</string>
+    <string name="smiles_history_transfer_in">"%s Smiles mottagna"</string>
+    <string name="smiles_history_transfer_out">"%s leenden överförs"</string>
+    <string name="smiles_history_transfer_to">"%s leenden överförs till %s"</string>
+    <string name="smiles_history_tier_reached">"%s nivå nåddes. Varje tandborste ger dig %s Smiles."</string>
+    <plurals name="challenge_details_more_to_earn">
+        <item quantity="one">"%1$d till att tjäna %2$d smile!"</item>
+        <item quantity="other">"%1$d till att tjäna %2$d smiles!"</item>
+    </plurals>
+    <string name="smiles_history_smiles_count">"%s Smiles"</string>
+    <string name="coach_start_message_title_manual">"Skaka din tandborste för att starta din Coach+ session"</string>
+    <string name="smiles_history_week_streak">"Veckans serie"</string>
+    <string name="transfer_smiles">"Överför Leenden"</string>
+    <string name="family_smiles">"Familjemedlemmar"</string>
+    <string name="rewards_error_no_internet_connection">"Vänligen aktivera din internetanslutning för att ladda belöningsdata."</string>
+    <string name="rewards_error_synchronisation_failed">"Ett fel uppstod vid laddning av data. Vänligen försök igen senare."</string>
+    <string name="smiles_transfer_title">"Överför Leenden"</string>
+    <string name="smiles_transfer_current_balance">"Aktuellt saldo"</string>
+    <string name="smiles_transfer_transfer_amount">"Överför belopp"</string>
+    <string name="smiles_transfer_to">"Överför till"</string>
+    <string name="smiles_transfer_validate">"Överför"</string>
+    <string name="smiles_transfer_smiles">"Smiles"</string>
+    <string name="smiles_transfer_smiles_won">"%s Smiles vann"</string>
+    <string name="smiles_transfer_done">"Överföringen är klar"</string>
+    <string name="challenge_feedback_collect_smiles">"Samla mina Smiles"</string>
+    <string name="multi_challenge_feedback_title">"Grattis!"</string>
+    <string name="multi_challenge_feedback_message_part1">"Du genomförde"</string>
+    <plurals name="multi_challenge_feedback_message_part2">
+        <item quantity="one">"%1$d ny utmaning."</item>
+        <item quantity="other">"%1$d nya utmaningar."</item>
+    </plurals>
+    <string name="multi_challenge_feedback_message_part3">"Dra för att upptäcka dem."</string>
+
+    <!-- Fuzzy -->
+    <plurals name="smiles_feedback_good">
+        <item quantity="one">"Vilken fin borstning!\nDu vann bara %1$d Smile!"</item>
+        <item quantity="other">"Vilken fin borstning!\nDu vann bara %1$d Smiles!"</item>
+    </plurals>
+    <string name="smiles_feedback_bad">"Tyvärr har du inte vunnit några Smiles med denna borstning.\nDu måste få minst 50%% ytskydd för att vinna Smiles."</string>
+    <string name="my_plaqless">"Min Plaqless Pro"</string>
+    <string name="setup_toothbrush_plaqless_title">"Anslut din Plaqless Pro"</string>
+    <string name="new_tier_title">"Du har nått %s-nivå"</string>
+    <string name="new_tier_message">"Grattis %s, du genomförde %s utmaningar. Fortsätt!"</string>
+    <string name="new_tier_coins">"Från och med nu ger varje borstning av tänder dig"</string>
+    <string name="feedback_offline_sync">"Hej, du synkroniserade %s borstar och vann %s Smiles!"</string>
+    <string name="feedback_offline_sync_no_smiles">"Hej, du synkroniserade %s borstar men vann inte några Smiles.\nDu måste få minst 50%% ytskydd för att vinna Smiles."</string>
+    <string name="pql_connection_title">"Börja med att trycka på XXX knappen på tandborsten"</string>
+    <string name="pql_connection_description"><![CDATA[Se upp för den blinkande <b>bluetooth symbolen</b>]]></string>
+    <string name="calendar_tab">"Kalender"</string>
+    <string name="detection_popup_pql_no">"Fortsätt leta efter min tandborste"</string>
+    <string name="detection_popup_pql_yes">"Anslut"</string>
+    <string name="plaqless_intro_title">"Välkommen till Colgate Plaqless Pro"</string>
+    <string name="plaqless_intro_subtitle"><![CDATA[Att ta bort byggnaden varje dag är <b>nyckeln till god oral hälsa.</b>]]></string>
+    <string name="plaqless_intro_type_title">"Plaqless Pro indikerar:"</string>
+    <string name="plaqless_intro_type_cleand">"Städat"</string>
+    <string name="plaqless_intro_type_remains">"Plack rester"</string>
+    <string name="plaqless_intro_type_missed">"Missade"</string>
+    <string name="plaqless_intro_start">"Komma igång"</string>
+    <string name="slide1_title">"Lär dig om tandborsten"</string>
+    <string name="slide1_description1"><![CDATA[<b>Avancerade Smarta Sensorer</b> upptäcka uppbyggnad på dina tänder]]></string>
+    <string name="slide1_description2"><![CDATA[<b>Indikatorljus Ringen</b> upptäcka uppbyggnad på dina tänder]]></string>
+    <string name="slide1_description3"><![CDATA[<b>Timer</b> tänds var 30: e sekund]]></string>
+    <string name="slide2_title">"Indikatorlampan"</string>
+    <string name="slide2_description1_title">"Blå"</string>
+    <string name="slide2_description1_content1">"Plack detekteras"</string>
+    <string name="slide2_description1_content2">"Borsta för att ta bort den"</string>
+    <string name="slide2_description2_title">"Vit"</string>
+    <string name="slide2_description2_content1">"Området är rent"</string>
+    <string name="slide2_description2_content2">"Gå vidare till nästa avsnitt"</string>
+    <string name="slide2_description3_title">"Röd"</string>
+    <string name="slide2_description3_content1">"Sensorn är oskärmad"</string>
+    <string name="slide2_description3_content2">"Skölj sensor eller byt borstvinkel"</string>
+    <string name="intro_start_test">"Börja testet"</string>
+    <string name="dashboard_pql_tip_tricks_title">"Tips och tricks"</string>
+    <string name="dashboard_pql_tip_tricks_body">"Lär dig hur du optimerar dina resultat"</string>
+    <string name="pql_best_results_title">"För bästa resultat"</string>
+    <string name="pql_best_results_body">"Håll tandborsten i horisontalläge för att säkerställa en effektiv teknik."</string>
+    <string name="pql_best_results_body_highlight">"horisontalläge"</string>
+    <string name="pql_best_results_ok">"Jag förstod"</string>
+    <string name="pql_brushing_progress_msg">"Plack analys"</string>
+    <string name="intro_do_later">"Jag gör det senare"</string>
+    <string name="pql_durring_session_description_step1">"Var uppmärksam på LED ring färgen medan du borstar tänderna."</string>
+    <string name="pql_durring_session_description_step1_highlighted">"LED ring färgen"</string>
+    <string name="mouth_map_left">"V"</string>
+    <string name="mouth_map_right">"H"</string>
+    <string name="mouth_map_clean_score">"ren poäng"</string>
+    <string name="mouth_map_close">"Gå till hemsidan"</string>
+    <string name="mouth_map_dialog_ok">"Jag förstod"</string>
+    <string name="missed_area_dialog_title">"Missat\nområde"</string>
+    <string name="missed_area_dialog_body"><![CDATA[Gul indikerar <b>områden som du inte har borstat</b>]]></string>
+    <string name="clean_score_dialog_title">"ren poäng"</string>
+    <string name="clean_score_dialog_clean"><![CDATA[<b>%s</b> ren]]></string>
+    <string name="clean_score_dialog_remains"><![CDATA[<b>%s</b> plack rester]]></string>
+    <string name="clean_score_dialog_missed"><![CDATA[<b>%s</b> missat]]></string>
+    <string name="build_up_remains_dialog_title">"Plack\nrester"</string>
+    <string name="build_up_remains_dialog_body"><![CDATA[Blå indikerar de områden där <b>det finns plack</b>. Vi rekommenderar att du borstar dem igen]]></string>
+    <string name="coach_plus_feedback_message_speed_fast">"Var försiktig, du borstar för fort!"</string>
+    <string name="coach_plus_feedback_message_speed_slow">"Du borstar för långsamt!"</string>
+
+    <!-- Fuzzy -->
+    <string name="coach_plus_feedback_message_wrong_angle_incisors_interior">"Justera din tandborste vertikal tilt"</string>
+
+    <!-- Fuzzy -->
+    <string name="coach_plus_feedback_message_wrong_angle_other_zones">"Justera tandborsthuvudets vinkel (45°)"</string>
+    <string name="crown_explanation_dialog_title">"Perfekt dag"</string>
+    <string name="crown_explanation_dialog_body">"Borsta dina tänder 2 gånger om dagen med över 80%% av ytan täckt av borstning för att tjäna din krona!"</string>
+    <string name="crown_explanation_dialog_ok">"Jag förstod"</string>
+    <string name="week_streak_dialog_title">"Veckans serie!"</string>
+    <string name="week_streak_dialog_body">"Grattis, du borstade tänderna 2 gånger om dagen 7 dagar i rad. Du vann %s Smiles!"</string>
+    <string name="week_streak_dialog_ok">"Samla mina %s Smiles"</string>
+    <string name="slide3_title">"Titta på borsten i åtgärd"</string>
+    <string name="slide3_try_brush_now">"Prova borsten ut nu"</string>
+    <string name="slide3_try_brush_later">"Jag gör det senare"</string>
+    <string name="coach_plus_feedback_message_wrong_handle">"Håll din tandborste horisontellt"</string>
+    <string name="brushing_program_button_text">"Borste Program"</string>
+    <string name="brushing_quiz_label">"Borste Program"</string>
+    <string name="brushing_quiz_screen_1_title">"Hur skulle du betygsätta din nuvarande orala vårdrutin?"</string>
+    <string name="brushing_quiz_screen_1_answer_1">"Ganska bra"</string>
+    <string name="brushing_quiz_screen_1_answer_2">"Medel"</string>
+    <string name="brushing_quiz_screen_1_answer_3">"Kan förbättras"</string>
+    <string name="brushing_quiz_screen_2_title">"Hur ofta lider du av tandkötts- eller tandkänslighet?"</string>
+    <string name="brushing_quiz_screen_2_answer_1">"Inte ofta"</string>
+    <string name="brushing_quiz_screen_2_answer_2">"Ofta"</string>
+    <string name="brushing_quiz_screen_3_answer_1">"Vita tänder"</string>
+    <string name="brushing_quiz_screen_3_answer_2">"Fräschare andetag"</string>
+    <string name="brushing_quiz_screen_3_answer_3">"Skydda känsliga tänder eller tandkött"</string>
+    <string name="brushing_quiz_screen_3_title">"Vad skulle du helst vilja arbeta med idag?"</string>
+    <string name="brushing_quiz_screen_2_answer_3">"Dagligen"</string>
+    <string name="brushing_quiz_confirmation_title">"Tack för att du slutfört frågesporten"</string>
+    <string name="brushing_quiz_program_whitening">"Whitening program"</string>
+    <string name="brushing_quiz_program_sensitive">"Känsligt program"</string>
+    <string name="brushing_quiz_program_everyday_care">"Daglig vård"</string>
+    <string name="brushing_quiz_confirmation_brushing_program">"Ditt borstprogram är\n\n%1$s"</string>
+    <string name="brushing_quiz_confirmation_try_it">"Prova det nu"</string>
+    <string name="brushing_quiz_confirmation_confirm">"Bekräfta programmet"</string>
+    <string name="brushing_quiz_confirmation_revert">"Återgå"</string>
+    <string name="brushing_quiz_confirmation_try_it_not_paired">"Du måste ha en elektrisk tandborste ansluten till din enhet för att testa programmet"</string>
+    <string name="test_angles_activity_name">"Vinklar"</string>
+
+    <!-- Default push notification channel -->
+    <!-- Fuzzy -->
+    <string name="push_notification_channel_general">"Allmänna anmälningar"</string>
+    <string name="brushing_program_dialog_title">"Välj ditt program"</string>
+    <string name="brushing_program_dialog_slow">"Känsligt program"</string>
+    <string name="brushing_program_dialog_regular">"Daglig vård"</string>
+    <string name="brushing_program_dialog_strong">"Whitening program"</string>
+    <string name="brushing_program_dialog_current">"(nuvarande)"</string>
+    <string name="test_angles_intro_header">"Vinklar"</string>
+    <string name="test_angles_intro_body">"Håll tandborsten i 45 graders vinkel mot tandköttet.
+
+Följ anvisningarna för att utvärdera och förbättra din teknik."</string>
+    <string name="test_angles_intro_start_button">"Starta"</string>
+    <string name="login_hint_enable_network">"Vänligen aktivera internetåtkomst för att skapa ditt konto"</string>
+    <string name="test_angles_state_correct">"Bra"</string>
+    <string name="test_angles_state_incorrect">"Dålig"</string>
+    <string name="test_angles_molar_hint">"Testa dina vinklar"</string>
+    <string name="test_angles_incisor_hint">"Luta din tandborste vertikalt på botten av innerbrickorna"</string>
+    <string name="test_angles_confirmation_hint">"Det är allt! Nu kan du avsluta vinklaraktiviteten."</string>
+    <string name="test_angles_confirmation_hint_highlight">"avsluta vinklaraktiviteten"</string>
+    <string name="offline_brushing_notification_single_no_smiles_title">"Du vann ingen Smiles"</string>
+    <string name="offline_brushing_notification_single_no_smiles_content">"Kräver 50% yta eller mer"</string>
+    <string name="offline_brushing_notification_single_with_smiles_title">"Vilken trevlig borstning!"</string>
+    <string name="offline_brushing_notification_single_with_smiles_content">"Du vann precis %1$s Smiles!"</string>
+    <string name="offline_brushing_notification_multiple_no_smiles_title">"Du synkroniserade %1$s borstar"</string>
+    <string name="offline_brushing_notification_multiple_no_smiles_content">"Få 50% ytan eller mer för att vinna Smiles"</string>
+    <string name="offline_brushing_notification_multiple_with_smiles_title">"Du synkroniserade %1$s borstar"</string>
+    <string name="offline_brushing_notification_multiple_with_smiles_content">"Och vann %1$s Smiles !"</string>
+    <string name="coach_plus_feedback_message_out_of_mouth">"Lägg din tandborste i munnen"</string>
+    <string name="coach_plus_feedback_message_rinse_brush_head">"Rengör tandborstsensorn"</string>
+    <string name="coach_plus_title">"Coach+"</string>
+    <string name="dashboard_clean_score_title">"Ren"</string>
+    <string name="dashboard_clean_score_subtitle">"Poäng"</string>
+
+    <!-- Notifications related to brush connectivity -->
+    <string name="push_notification_channel_kolibree_service">"Tandborsteanslutning"</string>
+
+    <!-- Notifications related to offline brushings retrieval -->
+    <string name="push_notification_channel_night_watch">"Offlineborstar"</string>
+    <string name="speed_control_activity_name">"Hastighets kontroll"</string>
+    <string name="speed_control_intro_header">"Hastighets kontroll"</string>
+    <string name="speed_control_intro_body">"Att borsta tänderna för snabbt kan skada tandköttet.
+
+Följ instruktionerna för att utvärdera och förbättra din teknik"</string>
+    <string name="speed_control_intro_start_button">"Börja borsta nu"</string>
+    <string name="speed_control_confirmation_hint">"Det är allt! Nu kan du avsluta Hastighets kontroll-aktiviteten."</string>
+    <string name="speed_control_confirmation_hint_highlight">"avsluta Hastighets kontroll-aktiviteten"</string>
+    <string name="speed_control_brushing_stage1_hint">"Borsta dina molar
+yttre yta"</string>
+    <string name="speed_control_brushing_stage1_hint_highlight">"molarer"</string>
+    <string name="speed_control_brushing_stage2_hint">"Borsta dina molar
+tuggytan"</string>
+    <string name="speed_control_brushing_stage2_hint_highlight">"molarer"</string>
+    <string name="speed_control_brushing_stage3_hint">"Borsta dina främre tänder
+yttre yta"</string>
+    <string name="speed_control_brushing_stage3_hint_highlight">"framtänder
+yttre"</string>
+    <string name="speed_control_feedback_underspeed">"För långsam!"</string>
+    <string name="speed_control_feedback_overspeed">"För snabbt!"</string>
+    <string name="speed_control_feedback_correct">" "</string>
+    <string name="activity_not_compatible_with_plaqless">"Den här aktiviteten är för närvarande inte kompatibel med din Plaqless Pro"</string>
+    <string name="personal_challenge_objective">"Mål"</string>
+    <string name="personal_challenge_level">"Nivå"</string>
+    <string name="personal_challenge_period">"Period"</string>
+    <string name="personal_challenge_objective_streak">"Strimma"</string>
+    <string name="personal_challenge_objective_coverage">"Täckning"</string>
+    <string name="personal_challenge_objective_duration">"Varaktighet"</string>
+    <string name="personal_challenge_level_easy">"Lätt"</string>
+    <string name="personal_challenge_level_hard">"Hård"</string>
+    <string name="personal_challenge_streak_easy">"Borsta en gång om dagen i %1$s i rad → %2$d leenden"</string>
+    <string name="personal_challenge_streak_hard">"Borsta två gånger om dagen i %1$s i rad → %2$d leenden"</string>
+    <string name="personal_challenge_coverage_easy">"Gör en borstning med minst 80%% täckning en gång om dagen i %1$s → %2$d leenden"</string>
+    <string name="personal_challenge_coverage_hard">"Gör en borstning med minst 80%% täckning två gånger om dagen i %1$s → %2$d leenden"</string>
+    <string name="personal_challenge_duration_easy">"Borsta i minst 2 minuter en gång om dagen i %1$s → %2$d leenden"</string>
+    <string name="personal_challenge_duration_hard">"Borsta i minst 2 minuter två gånger om dagen i %1$s → %2$d leenden"</string>
+    <plurals name="duration_days">
+        <item quantity="one">"%1$d dag"</item>
+        <item quantity="other">"%1$d dagar"</item>
+    </plurals>
+    <string name="personal_challenge_proposed_challenge">"FÖRESLAGEN UTMANING"</string>
+    <string name="personal_challenge_currently_active_challenge">"AKTUELL UTVECKLING"</string>
+    <string name="personal_challenge_create">"Skapa utmaning"</string>
+    <string name="personal_challenge_update">"Uppdatera befintlig utmaning"</string>
+    <string name="personal_challenge_delete">"Radera aktiv utmaning"</string>
+    <string name="personal_challenge_title">"Personlig utmaning"</string>
+    <string name="personal_challenge_toolbar">"Utmaningar"</string>
+    <string name="personal_challenge_save">"Spara"</string>
+    <string name="personal_challenge_define_your_challenge">"Definiera din egen utmaning och bli belönad."</string>
+    <string name="personal_challenge_parameters">"Utmana parametrar"</string>
+    <string name="personal_challenge_parameter_target">"Förbättra min"</string>
+    <string name="personal_challenge_parameter_level">"Nivå"</string>
+    <string name="personal_challenge_parameter_period">"Utmaningsperiod"</string>
+    <string name="personal_challenge_result">"Resultat utmaning"</string>
+    <string name="personal_challenge_update_dialog_title">"Uppdatera utmaningen"</string>
+    <string name="personal_challenge_update_dialog_body">"Är du säker på att du vill uppdatera din aktuella utmaning?"</string>
+    <string name="personal_challenge_update_dialog_yes">"Ja"</string>
+    <string name="personal_challenge_update_dialog_no">"Nej"</string>
+    <string name="personal_challenge_completed_title">"Personlig utmaning"</string>
+    <string name="personal_challenge_completed_message">"Grattis! Du har slutfört din personliga utmaning"</string>
+    <string name="firmware_upgrade_welcome">"Att uppgradera din tandborste kommer att ta några minuter, stäng inte av tandborsten."</string>
+</resources>

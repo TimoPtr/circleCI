@@ -1,0 +1,137 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "2e0f57ae424c206b11f6458d316f65c3",
+    "entities": [
+      {
+        "tableName": "recorded_session",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`orphan_brushing_date_time` INTEGER NOT NULL, `date_time` INTEGER, `duration` INTEGER NOT NULL, `events` TEXT, PRIMARY KEY(`orphan_brushing_date_time`))",
+        "fields": [
+          {
+            "fieldPath": "orphanBrushingDateTime",
+            "columnName": "orphan_brushing_date_time",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "dateTime",
+            "columnName": "date_time",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "duration",
+            "columnName": "duration",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "events",
+            "columnName": "events",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "orphan_brushing_date_time"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "orphan_brushing",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `duration` INTEGER NOT NULL, `quality` INTEGER NOT NULL, `goal_duration` INTEGER NOT NULL, `utc_timestamp` INTEGER, `toothbrush_mac` TEXT, `toothbrush_serial` TEXT, `processed_data` TEXT, `kolibree_id` INTEGER, `is_deleted_locally` INTEGER NOT NULL, `is_synchronized` INTEGER NOT NULL, `assigned_profile_id` INTEGER)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "duration",
+            "columnName": "duration",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "quality",
+            "columnName": "quality",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "goalDuration",
+            "columnName": "goal_duration",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "utcDate",
+            "columnName": "utc_timestamp",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "toothbrushMac",
+            "columnName": "toothbrush_mac",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "toothbrushSerial",
+            "columnName": "toothbrush_serial",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "processedData",
+            "columnName": "processed_data",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "kolibreeId",
+            "columnName": "kolibree_id",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "isDeletedLocally",
+            "columnName": "is_deleted_locally",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isSynchronized",
+            "columnName": "is_synchronized",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "assignedProfileId",
+            "columnName": "assigned_profile_id",
+            "affinity": "INTEGER",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"2e0f57ae424c206b11f6458d316f65c3\")"
+    ]
+  }
+}

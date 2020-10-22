@@ -1,0 +1,1132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ok">"OK"</string>
+
+    <!-- Home menu -->
+    <string name="action_account_settings">"Account"</string>
+    <string name="action_users_settings">"Profili"</string>
+    <string name="action_go_to_slideshow">"Visita guidata"</string>
+    <string name="action_about">"Info"</string>
+    <string name="action_logout">"Esci"</string>
+    <string name="action_spread_the_word">"Passaparola"</string>
+    <string name="action_help">"Aiuto"</string>
+    <string name="action_change_profile">"Cambia profilo"</string>
+    <string name="action_edit_profile">"Modifica profilo"</string>
+
+    <!-- LOGIN AND REGISTRATION -->
+    <string name="login">"Entra"</string>
+    <string name="connect_">"Connessione &gt;"</string>
+    <string name="male">"Uomo"</string>
+    <string name="female">"Donna"</string>
+    <string name="signup">"Iscrizione"</string>
+    <string name="create_profile">"Crea profilo"</string>
+    <string name="edit_profile">"Modifica profilo"</string>
+    <string name="email_hint">"Email"</string>
+    <string name="password_hint">"Password"</string>
+    <string name="password_confirm_hint">"Conferma password"</string>
+    <string name="firstname_hint">"Nome"</string>
+    <string name="lastname_hint">"Cognome"</string>
+    <string name="birthday_hint">"Data di nascita"</string>
+    <string name="create">"Crea &gt;"</string>
+    <string name="btn_next">"Successivo &gt;"</string>
+    <string name="choose_picture_hint">"Aggiungi una foto"</string>
+    <string name="choose_picture_gallery">"Scegli una foto"</string>
+    <string name="choose_picture_take">"Scatta una foto"</string>
+    <string name="gender_hint">"Tu sei"</string>
+    <string name="handedness_hint">"Con quale mano ti spazzoli i denti?"</string>
+    <string name="country_hint">"Paese"</string>
+    <string name="forgotten_password">"Password dimenticata"</string>
+    <string name="email_missing">"Inserisci l'email."</string>
+    <string name="email_invalid">"Inserisci un'email valida."</string>
+    <string name="firstname_missing">"Inserisci il nome."</string>
+    <string name="lastname_missing">"Inserisci il cognome."</string>
+    <string name="birthday_missing">"Inserisci l'età."</string>
+    <string name="picture_missing">"Scegli una foto."</string>
+    <string name="gender_missing">"Inserisci il sesso."</string>
+    <string name="handedness_missing">"Inserisci la lateralità."</string>
+    <string name="country_missing">"Inserisci il paese."</string>
+    <string name="password_missing">"Inserisci la password."</string>
+    <string name="password_confirmation_missing">"Conferma la password."</string>
+    <string name="passwords_dont_match">"Ops! Le password non corrispondono."</string>
+    <string name="reset_password">"Reimposta la password"</string>
+    <string name="reset_password_ok">"Controlla l'email e segui le istruzioni per reimpostare la password."</string>
+    <string name="reset_password_ko">"Ops! Si è verificato un errore..."</string>
+    <string name="terms_of_use_terms">"Termini e Condizioni"</string>
+    <string name="terms_of_use_policy">"Informativa sulla Privacy"</string>
+    <string name="account_created_title">"Evviva!"</string>
+    <string name="account_created_message">"Il tuo profilo è stato creato.
+Ora sei pronto per spazzolarti i denti!"</string>
+    <string name="facebook_login">"Accedi con Facebook"</string>
+    <string name="facebook_signup">"Iscrizione con Facebook"</string>
+    <string name="please_wait">"Attendi…"</string>
+    <string name="choose_picture_local">"Scegli da Colgate Connect"</string>
+    <string name="terms_of_use">"Accetto i "<![CDATA[<u><a href=\"%1$s\">%2$s</a></u>]]>" e prendo atto dell' "<![CDATA[<u><a href=\"%3$s\">%4$s</a></u>]]>"."</string>
+
+    <!-- ACCOUNT ACTIVITY -->
+    <string name="account">"Account"</string>
+    <string name="change_password">"Cambia password"</string>
+    <string name="new_password">"Nuova password"</string>
+    <string name="old_password">"Vecchia password"</string>
+    <string name="confirm_new_pasword">"Conferma password"</string>
+    <string name="help_title">"Aiutaci"</string>
+    <string name="help_message">"Aiutaci a migliorare la precisione dei sensori di movimento inviandoci i tuoi dati di spazzolamento in forma anonima.
+(Potrai modificare le preferenze in qualsiasi momento dalla rubrica Impostazioni dell'app)"</string>
+    <string name="old_password_missing">"Inserisci la vecchia password."</string>
+    <string name="new_password_missing">"Inserisci la nuova password."</string>
+    <string name="new_password_confirm_missing">"Conferma la nuova password."</string>
+    <string name="password_updated">"La password è stata modificata!"</string>
+    <string name="password_updated_title">"Grazie!"</string>
+    <string name="musicchoosertitle">"Scegli la musica del Coach"</string>
+
+    <!-- EDIT PROFILE ACTIVITY -->
+    <string name="personal_info">"Informazioni personali"</string>
+    <string name="brushing_settings">"Impostazioni di spazzolamento"</string>
+    <string name="right_handed">"Destro"</string>
+    <string name="left_handed">"Mancino"</string>
+    <string name="coach_brushing_time">"Tempo di spazzolamento"</string>
+    <string name="coach_brushing_time_duration">"Durata di spazzolamento: %1$s"</string>
+    <string name="coach_sound_value">"Musica riprodotta durante lo spazzolamento in Coach: %1$s"</string>
+    <string name="none">"Nessuna"</string>
+    <string name="music">"Musica"</string>
+    <string name="sounds">"Suoni"</string>
+    <string name="no_music_file">"Nessun file selezionato"</string>
+    <string name="transition_sounds">"Suoni di transizione"</string>
+    <string name="no_artist">"Nessun artista"</string>
+    <string name="no_title">"Nessun titolo"</string>
+    <string name="brushing_time_hint">"Tempo di spazzolamento"</string>
+    <string name="profiles">"Profili"</string>
+    <string name="delete_profile_title">"Elimina profilo"</string>
+    <string name="delete_profile_message">"Sei sicuro?
+Tutti i dati di questo utente saranno eliminati."</string>
+
+    <!-- ADD PROFILE ACTIVITY -->
+    <string name="add_profile">"Aggiungi nuovo profilo"</string>
+
+    <!-- Leaderboard -->
+    <string name="leaderboard">"Classifica"</string>
+
+    <!-- About -->
+    <string name="kolibree_version">"Versione %1$s (%2$s)
+Account %3$s"</string>
+    <string name="kolibree_about">"Crediamo che la tecnologia possa aiutare a prevenire le patologie oro-dentali e stiamo trasformando questa possibilità in realtà."</string>
+    <string name="about_terms">"Termini e Condizioni e Informativa sulla Privacy"</string>
+    <string name="about">"Info"</string>
+    <string name="kolibree_rights">"Colgate Connect, il logo Colgate Connect e tutti i marchi Colgate Connect appartengono alla società Colgate Connect.
+Tutti i diritti sono riservati."</string>
+
+    <!-- Checkup -->
+    <string name="get_tb">"Ordina uno spazzolino"</string>
+
+    <!-- Checkup -->
+    <string name="checkup">"Report"</string>
+    <string name="neglected_areas">"Zone poco spazzolate"</string>
+    <string name="well_brushed_areas">"Zone spazzolate correttamente"</string>
+    <string name="refresh">"Ricarica"</string>
+    <string name="checkup_duration">"Durata"</string>
+    <string name="checkup_not_connected">"Dati di superficie non disponibili per questo spazzolamento."</string>
+    <string name="checkup_empty">"Installa il mio spazzolino"</string>
+    <string name="connect_tb_hint">"Lavati i denti con lo spazzolino Colgate Connect per vedere le aree che potresti aver perso."</string>
+
+    <!-- Options Menu -->
+    <string name="menu_connect">"Collega uno spazzolino"</string>
+
+    <!-- SetupToothbrushActivity -->
+    <string name="none_paired">"Nessuno spazzolino è stato associato"</string>
+    <string name="none_found">"Nessuno spazzolino trovato"</string>
+
+    <!-- ConnectDeviceDialogActivity -->
+    <string name="toothbrushes">"Spazzolini"</string>
+    <string name="none_connected">"Nessuno spazzolino collegato"</string>
+    <string name="select_a_device">"Spazzolini disponibili"</string>
+    <string name="connect">"Collega"</string>
+    <string name="restart">"Riavvia"</string>
+    <string name="quit">"Abbandona"</string>
+    <string name="pause">"Pausa"</string>
+    <string name="next">"Successivo"</string>
+    <string name="cancel">"Annulla"</string>
+    <string name="notnow">"Non adesso"</string>
+    <string name="information">"Informazioni"</string>
+    <string name="error">"Errore"</string>
+
+    <!-- SwitchGame Coach Fragment -->
+    <string name="no_tb_connected">"Spazzolino non collegato"</string>
+    <string name="description_no_tb_connected_pirate">"Collega il tuo spazzolino per spazzolarti i denti con Go Pirate!"</string>
+    <string name="description_no_tb_connected_coach">"Vuoi lavarti i denti senza utilizzare lo spazzolino Colgate Connect?"</string>
+
+    <!-- Coach Game Fragment -->
+    <string name="resume">"Continua"</string>
+    <string name="coach_something_wrong">"Si è verificato un problema. Riprova più tardi."</string>
+
+    <!-- Coach Game Fragment -->
+    <string name="points">"Punti"</string>
+
+    <!-- Settings ToothBrush Fragment -->
+    <string name="user_mode_title">"Utenti"</string>
+
+    <!-- Settings ToothBrush Fragment -->
+    <string name="toothbrush_information">"Informazioni sullo spazzolino"</string>
+    <string name="title_toothbrush">"Numero spazzolino"</string>
+    <string name="battery_level">"Livello batteria"</string>
+    <string name="find_toothbrush">"Rileva il mio spazzolino"</string>
+    <string name="blink_toothbrush">"Fai lampeggiare lo spazzolino"</string>
+    <string name="toothbrush_blinking">"Lo spazzolino lampeggia"</string>
+    <string name="ota_toothbrush_title">"Versione del software dello spazzolino"</string>
+    <string name="hardware_version_title">"Versione del materiale"</string>
+    <string name="software_version_title">"Versione del software"</string>
+    <string name="user_mode_not_known">"Scegli un utente"</string>
+    <string name="settings_shared_toothbrush">"Utenti multipli"</string>
+    <string name="toothbrush_owner_everyone">"Tutti"</string>
+    <string name="toothbrush_firmware_update_available">"Aggiorna il tuo spazzolino da denti"</string>
+    <string name="toothbrush_firmware_update_title">"Aggiorna il tuo spazzolino da denti"</string>
+    <string name="toothbrush_firmware_update_button">"Aggiorna"</string>
+    <string name="firmware_upgrade_error">"Aggiornamento non riuscito:
+%s"</string>
+    <string name="toothbrush_firmware_update_progress_label">"Installazione..."</string>
+    <string name="toothbrush_firmware_update_rebooting_label">"Rebooting"</string>
+    <string name="toothbrush_firmware_update_success">"Il tuo spazzolino Colgate Connect è stato aggiornato!"</string>
+
+    <!-- Settings Pairing Fragment -->
+    <string name="pairing_kolibree_1">"Ora premi il pulsante dello spazzolino fino a quando il LED lampeggerà di blu."</string>
+    <string name="pairing_kolibree_2">"Quando un pop-up ti chiederà di associare lo spazzolino, inserisci il codice:"</string>
+    <string name="pairing_kolibree_4">"0"</string>
+    <string name="pop_up_connect_fail_title">"Oh oh..."</string>
+    <string name="pop_up_connect_fail_msg">"Non è stato possibile collegare lo spazzolino allo smartphone. Verifica che lo spazzolino sia acceso e riprova."</string>
+
+    <!-- Switch Game Fragment -->
+    <string name="coach_game_name">"Coach"</string>
+    <string name="pirate_game_name">"Go Pirate"</string>
+    <string name="coach_plus_game_name">"Coach Plus"</string>
+    <string name="sba_game_name">@string/test_brushing_screen_title</string>
+    <string name="rabbids_game_name">"Rabbids"</string>
+    <string name="offline_game_name">"Spazzolamento offline"</string>
+    <string name="coach_game_description">"Coach ti accompagna durante lo spazzolamento per mostrarti le zone da spazzolare. Si impara con la pratica!"</string>
+    <string name="pirate_game_description">"Lavarsi i denti diventa un gioco: raccogli le monete che troverai lungo il percorso durante lo spazzolamento."</string>
+    <string name="activities_warning">"I nuovi dati di spazzolamento verranno associati al profilo attivo"</string>
+    <string name="transition_game">"transition_game"</string>
+    <string name="game_brush_not_allow_title">"Ops!"</string>
+    <string name="game_brush_not_allow_msg">"Lavarsi i denti più di 3 volte al giorno può provocare danni alle gengive."</string>
+    <string name="upper_arch">"Su"</string>
+    <string name="lower_arch">"Giù"</string>
+    <string name="delete_profile">"Elimina"</string>
+    <string name="logout_title">"Esci"</string>
+    <string name="logout_message">"Vuoi davvero uscire?"</string>
+    <string name="load_avatar_error">"Oh oh, è imbarazzante…
+Verifica la connessione internet per caricare i profili."</string>
+
+    <!-- Connection Lost Dialog -->
+    <string name="lost_connection_dialog_title">"Mayday!"</string>
+    <string name="lost_connection_dialog_msg">"Lo spazzolino non è più rilevato. Ricollegalo per terminare la configurazione."</string>
+    <string name="send">"Invia"</string>
+    <string name="points_pts">"+%d pts"</string>
+    <string name="account_settings_help">"Aiutaci a migliorare la precisione dei sensori di movimento inviandoci i tuoi dati in forma anonima."</string>
+    <string name="account_settings_digest">"Ricevi ogni settimana per email un report completo degli spazzolamenti con tutte le più importanti informazioni sulla tua igiene orale."</string>
+    <string name="account_settings_digest_title">"Report settimanale"</string>
+    <string name="toothbrush_status_connecting">"Connessione..."</string>
+    <string name="toothbrush_status_pairing">"Associazione..."</string>
+    <string name="checkup_hint_1">"Per visualizzare il tuo report dentale, spazzola i denti utilizzando una delle attività dell'app."</string>
+    <string name="checkup_hint_2">"Il report tiene conto solo degli spazzolamenti effettuati con le attività dell'app."</string>
+    <string name="checkup_error_no_data_title">"Ops, non abbiamo abbastanza dati..."</string>
+    <string name="checkup_error_no_data_hint">"Per visualizzare il tuo report dentale, spazzola i denti utilizzando una delle attività dell'app."</string>
+    <string name="checkup_error_no_internet_title">"Ops, non sei connesso a internet."</string>
+    <string name="checkup_error_no_internet_hint">"Connettiti a internet per aggiornare i dati di spazzolamento."</string>
+    <string name="um_welcome_title">"Ciao %s!"</string>
+    <string name="um_warning_title">"Attenzione"</string>
+    <string name="um_yes">"Sì"</string>
+    <string name="um_no">"No"</string>
+    <string name="um_cancel">"Annulla"</string>
+    <string name="um_edit">"Modifica"</string>
+    <string name="um_next">"Successivo"</string>
+    <string name="um_great">"Ottimo"</string>
+    <string name="um_understood">"Ho capito"</string>
+    <string name="um_already_associated">"Questo spazzolino è associato a una persona."</string>
+    <string name="um_already_associated_known">"Questo spazzolino è associato a %s."</string>
+    <string name="um_already_associated2_known">"Vuoi associare questo spazzolino al profilo di %s adesso?"</string>
+    <string name="um_already_associated2">"Vuoi modificare le impostazioni e associare questo spazzolino a un'altra persona?"</string>
+    <string name="um_already_associated2_self">"Vuoi modificare le impostazioni e associare questo spazzolino al tuo profilo?"</string>
+    <string name="um_warning_message">"Le impostazioni dello spazzolino saranno modificate perché possa essere utilizzato da tutti i profili.
+
+Gli spazzolamenti effettuati senza l'app non saranno più registrati."</string>
+    <string name="um_warning_hint">"Più avanti potrai cambiare la modalità di condivisione modificando i parametri dello spazzolino."</string>
+    <string name="um_pairing_warning_hint">"L'associazione precedente andrà persa."</string>
+    <string name="um_pairing_um_users_title_one">"Nuovo spazzolino rilevato!
+Chi lo usa?"</string>
+    <string name="um_pairing_um_users_title_several">"Chi userà questo spazzolino?"</string>
+    <string name="um_pairing_um_users_entry">"Solo %s"</string>
+    <string name="um_pairing_um_users_entry_several">"Diversi profili"</string>
+    <string name="um_shared_tb">"Spazzolino condiviso"</string>
+    <string name="um_shared_tb_hint">"Gli altri utenti dell'account potranno utilizzare questo spazzolino cambiando la testina. Ti basterà selezionare l'utente prima di lavarti i denti."</string>
+    <string name="um_dont_forget">"Ricorda!"</string>
+    <string name="um_dont_forget_hint">"Se ti lavi i denti senza l'app, i dati di spazzolamento non saranno registrati."</string>
+    <string name="um_new_tb_associated">"Nuovo spazzolino rilevato e associato al tuo profilo!"</string>
+    <string name="um_warning_message_plural">"Le impostazioni degli spazzolini saranno modificate perché possano essere utilizzati da tutti i profili.
+
+Gli spazzolamenti effettuati senza l'app non saranno più registrati."</string>
+    <string name="um_pairing_um_pairing_confirmation_1">"Puoi utilizzare lo spazzolino con o senza l'app Colgate Connect."</string>
+    <string name="um_pairing_um_pairing_confirmation_2">"I dati di spazzolamento verranno registrati in modo automatico. Per salvarli, ricordati di collegare lo spazzolino all'app almeno una volta a settimana."</string>
+    <string name="um_welcome_hint">"Vuoi aggiungere un nuovo spazzolino Colgate Connect al tuo profilo?"</string>
+
+    <!-- Notifications -->
+    <string name="tb_sync.notification.standard.2">"Ricordati di sincronizzare lo spazzolamento per ottimizzare l'esperienza Colgate Connect!"</string>
+    <string name="tb_sync.notification.standard.6">"Sincronizza lo spazzolino per salvare i dati registrati anche se ti sei lavato i denti senza aprire l'app Colgate Connect"</string>
+    <string name="tb_sync.notification.standard.7">"Vuoi sapere se ti sei lavato i denti correttamente negli ultimi giorni? Sincronizza gli spazzolamenti nell'app."</string>
+    <string name="tb_sync.notification.standard.8">"Ricordati di sincronizzare di volta in volta gli spazzolamenti per permettere a Colgate Connect di analizzare la tua igiene orale!"</string>
+    <string name="tb_sync.notification.standard.1">"Premi per sincronizzare gli spazzolamenti."</string>
+    <string name="tb_sync.notification.standard.3">"Vuoi saperne di più sulla tua igiene orale? Premi per sincronizzare gli spazzolamenti."</string>
+    <string name="tb_sync.notification.standard.4">"Sei vicino al tuo spazzolino? Premi per sincronizzare gli spazzolamenti!"</string>
+    <string name="tb_sync.notification.standard.5">"Premi per sincronizzare gli spazzolamenti e aggiornare il tuo report dentale."</string>
+    <string name="tb_sync.notification.standard.9">"Sincronizza adesso gli spazzolamenti per monitorare i tuoi progressi."</string>
+    <string name="tb_sync.notification.standard.10">"Come sono andati gli ultimi spazzolamenti? Sincronizzali per scoprirlo."</string>
+    <string name="tb_sync.notification.standard.11">"Il tuo spazzolino è a portata di mano? Sincronizza subito gli spazzolamenti!"</string>
+    <string name="tb_sync.notification.standard.12">"Sincronizza lo spazzolino per aggiornare gli indicatori di spazzolamento."</string>
+    <string name="tb_sync.enable.bluetooth.title">"Attiva il Bluetooth"</string>
+    <string name="about_attributions_hint">"Quest'app utilizza le seguenti librerie:"</string>
+    <string name="about_attributions_website">"Sito"</string>
+    <string name="about_attributions_license">"Licenza"</string>
+
+    <!-- Setup toothbrush tunnel -->
+    <string name="setup_toothbrush_connect_m1_title">"Collega il tuo M1"</string>
+    <string name="setup_toothbrush_connect_kolibree_title">"Collega il tuo Kolibree V1"</string>
+    <string name="setup_toothbrush_choose_model">"Che spazzolino hai?"</string>
+    <string name="setup_toothbrush_choose_model_ara">"Ara"</string>
+    <string name="setup_toothbrush_another_toothbrush_title">"Un'ultima cosa!"</string>
+    <string name="setup_toothbrush_another_toothbrush_buy">"Vai allo store!"</string>
+    <string name="setup_toothbrush_another_toothbrush_to_coach">"Avvia il Coach"</string>
+    <string name="setup_toothbrush_choose_model_help"><![CDATA[Non so <b>quale spazzolino ho</b>]]></string>
+    <string name="setup_toothbrush_choose_model_help_title">"Come identificare il mio spazzolino?"</string>
+    <string name="setup_toothbrush_get_one">"Acquistane uno nello store!"</string>
+    <string name="setup_toothbrush_proceed_without">"Grazie, ma procederò senza"</string>
+    <string name="setup_toothbrush_model_ara">"Ara"</string>
+    <string name="setup_toothbrush_ara_charger">"Metti lo spazzolino sulla base di ricarica e premi il pulsante di avvio."</string>
+    <string name="setup_toothbrush_m1_instructions">"Scuoti il Connect M1 per attivare il collegamento. Il LED lampeggerà di blu."</string>
+    <string name="setup_toothbrush_ara_charger_start">"Avvio"</string>
+    <string name="setup_toothbrush_ara_no_charger">"Non ho la base di ricarica"</string>
+    <string name="setup_toothbrush_searching">"Ricerca...
+%d %%"</string>
+    <string name="setup_toothbrush_connecting">"Connessione..."</string>
+    <string name="setup_toothbrush_ara_wait">"Un po' di pazienza!
+L'app sta cercando il tuo spazzolino."</string>
+    <string name="setup_toothbrush_rename_hint">"Puoi cambiare questo parametro modificando le impostazioni dello spazzolino"</string>
+    <string name="setup_toothbrush_rename_ara_done">"Fatto"</string>
+    <string name="setup_toothbrush_rename_ara_choose_name">"Scegli un nome"</string>
+    <string name="setup_searching">"Ricerca spazzolini..."</string>
+    <string name="setup_barcode_hint">"Verifica il nome dello spazzolino, è riportato sulla confezione."</string>
+    <string name="setup_permission_popup">"Android richiede l'autorizzazione di posizione per connettere qualsiasi dispositivo Bluetooth Low Energy. Si prega di abilitarlo nella seguente finestra di dialogo per collegare lo spazzolino."</string>
+    <string name="setup_popup_help_title">"Non trovi lo spazzolino?"</string>
+    <string name="setup_popup_help_message">"Se lo spazzolino è vicino ma non appare sullo schermo, forse è perché risulta già collegato a un altro dispositivo.
+Disattiva il Bluetooth o scollega lo spazzolino dall'altro dispositivo.
+Lo spazzolino apparirà qui!"</string>
+    <string name="setup_connected_title">"Complimenti %s! Il tuo spazzolino ora è collegato."</string>
+    <string name="setup_connected_hint">"Il tuo spazzolino si chiama: \"%1$s\"
+Puoi cambiare il nome modificando le impostazioni."</string>
+    <string name="setup_connected_button">"Iniziamo!"</string>
+    <string name="setup_summary_message">"I dati di spazzolamento verranno registrati in modo automatico. Per salvarli, ricordati di collegare lo spazzolino all'app almeno una volta a settimana."</string>
+    <string name="setup_toothbrush_choose_model_e1">"Connect E1"</string>
+    <string name="setup_toothbrush_connect_ara_title">"Collega il tuo E1"</string>
+    <string name="setup_toothbrush_another_toothbrush_text">"Puoi lavarti i denti con il nostro Coach!
+
+Tuttavia, senza uno spazzolino Colgate Connect l'esperienza sarà incompleta.
+
+Per fortuna non è troppo tardi per acquistarne subito uno!"</string>
+    <string name="setup_toothbrush_choose_model_help_top">"Colgate Connect E1"</string>
+    <string name="setup_toothbrush_choose_model_help_bottom">"Colgate Connect M1"</string>
+    <string name="setup_toothbrush_choose_model_buy">"Acquista un altro spazzolino Colgate Connect!"</string>
+    <string name="setup_summary_title">"Puoi usare lo spazzolino con o senza l'app Colgate Connect"</string>
+    <string name="setup_toothbrush_choose_model_another">"Non ho uno spazzolino Colgate Connect"</string>
+    <string name="setup_toothbrush_choose_model_m1">"Connect M1"</string>
+
+    <!-- Toothbrush -->
+    <string name="forget_toothbrush">"Elimina questo spazzolino"</string>
+    <string name="forget_toothbrush_popup_title">"Vuoi eliminare %s?"</string>
+    <string name="forget_toothbrush_popup_message">"Il tuo telefono non si collegherà più automaticamente a questo spazzolino."</string>
+    <string name="forget_toothbrush_forget">"Elimina"</string>
+    <string name="my_toothbrushes">"I miei spazzolini"</string>
+    <string name="my_toothbrush">"Il mio spazzolino"</string>
+    <string name="my_ara">"Il mio Ara"</string>
+    <string name="my_connect_m1">"Il mio Connect M1"</string>
+    <string name="my_connect_e1">"Il mio Connect E1"</string>
+    <string name="my_kolibree">"Il mio Kolibree V1"</string>
+    <string name="toothbrush_name">"Nome"</string>
+    <string name="toothbrush_personalized_name">"Nome personalizzato"</string>
+    <string name="toothbrush_none">"Nessuno"</string>
+    <string name="toothbrush_serial_number">"Numero di serie"</string>
+    <string name="toothbrush_mac">"Indirizzo MAC"</string>
+    <string name="toothbrush_hardware_version">"Versione del materiale"</string>
+    <string name="toothbrush_software_version">"Versione del software"</string>
+    <string name="toothbrush_software_version_ara">"%1$s (%2$s)"</string>
+    <string name="toothbrush_update_now">"Aggiorna adesso"</string>
+    <string name="toothbrush_update_hint">"Un nuovo aggiornamento (%s) è disponibile per il tuo spazzolino."</string>
+
+    <!-- User mode dialog -->
+    <string name="user_mode_dialog_title">"Utente"</string>
+
+    <!-- Popup toothbrush not available -->
+    <string name="popup_toothbrush_unavailable_title">"Nessuno spazzolino collegato"</string>
+    <string name="popup_toothbrush_unavailable_alternate_title">"Nessuno spazzolino
+collegato"</string>
+    <string name="popup_toothbrush_unavailable_message">"Avvicina lo spazzolino perché si colleghi automaticamente."</string>
+
+    <!-- Popup choose toothbrush -->
+    <string name="popup_choose_toothbrush_title">"Seleziona uno spazzolino per continuare"</string>
+    <string name="popup_choose_toothbrush_manual">"Spazzolino manuale"</string>
+
+    <!-- Popup brushing records -->
+    <string name="popup_brushing_record_title">"Bravo!"</string>
+    <string name="popup_brushing_record_message_singular">"Hai appena sincronizzato 1 spazzolamento offline."</string>
+    <string name="popup_brushing_record_message_multiple">"Hai appena sincronizzato %d spazzolamenti offline."</string>
+
+    <!-- Popup mandatory update -->
+    <string name="popup_mandatory_update_title">"Aggiornamento obbligatorio"</string>
+    <string name="popup_mandatory_update_message">"Il tuo spazzolino deve essere aggiornato per funzionare correttamente."</string>
+    <string name="popup_mandatory_update_button">"Aggiorna adesso"</string>
+    <string name="popup_mandatory_enable_internet">"Connettiti a internet per avviare l'aggiornamento."</string>
+    <string name="firmware_upgrade_downloading">"Download..."</string>
+    <string name="firmware_upgrade_rebooting">"Riavvio..."</string>
+    <string name="firmware_upgrade_installing">"Installazione..."</string>
+    <string name="firmware_upgrade_cancel">"Annulla"</string>
+    <string name="firmware_upgrade_upgrade">"Aggiorna"</string>
+    <string name="firmware_upgrade_error_dialog">"Aggiornamento del firmware fallito:
+%s"</string>
+    <string name="firmware_success">"Lo spazzolino è aggiornato."</string>
+    <string name="firmware_upgrade_retry">"Riprova"</string>
+
+    <!-- Home -->
+    <string name="tab_home">"Home"</string>
+    <string name="tab_brush">"Attività"</string>
+
+    <!-- Home -->
+    <string name="tab_checkup">"Report"</string>
+
+    <!-- Dashboard -->
+    <string name="dashboard_hint">"Media settimanale"</string>
+    <string name="dashboard_last_session_hint">"Ultimo spazzolamento"</string>
+    <string name="dashboard_duration">"Durata"</string>
+    <string name="dashboard_frequency">"Frequenza"</string>
+    <string name="dashboard_surface">"Superficie"</string>
+    <string name="dashboard_coverage">"Copertura"</string>
+    <string name="dashboard_minutes">"Minuti"</string>
+    <string name="dashboard_per_day">"Al giorno"</string>
+    <string name="dashboard_percentage">"Percentuale"</string>
+    <string name="dashboard_no_bluetooth">"Attiva il Bluetooth sul tuo dispositivo"</string>
+    <string name="dashboard_week">"Settimana"</string>
+    <string name="dashboard_average_duration">"Durata media:
+%s / spazzolamento"</string>
+    <string name="dashboard_average_duration_hint">"I dentisti raccomandano di spazzolare i denti per 2 minuti 2 volte al giorno per ridurre il rischio di malattie dentali."</string>
+    <string name="dashboard_average_regularity">"Media degli spazzolamenti:
+%s volte al giorno"</string>
+    <string name="dashboard_average_frequency_hint">"Gli utenti medi della tua età si lavano i denti 2 volte al giorno.
+
+I dentisti raccomandano di spazzolare i denti 2 volte al giorno per ridurre le malattie dentali.
+
+Lavarsi i denti più di 3 volte al giorno può provocare danni alle gengive."</string>
+    <string name="dashboard_average_surface">"Superficie media spazzolata:
+%s"</string>
+    <string name="dashboard_average_surface_hint">"Le carie dentali possono formarsi ovunque!
+Ogni dente è importante, su tutta la sua superficie."</string>
+    <string name="dashboard_last_session_empty">"-"</string>
+
+    <!-- Profile -->
+    <string name="edit_profile_smart_brushing_analyser">@string/sba_game_name</string>
+    <string name="profile_information_name">"Nome di battesimo"</string>
+    <string name="profile_information_name_hint">"Il tuo nome"</string>
+    <string name="profile_information_age">"Età"</string>
+    <string name="profile_information_age_hint">"Quanti anni hai?"</string>
+    <string name="profile_information_gender_hint">"Sesso"</string>
+    <string name="profile_information_handedness_hint">"Lateralità"</string>
+    <string name="profile_years_old">"Anni"</string>
+    <string name="profile_picture_dialog_title">"Aggiungi una foto"</string>
+    <string name="profile_set_picture">"Aggiungi una foto"</string>
+    <string name="profile_created_title">"Evviva!"</string>
+    <string name="profile_created_message">"Il tuo profilo è stato creato. Ora sei pronto per spazzolarti i denti!"</string>
+    <string name="profile_last_sba">"Ultima Analisi di
+Spazzolamento Intelligente"</string>
+    <string name="profile_my_profiles">"Profili"</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_subtitle">"Il tuo compagno di spazzolamento
+intelligente"</string>
+    <string name="onboarding_login"><![CDATA[Hai già un account? <b>Entra</b>]]></string>
+    <string name="onboarding_start">"Inizia l'esperienza"</string>
+
+    <!-- Sign up tunnel -->
+    <string name="sign_up_profile_info_title">"Impariamo a
+conoscerci"</string>
+    <string name="sign_up_profile_wait">"Attendi..."</string>
+    <string name="sign_up_profile_info_next">"Unisciti a Colgate Connect"</string>
+
+    <!-- Delete account popup -->
+    <string name="delete_account">"Elimina il mio account"</string>
+    <string name="delete_account_popup_message">"Sei davvero sicuro di voler eliminare l'account?
+Questa azione è irreversibile."</string>
+    <string name="delete_account_popup_yes">"Sì, elimina il mio account"</string>
+
+    <!-- Checkup Popup -->
+    <string name="checkup_popup_title">"Report"</string>
+    <string name="checkup_popup_message_last">"Questo report mostra il tuo ultimo spazzolamento. Presta particolare attenzione alle zone gialle: non sono state spazzolate abbastanza e presentano un maggiore rischio di placca."</string>
+    <string name="checkup_popup_message">"Questo report mostra il tuo spazzolamento. Presta particolare attenzione alle zone gialle: non sono state spazzolate abbastanza e presentano un maggiore rischio di placca."</string>
+
+    <!-- Turn on your toothbrush popup -->
+    <string name="setup_ara_popup_title">"Importante!"</string>
+    <string name="setup_ara_popup_message">"Prima di continuare, premi due volte il pulsante dello spazzolino."</string>
+
+    <!-- Add ara user activity -->
+    <string name="add_ara_user_add_profile">"Aggiungi profilo"</string>
+    <string name="add_ara_user_hint">"Più avanti potrai cambiare questa associazione modificando i parametri dello spazzolino."</string>
+    <string name="add_ara_user_subtitle">"Chi userà questo spazzolino?"</string>
+    <string name="add_ara_shared">"Condiviso"</string>
+
+    <!-- No BLE popup -->
+    <string name="no_ble_popup_message">"Questo dispositivo non è compatibile con Bluetooth Low Energy"</string>
+
+    <!-- BRUSH HEAD RENEWAL DIALOG -->
+    <string name="brush_head_dialog_title">"Cambia la testina, %1$s"</string>
+    <string name="brush_head_dialog_message">"Ottimo! Hai accumulato più di 120 spazzolamenti. È ora di cambiare la testina!"</string>
+    <string name="brush_head_buy_now">"Acquista ora"</string>
+    <string name="brush_head_remind">"Più tardi"</string>
+    <string name="brush_head_no">"No grazie"</string>
+    <string name="title_activity_slideshow">"Slideshow"</string>
+
+    <!-- Popup toothbrush belongs to another user -->
+    <string name="popup_assign_toothbrush_data_dialog">"Il profilo attivo è %1$s, ma stai usando lo spazzolino di %2$s! A chi vuoi attribuire questo spazzolamento?"</string>
+
+    <!-- ORPHAN BRUSHINGS -->
+    <string name="orphan_brushings">"Spazzolamenti non attribuiti"</string>
+    <string name="orphan_brushings_assign_hint">"Attribuisci gli spazzolamenti selezionati"</string>
+    <string name="orphan_brushings_delete_hint">"Elimina gli spazzolamenti selezionati"</string>
+    <string name="orphan_brushing_subtitle">"Durata: %1$s min %2$s s, Superficie %3$d%%"</string>
+    <string name="orphan_brushings_detelete_title">"Sei sicuro?"</string>
+    <string name="orphan_brushings_detelete_message">"Vuoi davvero eliminare questi spazzolamenti? Questa azione è irreversibile."</string>
+    <string name="orphan_brushings_empty">"Tutti gli spazzolamenti sono stati attribuiti. Bravo!"</string>
+
+    <!-- PROFILE LIST DIALOG -->
+    <string name="profile_list_dialog_title">"Seleziona un profilo"</string>
+
+    <!-- SLIDESHOW -->
+    <string name="slideshow_next">"Successivo"</string>
+    <string name="slideshow_skip">"Salta"</string>
+    <string name="slideshow_alright_button">"Bene!"</string>
+    <string name="slideshow_here_to_help_title">"Siamo qui per aiutarti!"</string>
+    <string name="slideshow_here_to_help_message">"Il team Colgate Connect ha lavorato sodo per proporti una serie di attività che miglioreranno la tua igiene oro-dentale."</string>
+    <string name="slideshow_here_to_help_button">"Scopri le attività"</string>
+    <string name="slideshow_meet_coach_title">"Incontra il Coach"</string>
+    <string name="slideshow_meet_coach_message">"Il Coach ti aiuterà a sviluppare solide abitudini di spazzolamento sul lungo termine."</string>
+    <string name="slideshow_pirate_title">"Gioca con Go Pirate!"</string>
+    <string name="slideshow_pirate_message">"Trasforma il tuo spazzolino in gamepad: raccogli le monete e parti alla ricerca del tesoro di Barbanera, all'arrembaggio!"</string>
+    <string name="slideshow_pirate_additional_message">"(altri giochi in arrivo!)"</string>
+    <string name="slideshow_dashboard_title">"Il tuo pannello di controllo"</string>
+
+    <!-- Slideshow -->
+    <string name="slideshow_dashboard_message">"Con una semplice occhiata ottieni tante informazioni chiare e preziose sul tuo spazzolamento e le tue abitudini."</string>
+    <string name="slideshow_taking_care_brush_title">"Prenditi cura del tuo spazzolino"</string>
+    <string name="slideshow_taking_care_brush_message">"Pulisci regolarmente il manico e la base di ricarica con un panno umido.
+
+Questa operazione è particolarmente importante se il dentifricio contiene bicarbonato di sodio o altri bicarbonati o perossidi."</string>
+    <string name="slideshow_personalize_brush_title">"Personalizza il tuo spazzolino"</string>
+    <string name="slideshow_personalize_brush_message">"Per cambiare il tempo di spazzolamento di default, modifica i parametri dalla pagina del tuo profilo."</string>
+    <string name="slideshow_dentist_tip_title">"Il consiglio dell'esperto"</string>
+    <string name="slideshow_dentist_tip_message">"Posiziona lo spazzolino con un angolo di 45° rispetto ai denti ed effettua leggeri movimenti dalle gengive verso il bordo dei denti.
+
+Per gli incisivi, non dimenticare di spazzolare davanti e dietro la superficie dentale."</string>
+
+    <!-- SPREAD THE WORD -->
+    <string name="spread_the_word">"Passaparola"</string>
+    <string name="spread_review_app">"Valuta l'app"</string>
+    <string name="spread_tell_a_friend">"Dillo a un amico"</string>
+    <string name="spread_newsletter">"Newsletter"</string>
+    <string name="spread_facebook">"Facebook"</string>
+    <string name="spread_twitter">"Twitter"</string>
+    <string name="spread_instagram">"Instagram"</string>
+    <string name="spread_youtube">"Youtube"</string>
+
+    <!-- TOOTHBRUSH LIST -->
+    <string name="toothbrush_removed">"Spazzolino eliminato"</string>
+    <string name="undo">"Annulla"</string>
+    <string name="checkup_coverage_100">"Complimenti! Questo spazzolamento è semplicemente perfetto. Tutti i denti sono stati spazzolati per il tempo necessario."</string>
+    <string name="checkup_coverage_85">"Ben fatto, il tuo spazzolamento è quasi perfetto. Continua così!"</string>
+    <string name="checkup_coverage_50">"Puoi fare di meglio. La prossima volta che ti lavi i denti, fai più attenzione alle zone gialle. Non sono state spazzolate per il tempo necessario."</string>
+    <string name="checkup_coverage_below_50">"Attenzione alla placca dentale! La prossima volta che ti lavi i denti, fai più attenzione alle zone gialle. Sono state trascurate."</string>
+    <string name="checkup_coverage_no_data">"Nessun dato di superficie disponibile per questo spazzolamento."</string>
+
+    <!-- User in OTA screen, but no OTA associated to toothbrush -->
+    <string name="firmware_upgrade_ota_not_available">"Nessun aggiornamento disponibile"</string>
+
+    <!-- Dialog displayed after user pressed cancel button in update ota -->
+    <string name="firmware_upgrade_cancel_dialog_message">"Sei sicuro di voler annullare l'aggiornamento?"</string>
+    <string name="welcome_email_hint">"Qual è la tua email?"</string>
+    <string name="welcome_email_facebook_hint">"Non pubblicheremo nulla su Facebook"</string>
+    <string name="welcome_email_or">"– o –"</string>
+    <string name="welcome_email_facebook_button">"Continua con Facebook"</string>
+    <string name="welcome_password_hint">"Qual è la tua password?"</string>
+    <string name="welcome_password_magic_link_button">"Inviami un collegamento via e-mail per accedere"</string>
+    <string name="welcome_inbox_title">"Controlla la tua posta in arrivo"</string>
+    <string name="welcome_inbox_hint">"Non è necessario ricordare una password lunga o difficile da digitare. Ti abbiamo appena inviato un'email per aiutarti a accedere.
+
+Apri dal tuo smartphone e fai clic sul collegamento fornito per accedere. Ma fretta, il collegamento scade dopo 30 min."</string>
+    <string name="coppa_pending_parental_consent">"In attesa del consenso dei genitori"</string>
+    <string name="coppa_prevent_dialog_title">"Funzionalità disabilitata"</string>
+    <string name="coppa_prevent_dialog_message">"Il consenso dei genitori è richiesto per eseguire questa azione"</string>
+    <string name="welcome_birthday_title">"Quando sei nato?"</string>
+    <string name="welcome_birthday_day">"Giorno"</string>
+    <string name="welcome_birthday_month">"Mese"</string>
+    <string name="welcome_birthday_year">"Settimana"</string>
+    <string name="logout_warning_dialog_title">"Attenzione"</string>
+    <string name="logout_warning_dialog_message">"Hai più di 10 sessioni di spazzolatura registrate sul tuo account. Collega il tuo account al tuo indirizzo email o perderai i tuoi dati: non potrai accedere al tuo account dopo il logout."</string>
+    <string name="logout_warning_dialog_enter_email">"Inserisci l'email"</string>
+    <string name="logout_warning_dialog_button_continue">"No, grazie"</string>
+    <string name="save_your_data">"Salva i tuoi dati"</string>
+    <string name="save_your_data_title">"Non perdere i tuoi dati!"</string>
+    <string name="save_your_data_subtitle">"Inserendo la tua e-mail o effettuando il login con Facebook, i tuoi dati saranno sempre disponibili."</string>
+    <string name="save_your_data_fb_button">"Accedi con Facebook"</string>
+    <string name="save_your_data_email_button">"Via email"</string>
+    <string name="save_your_data_cancel_button">"No, grazie"</string>
+    <string name="save_your_data_email_hint">"Qual è la tua email?"</string>
+    <string name="save_your_data_submit">"Sottoscrivi"</string>
+    <string name="your_data_saved_title">"I tuoi dati sono ora salvati"</string>
+    <string name="your_data_saved_subtitle">"Assicurati di ritrovare i tuoi dati in ogni caso."</string>
+    <string name="your_data_saved_ok">"OK"</string>
+    <string name="welcome_birthday_invalid_day">"Giorno non valido"</string>
+    <string name="welcome_birthday_invalid_month">"Mese non valido"</string>
+    <string name="welcome_birthday_invalid_year">"Anno non valido"</string>
+    <string name="welcome_birthday_invalid_date">"Data di nascita errata"</string>
+    <string name="terms_of_use_not_clicked">"Devi accettare i termini e le condizioni"</string>
+    <string name="parent_consent_title">"Email"</string>
+    <string name="parent_consent_instructions">"Per favore forniscici l'indirizzo email del tuo genitore o tutore e lo contatteremo con i prossimi passi!"</string>
+    <string name="parent_consent_hint">"Indirizzo email padre o tutore"</string>
+    <string name="register_email_dialog_title">"Registra la tua email"</string>
+    <string name="register_email_dialog_message">"Hai più di 10 pulizie registrate sul tuo account. Collega il tuo account al tuo indirizzo email o perderai i tuoi dati: non potrai accedere al tuo account dopo il logout."</string>
+    <string name="register_email_dialog_ok">"Inserisci l'email"</string>
+    <string name="register_email_dialog_cancel">"Non adesso"</string>
+    <string name="help_us_customize_title">"Aiutaci a personalizzare\nla tua esperienza"</string>
+    <string name="setup_toothbrush_m1_search">"Cercare"</string>
+    <string name="sba_game_description">"Usa lo Test di Spazzolatura per diagnosticare le tue abitudini di spazzolatura e identificare le aree di miglioramento."</string>
+    <string name="validate_birthday_error">"A causa di un errore del server, l'operazione non è riuscita. Per favore riprova."</string>
+    <string name="edit_profile_birthday">"Il tuo compleanno"</string>
+    <string name="error_no_internet">"Nessuna connessione internet"</string>
+    <string name="something_went_wrong">"Si è verificato un problema. Riprova più tardi."</string>
+    <string name="um_attention_title">"Attenzione"</string>
+    <string name="get_my_data">"Ottieni i miei dati"</string>
+    <string name="no_email_title">"Email dell'account mancante"</string>
+    <string name="no_email_message">"Il tuo account non ha un'e-mail associata. Si prega di impostare una e-mail sul proprio account prima di continuare"</string>
+    <string name="title_success">"Successo"</string>
+    <string name="operation_failed_title">"Operazione fallita"</string>
+    <string name="operation_failed">"A causa di un errore del server, l'operazione non è riuscita. Per favore riprova più tardi."</string>
+    <string name="email_gdpr">"Un'e-mail che consente di recuperare tutti i dati verrà inviata a %s a breve."</string>
+    <string name="privacy_not_clicked">"Devi accettare l'informativa sulla privacy"</string>
+    <string name="terms_and_condition_agreement">"Accetto i "<![CDATA[<u><a href=\"%1$s\">%2$s</a></u>]]></string>
+    <string name="privacy_agreement">"Prendo atto dell'"<![CDATA[<u><a href=\"%1$s\">%2$s</a></u>]]></string>
+    <string name="choose_method_title">"Accedi"</string>
+    <string name="choose_method_sms">"Accedi tramite SMS"</string>
+    <string name="choose_method_we_chat">"Accedi tramite WeChat"</string>
+    <string name="sms_login_title">"Accedi tramite SMS"</string>
+    <string name="sms_login_hint">"Qual è il tuo numero di telefono?"</string>
+    <string name="sms_login_get_code">"Ottieni il codice di autenticazione"</string>
+    <string name="sms_login_code_desc">"Inserisci il codice che hai appena ricevuto tramite SMS e premi il pulsante OK."</string>
+    <string name="sms_login_ok">"OK"</string>
+    <string name="exit">"Esci"</string>
+    <string name="retry">"Riprova"</string>
+    <string name="no_facebook_account_linked">"Questo account Facebook non è collegato a un account Colgate Connect"</string>
+    <string name="sms_login_invalid_number">"Numero di telefono invalido"</string>
+    <string name="mouth_zone_bottom_incisor_exterior">"Inferiore, incisivi, esterno"</string>
+    <string name="mouth_zone_bottom_incisor_interior">"Inferiore, incisivi, interno"</string>
+    <string name="mouth_zone_bottom_molar_left_exterior">"Inferiore, sinistra, esterno"</string>
+    <string name="mouth_zone_bottom_molar_left_interior">"Inferiore, sinistra, interno"</string>
+    <string name="mouth_zone_bottom_molar_left_occlusal">"Inferiore, sinistra, occlusale"</string>
+    <string name="mouth_zone_bottom_molar_right_occlusal">"Inferiore, destra, occlusale"</string>
+    <string name="mouth_zone_bottom_molar_right_exterior">"Inferiore, destra, esterno"</string>
+    <string name="mouth_zone_bottom_molar_right_interior">"Inferiore, destra, interno"</string>
+    <string name="mouth_zone_top_incisor_exterior">"Superiore, incisivi, esterno"</string>
+    <string name="mouth_zone_top_incisor_interior">"Superiore, incisivi, interno"</string>
+    <string name="mouth_zone_top_molar_left_exterior">"Superiore, sinistra, esterno"</string>
+    <string name="mouth_zone_top_molar_left_interior">"Superiore, sinistra, interno"</string>
+    <string name="mouth_zone_top_molar_left_occlusal">"Superiore, sinistra, occlusale"</string>
+    <string name="mouth_zone_top_molar_right_exterior">"Superiore, destra, esterno"</string>
+    <string name="mouth_zone_top_molar_right_interior">"Superiore, destra, interno"</string>
+    <string name="mouth_zone_top_molar_right_occlusal">"Superiore, destra, occlusale"</string>
+    <string name="mouth_zone_wrong">"Zona errata rilevato"</string>
+    <string name="upgrade_app_title">"Aggiornamento richiesto"</string>
+    <string name="upgrade_app_msg">"Per continuare con l'app, eseguire l'aggiornamento alla versione più recente; Abbiamo risolto alcuni bug critici."</string>
+    <string name="coach_pluse_game_description">"La nostra nuovissima esperienza di spazzolatura 3D.
+100% di copertura superficiale garantita!"</string>
+    <string name="kolibree_pro_start_popup_title">"Colgate Connect Pro"</string>
+    <string name="kolibree_pro_start_popup_message">"Vuoi condividere i tuoi dati di spazzolatura con il tuo dentista / dentista %s, in modo che possano avere un monitoraggio regolare?"</string>
+    <string name="kolibree_pro_start_popup_accept">"Accettare"</string>
+    <string name="kolibree_pro_start_popup_decline">"Non adesso"</string>
+    <string name="kolibree_pro_settings_title">"Colgate Connect Pro"</string>
+    <string name="kolibree_pro_settings_hint">"Seleziona questa opzione per condividere i dati di spazzolatura con il tuo dentista / studio dentistico, in modo che possano avere un monitoraggio regolare."</string>
+    <string name="kolibree_pro_practitioners_short">"Ecco i professionisti che hanno accesso ai dati di spazzolamento. Per saperne di più"</string>
+    <string name="kolibree_pro_practitioners_short_token">"Per saperne di più"</string>
+    <string name="kolibree_pro_practitioners_full">"Ecco i professionisti che hanno accesso ai dati di spazzolamento.
+
+Attraverso queste informazioni, sono in grado di seguire la qualità dei tuoi denti spazzolatura giorno per giorno e di darti consigli personalizzati per migliorare le tue abitudini e consentire di raggiungere un'igiene dentale ottimale.
+È possibile interrompere la condivisione dei dati ogni volta che si desidera farlo. Per ulteriori informazioni, visitare il nostro sito Web all'indirizzo http://www.connectpro.colgate.com"</string>
+    <string name="kolibree_pro_practitioners_revoke_title">"Interrompere la condivisione dei dati con %s?"</string>
+    <string name="kolibree_pro_practitioners_revoke_message">"Interrompendo il processo di Colgate Connect Pro, non condividi i tuoi dati con il tuo studio dentistico e non sarai in grado di monitorare le tue sessioni di spazzolamento.
+
+Sei sicuro di voler continuare?"</string>
+    <string name="kolibree_pro_practitioners_header">"La mia squadra dentale"</string>
+    <string name="kolibree_pro_quit_popup_title">"Sei sicuro di voler uscire?"</string>
+    <string name="kolibree_pro_quit_popup_message">"Interrompendo il processo di Colgate Connect Pro, non condividi i tuoi dati con il tuo studio dentistico e non sarai in grado di monitorare le tue sessioni di spazzolamento."</string>
+    <string name="kolibree_pro_quit_popup_continue">"Continua"</string>
+    <string name="kolibree_pro_quit_popup_quit">"Esci comunque"</string>
+    <string name="kolibree_pro_quit_popup_remind_me_later">"Ricordamelo più tardi"</string>
+    <string name="kolibree_pro_channel_name">"Colgate Connect Pro"</string>
+    <string name="kolibree_pro_channel_description">"Notifiche di Colgate Connect Pro"</string>
+    <string name="kolibree_pro_notification_title">"Colgate Connect Pro"</string>
+    <string name="kolibree_pro_notification_description">"Registra il tuo spazzolino da denti"</string>
+    <string name="kolibree_practitioners_popup_message">"Accetti di condividere i tuoi dati di spazzolatura con il tuo studio dentistico %1$s a scopo di monitoraggio?"</string>
+    <string name="kolibree_practitioners_accept">"Ok"</string>
+    <string name="kolibree_practitioners_decline">"No grazie"</string>
+    <string name="running_in_background">"è collegato al tuo spazzolino"</string>
+
+    <!-- Dialog displayed after user pressed cancel button in update ota -->
+    <string name="coach_settings_choose_music">"Scegli la musica"</string>
+    <string name="coach_settings_coach_sounds_title">"Suoni Coach"</string>
+    <string name="coach_settings_shuffle">"Casuale"</string>
+    <string name="coach_settings_music">"Musica"</string>
+    <string name="coach_settings_transitions_sounds">"Suoni transizioni"</string>
+    <string name="coach_settings_display_brushing_movements">"Movimenti di spazzolamento"</string>
+    <string name="coach_settings_display_helps_texts">"La visualizzazione aiuta i testi"</string>
+    <string name="coach_settings_sounds">"Suoni"</string>
+    <string name="setup_i_dont_have_connect_e1">"Non ho uno Connect E1"</string>
+    <string name="tb_toolbar_connect">"Connetti uno spazzolino"</string>
+    <string name="tb_toolbar_connected">"Collegato"</string>
+    <string name="tb_toolbar_retrieving_brushing">"Recupero delle sessioni di spazzolatura"</string>
+    <string name="tb_toolbar_disconnected">"Scollegato"</string>
+    <string name="tb_toolbar_enable_bleutooth">"Si prega di abilitare Bluetooth"</string>
+    <string name="tb_toolbar_last_sync_title">"Ultima sincro"</string>
+    <string name="tb_toolbar_last_sync_today">"Oggi"</string>
+    <string name="tb_toolbar_last_sync_yesterday">"Ieri"</string>
+    <string name="tb_toolbar_last_sync_never">"Mai"</string>
+    <string name="tb_toolbar_connecting">"Connessione in corso"</string>
+    <string name="m1_fake_dialog_title">"Avvio dell'installazione"</string>
+    <string name="m1_fake_dialog_initiating_setup">"Tieni fermo lo spazzolino o posizionalo su una superficie piana durante l'installazione"</string>
+    <string name="m1_fake_dialog_configuring">"Configurazione…"</string>
+    <string name="m1_fake_dialog_calibrating">"Configurazione…"</string>
+    <string name="m1_fake_dialog_completed">"Installazione completata!"</string>
+    <string name="m1_fake_dialog_ready_to_use">"La tua M1 è pronta per l'uso"</string>
+    <string name="m1_fake_dialog_dont_move_brush">"Non spostare la M1 durante l'installazione"</string>
+    <string name="welcome_title">"Benvenuto"</string>
+    <string name="welcome_subtitle">"Sperimenta la salute\n orale del futuro"</string>
+    <string name="welcome_connect_tb">"Collega il mio spazzolino intelligente"</string>
+    <string name="welcome_no_smrt_tb">"Non ho uno spazzolino intelligente"</string>
+    <string name="welcome_have_account">"Hai già un account? Accedi"</string>
+    <string name="welcome_have_account_login">"Accedi"</string>
+    <string name="tb_model_selection_toolbar_title">"Collega il tuo spazzolino"</string>
+    <string name="tb_model_selection_title">"Quale spazzolino hai?"</string>
+    <string name="activate_bt_title">"Bluetooth"</string>
+    <string name="activate_bt_button">"Attiva Bluetooth"</string>
+    <string name="activate_bt_description">"Per collegare lo spazzolino, attivare il Bluetooth del dispositivo"</string>
+    <string name="location_permission_title">"Permesso di posizione"</string>
+    <string name="location_permission_button">"Concedere l'autorizzazione"</string>
+    <string name="connecting_dialog_title">"Connessione..."</string>
+    <string name="connecting_dialog_stop">"Stop"</string>
+    <string name="connection_successful_dialog_title">"Connessione riuscita"</string>
+    <string name="connection_successful_dialog_message">"Spegni lo spazzolino"</string>
+    <string name="connection_error_dialog_title">"Errore di connessione"</string>
+    <string name="tb_connection_title">"Sveglia lo spazzolino"</string>
+    <string name="tb_connection_subtitle">"Premi il pulsante XXX sullo spazzolino"</string>
+    <string name="tb_connection_subtitle_manual">"Agitare lo spazzolino per attivare la procedura di connessione Bluetooth"</string>
+    <string name="tb_connection_nothing">"Non accade nulla?"</string>
+    <string name="detection_popup_title">"E 'stato rilevato uno spazzolino da denti %1$s!"</string>
+    <string name="detection_popup_question">"Riesci a vedere il tuo spazzolino lampeggiare in blu?"</string>
+    <string name="detection_popup_yes">"Sì, connetti"</string>
+    <string name="detection_popup_no">"No, continua a cercare il mio spazzolino da denti"</string>
+    <string name="e1_troubleshooting_title">"Stai cercando di collegare uno spazzolino Connect E1?"</string>
+    <string name="e1_troubleshooting_no_tb">"Non ho uno spazzolino Colgate Connect"</string>
+    <string name="e1_troubleshooting_yes">"Sì"</string>
+    <string name="e1_troubleshooting_no">"No"</string>
+    <string name="blink_toothbrush_led">"Lampeggiare"</string>
+    <string name="test_brushing_start">"Inizia a spazzolare ora"</string>
+    <string name="test_brushing_tip">"Sapevi che la maggior parte degli adulti spazzola solo il 40% della superficie dei denti?"</string>
+    <string name="test_brushing_lets_see_how_you_brush">"Ora vediamo come si spazzola:"</string>
+    <string name="test_brushing_instructions_1">"Lavati i denti come fai di solito"</string>
+    <string name="test_brushing_instructions_2">"Scopri quanto efficacemente ti lavi"</string>
+    <string name="test_brushing_instructions_3">"Usa il nostro Coach, per migliorare la tua tecnica"</string>
+    <string name="test_brushing_screen_title">"Test di Spazzolatura"</string>
+    <string name="dialog_conn_error_title">"Non siamo riusciti a trovare il tuo spazzolino da denti."</string>
+    <string name="dialog_conn_error_description">"Spegnere e riaccendere il bluetooth di solito risolve i problemi di connessione."</string>
+    <string name="dialog_conn_error_description_small">"Se il tuo spazzolino da denti è vicino a te ma non compare ancora qui, potrebbe essere perché ha bisogno di essere acceso, ha un basso livello di batteria, o è già collegato a un altro dispositivo."</string>
+    <string name="profile_data_saved_info">"I tuoi dati verranno salvati"</string>
+    <string name="profile">"Profilo"</string>
+    <string name="birth_date_hint">"Ti faremo una sorpresa per il tuo compleanno!"</string>
+    <string name="email_already_used_error">"Questo indirizzo email è già utilizzato"</string>
+    <string name="tab_rewards">"Premi"</string>
+    <string name="rewards_tab_challenges">"Le sfide"</string>
+    <string name="rewards_tab_tier">"Grado"</string>
+    <string name="rewards_tab_smiles">"Negozio"</string>
+    <string name="header_smiles">"%1$s Smiles punti"</string>
+    <string name="rewards_support_url">"https://colgateconnect.zendesk.com/hc/en-us/articles/115005703746"</string>
+    <string name="test_brushing_session_electric_line1">"Accendi lo spazzolino"</string>
+    <string name="test_brushing_session_electric_line2">"e inizia a spazzolare come al solito!"</string>
+    <string name="test_brushing_session_manual">"Inizia a lavarti i denti come al solito!"</string>
+    <string name="durring_session_description_step1">"Spazzolare delicatamente i denti e le gengive come si farebbe con uno spazzolino da denti normale"</string>
+    <string name="durring_session_highlighted_step1">"i denti e le gengive"</string>
+    <string name="durring_session_description_step2">"Smetti di lavarti quando faresti normalmente"</string>
+    <string name="durring_session_description_step3">"Le vibrazioni soniche aiutano a rimuovere la placca dentale"</string>
+    <string name="durring_session_highlighted_step3">"Le vibrazioni soniche"</string>
+    <string name="durring_session_description_step3_manual">"Il design unico dello spazzolino aiuta a rimuovere più placca, macchie e batteri."</string>
+    <string name="durring_session_highlighted_step3_manual">"Il design unico dello spazzolino"</string>
+    <string name="durring_session_description_step4">"Stiamo analizzando la tua spazzolatura per aiutarti a migliorare la tua tecnica di spazzolatura"</string>
+    <string name="durring_session_highlighted_step4">"migliorare la tua tecnica di spazzolatura"</string>
+
+    <!-- optimize analyser -->
+    <string name="optimize_your_brushing_analysis">"Ottimizza l'analisi"</string>
+    <string name="which_hand_do_you_hold_your_toothbrush_with">"In quale mano tieni lo spazzolino da denti?"</string>
+    <string name="left">"Sinistra"</string>
+    <string name="right">"Destra"</string>
+    <string name="how_many_times_a_day_do_you_brush_your_teeth">"Quante volte al giorno ti lavi i denti?"</string>
+    <string name="get_my_results">"Ottieni i miei risultati"</string>
+    <string name="finish_brushing_dialog_title">"Hai finito?"</string>
+    <string name="finish_brushing_dialog_yes">"Ho finito"</string>
+    <string name="finish_brushing_dialog_resume">"Non ancora, riprendi"</string>
+    <string name="my_connect_e2">"Il mio Connect E2"</string>
+    <string name="setup_toothbrush_connect_e2_title">"Collega la tua E2"</string>
+    <string name="results_analysis_successful_title">"Analisi eseguita"</string>
+    <string name="results_analysis_successful_body">"Scopri quanto è buona la tua tecnica di spazzolatura."</string>
+    <string name="results_mouth_coverage_title">"Superficie coperta"</string>
+    <string name="results_mouth_coverage_hint">"Come leggere lo schema?"</string>
+    <string name="analysis_in_progress">"Analisi in corso"</string>
+    <string name="brushing_progress_msg_1">"Durata della spazzolatura"</string>
+    <string name="brushing_progress_msg_2">"Superficie coperta"</string>
+    <string name="brushing_progress_msg_3">"Analisi degli angoli"</string>
+    <string name="brushing_progress_msg_4">"Movimenti di spazzolatura"</string>
+    <string name="select_a_toothbrush_to_continue">"Seleziona uno spazzolino da denti per continuare."</string>
+    <string name="results_mouth_coverage_tooth_clean">"Pulita"</string>
+    <string name="results_mouth_coverage_tooth_dirty">"Richiedono più\nspazzolatura"</string>
+    <string name="mouth_coverage_perfect">"Complimenti! Questa è una sessione di spazzolatura perfetta."</string>
+    <string name="mouth_coverage_good">"Ti sei perso alcune aree. Prova il nostro allenatore a raggiungere il 100%."</string>
+    <string name="mouth_coverage_medium">"Puoi fare ancora meglio. Prova il nostro allenatore in modo da non perdere nessuna zona."</string>
+    <string name="mouth_coverage_bad">"Puoi fare di meglio. Prova il nostro Coach per non perdere nessuna area."</string>
+    <string name="mouth_coverage_no_data">"Nessun dato di superficie disponibile per questa spazzolatura."</string>
+    <string name="read_diagram_dialog_body">"È come guardarsi allo specchio, il lato destro della mascella sullo schermo è il lato destro della bocca"</string>
+    <string name="read_diagram_dialog_title">"Spiegazione dello schema"</string>
+    <string name="read_diagram_dialog_ok">"OK"</string>
+    <string name="read_diagram_dialog_top">"Superiore"</string>
+    <string name="read_diagram_dialog_bottom">"Parte inferiore"</string>
+    <string name="read_diagram_dialog_left">"Sinistra"</string>
+    <string name="read_diagram_dialog_right">"Destra"</string>
+    <string name="hint_tap_to_change_view">"Cambia la vista"</string>
+    <string name="test_brushing_analysis_screen_title">"Analisi"</string>
+    <string name="dialog_lost_connexion_quit_btn">"Esci (e ricomincia più tardi)"</string>
+    <string name="dialog_lost_connexion_title">"Connessione persa"</string>
+    <string name="dialog_lost_connexion_description">"La connessione con lo spazzolino è stata persa.
+Attendi che si ricolleghi o riavvii la sessione di spazzolamento in un secondo momento."</string>
+
+    <!-- Pirate game does not work on user's Android version -->
+    <string name="pirate_not_supported_os_version">"Esegui l'aggiornamento ad Android 6 o versioni successive per utilizzare GoPirate."</string>
+    <string name="speed_proper">"Buona
+velocità"</string>
+    <string name="speed_too_fast">"Troppo
+veloce"</string>
+    <string name="speed_card_title">"Velocità di spazzolatura"</string>
+    <string name="speed_card_hint">"Per saperne di più"</string>
+    <string name="speed_learn_more_dialog_title">"Velocità di spazzolatura"</string>
+    <string name="speed_learn_more_dialog_body_top">"Una spazzolatura dura e veloce potrebbe sembrare più efficace, ma in realtà spazzolarsi con questo movimento promuove un accumulo malsano tra denti e gengive."</string>
+    <string name="speed_learn_more_dialog_body_bottom">"Prova a spazzolare più lentamente, concentrandoti su un dente alla volta, consentendo alla testina di pulire lo spazio tra i denti."</string>
+    <string name="speed_learn_more_dialog_help">"Hai bisogno di aiuto per capire lo schema?"</string>
+    <string name="speed_description_by_groups">"I tuoi movimenti erano troppo veloci mentre sfioravi %1$s. Rallentare per mantenere i denti sani."</string>
+    <string name="speed_description_average">"I tuoi movimenti erano troppo veloci per il %1$s della tua spazzolatura. Rallentare per mantenere i denti sani."</string>
+    <string name="speed_description_all_good">"Niente da segnalare !"</string>
+    <string name="speed_group_occlusal">"la tua superficie da masticare"</string>
+    <string name="speed_group_outside_molars">"la superficie esterna dei tuoi molari"</string>
+    <string name="speed_group_inside_molars">"la superficie interna dei tuoi molari"</string>
+    <string name="speed_group_outside_incisives">"la superficie esterna dei tuoi incisivi"</string>
+    <string name="speed_group_inside_incisives">"la superficie interna dei tuoi incisivi"</string>
+    <string name="speed_quadrant_top_left">"il tuo quadrante in alto a sinistra"</string>
+    <string name="speed_quadrant_top_right">"il quadrante in alto a destra"</string>
+    <string name="speed_quadrant_bottom_left">"il tuo quadrante in basso a sinistra"</string>
+    <string name="speed_quadrant_bottom_right">"il tuo quadrante in basso a destra"</string>
+    <string name="speed_too_slow">"Troppo
+lento"</string>
+    <string name="game_loader_download_game">"Scaricare"</string>
+    <string name="game_loader_game_requires_update">"Aggiornamento obbligatorio"</string>
+    <string name="game_loader_game_download_in_progress">"Scaricamento"</string>
+    <string name="game_loader_update_available">"Aggiornamento disponibile"</string>
+    <string name="ota.low.battery.subtitle">"Caricare / sostituire la batteria dello spazzolino per eseguire l'aggiornamento."</string>
+    <string name="ota.low.battery.title">"Lo spazzolino non ha abbastanza batteria"</string>
+    <string name="toothbrush.battery.change.required">"Sostituisci immediatamente la batteria."</string>
+    <string name="toothbrush.battery.few.days">"Solo pochi giorni di durata della batteria disponibili, preparatevi a sostituirlo."</string>
+    <string name="toothbrush.battery.few.weeks">"Ancora poche settimane di durata della batteria disponibile ipotizzando di utilizzare la nostra batteria alcalina AAA standard da Energizer. Altri tipi di batterie possono ridurre la durata della batteria."</string>
+    <string name="toothbrush.battery.six.months">"Più di 6 mesi di durata della batteria disponibile supponendo di utilizzare la nostra batteria alcalina AAA standard da Energizer. Altri tipi di batterie possono ridurre la durata della batteria."</string>
+    <string name="toothbrush.battery.three.months">"Più di 3 mesi di durata della batteria disponibile supponendo di utilizzare la nostra batteria alcalina AAA standard da Energizer. Altri tipi di batterie possono ridurre la durata della batteria."</string>
+    <string name="toothbrush.battery.state.change.required">"vuoto"</string>
+    <string name="toothbrush.battery.state.few.days">"pochi giorni"</string>
+    <string name="toothbrush.battery.state.few.weeks">"poche settimane"</string>
+    <string name="toothbrush.battery.state.six.months">"6+ mesi"</string>
+    <string name="toothbrush.battery.state.three.months">"3+ mesi"</string>
+    <string name="toothbrush.battery.state.unknown">"sconosciuto"</string>
+    <string name="delete_game_dialog_title">"Sei sicuro di voler eliminare %1$s?"</string>
+    <string name="delete_game_dialog_body">"Potrai scaricarlo di nuovo più tardi."</string>
+    <string name="delete_game_dialog_ok">"Elimina"</string>
+    <string name="delete_game_dialog_cancel">"Annulla"</string>
+    <string name="tb_toolbar_enable_location">"Abilita il servizio di Localizzazione"</string>
+    <string name="my_connect_b1">"Il mio Connect B1"</string>
+    <string name="setup_toothbrush_connect_b1_title">"Collega il tuo B1"</string>
+    <string name="challenge_details_won">"vinto"</string>
+    <string name="challenge_details_close">"Chiudere"</string>
+    <string name="challenge_details_completed_on">"Completato il"</string>
+    <string name="challenge_details_start">"Inizia questa sfida"</string>
+    <string name="challenge_details_not_completed">"Non ancora completata"</string>
+    <string name="challenge_details_continue">"Continua questa sfida"</string>
+    <string name="current_tier_smiles_label_description">"Ogni spazzolatura ti fa vincere %1$s"</string>
+    <string name="next_tier_label">"Grado successivo"</string>
+    <string name="next_tier_description">"Completa altre %1$s sfide per raggiungere grado %2$s"</string>
+    <string name="future_tier_description">"Ogni spazzolatura ti farà guadagnare %1$s"</string>
+    <string name="coach_start_message_title">"Accendi lo spazzolino per iniziare la sessione di Coach+"</string>
+    <string name="coach_dialog_start_message_title">"Iniziamo"</string>
+    <string name="coach_dialog_start_message_body">"Accendi lo spazzolino per iniziare la sessione di Coach+"</string>
+    <string name="coach_dialog_start_message_cancel">"Annullare"</string>
+    <string name="coach_manual_dialog_start_message_body">"Fare clic sul pulsante per avviare la sessione di Coach+ manuale"</string>
+    <string name="coach_manual_dialog_start_message_start">"Inizio"</string>
+    <string name="buy">"Comperare"</string>
+    <string name="smiles_count">"Hai %s punti Smiles"</string>
+    <string name="smiles_history_link">"Vedi la storica delle attività"</string>
+    <string name="challenge_details_action_offline">"Cos'è la spazzolatura offline?"</string>
+    <string name="offline_brushing_toolbar_title">"Pulizia offline"</string>
+    <string name="offline_brushing_title">"Puoi usare lo spazzolino Colgate Connect con o senza l'app"</string>
+    <string name="offline_brushing_point1">"Spazzola con Colgate Connect mentre l'app non è aperta: la tua tecnica di spazzolatura è ancora analizzata"</string>
+    <string name="offline_brushing_point2">"Puoi quindi sincronizzare lo spazzolino semplicemente aprendo la tua app e scoprendo nuove intuizioni"</string>
+    <string name="smiles_history">"Storia di Smiles"</string>
+    <string name="smiles_history_brushing">"Spazzolatura"</string>
+    <string name="smiles_history_challenge_completed">"Sfida completata: %s"</string>
+    <string name="smiles_history_offline_brushing">"Spazzolatura offline"</string>
+    <string name="smiles_history_online_brushing">"Spazzolare con %s"</string>
+    <string name="smiles_history_transfer_from">"%s Smiles ricevuti da %s"</string>
+    <string name="smiles_history_transfer_in">"%s Smiles ricevuti"</string>
+    <string name="smiles_history_transfer_out">"%s Smiles trasferiti"</string>
+    <string name="smiles_history_transfer_to">"%s Smiles trasferiti su %s"</string>
+    <string name="smiles_history_tier_reached">"%s livello raggiunto. Ogni spazzolino da denti ti porta %s Smiles."</string>
+    <plurals name="challenge_details_more_to_earn">
+        <item quantity="one">"%1$d altro per guadagnare %2$d smile!"</item>
+        <item quantity="other">"%1$d altro per guadagnare %2$d smiles!"</item>
+    </plurals>
+    <string name="smiles_history_smiles_count">"%s Smiles"</string>
+    <string name="coach_start_message_title_manual">"Agitare lo spazzolino per iniziare la sessione di Coach+"</string>
+    <string name="smiles_history_week_streak">"Serie settimanale"</string>
+    <string name="transfer_smiles">"Trasferisci Smiles"</string>
+    <string name="family_smiles">"Membri della famiglia"</string>
+    <string name="rewards_error_no_internet_connection">"Si prega di abilitare la connessione Internet per caricare i dati dei premi."</string>
+    <string name="rewards_error_synchronisation_failed">"Si è verificato un errore durante il caricamento dei dati. Per favore riprova più tardi."</string>
+    <string name="smiles_transfer_title">"Trasferisci Smiles"</string>
+    <string name="smiles_transfer_current_balance">"Saldo corrente"</string>
+    <string name="smiles_transfer_transfer_amount">"Importo trasferito"</string>
+    <string name="smiles_transfer_to">"Transferire a"</string>
+    <string name="smiles_transfer_validate">"Trasferisci"</string>
+    <string name="smiles_transfer_smiles">"Smiles"</string>
+    <string name="smiles_transfer_smiles_won">"%s Smiles vinti"</string>
+    <string name="smiles_transfer_done">" Il trasferimento è fatto!"</string>
+    <string name="challenge_feedback_collect_smiles">"Raccogli i miei Smiles"</string>
+    <string name="multi_challenge_feedback_title">"Complimenti!"</string>
+    <string name="multi_challenge_feedback_message_part1">"Hai completato"</string>
+    <plurals name="multi_challenge_feedback_message_part2">
+        <item quantity="one">"%1$d nuova sfida."</item>
+        <item quantity="other">"%1$d nuove sfide."</item>
+    </plurals>
+    <string name="multi_challenge_feedback_message_part3">"Scorri per scoprirli."</string>
+
+    <!-- Fuzzy -->
+    <plurals name="smiles_feedback_good">
+        <item quantity="one">"Che bella spazzolata!\nHai appena vinto %1$d Smile!"</item>
+        <item quantity="other">"Che bella spazzolata!\nHai appena vinto %1$d Smiles!"</item>
+    </plurals>
+    <string name="smiles_feedback_bad">"Purtroppo non hai vinto nessun Smiles con questo spazzolatura.\nHai bisogno di ottenere almeno il 50%% di copertura di superficie per vincere Smiles."</string>
+    <string name="my_plaqless">"Il mio Plaqless Pro"</string>
+    <string name="setup_toothbrush_plaqless_title">"Collega il tuo Plaqless Pro"</string>
+    <string name="new_tier_title">"Hai raggiunto il livello %s"</string>
+    <string name="new_tier_message">"Congratulazioni %s, hai completato %s sfide. Continua!"</string>
+    <string name="new_tier_coins">"D'ora in poi, ogni sfioramento dei denti ti porta"</string>
+    <string name="feedback_offline_sync">"Ehi, hai sincronizzato %s pennellate e hai vinto %s Smiles!"</string>
+    <string name="feedback_offline_sync_no_smiles">"Ehi, hai sincronizzato %s pennellate ma non hai vinto nessun sorriso.\nÈ necessario ottenere almeno il 50%% di copertura di superficie per vincere Smiles."</string>
+    <string name="pql_connection_title">"Inizia premendo il tasto XXX sullo spazzolino"</string>
+    <string name="pql_connection_description"><![CDATA[Cerca il <b>simbolo bluetooth</b> lampeggiante]]></string>
+    <string name="calendar_tab">"Calendario"</string>
+    <string name="detection_popup_pql_no">"Continua a cercare il mio spazzolino"</string>
+    <string name="detection_popup_pql_yes">"Collegare"</string>
+    <string name="plaqless_intro_title">"Benvenuti a Colgate Plaqless Pro"</string>
+    <string name="plaqless_intro_subtitle"><![CDATA[Rimozione di accumulo ogni giorno è la <b>chiave per una buona salute orale.</b>]]></string>
+    <string name="plaqless_intro_type_title">"Plaqless Pro indica:"</string>
+    <string name="plaqless_intro_type_cleand">"Puliti"</string>
+    <string name="plaqless_intro_type_remains">"Costruisci resti"</string>
+    <string name="plaqless_intro_type_missed">"Perse"</string>
+    <string name="plaqless_intro_start">"Iniziare"</string>
+    <string name="slide1_title">"Scopri lo spazzolino da denti"</string>
+    <string name="slide1_description1"><![CDATA[<b>I sensori avanzati</b> rilevano l\'accumulo sui tuoi denti]]></string>
+    <string name="slide1_description2"><![CDATA[<b>L\'anello luminoso indicatore</b> si illumina per dirigere il tuo pennello]]></string>
+    <string name="slide1_description3"><![CDATA[<b>Il timer</b> si illumina ogni 30 secondi]]></string>
+    <string name="slide2_title">"La spia luminosa"</string>
+    <string name="slide2_description1_title">"Blu"</string>
+    <string name="slide2_description1_content1">"La placca viene rilevata"</string>
+    <string name="slide2_description1_content2">"Spazzola per rimuoverlo"</string>
+    <string name="slide2_description2_title">"Bianca"</string>
+    <string name="slide2_description2_content1">"L'area è pulita"</string>
+    <string name="slide2_description2_content2">"Passa alla sezione successiva"</string>
+    <string name="slide2_description3_title">"Rossa"</string>
+    <string name="slide2_description3_content1">"Sensore oscurato"</string>
+    <string name="slide2_description3_content2">"Sensore di risciacquo o cambio angolo spazzola"</string>
+    <string name="intro_start_test">"Inizia il test"</string>
+    <string name="dashboard_pql_tip_tricks_title">"Suggerimenti"</string>
+    <string name="dashboard_pql_tip_tricks_body">"Scopri come ottimizzare i tuoi risultati"</string>
+    <string name="pql_best_results_title">"Per i migliori risultati"</string>
+    <string name="pql_best_results_body">"Tenere lo spazzolino in posizione orizzontale per garantire una tecnica efficace."</string>
+    <string name="pql_best_results_body_highlight">"orizzontale"</string>
+    <string name="pql_best_results_ok">"Ho capito"</string>
+    <string name="pql_brushing_progress_msg">"Analisi della placca"</string>
+    <string name="intro_do_later">"lo farò più tardi"</string>
+    <string name="pql_durring_session_description_step1">"Presta attenzione al colore degli anelli LED mentre ti lavi i denti."</string>
+    <string name="pql_durring_session_description_step1_highlighted">"colore degli anelli LED"</string>
+    <string name="mouth_map_left">"S"</string>
+    <string name="mouth_map_right">"D"</string>
+    <string name="mouth_map_clean_score">"pulita punteggio"</string>
+    <string name="mouth_map_close">"Vai alla pagina principale"</string>
+    <string name="mouth_map_dialog_ok">"Ho capito"</string>
+    <string name="missed_area_dialog_title">"Area\nmancante"</string>
+    <string name="missed_area_dialog_body"><![CDATA[Il giallo indica le <b>aree che non hai spazzolato</b>]]></string>
+    <string name="clean_score_dialog_title">"pulita punteggio"</string>
+    <string name="clean_score_dialog_clean"><![CDATA[<b>%s</b> pulito]]></string>
+    <string name="clean_score_dialog_remains"><![CDATA[<b>%s</b> placca rimanente]]></string>
+    <string name="clean_score_dialog_missed"><![CDATA[<b>%s</b> mancante]]></string>
+    <string name="build_up_remains_dialog_title">"Placca\nrimanente"</string>
+    <string name="build_up_remains_dialog_body"><![CDATA[Il blu indica le aree in cui è <b>presente la placca</b>. Ti consigliamo di lavarli di nuovo]]></string>
+    <string name="coach_plus_feedback_message_speed_fast">"Stai attento, stai spazzolando troppo velocemente!"</string>
+    <string name="coach_plus_feedback_message_speed_slow">"Stai spazzolando troppo lentamente!"</string>
+
+    <!-- Fuzzy -->
+    <string name="coach_plus_feedback_message_wrong_angle_incisors_interior">"Regola l'inclinazione verticale dello spazzolino"</string>
+
+    <!-- Fuzzy -->
+    <string name="coach_plus_feedback_message_wrong_angle_other_zones">"Regola l'angolo della testa dello spazzolino (45 °)"</string>
+    <string name="crown_explanation_dialog_title">"Giornata perfetta"</string>
+    <string name="crown_explanation_dialog_body">"Lavati i denti 2 volte al giorno con oltre l'80%% della superficie coperta dalla spazzolatura per guadagnare la tua corona!"</string>
+    <string name="crown_explanation_dialog_ok">"Ho capito"</string>
+    <string name="week_streak_dialog_title">"Serie settimanale!"</string>
+    <string name="week_streak_dialog_body">"Congratulazioni, ti sei lavato i denti 2 volte al giorno per 7 giorni di seguito. Hai vinto %s Smiles!"</string>
+    <string name="week_streak_dialog_ok">"Colleziona i miei %s Smiles"</string>
+    <string name="slide3_title">"Guarda il spazzolino in azione"</string>
+    <string name="slide3_try_brush_now">"Prova il spazzolino ora"</string>
+    <string name="slide3_try_brush_later">"lo farò più tardi"</string>
+    <string name="coach_plus_feedback_message_wrong_handle">"Tenga orizzontalmente il Suo spazzolino da denti"</string>
+    <string name="brushing_program_button_text">"Programma di spazzolatura"</string>
+    <string name="brushing_quiz_label">"Programma di spazzolatura"</string>
+    <string name="brushing_quiz_screen_1_title">"Come giudichi la tua attuale routine di igiene orale?"</string>
+    <string name="brushing_quiz_screen_1_answer_1">"Piuttosto buono"</string>
+    <string name="brushing_quiz_screen_1_answer_2">"Media"</string>
+    <string name="brushing_quiz_screen_1_answer_3">"Può essere migliorato"</string>
+    <string name="brushing_quiz_screen_2_title">"Quanto spesso soffri di sensibilità gengivale o dentale?"</string>
+    <string name="brushing_quiz_screen_2_answer_1">"Non spesso"</string>
+    <string name="brushing_quiz_screen_2_answer_2">"Spesso"</string>
+    <string name="brushing_quiz_screen_3_answer_1">"Denti più bianchi"</string>
+    <string name="brushing_quiz_screen_3_answer_2">"Respiro più fresco"</string>
+    <string name="brushing_quiz_screen_3_answer_3">"Proteggere i denti o le gengive sensibili"</string>
+    <string name="brushing_quiz_screen_3_title">"Cosa ti piacerebbe di più lavorare oggi?"</string>
+    <string name="brushing_quiz_screen_2_answer_3">"Quotidiano"</string>
+    <string name="brushing_quiz_confirmation_title">"Grazie per aver completato il quiz"</string>
+    <string name="brushing_quiz_program_whitening">"Programma di sbiancamento"</string>
+    <string name="brushing_quiz_program_sensitive">"Programma sensibile"</string>
+    <string name="brushing_quiz_program_everyday_care">"Cura di tutti i giorni"</string>
+    <string name="brushing_quiz_confirmation_brushing_program">"Il tuo programma di spazzolatura è\n\n%1$s"</string>
+    <string name="brushing_quiz_confirmation_try_it">"Provalo ora"</string>
+    <string name="brushing_quiz_confirmation_confirm">"Conferma programma"</string>
+    <string name="brushing_quiz_confirmation_revert">"Ritornare"</string>
+    <string name="brushing_quiz_confirmation_try_it_not_paired">"È necessario disporre di uno spazzolino elettrico collegato al dispositivo per testare il programma"</string>
+    <string name="test_angles_activity_name">"Angoli"</string>
+
+    <!-- Default push notification channel -->
+    <!-- Fuzzy -->
+    <string name="push_notification_channel_general">"Notifiche generali"</string>
+    <string name="brushing_program_dialog_title">"Seleziona il tuo programma"</string>
+    <string name="brushing_program_dialog_slow">"Programma sensibile"</string>
+    <string name="brushing_program_dialog_regular">"Cura di tutti i giorni"</string>
+    <string name="brushing_program_dialog_strong">"Programma di sbiancamento"</string>
+    <string name="brushing_program_dialog_current">"(attuale)"</string>
+    <string name="test_angles_intro_header">"Angoli"</string>
+    <string name="test_angles_intro_body">"Tenere lo spazzolino con un angolo di 45 gradi verso la linea gengivale
+
+Segui le istruzioni per valutare e migliorare la tua tecnica."</string>
+    <string name="test_angles_intro_start_button">"Inizio"</string>
+    <string name="login_hint_enable_network">"Si prega di abilitare l'accesso a Internet per creare il tuo account"</string>
+    <string name="test_angles_state_correct">"Buono"</string>
+    <string name="test_angles_state_incorrect">"Cattivo"</string>
+    <string name="test_angles_molar_hint">"Spazzola la superficie esterna dei molari e mantieni l'angolo corretto per 20 sec"</string>
+    <string name="test_angles_incisor_hint">"Inclinare lo spazzolino verticalmente per la superficie degli incisivi interni inferiori"</string>
+    <string name="test_angles_confirmation_hint">"Questo è tutto! Ora puoi uscire dall'attività Angoli."</string>
+    <string name="test_angles_confirmation_hint_highlight">"uscire dall'attività Angoli"</string>
+    <string name="offline_brushing_notification_single_no_smiles_title">"Non hai vinto nessun Smiles"</string>
+    <string name="offline_brushing_notification_single_no_smiles_content">"Richiede il 50% di superficie o più"</string>
+    <string name="offline_brushing_notification_single_with_smiles_title">"Che bella spazzolatura!"</string>
+    <string name="offline_brushing_notification_single_with_smiles_content">"Hai appena vinto %1$s Smiles !"</string>
+    <string name="offline_brushing_notification_multiple_no_smiles_title">"Hai sincronizzato %1$s spazzolature"</string>
+    <string name="offline_brushing_notification_multiple_no_smiles_content">"Ottieni almeno il 50% di superficie per guadagnare Smiles"</string>
+    <string name="offline_brushing_notification_multiple_with_smiles_title">"Hai sincronizzato %1$s spazzolature"</string>
+    <string name="offline_brushing_notification_multiple_with_smiles_content">"E ha vinto %1$s punti !"</string>
+    <string name="coach_plus_feedback_message_out_of_mouth">"Metti lo spazzolino in bocca"</string>
+    <string name="coach_plus_feedback_message_rinse_brush_head">"Pulisci il sensore dello spazzolino da denti"</string>
+    <string name="coach_plus_title">"Coach+"</string>
+    <string name="dashboard_clean_score_title">"Pulita"</string>
+    <string name="dashboard_clean_score_subtitle">"Punteggio"</string>
+
+    <!-- Notifications related to brush connectivity -->
+    <string name="push_notification_channel_kolibree_service">"Connettività spazzolino da denti"</string>
+
+    <!-- Notifications related to offline brushings retrieval -->
+    <string name="push_notification_channel_night_watch">"Spazzolature offline"</string>
+    <string name="speed_control_activity_name">"Controllo di velocità"</string>
+    <string name="speed_control_intro_header">"Controllo di velocità"</string>
+    <string name="speed_control_intro_body">"Lavarsi i denti troppo velocemente può danneggiare le gengive.
+
+Segui le istruzioni per valutare e migliorare la tua tecnica"</string>
+    <string name="speed_control_intro_start_button">"Inizia a spazzolare ora"</string>
+    <string name="speed_control_confirmation_hint">"Questo è tutto! Ora puoi uscire dall'attività di controllo della velocità."</string>
+    <string name="speed_control_confirmation_hint_highlight">"uscire dall'attività di controllo della velocità"</string>
+    <string name="speed_control_brushing_stage1_hint">"Spazzola i tuoi molari
+superficie esterna"</string>
+    <string name="speed_control_brushing_stage1_hint_highlight">"molari"</string>
+    <string name="speed_control_brushing_stage2_hint">"Spazzola i tuoi molari
+superficie da masticare"</string>
+    <string name="speed_control_brushing_stage2_hint_highlight">"molari"</string>
+    <string name="speed_control_brushing_stage3_hint">"Lavati i denti anteriori
+superficie esterna"</string>
+    <string name="speed_control_brushing_stage3_hint_highlight">"denti anteriori
+esterno"</string>
+    <string name="speed_control_feedback_underspeed">"Troppo lento !"</string>
+    <string name="speed_control_feedback_overspeed">"Troppo veloce !"</string>
+    <string name="speed_control_feedback_correct">" "</string>
+    <string name="activity_not_compatible_with_plaqless">"Questa attività non è attualmente compatibile con il vostro Plaqless Pro"</string>
+    <string name="personal_challenge_objective">"Obiettivo"</string>
+    <string name="personal_challenge_level">"Livello"</string>
+    <string name="personal_challenge_period">"Periodo"</string>
+    <string name="personal_challenge_objective_streak">"Streak"</string>
+    <string name="personal_challenge_objective_coverage">"striscia"</string>
+    <string name="personal_challenge_objective_duration">"Durata"</string>
+    <string name="personal_challenge_level_easy">"Facile"</string>
+    <string name="personal_challenge_level_hard">"Difficile"</string>
+    <string name="personal_challenge_streak_easy">"Spazzola una volta al giorno per %1$s di fila → %2$d sorrisi"</string>
+    <string name="personal_challenge_streak_hard">"Spazzola due volte al giorno per %1$s di fila → %2$d sorrisi"</string>
+    <string name="personal_challenge_coverage_easy">"Fare una sessione di spazzolatura con almeno l'80 %% di copertura una volta al giorno per %1$s → %2$d sorrisi"</string>
+    <string name="personal_challenge_coverage_hard">"Fare una sessione di spazzolatura con almeno l'80 %% di copertura due volte al giorno per %1$s → %2$d sorrisi"</string>
+    <string name="personal_challenge_duration_easy">"Spazzolare per almeno 2 minuti una volta al giorno per %1$s → %2$d sorrisi"</string>
+    <string name="personal_challenge_duration_hard">"Spazzolare per almeno 2 minuti due volte al giorno per %1$s → %2$d sorrisi"</string>
+    <plurals name="duration_days">
+        <item quantity="one">"%1$d al giorno"</item>
+        <item quantity="other">"%1$d giorni"</item>
+    </plurals>
+    <string name="personal_challenge_proposed_challenge">"SFIDA PROPOSTA"</string>
+    <string name="personal_challenge_currently_active_challenge">"SFIDA ATTUALE"</string>
+    <string name="personal_challenge_create">"Creare una sfida"</string>
+    <string name="personal_challenge_update">"Aggiornare la sfida esistente"</string>
+    <string name="personal_challenge_delete">"Elimina la sfida attiva"</string>
+    <string name="personal_challenge_title">"Sfida personale"</string>
+    <string name="personal_challenge_toolbar">"Sfide"</string>
+    <string name="personal_challenge_save">"Salvare"</string>
+    <string name="personal_challenge_define_your_challenge">"Definisci la tua sfida e vieni ricompensato."</string>
+    <string name="personal_challenge_parameters">"Parametri della sfida"</string>
+    <string name="personal_challenge_parameter_target">"Migliorare il mio"</string>
+    <string name="personal_challenge_parameter_level">"Livello"</string>
+    <string name="personal_challenge_parameter_period">"Periodo della sfida"</string>
+    <string name="personal_challenge_result">"La sfida che ne deriva"</string>
+    <string name="personal_challenge_update_dialog_title">"La sfida dell'aggiornamento"</string>
+    <string name="personal_challenge_update_dialog_body">"Siete sicuri di voler aggiornare la vostra sfida attuale?"</string>
+    <string name="personal_challenge_update_dialog_yes">"Sì"</string>
+    <string name="personal_challenge_update_dialog_no">"No"</string>
+    <string name="personal_challenge_completed_title">"Sfida personale"</string>
+    <string name="personal_challenge_completed_message">"Congratulazioni! Hai portato a termine la tua sfida personale"</string>
+    <string name="firmware_upgrade_welcome">"L'aggiornamento dello spazzolino richiederà qualche minuto. Non spegnere lo spazzolino."</string>
+</resources>

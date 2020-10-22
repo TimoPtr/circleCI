@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <data>
+
+    <import type="android.view.View" />
+
+    <import type="com.kolibree.android.shop.presentation.checkout.cart.CartProductsResult" />
+
+    <variable
+      name="viewModel"
+      type="com.kolibree.android.shop.presentation.checkout.cart.ShopCartViewModel" />
+
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/product_list_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false">
+
+    <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/product_list"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:clipToPadding="false"
+      android:paddingTop="@dimen/dot"
+      android:visibility="@{viewModel.initialCartProductsResult == CartProductsResult.CartProductsAvailable ? View.VISIBLE : View.INVISIBLE}"
+      app:adapter="@{viewModel.adapter}"
+      app:diffConfig="@{viewModel.diffConfig}"
+      app:itemBinding="@{viewModel.cartProductsBinding}"
+      app:items="@{viewModel.cartItems}"
+      app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+      app:layout_constraintBottom_toTopOf="@id/cart_payment"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:visibilityAnim="@{viewModel.cartProductsResult == CartProductsResult.CartProductsAvailable}" />
+
+    <LinearLayout
+      android:layout_width="@dimen/dot_thirty"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="@dimen/dot_quin"
+      android:gravity="center"
+      android:orientation="vertical"
+      android:visibility="@{viewModel.initialCartProductsResult == CartProductsResult.EmptyCart ? View.VISIBLE : View.INVISIBLE}"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:visibilityAnim="@{viewModel.cartProductsResult == CartProductsResult.EmptyCart}"
+      tools:visibility="visible">
+
+      <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/cart_empty_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:clickable="@{viewModel.areButtonsClickable}"
+        app:srcCompat="@drawable/ic_cart_empty" />
+
+      <TextView
+        android:id="@+id/cart_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dot_quin"
+        android:text="@string/cart_empty_title"
+        android:textAppearance="?textAppearanceHeadline4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+      <TextView
+        android:id="@+id/cart_empty_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dot"
+        android:gravity="center"
+        android:text="@string/cart_empty_subtitle"
+        android:textAppearance="?textAppearanceBody2"
+        android:textColor="?android:textColorSecondary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+
+    <Button
+      android:id="@+id/cart_visit_shop"
+      style="?materialButtonStyle"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_double"
+      android:layout_marginEnd="@dimen/dot_double"
+      android:layout_marginBottom="@dimen/dot_quad"
+      android:onClick="@{() -> viewModel.onVisitOurShopClick()}"
+      android:text="@string/cart_visit_shop"
+      android:visibility="@{viewModel.initialCartProductsResult == CartProductsResult.EmptyCart ? View.VISIBLE : View.INVISIBLE}"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:visibilityAnim="@{viewModel.cartProductsResult == CartProductsResult.EmptyCart}"
+      tools:visibility="invisible" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+      android:id="@+id/cart_payment"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:clipChildren="false"
+      android:paddingStart="@dimen/dot_double"
+      android:paddingEnd="@dimen/dot_double"
+      android:visibility="@{viewModel.initialCartProductsResult == CartProductsResult.CartProductsAvailable ? View.VISIBLE : View.INVISIBLE}"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:visibilityAnim="@{viewModel.cartProductsResult == CartProductsResult.CartProductsAvailable}">
+
+      <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+      <TextView
+        android:id="@+id/cart_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dot_double"
+        android:text="@string/cart_total_title"
+        android:textAppearance="?textAppearanceHeadline3"
+        app:layout_constraintBottom_toTopOf="@id/cart_google_pay_buy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+      <TextView
+        android:id="@+id/cart_total_price"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/match_constraints"
+        android:gravity="end"
+        android:text="@{viewModel.totalPrice}"
+        android:textAppearance="?textAppearanceHeadline3"
+        app:layout_constraintBottom_toBottomOf="@+id/cart_total"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/cart_total"
+        app:layout_constraintTop_toTopOf="@+id/cart_total"
+        tools:text="$14.51" />
+
+      <Button
+        android:id="@+id/cart_google_pay_buy"
+        style="?materialButtonIconStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dot_sev"
+        android:backgroundTint="@color/black"
+        android:clickable="@{viewModel.areButtonsClickable}"
+        android:onClick="@{() -> viewModel.onBuyWithGooglePayClick()}"
+        android:visibility="@{viewModel.isGooglePayButtonVisible ? View.VISIBLE : View.GONE}"
+        app:icon="@drawable/ic_buy_with_googlepay_button"
+        app:iconPadding="@dimen/zero"
+        app:iconTint="@null"
+        app:layout_constraintBottom_toTopOf="@id/cart_buttons_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cart_total_price"
+        app:rippleColor="?rippleColorMono"
+        tools:visibility="visible" />
+
+      <FrameLayout
+        android:id="@+id/cart_buttons_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dot_double"
+        android:clipChildren="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cart_google_pay_buy">
+
+        <Button
+          android:id="@+id/cart_another_payment_method"
+          style="?materialButtonTextStyle"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/dot_sev"
+          android:layout_marginBottom="@dimen/dot_double"
+          android:enabled="@{viewModel.areButtonsClickable}"
+          android:onClick="@{() -> viewModel.onBuyWithAnotherMethodClick()}"
+          android:text="@string/cart_buy_another_method"
+          android:visibility="@{viewModel.isBuyAnotherMethodButtonVisible ? View.VISIBLE : View.GONE}" />
+
+        <Button
+          android:id="@+id/cart_proceed_checkout_button"
+          style="?materialButtonStyle"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:enabled="@{viewModel.areButtonsClickable}"
+          android:onClick="@{() -> viewModel.onBuyWithAnotherMethodClick()}"
+          android:text="@string/cart_proceed_checkout"
+          android:visibility="@{viewModel.isProceedCheckoutButtonVisible ? View.VISIBLE : View.GONE}" />
+
+      </FrameLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

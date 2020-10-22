@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout>
+
+  <data>
+
+    <variable
+      name="viewModel"
+      type="com.kolibree.android.app.ui.home.tab.shop.ShopViewModel" />
+
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/shop_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+      android:id="@+id/appbar"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:background="?colorPrimary"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent">
+
+      <include
+        android:id="@+id/toolbar_layout"
+        layout="@layout/view_hum_home_toolbar"
+        app:viewModel="@{viewModel.toolbarViewModel}" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.fragment.app.FragmentContainerView
+      android:id="@+id/shop_fragment"
+      android:name="com.kolibree.android.shop.presentation.container.ShopContainerFragment"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="@dimen/match_constraints"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/appbar"
+      app:layout_constraintBottom_toBottomOf="parent" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+

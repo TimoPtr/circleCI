@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="5" by="lint 4.0.0" client="gradle" variant="debug" version="4.0.0">
+
+    <issue
+        id="SdkPublicExtensionMethodWithoutKeep"
+        message="Please add `@Keep` to this extension function or make it non-public"
+        errorLine1="fun createProfileTier("
+        errorLine2="    ~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/test/mocks/RewardsBuilders.kt"
+            line="17"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="SdkPublicExtensionMethodWithoutKeep"
+        message="Please add `@Keep` to this extension function or make it non-public"
+        errorLine1="fun createTierEntity("
+        errorLine2="    ~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/test/mocks/RewardsBuilders.kt"
+            line="33"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="SdkPublicExtensionMethodWithoutKeep"
+        message="Please add `@Keep` to this extension function or make it non-public"
+        errorLine1="fun createChallenge(pictureUrl: String = &quot;&quot;) = object : Challenge {"
+        errorLine2="    ~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/test/mocks/RewardsBuilders.kt"
+            line="53"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public class BrushingBuilder {"
+        errorLine2="             ~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/test/mocks/BrushingBuilder.java"
+            line="17"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public class ChallengeWithProgressBuilder {"
+        errorLine2="             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/test/mocks/rewards/ChallengeWithProgressBuilder.java"
+            line="24"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="  public static class TestChallenge {"
+        errorLine2="                      ~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/test/mocks/rewards/ChallengeWithProgressBuilder.java"
+            line="112"
+            column="23"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public class PrizeHelper {"
+        errorLine2="             ~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/test/mocks/rewards/PrizeHelper.java"
+            line="25"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="  public static class PrizeBuilder {"
+        errorLine2="                      ~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/test/mocks/rewards/PrizeHelper.java"
+            line="70"
+            column="23"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public class ProfileBuilder {"
+        errorLine2="             ~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/test/mocks/ProfileBuilder.java"
+            line="17"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public class ProfileRewardsBuilder {"
+        errorLine2="             ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/test/mocks/rewards/ProfileRewardsBuilder.java"
+            line="16"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public class ProfileSmilesHistoryHelper {"
+        errorLine2="             ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/test/mocks/rewards/ProfileSmilesHistoryHelper.java"
+            line="26"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="  public static class ProfileSmilesHistoryBuilder {"
+        errorLine2="                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/test/mocks/rewards/ProfileSmilesHistoryHelper.java"
+            line="68"
+            column="23"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public class ProfileTierHelper {"
+        errorLine2="             ~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/test/mocks/rewards/ProfileTierHelper.java"
+            line="22"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="  public static class ProfileTierBuilder {"
+        errorLine2="                      ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/test/mocks/rewards/ProfileTierHelper.java"
+            line="73"
+            column="23"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public class RecordedSessionBuilder {"
+        errorLine2="             ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/test/mocks/RecordedSessionBuilder.java"
+            line="13"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public class RedeemBuilder {"
+        errorLine2="             ~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/test/mocks/rewards/RedeemBuilder.java"
+            line="15"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public class TransferBuilder {"
+        errorLine2="             ~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/test/mocks/rewards/TransferBuilder.java"
+            line="15"
+            column="14"/>
+    </issue>
+
+</issues>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.kolibree.android.hum.brushsyncreminder">
+
+  <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+  <application>
+
+    <receiver
+      android:name="com.kolibree.android.hum.brushsyncreminder.ReminderNotificationBroadcastReceiver"
+      android:enabled="false" />
+
+    <receiver
+      android:name="com.kolibree.android.hum.brushsyncreminder.RestoreReminderNotificationBroadcastReceiver"
+      android:enabled="false"
+      android:exported="true">
+      <intent-filter>
+        <category android:name="android.intent.category.DEFAULT" />
+
+        <action android:name="android.intent.action.BOOT_COMPLETED" />
+        <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+        <!--For HTC devices-->
+        <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+      </intent-filter>
+    </receiver>
+
+  </application>
+
+</manifest>

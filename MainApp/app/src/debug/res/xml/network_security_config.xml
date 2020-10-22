@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<!--
+DO NOT INCLUDE THIS FILE IN PRODUCTION CODE
+-->
+<network-security-config>
+  <!--Modify if you need to communicate with your local backend instance-->
+  <domain-config cleartextTrafficPermitted="true">
+    <domain includeSubdomains="true">localhost</domain>
+    <!--
+    Add more domains/IPs if you have your local backend instance
+    deployed on different machine. If you want to reach it from
+    a real device and not emulator, add IP of your machine here.
+    -->
+  </domain-config>
+</network-security-config>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../SDK/AccountInternal/AccountInternal-account-internal.iml" filepath="$PROJECT_DIR$/../SDK/AccountInternal/AccountInternal-account-internal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/AccountSDK/AccountSDK-account-sdk.iml" filepath="$PROJECT_DIR$/../SDK/AccountSDK/AccountSDK-account-sdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/AndroidModulesSDK.iml" filepath="$PROJECT_DIR$/../SDK/AndroidModulesSDK.iml" group="AndroidModulesSDK" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/AngleAndSpeed/AngleAndSpeed-angle-and-speed.iml" filepath="$PROJECT_DIR$/../SDK/AngleAndSpeed/AngleAndSpeed-angle-and-speed.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/Annotation/Annotation-annotation.iml" filepath="$PROJECT_DIR$/../SDK/Annotation/Annotation-annotation.iml" group="AndroidModulesSDK/annotation" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/Auditor/Auditor-auditor.iml" filepath="$PROJECT_DIR$/../SDK/Auditor/Auditor-auditor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/Authentication/Authentication-authentication.iml" filepath="$PROJECT_DIR$/../SDK/Authentication/Authentication-authentication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/BaseUI/BaseUI-base-ui.iml" filepath="$PROJECT_DIR$/../SDK/BaseUI/BaseUI-base-ui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/BaseUIHUM/BaseUIHUM-base-ui-hum.iml" filepath="$PROJECT_DIR$/../SDK/BaseUIHUM/BaseUIHUM-base-ui-hum.iml" group="AndroidModulesSDK/base-ui-hum" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/BaseUIV1/BaseUIV1-base-ui-v1.iml" filepath="$PROJECT_DIR$/../SDK/BaseUIV1/BaseUIV1-base-ui-v1.iml" group="AndroidModulesSDK/base-ui-v1" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/BrushingQuiz/BrushingQuiz-brushing-quiz.iml" filepath="$PROJECT_DIR$/../SDK/BrushingQuiz/BrushingQuiz-brushing-quiz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/BtTesterApp-app.iml" filepath="$PROJECT_DIR$/app/BtTesterApp-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BtTesterApp-kolibree-android-bt-tester.iml" filepath="$PROJECT_DIR$/BtTesterApp-kolibree-android-bt-tester.iml" group="kolibree-android-bt-tester" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/Calendar/Calendar-calendar.iml" filepath="$PROJECT_DIR$/../SDK/Calendar/Calendar-calendar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/Checkup/Checkup-checkup.iml" filepath="$PROJECT_DIR$/../SDK/Checkup/Checkup-checkup.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/CoachPlus/CoachPlus-coach-plus.iml" filepath="$PROJECT_DIR$/../SDK/CoachPlus/CoachPlus-coach-plus.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/CommonModels/CommonModels-common-models.iml" filepath="$PROJECT_DIR$/../SDK/CommonModels/CommonModels-common-models.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/CommonsAndroid/CommonsAndroid-commons.iml" filepath="$PROJECT_DIR$/../SDK/CommonsAndroid/CommonsAndroid-commons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/Coppa/Coppa-coppa.iml" filepath="$PROJECT_DIR$/../SDK/Coppa/Coppa-coppa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/Core/Core-core.iml" filepath="$PROJECT_DIR$/../SDK/Core/Core-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/Crypto/Crypto-crypto.iml" filepath="$PROJECT_DIR$/../SDK/Crypto/Crypto-crypto.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/Databinding/Databinding-databinding.iml" filepath="$PROJECT_DIR$/../SDK/Databinding/Databinding-databinding.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/Game/Game-game.iml" filepath="$PROJECT_DIR$/../SDK/Game/Game-game.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/GameCommons/GameCommons-game-commons.iml" filepath="$PROJECT_DIR$/../SDK/GameCommons/GameCommons-game-commons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/GameCommons/GameCommons-game-commons-v1.iml" filepath="$PROJECT_DIR$/../SDK/GameCommons/GameCommons-game-commons-v1.iml" group="AndroidModulesSDK/game-commons-v1" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/GoogleAuth/GoogleAuth-google-auth.iml" filepath="$PROJECT_DIR$/../SDK/GoogleAuth/GoogleAuth-google-auth.iml" group="AndroidModulesSDK/google-auth" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/Gruware/Gruware-gruware.iml" filepath="$PROJECT_DIR$/../SDK/Gruware/Gruware-gruware.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/Heuristic/Heuristic-heuristic.iml" filepath="$PROJECT_DIR$/../SDK/Heuristic/Heuristic-heuristic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/HomeUI/HomeUI-home-ui.iml" filepath="$PROJECT_DIR$/../SDK/HomeUI/HomeUI-home-ui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/HomeUIHUM/HomeUIHUM-home-ui-hum.iml" filepath="$PROJECT_DIR$/../SDK/HomeUIHUM/HomeUIHUM-home-ui-hum.iml" group="AndroidModulesSDK/home-ui-hum" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/Jaws/Jaws-jaws.iml" filepath="$PROJECT_DIR$/../SDK/Jaws/Jaws-jaws.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Kolibree-android-monorepo-BtTesterApp-kolibree-android-bt-tester.iml" filepath="$PROJECT_DIR$/Kolibree-android-monorepo-BtTesterApp-kolibree-android-bt-tester.iml" group="kolibree-android-bt-tester" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/LegacyUnityGameSDK/LegacyUnityGameSDK-legacy-unity-game-sdk.iml" filepath="$PROJECT_DIR$/../SDK/LegacyUnityGameSDK/LegacyUnityGameSDK-legacy-unity-game-sdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/LintRules/LintRules-lint-rules.iml" filepath="$PROJECT_DIR$/../SDK/LintRules/LintRules-lint-rules.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/MagikSdk/MagikSdk-magik-sdk.iml" filepath="$PROJECT_DIR$/../SDK/MagikSdk/MagikSdk-magik-sdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/MouthMap/MouthMap-mouthmap.iml" filepath="$PROJECT_DIR$/../SDK/MouthMap/MouthMap-mouthmap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/MouthMap/MouthMap-mouthmap-v1.iml" filepath="$PROJECT_DIR$/../SDK/MouthMap/MouthMap-mouthmap-v1.iml" group="AndroidModulesSDK/mouthmap-v1" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/Network/Network-network.iml" filepath="$PROJECT_DIR$/../SDK/Network/Network-network.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/OfflineBrushings/OfflineBrushings-offline-brushings.iml" filepath="$PROJECT_DIR$/../SDK/OfflineBrushings/OfflineBrushings-offline-brushings.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/Pairing/Pairing-pairing.iml" filepath="$PROJECT_DIR$/../SDK/Pairing/Pairing-pairing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/Pirate/Pirate-pirate.iml" filepath="$PROJECT_DIR$/../SDK/Pirate/Pirate-pirate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/Plaqless/Plaqless-plaqless.iml" filepath="$PROJECT_DIR$/../SDK/Plaqless/Plaqless-plaqless.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/Plaqless/Plaqless-plaqless-ui-v1.iml" filepath="$PROJECT_DIR$/../SDK/Plaqless/Plaqless-plaqless-ui-v1.iml" group="AndroidModulesSDK/plaqless-ui-v1" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/ProcessedBrushingsKML/ProcessedBrushingsKML-processed-brushings-kml.iml" filepath="$PROJECT_DIR$/../SDK/ProcessedBrushingsKML/ProcessedBrushingsKML-processed-brushings-kml.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/RawData/RawData-raw-data.iml" filepath="$PROJECT_DIR$/../SDK/RawData/RawData-raw-data.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/Rewards/Rewards-rewards.iml" filepath="$PROJECT_DIR$/../SDK/Rewards/Rewards-rewards.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/RewardsUIV1/RewardsUIV1-rewards-ui-v1.iml" filepath="$PROJECT_DIR$/../SDK/RewardsUIV1/RewardsUIV1-rewards-ui-v1.iml" group="AndroidModulesSDK/rewards-ui-v1" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/AccountInternal/SDK-AccountInternal-account-internal.iml" filepath="$PROJECT_DIR$/../SDK/AccountInternal/SDK-AccountInternal-account-internal.iml" group="AndroidModulesSDK/account-internal" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/AccountSDK/SDK-AccountSDK-account-sdk.iml" filepath="$PROJECT_DIR$/../SDK/AccountSDK/SDK-AccountSDK-account-sdk.iml" group="AndroidModulesSDK/account-sdk" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/SDK-AndroidModulesSDK.iml" filepath="$PROJECT_DIR$/../SDK/SDK-AndroidModulesSDK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/AngleAndSpeed/SDK-AngleAndSpeed-angle-and-speed.iml" filepath="$PROJECT_DIR$/../SDK/AngleAndSpeed/SDK-AngleAndSpeed-angle-and-speed.iml" group="AndroidModulesSDK/angle-and-speed" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/Auditor/SDK-Auditor-auditor.iml" filepath="$PROJECT_DIR$/../SDK/Auditor/SDK-Auditor-auditor.iml" group="AndroidModulesSDK/auditor" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/Authentication/SDK-Authentication-authentication.iml" filepath="$PROJECT_DIR$/../SDK/Authentication/SDK-Authentication-authentication.iml" group="AndroidModulesSDK/authentication" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/BaseUI/SDK-BaseUI-base-ui.iml" filepath="$PROJECT_DIR$/../SDK/BaseUI/SDK-BaseUI-base-ui.iml" group="AndroidModulesSDK/base-ui" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/BrushingQuiz/SDK-BrushingQuiz-brushing-quiz.iml" filepath="$PROJECT_DIR$/../SDK/BrushingQuiz/SDK-BrushingQuiz-brushing-quiz.iml" group="AndroidModulesSDK/brushing-quiz" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/Calendar/SDK-Calendar-calendar.iml" filepath="$PROJECT_DIR$/../SDK/Calendar/SDK-Calendar-calendar.iml" group="AndroidModulesSDK/calendar" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/Checkup/SDK-Checkup-checkup.iml" filepath="$PROJECT_DIR$/../SDK/Checkup/SDK-Checkup-checkup.iml" group="AndroidModulesSDK/checkup" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/CoachPlus/SDK-CoachPlus-coach-plus.iml" filepath="$PROJECT_DIR$/../SDK/CoachPlus/SDK-CoachPlus-coach-plus.iml" group="AndroidModulesSDK/coach-plus" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/CommonModels/SDK-CommonModels-common-models.iml" filepath="$PROJECT_DIR$/../SDK/CommonModels/SDK-CommonModels-common-models.iml" group="AndroidModulesSDK/common-models" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/CommonsAndroid/SDK-CommonsAndroid-commons.iml" filepath="$PROJECT_DIR$/../SDK/CommonsAndroid/SDK-CommonsAndroid-commons.iml" group="AndroidModulesSDK/commons" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/Coppa/SDK-Coppa-coppa.iml" filepath="$PROJECT_DIR$/../SDK/Coppa/SDK-Coppa-coppa.iml" group="AndroidModulesSDK/coppa" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/Core/SDK-Core-core.iml" filepath="$PROJECT_DIR$/../SDK/Core/SDK-Core-core.iml" group="AndroidModulesSDK/core" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/Crypto/SDK-Crypto-crypto.iml" filepath="$PROJECT_DIR$/../SDK/Crypto/SDK-Crypto-crypto.iml" group="AndroidModulesSDK/crypto" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/Databinding/SDK-Databinding-databinding.iml" filepath="$PROJECT_DIR$/../SDK/Databinding/SDK-Databinding-databinding.iml" group="AndroidModulesSDK/databinding" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/Game/SDK-Game-game.iml" filepath="$PROJECT_DIR$/../SDK/Game/SDK-Game-game.iml" group="AndroidModulesSDK/game" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/Gruware/SDK-Gruware-gruware.iml" filepath="$PROJECT_DIR$/../SDK/Gruware/SDK-Gruware-gruware.iml" group="AndroidModulesSDK/gruware" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/Heuristic/SDK-Heuristic-heuristic.iml" filepath="$PROJECT_DIR$/../SDK/Heuristic/SDK-Heuristic-heuristic.iml" group="AndroidModulesSDK/heuristic" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/HomeUI/SDK-HomeUI-home-ui.iml" filepath="$PROJECT_DIR$/../SDK/HomeUI/SDK-HomeUI-home-ui.iml" group="AndroidModulesSDK/home-ui" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/Jaws/SDK-Jaws-jaws.iml" filepath="$PROJECT_DIR$/../SDK/Jaws/SDK-Jaws-jaws.iml" group="AndroidModulesSDK/jaws" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/LegacyUnityGameSDK/SDK-LegacyUnityGameSDK-legacy-unity-game-sdk.iml" filepath="$PROJECT_DIR$/../SDK/LegacyUnityGameSDK/SDK-LegacyUnityGameSDK-legacy-unity-game-sdk.iml" group="AndroidModulesSDK/legacy-unity-game-sdk" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/LintRules/SDK-LintRules-lint-rules.iml" filepath="$PROJECT_DIR$/../SDK/LintRules/SDK-LintRules-lint-rules.iml" group="AndroidModulesSDK/lint-rules" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/MagikSdk/SDK-MagikSdk-magik-sdk.iml" filepath="$PROJECT_DIR$/../SDK/MagikSdk/SDK-MagikSdk-magik-sdk.iml" group="AndroidModulesSDK/magik-sdk" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/Network/SDK-Network-network.iml" filepath="$PROJECT_DIR$/../SDK/Network/SDK-Network-network.iml" group="AndroidModulesSDK/network" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/OfflineBrushings/SDK-OfflineBrushings-offline-brushings.iml" filepath="$PROJECT_DIR$/../SDK/OfflineBrushings/SDK-OfflineBrushings-offline-brushings.iml" group="AndroidModulesSDK/offline-brushings" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/Pairing/SDK-Pairing-pairing.iml" filepath="$PROJECT_DIR$/../SDK/Pairing/SDK-Pairing-pairing.iml" group="AndroidModulesSDK/pairing" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/Pirate/SDK-Pirate-pirate.iml" filepath="$PROJECT_DIR$/../SDK/Pirate/SDK-Pirate-pirate.iml" group="AndroidModulesSDK/pirate" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/ProcessedBrushingsKML/SDK-ProcessedBrushingsKML-processed-brushings-kml.iml" filepath="$PROJECT_DIR$/../SDK/ProcessedBrushingsKML/SDK-ProcessedBrushingsKML-processed-brushings-kml.iml" group="AndroidModulesSDK/processed-brushings-kml" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/RawData/SDK-RawData-raw-data.iml" filepath="$PROJECT_DIR$/../SDK/RawData/SDK-RawData-raw-data.iml" group="AndroidModulesSDK/raw-data" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/Shop/SDK-Shop-shop.iml" filepath="$PROJECT_DIR$/../SDK/Shop/SDK-Shop-shop.iml" group="AndroidModulesSDK/shop" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/SmartBrushingAnalyzer/SDK-SmartBrushingAnalyzer-smart-brushing-analyzer.iml" filepath="$PROJECT_DIR$/../SDK/SmartBrushingAnalyzer/SDK-SmartBrushingAnalyzer-smart-brushing-analyzer.iml" group="AndroidModulesSDK/smart-brushing-analyzer" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/StaticResources/SDK-StaticResources-static-resources.iml" filepath="$PROJECT_DIR$/../SDK/StaticResources/SDK-StaticResources-static-resources.iml" group="AndroidModulesSDK/static-resources" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/Stats/SDK-Stats-stats.iml" filepath="$PROJECT_DIR$/../SDK/Stats/SDK-Stats-stats.iml" group="AndroidModulesSDK/stats" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/StatsOffline/SDK-StatsOffline-stats-offline.iml" filepath="$PROJECT_DIR$/../SDK/StatsOffline/SDK-StatsOffline-stats-offline.iml" group="AndroidModulesSDK/stats-offline" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/Synchronizator/SDK-Synchronizator-synchronizator.iml" filepath="$PROJECT_DIR$/../SDK/Synchronizator/SDK-Synchronizator-synchronizator.iml" group="AndroidModulesSDK/synchronizator" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/TestingBuilders/SDK-TestingBuilders-testing-builders.iml" filepath="$PROJECT_DIR$/../SDK/TestingBuilders/SDK-TestingBuilders-testing-builders.iml" group="AndroidModulesSDK/testing-builders" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/TestingEspressoBase/SDK-TestingEspressoBase-testing-espresso-base.iml" filepath="$PROJECT_DIR$/../SDK/TestingEspressoBase/SDK-TestingEspressoBase-testing-espresso-base.iml" group="AndroidModulesSDK/testing-espresso-base" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/TestingPact/SDK-TestingPact-testing-pact.iml" filepath="$PROJECT_DIR$/../SDK/TestingPact/SDK-TestingPact-testing-pact.iml" group="AndroidModulesSDK/testing-pact" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/TestingShared/SDK-TestingShared-testing-shared.iml" filepath="$PROJECT_DIR$/../SDK/TestingShared/SDK-TestingShared-testing-shared.iml" group="AndroidModulesSDK/testing-shared" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/TestingUnitBase/SDK-TestingUnitBase-testing-unit-base.iml" filepath="$PROJECT_DIR$/../SDK/TestingUnitBase/SDK-TestingUnitBase-testing-unit-base.iml" group="AndroidModulesSDK/testing-unit-base" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/ToothbrushSDK/SDK-ToothbrushSDK-toothbrush-sdk.iml" filepath="$PROJECT_DIR$/../SDK/ToothbrushSDK/SDK-ToothbrushSDK-toothbrush-sdk.iml" group="AndroidModulesSDK/toothbrush-sdk" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/Tracker/SDK-Tracker-tracker.iml" filepath="$PROJECT_DIR$/../SDK/Tracker/SDK-Tracker-tracker.iml" group="AndroidModulesSDK/tracker" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/TrackerDomain/SDK-TrackerDomain-tracker-domain.iml" filepath="$PROJECT_DIR$/../SDK/TrackerDomain/SDK-TrackerDomain-tracker-domain.iml" group="AndroidModulesSDK/tracker-domain" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/TranslationsSupport/SDK-TranslationsSupport-translations-support.iml" filepath="$PROJECT_DIR$/../SDK/TranslationsSupport/SDK-TranslationsSupport-translations-support.iml" group="AndroidModulesSDK/translations-support" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/UnityGameSDK/SDK-UnityGameSDK-unity-game-sdk.iml" filepath="$PROJECT_DIR$/../SDK/UnityGameSDK/SDK-UnityGameSDK-unity-game-sdk.iml" group="AndroidModulesSDK/unity-game-sdk" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/WebServicesSDK/SDK-WebServicesSDK-web-service-sdk.iml" filepath="$PROJECT_DIR$/../SDK/WebServicesSDK/SDK-WebServicesSDK-web-service-sdk.iml" group="AndroidModulesSDK/web-service-sdk" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/Shop/Shop-shop.iml" filepath="$PROJECT_DIR$/../SDK/Shop/Shop-shop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/SmartBrushingAnalyzer/SmartBrushingAnalyzer-smart-brushing-analyzer.iml" filepath="$PROJECT_DIR$/../SDK/SmartBrushingAnalyzer/SmartBrushingAnalyzer-smart-brushing-analyzer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/StaticResources/StaticResources-static-resources.iml" filepath="$PROJECT_DIR$/../SDK/StaticResources/StaticResources-static-resources.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/StaticResourcesHUM/StaticResourcesHUM-static-resources-hum.iml" filepath="$PROJECT_DIR$/../SDK/StaticResourcesHUM/StaticResourcesHUM-static-resources-hum.iml" group="AndroidModulesSDK/static-resources-hum" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/StaticResourcesV1/StaticResourcesV1-static-resources-v1.iml" filepath="$PROJECT_DIR$/../SDK/StaticResourcesV1/StaticResourcesV1-static-resources-v1.iml" group="AndroidModulesSDK/static-resources-v1" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/StaticResourcesV2/StaticResourcesV2-static-resources-v2.iml" filepath="$PROJECT_DIR$/../SDK/StaticResourcesV2/StaticResourcesV2-static-resources-v2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/Stats/Stats-stats.iml" filepath="$PROJECT_DIR$/../SDK/Stats/Stats-stats.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/StatsOffline/StatsOffline-stats-offline.iml" filepath="$PROJECT_DIR$/../SDK/StatsOffline/StatsOffline-stats-offline.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/Synchronizator/Synchronizator-synchronizator.iml" filepath="$PROJECT_DIR$/../SDK/Synchronizator/Synchronizator-synchronizator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/TestingBuilders/TestingBuilders-testing-builders.iml" filepath="$PROJECT_DIR$/../SDK/TestingBuilders/TestingBuilders-testing-builders.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/TestingEspressoBase/TestingEspressoBase-testing-espresso-base.iml" filepath="$PROJECT_DIR$/../SDK/TestingEspressoBase/TestingEspressoBase-testing-espresso-base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/TestingPact/TestingPact-testing-pact.iml" filepath="$PROJECT_DIR$/../SDK/TestingPact/TestingPact-testing-pact.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/TestingShared/TestingShared-testing-shared.iml" filepath="$PROJECT_DIR$/../SDK/TestingShared/TestingShared-testing-shared.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/TestingUnitBase/TestingUnitBase-testing-unit-base.iml" filepath="$PROJECT_DIR$/../SDK/TestingUnitBase/TestingUnitBase-testing-unit-base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/ToothbrushSDK/ToothbrushSDK-toothbrush-sdk.iml" filepath="$PROJECT_DIR$/../SDK/ToothbrushSDK/ToothbrushSDK-toothbrush-sdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/ToothbrushUpdateUI/ToothbrushUpdateUI-toothbrush-update-ui.iml" filepath="$PROJECT_DIR$/../SDK/ToothbrushUpdateUI/ToothbrushUpdateUI-toothbrush-update-ui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/ToothbrushUpdateUI/ToothbrushUpdateUI-toothbrush-update-ui-v1.iml" filepath="$PROJECT_DIR$/../SDK/ToothbrushUpdateUI/ToothbrushUpdateUI-toothbrush-update-ui-v1.iml" group="AndroidModulesSDK/toothbrush-update-ui-v1" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/Tracker/Tracker-tracker.iml" filepath="$PROJECT_DIR$/../SDK/Tracker/Tracker-tracker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/TrackerDomain/TrackerDomain-tracker-domain.iml" filepath="$PROJECT_DIR$/../SDK/TrackerDomain/TrackerDomain-tracker-domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/TranslationsSupport/TranslationsSupport-translations-support.iml" filepath="$PROJECT_DIR$/../SDK/TranslationsSupport/TranslationsSupport-translations-support.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/UnityGameSDK/UnityGameSDK-unity-game-sdk.iml" filepath="$PROJECT_DIR$/../SDK/UnityGameSDK/UnityGameSDK-unity-game-sdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/WebServicesSDK/WebServicesSDK-web-service-sdk.iml" filepath="$PROJECT_DIR$/../SDK/WebServicesSDK/WebServicesSDK-web-service-sdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/AccountInternal/account-internal.iml" filepath="$PROJECT_DIR$/../SDK/AccountInternal/account-internal.iml" group="AndroidModulesSDK/account-internal" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/AccountSDK/account-sdk.iml" filepath="$PROJECT_DIR$/../SDK/AccountSDK/account-sdk.iml" group="AndroidModulesSDK/account-sdk" />
+      <module fileurl="file://$PROJECT_DIR$/android-monorepo-BtTesterApp-kolibree-android-bt-tester.iml" filepath="$PROJECT_DIR$/android-monorepo-BtTesterApp-kolibree-android-bt-tester.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/android-monorepo-SDK-AndroidModulesSDK.iml" filepath="$PROJECT_DIR$/../SDK/android-monorepo-SDK-AndroidModulesSDK.iml" group="AndroidModulesSDK" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/AngleAndSpeed/angle-and-speed.iml" filepath="$PROJECT_DIR$/../SDK/AngleAndSpeed/angle-and-speed.iml" group="AndroidModulesSDK/angle-and-speed" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/Annotation/annotation.iml" filepath="$PROJECT_DIR$/../SDK/Annotation/annotation.iml" group="AndroidModulesSDK/annotation" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="kolibree-android-bt-tester/app" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/Auditor/auditor.iml" filepath="$PROJECT_DIR$/../SDK/Auditor/auditor.iml" group="AndroidModulesSDK/auditor" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/Authentication/authentication.iml" filepath="$PROJECT_DIR$/../SDK/Authentication/authentication.iml" group="AndroidModulesSDK/authentication" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/BaseUI/base-ui.iml" filepath="$PROJECT_DIR$/../SDK/BaseUI/base-ui.iml" group="AndroidModulesSDK/base-ui" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/BaseUIHUM/base-ui-hum.iml" filepath="$PROJECT_DIR$/../SDK/BaseUIHUM/base-ui-hum.iml" group="AndroidModulesSDK/base-ui-hum" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/BaseUIV1/base-ui-v1.iml" filepath="$PROJECT_DIR$/../SDK/BaseUIV1/base-ui-v1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/BaseUIV2/base-ui-v2.iml" filepath="$PROJECT_DIR$/../SDK/BaseUIV2/base-ui-v2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/BrushingQuiz/brushing-quiz.iml" filepath="$PROJECT_DIR$/../SDK/BrushingQuiz/brushing-quiz.iml" group="AndroidModulesSDK/brushing-quiz" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/Calendar/calendar.iml" filepath="$PROJECT_DIR$/../SDK/Calendar/calendar.iml" group="AndroidModulesSDK/calendar" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/Calendar/calendar-v1.iml" filepath="$PROJECT_DIR$/../SDK/Calendar/calendar-v1.iml" group="AndroidModulesSDK/calendar-v1" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/Checkup/checkup.iml" filepath="$PROJECT_DIR$/../SDK/Checkup/checkup.iml" group="AndroidModulesSDK/checkup" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/CoachPlus/coach-plus.iml" filepath="$PROJECT_DIR$/../SDK/CoachPlus/coach-plus.iml" group="AndroidModulesSDK/coach-plus" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/CommonModels/common-models.iml" filepath="$PROJECT_DIR$/../SDK/CommonModels/common-models.iml" group="AndroidModulesSDK/common-models" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/CommonsAndroid/commons.iml" filepath="$PROJECT_DIR$/../SDK/CommonsAndroid/commons.iml" group="AndroidModulesSDK/commons" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/Coppa/coppa.iml" filepath="$PROJECT_DIR$/../SDK/Coppa/coppa.iml" group="AndroidModulesSDK/coppa" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/Core/core.iml" filepath="$PROJECT_DIR$/../SDK/Core/core.iml" group="AndroidModulesSDK/core" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/Crypto/crypto.iml" filepath="$PROJECT_DIR$/../SDK/Crypto/crypto.iml" group="AndroidModulesSDK/crypto" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/Databinding/databinding.iml" filepath="$PROJECT_DIR$/../SDK/Databinding/databinding.iml" group="AndroidModulesSDK/databinding" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/Features/features.iml" filepath="$PROJECT_DIR$/../SDK/Features/features.iml" group="AndroidModulesSDK/features" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/Game/game.iml" filepath="$PROJECT_DIR$/../SDK/Game/game.iml" group="AndroidModulesSDK/game" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/GameCommons/game-commons.iml" filepath="$PROJECT_DIR$/../SDK/GameCommons/game-commons.iml" group="AndroidModulesSDK/game-commons" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/GameCommons/game-commons-v1.iml" filepath="$PROJECT_DIR$/../SDK/GameCommons/game-commons-v1.iml" group="AndroidModulesSDK/game-commons-v1" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/GoogleAuth/google-auth.iml" filepath="$PROJECT_DIR$/../SDK/GoogleAuth/google-auth.iml" group="AndroidModulesSDK/google-auth" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/Gruware/gruware.iml" filepath="$PROJECT_DIR$/../SDK/Gruware/gruware.iml" group="AndroidModulesSDK/gruware" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/Heuristic/heuristic.iml" filepath="$PROJECT_DIR$/../SDK/Heuristic/heuristic.iml" group="AndroidModulesSDK/heuristic" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/HomeUI/home-ui.iml" filepath="$PROJECT_DIR$/../SDK/HomeUI/home-ui.iml" group="AndroidModulesSDK/home-ui" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/HomeUIHUM/home-ui-hum.iml" filepath="$PROJECT_DIR$/../SDK/HomeUIHUM/home-ui-hum.iml" group="AndroidModulesSDK/home-ui-hum" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/HomeUIV2/home-ui-v2.iml" filepath="$PROJECT_DIR$/../SDK/HomeUIV2/home-ui-v2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/Jaws/jaws.iml" filepath="$PROJECT_DIR$/../SDK/Jaws/jaws.iml" group="AndroidModulesSDK/jaws" />
+      <module fileurl="file://$PROJECT_DIR$/kolibree-android-bt-tester.iml" filepath="$PROJECT_DIR$/kolibree-android-bt-tester.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/LegacyGameComponents/legacy-game-components.iml" filepath="$PROJECT_DIR$/../SDK/LegacyGameComponents/legacy-game-components.iml" group="AndroidModulesSDK/legacy-game-components" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/LegacyUnityGameSDK/legacy-unity-game-sdk.iml" filepath="$PROJECT_DIR$/../SDK/LegacyUnityGameSDK/legacy-unity-game-sdk.iml" group="AndroidModulesSDK/legacy-unity-game-sdk" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/LintRules/lint-rules.iml" filepath="$PROJECT_DIR$/../SDK/LintRules/lint-rules.iml" group="AndroidModulesSDK/lint-rules" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/MagikSdk/magik-sdk.iml" filepath="$PROJECT_DIR$/../SDK/MagikSdk/magik-sdk.iml" group="AndroidModulesSDK/magik-sdk" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/MouthMap/mouthmap.iml" filepath="$PROJECT_DIR$/../SDK/MouthMap/mouthmap.iml" group="AndroidModulesSDK/mouthmap" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/MouthMap/mouthmap-v1.iml" filepath="$PROJECT_DIR$/../SDK/MouthMap/mouthmap-v1.iml" group="AndroidModulesSDK/mouthmap-v1" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/Network/network.iml" filepath="$PROJECT_DIR$/../SDK/Network/network.iml" group="AndroidModulesSDK/network" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/OfflineBrushings/offline-brushings.iml" filepath="$PROJECT_DIR$/../SDK/OfflineBrushings/offline-brushings.iml" group="AndroidModulesSDK/offline-brushings" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/Pairing/pairing.iml" filepath="$PROJECT_DIR$/../SDK/Pairing/pairing.iml" group="AndroidModulesSDK/pairing" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/Pirate/pirate.iml" filepath="$PROJECT_DIR$/../SDK/Pirate/pirate.iml" group="AndroidModulesSDK/pirate" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/Plaqless/plaqless.iml" filepath="$PROJECT_DIR$/../SDK/Plaqless/plaqless.iml" group="AndroidModulesSDK/plaqless" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/Plaqless/plaqless-ui-v1.iml" filepath="$PROJECT_DIR$/../SDK/Plaqless/plaqless-ui-v1.iml" group="AndroidModulesSDK/plaqless-ui-v1" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/ProcessedBrushingsKML/processed-brushings-kml.iml" filepath="$PROJECT_DIR$/../SDK/ProcessedBrushingsKML/processed-brushings-kml.iml" group="AndroidModulesSDK/processed-brushings-kml" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/RawData/raw-data.iml" filepath="$PROJECT_DIR$/../SDK/RawData/raw-data.iml" group="AndroidModulesSDK/raw-data" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/Rewards/rewards.iml" filepath="$PROJECT_DIR$/../SDK/Rewards/rewards.iml" group="AndroidModulesSDK/rewards" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/Rewards/rewards-domain.iml" filepath="$PROJECT_DIR$/../SDK/Rewards/rewards-domain.iml" group="AndroidModulesSDK/rewards-domain" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/Rewards/rewards-logic.iml" filepath="$PROJECT_DIR$/../SDK/Rewards/rewards-logic.iml" group="AndroidModulesSDK/rewards-logic" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/RewardsUIV1/rewards-ui-v1.iml" filepath="$PROJECT_DIR$/../SDK/RewardsUIV1/rewards-ui-v1.iml" group="AndroidModulesSDK/rewards-ui-v1" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/Shop/shop.iml" filepath="$PROJECT_DIR$/../SDK/Shop/shop.iml" group="AndroidModulesSDK/shop" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/SmartBrushingAnalyzer/smart-brushing-analyzer.iml" filepath="$PROJECT_DIR$/../SDK/SmartBrushingAnalyzer/smart-brushing-analyzer.iml" group="AndroidModulesSDK/smart-brushing-analyzer" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/StaticResources/static-resources.iml" filepath="$PROJECT_DIR$/../SDK/StaticResources/static-resources.iml" group="AndroidModulesSDK/static-resources" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/StaticResourcesHUM/static-resources-hum.iml" filepath="$PROJECT_DIR$/../SDK/StaticResourcesHUM/static-resources-hum.iml" group="AndroidModulesSDK/static-resources-hum" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/StaticResourcesV1/static-resources-v1.iml" filepath="$PROJECT_DIR$/../SDK/StaticResourcesV1/static-resources-v1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/StaticResourcesV2/static-resources-v2.iml" filepath="$PROJECT_DIR$/../SDK/StaticResourcesV2/static-resources-v2.iml" group="AndroidModulesSDK/static-resources-v2" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/Stats/stats.iml" filepath="$PROJECT_DIR$/../SDK/Stats/stats.iml" group="AndroidModulesSDK/stats" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/StatsOffline/stats-offline.iml" filepath="$PROJECT_DIR$/../SDK/StatsOffline/stats-offline.iml" group="AndroidModulesSDK/stats-offline" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/Synchronizator/synchronizator.iml" filepath="$PROJECT_DIR$/../SDK/Synchronizator/synchronizator.iml" group="AndroidModulesSDK/synchronizator" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/TestingBuilders/testing-builders.iml" filepath="$PROJECT_DIR$/../SDK/TestingBuilders/testing-builders.iml" group="AndroidModulesSDK/testing-builders" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/TestingEspressoBase/testing-espresso-base.iml" filepath="$PROJECT_DIR$/../SDK/TestingEspressoBase/testing-espresso-base.iml" group="AndroidModulesSDK/testing-espresso-base" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/TestingPact/testing-pact.iml" filepath="$PROJECT_DIR$/../SDK/TestingPact/testing-pact.iml" group="AndroidModulesSDK/testing-pact" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/TestingShared/testing-shared.iml" filepath="$PROJECT_DIR$/../SDK/TestingShared/testing-shared.iml" group="AndroidModulesSDK/testing-shared" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/TestingUnitBase/testing-unit-base.iml" filepath="$PROJECT_DIR$/../SDK/TestingUnitBase/testing-unit-base.iml" group="AndroidModulesSDK/testing-unit-base" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/ToothbrushSDK/toothbrush-sdk.iml" filepath="$PROJECT_DIR$/../SDK/ToothbrushSDK/toothbrush-sdk.iml" group="AndroidModulesSDK/toothbrush-sdk" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/ToothbrushUpdate/toothbrush-update-domain.iml" filepath="$PROJECT_DIR$/../SDK/ToothbrushUpdate/toothbrush-update-domain.iml" group="AndroidModulesSDK/toothbrush-update-domain" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/ToothbrushUpdate/toothbrush-update-logic.iml" filepath="$PROJECT_DIR$/../SDK/ToothbrushUpdate/toothbrush-update-logic.iml" group="AndroidModulesSDK/toothbrush-update-logic" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/ToothbrushUpdateUI/toothbrush-update-ui.iml" filepath="$PROJECT_DIR$/../SDK/ToothbrushUpdateUI/toothbrush-update-ui.iml" group="AndroidModulesSDK/toothbrush-update-ui" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/ToothbrushUpdateUI/toothbrush-update-ui-v1.iml" filepath="$PROJECT_DIR$/../SDK/ToothbrushUpdateUI/toothbrush-update-ui-v1.iml" group="AndroidModulesSDK/toothbrush-update-ui-v1" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/Tracker/tracker.iml" filepath="$PROJECT_DIR$/../SDK/Tracker/tracker.iml" group="AndroidModulesSDK/tracker" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/TrackerDomain/tracker-domain.iml" filepath="$PROJECT_DIR$/../SDK/TrackerDomain/tracker-domain.iml" group="AndroidModulesSDK/tracker-domain" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/TranslationsSupport/translations-support.iml" filepath="$PROJECT_DIR$/../SDK/TranslationsSupport/translations-support.iml" group="AndroidModulesSDK/translations-support" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/UnityGameSDK/unity-game-sdk.iml" filepath="$PROJECT_DIR$/../SDK/UnityGameSDK/unity-game-sdk.iml" group="AndroidModulesSDK/unity-game-sdk" />
+      <module fileurl="file://$PROJECT_DIR$/../SDK/WebServicesSDK/web-service-sdk.iml" filepath="$PROJECT_DIR$/../SDK/WebServicesSDK/web-service-sdk.iml" group="AndroidModulesSDK/web-service-sdk" />
+    </modules>
+  </component>
+</project>

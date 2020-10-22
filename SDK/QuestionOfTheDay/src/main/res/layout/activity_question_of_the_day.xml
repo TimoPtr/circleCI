@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:bind="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  tools:context=".ui.QuestionOfTheDayActivity">
+
+  <data>
+
+    <import type="android.view.View" />
+
+    <variable
+      name="viewModel"
+      type="com.kolibree.android.questionoftheday.ui.QuestionOfTheDayViewModel" />
+
+  </data>
+
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+      android:id="@+id/question_of_the_day_view"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:animateLayoutChanges="true">
+
+      <ImageView
+        android:id="@+id/question_of_the_day_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?actionBarItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="@{() -> viewModel.close()}"
+        android:padding="@dimen/dot_double"
+        android:src="@drawable/leading_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+      <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/question_of_the_day_loading"
+        android:layout_width="@dimen/match_constraints"
+        android:layout_height="@dimen/match_constraints"
+        android:visibility="@{viewModel.isLoading() ? View.VISIBLE : View.GONE}"
+        app:layout_constraintBottom_toBottomOf="@+id/question_of_the_day_icon"
+        app:layout_constraintEnd_toEndOf="@+id/question_of_the_day_icon"
+        app:layout_constraintStart_toStartOf="@+id/question_of_the_day_icon"
+        app:layout_constraintTop_toTopOf="@+id/question_of_the_day_icon"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/circle_loading_animation_light" />
+
+      <ImageView
+        android:id="@+id/question_of_the_day_icon"
+        android:layout_width="@dimen/match_constraints"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dot_quin"
+        android:layout_marginTop="@dimen/dot_double"
+        android:layout_marginEnd="@dimen/dot_quin"
+        android:src="@{viewModel.iconRes}"
+        android:visibility="@{viewModel.isLoading() ? View.INVISIBLE : View.VISIBLE}"
+        app:layout_constraintBottom_toTopOf="@+id/question_of_the_day_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question_of_the_day_close"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:src="@drawable/question_icon_small" />
+
+      <TextView
+        android:id="@+id/question_of_the_day_title"
+        android:layout_width="@dimen/match_constraints"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dot_quin"
+        android:layout_marginTop="@dimen/dot_double"
+        android:layout_marginEnd="@dimen/dot_quin"
+        android:gravity="center"
+        android:text="@{viewModel.texts.title(context)}"
+        android:textAppearance="?textAppearanceHeadline3"
+        app:layout_constraintBottom_toTopOf="@+id/question_of_the_day_body"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question_of_the_day_icon"
+        tools:text="how many teeth does a crocodile have?" />
+
+      <TextView
+        android:id="@+id/question_of_the_day_body"
+        android:layout_width="@dimen/match_constraints"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dot_quin"
+        android:layout_marginTop="@dimen/dot"
+        android:layout_marginEnd="@dimen/dot_quin"
+        android:gravity="center"
+        android:text="@{viewModel.texts.body(context)}"
+        android:visibility="@{viewModel.buttonVisible ? View.VISIBLE : View.GONE}"
+        app:layout_constraintBottom_toTopOf="@+id/question_of_the_day_answers"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question_of_the_day_title"
+        tools:text="Congratulations! 50 Points have been added to your account." />
+
+      <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/question_of_the_day_answers"
+        android:layout_width="@dimen/match_constraints"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dot_quin"
+        android:layout_marginTop="@dimen/dot_trip"
+        android:layout_marginEnd="@dimen/dot_quin"
+        android:layout_marginBottom="@dimen/dot_double"
+        app:flexWrap="wrap"
+        app:justifyContent="space_evenly"
+        app:layout_constraintBottom_toTopOf="@+id/question_of_the_day_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question_of_the_day_body"
+        bind:answers="@{viewModel.answers}"
+        bind:clickable="@{!viewModel.answered}"
+        bind:interaction="@{viewModel}"
+        bind:max_columns="@{2}"
+        tools:layout_height="@dimen/dot_twenty" />
+
+      <Button
+        android:id="@+id/question_of_the_day_button"
+        style="@style/Widget.QuestionOfTheDay.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dot_quin"
+        android:layout_marginEnd="@dimen/dot_quin"
+        android:layout_marginBottom="@dimen/dot_quad"
+        android:onClick="@{() -> viewModel.onButtonClick()}"
+        android:text="@{viewModel.texts.button(context)}"
+        android:visibility="@{viewModel.buttonVisible ? View.VISIBLE : View.INVISIBLE}"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Collect smile points" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+  </ScrollView>
+
+</layout>

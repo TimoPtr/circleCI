@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <data>
+
+    <variable
+      name="item"
+      type="com.kolibree.android.app.ui.toothbrushsettings.binding.BrushDetailsItemBindingModel" />
+
+  </data>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dot"
+    android:paddingBottom="@dimen/dot_double">
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_quad"
+      android:layout_marginBottom="@dimen/dot_half"
+      android:text="@{item.title}"
+      android:textAppearance="?textAppearanceOverline2"
+      android:textColor="?android:textColorSecondary"
+      tools:text="Toothbrush model" />
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_quad"
+      android:text="@{item.value}"
+      android:textAppearance="?textAppearanceHeadline6"
+      android:textColor="?textColorAccentSecondary"
+      tools:text="CE1" />
+  </LinearLayout>
+
+</layout>

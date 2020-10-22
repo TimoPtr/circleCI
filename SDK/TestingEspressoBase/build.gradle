@@ -1,0 +1,45 @@
+/*
+ * Copyright (c) 2020 Kolibree. All rights reserved
+ *
+ * Copying this file via any medium without the prior written consent of Kolibree is strictly
+ * prohibited
+ *
+ * Proprietary and confidential
+ */
+
+repositories {
+    maven { url "${rootProject.rootDir}/../mavenBackup/" }
+}
+
+apply plugin: 'com.android.library'
+
+android {
+    defaultConfig {
+        //explanation in https://github.com/kolibree-git/android-modules-SDK/pull/388#discussion_r
+        missingDimensionStrategy 'branding', 'colgate'
+    }
+
+    defaultPublishConfig "debug"
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+}
+
+dependencies {
+    api project(path: ':testing-shared')
+
+    api libraries.espressoCore
+    api libraries.espressoContrib
+    api libraries.espressoIntents
+    api libraries.supportTestCore
+    api libraries.supportTestRunner
+    api libraries.supportTestRules
+
+    api libraries.mockitoAndroid
+
+    compileOnly libraries.threetenAbp
+    compileOnly libraries.picasso
+}

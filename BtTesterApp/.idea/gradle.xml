@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <compositeConfiguration>
+          <compositeBuild compositeDefinitionSource="SCRIPT">
+            <builds>
+              <build path="$PROJECT_DIR$/../SDK" name="AndroidModulesSDK">
+                <projects>
+                  <project path="$PROJECT_DIR$/../SDK" />
+                  <project path="$PROJECT_DIR$/../SDK/AccountInternal" />
+                  <project path="$PROJECT_DIR$/../SDK/AccountSDK" />
+                  <project path="$PROJECT_DIR$/../SDK/AngleAndSpeed" />
+                  <project path="$PROJECT_DIR$/../SDK/Annotation" />
+                  <project path="$PROJECT_DIR$/../SDK/Auditor" />
+                  <project path="$PROJECT_DIR$/../SDK/Authentication" />
+                  <project path="$PROJECT_DIR$/../SDK/BaseUI" />
+                  <project path="$PROJECT_DIR$/../SDK/BaseUIHUM" />
+                  <project path="$PROJECT_DIR$/../SDK/BaseUIV1" />
+                  <project path="$PROJECT_DIR$/../SDK/BrushingQuiz" />
+                  <project path="$PROJECT_DIR$/../SDK/Calendar" />
+                  <project path="$PROJECT_DIR$/../SDK/Checkup" />
+                  <project path="$PROJECT_DIR$/../SDK/CoachPlus" />
+                  <project path="$PROJECT_DIR$/../SDK/CoachPlusUIV1" />
+                  <project path="$PROJECT_DIR$/../SDK/CommonModels" />
+                  <project path="$PROJECT_DIR$/../SDK/CommonsAndroid" />
+                  <project path="$PROJECT_DIR$/../SDK/Coppa" />
+                  <project path="$PROJECT_DIR$/../SDK/Core" />
+                  <project path="$PROJECT_DIR$/../SDK/Crypto" />
+                  <project path="$PROJECT_DIR$/../SDK/Databinding" />
+                  <project path="$PROJECT_DIR$/../SDK/Features" />
+                  <project path="$PROJECT_DIR$/../SDK/Game" />
+                  <project path="$PROJECT_DIR$/../SDK/GameCommons" />
+                  <project path="$PROJECT_DIR$/../SDK/GoogleAuth" />
+                  <project path="$PROJECT_DIR$/../SDK/Gruware" />
+                  <project path="$PROJECT_DIR$/../SDK/GuidedBrushingUI" />
+                  <project path="$PROJECT_DIR$/../SDK/Heuristic" />
+                  <project path="$PROJECT_DIR$/../SDK/HomeUI" />
+                  <project path="$PROJECT_DIR$/../SDK/HomeUIHUM" />
+                  <project path="$PROJECT_DIR$/../SDK/Jaws" />
+                  <project path="$PROJECT_DIR$/../SDK/LegacyGameComponents" />
+                  <project path="$PROJECT_DIR$/../SDK/LegacyUnityGameSDK" />
+                  <project path="$PROJECT_DIR$/../SDK/LintRules" />
+                  <project path="$PROJECT_DIR$/../SDK/MagikSdk" />
+                  <project path="$PROJECT_DIR$/../SDK/MouthMap" />
+                  <project path="$PROJECT_DIR$/../SDK/Network" />
+                  <project path="$PROJECT_DIR$/../SDK/OfflineBrushings" />
+                  <project path="$PROJECT_DIR$/../SDK/OfflineBrushingsV1" />
+                  <project path="$PROJECT_DIR$/../SDK/Pairing" />
+                  <project path="$PROJECT_DIR$/../SDK/Pirate" />
+                  <project path="$PROJECT_DIR$/../SDK/Plaqless" />
+                  <project path="$PROJECT_DIR$/../SDK/ProcessedBrushingsKML" />
+                  <project path="$PROJECT_DIR$/../SDK/RawData" />
+                  <project path="$PROJECT_DIR$/../SDK/Rewards" />
+                  <project path="$PROJECT_DIR$/../SDK/RewardsHUM" />
+                  <project path="$PROJECT_DIR$/../SDK/RewardsV1" />
+                  <project path="$PROJECT_DIR$/../SDK/Shop" />
+                  <project path="$PROJECT_DIR$/../SDK/SmartBrushingAnalyzer" />
+                  <project path="$PROJECT_DIR$/../SDK/StaticResources" />
+                  <project path="$PROJECT_DIR$/../SDK/StaticResourcesHUM" />
+                  <project path="$PROJECT_DIR$/../SDK/StaticResourcesV1" />
+                  <project path="$PROJECT_DIR$/../SDK/Stats" />
+                  <project path="$PROJECT_DIR$/../SDK/StatsOffline" />
+                  <project path="$PROJECT_DIR$/../SDK/Synchronizator" />
+                  <project path="$PROJECT_DIR$/../SDK/TestBrushing" />
+                  <project path="$PROJECT_DIR$/../SDK/TestingBuilders" />
+                  <project path="$PROJECT_DIR$/../SDK/TestingEspressoBase" />
+                  <project path="$PROJECT_DIR$/../SDK/TestingPact" />
+                  <project path="$PROJECT_DIR$/../SDK/TestingShared" />
+                  <project path="$PROJECT_DIR$/../SDK/TestingUnitBase" />
+                  <project path="$PROJECT_DIR$/../SDK/ToothbrushSDK" />
+                  <project path="$PROJECT_DIR$/../SDK/ToothbrushUpdate" />
+                  <project path="$PROJECT_DIR$/../SDK/ToothbrushUpdateUIHUM" />
+                  <project path="$PROJECT_DIR$/../SDK/ToothbrushUpdateUIV1" />
+                  <project path="$PROJECT_DIR$/../SDK/Tracker" />
+                  <project path="$PROJECT_DIR$/../SDK/TrackerDomain" />
+                  <project path="$PROJECT_DIR$/../SDK/TranslationsSupport" />
+                  <project path="$PROJECT_DIR$/../SDK/UnityGameSDK" />
+                  <project path="$PROJECT_DIR$/../SDK/WebServicesSDK" />
+                </projects>
+              </build>
+            </builds>
+          </compositeBuild>
+        </compositeConfiguration>
+        <option name="delegatedBuild" value="true" />
+        <option name="testRunner" value="PLATFORM" />
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/../SDK" />
+            <option value="$PROJECT_DIR$/../SDK/AccountInternal" />
+            <option value="$PROJECT_DIR$/../SDK/AccountSDK" />
+            <option value="$PROJECT_DIR$/../SDK/AngleAndSpeed" />
+            <option value="$PROJECT_DIR$/../SDK/Annotation" />
+            <option value="$PROJECT_DIR$/../SDK/Auditor" />
+            <option value="$PROJECT_DIR$/../SDK/Authentication" />
+            <option value="$PROJECT_DIR$/../SDK/BaseUI" />
+            <option value="$PROJECT_DIR$/../SDK/BaseUIHUM" />
+            <option value="$PROJECT_DIR$/../SDK/BaseUIV1" />
+            <option value="$PROJECT_DIR$/../SDK/BrushingQuiz" />
+            <option value="$PROJECT_DIR$/../SDK/Calendar" />
+            <option value="$PROJECT_DIR$/../SDK/Checkup" />
+            <option value="$PROJECT_DIR$/../SDK/CoachPlus" />
+            <option value="$PROJECT_DIR$/../SDK/CoachPlusUIV1" />
+            <option value="$PROJECT_DIR$/../SDK/CommonModels" />
+            <option value="$PROJECT_DIR$/../SDK/CommonsAndroid" />
+            <option value="$PROJECT_DIR$/../SDK/Coppa" />
+            <option value="$PROJECT_DIR$/../SDK/Core" />
+            <option value="$PROJECT_DIR$/../SDK/Crypto" />
+            <option value="$PROJECT_DIR$/../SDK/Databinding" />
+            <option value="$PROJECT_DIR$/../SDK/Features" />
+            <option value="$PROJECT_DIR$/../SDK/Game" />
+            <option value="$PROJECT_DIR$/../SDK/GameCommons" />
+            <option value="$PROJECT_DIR$/../SDK/GoogleAuth" />
+            <option value="$PROJECT_DIR$/../SDK/Gruware" />
+            <option value="$PROJECT_DIR$/../SDK/GuidedBrushingUI" />
+            <option value="$PROJECT_DIR$/../SDK/Heuristic" />
+            <option value="$PROJECT_DIR$/../SDK/HomeUI" />
+            <option value="$PROJECT_DIR$/../SDK/HomeUIHUM" />
+            <option value="$PROJECT_DIR$/../SDK/Jaws" />
+            <option value="$PROJECT_DIR$/../SDK/LegacyGameComponents" />
+            <option value="$PROJECT_DIR$/../SDK/LegacyUnityGameSDK" />
+            <option value="$PROJECT_DIR$/../SDK/LintRules" />
+            <option value="$PROJECT_DIR$/../SDK/MagikSdk" />
+            <option value="$PROJECT_DIR$/../SDK/MouthMap" />
+            <option value="$PROJECT_DIR$/../SDK/Network" />
+            <option value="$PROJECT_DIR$/../SDK/OfflineBrushings" />
+            <option value="$PROJECT_DIR$/../SDK/OfflineBrushingsV1" />
+            <option value="$PROJECT_DIR$/../SDK/Pairing" />
+            <option value="$PROJECT_DIR$/../SDK/Pirate" />
+            <option value="$PROJECT_DIR$/../SDK/Plaqless" />
+            <option value="$PROJECT_DIR$/../SDK/ProcessedBrushingsKML" />
+            <option value="$PROJECT_DIR$/../SDK/RawData" />
+            <option value="$PROJECT_DIR$/../SDK/Rewards" />
+            <option value="$PROJECT_DIR$/../SDK/RewardsHUM" />
+            <option value="$PROJECT_DIR$/../SDK/RewardsV1" />
+            <option value="$PROJECT_DIR$/../SDK/Shop" />
+            <option value="$PROJECT_DIR$/../SDK/SmartBrushingAnalyzer" />
+            <option value="$PROJECT_DIR$/../SDK/StaticResources" />
+            <option value="$PROJECT_DIR$/../SDK/StaticResourcesHUM" />
+            <option value="$PROJECT_DIR$/../SDK/StaticResourcesV1" />
+            <option value="$PROJECT_DIR$/../SDK/Stats" />
+            <option value="$PROJECT_DIR$/../SDK/StatsOffline" />
+            <option value="$PROJECT_DIR$/../SDK/Synchronizator" />
+            <option value="$PROJECT_DIR$/../SDK/TestBrushing" />
+            <option value="$PROJECT_DIR$/../SDK/TestingBuilders" />
+            <option value="$PROJECT_DIR$/../SDK/TestingEspressoBase" />
+            <option value="$PROJECT_DIR$/../SDK/TestingPact" />
+            <option value="$PROJECT_DIR$/../SDK/TestingShared" />
+            <option value="$PROJECT_DIR$/../SDK/TestingUnitBase" />
+            <option value="$PROJECT_DIR$/../SDK/ToothbrushSDK" />
+            <option value="$PROJECT_DIR$/../SDK/ToothbrushUpdate" />
+            <option value="$PROJECT_DIR$/../SDK/ToothbrushUpdateUIHUM" />
+            <option value="$PROJECT_DIR$/../SDK/ToothbrushUpdateUIV1" />
+            <option value="$PROJECT_DIR$/../SDK/Tracker" />
+            <option value="$PROJECT_DIR$/../SDK/TrackerDomain" />
+            <option value="$PROJECT_DIR$/../SDK/TranslationsSupport" />
+            <option value="$PROJECT_DIR$/../SDK/UnityGameSDK" />
+            <option value="$PROJECT_DIR$/../SDK/WebServicesSDK" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

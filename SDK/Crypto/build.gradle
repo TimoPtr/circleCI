@@ -1,0 +1,69 @@
+apply plugin: "com.android.library"
+apply plugin: 'io.michaelrocks.paranoid'
+
+apply from: '../buildscripts/kapt.gradle'
+
+android {
+    defaultConfig {
+        defaultPublishConfig "colgateRelease"
+    }
+}
+
+dependencies {
+    implementation project(path: ":commons")
+
+    implementation libraries.kotlinRuntime
+
+    implementation libraries.supportAnnotations
+
+    implementation libraries.dagger
+    kapt libraries.daggerCompiler
+
+    implementation libraries.threetenAbp
+
+    testImplementation project(path: ':testing-unit-base')
+    testImplementation project(path: ':testing-builders')
+    testImplementation libraries.mockitoKotlin2
+    
+    androidTestImplementation project(path: ":testing-builders")
+    androidTestImplementation libraries.supportTestCore
+    androidTestImplementation libraries.supportTestRunner
+    androidTestImplementation libraries.supportTestRules
+}
+
+// Only works on Unix systems
+task generateEncryptedAngleFiles(type:Exec) {
+    description "Encrypts files located in the angle_files directory, and creates a src/androidTest/res/raw/angle_encryption_key.txt file containing the AES encrypted key to be used in the SDK"
+    commandLine "./encrypt_files.sh", "-i angle_files", "-o angle_files_enc", "-r src/androidTest/res/raw/angle_encryption_key.txt"
+}
+
+generateEncryptedAngleFiles.finalizedBy "connectedDebugAndroidTest"
+
+
+task generateEncryptedTransitionFiles(type:Exec) {
+    description "Encrypts files located in the transition_files directory, and creates a src/androidTest/res/raw/transition_encryption_key.txt file containing the AES encrypted key to be used in the SDK"
+    commandLine "./encrypt_files.sh", "-i transition_files", "-o transition_files_enc", "-r src/androidTest/res/raw/transition_encryption_key.txt"
+}
+
+generateEncryptedTransitionFiles.finalizedBy "connectedDebugAndroidTest"
+
+task generateEncryptedWeightFiles(type:Exec) {
+    description "Encrypts files located in the weight_files directory, and creates a src/androidTest/res/raw/weight_encryption_key.txt file containing the AES encrypted key to be used in the SDK"
+    commandLine "./encrypt_files.sh", "-i weight_files", "-o weight_files_enc", "-r src/androidTest/res/raw/weight_encryption_key.txt"
+}
+
+generateEncryptedWeightFiles.finalizedBy "connectedDebugAndroidTest"
+
+task generateEncryptedThresholdFiles(type:Exec) {
+    description "Encrypts files located in the threshold_files directory, and creates a src/androidTest/res/raw/threshold_encryption_key.txt file containing the AES encrypted key to be used in the SDK"
+    commandLine "./encrypt_files.sh", "-i threshold_files", "-o threshold_files_enc", "-r src/androidTest/res/raw/threshold_encryption_key.txt"
+}
+
+generateEncryptedThresholdFiles.finalizedBy "connectedDebugAndroidTest"
+
+task generateEncryptedOtherFiles(type:Exec) {
+    description "Encrypts files located in the other_files directory, and creates a src/androidTest/res/raw/other_encryption_key.txt file containing the AES encrypted key to be used in the SDK"
+    commandLine "./encrypt_files.sh", "-i other_files", "-o other_files_enc", "-r src/androidTest/res/raw/other_encryption_key.txt"
+}
+
+generateEncryptedOtherFiles.finalizedBy "connectedDebugAndroidTest"

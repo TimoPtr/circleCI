@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+<androidx.constraintlayout.widget.ConstraintLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/feedback_container"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <TextView
+    android:id="@+id/feedback_message"
+    android:layout_width="@dimen/no_margin"
+    android:layout_height="@dimen/coach_plus_feedback_height"
+    android:layout_marginStart="@dimen/xxhuge_margin"
+    android:layout_marginEnd="@dimen/activity_vertical_margin"
+    android:background="@drawable/rounded_background"
+    android:gravity="center"
+    android:paddingStart="@dimen/coach_plus_feedback_text_padding"
+    android:paddingEnd="@dimen/huge_margin"
+    android:textColor="@color/white"
+    android:textSize="@dimen/normal_text"
+    app:layout_constraintBottom_toBottomOf="@id/feedback_img"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="@id/feedback_img"
+    app:layout_constraintTop_toTopOf="@id/feedback_img"
+    tools:text="You are brushing too fast! That is a very long feedback on multiple lines"/>
+
+  <ImageView
+    android:id="@+id/feedback_img"
+    android:layout_width="@dimen/coach_plus_image_size"
+    android:layout_height="@dimen/coach_plus_image_size"
+    android:layout_marginStart="@dimen/activity_vertical_margin"
+    android:layout_marginBottom="@dimen/activity_horizontal_margin"
+    android:background="@drawable/image_placeholder"
+    android:padding="@dimen/xtiny_margin"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    tools:ignore="ContentDescription"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

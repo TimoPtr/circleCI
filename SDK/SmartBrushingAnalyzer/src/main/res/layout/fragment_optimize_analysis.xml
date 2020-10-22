@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/scroll"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/white"
+  android:fillViewport="true"
+  android:overScrollMode="never"
+  android:requiresFadingEdge="none">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/welcome_margin"
+    android:paddingEnd="@dimen/welcome_margin">
+
+    <TextView
+      android:layout_height="wrap_content"
+      android:layout_width="@dimen/sba_content_width"
+      style="@style/Title"
+      android:textStyle="bold"
+      android:layout_gravity="center_horizontal"
+      android:textColor="@android:color/black"
+      android:layout_marginTop="@dimen/welcome_margin"
+      android:text="@string/optimize_your_brushing_analysis"/>
+
+
+    <TextView
+      android:layout_height="wrap_content"
+      android:layout_width="@dimen/sba_content_width"
+      android:gravity="center_horizontal"
+      android:textSize="@dimen/normal_text"
+      android:layout_marginTop="20dp"
+      android:layout_gravity="center_horizontal"
+      android:textColor="@android:color/black"
+      android:text="@string/which_hand_do_you_hold_your_toothbrush_with"/>
+
+
+
+    <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp">
+
+      <ImageView
+        android:id="@+id/profile_info_left_hand"
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="70dp"
+        android:src="@drawable/left_hand"
+        tools:ignore="ContentDescription"/>
+
+      <ImageView
+        android:id="@+id/profile_info_right_hand"
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="70dp"
+        android:src="@drawable/right_hand"
+        tools:ignore="ContentDescription"/>
+
+      <TextView
+        android:layout_below="@+id/profile_info_left_hand"
+        android:layout_width="60dp"
+        android:id="@+id/profile_info_left_hand_text"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:gravity="center_horizontal"
+        android:layout_marginStart="70dp"
+        android:text="@string/left"/>
+
+      <TextView
+        android:layout_below="@+id/profile_info_right_hand"
+        android:layout_width="60dp"
+        android:id="@+id/profile_info_right_hand_text"
+        android:gravity="center_horizontal"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="70dp"
+        android:text="@string/right"/>
+    </RelativeLayout>
+
+    <TextView
+      android:layout_height="wrap_content"
+      android:layout_width="250dp"
+      android:gravity="center_horizontal"
+      android:textSize="@dimen/normal_text"
+      android:layout_marginTop="50dp"
+      android:layout_gravity="center_horizontal"
+      android:textColor="@android:color/black"
+      android:text="@string/how_many_times_a_day_do_you_brush_your_teeth"/>
+
+    <LinearLayout
+      android:layout_width="wrap_content"
+      android:orientation="horizontal"
+      android:layout_marginTop="20dp"
+      android:weightSum="3"
+      android:layout_gravity="center_horizontal"
+      android:layout_height="60dp">
+
+      <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_lower"
+        android:layout_width="60dp"
+        android:padding="8dp"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/minus_btn"/>
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:text="0"
+        android:id="@+id/nbBrushing"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="@dimen/xxxhuge_text"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        tools:ignore="HardcodedText" />
+
+      <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_highter"
+        android:layout_width="60dp"
+        android:padding="8dp"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/plus_btn"/>
+
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+      style="@style/LinearLayoutWithDividers"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="1"
+      android:gravity="center_horizontal|bottom|start">
+
+      <Button
+        android:id="@+id/optimize_next"
+        android:layout_width="@dimen/round_button_width"
+        android:layout_height="@dimen/round_button_height"
+        style="@style/PrimaryColorRoundButton"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:text="@string/get_my_results"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+  </LinearLayout>
+</ScrollView>

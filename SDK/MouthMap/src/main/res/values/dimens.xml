@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2019 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<resources>
+
+  <dimen name="timer_padding">7dp</dimen>
+  <dimen name="timer_padding_big">15dp</dimen>
+  <dimen name="timer_stroke">2dp</dimen>
+  <dimen name="timer_radius">15dp</dimen>
+  <dimen name="timer_size">22dp</dimen>
+  <dimen name="timer_center">12dp</dimen>
+  <dimen name="timer_vertical_size">10dp</dimen>
+  <dimen name="timer_horizontal_size">6dp</dimen>
+  <dimen name="timer_width">2dp</dimen>
+  <dimen name="info_size_small">20dp</dimen>
+  <dimen name="mouth_map_dialog_margin">35dp</dimen>
+  <dimen name="mouth_map_percent_padding">3dp</dimen>
+  <dimen name="mouth_map_max_percent_padding">9dp</dimen>
+  <dimen name="no_coverage_text_padding_bottom">100dp</dimen>
+
+</resources>

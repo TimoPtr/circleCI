@@ -1,0 +1,69 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "6741a71b85e85d3af7651325569fed83",
+    "entities": [
+      {
+        "tableName": "coach_settings",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`enable_brushing_movement` INTEGER NOT NULL, `enable_help_text` INTEGER NOT NULL, `enable_music` INTEGER NOT NULL, `enable_shuffle` INTEGER NOT NULL, `profile_id` INTEGER NOT NULL, `enable_transition_sounds` INTEGER NOT NULL, `musicUri` TEXT, PRIMARY KEY(`profile_id`))",
+        "fields": [
+          {
+            "fieldPath": "enableBrushingMovement",
+            "columnName": "enable_brushing_movement",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "enableHelpText",
+            "columnName": "enable_help_text",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "enableMusic",
+            "columnName": "enable_music",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "enableShuffle",
+            "columnName": "enable_shuffle",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "profileId",
+            "columnName": "profile_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "enableTransitionSounds",
+            "columnName": "enable_transition_sounds",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "musicUri",
+            "columnName": "musicUri",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "profile_id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"6741a71b85e85d3af7651325569fed83\")"
+    ]
+  }
+}

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/activity_onboarding_nav_graph"
+  app:startDestination="@id/fragment_get_ready">
+
+  <fragment
+    android:id="@+id/fragment_get_ready"
+    android:name="com.kolibree.android.app.ui.onboarding.getready.GetReadyFragment"
+    android:label="GetReady"
+    tools:layout="@layout/fragment_get_ready">
+
+    <action
+      android:id="@+id/action_fragment_get_ready_to_fragment_login"
+      app:destination="@id/fragment_login"
+      app:enterAnim="@anim/hum_fragment_enter"
+      app:exitAnim="@anim/hum_fragment_exit"
+      app:popEnterAnim="@anim/hum_fragment_pop_enter"
+      app:popExitAnim="@anim/hum_fragment_pop_exit" />
+
+    <action
+      android:id="@+id/action_fragment_get_ready_to_fragment_sign_up"
+      app:destination="@id/fragment_sign_up"
+      app:enterAnim="@anim/hum_fragment_enter"
+      app:exitAnim="@anim/hum_fragment_exit"
+      app:popEnterAnim="@anim/hum_fragment_pop_enter"
+      app:popExitAnim="@anim/hum_fragment_pop_exit" />
+    <action
+      android:id="@+id/action_fragment_get_ready_to_pairingActivity"
+      app:destination="@id/pairing_nav_graph"
+      app:enterAnim="@anim/hum_fragment_enter"
+      app:exitAnim="@anim/hum_fragment_exit"
+      app:popEnterAnim="@anim/hum_fragment_pop_enter"
+      app:popExitAnim="@anim/hum_fragment_pop_exit" />
+  </fragment>
+
+  <fragment
+    android:id="@+id/fragment_login"
+    android:name="com.kolibree.android.app.ui.onboarding.login.LoginFragment"
+    android:label="Login"
+    tools:layout="@layout/fragment_login">
+
+    <action
+      android:id="@+id/action_fragment_login_to_fragment_check_email"
+      app:destination="@id/fragment_check_email"
+      app:enterAnim="@anim/hum_fragment_enter"
+      app:exitAnim="@anim/hum_fragment_exit"
+      app:popEnterAnim="@anim/hum_fragment_pop_enter"
+      app:popExitAnim="@anim/hum_fragment_pop_exit" />
+
+  </fragment>
+
+  <fragment
+    android:id="@+id/fragment_check_email"
+    android:name="com.kolibree.android.app.ui.onboarding.emailcheck.EmailCheckFragment"
+    android:label="Email Check"
+    tools:layout="@layout/fragment_email_check" />
+
+  <fragment
+    android:id="@+id/fragment_sign_up"
+    android:name="com.kolibree.android.app.ui.onboarding.signup.SignUpFragment"
+    android:label="Sign Up"
+    tools:layout="@layout/fragment_sign_up">
+
+    <action
+      android:id="@+id/action_fragment_sign_up_to_fragment_enter_email"
+      app:destination="@id/fragment_enter_email"
+      app:enterAnim="@anim/hum_fragment_enter"
+      app:exitAnim="@anim/hum_fragment_exit"
+      app:popEnterAnim="@anim/hum_fragment_pop_enter"
+      app:popExitAnim="@anim/hum_fragment_pop_exit" />
+  </fragment>
+
+  <fragment
+    android:id="@+id/fragment_enter_email"
+    android:name="com.kolibree.android.app.ui.onboarding.enteremail.EnterEmailFragment"
+    android:label="Enter Email"
+    tools:layout="@layout/fragment_enter_email" />
+
+  <include app:graph="@navigation/pairing_nav_graph" />
+
+</navigation>

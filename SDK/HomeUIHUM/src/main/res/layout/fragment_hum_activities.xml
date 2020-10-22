@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  tools:context="com.kolibree.android.app.ui.home.HomeScreenActivity">
+
+  <data>
+
+    <variable
+      name="viewModel"
+      type="com.kolibree.android.app.ui.home.tab.activities.ActivitiesViewModel" />
+
+    <import type="android.view.View" />
+
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+      android:id="@+id/appbar"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="?colorPrimary"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent">
+
+      <include
+        android:id="@+id/toolbar_layout"
+        layout="@layout/view_hum_home_toolbar"
+        app:viewModel="@{viewModel.toolbarViewModel}" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="@dimen/match_constraints"
+      android:scrollbars="none"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/appbar">
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.card.MaterialCardView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="@dimen/dot_double"
+          android:layout_marginTop="@dimen/dot_quad"
+          android:layout_marginEnd="@dimen/dot_double"
+          android:layout_marginBottom="@dimen/dot_quad">
+
+          <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/dot_double"
+            android:paddingTop="@dimen/dot_double"
+            android:paddingEnd="@dimen/dot_double"
+            android:paddingBottom="@dimen/dot_double">
+
+            <TextView
+              android:id="@+id/task_title"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="@dimen/dot"
+              android:text="@string/activities_tasks_title"
+              android:textAppearance="?textAppearanceHeadline4"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+              android:id="@+id/task_description"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="@dimen/dot"
+              android:layout_marginTop="@dimen/dot_half"
+              android:layout_marginEnd="@dimen/dot"
+              android:text="@string/activities_tasks_description"
+              android:textAppearance="?textAppearanceBody2"
+              android:textColor="?android:textColorSecondary"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toBottomOf="@id/task_title" />
+
+            <include
+              android:id="@+id/task_test_brushing"
+              layout="@layout/item_activities_task"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="@dimen/dot_double"
+              android:onClick="@{() -> viewModel.testBrushingClick()}"
+              android:paddingBottom="@dimen/dot_double"
+              app:layout_constraintTop_toBottomOf="@id/task_description"
+              app:viewState="@{viewModel.testBrushingTask}" />
+
+            <View
+              android:id="@+id/task_divider1"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/divider_thickness"
+              android:layout_marginStart="@dimen/dot"
+              android:layout_marginTop="@dimen/dot"
+              android:layout_marginEnd="@dimen/dot"
+              android:background="@color/divider"
+              android:visibility="@{viewModel.testSpeedTask.visible ? View.VISIBLE : View.GONE}"
+              app:layout_constraintTop_toBottomOf="@id/task_test_brushing" />
+
+            <include
+              android:id="@+id/task_test_speed"
+              layout="@layout/item_activities_task"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="@dimen/dot"
+              android:onClick="@{() -> viewModel.testSpeedClick()}"
+              app:layout_constraintTop_toBottomOf="@id/task_divider1"
+              app:viewState="@{viewModel.testSpeedTask}" />
+
+            <View
+              android:id="@+id/task_divider2"
+              android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:layout_marginStart="@dimen/dot"
+              android:layout_marginTop="@dimen/dot"
+              android:layout_marginEnd="@dimen/dot"
+              android:background="@color/divider"
+              android:visibility="@{viewModel.testAngleTask.visible ? View.VISIBLE : View.GONE}"
+              app:layout_constraintTop_toBottomOf="@id/task_test_speed" />
+
+            <include
+              android:id="@+id/task_test_angle"
+              layout="@layout/item_activities_task"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="@dimen/dot"
+              android:onClick="@{() -> viewModel.testAngleClick()}"
+              app:layout_constraintTop_toBottomOf="@id/task_divider2"
+              app:viewState="@{viewModel.testAngleTask}" />
+
+          </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="@dimen/dot_double"
+          android:layout_marginEnd="@dimen/dot_double"
+          android:layout_marginBottom="@dimen/dot_quad">
+
+          <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/guided_brushing_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:onClick="@{() -> viewModel.guidedBrushingClick()}"
+            android:paddingBottom="@dimen/dot_double">
+
+            <ImageView
+              android:id="@+id/guided_brushing_icon"
+              style="@style/GuidedBrushingItemStyle"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:src="@drawable/ic_guided_brushing_background"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+              android:id="@+id/guided_brushing_title"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="@dimen/dot_trip"
+              android:layout_marginTop="@dimen/dot"
+              android:text="@string/activities_guided_brushing_title"
+              android:textAppearance="?textAppearanceHeadline4"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toBottomOf="@id/guided_brushing_points" />
+
+            <TextView
+              android:id="@+id/guided_brushing_description"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="@dimen/dot_half"
+              android:layout_marginEnd="@dimen/dot_trip"
+              android:text="@string/activities_guided_brushing_description"
+              android:textAppearance="?textAppearanceBody2"
+              android:textColor="?android:textColorSecondary"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintStart_toStartOf="@id/guided_brushing_title"
+              app:layout_constraintTop_toBottomOf="@id/guided_brushing_title" />
+
+            <TextView
+              android:id="@+id/guided_brushing_points"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="@dimen/dot_trip"
+              android:background="@drawable/shape_rounded"
+              android:backgroundTint="?smilePointsBackgroundColor"
+              android:paddingStart="@dimen/dot_double"
+              android:paddingTop="@dimen/dot_half"
+              android:paddingEnd="@dimen/dot_double"
+              android:paddingBottom="@dimen/dot_half"
+              android:text="@string/activities_guided_brushing_points"
+              android:textAppearance="?textAppearanceHeadline5"
+              android:textColor="@color/white"
+              app:layout_constraintBottom_toBottomOf="@+id/guided_brushing_icon"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toBottomOf="@+id/guided_brushing_icon" />
+
+          </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <include
+          layout="@layout/card_games"
+          app:viewModel="@{viewModel.gamesCardViewModel}" />
+
+      </LinearLayout>
+
+    </ScrollView>
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
+

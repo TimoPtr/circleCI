@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@android:color/white">
+
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:overScrollMode="never"
+    android:requiresFadingEdge="none">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:paddingStart="@dimen/welcome_margin"
+      android:paddingEnd="@dimen/welcome_margin">
+
+      <TextView
+        android:id="@+id/profile_info_account_title"
+        style="@style/Title"
+        android:layout_marginTop="@dimen/welcome_margin"
+        android:text="@string/sign_up_profile_info_title" />
+
+
+      <EditText
+        android:id="@+id/profile_info_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_ll_underline_primary"
+        android:hint="@string/profile_information_name_hint"
+        android:maxLength="30"
+        android:textColor="@color/grey_light"
+        android:textColorHint="@color/grey_light"
+        tools:ignore="TextFields" />
+
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+          android:id="@+id/profile_info_gender_hint"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="20dp"
+          android:gravity="center_horizontal"
+          android:text="@string/profile_information_gender_hint"
+          android:textColor="@color/colorPrimary"
+          android:textSize="18sp" />
+
+        <ImageView
+          android:id="@+id/profile_info_female"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/profile_info_gender_hint"
+          android:layout_marginStart="45dp"
+          android:layout_marginBottom="40dp"
+          android:src="@drawable/btn_female"
+          tools:ignore="ContentDescription" />
+
+        <ImageView
+          android:id="@+id/profile_info_male"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/profile_info_gender_hint"
+          android:layout_alignParentEnd="true"
+          android:layout_marginEnd="45dp"
+          android:src="@drawable/btn_male"
+          tools:ignore="ContentDescription" />
+
+        <TextView
+          android:id="@+id/profile_info_handedness_hint"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/profile_info_male"
+          android:layout_margin="20dp"
+          android:gravity="center_horizontal"
+          android:text="@string/profile_information_handedness_hint"
+          android:textColor="@color/colorPrimary"
+          android:textSize="18sp" />
+
+        <ImageView
+          android:id="@+id/profile_info_left_hand"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/profile_info_handedness_hint"
+          android:layout_marginStart="45dp"
+          android:src="@drawable/btn_left_hand"
+          tools:ignore="ContentDescription" />
+
+        <ImageView
+          android:id="@+id/profile_info_right_hand"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/profile_info_handedness_hint"
+          android:layout_alignParentEnd="true"
+          android:layout_marginEnd="45dp"
+          android:src="@drawable/btn_right_hand"
+          tools:ignore="ContentDescription" />
+      </RelativeLayout>
+
+      <Button
+        android:id="@+id/profile_info_next"
+        style="@style/PrimaryColorRoundButton"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:text="@string/create_account" />
+    </LinearLayout>
+
+  </ScrollView>
+
+</RelativeLayout>

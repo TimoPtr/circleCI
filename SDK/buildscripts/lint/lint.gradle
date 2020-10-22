@@ -1,0 +1,9 @@
+android {
+    lintOptions {
+        lintConfig file(buildscript.sourceFile.getParent() + '/lint-ruleset.xml')
+        baseline file("lint-baseline.xml")
+        htmlReport true
+        xmlReport true
+        abortOnError true // with true, lint will immediately fail on error, making the setup less confusing for developers cause we won't rely on Jenkins plugin anymore
+    }
+}

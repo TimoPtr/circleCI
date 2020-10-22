@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <data>
+
+    <variable
+      name="viewModel"
+      type="com.kolibree.android.app.ui.settings.about.AboutViewModel" />
+
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/about_root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+      android:id="@+id/toolbar"
+      android:layout_width="match_parent"
+      android:layout_height="?actionBarSize"
+      android:contentInsetStart="0dp"
+      android:contentInsetLeft="0dp"
+      android:contentInsetEnd="0dp"
+      android:contentInsetRight="0dp"
+      android:theme="?defaultToolbarTheme"
+      app:contentInsetEnd="0dp"
+      app:contentInsetLeft="0dp"
+      app:contentInsetRight="0dp"
+      app:contentInsetStart="0dp"
+      app:layout_constraintTop_toTopOf="parent"
+      app:popupTheme="?defaultToolbarPopupTheme">
+
+      <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:onClick="@{() -> viewModel.onCloseClick()}"
+        android:padding="@dimen/dot_double"
+        android:src="@drawable/ic_back_arrow"
+        app:tint="?android:textColorPrimary" />
+
+      <TextView
+        android:id="@+id/toolbar_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dot_double"
+        android:text="@string/settings_about_screen_title"
+        android:textAppearance="?textAppearanceHeadline4"
+        android:textColor="?android:textColorPrimary" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/match_constraints"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+      <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+          android:id="@+id/logo_background"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/about_background_height"
+          android:layout_marginStart="@dimen/dot_quad"
+          android:layout_marginTop="@dimen/dot_double"
+          android:layout_marginEnd="@dimen/dot_quad"
+          android:background="@drawable/shape_rounded_white"
+          android:backgroundTint="?colorAccent"
+          android:onClick="@{() -> viewModel.onLogoClick()}"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/ic_about_logo"
+          app:layout_constraintBottom_toBottomOf="@+id/logo_background"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="@+id/logo_background" />
+
+        <TextView
+          android:id="@+id/description"
+          android:layout_width="@dimen/match_constraints"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="@dimen/dot_quad"
+          android:layout_marginTop="@dimen/dot_trip"
+          android:layout_marginEnd="@dimen/dot_quad"
+          android:text="@string/settings_about_screen_description"
+          android:textAppearance="?textAppearanceBody2"
+          android:textColor="?android:textColorSecondary"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/logo_background" />
+
+        <TextView
+          android:id="@+id/facebook"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/dot_sev"
+          android:layout_marginTop="@dimen/dot_trip"
+          android:background="?selectableItemBackground"
+          android:gravity="center_vertical"
+          android:onClick="@{() -> viewModel.onFacebookClick()}"
+          android:paddingStart="@dimen/dot_ten"
+          android:paddingEnd="@dimen/dot_quad"
+          android:text="@string/settings_about_screen_facebook"
+          android:textAppearance="?textAppearanceHeadline6"
+          android:textColor="?textColorAccentSecondary"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/description" />
+
+        <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="@dimen/dot_quad"
+          android:src="@drawable/ic_facebook_icon"
+          app:layout_constraintBottom_toBottomOf="@id/facebook"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="@id/facebook" />
+
+        <TextView
+          android:id="@+id/instagram"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/dot_sev"
+          android:layout_marginTop="@dimen/dot"
+          android:background="?selectableItemBackground"
+          android:gravity="center_vertical"
+          android:onClick="@{() -> viewModel.onInstagramClick()}"
+          android:paddingStart="@dimen/dot_ten"
+          android:paddingEnd="@dimen/dot_quad"
+          android:text="@string/settings_about_screen_instagram"
+          android:textAppearance="?textAppearanceHeadline6"
+          android:textColor="?textColorAccentSecondary"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/facebook" />
+
+        <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="@dimen/dot_quad"
+          app:layout_constraintBottom_toBottomOf="@id/instagram"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="@id/instagram"
+          app:srcCompat="@drawable/ic_instagram_icon" />
+
+        <TextView
+          android:id="@+id/website"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/dot_sev"
+          android:layout_marginTop="@dimen/dot"
+          android:background="?selectableItemBackground"
+          android:gravity="center_vertical"
+          android:onClick="@{() -> viewModel.onWebsiteClick()}"
+          android:paddingStart="@dimen/dot_ten"
+          android:paddingEnd="@dimen/dot_quad"
+          android:text="@string/settings_about_screen_website"
+          android:textAppearance="?textAppearanceHeadline6"
+          android:textColor="?textColorAccentSecondary"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/instagram" />
+
+        <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="@dimen/dot_quad"
+          android:src="@drawable/ic_website_icon"
+          app:layout_constraintBottom_toBottomOf="@id/website"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="@id/website" />
+
+        <TextView
+          android:id="@+id/licenses"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/dot_sev"
+          android:layout_marginTop="@dimen/dot"
+          android:background="?selectableItemBackground"
+          android:gravity="center_vertical"
+          android:onClick="@{() -> viewModel.onLicensesClick()}"
+          android:paddingStart="@dimen/dot_ten"
+          android:paddingEnd="@dimen/dot_quad"
+          android:text="@string/settings_about_screen_licenses"
+          android:textAppearance="?textAppearanceHeadline6"
+          android:textColor="?textColorAccentSecondary"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/website" />
+
+        <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="@dimen/dot_quad"
+          android:src="@drawable/ic_terms_icon"
+          app:layout_constraintBottom_toBottomOf="@id/licenses"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="@id/licenses" />
+
+        <View
+          android:id="@+id/divider"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/divider_thickness"
+          android:layout_marginTop="@dimen/dot_trip"
+          android:background="?dividerColor"
+          app:layout_constraintTop_toBottomOf="@id/licenses" />
+
+        <TextView
+          android:id="@+id/app_version_title"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="@dimen/dot_quad"
+          android:layout_marginTop="@dimen/dot_trip"
+          android:text="@string/settings_about_screen_app_version"
+          android:textAppearance="?textAppearanceOverline2"
+          android:textColor="?android:textColorSecondary"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/divider" />
+
+        <TextView
+          android:id="@+id/app_version"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="@dimen/dot_quad"
+          android:text="@{viewModel.appVersion}"
+          android:textAppearance="?textAppearanceHeadline6"
+          android:textColor="?textColorAccentSecondary"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/app_version_title"
+          tools:text="1.6.4 (100)" />
+
+        <LinearLayout
+          android:id="@+id/account_group"
+          android:layout_width="@dimen/match_constraints"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/dot_double"
+          android:background="?attr/selectableItemBackground"
+          android:onClick="@{() -> viewModel.onAccountIdClick()}"
+          android:orientation="vertical"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/app_version">
+
+          <TextView
+            android:id="@+id/account_id_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dot_quad"
+            android:layout_marginTop="@dimen/dot"
+            android:layout_marginEnd="@dimen/dot_quad"
+            android:text="@string/settings_about_screen_account_id"
+            android:textAppearance="?textAppearanceOverline2"
+            android:textColor="?android:textColorSecondary" />
+
+          <TextView
+            android:id="@+id/account_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dot_quad"
+            android:layout_marginEnd="@dimen/dot_quad"
+            android:layout_marginBottom="@dimen/dot"
+            android:drawablePadding="@dimen/dot_half"
+            android:text="@{viewModel.accountId}"
+            android:textAppearance="?textAppearanceHeadline6"
+            android:textColor="?textColorAccentSecondary"
+            app:drawableEndCompat="@drawable/ic_copy"
+            app:drawableTint="?android:textColorSecondary"
+            tools:text="C8894KL" />
+
+        </LinearLayout>
+
+        <Space
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/dot_double"
+          app:layout_constraintTop_toBottomOf="@id/account_group" />
+
+      </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
+

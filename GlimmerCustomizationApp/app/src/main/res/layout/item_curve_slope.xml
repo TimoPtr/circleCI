@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <data>
+
+    <variable
+      name="hint"
+      type="Integer" />
+
+    <variable
+      name="value"
+      type="Integer" />
+
+    <variable
+      name="viewModel"
+      type="com.kolibree.android.glimmer.tweaker.curve.CurveViewModel" />
+
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.kolibree.android.glimmer.utils.NumberPicker
+      android:id="@+id/curve_slope_picker"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:value="@{value}"
+      app:enabled="@{viewModel.curveSettingsLiveData.modifiable}"/>
+
+    <TextView
+      android:id="@+id/curve_slope_hint"
+      style="@style/SettingsHint"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="@dimen/match_constraints"
+      android:text="@{context.getString(hint)}"
+      app:layout_constraintBottom_toBottomOf="@id/curve_slope_picker"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toStartOf="@id/curve_slope_picker"
+      app:layout_constraintTop_toTopOf="@id/curve_slope_picker" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
+

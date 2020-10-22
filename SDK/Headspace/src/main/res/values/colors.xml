@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<resources>
+  <color name="headspace_yellow">#ffce00</color>
+  <color name="headspace_blue">#0569ff</color>
+  <color name="headspace_dark_blue">#0468ff</color>
+  <color name="headspace_orange">#f47c31</color>
+</resources>

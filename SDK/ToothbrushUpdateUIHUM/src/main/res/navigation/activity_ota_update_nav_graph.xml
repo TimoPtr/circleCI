@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/activity_ota_update_nav_graph"
+  app:startDestination="@id/fragment_start_ota">
+
+  <fragment
+    android:id="@+id/fragment_start_ota"
+    android:name="com.kolibree.android.app.ui.ota.start.StartOtaFragment"
+    android:label="StartOta"
+    tools:layout="@layout/fragment_start_ota">
+    <action
+      android:id="@+id/action_fragment_start_ota_to_fragment_in_progress_ota"
+      app:destination="@id/fragment_in_progress_ota"
+      app:enterAnim="@anim/slide_in_right"
+      app:exitAnim="@anim/fade_out"/>
+  </fragment>
+
+  <fragment
+    android:id="@+id/fragment_in_progress_ota"
+    android:name="com.kolibree.android.app.ui.ota.inprogress.InProgressOtaFragment"
+    android:label="InProgressOta"
+    tools:layout="@layout/fragment_in_progress_ota" />
+
+</navigation>

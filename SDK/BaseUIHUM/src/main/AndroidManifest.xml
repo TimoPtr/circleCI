@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.kolibree.android.baseui.hum">
+
+  <application>
+
+    <activity
+      android:name="com.kolibree.android.app.sample.showcase.ThemeShowcaseActivity"
+      android:label="@string/title_activity_hum_theme_showcase"
+      android:theme="@style/AppTheme.Light" />
+
+    <activity android:name="com.kolibree.android.app.sample.showcase.SpeedometerShowcaseActivity"
+      android:theme="@style/AppTheme.Inverse.Blue"/>
+
+  </application>
+
+</manifest>

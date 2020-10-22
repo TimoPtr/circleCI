@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <dimen name="results_bottom_height">170dp</dimen>
+  <dimen name="results_indicator_container_height">30dp</dimen>
+  <dimen name="results_indicator">10dp</dimen>
+  <dimen name="results_pager_padding">15dp</dimen>
+  <dimen name="results_card_radius">10dp</dimen>
+  <dimen name="dentist_avatar_side">90dp</dimen>
+
+  <dimen name="mouth_coverage_ring_side">90dp</dimen>
+  <dimen name="smaller_ring_side">70dp</dimen>
+  <dimen name="mouth_coverage_ring_thickness">7dp</dimen>
+  <dimen name="tap_to_change_view_width">60dp</dimen>
+  <dimen name="tap_to_change_hand_width">50dp</dimen>
+
+  <dimen name="intro_margin_big">50dp</dimen>
+
+  <dimen name="hum_pause_view_fade_in_horizontal_distance">20dp</dimen>
+</resources>

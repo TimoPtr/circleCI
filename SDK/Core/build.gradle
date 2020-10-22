@@ -1,0 +1,148 @@
+apply plugin: 'com.android.library'
+
+apply from: '../buildscripts/kapt.gradle'
+
+android {
+    defaultConfig {
+        defaultPublishConfig 'colgateRelease'
+        missingDimensionStrategy 'branding', 'colgate'
+
+        buildConfigField("String", "SDK_VERSION_NAME", "\"" + versions.name + "\"")
+        buildConfigField("int", "SDK_VERSION_CODE", "" + versions.code + "")
+    }
+
+    buildFeatures {
+        // We need BuildConfig or we get an error while minifying with R8
+        buildConfig = true
+        dataBinding = true
+    }
+}
+
+dependencies {
+    api project(path: ':web-service-sdk')
+    api project(path: ':toothbrush-sdk')
+    api project(path: ':pairing')
+    api project(path: ':stats')
+    api project(path: ':commons')
+    api project(path: ':authentication')
+    api project(path: ':base-ui')
+    api project(path: ':base-ui-v1')
+    api project(path: ':base-ui-hum')
+    api project(path: ':static-resources')
+    api project(path: ':static-resources-v1')
+    api project(path: ':static-resources-branded')
+    api project(path: ':jaws')
+    api project(path: ':account-sdk')
+    api project(path: ':offline-brushings')
+    api project(path: ':offline-brushings-v1')
+    api project(path: ':coach-plus-logic')
+    api project(path: ':coach-plus-ui-v1')
+    api project(path: ':guided-brushing-ui')
+    api project(path: ':pirate-v1')
+    api project(path: ':toothbrush-update-logic')
+    api project(path: ':toothbrush-update-ui-v1')
+    api project(path: ':test-brushing-v1')
+    api project(path: ':mouthmap-v1')
+    api project(path: ':stats-offline')
+    api project(path: ':crypto')
+    api project(path: ':processed-brushings-kml')
+    api project(path: ':translations-support')
+    api project(path: ':angle-and-speed-logic')
+    api project(path: ':angle-and-speed-ui-v1')
+    api project(path: ':brushing-quiz')
+    api project(path: ':rewards-logic')
+    api project(path: ':game')
+    api project(path: ':legacy-game-components')
+    api project(path: ':tracker')
+    api project(path: ':features')
+
+    implementation libraries.supportAnnotations
+    implementation libraries.rxJava
+    implementation libraries.rxLint
+
+    implementation libraries.dagger
+    kapt libraries.daggerCompiler
+    implementation libraries.daggerAndroidSupport
+    kapt libraries.daggerAndroidProcessor
+
+    implementation libraries.threetenAbp
+}
+
+project.afterEvaluate {
+
+    def aarFileName = "core-release.aar"
+    def aarFilePath = "$buildDir/outputs/aar"
+    def aarOutputDirPath = "$aarFilePath/core-release"
+    def classJarFileName = "classes.jar"
+    def classJarFilePath = aarOutputDirPath
+    def classOutputDirPath = "$classJarFilePath/classes"
+
+    task extractReleaseArchives() {
+        dependsOn assembleRelease
+        doLast {
+            def aarFile = file("$aarFilePath/$aarFileName")
+            def aarOutputDir = file(aarOutputDirPath)
+            def classJarFile = file("$classJarFilePath/$classJarFileName")
+            def classOutputDir = file(classOutputDirPath)
+
+            if (!aarFile.exists()) return
+
+            copy { from zipTree(aarFile) into aarOutputDir }
+            delete aarFile
+
+            if (!classJarFile.exists()) return
+
+            copy { from zipTree(classJarFile) into classOutputDir }
+            delete classJarFile
+        }
+    }
+
+    task copyDatabindingBrFiles {
+        dependsOn extractReleaseArchives
+        doLast {
+            def brSourceDir = 'build/intermediates/javac/release/classes/'
+            fileTree(brSourceDir).visit { details ->
+                if (details.getName() == 'BR.class') {
+                    copy {
+                        from "$brSourceDir/${details.getPath()}"
+                        into "$classOutputDirPath/${details.getPath().substring(0, details.getPath().lastIndexOf('/'))}"
+                    }
+                }
+            }
+        }
+    }
+
+    task packageClassJar(type: Zip) {
+        dependsOn copyDatabindingBrFiles
+
+        archiveFileName = classJarFileName
+        destinationDirectory = file(classJarFilePath)
+
+        from classOutputDirPath
+    }
+
+    task cleanupClassJar(type: Delete) {
+        dependsOn packageClassJar
+        delete classOutputDirPath
+    }
+
+    task packageReleaseAar(type: Zip) {
+        dependsOn cleanupClassJar
+
+        archiveFileName = aarFileName
+        destinationDirectory = file(aarFilePath)
+
+        from aarOutputDirPath
+    }
+
+    task cleanupReleaseAar(type: Delete) {
+        dependsOn packageReleaseAar
+        delete aarOutputDirPath
+    }
+
+    task repackageReleaseAar() {
+        dependsOn cleanupReleaseAar
+    }
+
+    assembleRelease.finalizedBy(repackageReleaseAar)
+}

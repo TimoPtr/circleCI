@@ -1,0 +1,28 @@
+/*
+ * Copyright (c) 2020 Kolibree. All rights reserved
+ *
+ * Copying this file via any medium without the prior written consent of Kolibree is strictly
+ * prohibited
+ *
+ * Proprietary and confidential
+ */
+apply plugin: 'com.android.library'
+
+android {
+    // We need BuildConfig or we get an error while minifying with R8
+    buildFeatures {
+        buildConfig = true
+    }
+}
+
+dependencies {
+    implementation project(path: ':commons')
+
+    implementation libraries.kotlinRuntime
+
+    implementation libraries.supportViewPager
+
+    testImplementation project(path: ':testing-unit-base')
+    testImplementation project(path: ':testing-builders')
+    testImplementation libraries.mockitoKotlin2
+}

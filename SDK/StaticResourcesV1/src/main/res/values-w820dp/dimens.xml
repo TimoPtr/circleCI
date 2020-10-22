@@ -1,0 +1,12 @@
+<resources>
+  <!-- Example customization of dimensions originally defined in res/values/dimens.xml
+       (such as screen margins) for screens with more than 820dp of available width. This
+       would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively). -->
+  <dimen name="activity_horizontal_margin">64dp</dimen>
+
+  <!-- Coach -->
+  <dimen name="cursor_size">8dp</dimen>
+  <dimen name="global_ring_size">420dp</dimen>
+  <dimen name="thumbnail_average_size">165dp</dimen>
+  <dimen name="thumbnail_small_and_tiny_size">82dp</dimen>
+</resources>

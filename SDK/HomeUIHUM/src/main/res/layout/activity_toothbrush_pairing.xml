@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <data>
+
+    <import type="android.view.View" />
+
+    <import type="com.kolibree.android.homeui.R" />
+
+    <variable
+      name="viewModel"
+      type="com.kolibree.android.app.ui.home.pairing.ToothbrushPairingViewModel" />
+
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/root_content_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <androidx.fragment.app.FragmentContainerView
+      android:id="@+id/nav_host_fragment"
+      android:name="androidx.navigation.fragment.NavHostFragment"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      app:defaultNavHost="true"
+      app:navGraph="@navigation/pairing_nav_graph" />
+
+    <com.google.android.material.appbar.MaterialToolbar
+      android:id="@+id/toolbar"
+      enableBackNavigation="@{viewModel.toolbarBackNavigationEnabled}"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:visibility="invisible"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:navigationIcon="@{@drawable/ic_back_arrow}"
+      tools:visibility="visible" />
+
+    <View
+      android:id="@+id/progress_background"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="?progressOverlayColor"
+      android:clickable="true"
+      android:focusable="true"
+      android:visibility="invisible"
+      app:visibilityAnim="@{viewModel.progressVisible}"
+      tools:visibility="visible" />
+
+    <com.google.android.material.card.MaterialCardView
+      android:id="@+id/progress_view"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:elevation="@dimen/dot_half"
+      android:visibility="invisible"
+      app:cardBackgroundColor="?backgroundColor"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintWidth_percent="0.75"
+      app:visibilityAnim="@{viewModel.progressVisible}"
+      tools:visibility="visible">
+
+      <include
+        layout="@layout/view_progress_indicator_dark"
+        app:progressVisible="@{viewModel.progressVisible}" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.kolibree.android.app.widget.snackbar.SnackbarHandler
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="@dimen/match_constraints"
+      app:configuration="@={viewModel.snackbarConfiguration}"
+      tools:ignore="MissingConstraints" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
+

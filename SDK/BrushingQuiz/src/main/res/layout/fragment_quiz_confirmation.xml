@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2019 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <data>
+
+    <variable
+      name="viewModel"
+      type="com.kolibree.android.brushingquiz.presentation.confirmation.QuizConfirmationViewModel" />
+
+    <import type="android.view.View" />
+
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+      android:id="@+id/quiz_confirmation_logo"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="@dimen/dot_twenty"
+      android:layout_marginStart="@dimen/dot_quad"
+      android:layout_marginTop="@dimen/dot"
+      android:layout_marginEnd="@dimen/dot_quad"
+      android:background="@drawable/shape_rounded_dot"
+      android:backgroundTint="?colorAccent"
+      android:scaleType="center"
+      android:src="@{viewModel.logoRes}"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+      android:id="@+id/quiz_confirmation_title"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="@dimen/dot_quad"
+      android:layout_marginTop="@dimen/dot_trip"
+      android:layout_marginRight="@dimen/dot_quad"
+      android:text="@string/quiz_confirmation_title"
+      android:textAppearance="?textAppearanceOverline1"
+      android:textColor="?android:textColorSecondary"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/quiz_confirmation_logo" />
+
+    <TextView
+      android:id="@+id/quiz_confirmation_subtitle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="@dimen/dot_quad"
+      android:layout_marginTop="@dimen/dot"
+      android:layout_marginRight="@dimen/dot_quad"
+      android:text="@string/brushing_quiz_your_program"
+      android:textAppearance="?textAppearanceHeadline4"
+      android:textColor="?android:textColorPrimary"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/quiz_confirmation_title" />
+
+    <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/dot_double"
+      android:orientation="horizontal"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/quiz_confirmation_subtitle">
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAppearance="?textAppearanceHeadline2"
+        android:textColor="?android:textColorPrimary"
+        app:brushingProgram="@{viewModel.brushingProgram}"
+        tools:text="sensitive" />
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="."
+        android:textAppearance="?textAppearanceHeadline2"
+        android:textColor="?colorSecondaryDark"
+        tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+    <Button
+      android:id="@+id/quiz_confirmation_confirm"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_quad"
+      android:layout_marginEnd="@dimen/dot_quad"
+      android:onClick="@{() -> viewModel.onUserClickConfirm()}"
+      android:text="@string/quiz_confirmation_brushing_program"
+      app:layout_constraintBottom_toTopOf="@id/quiz_confirmation_try_it_now"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+      android:id="@+id/quiz_confirmation_try_it_now"
+      style="?materialButtonOutlinedStyle"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_quad"
+      android:layout_marginEnd="@dimen/dot_quad"
+      android:onClick="@{() -> viewModel.onUserClickTryItNow()}"
+      android:text="@string/brushing_quiz_confirmation_try_it"
+      app:layout_constraintBottom_toTopOf="@id/quiz_confirmation_reset"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+      android:id="@+id/quiz_confirmation_reset"
+      style="?materialButtonIconStyle"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_quad"
+      android:layout_marginEnd="@dimen/dot_quad"
+      android:layout_marginBottom="@dimen/dot"
+      android:backgroundTint="@color/white"
+      android:onClick="@{() -> viewModel.onUserClickRevert()}"
+      android:outlineProvider="none"
+      android:text="@string/brushing_quiz_reset"
+      android:textAllCaps="true"
+      android:textColor="?android:textColorTertiary"
+      app:icon="@drawable/ic_reload"
+      app:iconTint="?android:textColorTertiary"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:rippleColor="?android:textColorHighlight" />
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@color/white30"
+      android:clickable="true"
+      android:elevation="@dimen/dot"
+      android:focusable="true"
+      android:visibility="@{viewModel.isLoading ? View.VISIBLE : View.GONE}"
+      tools:visibility="gone" />
+
+    <ProgressBar
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:elevation="@dimen/dot"
+      android:visibility="@{viewModel.isLoading ? View.VISIBLE : View.GONE}"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="percent_sign" translatable="false">%</string>
+  <string name="timer_format" translatable="false">%s:%s</string>
+  <string name="percent_value_max" translatable="false">"/ 100"</string>
+</resources>

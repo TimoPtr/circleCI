@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <Blacklist></Blacklist>
+  <Whitelist>
+    <ID>LargeClass:BrushingsRepositoryImpl.kt$BrushingsRepositoryImpl$BrushingsRepositoryImpl</ID>
+    <ID>LargeClass:ProfileManagerImpl.kt$ProfileManagerImpl$ProfileManagerImpl</ID>
+    <ID>LongMethod:BrushingApiManagerImpl.kt$BrushingApiManagerImpl$getLatestBrushings</ID>
+    <ID>LongMethod:BrushingFacadeImpl.kt$BrushingFacadeImpl$addBrushing</ID>
+    <ID>LongMethod:BrushingsRepositoryImpl.kt$BrushingsRepositoryImpl$addBrushing</ID>
+    <ID>LongMethod:BrushingsRepositoryImpl.kt$BrushingsRepositoryImpl$deleteBrushing</ID>
+    <ID>LongMethod:BrushingsRepositoryImpl.kt$BrushingsRepositoryImpl$uploadNewBrushing</ID>
+    <ID>LongMethod:CalendarBrushingsRepository.kt$CalendarBrushingsRepository$calculateStreaksFromBrushings</ID>
+    <ID>LongMethod:CalendarBrushingsRepository.kt$CalendarBrushingsRepository$getSanitizedStreaks</ID>
+    <ID>LongMethod:CalendarBrushingsUseCaseImpl.kt$CalendarBrushingsUseCaseImpl$fetchPreviousBrushings</ID>
+    <ID>LongMethod:CreateAccountData.kt$CreateAccountData.Builder$build</ID>
+    <ID>LongMethod:GoPirateData.kt$GoPirateData.Companion$fromJson</ID>
+    <ID>LongMethod:MigrateBrushingInternal.kt$MigrateBrushingInternal$migrate</ID>
+    <ID>LongMethod:ProfileManagerImpl.kt$ProfileManagerImpl$confirmPicture</ID>
+    <ID>LongMethod:ProfileManagerImpl.kt$ProfileManagerImpl$syncUpdatedFields</ID>
+    <ID>LongMethod:ProfileManagerImpl.kt$ProfileManagerImpl$updateProfile</ID>
+    <ID>LongMethod:ProfileManagerImpl.kt$ProfileSyncableMapper$toProfileSyncableFields</ID>
+    <ID>MaxLineLength:BrushingDao.kt$BrushingDao$@Query("SELECT * FROM brushing WHERE profileid = :profileid AND is_deleted_locally = 0 ORDER BY timestamp ASC LIMIT 1")</ID>
+    <ID>MaxLineLength:BrushingDao.kt$BrushingDao$@Query("SELECT * FROM brushing WHERE profileid = :profileid AND is_deleted_locally = 0 ORDER BY timestamp DESC LIMIT 1")</ID>
+    <ID>MaxLineLength:BrushingDao.kt$BrushingDao$@Query("SELECT AVG(duration) FROM brushing WHERE timestamp &gt;= :timestamp AND is_deleted_locally = 0 AND profileid = :profileId ")</ID>
+    <ID>MaxLineLength:BrushingDao.kt$BrushingDao$@Query("SELECT issync FROM brushing WHERE timestamp = :timestamp AND profileid = :profileId AND is_deleted_locally = 0")</ID>
+    <ID>MaxLineLength:V2BrushingsMigration.kt$V2BrushingsMigration$database.execSQL("UPDATE $TABLE_NAME SET `idempotency_key` = '${UUID.randomUUID()}' WHERE id = $id")</ID>
+    <ID>MayBeConst:BaseProfileTest.kt$BaseProfileTest.Companion$private val creationDate = "1990-02-04T00:00:00+0000"</ID>
+    <ID>NestedBlockDepth:V2BrushingsMigration.kt$V2BrushingsMigration$setUuidOnOldRows</ID>
+    <ID>SwallowedException:GoPirateDao.kt$GoPirateDao$catch (e: Exception) { insert(GoPirateData.fromUpdateGoPirateData(profileId, data)) }</ID>
+    <ID>SwallowedException:GoPirateDao.kt$GoPirateDao$catch (e: Exception) { insert(goPirateData) }</ID>
+    <ID>TooManyFunctions:AccountApi.kt$AccountApi$AccountApi</ID>
+    <ID>TooManyFunctions:AccountManager.kt$InternalAccountManager$InternalAccountManager</ID>
+    <ID>TooManyFunctions:AccountOperations.kt$AccountOperations$AccountOperations</ID>
+    <ID>TooManyFunctions:BrushingDao.kt$BrushingDao$BrushingDao</ID>
+    <ID>TooManyFunctions:BrushingsDatastore.kt$BrushingsDatastore$BrushingsDatastore</ID>
+    <ID>TooManyFunctions:BrushingsRepository.kt$BrushingsRepository$BrushingsRepository</ID>
+    <ID>TooManyFunctions:CreateAccountData.kt$CreateAccountData.Builder$Builder</ID>
+    <ID>TooManyFunctions:InternalKolibreeConnector.kt$InternalKolibreeConnector$InternalKolibreeConnector</ID>
+    <ID>TooManyFunctions:ProfileManager.kt$ProfileManager$ProfileManager</ID>
+    <ID>TooManyFunctions:ProfileRepository.kt$ProfileRepository$ProfileRepository</ID>
+  </Whitelist>
+</SmellBaseline>

@@ -1,0 +1,56 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <data>
+
+    <import type="com.kolibree.android.sdk.persistence.model.AccountToothbrush" />
+
+    <variable
+      name="data"
+      type="com.kolibree.android.sdk.persistence.model.AccountToothbrush" />
+
+    <variable
+      name="listener"
+      type="com.kolibree.databinding.OnItemClickListener&lt;AccountToothbrush>" />
+  </data>
+
+  <RelativeLayout
+    android:id="@+id/rlContent"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/toothbrush_picker_item_height"
+    android:background="?selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:onClick="@{v -> listener.onItemClick(data)}">
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/toothbrush_picker_item_divider"
+      android:layout_alignParentTop="true"
+      android:background="@color/divider" />
+
+    <ImageView
+      android:id="@+id/known_toothbrush_avatar"
+      android:layout_width="@dimen/toothbrush_picker_icon_size"
+      android:layout_height="@dimen/toothbrush_picker_icon_size"
+      android:layout_centerVertical="true"
+      android:layout_marginStart="@dimen/tiny_margin"
+      android:layout_marginEnd="@dimen/tiny_margin"
+      android:padding="@dimen/tiny_margin"
+      android:scaleType="center"
+      android:src="@drawable/ic_toothbrush_connected_dark"
+      tools:ignore="RtlHardcoded" />
+
+    <TextView
+      android:id="@+id/toothbrushName"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerVertical="true"
+      android:layout_toEndOf="@id/known_toothbrush_avatar"
+      android:text="@{data.name}"
+      android:textColor="@color/grey_lighter"
+      android:textAppearance="?textAppearanceSubtitle1"
+      tools:ignore="RtlHardcoded"
+      tools:text="Tb Internal name" />
+  </RelativeLayout>
+</layout>

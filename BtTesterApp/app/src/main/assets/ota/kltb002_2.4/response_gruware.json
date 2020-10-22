@@ -1,0 +1,19 @@
+{
+  "gru": {
+    "gru": "1.0.6",
+    "crc16": null,
+    "filename": "ota/ce1/gru_data_ce1_1.0.6_fast_updater_package.bin",
+    "beta": true,
+    "link": "ota/ce1/gru_data_ce1_1.0.6_fast_updater_package.bin",
+    "crc32": null
+  },
+  "bootloader": {},
+  "fw": {
+    "crc16": null,
+    "fw": "1.18.0",
+    "filename": "ota/kltb002_2.4/fw_ce1_1.17.2.bin",
+    "beta": true,
+    "link": "ota/kltb002/fw_ce1_1.17.2.bin",
+    "crc32": "e45692b3"
+  }
+}

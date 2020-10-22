@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2019 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout>
+
+  <data>
+
+    <variable
+      name="viewModel"
+      type="com.kolibree.android.plaqless.howto.intro.PlaqlessIntroViewModel"/>
+
+  </data>
+
+  <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/big_margin"
+    android:paddingStart="@dimen/big_margin"
+    android:paddingEnd="@dimen/big_margin"
+    tools:background="@color/plaqless_background_dark">
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:textSize="@dimen/huge_text"
+      android:text="@string/plaqless_intro_title"
+      android:textStyle="bold"
+      android:layout_marginTop="@dimen/plaqless_margin_top"
+      android:textColor="@color/white"
+      android:layout_height="wrap_content"/>
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:textSize="@dimen/big_text"
+      android:layout_marginTop="@dimen/plaqless_type_margin"
+      android:layout_marginBottom="@dimen/plaqless_type_margin"
+      app:htmlText="@{@string/plaqless_intro_subtitle}"
+      tools:text="@string/plaqless_intro_subtitle"
+      android:textColor="@color/white"
+      android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+      <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/plaqless_type_background"
+        android:layout_alignTop="@+id/pql_jaws"
+        android:layout_marginTop="@dimen/xbig_margin"
+        android:layout_marginBottom="@dimen/xbig_margin"
+        android:layout_alignBottom="@+id/pql_jaws"/>
+
+      <ImageView
+        android:id="@+id/pql_jaws"
+        android:layout_width="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/average_margin"
+        android:src="@drawable/ic_intro_jaws"/>
+
+      <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toStartOf="@+id/pql_jaws"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/pql_jaws"
+        android:gravity="center_vertical"
+        android:layout_alignBottom="@+id/pql_jaws"
+        android:layout_marginStart="@dimen/average_margin">
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="@dimen/normal_text"
+          android:text="@string/plaqless_intro_type_title"
+          android:textStyle="bold"
+          android:layout_marginBottom="@dimen/average_margin"
+          android:textColor="@color/white"/>
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:textSize="@dimen/normal_text"
+          android:text="@string/plaqless_intro_type_cleand"
+          android:textColor="@color/white"
+          android:drawablePadding="@dimen/average_margin"
+          android:layout_height="wrap_content"
+          app:drawableStartCompat="@drawable/plaqless_type_cleaned"/>
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="@dimen/normal_text"
+          android:text="@string/plaqless_intro_type_remains"
+          android:textColor="@color/white"
+          android:drawablePadding="@dimen/average_margin"
+          android:layout_marginTop="@dimen/tiny_margin"
+          android:layout_marginBottom="@dimen/tiny_margin"
+          app:drawableStartCompat="@drawable/plaqless_type_remains"/>
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="@dimen/normal_text"
+          android:text="@string/plaqless_intro_type_missed"
+          android:textColor="@color/white"
+          android:drawablePadding="@dimen/average_margin"
+          app:drawableStartCompat="@drawable/plaqless_type_missed"/>
+
+      </LinearLayout>
+
+    </RelativeLayout>
+
+    <Space
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="3"/>
+
+    <Button
+      style="@style/PlqRoundButton"
+      android:id="@+id/wake_your_brush_button"
+      android:layout_gravity="center_horizontal"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/round_button_height"
+      android:onClick="@{() -> viewModel.userClickStart()}"
+      android:text="@string/plaqless_intro_start"/>
+
+  </LinearLayout>
+
+</layout>
+

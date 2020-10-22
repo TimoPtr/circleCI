@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <Blacklist></Blacklist>
+  <Whitelist>
+    <ID>ComplexMethod:V1Game.kt$V1Game.Companion$lookup</ID>
+  </Whitelist>
+</SmellBaseline>

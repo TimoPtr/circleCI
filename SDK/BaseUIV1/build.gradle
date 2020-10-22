@@ -1,0 +1,55 @@
+/*
+ * Copyright (c) 2020 Kolibree. All rights reserved
+ *
+ * Copying this file via any medium without the prior written consent of Kolibree is strictly
+ * prohibited
+ *
+ * Proprietary and confidential
+ */
+
+apply plugin: 'com.android.library'
+
+apply from: '../buildscripts/kapt.gradle'
+
+android {
+    androidExtensions {
+        experimental = true
+    }
+
+    buildFeatures {
+        dataBinding = true
+    }
+}
+
+dependencies {
+    implementation project(path: ':base-ui')
+    implementation project(path: ':static-resources')
+    implementation project(path: ':static-resources-v1')
+
+    implementation project(path: ':commons')
+    implementation project(path: ':toothbrush-sdk')
+
+    implementation libraries.lifecycleRuntime
+    implementation libraries.lifecycleExtensions
+    implementation libraries.lifecycleReactiveStreams
+    api libraries.lifecycleJava8
+
+    // Legacy view injection
+    implementation(libraries.butterKnife) {
+        exclude group: 'com.android.support'
+    }
+
+    implementation libraries.picasso
+
+    implementation libraries.supportRecyclerView
+
+    implementation libraries.dagger
+    kapt libraries.daggerCompiler
+    kapt libraries.daggerAndroidProcessor
+    implementation libraries.daggerAndroid
+    implementation libraries.daggerAndroidSupport
+
+    testImplementation project(path: ':testing-unit-base')
+    testImplementation project(path: ':toothbrush-sdk')
+    testImplementation libraries.mockitoKotlin2
+}

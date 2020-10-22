@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!-- CardGame -->
+  <dimen name="card_game_width">248dp</dimen>
+  <dimen name="card_game_image_height">233dp</dimen>
+  <dimen name="card_game_height_container_max_height">390dp</dimen>
+</resources>

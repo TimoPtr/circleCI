@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <data>
+
+    <variable
+      name="viewModel"
+      type="com.kolibree.android.app.ui.onboarding.signup.SignUpViewModel" />
+
+    <variable
+      name="linkStyle"
+      type="com.kolibree.android.app.ui.text.TextPaintModifiers" />
+
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/sign_up_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false">
+
+    <View
+      android:id="@+id/content"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="@dimen/match_constraints"
+      android:layout_marginStart="@dimen/dot_quad"
+      android:layout_marginEnd="@dimen/dot_quad"
+      android:layout_marginBottom="@dimen/dot_double"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHeight_percent="0.85"
+      app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+      android:id="@+id/header"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:text="@string/onboarding_sign_up_header"
+      android:textAppearance="?textAppearanceHeadline2"
+      app:layout_constraintEnd_toEndOf="@id/content"
+      app:layout_constraintStart_toStartOf="@id/content"
+      app:layout_constraintTop_toTopOf="@id/content" />
+
+    <TextView
+      android:id="@+id/subtitle"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/dot_double"
+      android:text="@string/onboarding_sign_up_subtitle"
+      android:textAppearance="?textAppearanceHeadline4"
+      app:layout_constraintEnd_toEndOf="@id/content"
+      app:layout_constraintStart_toStartOf="@id/content"
+      app:layout_constraintTop_toBottomOf="@+id/header" />
+
+    <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/name_input_layout"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/dot"
+      android:enabled="@{viewModel.nameInputEnabled}"
+      android:hint="@string/onboarding_sign_up_name_hint"
+      app:error="@{viewModel.nameValidationError}"
+      app:layout_constraintEnd_toEndOf="@id/content"
+      app:layout_constraintStart_toStartOf="@id/content"
+      app:layout_constraintTop_toBottomOf="@+id/subtitle">
+
+      <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/name_input_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="@{viewModel.nameInputEnabled}"
+        android:imeOptions="actionDone"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName|textNoSuggestions"
+        android:lines="1"
+        android:text="@={viewModel.name}" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+      android:id="@+id/checkbox_subtitle"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/dot_eleven"
+      android:text="@string/onboarding_sign_up_consent_header"
+      android:textAppearance="?textAppearanceHeadline6"
+      app:layout_constraintEnd_toEndOf="@id/content"
+      app:layout_constraintStart_toStartOf="@id/content"
+      app:layout_constraintTop_toTopOf="@id/name_input_layout" />
+
+    <CheckBox
+      android:id="@+id/terms_and_conditions_checkbox"
+      style="@style/Widget.MaterialComponents.CompoundButton.CheckBox"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/onboarding_checkbox_margin_start"
+      android:checked="@={viewModel.termsAndConditionsAccepted}"
+      android:textAppearance="?textAppearanceBody2"
+      android:textColor="?android:textColorPrimary"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/checkbox_subtitle" />
+
+    <TextView
+      android:id="@+id/terms_and_conditions_part1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_quin"
+      android:text="@string/onboarding_sign_up_consent"
+      android:textAppearance="?textAppearanceBody2"
+      app:layout_constraintBaseline_toBaselineOf="@id/terms_and_conditions_checkbox"
+      app:layout_constraintStart_toStartOf="@id/terms_and_conditions_checkbox" />
+
+    <TextView
+      android:id="@+id/terms_and_conditions_part2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@{@string/sign_up_consent_format(@string/onboarding_sign_up_consent_terms_conditions_link)}"
+      android:textAppearance="?textAppearanceBody2"
+      app:layout_constraintBaseline_toBaselineOf="@id/terms_and_conditions_part1"
+      app:layout_constraintEnd_toEndOf="@+id/content"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toEndOf="@id/terms_and_conditions_part1"
+      app:linkStyle="@{linkStyle}"
+      app:linkText="@{@string/onboarding_sign_up_consent_terms_conditions_link}"
+      app:onLinkClick="@{v -> viewModel.onTermsAndConditionsLinkClick()}" />
+
+    <CheckBox
+      android:id="@+id/privacy_policy_checkbox"
+      style="@style/Widget.MaterialComponents.CompoundButton.CheckBox"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/onboarding_checkbox_margin_start"
+      android:layout_marginTop="@dimen/dot_quin"
+      android:checked="@={viewModel.privacyPolicyAccepted}"
+      android:textAppearance="?textAppearanceBody2"
+      android:textColor="?android:textColorPrimary"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/checkbox_subtitle" />
+
+    <TextView
+      android:id="@+id/privacy_policy_part1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_quin"
+      android:text="@string/onboarding_sign_up_consent"
+      android:textAppearance="?textAppearanceBody2"
+      app:layout_constraintBaseline_toBaselineOf="@+id/privacy_policy_checkbox"
+      app:layout_constraintStart_toStartOf="@+id/privacy_policy_checkbox" />
+
+    <TextView
+      android:id="@+id/privacy_policy_part2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@{@string/sign_up_consent_format(@string/onboarding_sign_up_consent_privacy_policy_link)}"
+      android:textAppearance="?textAppearanceBody2"
+      app:layout_constraintBaseline_toBaselineOf="@id/privacy_policy_part1"
+      app:layout_constraintEnd_toEndOf="@+id/content"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toEndOf="@id/privacy_policy_part1"
+      app:linkStyle="@{linkStyle}"
+      app:linkText="@{@string/onboarding_sign_up_consent_privacy_policy_link}"
+      app:onLinkClick="@{v -> viewModel.onPrivacyPolicyLinkClick()}" />
+
+    <CheckBox
+      android:id="@+id/promotions_and_updates_checkbox"
+      style="@style/Widget.MaterialComponents.CompoundButton.CheckBox"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/onboarding_checkbox_margin_start"
+      android:layout_marginTop="@dimen/dot_ten"
+      android:checked="@={viewModel.promotionsAndUpdatesAccepted}"
+      android:textAppearance="?textAppearanceBody2"
+      android:textColor="?android:textColorPrimary"
+      android:visibility="@{viewModel.promotionsOptionVisibility}"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/checkbox_subtitle" />
+
+    <TextView
+      android:id="@+id/promotions_and_updates_textview"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_quin"
+      android:text="@string/onboarding_sign_up_receive_promotions_updates"
+      android:textAppearance="?textAppearanceBody2"
+      android:visibility="@{viewModel.promotionsOptionVisibility}"
+      app:layout_constraintBaseline_toBaselineOf="@+id/promotions_and_updates_checkbox"
+      app:layout_constraintStart_toStartOf="@+id/promotions_and_updates_checkbox"
+      app:layout_constraintEnd_toEndOf="@id/content"/>
+
+    <Button
+      android:id="@+id/google_sign_up_button"
+      style="@style/Widget.Button.Google"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="@dimen/dot"
+      android:alpha="0"
+      android:enabled="@{viewModel.buttonsEnabled}"
+      android:onClick="@{v -> viewModel.onGoogleSignUpClick()}"
+      android:text="@string/onboarding_sign_up_google_button"
+      app:layout_constraintBottom_toTopOf="@id/email_sign_up_button"
+      app:layout_constraintEnd_toEndOf="@id/content"
+      app:layout_constraintStart_toStartOf="@id/content"
+      tools:alpha="1" />
+
+    <Button
+      android:id="@+id/email_sign_up_button"
+      style="@style/Widget.Button.Email"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:alpha="0"
+      android:enabled="@{viewModel.buttonsEnabled}"
+      android:onClick="@{v -> viewModel.onEmailSignUpClick()}"
+      android:text="@string/onboarding_sign_up_email_button"
+      app:layout_constraintBottom_toBottomOf="@id/content"
+      app:layout_constraintEnd_toEndOf="@id/content"
+      app:layout_constraintStart_toStartOf="@id/content"
+      tools:alpha="1" />
+
+    <com.kolibree.android.app.widget.AnimatorGroup
+      android:id="@+id/bottom_buttons"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:constraint_referenced_ids="email_sign_up_button,google_sign_up_button"
+      tools:ignore="MissingConstraints" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

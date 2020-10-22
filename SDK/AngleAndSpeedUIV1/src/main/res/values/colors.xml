@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2019 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<resources>
+  <color name="speed_background">#f0eeef</color>
+  <color name="speed_control_feedback_overspeed">#ff0000</color>
+  <color name="speed_control_feedback_underspeed">#0201ff</color>
+  <color name="speed_control_feedback_correct">@color/transparent</color>
+</resources>

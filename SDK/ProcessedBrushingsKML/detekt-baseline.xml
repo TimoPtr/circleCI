@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <Blacklist></Blacklist>
+  <Whitelist>
+    <ID>LongMethod:CheckupCalculator.kt$CheckupCalculatorImpl$calculateCheckupFromJSON</ID>
+    <ID>LongMethod:LegacyProcessedBrushing.kt$LegacyOfflineBrushingImpl.Companion$fromZonePassStartingAtCurrentInstant</ID>
+    <ID>MagicNumber:ZoneData.kt$ZoneData.Companion$10</ID>
+  </Whitelist>
+</SmellBaseline>

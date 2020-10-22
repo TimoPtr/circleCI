@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<resources>
+  <drawable name="push_notification_icon">@drawable/ic_colgate_push_notification</drawable>
+  <color name="push_notification_color">@color/red</color>
+</resources>

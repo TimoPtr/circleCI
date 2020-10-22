@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "570632669786",
+    "firebase_url": "https://fir-kolibree.firebaseio.com",
+    "project_id": "firebase-kolibree",
+    "storage_bucket": "firebase-kolibree.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:570632669786:android:a62a26c18f21e547e3a663",
+        "android_client_info": {
+          "package_name": "com.colgate.colgateconnect.debug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "570632669786-0rur6bufpvv4gniholr31hu0h9dv5sd1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMlLIegqMwnhjqGyZaldeLwjZVPoU21ko"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "570632669786-283m30f6vsv4e68us7g4dd9aqs28o8lh.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "570632669786-agefkhfso4bojeptp4tlgnce47ks2rbd.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.colgate.colgateconnect"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

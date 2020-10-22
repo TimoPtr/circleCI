@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="medium_text">14sp</dimen>
+    <dimen name="big_text">16dp</dimen>
+    <dimen name="xxbig_text">22dp</dimen>
+
+    <!-- Buttons -->
+    <dimen name="round_button_height">50dp</dimen>
+    <dimen name="round_button_radius">24dp</dimen>
+    <dimen name="round_button_width">280dp</dimen>
+
+    <dimen name="elevation_low">1dp</dimen>
+
+    <!--WELCOME-->
+    <dimen name="welcome_margin">30dp</dimen>
+    <dimen name="welcome_birthday_input_padding_vertical">4dp</dimen>
+    <dimen name="welcome_birthday_input_padding_horizontal">8dp</dimen>
+    <dimen name="welcome_birthday_input_separation">5dp</dimen>
+    <dimen name="welcome_birthday_input_bg_radius">5dp</dimen>
+
+    <dimen name="title_padding">20dp</dimen>
+
+
+</resources>

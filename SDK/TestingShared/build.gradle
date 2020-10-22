@@ -1,0 +1,49 @@
+apply plugin: 'com.android.library'
+
+android {
+    defaultPublishConfig "debug"
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+}
+
+dependencies {
+    implementation project(path: ':features')
+    implementation project(path: ':network')
+    api project(path: ':commons')
+    api project(path: ':tracker-domain')
+    api libraries.supportAnnotations
+    api libraries.supportTestRunner
+
+    api libraries.architectureCoreTesting
+    api libraries.liveDataTesting
+    api libraries.lifecycleJava8
+
+    api libraries.timber
+
+    compileOnly libraries.dagger
+    compileOnly libraries.roomRuntime
+    compileOnly libraries.threetenAbp
+
+    api libraries.junit
+
+    api libraries.gson
+
+    api libraries.rxJava
+    api libraries.rxAndroid
+    implementation libraries.rxRelay
+
+    api libraries.mockitoKotlin2
+
+    api libraries.roomTesting
+
+    implementation libraries.retrofit
+
+    compileOnly libraries.mockWebServer
+    compileOnly libraries.retrofitMock
+    compileOnly libraries.retrofitGsonConverter
+    compileOnly libraries.retrofitRxJavaAdapter
+}

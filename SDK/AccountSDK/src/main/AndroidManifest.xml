@@ -1,0 +1,11 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.kolibree.account">
+  
+    <application>
+    <service
+        android:exported="true"
+        android:name="com.kolibree.account.eraser.ClearUserContentJobService"
+        android:permission="android.permission.BIND_JOB_SERVICE"/>
+
+    </application>
+</manifest>

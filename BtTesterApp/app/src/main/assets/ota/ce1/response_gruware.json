@@ -1,0 +1,19 @@
+{
+  "gru": {
+    "gru": "1.0.6",
+    "crc16": null,
+    "filename": "ota/ce1/gru_data_ce1_1.0.6_fast_updater_package.bin",
+    "beta": true,
+    "link": "ota/ce1/gru_data_ce1_1.0.6_fast_updater_package.bin",
+    "crc32": null
+  },
+  "bootloader": {},
+  "fw": {
+    "crc16": null,
+    "fw": "1.18.0",
+    "filename": "ota/ce1/Connect_E1_HW_0x00020005_FW_0x01120000_fast_updater_package.bin",
+    "beta": true,
+    "link": "ota/ce1/Connect_E1_HW_0x00020005_FW_0x01120000_fast_updater_package.bin",
+    "crc32": null
+  }
+}

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <data>
+
+    <import type="android.view.View" />
+
+    <variable
+      name="item"
+      type="com.kolibree.android.app.ui.home.tab.profile.card.lifetimestats.LifetimeStatsCardBindingModel" />
+
+    <variable
+      name="interaction"
+      type="com.kolibree.android.app.ui.home.tab.profile.card.lifetimestats.LifetimeStatsCardInteraction" />
+
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dot">
+
+    <com.google.android.material.card.MaterialCardView
+      style="?materialCardViewStyle"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_double"
+      android:layout_marginTop="@dimen/dot_double"
+      android:layout_marginEnd="@dimen/dot_double"
+      app:cardUseCompatPadding="true"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent">
+
+      <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_margin="@dimen/dot_trip">
+
+          <TextView
+            android:id="@+id/stats_card_current_points"
+            android:layout_width="@dimen/match_constraints"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dot_nine"
+            android:text="@{item.formatCurrentPoints(context)}"
+            android:textAppearance="?textAppearanceHeadline4"
+            android:textColor="?android:textColorPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="50 current points" />
+
+          <TextView
+            android:id="@+id/stats_card_lifetime_points"
+            android:layout_width="@dimen/match_constraints"
+            android:layout_height="wrap_content"
+            android:text="@{item.formatLifetimePoints(context)}"
+            android:textAppearance="?textAppearanceCaption"
+            android:textColor="?android:textColorSecondary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/stats_card_current_points"
+            app:layout_constraintTop_toBottomOf="@id/stats_card_current_points"
+            tools:text="@string/profile_stats_card_keep_earning_points" />
+
+          <ImageView
+            android:id="@+id/stats_card_points_drawable"
+            android:layout_width="@dimen/standard_touch_size"
+            android:layout_height="@dimen/match_constraints"
+            android:minWidth="@dimen/standard_touch_size"
+            android:minHeight="@dimen/standard_touch_size"
+            android:paddingTop="@dimen/dot_half"
+            android:scaleType="fitStart"
+            android:src="@drawable/ic_stats_card_earning_points_icon"
+            app:layout_constraintBottom_toBottomOf="@id/stats_card_lifetime_points"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/stats_card_current_points" />
+
+          <View
+            android:id="@+id/stats_card_separator"
+            android:layout_width="@dimen/match_constraints"
+            android:layout_height="@dimen/divider_thickness"
+            android:layout_marginTop="@dimen/dot_trip"
+            android:background="?backgroundColor"
+            android:visibility="@{item.inAppStatsVisibity}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/stats_card_points_drawable" />
+
+          <ImageView
+            android:id="@+id/stats_card_no_brushings_icon"
+            android:layout_width="@dimen/dot_ten"
+            android:layout_height="@dimen/dot_ten"
+            android:src="@drawable/ic_stats_card_brush_icon"
+            android:visibility="@{item.inAppStatsVisibity}"
+            app:layout_constraintBottom_toBottomOf="@id/stats_card_inapp_label"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/stats_card_offline_value" />
+
+          <com.kolibree.android.app.ui.home.tab.profile.card.lifetimestats.LifetimeStatsChartView
+            android:id="@+id/stats_card_brushings_chart"
+            android:layout_width="@dimen/dot_ten"
+            android:layout_height="@dimen/dot_ten"
+            android:visibility="@{item.brushingsChartVisibility}"
+            app:in_app_stats="@{item.data.inAppCount}"
+            app:layout_constraintBottom_toBottomOf="@id/stats_card_inapp_label"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/stats_card_offline_value"
+            app:offline_stats="@{item.data.offlineCount}" />
+
+          <ImageView
+            android:id="@+id/stats_card_offline_rectangle"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/match_constraints"
+            android:layout_marginStart="@dimen/dot_thirteen"
+            android:src="@drawable/ic_stats_card_rectangle"
+            android:visibility="@{item.inAppStatsVisibity}"
+            app:layout_constraintBottom_toBottomOf="@id/stats_card_offline_label"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/stats_card_offline_value"
+            app:tint="?offlineBrushingsColor" />
+
+          <TextView
+            android:id="@+id/stats_card_offline_value"
+            android:layout_width="@dimen/match_constraints"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dot_double"
+            android:layout_marginTop="@dimen/dot_trip"
+            android:text="@{item.formatOfflineCount(context)}"
+            android:textAppearance="?textAppearanceSubtitle2"
+            android:textColor="?android:textColorPrimary"
+            android:visibility="@{item.inAppStatsVisibity}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/stats_card_offline_rectangle"
+            app:layout_constraintTop_toBottomOf="@id/stats_card_separator"
+            tools:text="00 Offline Brushing" />
+
+          <TextView
+            android:id="@+id/stats_card_offline_label"
+            android:layout_width="@dimen/match_constraints"
+            android:layout_height="wrap_content"
+            android:text="@string/profile_stats_card_offline_label"
+            android:textAppearance="?textAppearanceCaption"
+            android:textColor="?android:textColorSecondary"
+            android:visibility="@{item.inAppStatsVisibity}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/stats_card_offline_value"
+            app:layout_constraintTop_toBottomOf="@id/stats_card_offline_value" />
+
+          <ImageView
+            android:id="@+id/stats_card_inapp_rectangle"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/match_constraints"
+            android:src="@drawable/ic_stats_card_rectangle"
+            android:visibility="@{item.inAppStatsVisibity}"
+            app:layout_constraintBottom_toBottomOf="@id/stats_card_inapp_label"
+            app:layout_constraintStart_toStartOf="@id/stats_card_offline_rectangle"
+            app:layout_constraintTop_toTopOf="@id/stats_card_inapp_value"
+            app:tint="?inAppBrushingsColor" />
+
+          <TextView
+            android:id="@+id/stats_card_inapp_value"
+            android:layout_width="@dimen/match_constraints"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dot_double"
+            android:text="@{item.formatInAppCount(context)}"
+            android:textAppearance="?textAppearanceSubtitle2"
+            android:textColor="?android:textColorPrimary"
+            android:visibility="@{item.inAppStatsVisibity}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/stats_card_offline_value"
+            app:layout_constraintTop_toBottomOf="@id/stats_card_offline_label"
+            tools:text="00 In-app Brushing" />
+
+          <TextView
+            android:id="@+id/stats_card_inapp_label"
+            android:layout_width="@dimen/match_constraints"
+            android:layout_height="wrap_content"
+            android:text="@string/profile_stats_card_inapp_label"
+            android:textAppearance="?textAppearanceCaption"
+            android:textColor="?android:textColorSecondary"
+            android:visibility="@{item.inAppStatsVisibity}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/stats_card_inapp_value"
+            app:layout_constraintTop_toBottomOf="@id/stats_card_inapp_value" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <include
+          android:id="@+id/loading_overlay"
+          layout="@layout/item_card_loading_overlay"
+          android:visibility="@{item.showLoading() ? View.VISIBLE : View.GONE}"
+          tools:visibility="gone" />
+
+      </FrameLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

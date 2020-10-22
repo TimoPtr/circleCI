@@ -1,0 +1,17 @@
+{
+  "gru": {},
+  "bootloader": {
+    "beta": true,
+    "bootloader": "2.2.4",
+    "link": "ota/kltb003/pmm-bootloader-cm1-2.2.4.zip",
+    "filename": "ota/kltb003/pmm-bootloader-cm1-2.2.4.zip"
+  },
+  "fw": {
+    "crc16": null,
+    "fw": "1.4.12",
+    "filename": "ota/kltb003/pmm-cm1-1.4.11-gru_data_cm1_1.0.2.zip",
+    "beta": true,
+    "link": "ota/kltb003/pmm-cm1-1.4.11-gru_data_cm1_1.0.2.zip",
+    "crc32": null
+  }
+}

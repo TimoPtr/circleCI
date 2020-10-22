@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <data>
+
+    <variable
+      name="binding"
+      type="com.kolibree.android.app.ui.home.tab.home.card.rewardyourself.RewardYourselfItemBinding" />
+
+    <variable
+      name="interaction"
+      type="com.kolibree.android.app.ui.home.tab.home.card.rewardyourself.RewardYourselfCardInteraction" />
+
+  </data>
+
+  <androidx.cardview.widget.CardView
+    android:layout_width="@dimen/reward_yourself_item_width"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dot"
+    android:clickable="true"
+    android:elevation="@dimen/dot_half"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:onClick="@{(v) -> interaction.onItemClick(binding.item)}"
+    app:cardCornerRadius="@dimen/dot"
+    tools:theme="@style/AppTheme">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_double"
+      android:layout_marginTop="@dimen/dot_trip"
+      android:layout_marginEnd="@dimen/dot_double"
+      android:layout_marginBottom="@dimen/dot_trip">
+
+      <ImageView
+        android:id="@+id/reward_yourself_item_icon"
+        android:layout_width="@dimen/match_constraints"
+        android:layout_height="@dimen/reward_yourself_icon_height"
+        app:imageUrl="@{binding.item.imageUrl}"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:scaleType="fitXY"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+      <TextView
+        android:id="@+id/reward_yourself_item_title"
+        android:layout_width="@dimen/match_constraints"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dot_double"
+        android:gravity="center"
+        android:text="@{binding.item.name}"
+        android:textAppearance="?textAppearanceSubtitle2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reward_yourself_item_icon"
+        tools:text="3 Pack brush \n heads" />
+
+      <TextView
+        android:id="@+id/reward_yourself_item_body"
+        android:layout_width="@dimen/match_constraints"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dot_half"
+        android:gravity="center"
+        android:text="@{binding.formatPriceAndPoints(context)}"
+        android:textAppearance="?textAppearanceCaption"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reward_yourself_item_title"
+        tools:text="$13.65 /  1365 points" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+  </androidx.cardview.widget.CardView>
+
+</layout>

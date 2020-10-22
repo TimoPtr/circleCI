@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="5" by="lint 4.0.0" client="gradle" variant="debug" version="4.0.0">
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public abstract class BaseDaggerFragment extends BaseFragment {"
+        errorLine2="                      ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/app/ui/fragment/BaseDaggerFragment.java"
+            line="13"
+            column="23"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public abstract class BaseHomeAsUpActivity extends BaseActivity {"
+        errorLine2="                      ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/app/ui/activity/BaseHomeAsUpActivity.java"
+            line="6"
+            column="23"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public @interface FragmentScope {}"
+        errorLine2="                  ~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/app/dagger/scopes/FragmentScope.java"
+            line="13"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public class TextDrawable extends ShapeDrawable {"
+        errorLine2="             ~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/app/utils/TextDrawable.java"
+            line="17"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="  public interface IConfigBuilder {"
+        errorLine2="                   ~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/app/utils/TextDrawable.java"
+            line="145"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="  public interface IBuilder {"
+        errorLine2="                   ~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/app/utils/TextDrawable.java"
+            line="168"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="  public interface IShapeBuilder {"
+        errorLine2="                   ~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/app/utils/TextDrawable.java"
+            line="173"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="  public static class Builder implements IConfigBuilder, IShapeBuilder, IBuilder {"
+        errorLine2="                      ~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/app/utils/TextDrawable.java"
+            line="190"
+            column="23"/>
+    </issue>
+
+    <issue
+        id="ObsoleteSdkInt"
+        message="Unnecessary; SDK_INT is never &lt; 23"
+        errorLine1="    if (Build.VERSION.SDK_INT &lt; Build.VERSION_CODES.M) {"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/app/ui/fragment/BaseDaggerFragment.java"
+            line="20"
+            column="9"/>
+    </issue>
+
+</issues>

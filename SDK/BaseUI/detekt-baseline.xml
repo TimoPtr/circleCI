@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <Blacklist></Blacklist>
+  <Whitelist>
+    <ID>ComplexMethod:RoundedBarChartRenderer.kt$RoundedBarChartRenderer$drawDataSet</ID>
+    <ID>ComplexMethod:RoundedBarChartRenderer.kt$RoundedBarChartRenderer$drawHighlighted</ID>
+    <ID>LongMethod:RoundedBarChartRenderer.kt$RoundedBarChartRenderer$drawDataSet</ID>
+    <ID>LongMethod:RoundedBarChartRenderer.kt$RoundedBarChartRenderer$drawHighlighted</ID>
+    <ID>MagicNumber:RoundedBarChartRenderer.kt$RoundedBarChartRenderer$3</ID>
+    <ID>MagicNumber:RoundedBarChartRenderer.kt$RoundedBarChartRenderer$4</ID>
+    <ID>SwallowedException:BaseDaggerJobServiceTest.kt$BaseDaggerJobServiceTest$catch (re: RuntimeException) { // ignore. Thrown because we invoke a non-stubbed android class }</ID>
+  </Whitelist>
+</SmellBaseline>

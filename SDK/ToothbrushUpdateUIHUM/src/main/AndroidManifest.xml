@@ -1,0 +1,20 @@
+<!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.kolibree.android.app.ui.ota" >
+
+  <application>
+
+    <activity
+      android:name="com.kolibree.android.app.ui.ota.OtaUpdateActivity"
+      android:theme="@style/AppTheme.Light"
+      android:screenOrientation="portrait"/>
+  </application>
+</manifest>

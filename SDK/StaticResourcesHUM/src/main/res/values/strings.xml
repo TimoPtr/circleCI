@@ -1,0 +1,1041 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="bottom_navigation_home">"Home"</string>
+    <string name="bottom_navigation_activities">"Activities"</string>
+    <string name="bottom_navigation_shop">"Shop"</string>
+    <string name="settings_help_title">"Help"</string>
+    <string name="guided_brushing_title">"guided brushing"</string>
+    <string name="guided_brushing_start_message">"Turn on brush and get to brushing! "</string>
+    <string name="guided_brushing_timer_subtitle">"Total brushing time"</string>
+    <string name="guided_brushing_legend_clean">"Clean"</string>
+    <string name="guided_brushing_legend_missed">"Missed"</string>
+    <string name="guided_brushing_legend_brushing_segment">"Brushing segment"</string>
+    <string name="ok">"OK"</string>
+    <string name="something_went_wrong">"Something went wrong. Please try again later."</string>
+    <string name="settings_section_brushing_details_title">"%1$s's brusher details"</string>
+    <string name="settings_first_name">"first name"</string>
+    <string name="dialog_lost_connection_title">"connection lost"</string>
+    <string name="dialog_lost_connection_description">"The connection with your toothbrush has been lost.
+Wait for it to reconnect or restart your brushing session later."</string>
+    <string name="dialog_lost_connection_quit_button">"Quit (and start again later)"</string>
+    <string name="cart_undo_title">"Product deleted!"</string>
+    <string name="cart_undo_action_title">"UNDO"</string>
+    <string name="shop_web_payment_dialog_title">"Are you sure?"</string>
+    <string name="shop_web_payment_dialog_content">"Quitting this page will cancel the on-going purchase"</string>
+    <string name="shop_web_payment_dialog_positive">"Yes"</string>
+    <string name="shop_web_payment_dialog_negative">"No"</string>
+    <string name="shop_points">"%s Points"</string>
+    <string name="cart_use_smile_points">"Use my %s points (-%s)"</string>
+    <string name="shipment_taxes_estimation">"Estimate your shipment and taxes"</string>
+    <string name="shop_discount_amount">"Save %s"</string>
+    <string name="checkout_toolbar_title">"Shopping Cart"</string>
+    <string name="cart_tolbar_title">"my shopping cart"</string>
+    <string name="form_shipping_city_hint">"City"</string>
+    <string name="form_shipping_city_helper">"ex. New York City"</string>
+    <string name="form_shipping_postal_code_hint">"Postal Code"</string>
+    <string name="form_shipping_postal_code_helper">"ex. 11375"</string>
+    <string name="form_shipping_country_hint">"Country"</string>
+    <string name="form_billing_same_as_shipping_title">"Billing Same as the Shipping Address"</string>
+    <string name="form_billing_details_title">"Billing details"</string>
+
+    <!-- Fuzzy -->
+    <string name="form_shipping_first_name_hint">"Name"</string>
+    <string name="form_shipping_address_hint">"Address"</string>
+    <string name="form_shipping_address_helper">"ex. 70–10 Gordon St."</string>
+    <string name="cart_proceed_payment">"Proceed to payment"</string>
+    <string name="cart_empty_title">"your cart is empty"</string>
+    <string name="cart_empty_subtitle">"Start browsing our shop, motivational message here"</string>
+    <string name="cart_visit_shop">"Visit our shop"</string>
+    <string name="cart_total_title">"estimated total"</string>
+    <string name="cart_buy_another_method">"Use another payment method"</string>
+    <string name="shop_discount_caption">"using our points at checkout!"</string>
+    <string name="shop_no_products">"No products are available"</string>
+    <string name="cart_smiles_discount_applied">"Points applied discount"</string>
+    <string name="cart_sub_total">"Subtotal"</string>
+    <string name="form_shipping_address_title">"Shipping address"</string>
+    <string name="please_wait">"Please wait"</string>
+    <string name="shipping_billing_title">"shipping and billing"</string>
+    <string name="shop_web_payment_toolbar_title">"Checkout"</string>
+    <string name="frequency_card_title">"frequency chart"</string>
+    <string name="dialog_test_brushing_body">"Before you embark on your rewarding (literally) journey to better oral health, it’s important to see how you’re brushing naturally."</string>
+
+    <!-- Please remember that this string needs to contain `dialog_test_brushing_headline_highlight` (like trailing fullstop) - otherwise highlight won't be rendered -->
+    <string name="dialog_test_brushing_headline">"Skip the guesswork, and get the facts."</string>
+    <string name="dialog_test_brushing_headline_highlight">"."</string>
+    <string name="dialog_test_brushing_start_button">"START TEST BRUSHING"</string>
+    <string name="dialog_test_brushing_remind_later_button">"Remind me later, please"</string>
+    <string name="guided_brushing_no_feedback">"You’re doing great, keep going!"</string>
+    <string name="settings_item_delete_account">"Delete account"</string>
+    <string name="guided_brushing_wrong_zone_feedback">"Check your zone"</string>
+    <string name="guided_brushing_too_fast_feedback">"You're brushing too fast!"</string>
+    <string name="guided_brushing_too_slow_feedback">"You're brushing too slow!"</string>
+
+    <!-- Fuzzy -->
+    <string name="guided_brushing_wrong_angle_feedback">"Tilt your brush 45 degrees"</string>
+
+    <!-- Please remember that this string needs to contain `guided_brushing_start_screen_headline_highlight` (like trailing fullstop) - otherwise highlight won't be rendered -->
+    <string name="guided_brushing_start_screen_headline">"Guided brushing gives you the best brush possible."</string>
+    <string name="guided_brushing_start_screen_headline_highlight">"."</string>
+    <string name="guided_brushing_start_screen_body">"Guided brushing coaches you to achieve your best brush.
+
+For optimal results, we recommend that you keep your phone at eye level for this activity."</string>
+    <string name="guided_brushing_start_screen_no_more_smiles">"Earn 2 points every time you play, and up to 6 points a day!"</string>
+    <string name="guided_brushing_start_screen_start_button">"LET’S START"</string>
+    <string name="cancel">"Cancel"</string>
+    <string name="settings_vibration_levels">"Brushing program"</string>
+    <string name="brushing_sync_progress_text">"syncing brushing sessions: %d%%"</string>
+    <string name="brushing_quiz_label">"Brushing program"</string>
+    <string name="brushing_quiz_steps_counter">"STEP %1$s OF %2$s"</string>
+    <string name="brushing_quiz_screen_1_title">"how would you rate your current 
+
+oral care routine?"</string>
+    <string name="brushing_quiz_screen_1_answer_1">"Pretty good"</string>
+    <string name="brushing_quiz_screen_1_answer_2">"Average"</string>
+    <string name="brushing_quiz_screen_1_answer_3">"Could be improved"</string>
+    <string name="brushing_quiz_screen_2_title">"how often do you suffer with 
+
+gum or tooth sensitivity? "</string>
+    <string name="brushing_quiz_screen_2_answer_1">"Not often"</string>
+    <string name="brushing_quiz_screen_2_answer_2">"Often"</string>
+    <string name="brushing_quiz_screen_3_answer_1">"Whiter teeth"</string>
+    <string name="brushing_quiz_screen_3_answer_2">"Fresher breath"</string>
+    <string name="brushing_quiz_screen_3_answer_3">"Protect sensitive teeth or gums"</string>
+    <string name="brushing_quiz_screen_3_title">"what would you most want
+
+to work on today?"</string>
+    <string name="brushing_quiz_screen_2_answer_3">"Daily"</string>
+    <string name="brushing_quiz_confirmation_title">"QUIZ COMPLETED"</string>
+    <string name="brushing_quiz_program_whitening">"deep clean."</string>
+    <string name="brushing_quiz_program_sensitive">"sensitive."</string>
+    <string name="brushing_quiz_program_everyday_care">"normal."</string>
+    <string name="brushing_quiz_confirmation_brushing_program">"CONFIRM PROGRAM"</string>
+    <string name="brushing_quiz_confirmation_try_it">"Try it now"</string>
+    <string name="brushing_quiz_confirmation_confirm">"Confirm program"</string>
+    <string name="brushing_quiz_screen_1_answer_1_hint">"I brush 2 minutes, at least 2 times a day"</string>
+    <string name="brushing_quiz_screen_1_answer_2_hint">"I brush 2 minutes, at least 1 time a day"</string>
+    <string name="brushing_quiz_screen_1_answer_3_hint">"I brush 1 minute, at least 1 time a day"</string>
+    <string name="brushing_quiz_screen_2_answer_1_hint">"Almost never"</string>
+    <string name="brushing_quiz_screen_2_answer_2_hint">"Once or twice a week"</string>
+    <string name="brushing_quiz_screen_2_answer_3_hint">"At least once a day"</string>
+    <string name="brushing_quiz_screen_3_answer_1_hint">"Strongest vibration"</string>
+    <string name="brushing_quiz_screen_3_answer_2_hint">"Medium vibration"</string>
+    <string name="brushing_quiz_screen_3_answer_3_hint">"Lowest vibration"</string>
+    <string name="settings_item_guided_brushing">"Guided brushing settings"</string>
+    <string name="gb_settings_toolbar_title">"guided brushing"</string>
+    <string name="gb_settings_header1">"general"</string>
+    <string name="gb_settings_brushing_movement">"Display brushing movements"</string>
+    <string name="gb_settings_help_texts">"Display help texts"</string>
+    <string name="gb_settings_header2">"Sounds"</string>
+    <string name="gb_settings_music">"Music"</string>
+    <string name="gb_settings_transition_sound">"Transition sounds"</string>
+    <string name="gb_settings_choose_music">"Choose music"</string>
+
+    <!-- The dot at the end of the translation need to stay for the higlight -->
+    <string name="checkup_your_results">"your results."</string>
+    <string name="checkup_brushing_summary">"brushing summary"</string>
+    <string name="save_changes">"Save Changes"</string>
+
+    <!-- Fuzzy -->
+    <string name="unknown">"Not set"</string>
+    <string name="email">"email"</string>
+    <string name="brushing_streak_accept_challenge">"Accept Challenge"</string>
+    <string name="brushing_quiz_your_program">"your brushing program is"</string>
+    <string name="brushing_quiz_reset">"Reset to default"</string>
+    <string name="brushing_quiz_toolbar_title">"brushing program"</string>
+    <string name="brushing_quiz_confirmation_try_it_not_paired">"You must have a smart toothbrush connected to your device to test the program"</string>
+    <string name="quiz_confirmation_title">"QUIZ COMPLETED"</string>
+    <string name="quiz_program_whitening">"deep clean"</string>
+    <string name="quiz_program_sensitive">"sensitive"</string>
+    <string name="quiz_program_everyday_care">"normal"</string>
+
+    <!-- Fuzzy -->
+    <string name="settings_weekly_digest_title">"Receive my weekly review"</string>
+
+    <!-- Fuzzy -->
+    <string name="settings_weekly_digest_description">"Yes, please send my review"</string>
+    <string name="settings_get_my_data">"Get my data"</string>
+    <string name="quiz_confirmation_brushing_program">"CONFIRM PROGRAM"</string>
+
+    <!-- Fuzzy -->
+    <string name="checkup_manual_brushing_placeholder">"Use a smart toothbrush to get results"</string>
+    <string name="checkup_manual_brushing_end">"Finish tutorial"</string>
+
+    <!-- Fuzzy -->
+    <string name="settings_share_your_data_title">"Get the most out of your data"</string>
+
+    <!-- Fuzzy -->
+    <string name="settings_share_your_data_description">"Help us improve the accuracy of the motion sensors by sending us your brushing data anonymously"</string>
+    <string name="tb_settings_toolbar_title">"Brush details"</string>
+    <string name="tb_settings_connect_new_tb">"Connect a New Brush"</string>
+    <string name="tb_settings_connected">"%s connected"</string>
+    <string name="tb_settings_last_sync">"Last sync: %s"</string>
+    <string name="tb_settings_last_sync_never">"never"</string>
+    <string name="tb_settings_last_sync_today">"today"</string>
+
+    <!-- Please remember that this string needs to contain `checkup_headline_highlight` (like trailing fullstop) - otherwise highlight won't be rendered -->
+    <string name="checkup_see_how_you_did">"see how you did."</string>
+    <string name="checkup_headline_highlight">"."</string>
+    <string name="pairing_start_title">"Ready for a real connection?"</string>
+    <string name="pairing_start_body">"Connect your brush to get access to your data, see how you really brush, and get rewarded for your hard work!"</string>
+    <string name="pairing_start_connect">"Connect my brush now"</string>
+    <string name="pairing_start_shop">"Shop toothbrushes"</string>
+    <string name="tb_settings_brush_details_header">"brush details"</string>
+    <string name="tb_settings_brush_details_model">"toothbrush model"</string>
+    <string name="tb_settings_brush_details_serial">"serial number"</string>
+    <string name="tb_settings_brush_details_mac">"mac address"</string>
+    <string name="tb_settings_brush_details_firmware">"firmware version"</string>
+    <string name="tb_settings_brush_details_hardware">"hardware version"</string>
+    <string name="tb_settings_brush_details_bootloader">"bootloader version"</string>
+    <string name="tb_settings_identify">"Identify"</string>
+    <string name="tb_settings_blink">"Make your brush blink"</string>
+    <string name="settings_brushing_time">"Brushing Time"</string>
+    <plurals name="settings_brushing_time_format_minutes">
+        <item quantity="one">"%d minute"</item>
+        <item quantity="other">"%d minutes"</item>
+    </plurals>
+    <plurals name="settings_brushing_time_format_seconds">
+        <item quantity="one">"%02d second"</item>
+        <item quantity="other">"%02d seconds"</item>
+    </plurals>
+    <string name="settings_brushing_time_minutes_label">"minutes"</string>
+    <string name="settings_brushing_time_seconds_label">"seconds"</string>
+    <string name="settings_share_your_data_learn_more">"Learn more"</string>
+    <string name="tb_settings_battery_level">"Battery Level"</string>
+    <string name="tb_settings_brush_condition_header">"Brush condition"</string>
+
+    <!-- Smile points toolbox subtitle displayed on home screen -->
+    <string name="toolbox_home_smile_points_subtitle">"Here's how smile points work:"</string>
+
+    <!-- Smile points toolbox title displayed on home screen -->
+    <string name="toolbox_home_smile_points_title">"We reward you for daily improvement"</string>
+
+    <!-- Is this the earning points info box? -->
+    <!-- Smile points toolbox body displayed on home screen -->
+    <string name="toolbox_home_smile_points_body">"You earned 100 smile points by downloading this app. Your awesome brushing reign now begins!
+
+Every 100 smile points earned equals $1 that can be redeemed in the shop for refills, new brushes, and more. Use your points at any time, no red tape."</string>
+
+    <!-- Toolbox details button used on all toolboxes -->
+    <string name="toolbox_details_button">"Learn more"</string>
+
+    <!-- Toolbox confirm button used on all toolboxes -->
+    <string name="toolbox_confirm_button">"Got it"</string>
+    <string name="tb_settings_battery_level_days">"few days"</string>
+    <string name="tb_settings_battery_level_weeks">"few weeks"</string>
+    <string name="tb_settings_battery_level_6_months">"more than 2 months"</string>
+    <string name="tb_settings_battery_level_3_months">"more than 1 month"</string>
+
+    <!-- Test brushing toolbox subtitle displayed on home screen -->
+    <string name="toolbox_home_test_brushing_subtitle">"ABOUT TEST BRUSHING"</string>
+
+    <!-- Test brushing toolbox title displayed on home screen -->
+    <string name="toolbox_home_test_brushing_title">"Insights into how you really brush"</string>
+
+    <!-- Test brushing toolbox body displayed on home screen -->
+    <string name="toolbox_home_test_brushing_body">"The way you brush your teeth is as unique as your fingerprints. Your results show exactly where you brushed and where you missed."</string>
+
+    <!-- Brushing activities toolbox subtitle displayed on home screen -->
+    <string name="toolbox_home_brushing_activities_subtitle">"ALL ABOUT BRUSHING ACTIVITIES"</string>
+
+    <!-- Brushing activities toolbox title displayed on home screen -->
+    <string name="toolbox_home_brushing_activities_title">"Brushing your way"</string>
+
+    <!-- Brushing activities toolbox body displayed on home screen -->
+    <string name="toolbox_home_brushing_activities_body">"You don't always have to brush with your app open to keep track of your progress. But, brushing with the app helps you improve your brushing in real time with activities like…"</string>
+
+    <!-- Frequency chart toolbox subtitle displayed on home screen -->
+    <string name="toolbox_home_frequency_chart_subtitle">"What's a Frequency Chart?"</string>
+
+    <!-- Frequency chart toolbox title displayed on home screen -->
+    <string name="toolbox_home_frequency_chart_title">"Earn smile points every time you brush."</string>
+
+    <!-- Frequency chart toolbox subtitle displayed on home screen -->
+    <string name="toolbox_home_frequency_chart_body">"Keep track of all the points you earn here, on your Frequency Chart"</string>
+
+    <!-- App will redirect the user to this link after tapping on learn more -->
+    <string name="toolbox_home_smile_points_details_url">"https://colgateconnect.zendesk.com/hc/en-us/articles/360014152960/preview/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MzYwMDE0MTUyOTYwLCJleHAiOjE1OTEwMTA4MDB9.9f2p0zNIhJiP9NN8VZ9ojUQ3giPdmVbrWs0pcCYzUfA"</string>
+    <string name="settings_born_header">"Birthday"</string>
+    <string name="guided_brushing_mouth_map_left">"L"</string>
+    <string name="guided_brushing_mouth_map_right">"R"</string>
+    <string name="guided_brushing_pause_menu_header">"Pause"</string>
+    <string name="guided_brushing_pause_menu_resume_button">"Resume"</string>
+    <string name="guided_brushing_pause_menu_restart_button">"Restart"</string>
+    <string name="guided_brushing_pause_menu_quit_button">"Quit"</string>
+    <string name="tb_settings_head_condition_header">"Brush head condition"</string>
+    <string name="tb_settings_head_condition_reset_counter">"Reset counter"</string>
+    <string name="tb_settings_head_condition_buy_new">"Buy new"</string>
+    <string name="tb_settings_head_condition_last_replaced_date">"Last replaced on %s"</string>
+    <string name="tb_settings_head_condition_good">"Good"</string>
+    <string name="tb_settings_head_condition_getting_older">"Getting older"</string>
+    <string name="tb_settings_head_condition_needs_replacing">"Needs replacing"</string>
+    <string name="test_brushing_paused_headline">"Did you know: Most people miss 40% of their teeth when brushing. Let's see how you did!"</string>
+    <string name="test_brushing_paused_continue_button">"WAIT! I WASN'T FINISHED!"</string>
+    <string name="test_brushing_paused_complete_button">"See my results"</string>
+    <string name="test_brushing_paused_headline_highlight">"."</string>
+    <string name="test_brushing_ongoing_turn_off">"When you’re done, 
+just turn off the brush."</string>
+    <string name="test_brushing_start_brushing_header">"start brushing normally and turn your brush off when done."</string>
+    <string name="test_brushing_start_brushing_highlight">"."</string>
+    <string name="orphan_brushings_delete_title">"Are you sure?"</string>
+    <string name="orphan_brushings_delete_message">"Do you really want to delete these brushings? This action is irreversible."</string>
+    <string name="um_no">"No"</string>
+    <string name="um_yes">"Yes"</string>
+    <string name="last_brushing_card_brushing_description">"%s %s at %s"</string>
+    <string name="last_brushing_card_offline_brushing">"Offline brushing"</string>
+    <string name="last_brushing_card_guided_brushing">"Guided brushing"</string>
+    <string name="activities_task_points">"+%s pts"</string>
+    <string name="activities_task_test_brushing_title">"What's your brushing style?"</string>
+    <string name="activities_task_test_brushing_description">"Missing a spot - or two, or three? Racing through it? Let's test how you brush."</string>
+    <string name="activities_task_speed_title">"Mind your speed"</string>
+    <string name="activities_task_speed_description">"Not too slow, not too fast. Find the speed that's just right for cleaner smiles."</string>
+    <string name="activities_task_angle_title">"Adjust your angles"</string>
+    <string name="activities_task_angle_description">"Angle to fight plaque and brush your best."</string>
+    <plurals name="earning_points_subtitle">
+        <item quantity="one">"You earn %1$d point every time you brush."</item>
+        <item quantity="other">"You earn %1$d points every time you brush."</item>
+    </plurals>
+    <string name="last_brushing_card_no_brushing">"No brushing session recorded"</string>
+    <string name="profile_stats_card_current_points">"%d current points"</string>
+    <string name="profile_stats_card_keep_earning_points">"Keep earning points and save more!"</string>
+    <string name="profile_stats_card_offline_value">"%s Offline brushing"</string>
+    <string name="profile_stats_card_inapp_value">"%s In-app brushing"</string>
+    <string name="change_avatar_error_take_picture_result_not_ok">"Something went wrong when taking a picture"</string>
+    <string name="change_avatar_error_select_gallery_result_not_ok">"Something went wrong when selecting a picture"</string>
+    <string name="change_avatar_error_gallery_cant_load">"Something went wrong loading the picture from the gallery"</string>
+    <string name="change_avatar_error_bitmap">"Something went wrong processing the picture"</string>
+    <string name="onboarding_error_firstname_missing">"First name is missing"</string>
+    <string name="onboarding_error_email_missing">"Email address is missing"</string>
+    <string name="onboarding_error_email_invalid">"Email address is invalid"</string>
+    <string name="onboarding_error_google_sign_in_failed">"Sign in with Google failed."</string>
+    <string name="onboarding_sign_up_error_both_consents_missing">"Please accept Terms and Conditions and Privacy Policy before proceeding"</string>
+    <string name="onboarding_sign_up_error_privacy_policy_consents_missing">"Please accept Privacy Policy before proceeding"</string>
+    <string name="onboarding_sign_up_error_terms_consent_missing">"Please accept Terms &amp; Conditions before proceeding"</string>
+    <string name="pairing_something_went_wrong">"Something went wrong. Please try again later."</string>
+    <string name="pairing_enable_bluetooth">"Please enable Bluetooth"</string>
+    <string name="pairing_grant_location_permission_title">"location permission"</string>
+    <string name="pairing_grant_location_permission_description">"Android requires Location permission to connect any Bluetooth Low Energy device. Please enable it in the following dialog to connect your toothbrush."</string>
+    <string name="pairing_grant_location_permission_action">"Grant permission"</string>
+    <string name="pairing_enable_location_title">"activate location"</string>
+    <string name="pairing_enable_location_description">"Android requires activated Location to connect any Bluetooth Low Energy device. Please turn it on in the following dialog to connect your toothbrush."</string>
+    <string name="pairing_enable_location_action">"Activate location"</string>
+    <string name="pairing_grant_location_permission_error">"Please grant Location permission"</string>
+    <string name="pairing_enable_location">"Please enable Location"</string>
+    <string name="settings_profile_gender_male">"Male"</string>
+    <string name="settings_profile_gender_female">"Female"</string>
+    <string name="settings_profile_handedness_left">"Left"</string>
+    <string name="settings_profile_handedness_right">"Right"</string>
+    <string name="settings_delete_account">"Delete my account"</string>
+    <string name="settings_delete_account_popup_message">"Are you really sure you want to delete your account? This operation is not reversible."</string>
+    <string name="settings_delete_account_popup_yes">"yes, delete my account"</string>
+    <string name="settings_get_my_data_popup_title">"Success"</string>
+    <string name="settings_get_my_data_popup_message">"An email allowing you to retrieve all your data will be sent to %s shortly."</string>
+    <string name="settings_logout_title">"Logout"</string>
+    <string name="settings_logout_message">"Do you really want to log out?"</string>
+    <string name="settings_profile_information_name">"First Name"</string>
+    <string name="settings_profile_information_name_hint">"Your first name"</string>
+    <string name="settings_profile_information_gender_hint">"Gender"</string>
+    <string name="settings_profile_information_handedness_hint">"Handedness"</string>
+    <string name="settings_item_about">"About"</string>
+    <string name="settings_terms_of_use_terms">"Terms &amp; Conditions"</string>
+    <string name="settings_terms_of_use_policy">"Privacy Policy"</string>
+    <string name="secret_settings">"Secret Settings"</string>
+    <string name="legacy_secret_settings">"Legacy Secret Settings"</string>
+    <string name="settings_item_admin_settings">"admin settings"</string>
+
+    <!-- Please remember that this string needs to contain `onboarding_get_ready_header_highlight` (like trailing fullstop) - otherwise highlight won't be rendered -->
+    <string name="onboarding_get_ready_header">"get ready for a real connection."</string>
+    <string name="onboarding_get_ready_header_highlight">"."</string>
+    <string name="onboarding_sign_up_consent_privacy_policy_link">"privacy policy"</string>
+    <string name="onboarding_sign_up_consent_terms_conditions_link">"terms &amp; conditions"</string>
+    <string name="home_toolbar_title_format">"Hi %1$s"</string>
+    <string name="earning_points_detail_body"><![CDATA[<p>Each time you brush, you receive at least 1 smile point. You can have 3 eligible brushing sessions a day. Earn more smile points by completing activities and challenges. </p>
+
+<p>Use the Shop in the app to redeem your smile points for rewards.*</p>
+
+<p><b>100 smile points = $1 discount*</b></p>
+
+smile points expire December 31 of the following year or when you deactivate or otherwise cancel your account.*<br/>]]></string>
+    <string name="pairing_wake_your_brush_title">"wake up your toothbrush."</string>
+    <string name="pairing_wake_your_brush_title_highlight">"."</string>
+    <string name="challenge_feedback_collect_smiles">"Collect my smiles"</string>
+    <string name="onboarding_get_ready_subtitle">"a brush that knows you,
+the app that shows you."</string>
+    <string name="onboarding_get_ready_sign_in_button">"Sign in"</string>
+    <string name="onboarding_get_ready_no_brush_button">"I'll connect a brush later"</string>
+    <string name="onboarding_get_ready_connect_brush_button">"CONNECT MY BRUSH"</string>
+
+    <!-- Fuzzy -->
+    <string name="onboarding_sign_up_header">"let's get to know each other."</string>
+    <string name="onboarding_sign_up_subtitle">"What's your name?"</string>
+
+    <!-- Fuzzy -->
+    <string name="onboarding_sign_up_consent_header">"By clicking this signup button below:"</string>
+
+    <!-- Fuzzy -->
+    <string name="onboarding_sign_up_consent">"Yes, I agree to the"</string>
+    <string name="onbording_sign_up_google_button">"Sign up with Google"</string>
+
+    <!-- Fuzzy -->
+    <string name="onboarding_sign_up_email_button">"Sign up with email"</string>
+    <string name="pairing_wake_your_brush_subtitle">"Press the power button."</string>
+    <string name="pairing_wake_your_brush_nothing_happening">"Is nothing happening?"</string>
+
+    <!-- Fuzzy -->
+    <string name="onboarding_sign_up_name_hint">"First name"</string>
+    <string name="offline_brushing_notification_single_no_smiles_title">"You didn't win any Smiles"</string>
+    <string name="offline_brushing_notification_single_no_smiles_content">"Reach at least 50% surface coverage"</string>
+    <string name="offline_brushing_notification_single_with_smiles_title">"What a nice brushing!"</string>
+    <string name="offline_brushing_notification_single_with_smiles_content">"You just won %1$s Smiles!"</string>
+    <string name="offline_brushing_notification_multiple_no_smiles_title">"You synced %1$s brushings"</string>
+    <string name="offline_brushing_notification_multiple_no_smiles_content">"Reach 50% coverage to win Smiles"</string>
+    <string name="offline_brushing_notification_multiple_with_smiles_title">"You synced %1$s brushings"</string>
+    <string name="offline_brushing_notification_multiple_with_smiles_content">"And won %1$s Smiles!"</string>
+    <string name="settings_about_screen_title">"about"</string>
+    <string name="settings_about_screen_facebook">"Facebook"</string>
+    <string name="settings_about_screen_twitter">"Twitter"</string>
+    <string name="settings_about_screen_website">"Website"</string>
+    <string name="settings_about_screen_app_version">"App version"</string>
+    <string name="settings_about_screen_account_id">"Account ID"</string>
+    <string name="checkup_delete_button">"Delete brushing session"</string>
+    <string name="settings_screen_title">"settings"</string>
+    <string name="profile_picture_dialog_title">"Set your picture"</string>
+    <string name="change_avatar_take_picture">"Take picture"</string>
+    <string name="change_avatar_choose_from_gallery">"Select picture"</string>
+    <string name="pairing_brush_found_title">"we found a brush! is it yours?"</string>
+    <string name="pairing_brush_found_subtitle">"Do you see the blue light blinking on your brush?"</string>
+    <string name="pairing_brush_found_connect">"YES, CONNECT MY BRUSH!"</string>
+    <string name="onboarding_check_email_header">"check your email"</string>
+    <string name="onboarding_check_email_subtitle">"No need to remember a long or hard to type password"</string>
+    <string name="onboarding_check_email_body">"We just emailed you a link to log in with.
+For security purposes, the link expires after 30 mins."</string>
+    <string name="onboarding_enter_email_header">"one last step!"</string>
+    <string name="onboarding_enter_email_subtitle">"What's your email?"</string>
+    <string name="onboarding_enter_email_body">"We only need it to access your account, that's all"</string>
+    <string name="onboarding_enter_email_input_hint">"Email address"</string>
+    <string name="onboarding_enter_email_finish_button">"GET HUMMING"</string>
+    <string name="activities_tasks_title">"short tasks"</string>
+    <string name="activities_tasks_description">"Keep it interesting with activities to help improve your brushing and earn points fast."</string>
+    <string name="activities_guided_brushing_title">"guided brushing"</string>
+    <string name="activities_guided_brushing_description">"The best way to get results."</string>
+    <string name="activities_guided_brushing_points">"+2 points"</string>
+    <string name="home_screen_smile_points">"smile points"</string>
+    <string name="profile_header_text">"Use your smile to change the world,\ndon’t let the world change your smile!"</string>
+    <string name="profile_settings_button">"profile settings"</string>
+    <string name="pairing_is_brush_ready_title">"is your brush ready?"</string>
+    <string name="pairing_is_brush_ready_subtitle">"Your brush needs to charge for 24 hours prior to using it for the first time."</string>
+    <string name="pairing_is_brush_ready_connect">"yes, connect my brush"</string>
+    <string name="pairing_is_brush_ready_help">"need more help"</string>
+    <string name="onboarding_login_title">"Log In"</string>
+    <string name="onboarding_login_subtitle">"What's your email?"</string>
+
+    <!-- Looks like it's the one, yes. The other one should be for the sign up -->
+    <string name="onboarding_login_body">"You need an email to access your brushing stats"</string>
+    <string name="onboarding_login_input_hint">"Email address"</string>
+    <string name="onboarding_login_google_button">"Sign in with Google"</string>
+    <string name="onboarding_login_or_divider">"OR"</string>
+    <string name="onboarding_login_email_button">"Sign in with email"</string>
+    <string name="pairing_model_mismatch_title">"We noticed this isn't a hum brush!"</string>
+    <string name="pairing_model_mismatch_subtitle">"We detected the Colgate Connect toothbrush. To optimise your brushing experience we recommend you switch to the Colgate Connect app"</string>
+    <string name="pairing_model_mismatch_switch_app">"Switch to Colgate Connect"</string>
+    <string name="pairing_model_mismatch_continue_anyway">"Continue anyway"</string>
+    <string name="pairing_scan_toothbrush_title">"Connect your toothbrush"</string>
+    <string name="pairing_scan_toothbrush_description">"Searching for nearby toothbrushes"</string>
+    <string name="earning_points_title">"earning smile points"</string>
+    <string name="earning_points_detail_title">"HOW TO EARN &amp; REDEEM"</string>
+    <string name="last_brushing_card_title">"lastest brushing sessions"</string>
+    <string name="last_brushing_card_coverage">"Coverage"</string>
+    <string name="last_brushing_card_duration">"Duration"</string>
+    <string name="last_brushing_delete_button">"Delete brushing session"</string>
+    <string name="profile_stats_card_offline_label">"Without using the app"</string>
+    <string name="profile_stats_card_inapp_label">"Following an activity"</string>
+    <string name="pairing_blink_toothbrush_led">"Blink"</string>
+    <string name="settings_item_logout">"Log out"</string>
+    <string name="checkup_coverage">"Coverage"</string>
+    <string name="checkup_duration">"Duration"</string>
+    <string name="checkup_no_mouthmap_data">"Start brushing to see your results."</string>
+    <string name="checkup_mouth_map_left">"L"</string>
+    <string name="checkup_mouth_map_right">"R"</string>
+    <string name="checkup_clean">"Clean"</string>
+    <string name="checkup_missed">"Missed"</string>
+    <string name="pairing_no_brush_dialog_title">"you don’t see your toothbrush?"</string>
+    <string name="pairing_no_brush_dialog_content1">"If your toothbrush is near but doesn’t appear here, it may be because:"</string>
+    <string name="pairing_no_brush_dialog_content2">"•    it’s in standby mode"</string>
+    <string name="pairing_no_brush_dialog_content3">"•    has a low battery level"</string>
+    <string name="pairing_no_brush_dialog_content4">"•    it’s already connected to another device"</string>
+    <string name="pairing_no_brush_dialog_content5">"Turn it on, deactivate the bluetooth or forget the toothbrush on the other device."</string>
+    <string name="pairing_no_brush_dialog_content6">"You should now see your toothbrush in the list!"</string>
+    <string name="pairing_no_brush_dialog_get_it">"I get it!"</string>
+    <string name="about_screen_description">"The best smiles are more than a look, they're a feeling. And we believe that brushing your teeth should make you feel great. That's why we created hum; a brush that's all about making it easier to brush better."</string>
+    <string name="settings_about_screen_description">"We're elevating oral care and using connected technology to stop cavities, decay and oral diseases!"</string>
+    <string name="pairing_enable_bluetooth_title">"bluetooth"</string>
+    <string name="pairing_enable_bluetooth_description">"To connect your toothbrush, please activate Bluetooth on your device"</string>
+    <string name="pairing_enable_bluetooth_button_text">"activate bluetooth"</string>
+    <string name="onboarding_sign_up_google_button">"Sign up with Google"</string>
+    <string name="push_notification_channel_night_watch">"Offline Brushings"</string>
+    <string name="tb_settings_nickname_and_user_header">"Nickname"</string>
+    <string name="tb_settings_nickname_title">"Brush nickname"</string>
+    <string name="tb_settings_edit_nickname_dialog_hint">"NAME YOUR HUM BRUSH"</string>
+    <string name="tb_settings_help_center">"Help center articles"</string>
+    <string name="tb_settings_forget_tb">"Forget this toothbrush"</string>
+    <string name="push_notification_channel_general">"General notifications"</string>
+    <string name="checkup_title_highlight">"."</string>
+    <string name="home_error_no_toothbrush_connected">"Toothbrush not connected"</string>
+    <string name="home_error_no_toothbrush_connected_close">"CLOSE"</string>
+    <string name="toolbox_home_explanation_title">"Tap wherever you see a tour point like this one to help you find your way around!"</string>
+    <string name="tb_settings_connect_new_tb_forget_old_one">"In order to add a new toothbrush, you need to forget the one that is connected."</string>
+    <string name="tb_settings_optional_ota_title">"New firmware update available for your brush!"</string>
+    <string name="tb_settings_optional_ota_proceed">"Update"</string>
+    <string name="tb_settings_connecting">"connecting"</string>
+    <string name="tb_settings_waiting">"Wait, I'm trying to find your toothbrush"</string>
+    <string name="tb_settings_not_connecting">"Not connecting?"</string>
+    <string name="not_connecting_help_center_link">"https://humbycolgate.zendesk.com/hc/en-us/articles/360014456139"</string>
+    <string name="brush_better_card_title">"brush better"</string>
+
+    <!-- Displayed below brush_better_card_title -->
+    <string name="brush_better_card_body">"Watch your brush angle and speed to help you clean those nooks and crannies where plaque loves to hide."</string>
+
+    <!-- To be removed end of june -->
+    <string name="form_shipping_name_error">"Name/Company is missing"</string>
+    <string name="form_shipping_city_error">"City is missing"</string>
+    <string name="form_shipping_postal_code_error">"Postal code is missing"</string>
+    <string name="form_shipping_country_error">"Country is missing"</string>
+    <string name="form_shipping_address_error">"Address is missing"</string>
+
+    <!-- Used on all brush better card items -->
+    <string name="brush_better_card_item_points">"+%1$s points"</string>
+    <string name="brush_better_card_item_guided_brushing_title">"Guided brushing"</string>
+    <string name="brush_better_card_item_guided_brushing_body">"The best way to get results"</string>
+    <string name="brush_better_card_item_mind_your_speed_title">"Mind your speed"</string>
+    <string name="brush_better_card_item_mind_your_speed_body">"Not too slow, not to fast!"</string>
+    <string name="brush_better_card_item_adjust_brushing_angle_title">"Adjust brushing angle"</string>
+    <string name="brush_better_card_item_adjust_brushing_angle_body">"Short activity description"</string>
+    <string name="brush_better_card_item_test_brushing_title">"Test brushing"</string>
+    <string name="brush_better_card_item_test_brushing_body">"Keep Improving!"</string>
+
+    <!-- Fuzzy -->
+    <string name="brushing_streak_discover_guided_brushing_title">"Discover Guided Brushing"</string>
+
+    <!-- Fuzzy -->
+    <string name="brushing_streak_discover_offline_brushing_title">"Discover Offline brushing"</string>
+
+    <!-- Fuzzy -->
+    <string name="brushing_streak_five_consecutive_days_title">"Brush for 5 days consecutive"</string>
+
+    <!-- Fuzzy -->
+    <string name="brushing_streak_five_consecutive_days_once_a_day_eighty_percent_coverage_title">"Brush with &gt;80% once per day for 5 days"</string>
+    <string name="brushing_streak_brush_twice_a_day_for_five_days_title">"Brush twice a day 5 days consecutive"</string>
+    <string name="brushing_streak_five_consecutive_days_twice_a_day_eighty_percent_coverage_title">"Brush with &gt;80% twice per day for 5 days"</string>
+
+    <!-- Should contains brushing_streak_discover_guided_brushing_subtitle_highlight -->
+    <string name="brushing_streak_discover_guided_brushing_subtitle">"Discover our Guided brushing! The best way to get results"</string>
+
+    <!-- should be contains in brushing_streak_discover_guided_brushing_subtitle -->
+    <string name="brushing_streak_discover_guided_brushing_subtitle_highlight">"Guided brushing! "</string>
+
+    <!-- Should contains brushing_streak_discover_offline_brushing_subtitle_highlight -->
+    <string name="brushing_streak_discover_offline_brushing_subtitle">"You can brush with us even while you are away from your phone. Try it?"</string>
+
+    <!-- Should be contain in brushing_streak_discover_offline_brushing_subtitle -->
+    <string name="brushing_streak_discover_offline_brushing_subtitle_highlight">"away"</string>
+
+    <!-- Should contains brushing_streak_five_consecutive_days_subtitle_highlight -->
+    <string name="brushing_streak_five_consecutive_days_subtitle">"Stay connected! Brush for 5 consecutive days"</string>
+
+    <!-- Should be contains in brushing_streak_five_consecutive_days_subtitle -->
+    <string name="brushing_streak_five_consecutive_days_subtitle_highlight">"Stay connected!"</string>
+
+    <!-- Should contains brushing_streak_five_consecutive_days_once_a_day_eighty_percent_coverage_subtitle_highlight -->
+    <string name="brushing_streak_five_consecutive_days_once_a_day_eighty_percent_coverage_subtitle">"Improve your coverage!"</string>
+
+    <!-- Should be contain in brushing_streak_five_consecutive_days_once_a_day_eighty_percent_coverage_subtitle -->
+    <string name="brushing_streak_five_consecutive_days_once_a_day_eighty_percent_coverage_subtitle_highlight">"Improve your coverage!"</string>
+
+    <!-- Should contain brushing_streak_brush_twice_a_day_for_five_days_subtitle_highlight -->
+    <string name="brushing_streak_brush_twice_a_day_for_five_days_subtitle">"Improve your frequency! Brush twice a day for 5 days"</string>
+
+    <!-- Should be included in brushing_streak_brush_twice_a_day_for_five_days_subtitle -->
+    <string name="brushing_streak_brush_twice_a_day_for_five_days_subtitle_highlight">"Improve your frequency!"</string>
+
+    <!-- Should contain brushing_streak_five_consecutive_days_twice_a_day_eighty_percent_coverage_subtitle_highlight -->
+    <string name="brushing_streak_five_consecutive_days_twice_a_day_eighty_percent_coverage_subtitle">"We know habits can be hard to change"</string>
+
+    <!-- Should be included in brushing_streak_five_consecutive_days_twice_a_day_eighty_percent_coverage_subtitle -->
+    <string name="brushing_streak_five_consecutive_days_twice_a_day_eighty_percent_coverage_subtitle_highlight">"Improve your coverage!"</string>
+    <string name="brushing_streak_discover_guided_brushing_title_description_not_accepted">"Welcome to Hum app!"</string>
+
+    <!-- Fuzzy -->
+    <string name="brushing_streak_title_description_completed">"Congratulations!"</string>
+    <string name="brushing_streak_discover_offline_brushing_title_description_not_accepted">"Welcome to Hum app!"</string>
+
+    <!-- Fuzzy -->
+    <string name="brushing_streak_title_description_ongoing">"Challenge accepted"</string>
+
+    <!-- Fuzzy -->
+    <string name="brushing_streak_title_description_not_accepted">"You’re doing great!"</string>
+
+    <!-- should contain brushing_streak_discover_guided_brushing_description_ongoing_highlight -->
+    <string name="brushing_streak_discover_guided_brushing_description_ongoing">"Do your first guided brushing today ; the best way to get results !"</string>
+
+    <!-- should be included in brushing_streak_discover_guided_brushing_description_ongoing -->
+    <string name="brushing_streak_discover_guided_brushing_description_ongoing_highlight">"guided brushing"</string>
+
+    <!-- Should contain brushing_streak_discover_guided_brushing_description_complete_highlight -->
+    <string name="brushing_streak_discover_guided_brushing_description_complete">"You have successfully completed the challenge. We’ve added 1 point to your balance."</string>
+
+    <!-- Should be included in brushing_streak_discover_guided_brushing_description_complete -->
+    <string name="brushing_streak_discover_guided_brushing_description_complete_highlight">"1 point"</string>
+    <string name="brushing_streak_discover_guided_brushing_accept_challenge">"Go to guided brushing"</string>
+    <string name="brushing_streak_discover_complete_challenge">"Complete challenge"</string>
+
+    <!-- Should contain brushing_streak_discover_offline_brushing_description_ongoing_highlight -->
+    <string name="brushing_streak_discover_offline_brushing_description_ongoing">"Brush offline today and then check your app to see how you just did"</string>
+
+    <!-- Should be included in brushing_streak_discover_offline_brushing_description_ongoing -->
+    <string name="brushing_streak_discover_offline_brushing_description_ongoing_highlight">"offline"</string>
+
+    <!-- Should contain brushing_streak_discover_offline_brushing_description_complete_highlight -->
+    <string name="brushing_streak_discover_offline_brushing_description_complete">"You have successfully completed the challenge. We’ve added 1 point to your balance."</string>
+
+    <!-- Should be included in brushing_streak_discover_offline_brushing_description_complete -->
+    <string name="brushing_streak_discover_offline_brushing_description_complete_highlight">"1 point"</string>
+
+    <!-- Should contain brushing_streak_five_consecutive_days_description_ongoing_highlight -->
+    <string name="brushing_streak_five_consecutive_days_description_ongoing">"Brush for 5 consecutive days with your smart toothbrush and earn some points"</string>
+
+    <!-- Should be included in brushing_streak_five_consecutive_days_description_ongoing -->
+    <string name="brushing_streak_five_consecutive_days_description_ongoing_highlight">"5 consecutive days"</string>
+
+    <!-- Should contain brushing_streak_five_consecutive_days_description_complete_highlight -->
+    <string name="brushing_streak_five_consecutive_days_description_complete">"You have successfully completed the challenge. We’ve added 2 points to your balance."</string>
+
+    <!-- Should be included in brushing_streak_five_consecutive_days_description_complete -->
+    <string name="brushing_streak_five_consecutive_days_description_complete_highlight">"2 points"</string>
+    <string name="brushing_streak_discover_accept_challenge">"Accept challenge"</string>
+
+    <!-- Should contain brushing_streak_five_consecutive_days_once_a_day_eighty_percent_coverage_description_ongoing_highlight -->
+    <string name="brushing_streak_five_consecutive_days_once_a_day_eighty_percent_coverage_description_ongoing">"We noticed that you miss some spots often.  Hit over 80% coverage on the next 5 days and we’ll reward you."</string>
+
+    <!-- %% is for displaying % it's not a mistake -->
+    <!-- Should be included in brushing_streak_five_consecutive_days_once_a_day_eighty_percent_coverage_description_ongoing -->
+    <string name="brushing_streak_five_consecutive_days_once_a_day_eighty_percent_coverage_description_ongoing_highlight">"over 80% coverage on the next 5 days"</string>
+
+    <!-- Should contain brushing_streak_five_consecutive_days_once_a_day_eighty_percent_coverage_description_complete_highlight -->
+    <string name="brushing_streak_five_consecutive_days_once_a_day_eighty_percent_coverage_description_complete">"You have successfully completed the challenge. We’ve added 5 points to your balance."</string>
+
+    <!-- Should be included in brushing_streak_five_consecutive_days_once_a_day_eighty_percent_coverage_description_complete -->
+    <string name="brushing_streak_five_consecutive_days_once_a_day_eighty_percent_coverage_description_complete_highlight">"5 points"</string>
+
+    <!-- Should contain brushing_streak_brush_twice_a_day_for_five_days_description_ongoing_highlight -->
+    <string name="brushing_streak_brush_twice_a_day_for_five_days_description_ongoing">"Brush twice a day for 5 consecutive days with your smart toothbrush and earn some points"</string>
+
+    <!-- Should be included in brushing_streak_brush_twice_a_day_for_five_days_description_ongoing -->
+    <string name="brushing_streak_brush_twice_a_day_for_five_days_description_ongoing_highlight">"twice a day for 5 consecutive days"</string>
+
+    <!-- Should contain brushing_streak_brush_twice_a_day_for_five_days_description_complete_highlight -->
+    <string name="brushing_streak_brush_twice_a_day_for_five_days_description_complete">"You have successfully completed the challenge. We’ve added 4 points to your balance."</string>
+
+    <!-- Should be included in brushing_streak_brush_twice_a_day_for_five_days_description_complete -->
+    <string name="brushing_streak_brush_twice_a_day_for_five_days_description_complete_highlight">"4 points"</string>
+
+    <!-- Should contain brushing_streak_five_consecutive_days_twice_a_day_eighty_percent_coverage_description_ongoing_highlight -->
+    <string name="brushing_streak_five_consecutive_days_twice_a_day_eighty_percent_coverage_description_ongoing">"We noticed that you sometimes miss brushing sessions.  So we will give your points a boost if you can stick with 80% coverage , twice a day, for the next 5 days."</string>
+
+    <!-- Should be included in brushing_streak_five_consecutive_days_twice_a_day_eighty_percent_coverage_description_ongoing -->
+    <!-- Fuzzy -->
+    <string name="brushing_streak_five_consecutive_days_twice_a_day_eighty_percent_coverage_description_ongoing_highlight">"Brush twice a day for 5 days with at least 80% coverage"</string>
+
+    <!-- Should contain brushing_streak_five_consecutive_days_twice_a_day_eighty_percent_coverage_description_complete_highlight -->
+    <string name="brushing_streak_five_consecutive_days_twice_a_day_eighty_percent_coverage_description_complete">"You have successfully completed the challenge. We’ve added 10 points to your balance."</string>
+
+    <!-- Should be included in brushing_streak_five_consecutive_days_twice_a_day_eighty_percent_coverage_description_complete -->
+    <!-- Fuzzy -->
+    <string name="brushing_streak_five_consecutive_days_twice_a_day_eighty_percent_coverage_description_complete_highlight">"10 points"</string>
+
+    <!-- should contain start_ota_title_highlight -->
+    <string name="start_ota_title">"start the update."</string>
+
+    <!-- Should be included in start_ota_title -->
+    <string name="start_ota_title_highlight">"."</string>
+    <string name="start_ota_content">"To prevent toothbrush downtime, during the update process:"</string>
+
+    <!-- Fuzzy -->
+    <string name="start_ota_subcontent1">"1. Please keep the firmware upgrade interface open and do not exit"</string>
+
+    <!-- Fuzzy -->
+    <string name="start_ota_subcontent2">"2. Make sure the mobile phone and the toothbrush are within 9 feet"</string>
+    <string name="start_ota_upgrade">"Upgrade"</string>
+    <string name="in_progress_ota_title">"update in progress"</string>
+    <string name="in_progress_ota_content">"Hang tight! You’ll be able to close this window when the update is complete."</string>
+
+    <!-- %% should not be removed -->
+    <string name="in_progress_ota_progress">"updating firmware: %d%%"</string>
+    <string name="ota_done">"done"</string>
+    <string name="ota_done_title">"update done!"</string>
+    <string name="ota_done_content">"You’re good to go now! After closing this window you can start using your  toothbrush."</string>
+    <string name="gender_unknown">"Not set"</string>
+    <string name="handedness_unknown">"Not set"</string>
+    <string name="gender_prefer_not_to_answer">"Prefer not to answer"</string>
+    <string name="start_ota_subcontent3">"3. Please put your toothbrush on the charger to continue"</string>
+    <string name="start_ota_put_brush_on_charger">"Please put your toothbrush on the charger to continue"</string>
+    <string name="start_ota_cancel_mandatory">"Cancel"</string>
+    <string name="cart_taxes_estimation">"Est. Tax\nEst. Shipping"</string>
+    <string name="brushing_streak_title_for_5_days_challenge">"brushing streak"</string>
+    <string name="brushing_streak_title_for_1_day_challenge">"discover activity"</string>
+    <string name="ota_failure_title">"update failed"</string>
+    <string name="ota_failure_content">"The toothbrush cannot be updated at the moment."</string>
+    <string name="form_shipping_first_name_helper">"ex. Andrea"</string>
+    <string name="form_shipping_last_name_hint">"Last Name"</string>
+    <string name="form_shipping_company_hint">"Company (optional)"</string>
+    <string name="form_shipping_last_name_helper">"ex. Johnsonville"</string>
+    <string name="form_shipping_company_helper">"ex. Brush&amp;Clean Inc."</string>
+    <string name="reward_yourself_card_body">"Well done %1$s! You’ve collected %2$s,  which is %3$s to spend in the shop!"</string>
+    <string name="reward_yourself_card_body_points">"%1$s points"</string>
+    <string name="reward_yourself_card_title">"reward yourself"</string>
+    <string name="reward_yourself_card_item_price">"%1$s / %2$s points"</string>
+    <string name="form_shipping_province_hint">"State"</string>
+    <string name="form_shipping_province_helper">"ex. New York"</string>
+    <string name="form_shipping_province_error">"State is missing"</string>
+    <string name="form_shipping_first_name_error">"First name is missing"</string>
+    <string name="form_shipping_last_name_error">"Last name is missing"</string>
+    <string name="points_increase">"+%1$d points"</string>
+    <string name="challenge_completed_dialog_title">"amazing!"</string>
+    <string name="challenge_completed_dialog_body">"You have successfully completed the challenge, and we’ve added %s to your balance."</string>
+    <string name="challenge_completed_dialog_body_highlight">"%s points"</string>
+    <string name="challenge_completed_dialog_button">"complete challenge"</string>
+    <string name="last_brushing_card_test_brushing">"Test brushing"</string>
+    <string name="cart_proceed_checkout">"Proceed to checkout"</string>
+    <string name="pending_label">"calculating smile points…"</string>
+
+    <!-- Message to be shown when the user has entered a invalid address but we are not sure which one -->
+    <string name="form_shipping_generic_error">"You have entered an invalid address, please try again"</string>
+    <string name="settings_about_screen_instagram">"Instagram"</string>
+    <string name="dialog_test_brushing_no_more_smiles">"Earn 2 smile points every time you play, and up to 6 points a day!"</string>
+    <string name="tb_settings_mandatory_ota_title">"Toothbrush failed to update, start the recovery!"</string>
+    <string name="tb_settings_mandatory_ota_proceed">"RECOVER"</string>
+    <string name="mandatory_ota_dialog_title">"mandatory update needed"</string>
+
+    <!-- Fuzzy -->
+    <string name="mandatory_ota_dialog_body">"Your brush needs to be updated before using it. Please start the update now."</string>
+
+    <!-- Fuzzy -->
+    <string name="mandatory_ota_dialog_proceed">"start update"</string>
+    <string name="mind_your_speed_start_screen_title">"brushing too fast can damage your gums"</string>
+    <string name="mind_your_speed_start_screen_description">"Evaluate and improve your technique by maintaining a good brushing speed for 7 seconds on each segment."</string>
+    <string name="mind_your_speed_start_screen_description_highlight">"7 seconds"</string>
+    <string name="mind_your_speed_start_screen_description2">"Earn 2 smile points each time you play, up to 6 points per day."</string>
+    <string name="mind_your_speed_start_screen_start">"Let’s start"</string>
+    <string name="mind_your_speed_start_screen_cancel">"Cancel"</string>
+    <string name="home_bluetooth_unavailable_snackbar">"Bluetooth disabled"</string>
+    <string name="home_location_unavailable_snackbar">"Location disabled"</string>
+    <string name="home_snackbar_enable_button">"ENABLE"</string>
+    <string name="ota_blocker_not_active_connection">"Verify the connection with your brush"</string>
+    <string name="ota_blocker_not_charging">"Please put your toothbrush on the charger to continue"</string>
+    <string name="ota_blocker_not_enough_battery">"Please put your toothbrush on the charger to continue"</string>
+    <string name="ota_blocker_no_internet">"The internet connection appears to be offline."</string>
+    <string name="earning_points_detail_annotation">"*See our Rewards Terms &amp; Conditions for additional information.  A brushing session must achieve more than 50% coverage and last longer than 30 seconds to be eligible for smile points.  If you brush twice within 30 minutes we will combine the sessions and data into one recorded session."</string>
+    <string name="earning_points_detail_annotation_highlight">"Rewards Terms &amp; Conditions"</string>
+    <string name="profile_stats_card_lifetime_points">"%1$s Total smile points over time."</string>
+
+    <!-- Title of the question of the day card -->
+    <string name="question_of_the_day_card_title">"question of the day"</string>
+
+    <!-- Points label displayed on the question of the day card -->
+    <plurals name="question_of_the_day_card_points">
+        <item quantity="one">"+%1$s point"</item>
+        <item quantity="other">"+%1$s points"</item>
+    </plurals>
+
+    <!-- Info displayed on the question of the day card when question is not available -->
+    <string name="question_of_the_day_card_question_not_available">"Come back tomorrow to answer a different question and earn more smile points"</string>
+    <string name="mind_your_speed_title">"mind your speed."</string>
+
+    <!-- This one is responsible for dot highlight at the end of `mind_your_speed_title`. Please make sure `mind_your_speed_title` contains the content we want to highlight by this one. -->
+    <string name="mind_your_speed_title_highlight">"."</string>
+    <string name="mind_your_speed_legend_good">"Good"</string>
+    <string name="mind_your_speed_legend_slow_or_fast">"Slow or fast"</string>
+    <string name="mind_your_speed_no_feedback">"Perfect speed!"</string>
+    <string name="mind_your_speed_pause_menu_header">"Pause"</string>
+    <string name="mind_your_speed_pause_menu_resume_button">"Resume"</string>
+    <string name="mind_your_speed_pause_menu_restart_button">"Restart"</string>
+    <string name="mind_your_speed_pause_menu_quit_button">"Quit"</string>
+    <string name="mind_your_speed_start_message">"Turn on your brush and start brushing!"</string>
+    <string name="mind_your_speed_wrong_zone_feedback">"You’re brushing the wrong segment!"</string>
+    <string name="mind_your_speed_too_fast_feedback">"You’re brushing too fast, slow down!"</string>
+    <string name="mind_your_speed_too_slow_feedback">"You’re brushing too slow, speed up!"</string>
+    <string name="settings_notifications_item">"Notifications"</string>
+    <string name="notifications_toolbar_title">"notifications"</string>
+    <string name="notifications_brush_reminder_header">"synchronization"</string>
+    <string name="notifications_brush_reminder_item">"Sync my brush reminders"</string>
+    <string name="notifications_brush_reminder_description">"Receive notifications when you haven’t synced your brush for several days."</string>
+    <string name="notifications_mailing_list_header">"email notifications"</string>
+    <string name="notifications_mailing_list_item">"Join our mailing list"</string>
+    <string name="notifications_mailing_list_description">"Turn this on if you would like to receive information about products and services you may like. You can opt-out at any time."</string>
+
+    <!-- This should be a valid integer not a string -->
+    <string name="zendesk_articles_can_not_connect">"360014456139"</string>
+    <string name="question_of_the_day_correct_answer_title">"correct answer!"</string>
+    <plurals name="question_of_the_day_correct_answer_body">
+        <item quantity="one">"Congratulations! %1$s Point have been added to your account."</item>
+        <item quantity="other">"Congratulations! %1$s Points have been added to your account."</item>
+    </plurals>
+    <string name="question_of_the_day_correct_answer_button">"Collect smile points"</string>
+    <string name="question_of_the_day_wrong_answer_title">"nice try!"</string>
+    <string name="question_of_the_day_wrong_answer_body">"Don’t worry, you can play again tomorrow there’s a new question and chance to earn points."</string>
+    <string name="question_of_the_day_wrong_answer_button">"OK, got it!"</string>
+    <string name="question_of_the_day_error_message">"Something when wrong, please check your internet connection."</string>
+    <string name="more_ways_to_earn_points_title">"more ways to earn smile points"</string>
+    <string name="more_ways_to_earn_points_brushing_reminders_header">"Turn on brushing reminders"</string>
+
+    <!-- Copy for More Ways To Earn Points challenges is not yet delivered, we should update it before the launch. -->
+    <!-- Fuzzy -->
+    <string name="more_ways_to_earn_points_brushing_reminders_body">"Set your reminder to brush 
+twice a day."</string>
+    <string name="more_ways_to_earn_points_email_notifications_header">"Turn on email notifications"</string>
+
+    <!-- Fuzzy -->
+    <string name="more_ways_to_earn_points_email_notifications_body">"Simple and short explanation 
+should be here in two rows"</string>
+    <string name="more_ways_to_earn_points_brush_sync_reminders_header">"Turn on brush sync reminders"</string>
+
+    <!-- Fuzzy -->
+    <string name="more_ways_to_earn_points_brush_sync_reminders_body">"A friendly reminder to sync
+your brushing data"</string>
+    <string name="more_ways_to_earn_points_refer_a_friend_header">"Refer a friend"</string>
+
+    <!-- Fuzzy -->
+    <string name="more_ways_to_earn_points_refer_a_friend_body">"Love your hum? 
+Refer a friend!"</string>
+    <string name="more_ways_to_earn_points_rate_the_app_header">"Rate the app"</string>
+
+    <!-- Fuzzy -->
+    <string name="more_ways_to_earn_points_rate_the_app_body">"Love your experience? 
+Rate our app."</string>
+    <string name="more_ways_to_earn_points_weekly_review_header">"Subscribe for a weekly review"</string>
+
+    <!-- Fuzzy -->
+    <string name="more_ways_to_earn_points_weekly_review_body">"Simple and short explanation 
+should be here in two rows"</string>
+    <string name="more_ways_to_earn_points_complete_profile_header">"Complete your profile"</string>
+
+    <!-- Fuzzy -->
+    <string name="more_ways_to_earn_points_complete_profile_body">"We're almost 100% connected. 
+Complete your profile now."</string>
+
+    <!-- Points label displayed in the upper right corner of More ways to earn points cards -->
+    <plurals name="more_ways_to_earn_points_points_format">
+        <item quantity="one">"+%1$s pt"</item>
+        <item quantity="other">"+%1$s pts"</item>
+    </plurals>
+    <string name="brush_reminder_notification_body1">"Touch to sync your brushing."</string>
+    <string name="brush_reminder_notification_body2">"How effective was your recent brushing? Sync to find out."</string>
+    <string name="brush_reminder_notification_body3">"Is your toothbrush nearby? Sync your brushing!"</string>
+    <string name="brush_reminder_notification_body4">"Sync your toothbrush to update your brushing indicators."</string>
+    <string name="brush_reminder_notification_body5">"Remember to sync your brushing to maximize your Hum experience!"</string>
+    <string name="brush_reminder_notification_body6">"Want to know more about dental health? Touch to sync your brushing."</string>
+    <string name="brush_reminder_notification_body7">"Are your near your toothbrush? Touch to sync your brushing!"</string>
+    <string name="brush_reminder_notification_body8">"Tap to sync your brushing and update your dental report."</string>
+    <string name="brush_reminder_notification_body9">"Sync your toothbrush to save your recorded data even if you have brushed without opening the Hum app"</string>
+    <string name="brush_reminder_notification_body10">"Want to know if how well you brushed over the last few days? Sync your brushing with the Hum app."</string>
+    <string name="brush_reminder_notification_body11">"Remember to sync your brushing from time to time so Hum can analyze your dental health!"</string>
+    <string name="brush_reminder_notification_body12">"Sync your brushing now to check your progress."</string>
+    <string name="reminder_notification_body">"%1$s: %2$s"</string>
+    <string name="smiles_history_title">"smile points history"</string>
+    <string name="smiles_history_last_events">"RECENT EVENTS"</string>
+
+    <!-- Fuzzy -->
+    <string name="earn_points_celebration_title">"amazing!"</string>
+
+    <!-- Fuzzy -->
+    <string name="earn_points_celebration_body">"You have successfully completed %1$s task, we’ve added %2$s to your balance."</string>
+
+    <!-- Fuzzy -->
+    <plurals name="earn_points_celebration_body_points">
+        <item quantity="one">"%1$s smile point"</item>
+        <item quantity="other">"%1$s smile points"</item>
+    </plurals>
+
+    <!-- Fuzzy -->
+    <string name="earn_points_celebration_confirmation_button">"Done"</string>
+
+    <!-- Fuzzy -->
+    <string name="smiles_history_smiles_placeholder">"%s pts"</string>
+
+    <!-- $1s is the date and $2s is the time -->
+    <!-- Fuzzy -->
+    <string name="smiles_history_datetime_placeholder">"%1s at %2s"</string>
+
+    <!-- This is for legacy support is shouldn't be use ever -->
+    <string name="smiles_history_item_coach_brushing">"Coach brushing"</string>
+    <string name="smiles_history_guided_brushing">"Guided brushing"</string>
+    <string name="smiles_history_challenge_compled">"Brushing streak completed"</string>
+    <string name="smiles_history_question_of_the_day">"Question of the day"</string>
+    <string name="smiles_history_mind_your_speed">"Mind your speed"</string>
+    <string name="smiles_history_offline_brushing">"Offline brushing"</string>
+    <string name="smiles_history_discount_applied">"Discount applied"</string>
+    <string name="smiles_history_referral">"Invited a friend"</string>
+    <string name="smiles_history_go_pirate">"GoPirate brushing"</string>
+
+    <!-- TO BE DELETED -->
+    <!-- Fuzzy -->
+    <string name="smiles_history_smart_brushing">"Smart brushing"</string>
+    <string name="smiles_history_rabbids">"Rabbids brushing"</string>
+
+    <!-- Fuzzy -->
+    <string name="smiles_history_test_angle">"Test your angle"</string>
+    <string name="smiles_history_account_created">"Account created"</string>
+    <string name="smiles_history_smiles_expired">"Smiles expiration"</string>
+
+    <!-- Displayed inside earn_points_celebration_body -->
+    <string name="earn_points_celebration_brushing_reminders_name">"brushing reminders"</string>
+
+    <!-- Displayed inside earn_points_celebration_body -->
+    <string name="earn_points_celebration_email_notifications_name">"email notifications"</string>
+
+    <!-- Displayed inside earn_points_celebration_body -->
+    <string name="earn_points_celebration_brush_sync_reminders_name">"sync reminders"</string>
+
+    <!-- Displayed inside earn_points_celebration_body -->
+    <string name="earn_points_celebration_refer_a_friend_name">"refer a friend"</string>
+
+    <!-- Displayed inside earn_points_celebration_body -->
+    <string name="earn_points_celebration_rate_the_app_name">"rate the app"</string>
+
+    <!-- Displayed inside earn_points_celebration_body -->
+    <string name="earn_points_celebration_weekly_review_name">"weekly review"</string>
+
+    <!-- Displayed inside earn_points_celebration_body -->
+    <string name="earn_points_celebration_complete_profile_name">"complete your profile"</string>
+    <string name="product_support_card_title">"product questions"</string>
+    <string name="product_support_card_subtitle">"Check our customers support center for common questions."</string>
+    <string name="smiles_history_empty">"No smile points history yet. Win and synchronize your smile points to see the events."</string>
+    <string name="oral_care_support_title">"oral care questions"</string>
+    <string name="oral_care_support_subtitle">"Check our oral health care center for common questions."</string>
+    <string name="settings_about_screen_licenses">"Licenses"</string>
+    <string name="home_screen_no_internet">"no internet…"</string>
+    <string name="profile_incomplete_bubble_header">"Complete your profile"</string>
+    <string name="profile_incomplete_bubble_body">"We need more information in order to provide you with the most accurate results."</string>
+    <string name="profile_incomplete_bubble_button">"Got it"</string>
+    <string name="smiles_history_item_activity_completed">"Activity completed"</string>
+    <string name="smiles_history_item_short_task_unknown">"Short task"</string>
+    <string name="smiles_history_test_brushing">"Test brushing"</string>
+    <string name="smiles_history_more_way_to_earn_smiles">"More ways to earn smile points"</string>
+    <string name="dialog_low_battery_title">"low battery"</string>
+    <string name="dialog_low_battery_description">"It looks like your brush %s is running on low battery. make sure to charge it soon."</string>
+    <string name="select_toothbrush_picker_header">"Let's start"</string>
+    <string name="select_toothbrush_picker_body">"Use one of the connected toothbrushes to start your guided brushing session."</string>
+    <string name="notifications_disabled_dialog_title">"Synchronization notifications"</string>
+    <string name="notifications_disabled_dialog_body">"Please enable push notifications for Hum to use the reminders."</string>
+    <string name="notifications_disabled_dialog_point1">"•    Tap Notifications."</string>
+    <string name="notifications_disabled_dialog_point2">"•    Set ‘Allow notifications’ to on."</string>
+    <string name="notifications_disabled_go_to_settings">"go to settings"</string>
+    <string name="notifications_disabled_cancel">"Cancel"</string>
+    <string name="dialog_head_replacement_title">"it's time for a new brush head"</string>
+    <string name="dialog_head_replacement_description">"We noticed you've used your current brush head for 3 months, which means it's time to replace it."</string>
+    <string name="dialog_head_replacement_buy_now_button">"Buy now"</string>
+    <string name="dialog_head_replacement_dont_remind_button">"Don't remind me again"</string>
+    <string name="help_description">"View our Help Center or get the assistance you need"</string>
+    <string name="help_center">"Help Center"</string>
+    <string name="contact_us">"Contact Us"</string>
+    <string name="help_screen_title">"help"</string>
+    <string name="more_ways_to_earn_points_amazon_dash_header">"Enable Amazon Dash"</string>
+    <string name="more_ways_to_earn_points_amazon_dash_body">"New brush heads delivered automatically!"</string>
+    <string name="earn_points_celebration_amazon_dash">"Amazon Dash"</string>
+    <string name="amazon_dash_connect_description"><![CDATA[Connect your account with Amazon Alexa to receive email and Alexa voice notifications <b>when your toothbrush head needs to be replaced.</b> You can also choose to set up smart reorders from Amazon so you never run out.]]></string>
+    <string name="amazon_dash_connect_title">"amazon alexa"</string>
+    <string name="amazon_dash_connect_body">"Tap allow to link your account with Alexa."</string>
+    <string name="amazon_dash_connect_confirm_button">"Allow"</string>
+    <string name="amazon_dash_connect_dismiss_button">"Not now"</string>
+
+    <!-- Fuzzy -->
+    <string name="settings_link_account">"LINK MY ACCOUNT"</string>
+    <string name="settings_link_amazon_dash_title">"Amazon Dash"</string>
+    <string name="settings_link_amazon_account">"Link my Amazon account"</string>
+    <string name="settings_link">"link"</string>
+    <string name="settings_unlink">"unlink"</string>
+    <string name="settings_unlink_amazon_title">"Unlink Amazon Dash"</string>
+
+    <!-- Fuzzy -->
+    <string name="settings_unlink_amazon_body">"Do you really want to unlink your Amazon account?"</string>
+    <string name="settings_unlink_amazon_confirmed">"unlink"</string>
+    <string name="amazon_dash_connect_loading_title">"please wait…"</string>
+    <string name="amazon_dash_connect_loading_body">"We are almost done."</string>
+    <string name="amazon_dash_celebration_header">"congratulations"</string>
+    <string name="amazon_dash_celebration_description"><![CDATA[Your hum by Colgate is <b>now linked with Alexa</b>. You will receive email and Alexa voice notifications when your toothbrush head needs to be replaced.<br/><br/>You can <b>set up smart reorders</b> or <b>manage your notification settings</b> at any time by navigating to your Devices within the Alexa App and clicking on “Supply”.]]></string>
+    <string name="amazon_dash_celebration_title">"Start by saying:"</string>
+    <string name="amazon_dash_celebration_body">"“Alexa, order a new headbrush set”"</string>
+    <string name="amazon_dash_celebration_confirm_button">"Got it"</string>
+    <string name="amazon_dash_connect_error_invalid_link">"Failed to link the account. Please try again."</string>
+    <string name="amazon_dash_connect_error_unknown">"Unable to link the account."</string>
+    <string name="tb_settings_brush_details_dsp">"DSP version"</string>
+    <string name="settings_amazon_account_linked">"Amazon account linked"</string>
+    <string name="settings_rate_our_app">"Rate our app"</string>
+    <string name="select_profile_header">"Who's brushing?"</string>
+    <string name="select_profile_add_profile">"Add a profile"</string>
+    <string name="select_profile_close">"Close"</string>
+    <string name="settings_select_profile_title">"Who's brushing"</string>
+    <string name="onboarding_sign_up_receive_promotions_updates">"Yes, I want to receive promotions and updates (optional)"</string>
+    <string name="shop_tab_products">"Products"</string>
+    <string name="shop_tab_brand_deals">"Brand Deals"</string>
+    <string name="notifications_brushing_reminders_title">"Brushing reminders"</string>
+    <string name="notifications_brushing_reminders_description">"Receive reminder notifications when it’s time to brush. You can set up to 3 daily notifications."</string>
+    <string name="add_profile_add_a_photo">"Add a photo"</string>
+    <string name="add_profile_birthday_title">"Date of birth"</string>
+    <string name="add_profile_birthday_hint">"MM/YYYY"</string>
+    <string name="add_profile_gender_title">"Gender"</string>
+    <string name="add_profile_handedness_title">"Handedness"</string>
+    <string name="add_profile_choose_hint">"Choose"</string>
+    <string name="add_profile_optional">"(Optional)"</string>
+    <string name="add_profile_birthday_invalid">"Birthday should be in MM/YYYY format"</string>
+    <string name="brushing_reminder_notification_body">"It's %s, time to brush your teeth!"</string>
+    <string name="headspace_card_title">"Unlock a 60 day free trial of Headspace"</string>
+
+    <!-- Fuzzy -->
+    <string name="headspace_card_description">"Explore guided exercises, videos, and more to help you get healthier and happier. 10 Days of Headspace can increase happiness by 16%."</string>
+    <string name="headspace_card_progress_to_unlock">"Earn %1$s more to unlock."</string>
+    <string name="headspace_card_progress_points_to_unlock">"%1$s points"</string>
+    <string name="headspace_card_unlock_button">"Unlock my code"</string>
+    <string name="headspace_card_visit_headspace">"Visit headspace"</string>
+    <string name="headspace_card_unlock_description">"The code will be valid for 30 days after unlocking."</string>
+    <string name="headspace_card_tap_to_copy">"Tap to copy promo code: %1$s"</string>
+    <string name="headspace_card_inprogress_description_highlight1">"healthier"</string>
+    <string name="headspace_card_inprogress_description_highlight2">"happier"</string>
+    <string name="smiles_history_amazon_account_linked">"Link my Amazon account"</string>
+    <string name="headspace_card_unlocked_description">"Use the code below at registration to enjoy 60 days free trial. The code will be valid for 30 days after unlocking."</string>
+    <string name="headspace_card_unlocked_description_highlight">"60 days free trial"</string>
+    <string name="headspace_card_copied">"Copied to clipboard!"</string>
+    <string name="guided_brushing_tips">"tips."</string>
+
+    <!-- Please remember that this string needs to contain `guided_brushing_tips` (like trailing fullstop) - otherwise highlight won't be rendered -->
+    <string name="guided_brushing_tips_highlight">"."</string>
+    <string name="headspace_card_unlock_error_no_codes">"Discount code not available, please try again later."</string>
+    <string name="guided_brushing_tips_got_it_button">"Got it"</string>
+    <string name="guided_brushing_tips_dont_show_again_button">"Don't show again"</string>
+
+    <!-- when user dismisses the card manually -->
+    <string name="headspace_close_confirm">"Card will never be shown again"</string>
+    <string name="headspace_close_confirm_title">"Dismiss card?"</string>
+    <string name="push_notification_channel_reminders">"Reminders"</string>
+    <string name="guided_brushing_tip_perfect_angle">"Perfect angle!"</string>
+    <string name="guided_brushing_tip_wrong_angle">"Wrong angle!"</string>
+    <string name="guided_brushing_tip1_title">"How to angle your brush"</string>
+    <string name="guided_brushing_tip1_description">"Hold your brush at a 45 degree angle towards your teeth, not straight on."</string>
+    <string name="guided_brushing_tip2_title">"How to brush your inner front teeth"</string>
+    <string name="guided_brushing_tip2_description">"Tilt the brush slightly vertically and make several gentle and short (tooth-wide) up-and-down strokes."</string>
+    <string name="headspace_mindful_moment_card_title">"Today’s Mindful Moment"</string>
+    <string name="headspace_mindful_moment_card_check_it_out">"Check it out"</string>
+    <string name="headspace_mindful_moment_card_brought_by">"Brought to you by"</string>
+
+    <!-- Message displayed after copying id to the clipboard. -->
+    <string name="settings_about_screen_account_id_copied">"Account ID copied"</string>
+    <string name="smiles_history_not_enough_coverage">"Not enough coverage or duration to earn points."</string>
+    <string name="smiles_history_daily_limit_reached">"Max smiles per day reached."</string>
+    <string name="games_card_title">"Games headline"</string>
+    <string name="games_card_body">"Interested in having some fun as you brush?\nCheck out or games."</string>
+    <plurals name="games_card_item_points">
+        <item quantity="one">"+%1$s point"</item>
+        <item quantity="other">"+%1$s points"</item>
+    </plurals>
+    <string name="headspace_mindful_moment_title">"Mindful Moments"</string>
+    <string name="headspace_mindful_moment_share_btn">"Share"</string>
+    <string name="headspace_mindful_moment_collect_btn">"Collect smile points"</string>
+</resources>

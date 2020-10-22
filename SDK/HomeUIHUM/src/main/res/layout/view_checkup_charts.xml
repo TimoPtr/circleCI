@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  tools:parentTag="android.widget.LinearLayout">
+
+  <RelativeLayout
+    android:layout_width="@dimen/match_constraints"
+    android:layout_height="wrap_content"
+    android:layout_weight="1">
+
+    <com.kolibree.android.app.ui.home.tab.view.CircleProgressView
+      android:id="@+id/checkup_coverage_chart"
+      android:layout_width="@dimen/last_brushing_progress_size"
+      android:layout_height="@dimen/last_brushing_progress_size"
+      android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_centerVertical="true"
+      android:orientation="vertical">
+
+      <TextView
+        android:id="@+id/checkup_coverage"
+        style="@style/LastBrushingCardChartValue"
+        tools:text="67%" />
+
+      <TextView
+        android:id="@+id/checkup_coverage_hint"
+        style="@style/LastBrushingCardChartHint"
+        android:text="@string/checkup_coverage" />
+    </LinearLayout>
+  </RelativeLayout>
+
+  <RelativeLayout
+    android:layout_width="@dimen/match_constraints"
+    android:layout_height="wrap_content"
+    android:layout_weight="1">
+
+    <com.kolibree.android.app.ui.home.tab.view.CircleProgressView
+      android:id="@+id/checkup_duration_chart"
+      android:layout_width="@dimen/last_brushing_progress_size"
+      android:layout_height="@dimen/last_brushing_progress_size"
+      android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_centerVertical="true"
+      android:orientation="vertical">
+
+      <TextView
+        android:id="@+id/checkup_duration"
+        style="@style/LastBrushingCardChartValue"
+        tools:text="1:23" />
+
+      <TextView
+        android:id="@+id/checkup_duration_hint"
+        style="@style/LastBrushingCardChartHint"
+        android:text="@string/checkup_duration" />
+    </LinearLayout>
+  </RelativeLayout>
+</merge>

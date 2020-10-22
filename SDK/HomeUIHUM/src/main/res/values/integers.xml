@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<resources>
+  <!-- This should be the same as the fragment transition to insure animation consistency -->
+  <integer name="onboarding_transition_duration">@integer/fragment_transition_duration</integer>
+
+  <integer name="smiles_counter_reels_duration">2000</integer>
+  <integer name="smiles_counter_speech_bubble_duration">750</integer>
+  <integer name="smiles_counter_pending_label_start_delay">150</integer>
+  <integer name="smiles_counter_pending_label_duration">200</integer>
+</resources>

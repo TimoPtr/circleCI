@@ -1,0 +1,110 @@
+<!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.kolibree.android.homeui.hum">
+
+  <application>
+
+    <activity
+      android:name="com.kolibree.android.app.ui.home.HomeScreenActivity"
+      android:launchMode="singleTop"
+      android:screenOrientation="portrait"
+      android:theme="@style/AppTheme" />
+
+    <activity
+      android:name="com.kolibree.android.app.ui.settings.SettingsActivity"
+      android:screenOrientation="portrait"
+      android:theme="@style/AppTheme.Light" />
+
+    <activity
+      android:name="com.kolibree.android.app.ui.settings.about.AboutActivity"
+      android:screenOrientation="portrait"
+      android:theme="@style/AppTheme.Light" />
+
+    <activity
+      android:name="com.kolibree.android.app.ui.scan.ToothbrushListActivity"
+      android:screenOrientation="portrait"
+      android:theme="@style/AppTheme.Light" />
+
+    <activity
+      android:name="com.kolibree.android.app.ui.checkup.results.CheckupResultsActivity"
+      android:screenOrientation="portrait"
+      android:theme="@style/CheckupTheme" />
+
+    <activity
+      android:name="com.kolibree.android.app.ui.checkup.day.DayCheckupActivity"
+      android:screenOrientation="portrait"
+      android:theme="@style/AppTheme.Light" />
+
+    <activity
+      android:name="com.kolibree.android.app.ui.toothbrushsettings.ToothbrushSettingsActivity"
+      android:screenOrientation="portrait"
+      android:theme="@style/AppTheme.Light" />
+
+    <activity
+      android:name="com.kolibree.android.app.ui.home.pairing.ToothbrushPairingActivity"
+      android:screenOrientation="portrait"
+      android:theme="@style/AppTheme.Inverse.Red.TranslucentNavigation"
+      android:windowSoftInputMode="stateAlwaysHidden" />
+
+    <activity
+      android:name="com.kolibree.android.app.ui.home.pairing.startscreen.PairingStartScreenActivity"
+      android:screenOrientation="portrait"
+      android:theme="@style/AppTheme"
+      android:windowSoftInputMode="stateAlwaysHidden" />
+
+    <activity
+      android:name="com.kolibree.android.app.ui.home.tab.home.card.brushingstreak.completion.BrushingStreakCompletionActivity"
+      android:screenOrientation="portrait"
+      android:theme="@style/AppTheme" />
+
+    <activity
+      android:name="com.kolibree.android.app.ui.settings.notifications.NotificationsActivity"
+      android:screenOrientation="portrait"
+      android:theme="@style/AppTheme.Light" />
+
+    <activity
+      android:name="com.kolibree.android.app.ui.settings.help.HelpActivity"
+      android:screenOrientation="portrait"
+      android:theme="@style/AppTheme.Light" />
+
+    <activity
+      android:name="com.kolibree.android.app.ui.celebration.EarnPointsCelebrationActivity"
+      android:screenOrientation="portrait"
+      android:theme="@style/AppTheme.Light" />
+
+    <activity
+      android:name="com.kolibree.android.app.ui.addprofile.AddProfileActivity"
+      android:theme="@style/AppTheme.Inverse.Red" />
+
+    <activity android:name="zendesk.support.guide.HelpCenterActivity"
+      android:theme="@style/AppTheme.Light.DarkStatusBar" />
+
+    <activity android:name="zendesk.support.guide.ViewArticleActivity"
+      android:theme="@style/AppTheme.Light.DarkStatusBar" />
+
+    <activity android:name="zendesk.support.request.RequestActivity"
+      android:theme="@style/AppTheme.Light.DarkStatusBar" />
+
+    <activity android:name="zendesk.support.requestlist.RequestListActivity"
+      android:theme="@style/AppTheme.Light.DarkStatusBar" />
+
+    <!-- Licenses activities -->
+    <activity
+      android:name="com.google.android.gms.oss.licenses.OssLicensesActivity"
+      android:theme="@style/AppTheme.Light.DarkStatusBar.SupportActionBar" />
+
+    <activity
+      android:name="com.google.android.gms.oss.licenses.OssLicensesMenuActivity"
+      android:theme="@style/AppTheme.Light.DarkStatusBar.SupportActionBar" />
+
+  </application>
+
+</manifest>

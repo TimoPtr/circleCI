@@ -1,0 +1,21 @@
+<!--
+  ~ Copyright (c) 2019 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.kolibree.android.brushingquiz">
+
+  <application>
+    <activity
+      android:name=".presentation.BrushingProgramActivity"
+      android:label="@string/brushing_quiz_label"
+      android:screenOrientation="portrait"
+      android:theme="@style/AppTheme.Light" />
+  </application>
+
+</manifest>

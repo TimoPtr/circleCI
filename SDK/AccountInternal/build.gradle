@@ -1,0 +1,55 @@
+apply plugin: 'com.android.library'
+
+apply from: '../buildscripts/kapt.gradle'
+
+android {
+    defaultConfig {
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+
+        kapt {
+            arguments {
+                arg("room.schemaLocation", "$projectDir/schemas".toString())
+            }
+        }
+    }
+
+    sourceSets {
+        androidTest.assets.srcDirs +=
+            files("$projectDir/schemas".toString())
+    }
+    androidExtensions {
+        experimental = true
+    }
+}
+
+dependencies {
+    implementation project(path: ':commons')
+
+    implementation libraries.kotlinRuntime
+
+    implementation libraries.rxJava
+    implementation libraries.rxRelay
+    implementation libraries.rxReplayShare
+    implementation libraries.rxLint
+
+    implementation libraries.timber
+
+    api libraries.roomRuntime
+    implementation libraries.roomRxJava2
+    kapt libraries.roomCompiler
+
+    implementation libraries.dagger
+    kapt libraries.daggerCompiler
+
+    implementation libraries.gson
+
+    implementation libraries.threetenAbp
+
+    testImplementation project(path: ':testing-unit-base')
+    testImplementation project(path: ':testing-builders')
+    testImplementation libraries.mockitoKotlin2
+
+    androidTestImplementation project(path: ':testing-espresso-base')
+    androidTestImplementation libraries.mockitoKotlin2
+    androidTestImplementation libraries.roomTesting
+}

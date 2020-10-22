@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <Blacklist></Blacklist>
+  <Whitelist>
+    <ID>ComplexMethod:GalleryFacade.kt$GalleryFacade$loadFromGallery</ID>
+    <ID>ComplexMethod:SettingsActivity.kt$SettingsActivity$execute</ID>
+    <ID>LargeClass:SettingsActivity.kt$SettingsActivity$SettingsActivity</ID>
+    <ID>LongMethod:GalleryFacade.kt$GalleryFacade$loadFromGallery</ID>
+    <ID>LongMethod:HomeScreenActivity.kt$HomeScreenActivity$setupHorizontalNavigation</ID>
+    <ID>LongMethod:HomeViewState.kt$HomeViewState$withSmilesCounterState</ID>
+    <ID>LongMethod:ImageCaptor.kt$ImageCaptor$correctImage</ID>
+    <ID>LongMethod:SettingsViewState.kt$SettingsViewState$brusherSettingsItems</ID>
+    <ID>LongMethod:SmilesCounterBindingAdapter.kt$setSmilesCounterState</ID>
+    <ID>MagicNumber:SmilesCounterStateProvider.kt$500</ID>
+    <ID>MatchingDeclarationName:BottomNavigation.kt$BottomNavigationTab</ID>
+    <ID>NestedBlockDepth:SmilesCounterStateMergerImplTest.kt$SmilesCounterStateMergerImplTest$`merger never returns Error`</ID>
+    <ID>PackageNaming:BlinkFirstScanResultUseCase.kt$package com.kolibree.android.app.ui.pairing.wake_your_brush</ID>
+    <ID>PackageNaming:BrushFoundAnalytics.kt$package com.kolibree.android.app.ui.pairing.brush_found</ID>
+    <ID>PackageNaming:BrushFoundConfirmConnectionUseCase.kt$package com.kolibree.android.app.ui.pairing.brush_found</ID>
+    <ID>PackageNaming:BrushFoundFragment.kt$package com.kolibree.android.app.ui.pairing.brush_found</ID>
+    <ID>PackageNaming:BrushFoundViewModel.kt$package com.kolibree.android.app.ui.pairing.brush_found</ID>
+    <ID>PackageNaming:IsBrushReadyAnalytics.kt$package com.kolibree.android.app.ui.pairing.is_brush_ready</ID>
+    <ID>PackageNaming:IsBrushReadyFragment.kt$package com.kolibree.android.app.ui.pairing.is_brush_ready</ID>
+    <ID>PackageNaming:IsBrushReadyViewModel.kt$package com.kolibree.android.app.ui.pairing.is_brush_ready</ID>
+    <ID>PackageNaming:ModelMismatchAnalytics.kt$package com.kolibree.android.app.ui.pairing.model_mismatch</ID>
+    <ID>PackageNaming:ModelMismatchFragment.kt$package com.kolibree.android.app.ui.pairing.model_mismatch</ID>
+    <ID>PackageNaming:ModelMismatchViewModel.kt$package com.kolibree.android.app.ui.pairing.model_mismatch</ID>
+    <ID>PackageNaming:WakeYourBrushAnalytics.kt$package com.kolibree.android.app.ui.pairing.wake_your_brush</ID>
+    <ID>PackageNaming:WakeYourBrushFragment.kt$package com.kolibree.android.app.ui.pairing.wake_your_brush</ID>
+    <ID>PackageNaming:WakeYourBrushPrerequisitesUseCase.kt$package com.kolibree.android.app.ui.pairing.wake_your_brush</ID>
+    <ID>PackageNaming:WakeYourBrushViewModel.kt$package com.kolibree.android.app.ui.pairing.wake_your_brush</ID>
+    <ID>PackageNaming:WakeYourBrushViewState.kt$package com.kolibree.android.app.ui.pairing.wake_your_brush</ID>
+    <ID>TooGenericExceptionCaught:GalleryFacade.kt$GalleryFacade$e: Exception</ID>
+    <ID>TooManyFunctions:SettingsNavigator.kt$SettingsNavigator$SettingsNavigator</ID>
+    <ID>TopLevelPropertyNaming:SmilesCounterStateProvider.kt$private val DEBOUNCE_SMILES_RESULTS = Duration.of(500, ChronoUnit.MILLIS)</ID>
+  </Whitelist>
+</SmellBaseline>

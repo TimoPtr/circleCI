@@ -1,0 +1,56 @@
+buildscript {
+    apply from: '../SDK/dependencies.gradle'
+
+    repositories {
+        /**
+         * NOTE: this local maven is added only to prevent issues with plugins that cannot be resolved
+         * at any point in time, for ex. in Jenkins. Do not populate any content there unless it's absolutely
+         * necessary.
+         */
+        maven { url "${rootProject.rootDir}/../mavenBackup/" }
+        google()
+        jcenter()
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+        maven {
+            url = kolibree_artifactory_url + "/libs-release"
+            credentials {
+                username kolibree_artifactory_username
+                password kolibree_artifactory_username
+            }
+        }
+    }
+    dependencies {
+        classpath gradlePlugins.kotlin
+        classpath gradlePlugins.android
+        classpath gradlePlugins.spotless
+        classpath gradlePlugins.detekt
+        classpath gradlePlugins.marathonGradle
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+        maven {
+            url = kolibree_artifactory_url + "/libs-release"
+            credentials {
+                username kolibree_artifactory_username
+                password kolibree_artifactory_username
+            }
+        }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+    detektRulePath = "../../SDK/buildscripts/detekt"
+}

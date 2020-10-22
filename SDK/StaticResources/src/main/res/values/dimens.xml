@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="UnusedResources">
+
+  <!--
+    # Material Design Dimensions
+    These dimensions are provided as per Material Design Guidelines to adhere to a 8 dp baseline
+    grid. (With the exception of the toolbar and notification bar.).
+
+    ## References
+    - https://www.google.com/design/spec/layout/metrics-keylines.html
+    - https://material.io/guidelines/style/typography.html#typography-typeface
+  -->
+
+  <!-- Margins & Padding, 8 dp baseline, https://material.io/guidelines/layout/metrics-keylines.html#metrics-keylines-baseline-grids -->
+  <dimen name="zero">0dp</dimen>
+  <dimen name="dot_quarter">2dp</dimen>
+  <dimen name="dot_half">4dp</dimen>
+  <dimen name="dot">8dp</dimen>
+  <dimen name="dot_double">16dp</dimen>
+  <dimen name="dot_trip">24dp</dimen>
+  <dimen name="dot_quad">32dp</dimen>
+  <dimen name="dot_quin">40dp</dimen>
+  <dimen name="dot_six">48dp</dimen>
+  <dimen name="dot_sev">56dp</dimen>
+  <dimen name="dot_oct">64dp</dimen>
+  <dimen name="dot_nine">72dp</dimen>
+  <dimen name="dot_ten">80dp</dimen>
+  <dimen name="dot_eleven">88dp</dimen>
+  <dimen name="dot_twelve">96dp</dimen>
+  <dimen name="dot_thirteen">104dp</dimen>
+  <dimen name="dot_fourteen">112dp</dimen>
+  <dimen name="dot_twenty">160dp</dimen>
+  <dimen name="dot_thirty">240dp</dimen>
+
+  <!-- Provide readable width/height for constraintLayout where zero = match constraint -->
+  <dimen name="match_constraints">@dimen/zero</dimen>
+
+  <!-- Touch Target Size, https://material.io/guidelines/layout/metrics-keylines.html#metrics-keylines-touch-target-size-->
+  <dimen name="min_touch_zone">48dp</dimen>
+  <dimen name="standard_touch_size">@dimen/min_touch_zone</dimen>
+
+  <!-- Launcher Icon Size, https://developer.android.com/guide/practices/ui_guidelines/icon_design_launcher.html#size -->
+  <dimen name="launcher_icon_size">@dimen/min_touch_zone</dimen>
+
+  <!-- Toolbar, 4 dp baseline, https://material.io/guidelines/layout/metrics-keylines.html#metrics-keylines-baseline-grids -->
+  <dimen name="toolbar_margin_size">4dp</dimen>
+  <dimen name="toolbar_icon_size">24dp</dimen>
+  <dimen name="toolbar_icon_padding">12dp</dimen>
+
+  <!-- Badge dimensions -->
+  <dimen name="badge_size">11dp</dimen>
+  <dimen name="badge_text_size">8sp</dimen>
+
+  <!-- Sets of generic text size. Do not add new ones without discussion with the team -->
+  <dimen name="text_12pt">12sp</dimen>
+  <dimen name="text_14pt">14sp</dimen>
+  <dimen name="text_16pt">16sp</dimen>
+  <dimen name="text_18pt">18sp</dimen>
+  <dimen name="text_20pt">20sp</dimen>
+  <dimen name="text_24pt">24sp</dimen>
+  <dimen name="text_38pt">38sp</dimen>
+  <dimen name="text_80pt">80sp</dimen>
+
+  <dimen name="elevation_quarter">1dp</dimen>
+  <dimen name="elevation_half">2dp</dimen>
+  <dimen name="elevation">4dp</dimen>
+  <dimen name="elevation_double">8dp</dimen>
+
+  <item name="connected_icon_alpha" format="float" type="dimen">1.0</item>
+  <item name="disconnected_icon_alpha" format="float" type="dimen">0.3</item>
+
+  <!--
+  Rounded progressbar dimens. Used when launching Unity games, so no need for flavors
+
+  Copied from StaticResourcesV1
+  -->
+
+  <dimen name="progress_bar_rounded_background_corner_radius">@dimen/dot</dimen>
+  <dimen name="progress_bar_rounded_background_height">20dp</dimen>
+  <dimen name="progress_bar_rounded_foreground_margin">2dp</dimen>
+  <dimen name="progress_bar_rounded_foreground_corner_radius">7dp</dimen>
+  <dimen name="progress_bar_rounded_foreground_height">16dp</dimen>
+</resources>

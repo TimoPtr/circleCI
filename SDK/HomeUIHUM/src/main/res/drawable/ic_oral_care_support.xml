@@ -1,0 +1,37 @@
+<!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="58dp"
+    android:height="58dp"
+    android:viewportWidth="58"
+    android:viewportHeight="58">
+  <path
+      android:pathData="M8.042,34.828c-0.106,-2.106 -0.25,-3.942 -0.593,-5.223 -1.658,-6.206 -8.708,-14.21 -0.69,-22.574 8.016,-8.364 13.408,-1.078 22.254,-1.078 8.82,0 14.212,-7.303 22.229,1.06 8.017,8.365 0.967,16.338 -0.691,22.543 -1.659,6.206 1.334,25.437 -9.262,25.437 -4.837,0 -6.721,-15.074 -12.276,-15.074S21.548,55 16.71,55c-4.802,0 -6.813,-3.942 -7.73,-8.83"
+      android:strokeWidth="4"
+      android:fillColor="#00000000"
+      android:strokeColor="#E75650"
+      android:strokeLineCap="round"/>
+  <path
+      android:pathData="M8.971,48.165c1.105,0 2,-0.895 2,-2s-0.895,-2 -2,-2c-1.104,0 -2,0.895 -2,2s0.896,2 2,2z"
+      android:fillColor="#73CECA"
+      android:fillType="evenOdd"/>
+  <path
+      android:pathData="M16,3s16,4 25,12"
+      android:strokeWidth="4"
+      android:fillColor="#00000000"
+      android:strokeColor="#E75650"
+      android:strokeLineCap="round"/>
+  <path
+      android:pathData="M9.364,21s-2,-10 7,-13M42.53,47.17s2.413,-4.378 1.857,-8.34"
+      android:strokeWidth="2"
+      android:fillColor="#00000000"
+      android:strokeColor="#E75650"
+      android:strokeLineCap="round"/>
+</vector>

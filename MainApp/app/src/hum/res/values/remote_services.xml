@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<resources>
+
+  <!-- STAGING -->
+  <string name="kolibree_client_id" translatable="false">"eE1pQTZWOTB1djBnbTZPNktCaWx3Q1lPU2dJSDQ2bldSUE02ZkFYRHM0bw=="</string>
+
+  <string name="kolibree_client_secret" translatable="false">"4LAL/vSNIYELf5rNwP2uDcCgJ0uBwd/FntMPrSSbZWSlu4O31bJHfyAsQZrLU6FH6ByRV4rYRh33
+uADnKbM41VfpgOVBjCU2hcy7Y+gjn9wexkR82xRvrA0dN8UyxL6j
+"</string>
+
+  <string name="kolibree_client_secret_iv" translatable="false">A1496678BE2F59B59A1BA6644F85248E</string>
+  <bool name="kolibree_staging_server">true</bool>
+
+  <!-- PRODUCTION -->
+
+  <string name="kolibree_client_id_production" translatable="false">"SWNta3JHcjJJcDZZS1pCeXB1TmMxYnA0ekxyNnNiR3hwbjNabm5JT0JFMA=="</string>
+
+  <string name="kolibree_client_secret_production" translatable="false">"iNWMNP9wUwGE4H7bB0ZSs18wtWvA8ah1sr+ReqmM9I1VxSXlIU4Z5GpEA1pSEXopb/c4dsdjuc9c
+JRfwexfB8VDCW4JHjkb2H8dDac1PnEGCM8BjYV6w0xJ1UTpyJVIL
+"
+</string>
+
+  <string name="kolibree_client_secret_iv_production" translatable="false">66C3DBDDAD525668D032A61A4B87B6E0</string>
+
+
+  <!-- DEV -->
+  <string name="kolibree_client_id_dev" translatable="false">17</string>
+
+  <string name="kolibree_client_secret_dev" translatable="false">"MAk79fSHHRA3XasDRskjJmCNRbBJHybcBZ4OkzwPjeiiccftwEdWNyCZtVaWjp2dv/TlODcFhtAfD/M8eZz0os85Lm4GD1cMOUOGePAFkYk="</string>
+
+  <string name="kolibree_client_secret_iv_dev" translatable="false">6722655CB9024233B8A8815D7B180092</string>
+
+  <!-- Zendesk -->
+  <string name="zendesk_client_id" translatable="false">mobile_sdk_client_4d29a7b36235158d5189</string>
+  <string name="zendesk_app_id" translatable="false">c96b569ae36bb59aeeed0852abb2dcc516b5a6a7552cc63e</string>
+</resources>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <data>
+
+    <variable
+      name="item"
+      type="com.kolibree.android.app.ui.selecttoothbrush.SelectToothbrushItem" />
+
+    <variable
+      name="interaction"
+      type="com.kolibree.android.app.ui.selecttoothbrush.SelectToothbrushInteraction" />
+
+  </data>
+
+  <com.google.android.material.card.MaterialCardView
+    style="?materialCardViewStyle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/dot_half"
+    android:layout_marginTop="@dimen/dot_trip"
+    android:layout_marginEnd="@dimen/dot_half"
+    android:onClick="@{() -> interaction.onItemClick(item)}"
+    app:cardBackgroundColor="@{item.selected ? @color/red : @color/transparent}"
+    app:cardElevation="@dimen/zero"
+    app:strokeColor="@{item.selected ? @color/transparent : @color/lightgray}"
+    app:strokeWidth="1dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content">
+
+      <ImageView
+        android:id="@+id/brush_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dot_double"
+        android:src="@{item.iconRes}"
+        app:layout_constraintBottom_toTopOf="@+id/brush_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/ic_toothbrush_plq" />
+
+      <TextView
+        android:id="@+id/brush_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dot"
+        android:ellipsize="end"
+        android:lines="2"
+        android:text="@{item.name}"
+        android:textAppearance="?textAppearanceSubtitle2"
+        android:textColor="@{item.selected ? @color/white : @color/darkgray}"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/brush_image"
+        tools:text="Connect E2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+  </com.google.android.material.card.MaterialCardView>
+
+</layout>

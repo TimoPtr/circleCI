@@ -1,0 +1,7 @@
+{
+  "display_message": "Invalid session: please log in again.",
+  "message": "E05: Invalid access token.",
+  "internal_error_code": 5,
+  "detail": "Invalid access token.",
+  "http_code": 401
+}

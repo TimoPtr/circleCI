@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="5" by="lint 4.0.0" client="gradle" variant="debug" version="4.0.0">
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="sealed class DefaultActivity {"
+        errorLine2="             ~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/kotlin/com/kolibree/android/app/ui/game/DefaultUserActivityUseCase.kt"
+            line="71"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="    data class CoachPlusActivity(val connection: KLTBConnection) : DefaultActivity()"
+        errorLine2="               ~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/kotlin/com/kolibree/android/app/ui/game/DefaultUserActivityUseCase.kt"
+            line="72"
+            column="16"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="    data class MultiToothbrush(val connections: List&lt;KLTBConnection>) : DefaultActivity()"
+        errorLine2="               ~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/kotlin/com/kolibree/android/app/ui/game/DefaultUserActivityUseCase.kt"
+            line="73"
+            column="16"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="    object NoToothbrushConnected : DefaultActivity()"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/kotlin/com/kolibree/android/app/ui/game/DefaultUserActivityUseCase.kt"
+            line="74"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="interface HomeScreenAction : BaseAction"
+        errorLine2="          ~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/kotlin/com/kolibree/android/app/ui/navigation/HomeScreenAction.kt"
+            line="14"
+            column="11"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="data class NavigateAction("
+        errorLine2="           ~~~~~~~~~~~~~~">
+        <location
+            file="src/main/kotlin/com/kolibree/android/app/ui/navigation/NavigateAction.kt"
+            line="15"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="    companion object {"
+        errorLine2="              ~~~~~~">
+        <location
+            file="src/main/kotlin/com/kolibree/android/app/ui/navigation/NavigateAction.kt"
+            line="20"
+            column="15"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="object Unknown : ToothbrushConnectionState"
+        errorLine2="       ~~~~~~~">
+        <location
+            file="src/main/kotlin/com/kolibree/android/app/ui/toolbartoothbrush/ToothbrushConnectionState.kt"
+            line="20"
+            column="8"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="abstract class NoToothbrushConnected(open val toothbrushes: Int, open val mac: String?) :"
+        errorLine2="               ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/kotlin/com/kolibree/android/app/ui/toolbartoothbrush/ToothbrushConnectionState.kt"
+            line="22"
+            column="16"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="data class NoService(override val toothbrushes: Int, override val mac: String?) :"
+        errorLine2="           ~~~~~~~~~">
+        <location
+            file="src/main/kotlin/com/kolibree/android/app/ui/toolbartoothbrush/ToothbrushConnectionState.kt"
+            line="26"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="data class NoLocation(override val toothbrushes: Int, override val mac: String?) :"
+        errorLine2="           ~~~~~~~~~~">
+        <location
+            file="src/main/kotlin/com/kolibree/android/app/ui/toolbartoothbrush/ToothbrushConnectionState.kt"
+            line="30"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="data class NoToothbrushes(override val toothbrushes: Int) :"
+        errorLine2="           ~~~~~~~~~~~~~~">
+        <location
+            file="src/main/kotlin/com/kolibree/android/app/ui/toolbartoothbrush/ToothbrushConnectionState.kt"
+            line="34"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="data class NoBluetooth(override val toothbrushes: Int, override val mac: String?) :"
+        errorLine2="           ~~~~~~~~~~~">
+        <location
+            file="src/main/kotlin/com/kolibree/android/app/ui/toolbartoothbrush/ToothbrushConnectionState.kt"
+            line="38"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="abstract class SingleToothbrush(open val mac: String) : ToothbrushConnectionState"
+        errorLine2="               ~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/kotlin/com/kolibree/android/app/ui/toolbartoothbrush/ToothbrushConnectionState.kt"
+            line="41"
+            column="16"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="data class SingleToothbrushDisconnected(override val mac: String) : SingleToothbrush(mac)"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/kotlin/com/kolibree/android/app/ui/toolbartoothbrush/ToothbrushConnectionState.kt"
+            line="44"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="data class SingleToothbrushConnecting(override val mac: String) : SingleToothbrush(mac)"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/kotlin/com/kolibree/android/app/ui/toolbartoothbrush/ToothbrushConnectionState.kt"
+            line="47"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="data class SingleToothbrushConnected(override val mac: String) : SingleToothbrush(mac)"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/kotlin/com/kolibree/android/app/ui/toolbartoothbrush/ToothbrushConnectionState.kt"
+            line="50"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="data class SingleToothbrushOtaAvailable(override val mac: String) : SingleToothbrush(mac)"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/kotlin/com/kolibree/android/app/ui/toolbartoothbrush/ToothbrushConnectionState.kt"
+            line="53"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="data class SingleToothbrushOtaInProgress(override val mac: String) : SingleToothbrush(mac)"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/kotlin/com/kolibree/android/app/ui/toolbartoothbrush/ToothbrushConnectionState.kt"
+            line="56"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="data class SingleSyncingOfflineBrushing(override val mac: String) : SingleToothbrush(mac)"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/kotlin/com/kolibree/android/app/ui/toolbartoothbrush/ToothbrushConnectionState.kt"
+            line="59"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="abstract class MultiToothbrush(open val macs: List&lt;String>) : ToothbrushConnectionState"
+        errorLine2="               ~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/kotlin/com/kolibree/android/app/ui/toolbartoothbrush/ToothbrushConnectionState.kt"
+            line="61"
+            column="16"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="data class MultiToothbrushDisconnected(override val macs: List&lt;String>) : MultiToothbrush(macs)"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/kotlin/com/kolibree/android/app/ui/toolbartoothbrush/ToothbrushConnectionState.kt"
+            line="64"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="data class MultiToothbrushConnecting(override val macs: List&lt;String>) : MultiToothbrush(macs)"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/kotlin/com/kolibree/android/app/ui/toolbartoothbrush/ToothbrushConnectionState.kt"
+            line="67"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="data class MultiToothbrushConnected("
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/kotlin/com/kolibree/android/app/ui/toolbartoothbrush/ToothbrushConnectionState.kt"
+            line="70"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="data class MultiToothbrushOtaAvailable(override val macs: List&lt;String>) : MultiToothbrush(macs)"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/kotlin/com/kolibree/android/app/ui/toolbartoothbrush/ToothbrushConnectionState.kt"
+            line="75"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="data class MultiToothbrushOtaInProgress(override val macs: List&lt;String>) : MultiToothbrush(macs)"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/kotlin/com/kolibree/android/app/ui/toolbartoothbrush/ToothbrushConnectionState.kt"
+            line="78"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="data class MultiSyncingOfflineBrushing(override val macs: List&lt;String>) : MultiToothbrush(macs)"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/kotlin/com/kolibree/android/app/ui/toolbartoothbrush/ToothbrushConnectionState.kt"
+            line="81"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="VectorPath"
+        message="Very long vector path (937 characters), which is bad for performance. Considering reducing precision, removing minor details or rasterizing vector."
+        errorLine1="      android:pathData=&quot;M12.027,5.663a1.153,1.153 0,0 0,1.13 -1.374,1.149 1.149,0 0,0 -0.905,-0.904 1.153,1.153 0,0 0,-1.377 1.128,1.149 1.149,0 0,0 1.152,1.15zM12.027,8.651a1.153,1.153 0,0 0,1.128 -1.38,1.149 1.149,0 0,0 -0.913,-0.9 1.153,1.153 0,0 0,-1.367 1.146,1.149 1.149,0 0,0 1.152,1.15M12.027,11.642a1.153,1.153 0,0 0,1.13 -1.374,1.149 1.149,0 0,0 -0.905,-0.903 1.153,1.153 0,0 0,-1.377 1.128,1.149 1.149,0 0,0 1.152,1.15zM9.474,7.157a1.153,1.153 0,0 0,1.111 -1.384,1.15 1.15,0 0,0 -1.571,-0.827 1.151,1.151 0,0 0,-0.708 1.061,1.149 1.149,0 0,0 1.152,1.15M9.474,10.148a1.153,1.153 0,0 0,1.112 -1.382,1.15 1.15,0 0,0 -1.57,-0.83 1.151,1.151 0,0 0,-0.71 1.06,1.149 1.149,0 0,0 1.152,1.149M14.584,7.157a1.153,1.153 0,0 0,1.13 -1.374,1.15 1.15,0 0,0 -1.57,-0.838 1.152,1.152 0,0 0,-0.712 1.062,1.149 1.149,0 0,0 1.152,1.15zM14.584,10.148a1.153,1.153 0,0 0,1.13 -1.374,1.15 1.15,0 0,0 -1.57,-0.838 1.152,1.152 0,0 0,-0.712 1.062,1.149 1.149,0 0,0 1.152,1.15z&quot;"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/drawable-nodpi/ic_toolbar_tb_connected.xml"
+            line="22"
+            column="25"/>
+    </issue>
+
+    <issue
+        id="VectorPath"
+        message="Very long vector path (1721 characters), which is bad for performance. Considering reducing precision, removing minor details or rasterizing vector."
+        errorLine1="      android:pathData=&quot;M28.04,19.496c0.58,-1.566 0.897,-3.26 0.897,-5.027C28.937,6.478 22.46,0 14.47,0 6.478,0 0,6.478 0,14.469c0,7.99 6.478,14.468 14.469,14.468 1.78,0 3.486,-0.321 5.06,-0.91 -0.573,-0.94 -0.904,-2.044 -0.904,-3.226 0,-3.425 2.776,-6.201 6.201,-6.201 1.177,0 2.277,0.327 3.214,0.896zM13.076,22.71c0.015,0.31 0.02,0.702 0.018,1.165 -0.005,0.913 2.76,0.915 2.755,0 -0.002,-0.463 0.003,-0.854 0.018,-1.165 0.208,-4.482 1.6,-7.169 1.998,-7.852l0.01,-0.016c0.014,-0.024 0.029,-0.048 0.041,-0.073l0.017,-0.027c0.024,-0.039 0.037,-0.06 0.032,-0.06 0.6,-1.083 0.959,-2.452 0.959,-3.94 0,-3.515 -1.996,-6.365 -4.456,-6.365 -2.46,0 -4.455,2.85 -4.455,6.365 0,1.645 0.438,3.144 1.154,4.273 0.483,0.88 1.714,3.503 1.91,7.695zM15.638,7.61c0,0.644 -0.522,1.167 -1.166,1.167 -0.645,0 -1.168,-0.523 -1.168,-1.167s0.523,-1.167 1.168,-1.167c0.644,0 1.166,0.523 1.166,1.167zM15.638,10.645c0,0.644 -0.522,1.167 -1.166,1.167 -0.645,0 -1.168,-0.523 -1.168,-1.167 0,-0.645 0.523,-1.168 1.168,-1.168 0.644,0 1.166,0.523 1.166,1.168zM14.472,14.847c0.644,0 1.166,-0.523 1.166,-1.167 0,-0.645 -0.522,-1.168 -1.166,-1.168 -0.645,0 -1.168,0.523 -1.168,1.168 0,0.644 0.523,1.167 1.168,1.167zM13.05,9.127c0,0.645 -0.523,1.168 -1.167,1.168 -0.645,0 -1.167,-0.523 -1.167,-1.167 0,-0.645 0.522,-1.168 1.167,-1.168 0.644,0 1.167,0.523 1.167,1.168zM11.883,13.329c0.644,0 1.167,-0.523 1.167,-1.167s-0.523,-1.167 -1.167,-1.167c-0.645,0 -1.167,0.523 -1.167,1.167s0.522,1.167 1.167,1.167zM18.227,9.128c0,0.644 -0.523,1.167 -1.167,1.167 -0.645,0 -1.167,-0.523 -1.167,-1.167 0,-0.645 0.522,-1.168 1.167,-1.168s1.167,0.523 1.167,1.168zM17.06,13.33c0.645,0 1.167,-0.523 1.167,-1.167s-0.523,-1.167 -1.167,-1.167c-0.645,0 -1.167,0.523 -1.167,1.167s0.522,1.167 1.167,1.167z&quot;"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/drawable-nodpi/ic_toolbar_tb_connected_light.xml"
+            line="16"
+            column="25"/>
+    </issue>
+
+    <issue
+        id="VectorPath"
+        message="Very long vector path (846 characters), which is bad for performance. Considering reducing precision, removing minor details or rasterizing vector."
+        errorLine1="      android:pathData=&quot;M13.422,13.708C13.178,12.985 13,12.338 13,12c0,-0.14 0.02,-0.315 0.056,-0.51a1.142,1.142 0,0 0,-1.015 0.52,1.153 1.153,0 0,0 -0.185,0.644 1.152,1.152 0,0 0,1.146 1.15v-0.016c0.144,0 0.287,-0.027 0.42,-0.08zM13.827,14.831a1.145,1.145 0,0 0,-1.97 0.798,1.152 1.152,0 0,0 1.145,1.15 1.144,1.144 0,0 0,1.146 -1.128,45.707 45.707,0 0,1 -0.32,-0.82zM13.853,8.879c-0.201,0.532 -0.452,1.251 -0.63,1.899a1.14,1.14 0,0 1,-1.031 -0.315,1.152 1.152,0 0,1 0.372,-1.875 1.142,1.142 0,0 1,1.289 0.291zM10.461,12.294a1.144,1.144 0,0 0,1.048 -0.721,1.152 1.152,0 0,0 -0.845,-1.558 1.142,1.142 0,0 0,-1.172 0.492,1.153 1.153,0 0,0 0.143,1.45c0.215,0.215 0.507,0.337 0.81,0.337h0.016zM11.093,15.084a1.143,1.143 0,0 1,-0.632 0.2l-0.015,-0.002a1.144,1.144 0,0 1,-1.146 -1.15,1.153 1.153,0 0,1 0.706,-1.059 1.142,1.142 0,0 1,1.245 0.245,1.151 1.151,0 0,1 -0.158,1.766z&quot;"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/drawable-nodpi/ic_toolbar_tb_connected_multi.xml"
+            line="16"
+            column="25"/>
+    </issue>
+
+    <issue
+        id="VectorPath"
+        message="Very long vector path (1260 characters), which is bad for performance. Considering reducing precision, removing minor details or rasterizing vector."
+        errorLine1="      android:pathData=&quot;M18.002,9.8a1.143,1.143 0,0 0,1.059 -0.71,1.154 1.154,0 0,0 -0.249,-1.253 1.145,1.145 0,0 0,-1.956 0.813,1.152 1.152,0 0,0 1.146,1.15zM18.002,12.788a1.142,1.142 0,0 0,1.06 -0.714,1.154 1.154,0 0,0 -0.256,-1.255 1.144,1.144 0,0 0,-1.95 0.835,1.152 1.152,0 0,0 1.146,1.15M18.002,15.78a1.144,1.144 0,0 0,1.059 -0.71,1.154 1.154,0 0,0 -0.249,-1.254 1.145,1.145 0,0 0,-1.956 0.813,1.152 1.152,0 0,0 1.146,1.15zM15.461,11.294a1.144,1.144 0,0 0,1.048 -0.721,1.152 1.152,0 0,0 -0.845,-1.558 1.142,1.142 0,0 0,-1.172 0.492,1.153 1.153,0 0,0 0.143,1.45c0.215,0.215 0.507,0.337 0.81,0.337M15.461,14.285a1.143,1.143 0,0 0,1.047 -0.72,1.153 1.153,0 0,0 -0.843,-1.558 1.142,1.142 0,0 0,-1.172 0.489,1.152 1.152,0 0,0 0.142,1.449c0.215,0.216 0.507,0.337 0.81,0.337M20.546,11.294a1.143,1.143 0,0 0,1.058 -0.71,1.153 1.153,0 0,0 -0.835,-1.568 1.142,1.142 0,0 0,-1.176 0.49,1.153 1.153,0 0,0 0.142,1.451c0.215,0.216 0.507,0.337 0.81,0.337zM20.546,14.285a1.143,1.143 0,0 0,1.058 -0.71,1.153 1.153,0 0,0 -0.835,-1.568 1.142,1.142 0,0 0,-1.176 0.49,1.153 1.153,0 0,0 0.142,1.451c0.215,0.216 0.507,0.337 0.81,0.337zM26.358,18.024a4.66,4.66 0,0 0,-4.303 2.867,4.64 4.64,0 0,0 1.007,5.065 4.658,4.658 0,0 0,7.947 -3.285,4.646 4.646,0 0,0 -1.363,-3.284 4.662,4.662 0,0 0,-3.288 -1.363z&quot;"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/drawable-nodpi/ic_toolbar_tb_connected_multi.xml"
+            line="20"
+            column="25"/>
+    </issue>
+
+    <issue
+        id="VectorPath"
+        message="Very long vector path (1070 characters), which is bad for performance. Considering reducing precision, removing minor details or rasterizing vector."
+        errorLine1="      android:pathData=&quot;M27.913,17.453c0.057,-0.477 0.087,-0.961 0.087,-1.453 0,-6.627 -5.373,-12 -12,-12S4,9.373 4,16c0,5.079 3.155,9.421 7.613,11.173 0.031,-1.126 0.037,-2.018 0.01,-2.611 -0.192,-4.132 -1.4,-6.712 -1.889,-7.582a7.939,7.939 0,0 1,-1.133 -4.21c0,-3.475 1.958,-6.27 4.376,-6.27 0.516,0 1.011,0.128 1.471,0.363 -1.004,1.147 -1.647,2.915 -1.647,4.907a7.94,7.94 0,0 0,1.133 4.21c0.295,0.525 0.851,1.672 1.289,3.407 -0.404,1.288 -0.78,3.021 -0.88,5.174 -0.035,0.716 -0.015,1.863 0.034,3.33a12.097,12.097 0,0 0,2.171 0.097c0.03,-0.724 0.054,-1.389 0.07,-1.984 0.027,-1.046 0.03,-1.879 0.005,-2.443 -0.106,-2.285 -0.524,-4.096 -0.958,-5.405 -0.35,-1.057 -0.713,-1.787 -0.93,-2.175A7.939,7.939 0,0 1,13.6 11.77c0,-1.809 0.53,-3.433 1.38,-4.575 0.685,-0.92 1.577,-1.528 2.566,-1.665l0.03,-0.004c0.131,-0.017 0.265,-0.026 0.4,-0.026 2.417,0 4.375,2.808 4.375,6.27a8.098,8.098 0,0 1,-0.944 3.882l-0.054,0.085 -0.05,0.09c-0.39,0.672 -1.757,3.318 -1.961,7.734 -0.04,0.814 -0.009,2.186 0.056,3.95a11.936,11.936 0,0 0,2.844 -1.26,5.443 5.443,0 0,1 4.116,-9.026c0.53,0 1.054,0.078 1.554,0.227z&quot;"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/drawable-nodpi/ic_toolbar_tb_connected_multi.xml"
+            line="26"
+            column="25"/>
+    </issue>
+
+    <issue
+        id="VectorPath"
+        message="Very long vector path (905 characters), which is bad for performance. Considering reducing precision, removing minor details or rasterizing vector."
+        errorLine1="      android:pathData=&quot;M16.027,9.663a1.153,1.153 0,0 0,1.13 -1.374,1.149 1.149,0 0,0 -0.905,-0.904 1.153,1.153 0,0 0,-1.376 1.128,1.149 1.149,0 0,0 1.151,1.15zM16.027,12.651a1.154,1.154 0,0 0,1.066 -0.713,1.148 1.148,0 0,0 -0.851,-1.566 1.153,1.153 0,0 0,-1.367 1.145,1.149 1.149,0 0,0 1.152,1.15M16.027,15.642a1.153,1.153 0,0 0,1.13 -1.374,1.15 1.15,0 0,0 -1.57,-0.838 1.15,1.15 0,0 0,0.44 2.212zM13.474,11.157a1.154,1.154 0,0 0,1.052 -0.72,1.148 1.148,0 0,0 -0.85,-1.559 1.153,1.153 0,0 0,-1.37 1.13,1.149 1.149,0 0,0 1.152,1.149M13.474,14.148a1.153,1.153 0,0 0,1.112 -1.382,1.15 1.15,0 0,0 -1.57,-0.83 1.152,1.152 0,0 0,-0.71 1.06,1.149 1.149,0 0,0 1.152,1.149M18.584,11.157a1.153,1.153 0,0 0,1.13 -1.374,1.15 1.15,0 0,0 -1.57,-0.838 1.152,1.152 0,0 0,-0.712 1.062,1.149 1.149,0 0,0 1.152,1.15zM18.584,14.148a1.153,1.153 0,0 0,1.13 -1.374,1.15 1.15,0 0,0 -1.57,-0.838A1.152,1.152 0,0 0,17.431 13a1.149,1.149 0,0 0,1.152 1.15z&quot;"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/drawable-nodpi/ic_toolbar_tb_connected_ota.xml"
+            line="22"
+            column="25"/>
+    </issue>
+
+    <issue
+        id="VectorPath"
+        message="Very long vector path (846 characters), which is bad for performance. Considering reducing precision, removing minor details or rasterizing vector."
+        errorLine1="      android:pathData=&quot;M13.422,14.708C13.178,13.985 13,13.338 13,13c0,-0.14 0.02,-0.315 0.056,-0.51a1.142,1.142 0,0 0,-1.015 0.52,1.153 1.153,0 0,0 -0.185,0.644 1.152,1.152 0,0 0,1.146 1.15v-0.016c0.144,0 0.287,-0.027 0.42,-0.08zM13.827,15.831a1.145,1.145 0,0 0,-1.97 0.798,1.152 1.152,0 0,0 1.145,1.15 1.144,1.144 0,0 0,1.146 -1.128,45.707 45.707,0 0,1 -0.32,-0.82zM13.853,9.879c-0.201,0.532 -0.452,1.251 -0.63,1.899a1.14,1.14 0,0 1,-1.031 -0.315,1.152 1.152,0 0,1 0.372,-1.875 1.142,1.142 0,0 1,1.289 0.291zM10.461,13.294a1.144,1.144 0,0 0,1.048 -0.721,1.152 1.152,0 0,0 -0.845,-1.558 1.142,1.142 0,0 0,-1.172 0.492,1.153 1.153,0 0,0 0.143,1.45c0.215,0.215 0.507,0.337 0.81,0.337h0.016zM11.093,16.084a1.143,1.143 0,0 1,-0.632 0.2l-0.015,-0.002a1.144,1.144 0,0 1,-1.146 -1.15,1.153 1.153,0 0,1 0.706,-1.059 1.142,1.142 0,0 1,1.245 0.245,1.151 1.151,0 0,1 -0.158,1.766z&quot;"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/drawable-nodpi/ic_toolbar_tb_connected_ota_multi.xml"
+            line="16"
+            column="25"/>
+    </issue>
+
+    <issue
+        id="VectorPath"
+        message="Very long vector path (1226 characters), which is bad for performance. Considering reducing precision, removing minor details or rasterizing vector."
+        errorLine1="      android:pathData=&quot;M18.002,10.8a1.144,1.144 0,0 0,1.059 -0.71,1.154 1.154,0 0,0 -0.249,-1.253 1.145,1.145 0,0 0,-1.956 0.813,1.152 1.152,0 0,0 1.146,1.15zM18.002,13.788a1.142,1.142 0,0 0,1.06 -0.714,1.154 1.154,0 0,0 -0.256,-1.255 1.144,1.144 0,0 0,-1.95 0.835,1.152 1.152,0 0,0 1.146,1.15M18.002,16.78a1.144,1.144 0,0 0,1.059 -0.71,1.154 1.154,0 0,0 -0.249,-1.254 1.145,1.145 0,0 0,-1.956 0.813,1.152 1.152,0 0,0 1.146,1.15zM15.461,12.294a1.144,1.144 0,0 0,1.048 -0.721,1.152 1.152,0 0,0 -0.845,-1.558 1.142,1.142 0,0 0,-1.172 0.492,1.153 1.153,0 0,0 0.143,1.45c0.215,0.215 0.507,0.337 0.81,0.337M15.461,15.285a1.143,1.143 0,0 0,1.047 -0.72,1.153 1.153,0 0,0 -0.843,-1.558 1.142,1.142 0,0 0,-1.172 0.489,1.152 1.152,0 0,0 0.142,1.449c0.215,0.216 0.507,0.337 0.81,0.337M20.546,12.294a1.143,1.143 0,0 0,1.058 -0.71,1.153 1.153,0 0,0 -0.835,-1.568 1.142,1.142 0,0 0,-1.176 0.49,1.153 1.153,0 0,0 0.953,1.788zM20.546,15.285a1.143,1.143 0,0 0,1.058 -0.71,1.153 1.153,0 0,0 -0.835,-1.568 1.142,1.142 0,0 0,-1.176 0.49,1.153 1.153,0 0,0 0.142,1.451c0.215,0.216 0.507,0.337 0.81,0.337zM26.358,18.024a4.66,4.66 0,0 0,-4.303 2.867,4.64 4.64,0 0,0 1.007,5.065 4.658,4.658 0,0 0,7.947 -3.285,4.646 4.646,0 0,0 -1.363,-3.284 4.662,4.662 0,0 0,-3.288 -1.363z&quot;"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/drawable-nodpi/ic_toolbar_tb_connected_ota_multi.xml"
+            line="20"
+            column="25"/>
+    </issue>
+
+    <issue
+        id="VectorPath"
+        message="Very long vector path (1123 characters), which is bad for performance. Considering reducing precision, removing minor details or rasterizing vector."
+        errorLine1="      android:pathData=&quot;M5.68,9.873a5.463,5.463 0,0 0,1.493 -0.565l2.33,0.194 -0.195,-2.33c0.26,-0.467 0.45,-0.969 0.565,-1.492A11.945,11.945 0,0 1,16 4c6.627,0 12,5.373 12,12 0,0.492 -0.03,0.976 -0.087,1.453a5.464,5.464 0,0 0,-4.586 0.687,5.45 5.45,0 0,0 -2.323,5.592 5.443,5.443 0,0 0,1.239 2.518c-0.88,0.537 -1.834,0.964 -2.844,1.262l-0.032,-0.854c-0.042,-1.065 -0.056,-1.434 -0.024,-2.097 0.204,-4.416 1.57,-7.062 1.961,-7.735a7.915,7.915 0,0 0,1.048 -4.056c0,-3.462 -1.958,-6.27 -4.375,-6.27 -1.22,0 -2.288,0.742 -2.996,1.695 -0.85,1.142 -1.38,2.766 -1.38,4.575a7.939,7.939 0,0 0,1.133 4.21c0.488,0.87 1.697,3.45 1.889,7.581 0.036,0.794 0.014,1.315 -0.05,2.856l-0.024,0.57c-0.727,0.033 -1.464,0 -2.172,-0.096l-0.025,-0.711c-0.03,-0.833 -0.037,-1.04 -0.01,-1.619 0.1,-2.153 0.477,-3.886 0.881,-5.174 -0.438,-1.735 -0.995,-2.882 -1.289,-3.407a7.94,7.94 0,0 1,-1.133 -4.21c0,-1.992 0.643,-3.76 1.647,-4.907a3.212,3.212 0,0 0,-1.471 -0.363c-2.418,0 -4.376,2.795 -4.376,6.27a7.939,7.939 0,0 0,1.133 4.21c0.488,0.87 1.697,3.45 1.889,7.581 0.022,0.497 0.022,0.503 0.003,1.148l-0.013,0.464C7.155,25.42 4,21.079 4,16c0,-2.238 0.613,-4.334 1.68,-6.127z&quot;"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/drawable-nodpi/ic_toolbar_tb_connected_ota_multi.xml"
+            line="26"
+            column="25"/>
+    </issue>
+
+    <issue
+        id="VectorPath"
+        message="Very long vector path (1038 characters), which is bad for performance. Considering reducing precision, removing minor details or rasterizing vector."
+        errorLine1="      android:pathData=&quot;M16.027,9.663a1.153,1.153 0,0 0,1.13 -1.375,1.15 1.15,0 0,0 -1.573,-0.836 1.15,1.15 0,0 0,0.443 2.214M16.027,12.651a1.153,1.153 0,0 0,1.13 -1.374,1.149 1.149,0 0,0 -0.905,-0.903 1.153,1.153 0,0 0,-1.376 1.127,1.149 1.149,0 0,0 1.151,1.15zM16.027,15.642a1.153,1.153 0,0 0,1.13 -1.374,1.15 1.15,0 0,0 -1.57,-0.838 1.15,1.15 0,0 0,0.44 2.212zM13.474,11.157a1.153,1.153 0,0 0,1.115 -1.382,1.15 1.15,0 0,0 -1.572,-0.829 1.151,1.151 0,0 0,-0.37 1.874c0.216,0.216 0.509,0.337 0.814,0.337M13.474,14.148a1.153,1.153 0,0 0,1.115 -1.38,1.15 1.15,0 0,0 -1.57,-0.832 1.152,1.152 0,0 0,-0.71 1.06,1.149 1.149,0 0,0 1.152,1.15M18.584,11.157a1.153,1.153 0,0 0,1.13 -1.374,1.15 1.15,0 0,0 -1.57,-0.838 1.152,1.152 0,0 0,-0.712 1.062,1.149 1.149,0 0,0 1.152,1.15zM18.584,14.148a1.153,1.153 0,0 0,1.13 -1.374,1.15 1.15,0 0,0 -1.57,-0.838A1.152,1.152 0,0 0,17.431 13a1.149,1.149 0,0 0,1.152 1.15zM24.333,18.024a4.66,4.66 0,0 0,-4.291 2.878,4.64 4.64,0 0,0 1.017,5.06A4.657,4.657 0,0 0,29 22.671a4.643,4.643 0,0 0,-2.883 -4.297,4.666 4.666,0 0,0 -1.784,-0.35z&quot;"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/drawable-nodpi/ic_toolbar_tb_disconnected.xml"
+            line="16"
+            column="25"/>
+    </issue>
+
+    <issue
+        id="VectorPath"
+        message="Very long vector path (846 characters), which is bad for performance. Considering reducing precision, removing minor details or rasterizing vector."
+        errorLine1="      android:pathData=&quot;M13.422,13.708C13.178,12.985 13,12.338 13,12c0,-0.14 0.02,-0.315 0.056,-0.51a1.142,1.142 0,0 0,-1.015 0.52,1.153 1.153,0 0,0 -0.185,0.644 1.152,1.152 0,0 0,1.146 1.15v-0.016c0.144,0 0.287,-0.027 0.42,-0.08zM13.827,14.831a1.145,1.145 0,0 0,-1.97 0.798,1.152 1.152,0 0,0 1.145,1.15 1.144,1.144 0,0 0,1.146 -1.128,45.707 45.707,0 0,1 -0.32,-0.82zM13.853,8.879c-0.201,0.532 -0.452,1.251 -0.63,1.899a1.14,1.14 0,0 1,-1.031 -0.315,1.152 1.152,0 0,1 0.372,-1.875 1.142,1.142 0,0 1,1.289 0.291zM10.461,12.294a1.144,1.144 0,0 0,1.048 -0.721,1.152 1.152,0 0,0 -0.845,-1.558 1.142,1.142 0,0 0,-1.172 0.492,1.153 1.153,0 0,0 0.143,1.45c0.215,0.215 0.507,0.337 0.81,0.337h0.016zM11.093,15.084a1.143,1.143 0,0 1,-0.632 0.2l-0.015,-0.002a1.144,1.144 0,0 1,-1.146 -1.15,1.153 1.153,0 0,1 0.706,-1.059 1.142,1.142 0,0 1,1.245 0.245,1.151 1.151,0 0,1 -0.158,1.766z&quot;"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/drawable-nodpi/ic_toolbar_tb_disconnected_multi.xml"
+            line="16"
+            column="25"/>
+    </issue>
+
+    <issue
+        id="VectorPath"
+        message="Very long vector path (1260 characters), which is bad for performance. Considering reducing precision, removing minor details or rasterizing vector."
+        errorLine1="      android:pathData=&quot;M18.002,9.8a1.143,1.143 0,0 0,1.059 -0.71,1.154 1.154,0 0,0 -0.249,-1.253 1.145,1.145 0,0 0,-1.956 0.813,1.152 1.152,0 0,0 1.146,1.15zM18.002,12.788a1.142,1.142 0,0 0,1.06 -0.714,1.154 1.154,0 0,0 -0.256,-1.255 1.144,1.144 0,0 0,-1.95 0.835,1.152 1.152,0 0,0 1.146,1.15M18.002,15.78a1.144,1.144 0,0 0,1.059 -0.71,1.154 1.154,0 0,0 -0.249,-1.254 1.145,1.145 0,0 0,-1.956 0.813,1.152 1.152,0 0,0 1.146,1.15zM15.461,11.294a1.144,1.144 0,0 0,1.048 -0.721,1.152 1.152,0 0,0 -0.845,-1.558 1.142,1.142 0,0 0,-1.172 0.492,1.153 1.153,0 0,0 0.143,1.45c0.215,0.215 0.507,0.337 0.81,0.337M15.461,14.285a1.143,1.143 0,0 0,1.047 -0.72,1.153 1.153,0 0,0 -0.843,-1.558 1.142,1.142 0,0 0,-1.172 0.489,1.152 1.152,0 0,0 0.142,1.449c0.215,0.216 0.507,0.337 0.81,0.337M20.546,11.294a1.143,1.143 0,0 0,1.058 -0.71,1.153 1.153,0 0,0 -0.835,-1.568 1.142,1.142 0,0 0,-1.176 0.49,1.153 1.153,0 0,0 0.142,1.451c0.215,0.216 0.507,0.337 0.81,0.337zM20.546,14.285a1.143,1.143 0,0 0,1.058 -0.71,1.153 1.153,0 0,0 -0.835,-1.568 1.142,1.142 0,0 0,-1.176 0.49,1.153 1.153,0 0,0 0.142,1.451c0.215,0.216 0.507,0.337 0.81,0.337zM26.358,18.024a4.66,4.66 0,0 0,-4.303 2.867,4.64 4.64,0 0,0 1.007,5.065 4.658,4.658 0,0 0,7.947 -3.285,4.646 4.646,0 0,0 -1.363,-3.284 4.662,4.662 0,0 0,-3.288 -1.363z&quot;"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/drawable-nodpi/ic_toolbar_tb_disconnected_multi.xml"
+            line="20"
+            column="25"/>
+    </issue>
+
+    <issue
+        id="VectorPath"
+        message="Very long vector path (1070 characters), which is bad for performance. Considering reducing precision, removing minor details or rasterizing vector."
+        errorLine1="      android:pathData=&quot;M27.913,17.453c0.057,-0.477 0.087,-0.961 0.087,-1.453 0,-6.627 -5.373,-12 -12,-12S4,9.373 4,16c0,5.079 3.155,9.421 7.613,11.173 0.031,-1.126 0.037,-2.018 0.01,-2.611 -0.192,-4.132 -1.4,-6.712 -1.889,-7.582a7.939,7.939 0,0 1,-1.133 -4.21c0,-3.475 1.958,-6.27 4.376,-6.27 0.516,0 1.011,0.128 1.471,0.363 -1.004,1.147 -1.647,2.915 -1.647,4.907a7.94,7.94 0,0 0,1.133 4.21c0.295,0.525 0.851,1.672 1.289,3.407 -0.404,1.288 -0.78,3.021 -0.88,5.174 -0.035,0.716 -0.015,1.863 0.034,3.33a12.097,12.097 0,0 0,2.171 0.097c0.03,-0.724 0.054,-1.389 0.07,-1.984 0.027,-1.046 0.03,-1.879 0.005,-2.443 -0.106,-2.285 -0.524,-4.096 -0.958,-5.405 -0.35,-1.057 -0.713,-1.787 -0.93,-2.175A7.939,7.939 0,0 1,13.6 11.77c0,-1.809 0.53,-3.433 1.38,-4.575 0.685,-0.92 1.577,-1.528 2.566,-1.665l0.03,-0.004c0.131,-0.017 0.265,-0.026 0.4,-0.026 2.417,0 4.375,2.808 4.375,6.27a8.098,8.098 0,0 1,-0.944 3.882l-0.054,0.085 -0.05,0.09c-0.39,0.672 -1.757,3.318 -1.961,7.734 -0.04,0.814 -0.009,2.186 0.056,3.95a11.936,11.936 0,0 0,2.844 -1.26,5.443 5.443,0 0,1 4.116,-9.026c0.53,0 1.054,0.078 1.554,0.227z&quot;"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/drawable-nodpi/ic_toolbar_tb_disconnected_multi.xml"
+            line="29"
+            column="25"/>
+    </issue>
+
+</issues>

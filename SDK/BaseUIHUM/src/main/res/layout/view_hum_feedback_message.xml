@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <!-- This layout is display when there is no feedback we use it because it
+   need a custom background -->
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_hum_feedback"
+    android:backgroundTint="?feedbackMessageBackgroundColor"
+    android:orientation="horizontal">
+
+    <ImageView
+      android:id="@+id/default_img"
+      android:layout_width="@dimen/dot_quad"
+      android:layout_height="@dimen/dot_quad"
+      android:layout_gravity="center"
+      android:layout_marginStart="@dimen/dot_double"
+      android:layout_marginTop="@dimen/dot"
+      android:layout_marginBottom="@dimen/dot"
+      tools:ignore="ContentDescription"
+      tools:src="@drawable/ic_feedback_all_good" />
+
+    <TextView
+      android:id="@+id/default_message"
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:gravity="center"
+      android:paddingStart="@dimen/dot_double"
+      android:paddingEnd="@dimen/dot_trip"
+      android:textAppearance="?textAppearanceSubtitle2"
+      android:textColor="?feedbackMessageTextColor"
+      android:theme="@style/AppTheme"
+      tools:text="Perfect!" />
+  </LinearLayout>
+
+  <LinearLayout
+    android:id="@+id/feedback_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_hum_feedback"
+    android:backgroundTint="?feedbackMessageWrongBackgroundColor"
+    android:orientation="horizontal">
+
+    <ImageView
+      android:id="@+id/feedback_img"
+      android:layout_width="@dimen/dot_quad"
+      android:layout_height="@dimen/dot_quad"
+      android:layout_gravity="center"
+      android:layout_marginStart="@dimen/dot_double"
+      android:layout_marginTop="@dimen/dot"
+      android:layout_marginBottom="@dimen/dot"
+      tools:ignore="ContentDescription" />
+
+    <TextView
+      android:id="@+id/feedback_message"
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:gravity="center"
+      android:paddingStart="@dimen/dot_double"
+      android:paddingEnd="@dimen/dot_trip"
+      android:textAppearance="?textAppearanceSubtitle2"
+      android:textColor="?feedbackMessageWrongTextColor"
+      android:theme="@style/AppTheme"
+      tools:text="You are brushing too fast! That is a very long feedback on multiple lines" />
+  </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

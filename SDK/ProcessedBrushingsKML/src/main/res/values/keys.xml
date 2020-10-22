@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2019 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<resources>
+  <string name="threshold_key" translatable="false">
+    469B05DA54ED537AC24F26F638CD114B7F7C885C2C7FE388FA131F90D0733E564E70C3E2995E43526F6F06A193E999A8
+  </string>
+  <string name="threshold_iv" translatable="false">067CDA38E1E9C7BC69AD58A26FB9F329</string>
+
+  <string name="transition_key" translatable="false">
+    AB725814379A10428572CA10B11DBC5D292A462D7082BE4C8AFD991B601CCDEE9464B39C978C0798B1679D19B4144B60
+  </string>
+  <string name="transition_iv" translatable="false">AF5FE5F898A2646AB18EBEA37294BCBC</string>
+
+  <string name="kpi_angle_key" translatable="false">81BC82F06C77CE4EABC4AC85E0FEBD39070B4D23844F9A96FC6A2DFBB8425F75FA7B3E573B44DBC4DC589230998931BF</string>
+  <string name="kpi_angle_iv" translatable="false">EC28426AB7F1365418D63B7C4F730C36</string>
+
+  <string name="supervised_angle_key" translatable="false">81BC82F06C77CE4EABC4AC85E0FEBD39070B4D23844F9A96FC6A2DFBB8425F75FA7B3E573B44DBC4DC589230998931BF</string>
+  <string name="supervised_angle_iv" translatable="false">EC28426AB7F1365418D63B7C4F730C36</string>
+
+  <string name="zone_validator_key" translatable="false">
+    080848FB5D97D8CA9731389373EDD2634F158681EF2C3664A9537459D5B907B4D8D6CF4376359AD55E699D25AB638540
+  </string>
+  <string name="zone_validator_iv" translatable="false">79F1E13687BA7BD0E80B8FE24CBDD72B</string>
+
+</resources>

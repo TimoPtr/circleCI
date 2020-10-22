@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <data>
+
+    <variable
+      name="item"
+      type="com.kolibree.android.app.ui.settings.binding.LogOutItemBindingModel" />
+
+    <variable
+      name="interaction"
+      type="com.kolibree.android.app.ui.settings.LogoutInteraction" />
+
+  </data>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+      android:id="@+id/divider"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/divider_thickness"
+      android:background="?dividerColor" />
+
+    <Button
+      style="?materialButtonIconStyle"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_quad"
+      android:layout_marginTop="@dimen/dot_trip"
+      android:layout_marginEnd="@dimen/dot_quad"
+      android:layout_marginBottom="@dimen/dot_half"
+      android:backgroundTint="?colorPrimaryLight"
+      android:onClick="@{() -> interaction.onLogoutClick()}"
+      android:outlineProvider="none"
+      android:text="@string/settings_item_logout"
+      android:textAllCaps="true"
+      android:textColor="?colorPrimary"
+      app:icon="@drawable/ic_logout_icon"
+      app:iconTint="?colorPrimary"
+      app:rippleColor="?colorPrimaryDark" />
+
+  </LinearLayout>
+
+</layout>

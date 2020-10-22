@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <data>
+
+    <variable
+      name="viewModel"
+      type="com.kolibree.android.app.ui.selectavatar.SelectAvatarViewModel" />
+
+    <variable
+      name="showCurrentProfile"
+      type="Boolean" />
+
+    <import type="android.view.View" />
+
+    <import type="com.kolibree.databinding.bindingadapter.TextViewDatabindingExtKt" />
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/AppTheme">
+
+    <ImageView
+      android:id="@+id/dialog_select_avatar_icon"
+      android:layout_width="@dimen/dot_quin"
+      android:layout_height="@dimen/dot_quin"
+      android:layout_marginStart="@dimen/dot_double"
+      android:visibility="@{showCurrentProfile ? View.VISIBLE : View.GONE}"
+      app:layout_constraintBottom_toBottomOf="@id/dialog_select_avatar_title"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="@id/dialog_select_avatar_title"
+      app:profileAvatarUrl="@{viewModel.avatarUrl}"
+      app:profileName="@{viewModel.profileName}" />
+
+    <TextView
+      android:id="@+id/dialog_select_avatar_title"
+      style="@style/Widget.BottomSheet.Title"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="@dimen/dot_sev"
+      android:gravity="center_vertical"
+      android:text="@string/profile_picture_dialog_title"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@id/dialog_select_avatar_icon"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+      android:id="@+id/dialog_select_avatar_take_picture"
+      style="@style/Widget.BottomSheet.Item"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:onClick="@{v -> viewModel.onTakePictureClicked()}"
+      android:text="@string/change_avatar_take_picture"
+      app:drawableStartCompat="@drawable/ic_camera"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/dialog_select_avatar_title" />
+
+    <TextView
+      android:id="@+id/dialog_select_avatar_select_picture"
+      style="@style/Widget.BottomSheet.Item"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:onClick="@{v -> viewModel.onChooseFromGalleryClicked()}"
+      android:text="@string/change_avatar_choose_from_gallery"
+      app:drawableStartCompat="@drawable/ic_gallery"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/dialog_select_avatar_take_picture" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

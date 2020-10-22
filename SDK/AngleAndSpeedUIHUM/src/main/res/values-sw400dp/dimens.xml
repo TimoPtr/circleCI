@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<resources>
+  <dimen name="mind_your_speed_small_margin">@dimen/dot</dimen>
+  <dimen name="mind_your_speed_medium_margin">@dimen/dot_double</dimen>
+  <dimen name="speedometer_thickness">20dp</dimen>
+  <item name="jaw_background_space_height_percentage" format="float" type="dimen">0.18</item>
+</resources>

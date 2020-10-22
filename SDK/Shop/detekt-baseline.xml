@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <Blacklist></Blacklist>
+  <Whitelist>
+    <ID>LongMethod:GetProductsRequest.kt$GetProductsRequest$parseProduct</ID>
+    <ID>LongMethod:ProductQuery.kt$queryForProduct</ID>
+    <ID>LongMethod:ShopDataModule.kt$ShopDataModule.Companion$providesShopifyClientWrapper</ID>
+    <ID>LongMethod:ShopifyCredentialsModule.kt$ShopifyCredentialsModule$provideShopifyCredentials</ID>
+    <ID>MaxLineLength:CartDao.kt$CartDao$@Query("SELECT * FROM cart_entries WHERE profileId = :profileId AND productId = :productId AND variantId = :variantId")</ID>
+    <ID>MaxLineLength:GooglePayAvailabilityUseCase.kt$GooglePayAvailabilityUseCase : DefaultLifecycleObserver</ID>
+    <ID>MaxLineLength:IsReadyToPayRequestUseCase.kt$IsReadyToPayRequestUseCase$ fun isReadyToPayRequest(): Single&lt;Boolean&gt;</ID>
+    <ID>TooGenericExceptionCaught:ShopifyClientWrapperRxExt.kt$&lt;no name provided&gt;$ex: Exception</ID>
+    <ID>TooGenericExceptionCaught:TrackerConstant.kt$e: Exception</ID>
+    <ID>TooManyFunctions:TrackerConstant.kt$com.kolibree.android.shop.TrackerConstant.kt</ID>
+  </Whitelist>
+</SmellBaseline>

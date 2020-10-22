@@ -1,0 +1,572 @@
+{
+  "catalog": [
+    {
+      "category_id": 5,
+      "category": "Discover Connect",
+      "challenges": [
+        {
+          "challenge_name": "1st Coach+",
+          "challenge_id": 2,
+          "action": "Coach+",
+          "description": "Try to brush your teeth with Coach+",
+          "greeting_message": "Congratulations! You've done your first brushing session with Coach+.",
+          "smiles_reward": 5,
+          "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_Coach%2B_1st.png"
+        },
+        {
+          "challenge_name": "1st Pirate",
+          "challenge_id": 3,
+          "action": "Pirate",
+          "description": "Try to brush your teeth with the Go Pirate! game",
+          "greeting_message": "Congratulations! You've completed your first brushing session with the Go Pirate! game",
+          "smiles_reward": 5,
+          "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_GoP.png"
+        },
+        {
+          "challenge_name": "1st Rabbids",
+          "challenge_id": 4,
+          "action": "Rabbids",
+          "description": "Try to brush your teeth with the Rabbids game",
+          "greeting_message": "Congratulations! You've done your first brushing session with the Rabbids game.",
+          "smiles_reward": 5,
+          "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_Rab.png"
+        },
+        {
+          "challenge_name": "1st Offline brushing",
+          "challenge_id": 5,
+          "action": "Offline",
+          "description": "Synchronize 1 offline brushing",
+          "greeting_message": "Congratulations! You've synchronized 1 offline brushing.",
+          "smiles_reward": 3,
+          "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_FirstOfflineBrushing.png"
+        },
+        {
+          "challenge_name": "1st Test Brushing",
+          "challenge_id": 6,
+          "action": "TestBrushing",
+          "description": "Try the Test Brushing",
+          "greeting_message": "Congratulations! You've done your first Test Brushing",
+          "smiles_reward": 3,
+          "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_FirstSmartBrushingAnalyzer.png"
+        },
+        {
+          "challenge_name": "Connected brusher",
+          "challenge_id": 46,
+          "action": null,
+          "description": "Enable Notifications",
+          "greeting_message": "Congratulations! You enable notifications.",
+          "smiles_reward": 25,
+          "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_Notifications.png"
+        },
+        {
+          "challenge_name": "1st Coach",
+          "challenge_id": 1,
+          "action": "Coach",
+          "description": "Try to brush your teeth with Coach",
+          "greeting_message": "Congratulations! You've done your first brushing session with Coach.",
+          "smiles_reward": 5,
+          "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_Coach_1st.png"
+        }
+      ]
+    },
+    {
+      "category_id": 10,
+      "category": "Expert Smile",
+      "challenges": [
+        {
+          "challenge_name": "Rabbids x500",
+          "challenge_id": 24,
+          "action": "Rabbids",
+          "description": "Jump over 500 hedges in Rabbids",
+          "greeting_message": "Congratulations! You jumped over 500 hedges with Rabbids.",
+          "smiles_reward": 100,
+          "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_RabbisJumper_500.png"
+        },
+        {
+          "challenge_name": "Game Combo",
+          "challenge_id": 51,
+          "action": null,
+          "description": "On the same day, play two different games",
+          "greeting_message": "Congrats! You played two different games on the same day.",
+          "smiles_reward": 20,
+          "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_Gamesx2.png"
+        },
+        {
+          "challenge_name": "Coach x5",
+          "challenge_id": 7,
+          "action": "Coach",
+          "description": "Brush 5 times with Coach",
+          "greeting_message": "Congratulations! You've brushed 5 times with Coach.",
+          "smiles_reward": 10,
+          "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_Coach_5.png"
+        },
+        {
+          "challenge_name": "Coach x15",
+          "challenge_id": 8,
+          "action": "Coach",
+          "description": "Brush 15 times with Coach",
+          "greeting_message": "Congratulations! You've brushed 15 times with Coach.",
+          "smiles_reward": 30,
+          "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_Coach_15.png"
+        },
+        {
+          "challenge_name": "Coach x30",
+          "challenge_id": 9,
+          "action": "Coach",
+          "description": "Brush 30 times with Coach",
+          "greeting_message": "Congratulations! You've brushed 30 times with Coach.",
+          "smiles_reward": 60,
+          "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_Coach_30.png"
+        },
+        {
+          "challenge_name": "Coach x50",
+          "challenge_id": 10,
+          "action": "Coach",
+          "description": "Brush 50 times with Coach",
+          "greeting_message": "Congratulations! You've brushed 50 times with Coach.",
+          "smiles_reward": 100,
+          "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_Coach_50.png"
+        },
+        {
+          "challenge_name": "Coach x100",
+          "challenge_id": 11,
+          "action": "Coach",
+          "description": "Brush 100 times with Coach",
+          "greeting_message": "Congratulations! You've brushed 100 times with Coach.",
+          "smiles_reward": 200,
+          "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_Coach_100.png"
+        },
+        {
+          "challenge_name": "Coach+ x5",
+          "challenge_id": 12,
+          "action": "Coach+",
+          "description": "Brush 5 times with Coach+",
+          "greeting_message": "Congratulations! You've brushed 5 times with Coach+.",
+          "smiles_reward": 10,
+          "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_Coach%2B_5.png"
+        },
+        {
+          "challenge_name": "Coach+ x15",
+          "challenge_id": 13,
+          "action": "Coach+",
+          "description": "Brush 15 times with Coach+",
+          "greeting_message": "Congratulations! You've brushed 15 times with Coach+.",
+          "smiles_reward": 30,
+          "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_Coach%2B_15.png"
+        },
+        {
+          "challenge_name": "Coach+ x30",
+          "challenge_id": 14,
+          "action": "Coach+",
+          "description": "Brush 30 times with Coach+",
+          "greeting_message": "Congratulations! You've brushed 30 times with Coach+.",
+          "smiles_reward": 60,
+          "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_Coach%2B_30.png"
+        },
+        {
+          "challenge_name": "Coach+ x50",
+          "challenge_id": 15,
+          "action": "Coach+",
+          "description": "Brush 50 times with Coach+",
+          "greeting_message": "Congratulations! You've brushed 50 times with Coach+.",
+          "smiles_reward": 100,
+          "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_Coach%2B_50.png"
+        },
+        {
+          "challenge_name": "Activities enthusiast",
+          "challenge_id": 52,
+          "action": null,
+          "description": "On the same day, brush with 3 different brushing activities",
+          "greeting_message": "Congrats! You brushed with 3 different brushing activities on the same day.",
+          "smiles_reward": 30,
+          "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_Activitiesx3.png"
+        },
+        {
+          "challenge_name": "Pirate 10min",
+          "challenge_id": 17,
+          "action": "Pirate",
+          "description": "Run for 10 cumulated minutes with Go Pirate",
+          "greeting_message": "Congratulations! You've run for 10 minutes with Go Pirate.",
+          "smiles_reward": 10,
+          "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_PirateRunner_10.png"
+        },
+        {
+          "challenge_name": "Coach+ x100",
+          "challenge_id": 16,
+          "action": "Coach+",
+          "description": "Brush 100 times with Coach+",
+          "greeting_message": "Congratulations! You've brushed 100 times with Coach+.",
+          "smiles_reward": 200,
+          "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_Coach%2B_100.png"
+        },
+        {
+          "challenge_name": "Pirate 30min",
+          "challenge_id": 18,
+          "action": "Pirate",
+          "description": "Run for 30 cumulated minutes with Go Pirate",
+          "greeting_message": "Congratulations! You've run for 30 minutes with Go Pirate.",
+          "smiles_reward": 30,
+          "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_PirateRunner_30.png"
+        },
+        {
+          "challenge_name": "Pirate 60min",
+          "challenge_id": 19,
+          "action": "Pirate",
+          "description": "Run for 60 cumulated minutes with Go Pirate",
+          "greeting_message": "Congratulations! You've run for 60 minutes with Go Pirate.",
+          "smiles_reward": 60,
+          "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_PirateRunner_60.png"
+        },
+        {
+          "challenge_name": "Pirate 120min",
+          "challenge_id": 20,
+          "action": "Pirate",
+          "description": "Run for 120 cumulated minutes with Go Pirate",
+          "greeting_message": "Congratulations! You've run for 120 minutes with Go Pirate.",
+          "smiles_reward": 120,
+          "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_PirateRunner_120.png"
+        },
+        {
+          "challenge_name": "Rabbids x60",
+          "challenge_id": 21,
+          "action": "Rabbids",
+          "description": "Jump over 60 hedges in Rabbids",
+          "greeting_message": "Congratulations! You jumped over 60 hedges with Rabbids.",
+          "smiles_reward": 10,
+          "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_RabbisJumper_60.png"
+        },
+        {
+          "challenge_name": "Rabbids x100",
+          "challenge_id": 22,
+          "action": "Rabbids",
+          "description": "Jump over 100 hedges in Rabbids",
+          "greeting_message": "Congratulations! You jumped over 100 hedges with Rabbids.",
+          "smiles_reward": 20,
+          "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_RabbisJumper_100.png"
+        },
+        {
+          "challenge_name": "Rabbids x200",
+          "challenge_id": 23,
+          "action": "Rabbids",
+          "description": "Jump over 200 hedges in Rabbids",
+          "greeting_message": "Congratulations! You jumped over 200 hedges with Rabbids.",
+          "smiles_reward": 40,
+          "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_RabbisJumper_200.png"
+        }
+      ]
+    },
+    {
+      "category_id": 20,
+      "category": "Freestyle your Smile",
+      "challenges": [
+        {
+          "challenge_name": "Freestyle brusher x50",
+          "challenge_id": 37,
+          "action": "Offline",
+          "description": "Synchronize 50 offline brushings with surface coverage greater than or equal to 85%",
+          "greeting_message": "Congratulations! You've synchronized 50 offline brushings with surface coverage greater than 85%.",
+          "smiles_reward": 150,
+          "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_OfflineBrusher_50.png"
+        },
+        {
+          "challenge_name": "100% Clean x10",
+          "challenge_id": 50,
+          "action": "Offline",
+          "description": "Synchronize 10 offline brushings with 100% surface coverage",
+          "greeting_message": "Congratulations! You've synchronized 10 offline brushings with 100% surface coverage.",
+          "smiles_reward": 100,
+          "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_DeutscheQualitat_10.png"
+        },
+        {
+          "challenge_name": "100% Clean x5",
+          "challenge_id": 49,
+          "action": "Offline",
+          "description": "Synchronize 5 offline brushings with 100% surface coverage",
+          "greeting_message": "Congratulations! You've synchronized 5 offline brushings with 100% surface coverage.",
+          "smiles_reward": 50,
+          "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_DeutscheQualitat_5.png"
+        },
+        {
+          "challenge_name": "100% Clean x3",
+          "challenge_id": 48,
+          "action": "Offline",
+          "description": "Synchronize 3 offline brushings with 100% surface coverage",
+          "greeting_message": "Congratulations! You've synchronized 3 offline brushings with 100% surface coverage.",
+          "smiles_reward": 30,
+          "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_DeutscheQualitat_3.png"
+        },
+        {
+          "challenge_name": "100% Clean",
+          "challenge_id": 47,
+          "action": "Offline",
+          "description": "Synchronize 1 offline brushing with 100% surface coverage",
+          "greeting_message": "Congratulations! You've synchronized 1 offline brushing with 100% surface coverage.",
+          "smiles_reward": 10,
+          "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_DeutscheQualitat_1.png"
+        },
+        {
+          "challenge_name": "Freestyle brusher x15",
+          "challenge_id": 36,
+          "action": "Offline",
+          "description": "Synchronize 15 offline brushings with surface coverage greater than or equal to 85%",
+          "greeting_message": "Congratulations! You've synchronized 15 offline brushings with surface coverage greater than 85%.",
+          "smiles_reward": 50,
+          "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_OfflineBrusher_15.png"
+        },
+        {
+          "challenge_name": "Freestyle brusher x5",
+          "challenge_id": 35,
+          "action": "Offline",
+          "description": "Synchronize 5 offline brushings with surface coverage greater than or equal to 85%",
+          "greeting_message": "Congratulations! You've synchronized 5 offline brushings with surface coverage greater than 85%.",
+          "smiles_reward": 15,
+          "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_OfflineBrusher_5.png"
+        },
+        {
+          "challenge_name": "Freestyle brusher x1",
+          "challenge_id": 34,
+          "action": "Offline",
+          "description": "Synchronize 1 offline brushing with surface coverage greater than or equal to 85%",
+          "greeting_message": "Congratulations! You've synchronized 1 offline brushing with surface coverage greater than 85%.",
+          "smiles_reward": 3,
+          "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_OfflineBrusher_1.png"
+        }
+      ]
+    },
+    {
+      "category_id": 30,
+      "category": "Keep good habits",
+      "challenges": [
+        {
+          "challenge_name": "Brush fanatic x25",
+          "challenge_id": 26,
+          "action": null,
+          "description": "Use the app for 25 days",
+          "greeting_message": "Congratulations! You've used the application for 25 days.",
+          "smiles_reward": 10,
+          "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_AppFanatic_25.png"
+        },
+        {
+          "challenge_name": "Brush fanatic x50",
+          "challenge_id": 27,
+          "action": null,
+          "description": "Use the app for 50 days",
+          "greeting_message": "Congratulations! You've used the application for 50 days.",
+          "smiles_reward": 20,
+          "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_AppFanatic_50.png"
+        },
+        {
+          "challenge_name": "Daily x7",
+          "challenge_id": 28,
+          "action": null,
+          "description": "Brush twice daily 7 days in a row",
+          "greeting_message": "Congratulations! You brushed twice daily 7 days in a row.",
+          "smiles_reward": 10,
+          "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_ConsistentUser_7.png"
+        },
+        {
+          "challenge_name": "Daily x14",
+          "challenge_id": 29,
+          "action": null,
+          "description": "Brush twice daily 14 days in a row",
+          "greeting_message": "Congratulations! You brushed twice daily 14 days in a row.",
+          "smiles_reward": 30,
+          "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_ConsistentUser_14.png"
+        },
+        {
+          "challenge_name": "Daily x28",
+          "challenge_id": 30,
+          "action": null,
+          "description": "Brush twice daily 28 days in a row",
+          "greeting_message": "Congratulations! You brushed twice daily 28 days in a row.",
+          "smiles_reward": 50,
+          "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_ConsistentUser_28.png"
+        },
+        {
+          "challenge_name": "Daily x50",
+          "challenge_id": 31,
+          "action": null,
+          "description": "Brush twice daily 50 days in a row",
+          "greeting_message": "Amazing! You brushed twice daily 50 days in a row.",
+          "smiles_reward": 200,
+          "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_SuperConsistentuser_50.png"
+        },
+        {
+          "challenge_name": "Centenary Brush",
+          "challenge_id": 32,
+          "action": null,
+          "description": "Brush twice daily 100 days in a row",
+          "greeting_message": "Amazing! You brushed twice daily 100 days in a row.",
+          "smiles_reward": 500,
+          "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_SuperConsistentuser_100.png"
+        },
+        {
+          "challenge_name": "Brush fanatic x10",
+          "challenge_id": 25,
+          "action": null,
+          "description": "Use the app for 10 days",
+          "greeting_message": "Congratulations! You've used the application for 10 days.",
+          "smiles_reward": 5,
+          "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_AppFanatic_10.png"
+        },
+        {
+          "challenge_name": "Annual Brush",
+          "challenge_id": 33,
+          "action": null,
+          "description": "Brush twice daily 365 days in a row",
+          "greeting_message": "Amazing! You brushed twice daily 365 days in a row.",
+          "smiles_reward": 1000,
+          "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_SuperConsistentuser_365.png"
+        }
+      ]
+    },
+    {
+      "category_id": 40,
+      "category": "Special Smile",
+      "challenges": [
+        {
+          "challenge_name": "Mountain day",
+          "challenge_id": 58,
+          "action": null,
+          "description": "Brush your teeth on Mountain day",
+          "greeting_message": "Congratulations! You brushed your teeth on Mountain day.",
+          "smiles_reward": 5,
+          "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_Mountain_day.png"
+        },
+        {
+          "challenge_name": "Save Water",
+          "challenge_id": 59,
+          "action": "SaveWater",
+          "description": "Make every drop count by enabling the Save Water reminders and logging your actions.",
+          "greeting_message": "Thank you for your contribution to the Save Water challenge!",
+          "smiles_reward": 50,
+          "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_Savewater.png"
+        },
+        {
+          "challenge_name": "Birthday brusher",
+          "challenge_id": 38,
+          "action": null,
+          "description": "Brush your teeth on your birthday",
+          "greeting_message": "Congratulations! You brushed your teeth on your birthday.",
+          "smiles_reward": 5,
+          "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_BirthdayBrusher.png"
+        },
+        {
+          "challenge_name": "Holiday brusher",
+          "challenge_id": 39,
+          "action": null,
+          "description": "Brush your teeth on Christmas day",
+          "greeting_message": "Congratulations! You brushed your teeth on Christmas day.",
+          "smiles_reward": 5,
+          "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_Christmas_1.png"
+        },
+        {
+          "challenge_name": "Halloween brusher",
+          "challenge_id": 40,
+          "action": null,
+          "description": "Brush your teeth on Halloween's day",
+          "greeting_message": "Congratulations! You brushed your teeth on Halloween's day.",
+          "smiles_reward": 5,
+          "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_HalloweenBrusher.png"
+        },
+        {
+          "challenge_name": "New year's day brusher",
+          "challenge_id": 41,
+          "action": null,
+          "description": "Brush your teeth on New year's day",
+          "greeting_message": "Congratulations! You brushed your teeth on New year's day.",
+          "smiles_reward": 5,
+          "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_NewyearBrushert.png"
+        },
+        {
+          "challenge_name": "Patrick's day brusher",
+          "challenge_id": 42,
+          "action": null,
+          "description": "Brush your teeth on Patrick's day",
+          "greeting_message": "Congratulations! You brushed your teeth on Patrick's day.",
+          "smiles_reward": 5,
+          "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_PatricksDayBrusher.png"
+        },
+        {
+          "challenge_name": "Valentine's day brusher",
+          "challenge_id": 43,
+          "action": null,
+          "description": "Brush your teeth on Valentine's day",
+          "greeting_message": "Congratulations! You brushed your teeth on Valentine's day.",
+          "smiles_reward": 5,
+          "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_Valentine.png"
+        },
+        {
+          "challenge_name": "Peace day",
+          "challenge_id": 55,
+          "action": null,
+          "description": "Brush your teeth on Peace day",
+          "greeting_message": "Congratulations! You brushed your teeth on Peace day.",
+          "smiles_reward": 5,
+          "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_Peace_day.png"
+        },
+        {
+          "challenge_name": "Toothbrushing day",
+          "challenge_id": 56,
+          "action": null,
+          "description": "Brush your teeth on Toothbrushing day",
+          "greeting_message": "Congratulations! You brushed your teeth on Toothbrushing day.",
+          "smiles_reward": 5,
+          "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_Toothbrushing_day.png"
+        },
+        {
+          "challenge_name": "Thanksgiving",
+          "challenge_id": 57,
+          "action": null,
+          "description": "Brush your teeth on Thanksgiving",
+          "greeting_message": "Congratulations! You brushed your teeth on Thanksgiving.",
+          "smiles_reward": 5,
+          "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_Thanksgiving_day.png"
+        },
+        {
+          "challenge_name": "Mindfulness day",
+          "challenge_id": 54,
+          "action": null,
+          "description": "Brush your teeth on Mindfulness day",
+          "greeting_message": "Congratulations! You brushed your teeth on Mindfulness day.",
+          "smiles_reward": 5,
+          "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_Mindfullness_day.png"
+        }
+      ]
+    },
+    {
+      "category_id": 50,
+      "category": "Spread the smile",
+      "challenges": [
+        {
+          "challenge_name": "Research studies",
+          "challenge_id": 45,
+          "action": "ResearchStudy",
+          "description": "Enable Research Studies",
+          "greeting_message": "Congratulations! You've enabled research studies.",
+          "smiles_reward": 50,
+          "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_Research.png"
+        },
+        {
+          "challenge_name": "Rate the App",
+          "challenge_id": 53,
+          "action": "RateTheApp",
+          "description": "Rate Colgate Connect App on the AppStore",
+          "greeting_message": "Thanks for rating the App and sharing your Colgate Connect experience.",
+          "smiles_reward": 50,
+          "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_Rate.png"
+        },
+        {
+          "challenge_name": "Refer a friend",
+          "challenge_id": 44,
+          "action": "referAFriend",
+          "description": "Generate a code to share with a friend. You'll get 100 smiles and your friend will get an equivalent store discount",
+          "greeting_message": "Congratulations! You've referred Colgate Connect to a friend.",
+          "smiles_reward": 100,
+          "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_Referral.png"
+        }
+      ]
+    }
+  ],
+  "language": "EN"
+}

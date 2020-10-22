@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <data>
+
+    <import type="android.view.View" />
+
+    <variable
+      name="item"
+      type="com.kolibree.android.shop.presentation.checkout.cart.ShopPaymentDetailsBindingModel" />
+
+    <variable
+      name="smilePointInteraction"
+      type="com.kolibree.android.shop.presentation.checkout.cart.SmilePointsInteraction" />
+
+    <variable
+      name="shipmentEstimationInteraction"
+      type="com.kolibree.android.shop.presentation.checkout.cart.ShipmentEstimationInteraction" />
+
+    <variable
+      name="linkStyle"
+      type="com.kolibree.android.app.ui.text.TextPaintModifiers" />
+
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/dot_double"
+    android:layout_marginEnd="@dimen/dot_double"
+    tools:theme="@style/AppTheme">
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+      android:id="@+id/switch_use_smiles"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:checked="@{item.useSmiles}"
+      android:enabled="@{item.isPossibleToUseSmiles}"
+      android:onCheckedChanged="@{(_, checked) -> smilePointInteraction.onUseSmilesClick(checked)}"
+      android:text="@{@string/cart_use_smile_points(item.potentialDiscountSmilePoints, item.potentialDiscountPrice)}"
+      android:textAppearance="?textAppearanceHeadline6"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:text="Use my 250 points (-$2.50)" />
+
+    <View
+      android:id="@+id/divider"
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:background="@color/divider"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/switch_use_smiles" />
+
+    <TextView
+      android:id="@+id/points_discount"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@{item.actualDiscount}"
+      android:textAppearance="?textAppearanceHeadline6"
+      app:layout_constraintBottom_toBottomOf="@+id/points_discount_title"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="@+id/points_discount_title"
+      tools:text="-$2.50" />
+
+    <TextView
+      android:id="@+id/points_discount_title"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/dot"
+      android:text="@string/cart_smiles_discount_applied"
+      android:textAppearance="?textAppearanceHeadline6"
+      app:layout_constraintEnd_toStartOf="@id/points_discount"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/subtotal_title" />
+
+    <TextView
+      android:id="@+id/subtotal"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/dot_double"
+      android:text="@{item.subtotal}"
+      android:textAppearance="?textAppearanceHeadline6"
+      android:textColor="?android:textColorTertiary"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/divider"
+      tools:text="$13.64" />
+
+    <TextView
+      android:id="@+id/subtotal_title"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:text="@string/cart_sub_total"
+      android:textAllCaps="true"
+      android:textAppearance="?textAppearanceHeadline6"
+      android:textColor="?android:textColorTertiary"
+      app:layout_constraintEnd_toStartOf="@id/subtotal"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="@id/subtotal" />
+
+    <TextView
+      android:id="@+id/cart_proceed_checkout"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_marginVertical="@dimen/dot"
+      android:background="?selectableItemBackground"
+      android:drawablePadding="@dimen/dot_half"
+      android:onClick="@{v -> shipmentEstimationInteraction.onShipmentEstimationClick()}"
+      android:paddingVertical="@dimen/dot"
+      android:text="@string/shipment_taxes_estimation"
+      android:textAppearance="?textAppearanceBody1"
+      android:textColor="?android:textColorSecondary"
+      app:drawableStartCompat="@drawable/ic_info"
+      app:drawableTint="?android:textColorTertiary"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/points_discount_title"
+      app:underlineText="@{true}" />
+
+    <TextView
+      android:id="@+id/textView"
+      textAppearance="?textAppearanceBody1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/dot"
+      android:layout_marginBottom="@dimen/dot_double"
+      android:textColor="?android:textColorSecondary"
+      android:visibility="@{item.taxes != null ? View.VISIBLE : View.GONE}"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toStartOf="@+id/textView2"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintHorizontal_chainStyle="spread_inside"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/cart_proceed_checkout"
+      android:text="@string/cart_taxes_estimation" />
+
+    <TextView
+      android:id="@+id/textView2"
+      textAppearance="?textAppearanceBody1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/dot"
+      android:layout_marginBottom="@dimen/dot_double"
+      android:text="@{item.getFormattedRates()}"
+      android:textColor="?android:textColorSecondary"
+      android:visibility="@{item.taxes != null ? View.VISIBLE : View.GONE}"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintStart_toEndOf="@+id/textView"
+      app:layout_constraintTop_toBottomOf="@+id/cart_proceed_checkout"
+      tools:text="$1.76\n$0.00" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

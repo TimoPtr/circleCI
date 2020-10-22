@@ -1,0 +1,109 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.malinskiy.marathon",
+    "module": "marathon-gradle-plugin",
+    "version": "0.50.4-kolibree",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.2",
+      "buildId": "5rqox4qe2nglviwvbhck7v5qza"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.localToProject": "public",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "files": [
+        {
+          "name": "marathon-gradle-plugin-0.50.4-kolibree.jar",
+          "url": "marathon-gradle-plugin-0.50.4-kolibree.jar",
+          "size": 82899,
+          "sha512": "b0b93819c5fa7077a18940a6b1388ae26fba97e076efa0e939574790492596f43eb014e90c697fa7bf38914f1de933212b18ac47b92bb042ae9e7148703e2a9e",
+          "sha256": "e27f734d6bbd6e286f3fa6f67530f9ff9c57466ddc6ed06520d0305f34b6ef62",
+          "sha1": "8f3e8aba7432936994f8828d7fa160a2839536c1",
+          "md5": "1a906027987678dfb5483c5f5dc6e1a0"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.localToProject": "public",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "io.github.microutils",
+          "module": "kotlin-logging",
+          "version": {
+            "requires": "1.4.9"
+          }
+        },
+        {
+          "group": "com.malinskiy.marathon",
+          "module": "core",
+          "version": {
+            "requires": "0.50.4-kolibree"
+          }
+        },
+        {
+          "group": "com.malinskiy.marathon",
+          "module": "base",
+          "version": {
+            "requires": "0.50.4-kolibree"
+          }
+        },
+        {
+          "group": "com.malinskiy.marathon",
+          "module": "ddmlib",
+          "version": {
+            "requires": "0.50.4-kolibree"
+          }
+        },
+        {
+          "group": "com.android.tools.build",
+          "module": "gradle",
+          "version": {
+            "requires": "4.1.0"
+          }
+        },
+        {
+          "group": "com.malinskiy.marathon",
+          "module": "usage",
+          "version": {
+            "requires": "0.50.4-kolibree"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "marathon-gradle-plugin-0.50.4-kolibree.jar",
+          "url": "marathon-gradle-plugin-0.50.4-kolibree.jar",
+          "size": 82899,
+          "sha512": "b0b93819c5fa7077a18940a6b1388ae26fba97e076efa0e939574790492596f43eb014e90c697fa7bf38914f1de933212b18ac47b92bb042ae9e7148703e2a9e",
+          "sha256": "e27f734d6bbd6e286f3fa6f67530f9ff9c57466ddc6ed06520d0305f34b6ef62",
+          "sha1": "8f3e8aba7432936994f8828d7fa160a2839536c1",
+          "md5": "1a906027987678dfb5483c5f5dc6e1a0"
+        }
+      ]
+    }
+  ]
+}

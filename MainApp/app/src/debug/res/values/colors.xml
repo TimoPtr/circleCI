@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+  <!--copied to avoid compilation errors because debug does not have facebook sdk -->
+  <color name="com_facebook_button_background_color_pressed">#2f477a</color>
+  <color name="com_facebook_button_background_color">#4267B2</color>
+</resources>

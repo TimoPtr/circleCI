@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <Blacklist></Blacklist>
+  <Whitelist>
+    <ID>ComplexMethod:ToothbrushInteractorImpl.kt$toMiddlewareType</ID>
+    <ID>LongMethod:GameMiddlewareFragment.kt$GameMiddlewareFragment$instantiateDependencies</ID>
+    <ID>LongMethod:GameMiddlewareModule.kt$GameMiddlewareModule$provideResourceInteractor</ID>
+    <ID>LongMethod:GameMiddlewareModule.kt$GameMiddlewareModule$provideWebServicesInteractor</ID>
+    <ID>LongMethod:WebServicesInteractorImpl.kt$WebServicesInteractorImpl$uploadBrushing</ID>
+    <ID>LongParameterList:GameMiddlewareComponent.kt$GameMiddlewareComponent.Factory$( @BindsInstance context: Context, @BindsInstance kltbConnection: KLTBConnection, @BindsInstance kolibreeConnector: InternalKolibreeConnector, @BindsInstance gameProgressRepository: GameProgressRepository, @BindsInstance lifecycle: Lifecycle, @BindsInstance avroFileUploader: AvroFileUploader )</ID>
+    <ID>LongParameterList:GameMiddlewareModule.kt$GameMiddlewareModule$( disposableScopeOwner: LifecycleDisposableScopeOwner, angleProvider: AngleProvider, speedProvider: KpiSpeedProvider?, transitionProvider: TransitionProvider, rnnWeightProvider: RnnWeightProvider?, thresholdProvider: ThresholdProvider, zoneValidatorProvider: ZoneValidatorProvider, kolibreeAppVersions: KolibreeAppVersions )</ID>
+    <ID>LongParameterList:GameMiddlewareModule.kt$GameMiddlewareModule$( disposableScopeOwner: LifecycleDisposableScopeOwner, kolibreeConnector: IKolibreeConnector, gameProgressRepository: GameProgressRepository, checkupCalculator: CheckupCalculator, appVersions: KolibreeAppVersions, @Named(DI_GOAL_BRUSHING_TIME) goalBrushingTime: Duration, avroCreator: KmlAvroCreator )</ID>
+  </Whitelist>
+</SmellBaseline>

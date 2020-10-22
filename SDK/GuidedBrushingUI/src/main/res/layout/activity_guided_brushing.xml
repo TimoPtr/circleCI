@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <data>
+
+    <import type="android.view.View" />
+
+    <import type="com.kolibree.android.guidedbrushing.feedback.GuidedBrushingFeedBackMessageResources"/>
+
+    <import type="com.kolibree.android.extensions.ContextExtensionsKt" />
+
+    <import type="com.kolibree.android.guidedbrushing.R" />
+
+    <variable
+      name="viewModel"
+      type="com.kolibree.android.coachplus.mvi.CoachPlusViewModel" />
+
+    <variable
+      name="timerViewModel"
+      type="com.kolibree.android.guidedbrushing.timer.GuidedBrushingTimerViewModel" />
+
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/root_content_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:fitsSystemWindows="true"
+    tools:theme="@style/GuidedBrushingTheme">
+
+    <com.kolibree.android.jaws.guidedbrushing.GuidedBrushingJawsView
+      android:id="@+id/coach_plus_view"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="@dimen/match_constraints"
+      android:layout_marginStart="@dimen/dot_double"
+      android:layout_marginTop="@dimen/guided_brushing_medium_margin"
+      android:layout_marginEnd="@dimen/dot_double"
+      android:layout_marginBottom="@dimen/guided_brushing_medium_margin"
+      android:background="@{ContextExtensionsKt.getColorFromAttr(context, R.attr.backgroundColor)}"
+      android:onClick="@{(v) -> viewModel.onManualPause()}"
+      app:currentZone="@{viewModel.currentZone}"
+      app:currentZoneProgressPercent="@{viewModel.progressPercentage}"
+      app:layout_constraintBottom_toTopOf="@+id/legend"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/feedback"
+      tools:visibility="invisible" />
+
+    <com.kolibree.android.guidedbrushing.widget.GuidedBrushingGaugeView
+      android:id="@+id/coach_plus_progress"
+      android:layout_width="@dimen/dot_nine"
+      android:layout_height="@dimen/dot_nine"
+      app:layout_constraintBottom_toBottomOf="@id/coach_plus_view"
+      app:layout_constraintLeft_toLeftOf="@id/coach_plus_view"
+      app:layout_constraintRight_toRightOf="@id/coach_plus_view"
+      app:layout_constraintTop_toTopOf="@id/coach_plus_view" />
+
+    <TextView
+      android:id="@+id/coach_plus_progress_value"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@{viewModel.progressPercentage.toString()}"
+      android:textAppearance="?textAppearanceHeadline3"
+      android:textColor="@color/white"
+      app:layout_constraintBottom_toBottomOf="@id/coach_plus_progress"
+      app:layout_constraintLeft_toLeftOf="@id/coach_plus_progress"
+      app:layout_constraintRight_toRightOf="@id/coach_plus_progress"
+      app:layout_constraintTop_toTopOf="@id/coach_plus_progress" />
+
+    <TextView
+      android:id="@+id/coach_plus_progress_percent"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="@dimen/dot_half"
+      android:text="%"
+      android:textAppearance="?textAppearanceSubtitle2"
+      android:textColor="@color/white"
+      app:layout_constraintBottom_toBottomOf="@id/coach_plus_progress_value"
+      app:layout_constraintLeft_toRightOf="@id/coach_plus_progress_value"
+      tools:ignore="HardcodedText" />
+
+    <TextView
+      android:id="@+id/mouth_map_left"
+      style="@style/Widget.TextView.MouthMapSideIndicator"
+      android:layout_marginLeft="@dimen/dot_double"
+      android:background="@drawable/background_hum_feedback_all_good"
+      android:text="@string/guided_brushing_mouth_map_left"
+      app:layout_constraintBottom_toBottomOf="@+id/coach_plus_progress"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintTop_toTopOf="@+id/coach_plus_progress"
+      tools:ignore="RtlHardcoded" />
+
+    <TextView
+      android:id="@+id/mouth_map_right"
+      style="@style/Widget.TextView.MouthMapSideIndicator"
+      android:layout_marginRight="@dimen/dot_double"
+      android:background="@drawable/background_hum_feedback_all_good"
+      android:text="@string/guided_brushing_mouth_map_right"
+      app:layout_constraintBottom_toBottomOf="@+id/coach_plus_progress"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toTopOf="@+id/coach_plus_progress"
+      tools:ignore="RtlHardcoded" />
+
+    <View
+      android:id="@+id/view_top"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="@dimen/zero"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.appbar.MaterialToolbar
+      android:id="@+id/toolbar"
+      enableBackNavigation="@{true}"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/view_top"
+      app:navigationIcon="@{viewModel.isInit ? @drawable/ic_gb_pause : @drawable/ic_gb_close}" />
+
+    <TextView
+      android:id="@+id/coach_plus_title"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_double"
+      android:layout_marginEnd="@dimen/dot_double"
+      android:text="@string/guided_brushing_title"
+      android:textAppearance="?textAppearanceHeadline2"
+      android:textColor="?guidedBrushingTitleColor"
+      app:layout_constraintBottom_toTopOf="@+id/feedback"
+      app:layout_constraintTop_toBottomOf="@+id/toolbar"
+      app:layout_constraintVertical_chainStyle="spread_inside" />
+
+    <com.kolibree.android.app.feedback.FeedbackMessageView
+      android:id="@+id/feedback"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/dot_six"
+      android:layout_marginLeft="@dimen/dot_double"
+      android:layout_marginTop="@dimen/dot"
+      android:layout_marginRight="@dimen/dot_double"
+      app:defaultIcon="@drawable/ic_feedback_all_good"
+      app:defaultMessage="@string/guided_brushing_no_feedback"
+      app:feedback="@{GuidedBrushingFeedBackMessageResources.from(viewModel.feedback)}"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/coach_plus_title" />
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/dot_six"
+      android:layout_marginLeft="@dimen/dot_double"
+      android:layout_marginTop="@dimen/dot"
+      android:layout_marginRight="@dimen/dot_double"
+      android:background="@drawable/background_hum_feedback"
+      android:backgroundTint="@color/white"
+      android:gravity="center_vertical|start"
+      android:paddingStart="@dimen/dot_trip"
+      android:paddingEnd="@dimen/dot_trip"
+      android:text="@string/guided_brushing_start_message"
+      android:textAppearance="?textAppearanceSubtitle2"
+      android:theme="@style/AppTheme"
+      android:visibility="@{viewModel.isInit ? View.GONE : View.VISIBLE}"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/coach_plus_title" />
+
+    <View
+      android:id="@+id/view_bottom"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="@dimen/zero"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+      android:id="@+id/bottom_background"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:srcCompat="@drawable/ic_gb_bottom" />
+
+    <TextView
+      android:id="@+id/timer_subtitle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/dot"
+      android:layout_marginBottom="@dimen/dot"
+      android:text="@string/guided_brushing_timer_subtitle"
+      android:textAppearance="?textAppearanceSubtitle2"
+      app:layout_constraintBottom_toTopOf="@id/view_bottom"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintStart_toStartOf="parent" />
+
+    <com.kolibree.android.app.widget.TimerView
+      android:id="@+id/timer"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="@dimen/dot"
+      app:layout_constraintBottom_toTopOf="@+id/timer_subtitle"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintWidth_percent="0.5"
+      app:timerTextAppearance="?timerTextAppearance"
+      app:timer_seconds="@{timerViewModel.secondsElapsed}" />
+
+    <com.kolibree.android.app.widget.zone.ZoneProgressBarView
+      android:id="@+id/progress_bar"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/dot"
+      android:layout_marginStart="@dimen/dot_double"
+      android:layout_marginEnd="@dimen/dot_double"
+      android:layout_marginBottom="@dimen/guided_brushing_medium_margin"
+      app:layout_constraintBottom_toTopOf="@+id/timer"
+      app:zoneData="@{viewModel.zoneData}" />
+
+    <LinearLayout
+      android:id="@+id/legend"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_double"
+      android:layout_marginEnd="@dimen/dot_double"
+      android:layout_marginBottom="@dimen/guided_brushing_small_margin"
+      android:orientation="horizontal"
+      app:layout_constraintBottom_toTopOf="@+id/progress_bar"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintStart_toStartOf="parent">
+
+      <TextView
+        style="@style/Widget.TextView.Legend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/guided_brushing_legend_clean"
+        app:legendDrawableTintColor="@{@color/white}" />
+
+      <TextView
+        style="@style/Widget.TextView.Legend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dot_double"
+        android:text="@string/guided_brushing_legend_missed"
+        app:legendDrawableTintColor="@{@color/neglectedZoneColor}" />
+
+      <TextView
+        style="@style/Widget.TextView.Legend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dot_double"
+        android:text="@string/guided_brushing_legend_brushing_segment"
+        app:legendDrawableTintColor="@{ContextExtensionsKt.getColorFromAttr(context, R.attr.colorTertiaryMedium)}" />
+
+    </LinearLayout>
+
+    <View
+      android:id="@+id/background_with_alpha"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@color/pause_overlay"
+      android:clickable="true"
+      android:focusable="true"
+      tools:visibility="invisible" />
+
+    <TextView
+      android:id="@+id/coach_pause_text"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:text="@string/guided_brushing_pause_menu_header"
+      android:textAppearance="?textAppearanceHeadline2"
+      android:textColor="@color/white"
+      app:layout_constraintBottom_toTopOf="@+id/coach_plus_pause_resume"
+      app:layout_constraintEnd_toEndOf="@+id/toolbar"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_chainStyle="packed"
+      tools:visibility="invisible" />
+
+    <Button
+      android:id="@+id/coach_plus_pause_resume"
+      style="?materialButtonStyle"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_quin"
+      android:layout_marginTop="@dimen/dot_quad"
+      android:layout_marginEnd="@dimen/dot_quin"
+      android:onClick="@{(v) -> viewModel.onResumeButtonClick()}"
+      android:text="@string/guided_brushing_pause_menu_resume_button"
+      android:theme="@style/AppTheme"
+      app:layout_constraintBottom_toTopOf="@+id/coach_plus_pause_restart"
+      app:layout_constraintTop_toBottomOf="@+id/coach_pause_text"
+      tools:visibility="invisible" />
+
+    <Button
+      android:id="@+id/coach_plus_pause_restart"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_quin"
+      android:layout_marginTop="@dimen/dot"
+      android:layout_marginEnd="@dimen/dot_quin"
+      android:onClick="@{(v) -> viewModel.onRestartButtonClick()}"
+      android:text="@string/guided_brushing_pause_menu_restart_button"
+      android:theme="@style/AppTheme.Inverse.Red"
+      app:layout_constraintBottom_toTopOf="@+id/coach_plus_pause_quit"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/coach_plus_pause_resume"
+      tools:visibility="invisible" />
+
+    <Button
+      android:id="@+id/coach_plus_pause_quit"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_quin"
+      android:layout_marginTop="@dimen/dot"
+      android:layout_marginEnd="@dimen/dot_quin"
+      android:onClick="@{(v) -> viewModel.onQuitButtonClick()}"
+      android:text="@string/guided_brushing_pause_menu_quit_button"
+      android:theme="@style/AppTheme.Inverse.Red"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/coach_plus_pause_restart"
+      tools:visibility="invisible" />
+
+    <androidx.constraintlayout.widget.Group
+      android:id="@+id/coach_plus_pause"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:visibility="@{viewModel.shouldShowPause ? View.VISIBLE : View.GONE}"
+      app:constraint_referenced_ids="background_with_alpha, coach_pause_text, coach_plus_pause_resume, coach_plus_pause_restart, coach_plus_pause_quit" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
+

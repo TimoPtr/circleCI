@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <data>
+
+    <import type="android.view.View" />
+
+    <variable
+      name="viewModel"
+      type="com.kolibree.android.app.ui.home.pairing.startscreen.PairingStartScreenViewModel" />
+
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/root_content_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:paddingBottom="@dimen/dot_trip">
+
+    <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/half_screen_guideline"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      app:layout_constraintGuide_percent="0.45" />
+
+    <View
+      android:id="@+id/view_top"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/dot_nine"
+      android:background="?colorPrimary"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+      android:id="@+id/logo"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/match_constraints"
+      android:background="?colorPrimary"
+      android:scaleType="fitCenter"
+      android:src="@drawable/ic_pairing_toothbrush"
+      app:layout_constraintBottom_toTopOf="@id/text_content_barrier"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/view_top"
+      app:layout_constraintVertical_bias="0.0"
+      tools:ignore="ContentDescription" />
+
+    <TextView
+      android:id="@+id/body"
+      android:textAppearance="?textAppearanceBody1"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_quad"
+      android:layout_marginEnd="@dimen/dot_quad"
+      android:paddingBottom="@dimen/dot_double"
+      android:text="@string/pairing_start_body"
+      android:textColor="?android:textColorSecondary"
+      app:layout_constraintBottom_toTopOf="@id/pairing_start_connect_button"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/header" />
+
+    <TextView
+      android:id="@+id/header"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_quad"
+      android:layout_marginEnd="@dimen/dot_quad"
+      android:paddingTop="@dimen/dot_double"
+      android:text="@{@string/pairing_start_title}"
+      android:textAppearance="?textAppearanceHeadline2"
+      app:layout_constraintBottom_toTopOf="@id/body"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/logo"
+      app:layout_constraintVertical_bias="0.0"
+      app:layout_constraintVertical_chainStyle="packed" />
+
+    <androidx.constraintlayout.widget.Barrier
+      android:id="@+id/text_content_barrier"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:barrierDirection="top"
+      app:constraint_referenced_ids="header, half_screen_guideline" />
+
+    <Button
+      android:id="@+id/pairing_start_connect_button"
+      style="?materialButtonStyle"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_quad"
+      android:layout_marginEnd="@dimen/dot_quad"
+      android:onClick="@{v -> viewModel.connectMyBrushClicked()}"
+      android:text="@string/pairing_start_connect"
+      app:layout_constraintBottom_toTopOf="@id/pairing_start_shop_button"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+      android:id="@+id/pairing_start_shop_button"
+      style="?materialButtonTextStyleTertiary"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_quad"
+      android:layout_marginTop="@dimen/dot_double"
+      android:layout_marginEnd="@dimen/dot_quad"
+      android:onClick="@{v -> viewModel.shopClicked()}"
+      android:text="@string/pairing_start_shop"
+      app:layout_constraintBottom_toTopOf="@id/view_bottom"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:rippleColor="?rippleColorMono" />
+
+    <View
+      android:id="@+id/view_bottom"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="@dimen/zero"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="5" by="lint 4.0.0" client="gradle" variant="debug" version="4.0.0">
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="class KolibreeServiceDisconnectedException : PairingException()"
+        errorLine2="      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/pairing/exception/KolibreeServiceDisconnectedException.kt"
+            line="3"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="class PairingAssistantImpl @Inject constructor("
+        errorLine2="      ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/pairing/assistant/PairingAssistantImpl.kt"
+            line="43"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="open class PairingException : RuntimeException()"
+        errorLine2="           ~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/pairing/exception/PairingException.kt"
+            line="3"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="interface PairingSessionCreator {"
+        errorLine2="          ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/pairing/session/PairingSessionCreator.kt"
+            line="7"
+            column="11"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="class PairingSessionCreatorImpl @Inject constructor("
+        errorLine2="      ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/pairing/session/PairingSessionCreatorImpl.kt"
+            line="22"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="data class PairingSessionImpl("
+        errorLine2="           ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/pairing/session/PairingSessionImpl.kt"
+            line="14"
+            column="12"/>
+    </issue>
+
+</issues>

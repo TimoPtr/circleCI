@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <Blacklist></Blacklist>
+  <Whitelist>
+    <ID>LongMethod:HeadspaceTrialNavigator.kt$HeadspaceTrialNavigatorImpl$confirmDismissCard</ID>
+    <ID>TooGenericExceptionCaught:HeadspaceTrialCardViewModel.kt$HeadspaceTrialCardViewModel$e: Exception</ID>
+  </Whitelist>
+</SmellBaseline>

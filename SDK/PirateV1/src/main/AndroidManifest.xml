@@ -1,0 +1,23 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.kolibree.android.pirate">
+
+  <application>
+
+    <activity
+      android:name=".PirateCompatActivity"
+      android:allowClearUserData="true"
+      android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|fontScale"
+      android:launchMode="singleInstance"
+      android:screenOrientation="portrait"
+      android:theme="@style/PirateActivityTheme">
+      <meta-data
+        android:name="unityplayer.UnityActivity"
+        android:value="true" />
+      <meta-data
+        android:name="unityplayer.ForwardNativeEventsToDalvik"
+        android:value="false" />
+    </activity>
+
+  </application>
+
+</manifest>

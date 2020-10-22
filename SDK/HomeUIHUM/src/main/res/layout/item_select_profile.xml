@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <data>
+
+    <variable
+      name="item"
+      type="com.kolibree.android.app.ui.selectprofile.ProfileItem" />
+
+    <variable
+      name="interaction"
+      type="com.kolibree.android.app.ui.selectprofile.SelectProfileInteraction" />
+
+    <import type="android.view.View" />
+
+    <import type="com.kolibree.android.extensions.ContextExtensionsKt" />
+
+    <import type="com.kolibree.android.homeui.hum.R" />
+
+  </data>
+
+  <com.google.android.material.card.MaterialCardView
+    style="?materialCardViewStyle"
+    android:layout_width="@dimen/dot_fourteen"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/dot_half"
+    android:layout_marginTop="@dimen/dot_trip"
+    android:layout_marginEnd="@dimen/dot_half"
+    android:onClick="@{() -> interaction.onItemClick(item)}"
+    app:cardBackgroundColor="@{item.selected ? ContextExtensionsKt.getColorFromAttr(context, R.attr.colorPrimary) : ContextExtensionsKt.getColorFromAttr(context, R.attr.backgroundColorLight)}"
+    app:cardElevation="@dimen/zero"
+    app:strokeColor="@{item.selected ? ContextExtensionsKt.getColorFromAttr(context, R.attr.colorPrimary) : ContextExtensionsKt.getColorFromAttr(context, R.attr.colorBackgroundDark)}"
+    app:strokeWidth="1dp"
+    tools:cardBackgroundColor="#c4c4c4">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+      <ImageView
+        android:id="@+id/profile_image"
+        profileAvatarUrl="@{item.profileAvatarUrl}"
+        profileName="@{item.profileName}"
+        android:layout_width="@dimen/match_constraints"
+        android:layout_height="@dimen/match_constraints"
+        android:layout_margin="@dimen/dot_double"
+        app:layout_constraintBottom_toTopOf="@+id/profile_name"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@tools:sample/avatars" />
+
+      <TextView
+        android:id="@+id/profile_name"
+        android:layout_width="@dimen/match_constraints"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dot"
+        android:layout_marginEnd="@dimen/dot"
+        android:layout_marginBottom="@dimen/dot"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:lines="2"
+        android:text="@{item.profileName}"
+        android:textAppearance="?textAppearanceSubtitle2"
+        android:textColor="@{item.selected ? ContextExtensionsKt.getColorFromAttr(context, R.attr.backgroundColorLight) : ContextExtensionsKt.getColorFromAttr(context, android.R.attr.textColorPrimary)}"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_image"
+        tools:text="Connect E2" />
+
+      <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dot"
+        android:layout_marginEnd="@dimen/dot"
+        android:src="@drawable/ic_checkmark"
+        android:visibility="@{item.selected ? View.VISIBLE : View.INVISIBLE}"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+  </com.google.android.material.card.MaterialCardView>
+
+</layout>

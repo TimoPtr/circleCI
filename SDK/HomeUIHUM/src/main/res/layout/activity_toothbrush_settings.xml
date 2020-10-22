@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout>
+
+  <data>
+
+    <variable
+      name="viewModel"
+      type="com.kolibree.android.app.ui.toothbrushsettings.ToothbrushSettingsViewModel" />
+
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.kolibree.android.app.ui.widget.ElevationMediatorView
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="@dimen/match_constraints"
+      app:constraint_referenced_ids="appbar"
+      app:endElevation="@dimen/dot_half"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:scrollDistance="@dimen/dot_oct"
+      app:scrollingView="@id/tb_settings_recycler_view"
+      app:startElevation="@dimen/zero" />
+
+    <com.google.android.material.appbar.AppBarLayout
+      android:id="@+id/appbar"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:background="?toolbarCollapsedBackground"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent">
+
+      <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        enableBackNavigation="@{true}"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="@string/tb_settings_toolbar_title"
+        app:titleTextAppearance="?textAppearanceHeadline4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@{@drawable/ic_back_arrow}"
+        tools:visibility="visible" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/tb_settings_recycler_view"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/match_constraints"
+      app:adapter="@{viewModel.adapter}"
+      app:itemBinding="@{viewModel.itemsBinding}"
+      app:items="@{viewModel.items}"
+      app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/appbar" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+

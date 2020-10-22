@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:aapt="http://schemas.android.com/aapt"
+  android:drawable="@drawable/ic_toothbrush_connecting">
+
+  <target android:name="outline">
+    <aapt:attr name="android:animation">
+
+      <objectAnimator
+        android:duration="@integer/ic_connection_loop_duration"
+        android:interpolator="@android:interpolator/linear"
+        android:repeatCount="infinite"
+        android:repeatMode="restart">
+
+        <propertyValuesHolder
+          android:propertyName="trimPathEnd"
+          android:valueFrom="0.0"
+          android:valueTo="1.0"
+          android:valueType="floatType">
+          <keyframe
+            android:fraction="0"
+            android:value="0.0" />
+          <keyframe
+            android:fraction="0.8"
+            android:value="1.0" />
+          <keyframe
+            android:fraction="1.0"
+            android:value="1.0" />
+        </propertyValuesHolder>
+
+        <propertyValuesHolder
+          android:propertyName="trimPathStart"
+          android:valueFrom="0.0"
+          android:valueTo="1.0"
+          android:valueType="floatType">
+          <keyframe
+            android:fraction="0"
+            android:value="0.0" />
+          <keyframe
+            android:fraction="0.2"
+            android:value="0.0" />
+          <keyframe
+            android:fraction="1.0"
+            android:value="1.0" />
+        </propertyValuesHolder>
+      </objectAnimator>
+    </aapt:attr>
+  </target>
+
+</animated-vector>

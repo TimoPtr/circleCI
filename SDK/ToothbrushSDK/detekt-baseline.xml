@@ -1,0 +1,119 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <Blacklist></Blacklist>
+  <Whitelist>
+    <ID>ComplexMethod:ToothbrushNameProvider.kt$ToothbrushNameProvider$provideResource</ID>
+    <ID>ComplexMethod:ToothbrushScanResultFactory.kt$ToothbrushScanResultFactory$toothbrushModelFromAdvertisedModelId</ID>
+    <ID>LargeClass:KLTBConnectionDoctor.kt$KLTBConnectionDoctor$KLTBConnectionDoctor</ID>
+    <ID>LargeClass:KLTBConnectionPool.kt$KLTBConnectionPoolManagerImpl$KLTBConnectionPoolManagerImpl</ID>
+    <ID>LongMethod:AccountToothbrushRepositoryImpl.kt$AccountToothbrushRepositoryImpl$associate</ID>
+    <ID>LongMethod:BluetoothWindowedScanner.kt$BluetoothWindowedScanner$detectTooManyScans</ID>
+    <ID>LongMethod:BluetoothWindowedScanner.kt$BluetoothWindowedScanner$startScan</ID>
+    <ID>LongMethod:CM1Driver.kt$CM1Driver$loadSensorCalibration</ID>
+    <ID>LongMethod:ConnectionStateMonitor.kt$ConnectionStateMonitor$waitForActiveConnection</ID>
+    <ID>LongMethod:FileServiceOfflineBrushingsExtractor.kt$FileServiceOfflineBrushingsExtractor$getRecords</ID>
+    <ID>LongMethod:KLNordicBleManager.kt$KLNordicBleManager$calibrateAccelerometerAndGyrometer</ID>
+    <ID>LongMethod:KLNordicBleManager.kt$KLNordicBleManager$disconnectWithoutReconnect</ID>
+    <ID>LongMethod:KLNordicBleManager.kt$KLNordicBleManager$klEnableNotificationsRequest</ID>
+    <ID>LongMethod:KLNordicBleManager.kt$KLNordicBleManager$klWriteCharacteristic</ID>
+    <ID>LongMethod:KLNordicBleManager.kt$KLNordicBleManager$writeAndNotifyOperation</ID>
+    <ID>LongMethod:KLNordicBleManager.kt$KLNordicBleManager$writeWithAck</ID>
+    <ID>LongMethod:KLNordicBleManager.kt$KLNordicBleManager.&lt;no name provided&gt;$isOptionalServiceSupported</ID>
+    <ID>LongMethod:KLNordicBleManager.kt$KLNordicBleManager.&lt;no name provided&gt;$isRequiredServiceSupported</ID>
+    <ID>LongMethod:KLTBConnectionDoctor.kt$KLTBConnectionDoctor$establishConnection</ID>
+    <ID>LongMethod:KLTBConnectionDoctor.kt$KLTBConnectionDoctor$listenToBluetoothState</ID>
+    <ID>LongMethod:KLTBConnectionDoctor.kt$KLTBConnectionDoctor$listenToLocationStatus</ID>
+    <ID>LongMethod:KLTBConnectionImpl.kt$KLTBConnectionImpl$createEstablishCompletable</ID>
+    <ID>LongMethod:KLTBConnectionImpl.kt$KLTBConnectionImpl$establish</ID>
+    <ID>LongMethod:KLTBFile.kt$KLTBFileParser$parse</ID>
+    <ID>LongMethod:KolibreeAndroidSdk.kt$KolibreeAndroidSdk.Companion$init</ID>
+    <ID>LongMethod:LegacyStoredBrushingsExtractor.kt$LegacyStoredBrushingsExtractor$grabRecordData</ID>
+    <ID>LongMethod:LegacyStoredBrushingsExtractor.kt$LegacyStoredBrushingsExtractor$popRecord</ID>
+    <ID>LongMethod:LocationStatusListener.kt$LocationStatusListenerImpl$locationActionStream</ID>
+    <ID>LongMethod:NextObjectHeader.kt$NextObjectHeader.Companion$create</ID>
+    <ID>LongMethod:OfflineBrushingExtractorModule.kt$OfflineBrushingExtractorModule$providesStoredBrushingProcessor</ID>
+    <ID>LongMethod:PlaqlessSensorState.kt$toPlaqlessSensorData</ID>
+    <ID>LongMethod:RnnWeightProvider.kt$RnnWeightProviderImpl$getEncryptedBinaryRes</ID>
+    <ID>LongMethod:ToothbrushAdvertisingAppUseCase.kt$ToothbrushAdvertisingAppUseCase$advertisingStateSingle</ID>
+    <ID>LongMethod:ToothbrushDfuUpdater.kt$ToothbrushDfuUpdater.&lt;no name provided&gt;$onError</ID>
+    <ID>LongMethod:ToothbrushImplementationFactory.kt$ToothbrushImplementationFactory$createToothbrushImplementation</ID>
+    <ID>LongParameterList:OfflineBrushingExtractorModule.kt$OfflineBrushingExtractorModule$( rnnWeightProvider: RnnWeightProvider?, kpiSpeedProvider: KpiSpeedProvider?, angleProvider: AngleProvider, transitionProvider: TransitionProvider, thresholdProvider: ThresholdProvider, zoneValidatorProvider: ZoneValidatorProvider )</ID>
+    <ID>LongParameterList:Toothbrush.kt$Toothbrush$( red: Byte, green: Byte, blue: Byte, pattern: LedPattern, period: Int, duration: Int )</ID>
+    <ID>LongParameterList:ToothbrushImplementationFactory.kt$ToothbrushKLTB003Component.Factory$( sdkComponent: SdkComponent, @BindsInstance context: Context, @BindsInstance kltbConnection: InternalKLTBConnection, @BindsInstance bleDriver: BleDriver, @BindsInstance @ToothbrushMac mac: Optional&lt;String&gt;, @BindsInstance name: String, @BindsInstance model: ToothbrushModel )</ID>
+    <ID>MagicNumber:CB1Driver.kt$3</ID>
+    <ID>MagicNumber:CB1Driver.kt$4</ID>
+    <ID>MagicNumber:CB1Driver.kt$6</ID>
+    <ID>MagicNumber:CB1Driver.kt$9</ID>
+    <ID>MagicNumber:CE2Driver.kt$3</ID>
+    <ID>MagicNumber:CE2Driver.kt$4</ID>
+    <ID>MagicNumber:CE2Driver.kt$6</ID>
+    <ID>MagicNumber:CM1Driver.kt$3</ID>
+    <ID>MagicNumber:CM1Driver.kt$4</ID>
+    <ID>MagicNumber:CM1Driver.kt$6</ID>
+    <ID>MagicNumber:CM1Driver.kt$CM1Driver$12</ID>
+    <ID>MagicNumber:CM1Driver.kt$CM1Driver$13</ID>
+    <ID>MagicNumber:CM1Driver.kt$CM1Driver$14</ID>
+    <ID>MagicNumber:CM1Driver.kt$CM1Driver$16</ID>
+    <ID>MagicNumber:CM1Driver.kt$CM1Driver$17</ID>
+    <ID>MagicNumber:CommandSet.kt$CommandSet$0x10</ID>
+    <ID>MagicNumber:CommandSet.kt$CommandSet$0x12</ID>
+    <ID>MagicNumber:CommandSet.kt$CommandSet$0x13</ID>
+    <ID>MagicNumber:CommandSet.kt$CommandSet$0x14</ID>
+    <ID>MagicNumber:CommandSet.kt$CommandSet$0x15</ID>
+    <ID>MagicNumber:CommandSet.kt$CommandSet$0x16</ID>
+    <ID>MagicNumber:CommandSet.kt$CommandSet$0x17</ID>
+    <ID>MagicNumber:CommandSet.kt$CommandSet$5</ID>
+    <ID>MagicNumber:CommandSet.kt$CommandSet$9</ID>
+    <ID>MagicNumber:HardwareVersion.kt$HardwareVersion$0xFFFF</ID>
+    <ID>MagicNumber:HardwareVersion.kt$HardwareVersion$0xFFFFL</ID>
+    <ID>MagicNumber:HardwareVersion.kt$HardwareVersion$16</ID>
+    <ID>MagicNumber:MouthZoneIndexMapper.kt$MouthZoneIndexMapper$10</ID>
+    <ID>MagicNumber:MouthZoneIndexMapper.kt$MouthZoneIndexMapper$11</ID>
+    <ID>MagicNumber:MouthZoneIndexMapper.kt$MouthZoneIndexMapper$12</ID>
+    <ID>MagicNumber:MouthZoneIndexMapper.kt$MouthZoneIndexMapper$13</ID>
+    <ID>MagicNumber:MouthZoneIndexMapper.kt$MouthZoneIndexMapper$14</ID>
+    <ID>MagicNumber:MouthZoneIndexMapper.kt$MouthZoneIndexMapper$3</ID>
+    <ID>MagicNumber:MouthZoneIndexMapper.kt$MouthZoneIndexMapper$4</ID>
+    <ID>MagicNumber:MouthZoneIndexMapper.kt$MouthZoneIndexMapper$5</ID>
+    <ID>MagicNumber:MouthZoneIndexMapper.kt$MouthZoneIndexMapper$6</ID>
+    <ID>MagicNumber:MouthZoneIndexMapper.kt$MouthZoneIndexMapper$7</ID>
+    <ID>MagicNumber:MouthZoneIndexMapper.kt$MouthZoneIndexMapper$8</ID>
+    <ID>MagicNumber:MouthZoneIndexMapper.kt$MouthZoneIndexMapper$9</ID>
+    <ID>MagicNumber:ParameterSet.kt$ParameterSet$3</ID>
+    <ID>MagicNumber:PayloadReader.kt$PayloadReader$0x00000000FFFFFFFFL</ID>
+    <ID>MagicNumber:PayloadReader.kt$PayloadReader$0x0000FFFF</ID>
+    <ID>MagicNumber:PayloadWriter.kt$PayloadWriter$0x0000FFFF</ID>
+    <ID>MagicNumber:PlaqlessDriver.kt$10</ID>
+    <ID>MagicNumber:SoftwareVersion.kt$SoftwareVersion$0x0000FFFFL</ID>
+    <ID>MagicNumber:SoftwareVersion.kt$SoftwareVersion$0xFFFF</ID>
+    <ID>MagicNumber:SoftwareVersion.kt$SoftwareVersion$16</ID>
+    <ID>MagicNumber:SoftwareVersion.kt$SoftwareVersion$24</ID>
+    <ID>MaxLineLength:KLTBConnectionDoctor.kt$KLTBConnectionDoctor$Timber.tag("isConnectionAllowed") .v("shouldAttemptConnection isConnectionAllowed: ${connection.isConnectionAllowed()} on ${connection.mac()}")</ID>
+    <ID>SwallowedException:ToothbrushAwakerImplTest.kt$ToothbrushAwakerImplTest$catch (iae: IllegalArgumentException) { exceptionThrown = true }</ID>
+    <ID>TooGenericExceptionCaught:ToothbrushDfuUpdater.kt$ToothbrushDfuUpdater$reason: Exception</ID>
+    <ID>TooGenericExceptionCaught:VibratorImpl.kt$VibratorImpl$e: Exception</ID>
+    <ID>TooManyFunctions:AccountToothbrushDao.kt$AccountToothbrushDao$AccountToothbrushDao</ID>
+    <ID>TooManyFunctions:AccountToothbrushRepository.kt$AccountToothbrushRepository$AccountToothbrushRepository</ID>
+    <ID>TooManyFunctions:DetectorsManager.kt$DetectorsManager$DetectorsManager</ID>
+    <ID>TooManyFunctions:KLNordicBleManager.kt$KLNordicBleManager$KLNordicBleManager</ID>
+    <ID>TooManyFunctions:KLTBConnectionDoctor.kt$KLTBConnectionDoctor$KLTBConnectionDoctor</ID>
+    <ID>TooManyFunctions:PayloadReader.kt$PayloadReader$PayloadReader</ID>
+    <ID>TooManyFunctions:PayloadWriter.kt$PayloadWriter$PayloadWriter</ID>
+    <ID>TooManyFunctions:SdkComponent.kt$SdkComponent$SdkComponent</ID>
+    <ID>TooManyFunctions:ToothbrushFacade.kt$ToothbrushFacade$ToothbrushFacade</ID>
+    <ID>TooManyFunctions:ToothbrushRepository.kt$ToothbrushRepository$ToothbrushRepository</ID>
+    <ID>TopLevelPropertyNaming:CB1Driver.kt$private val POLL_BRUSHING_EVENTS_FW = SoftwareVersion(1, 6, 3)</ID>
+    <ID>TopLevelPropertyNaming:CB1Driver.kt$private val READ_BOOTLOADER_SUPPORTED_FW = SoftwareVersion(1, 4, 9)</ID>
+    <ID>TopLevelPropertyNaming:CB1Driver.kt$private val RNN_NOT_SUPPORTED_FW = SoftwareVersion(2, 0, 0)</ID>
+    <ID>TopLevelPropertyNaming:CE2Driver.kt$private val POLL_BRUSHING_EVENTS_FW = SoftwareVersion(1, 6, 3)</ID>
+    <ID>TopLevelPropertyNaming:CE2Driver.kt$private val READ_BOOTLOADER_SUPPORTED_FW = SoftwareVersion(1, 4, 1)</ID>
+    <ID>TopLevelPropertyNaming:CE2Driver.kt$private val RNN_NOT_SUPPORTED_FW = SoftwareVersion(2, 0, 0)</ID>
+    <ID>TopLevelPropertyNaming:CM1Driver.kt$private val POLL_BRUSHING_EVENTS_FW = SoftwareVersion(1, 6, 3)</ID>
+    <ID>TopLevelPropertyNaming:CM1Driver.kt$private val READ_BOOTLOADER_SUPPORTED_FW = SoftwareVersion(1, 4, 1)</ID>
+    <ID>TopLevelPropertyNaming:CM1Driver.kt$private val RNN_NOT_SUPPORTED_FW = SoftwareVersion(2, 0, 0)</ID>
+    <ID>TopLevelPropertyNaming:CheckConnectionPrerequisitesUseCase.kt$private val CHECK_PREREQUISITES_INTERVAL = Duration.ofSeconds(1)</ID>
+    <ID>TopLevelPropertyNaming:PlaqlessDriver.kt$private val POLL_BRUSHING_EVENTS_FW = SoftwareVersion(2, 0, 10)</ID>
+    <ID>TopLevelPropertyNaming:PlaqlessDriver.kt$private val READ_BOOTLOADER_SUPPORTED_FW = SoftwareVersion(2, 0, 0)</ID>
+    <ID>TopLevelPropertyNaming:ResetBluetoothUseCase.kt$@SuppressWarnings("MagicNumber") private val RESET_BLUETOOTH_TIMEOUT = Duration.ofSeconds(20)</ID>
+  </Whitelist>
+</SmellBaseline>

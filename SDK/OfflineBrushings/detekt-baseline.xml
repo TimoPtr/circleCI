@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <Blacklist></Blacklist>
+  <Whitelist>
+    <ID>ComplexMethod:OrphanBrushing.kt$OrphanBrushing$equals</ID>
+    <ID>LongMethod:ExtractOfflineBrushingsUseCase.kt$ExtractOfflineBrushingsUseCaseImpl$readFromKLTBConnection</ID>
+    <ID>LongMethod:OfflineBrushingMigrationFrom2To3.kt$OfflineBrushingMigrationFrom2To3$migrate</ID>
+    <ID>LongMethod:OfflineBrushingsDataMapper.kt$OfflineBrushingsDataMapper$createBrushingData</ID>
+    <ID>LongMethod:OfflineBrushingsNotifier.kt$OfflineBrushingsNotifier$showNotification</ID>
+    <ID>LongMethod:OfflineSyncResultProcessor.kt$OfflineSyncResultProcessor$createOrphanNotificationContent</ID>
+    <ID>LongMethod:OfflineSyncResultProcessor.kt$OfflineSyncResultProcessor$messageFromBrushingsAndSmiles</ID>
+    <ID>LongMethod:OrphanBrushing.kt$OrphanBrushing$equals</ID>
+    <ID>LongMethod:OrphanBrushing.kt$OrphanBrushing$toCreateBrushingData</ID>
+    <ID>LongMethod:OrphanBrushing.kt$OrphanBrushing.Companion$create</ID>
+    <ID>TooGenericExceptionCaught:MultiConnectionOfflineBrushingConsumer.kt$MultiConnectionOfflineBrushingConsumer$ex: Exception</ID>
+  </Whitelist>
+</SmellBaseline>

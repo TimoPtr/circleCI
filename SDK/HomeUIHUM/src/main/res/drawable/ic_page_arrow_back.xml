@@ -1,0 +1,18 @@
+<!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="16dp"
+    android:height="16dp"
+    android:viewportWidth="16"
+    android:viewportHeight="16">
+  <path
+      android:pathData="M11.89,2.58L10.703,1.4 4.11,8l6.6,6.6 1.18,-1.18L6.47,8l5.42,-5.42z"
+      android:fillColor="#818282"/>
+</vector>

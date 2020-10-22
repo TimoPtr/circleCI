@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  tools:context=".android.app.ui.settings.secret.dialogs.DialogsPlaygroundActivity">
+
+  <data>
+
+    <variable
+      name="item"
+      type="com.kolibree.android.app.ui.settings.secret.dialogs.DialogsPlaygroundActivity.SampleCarouselItem" />
+
+    <variable
+      name="interaction"
+      type="com.kolibree.android.app.ui.settings.secret.dialogs.DialogsPlaygroundActivity.SampleCarouselItemInteraction" />
+
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:onClick="@{() -> interaction.onItemClick(item)}"
+    android:padding="@dimen/dot_double">
+
+    <ImageView
+      android:id="@+id/imageView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:src="@{item.iconRes}"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+      android:id="@+id/textView"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/dot_double"
+      android:gravity="center"
+      android:text="@{item.name}"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/imageView"
+      tools:text="Name" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
+

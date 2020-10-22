@@ -1,0 +1,12 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.kolibree.android.rewards">
+
+  <application>
+
+    <activity
+      android:name=".smileshistory.SmilesHistoryActivity"
+      android:screenOrientation="portrait"
+      android:theme="@style/AppTheme.Light" />
+
+  </application>
+</manifest>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <data>
+
+    <import type="com.kolibree.android.extensions.ContextExtensionsKt" />
+
+    <import type="com.kolibree.android.homeui.hum.R" />
+
+    <variable
+      name="headerText"
+      type="String" />
+
+    <variable
+      name="interaction"
+      type="com.kolibree.android.app.ui.home.tab.view.PageableHeaderInteraction" />
+
+    <variable
+      name="isNextEnabled"
+      type="Boolean" />
+
+    <variable
+      name="isPreviousEnabled"
+      type="Boolean" />
+
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dot_quin"
+    android:background="@drawable/bg_rect_rounded"
+    tools:theme="@style/AppTheme">
+
+    <View
+      android:id="@+id/divider_back"
+      android:layout_width="@dimen/divider_thickness"
+      android:layout_height="match_parent"
+      android:layout_marginStart="@dimen/dot_six"
+      android:background="?backgroundColor"
+      app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+      android:id="@+id/divider_forth"
+      android:layout_width="@dimen/divider_thickness"
+      android:layout_height="match_parent"
+      android:layout_marginEnd="@dimen/dot_six"
+      android:background="?backgroundColor"
+      app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+      android:id="@+id/page_back_button"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="@dimen/match_constraints"
+      android:background="?selectableItemBackground"
+      android:clickable="@{isPreviousEnabled}"
+      android:onClick="@{() -> interaction.onPageBackClick()}"
+      android:src="@drawable/ic_page_arrow_back"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toStartOf="@+id/divider_back"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:tint="@{isPreviousEnabled ? ContextExtensionsKt.getColorFromAttr(context, R.attr.colorOnSurface) : ContextExtensionsKt.getColorFromAttr(context, R.attr.colorBackgroundDark)}" />
+
+    <ImageButton
+      android:id="@+id/page_forward_button"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="@dimen/match_constraints"
+      android:background="?selectableItemBackground"
+      android:clickable="@{isNextEnabled}"
+      android:onClick="@{() -> interaction.onPageForwardClick()}"
+      android:src="@drawable/ic_page_arrow_forth"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@+id/divider_forth"
+      app:layout_constraintTop_toTopOf="parent"
+      app:tint="@{isNextEnabled ? ContextExtensionsKt.getColorFromAttr(context, R.attr.colorOnSurface) : ContextExtensionsKt.getColorFromAttr(context, R.attr.colorBackgroundDark)}" />
+
+
+    <TextView
+      android:id="@+id/message_text"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="@dimen/match_constraints"
+      android:gravity="center"
+      android:text="@{headerText}"
+      android:textAppearance="?textAppearanceSubtitle2"
+      android:textColor="?android:textColorPrimary"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toStartOf="@id/divider_forth"
+      app:layout_constraintStart_toEndOf="@id/divider_back"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:text="May 2020" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

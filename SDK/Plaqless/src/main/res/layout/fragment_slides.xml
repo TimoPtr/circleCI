@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2019 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <data>
+
+    <variable
+      name="viewModel"
+      type="com.kolibree.android.plaqless.howto.intro.slides.SlidesViewModel"/>
+
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.viewpager.widget.ViewPager
+      android:id="@+id/slides_pager"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"/>
+
+    <com.rd.PageIndicatorView
+      android:id="@+id/pageIndicatorView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerInParent="true"
+      app:piv_animationType="scale"
+      app:piv_dynamicCount="true"
+      app:piv_interactiveAnimation="true"
+      app:piv_selectedColor="@color/colorPrimary"
+      app:piv_unselectedColor="@color/colorPrimaryDisabled"
+      app:piv_viewPager="@id/slides_pager"
+      app:piv_padding="@dimen/indicator_padding"
+      app:piv_radius="@dimen/indicator_radius"
+      android:layout_marginBottom="@dimen/average_margin"
+      app:layout_constraintBottom_toBottomOf="@+id/slides_pager"
+      app:layout_constraintEnd_toEndOf="@+id/slides_pager"
+      app:layout_constraintStart_toStartOf="@+id/slides_pager"/>
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
+

@@ -1,0 +1,12 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.kolibree.android.headspace">
+
+  <application>
+
+    <activity
+      android:name=".mindful.ui.HeadspaceMindfulMomentActivity"
+      android:screenOrientation="portrait"
+      android:theme="@style/AppTheme.Inverse.Red.TranslucentNavigation" />
+  </application>
+
+</manifest>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <data>
+
+    <import type="com.kolibree.databinding.bindingadapter.RecyclerSnapType" />
+
+    <import type="android.view.View" />
+
+    <variable
+      name="item"
+      type="com.kolibree.android.app.ui.home.tab.home.card.rewardyourself.RewardYourselfCardBindingModel" />
+
+    <variable
+      name="interaction"
+      type="com.kolibree.android.app.ui.home.tab.home.card.rewardyourself.RewardYourselfCardInteraction" />
+
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/reward_yourself_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:theme="@style/AppTheme">
+
+    <TextView
+      android:id="@+id/reward_yourself_card_title"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_double"
+      android:layout_marginTop="@dimen/dot_double"
+      android:layout_marginEnd="@dimen/dot_double"
+      android:text="@string/reward_yourself_card_title"
+      android:textAppearance="?textAppearanceHeadline4"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+      android:id="@+id/reward_yourself_card_body"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_double"
+      android:layout_marginTop="@dimen/dot"
+      android:layout_marginEnd="@dimen/dot_double"
+      android:text="@{item.body(context)}"
+      android:textAppearance="?textAppearanceCaption"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/reward_yourself_card_title"
+      tools:text="@string/reward_yourself_card_body" />
+
+    <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/reward_yourself_card_items"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:clipToPadding="false"
+      android:overScrollMode="never"
+      android:paddingStart="@dimen/dot"
+      android:paddingTop="@dimen/dot_double"
+      android:paddingEnd="@dimen/dot"
+      android:paddingBottom="@dimen/dot"
+      app:interaction="@{interaction}"
+      app:items="@{item.items}"
+      app:layoutManager="com.kolibree.android.app.ui.widget.HorizontalLinearLayoutManager"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/reward_yourself_card_body"
+      app:snapItems="@{RecyclerSnapType.LINEAR}"
+      tools:listitem="@layout/item_reward_yourself" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

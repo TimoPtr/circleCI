@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <Blacklist></Blacklist>
+  <Whitelist>
+    <ID>SwallowedException:GruwareRepositoryImplIntegrationTest.kt$GruwareRepositoryImplIntegrationTest$catch (ioException: IOException) { // do nothing }</ID>
+  </Whitelist>
+</SmellBaseline>

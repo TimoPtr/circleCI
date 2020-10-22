@@ -1,0 +1,23 @@
+apply plugin: 'java-library'
+
+dependencies {
+    api project(path: ":annotation")
+    api libraries.kotlinRuntime
+    api libraries.supportAnnotations
+
+    implementation libraries.rxJava
+
+    implementation libraries.gson
+
+    implementation libraries.threetenAbp
+
+    implementation libraries.timber
+
+    // Unit tests
+    testImplementation libraries.junit
+}
+
+// Needed for batch unit tests execution
+task testDebugUnitTest {
+    dependsOn test
+}

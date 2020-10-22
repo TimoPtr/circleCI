@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2019 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/speed_control_nav_graph"
+  app:startDestination="@id/intro">
+
+  <fragment
+    android:id="@+id/intro"
+    android:name="com.kolibree.android.angleandspeed.speedcontrol.mvi.intro.SpeedControlIntroFragment"
+    android:label="Intro"
+    tools:layout="@layout/fragment_game_intro">
+    <action
+      android:id="@+id/action_intro_to_brushStart"
+      app:destination="@id/brushStart"
+      app:enterAnim="@anim/slide_in_right"
+      app:exitAnim="@anim/fade_out"
+      app:popEnterAnim="@anim/slide_in_left"
+      app:popExitAnim="@anim/fade_out" />
+  </fragment>
+
+  <fragment
+    android:id="@+id/brushStart"
+    android:name="com.kolibree.android.angleandspeed.speedcontrol.mvi.brushstart.SpeedControlBrushStartFragment"
+    android:label="BrushStart"
+    tools:layout="@layout/fragment_brush_start">
+    <action
+      android:id="@+id/action_brushStart_to_brushing"
+      app:destination="@id/brushing"
+      app:enterAnim="@anim/slide_in_right"
+      app:exitAnim="@anim/fade_out"
+      app:popEnterAnim="@anim/slide_in_left"
+      app:popExitAnim="@anim/fade_out" />
+  </fragment>
+
+  <fragment
+    android:id="@+id/brushing"
+    android:name="com.kolibree.android.angleandspeed.speedcontrol.mvi.brushing.SpeedControlBrushingFragment"
+    android:label="Brushing"
+    tools:layout="@layout/fragment_speed_control_brushing">
+    <action
+      android:id="@+id/action_brushing_to_confirmation"
+      app:destination="@id/confirmation"
+      app:enterAnim="@anim/slide_in_right"
+      app:exitAnim="@anim/fade_out"
+      app:popEnterAnim="@anim/slide_in_left"
+      app:popExitAnim="@anim/fade_out" />
+  </fragment>
+
+  <fragment
+    android:id="@+id/confirmation"
+    android:name="com.kolibree.android.angleandspeed.speedcontrol.mvi.confirmation.SpeedControlConfirmationFragment"
+    android:label="Confirmation"
+    tools:layout="@layout/fragment_game_confirmation" />
+
+</navigation>

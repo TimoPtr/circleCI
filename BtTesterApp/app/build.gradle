@@ -1,0 +1,168 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+apply from: '../../SDK/buildscripts/spotless.gradle'
+apply from: '../../SDK/buildscripts/detekt/detekt.gradle'
+apply from: '../../SDK/buildscripts/lint/lint.gradle'
+apply from: '../../SDK/buildscripts/kapt.gradle'
+
+android {
+    compileSdkVersion versions.compileSdk
+
+    defaultConfig {
+        versionCode 1
+        versionName "1.0"
+
+        minSdkVersion versions.minSdk
+        targetSdkVersion versions.androidSdk
+
+        multiDexEnabled true
+        testInstrumentationRunner "com.kolibree.android.test.KolibreeTestRunner"
+
+        proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+        missingDimensionStrategy 'branding', 'colgate'
+
+        return void
+    }
+
+    signingConfigs {
+        release {
+            if (project.hasProperty('storeFilePath')) {
+                storeFile file(project["storeFilePath"])
+                keyAlias project["alias"]
+                storePassword project["aliasPass"]
+                keyPassword project["keyPass"]
+            }
+        }
+
+        debug {
+            storeFile file("${rootProject.rootDir}/../keystores/debug.keystore")
+            keyAlias 'androiddebugkey'
+            storePassword 'android'
+            keyPassword 'android'
+        }
+    }
+
+    buildTypes {
+        debug {
+            debuggable true
+
+            minifyEnabled false
+            shrinkResources false
+
+            applicationIdSuffix ".debug"
+
+            versionNameSuffix '-SNAPSHOT'
+
+            manifestPlaceholders = [appNameSuffix: " Debug"]
+
+            signingConfig signingConfigs.debug
+        }
+
+        release {
+            minifyEnabled true
+            shrinkResources true
+
+            lintOptions {
+                abortOnError true
+                warningsAsErrors true // Don't change this ;)
+            }
+
+            manifestPlaceholders = [appNameSuffix: ""]
+
+            signingConfig signingConfigs.release
+        }
+    }
+
+    flavorDimensions "branding"
+
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+    
+    packagingOptions {
+        exclude 'META-INF/ASL2.0'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/rxjava.properties'
+        return void
+    }
+    dataBinding {
+        enabled = true
+    }
+    androidExtensions {
+        experimental = true
+    }
+}
+
+dependencies {
+    implementation "com.kolibree.android:base-ui:$versions.name"
+    implementation "com.kolibree.android:features:$versions.name"
+    implementation "com.kolibree.android:commons:$versions.name"
+    implementation "com.kolibree.android:toothbrush-sdk:$versions.name"
+    implementation "com.kolibree.android:toothbrush-update-logic:$versions.name"
+    implementation "com.kolibree.android:toothbrush-update-ui-v1:$versions.name"
+    implementation "com.kolibree.android:web-service-sdk:$versions.name"
+    implementation "com.kolibree.android:crypto:$versions.name"
+    implementation "com.kolibree.android:pairing:$versions.name"
+    implementation "com.kolibree.android:synchronizator:$versions.name"
+    implementation "com.kolibree.android:auditor:$versions.name"
+    implementation "com.kolibree.android:databinding:$versions.name"
+    implementation "com.kolibree.android:stats-offline:$versions.name"
+    implementation "com.kolibree.android:processed-brushings-kml:$versions.name"
+    implementation "com.kolibree.android:game:$versions.name"
+    implementation "com.kolibree.android:translations-support:$versions.name"
+
+    implementation libraries.kotlinRuntime
+
+    implementation 'nl.littlerobots.rxlint:rxlint:1.7.3'
+
+    implementation libraries.supportDesign
+    implementation libraries.supportRecyclerView
+    implementation libraries.supportConstraintLayout
+
+    // Lifecycle
+    implementation libraries.lifecycleRuntime
+    implementation libraries.lifecycleExtensions
+    implementation libraries.lifecycleReactiveStreams
+    kapt libraries.lifecycleCompiler
+
+    // View injection
+    implementation(libraries.butterKnife) {
+        exclude group: 'com.android.support'
+    }
+    kapt libraries.butterKnifeCompiler
+
+    // Dagger
+    implementation libraries.dagger
+    kapt libraries.daggerCompiler
+    kaptAndroidTest libraries.daggerCompiler
+    implementation libraries.daggerAndroid
+    implementation libraries.daggerAndroidSupport
+    kapt libraries.daggerAndroidProcessor
+    kaptAndroidTest libraries.daggerAndroidProcessor
+
+    implementation libraries.gson
+
+    // Easier logging
+    implementation libraries.timber
+    implementation libraries.threetenAbp
+
+    // Leak detection
+    debugImplementation libraries.leakCanary
+
+    // RxJava
+    implementation libraries.rxJava
+    implementation libraries.rxAndroid
+    implementation libraries.rxRelay
+    implementation libraries.rxReplayShare
+    implementation libraries.rxDogTag
+
+    implementation libraries.bindingCollections
+}

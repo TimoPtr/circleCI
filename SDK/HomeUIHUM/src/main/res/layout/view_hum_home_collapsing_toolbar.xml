@@ -1,0 +1,138 @@
+<!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <data>
+
+    <variable
+      name="viewModel"
+      type="com.kolibree.android.app.ui.home.toolbar.HomeToolbarViewModel" />
+
+    <import type="android.view.View" />
+  </data>
+
+  <merge>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+      android:id="@+id/toolbar"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/transparent"
+      android:clipChildren="false"
+      android:clipToPadding="false"
+      android:theme="@style/ThemeOverlay.Toolbar"
+      app:layout_collapseMode="pin"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent">
+
+      <com.kolibree.android.app.ui.widget.BadgeImageView
+        android:id="@+id/main_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginStart="@dimen/dot_double"
+        android:layout_marginEnd="@dimen/dot_double"
+        android:adjustViewBounds="true"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:onClick="@{() -> viewModel.toolbarToothbrushIconClick()}"
+        android:paddingStart="@dimen/zero"
+        android:paddingTop="@dimen/toolbar_icon_padding"
+        android:paddingEnd="@dimen/zero"
+        android:paddingBottom="@dimen/toolbar_icon_padding"
+        app:alphaAttr="@{viewModel.toolbarIconResult.toolbarIcon.mainIconAlphaAttr}"
+        app:badgeViewId="@id/badge_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="?onToolbarExpandedBackground"
+        app:toolbarIcon="@{viewModel.toolbarIconResult.toolbarIcon}"
+        tools:ignore="ContentDescription" />
+
+      <ImageView
+        android:id="@+id/badge_icon"
+        android:layout_width="@dimen/badge_size"
+        android:layout_height="@dimen/badge_size"
+        android:layout_marginEnd="@dimen/zero"
+        android:layout_marginBottom="@dimen/toolbar_icon_padding"
+        android:src="@{viewModel.toolbarIconResult.toolbarIcon.badgeIcon}"
+        app:layout_constraintBottom_toBottomOf="@id/main_icon"
+        app:layout_constraintEnd_toEndOf="@id/main_icon" />
+
+      <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ripple_rounded"
+        android:clickable="@{viewModel.toolbarProfilePickerEnabled}"
+        android:ellipsize="end"
+        android:focusable="@{viewModel.toolbarProfilePickerEnabled}"
+        android:gravity="center"
+        android:lines="1"
+        android:minHeight="@dimen/min_touch_zone"
+        android:onClick="@{() -> viewModel.onProfileNameClick()}"
+        android:paddingStart="@dimen/dot"
+        android:layout_marginStart="@dimen/dot"
+        android:layout_marginEnd="@dimen/dot"
+        android:paddingEnd="@dimen/dot"
+        android:text="@{@string/home_toolbar_title_format(viewModel.profileName)}"
+        android:textAppearance="?textAppearanceHeadline4"
+        android:textColor="?onToolbarExpandedBackground"
+        android:visibility="@{viewModel.profileName != null ? View.VISIBLE : View.INVISIBLE}"
+        app:drawableEndCompat="@{viewModel.toolbarProfilePickerEnabled ? @drawable/ic_toolbar_profile_picker : @drawable/empty}"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="@id/main_icon"
+        app:layout_constraintEnd_toStartOf="@id/shopping_cart"
+        app:layout_constraintStart_toEndOf="@id/main_icon"
+        app:layout_constraintTop_toTopOf="@id/main_icon"
+        tools:text="Hi Andrea!" />
+
+      <com.kolibree.android.app.ui.widget.BadgeImageView
+        android:id="@+id/shopping_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/dot_double"
+        android:layout_marginEnd="@dimen/dot_double"
+        android:adjustViewBounds="true"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:onClick="@{() -> viewModel.toolbarCartIconClick()}"
+        android:paddingStart="@dimen/zero"
+        android:paddingTop="@dimen/toolbar_icon_padding"
+        android:paddingEnd="@dimen/zero"
+        android:paddingBottom="@dimen/toolbar_icon_padding"
+        android:src="@drawable/ic_shopping_cart"
+        app:badgeViewId="@id/cart_count"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="?toolbarIconTint"
+        tools:ignore="ContentDescription" />
+
+      <TextView
+        android:id="@+id/cart_count"
+        android:layout_width="@dimen/match_constraints"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/toolbar_icon_padding"
+        android:background="@drawable/badge_background"
+        android:backgroundTint="?colorPrimaryDark"
+        android:clickable="false"
+        android:gravity="center"
+        android:text="@{String.valueOf(viewModel.productsInCart)}"
+        android:textAppearance="?textAppearanceOverline"
+        android:textColor="@color/white"
+        android:textSize="@dimen/badge_text_size"
+        android:visibility="@{viewModel.getCartCountVisibility}"
+        app:layout_constraintDimensionRatio="v,1:1"
+        app:layout_constraintEnd_toEndOf="@id/shopping_cart"
+        app:layout_constraintTop_toTopOf="@id/shopping_cart" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+  </merge>
+</layout>

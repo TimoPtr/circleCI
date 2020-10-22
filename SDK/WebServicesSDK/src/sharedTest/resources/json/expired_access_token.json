@@ -1,0 +1,7 @@
+{
+  "display_message": "Invalid session: please log in again.",
+  "message": "E06: Access token expired.",
+  "internal_error_code": 6,
+  "detail": "Invalid access token.",
+  "http_code": 401
+}

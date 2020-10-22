@@ -1,0 +1,28 @@
+<!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.kolibree.android.guidedbrushing">
+
+  <application>
+
+    <activity
+      android:name="com.kolibree.android.guidedbrushing.mvi.GuidedBrushingActivity"
+      android:hardwareAccelerated="true"
+      android:screenOrientation="portrait"
+      android:theme="@style/GuidedBrushingTheme"/>
+
+    <activity
+      android:name="com.kolibree.android.guidedbrushing.settings.GuidedBrushingSettingsActivity"
+      android:hardwareAccelerated="true"
+      android:screenOrientation="portrait"
+      android:theme="@style/AppTheme.Light" />
+
+  </application>
+</manifest>

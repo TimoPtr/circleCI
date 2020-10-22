@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout>
+  <data>
+    <import type="android.view.View"/>
+
+    <variable name="interaction" type="com.kolibree.android.app.ui.pairing.list.NoBrushFoundInteraction"/>
+
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@color/white80"
+      android:visibility="@{interaction.showNoBrushFound ? View.VISIBLE : View.GONE}"
+      android:onClick="@{v -> interaction.closeClick()}"/>
+
+    <!-- This view is invisible and here just to catch the click on the cardView and
+    avoid invocation of closeClick and avoiding any issue with theming on the cardView (click higlight) -->
+    <View
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="@dimen/match_constraints"
+      android:visibility="@{interaction.showNoBrushFound ? View.VISIBLE : View.GONE}"
+      android:clickable="true"
+      android:focusable="true"
+      app:layout_constraintStart_toStartOf="@id/no_brush_found_card"
+      app:layout_constraintTop_toTopOf="@id/no_brush_found_card"
+      app:layout_constraintEnd_toEndOf="@id/no_brush_found_card"
+      app:layout_constraintBottom_toBottomOf="@id/no_brush_found_card"/>
+
+    <com.google.android.material.card.MaterialCardView
+      android:id="@+id/no_brush_found_card"
+      style="@style/Widget.CardView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_margin="@dimen/dot_double"
+      android:visibility="gone"
+      app:visibilityAnim="@{interaction.showNoBrushFound}"
+      app:layout_constrainedWidth="true"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      tools:visibility="visible">
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/dot_six"
+          android:layout_gravity="center"
+          app:srcCompat="@drawable/ic_warning_no_connection"/>
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/pairing_no_brush_dialog_title"
+          android:textAppearance="?textAppearanceHeadline3"
+          android:textColor="?textColorAccentSecondary"
+          android:gravity="center"
+          android:layout_gravity="center"
+          android:layout_marginTop="@dimen/dot_trip"
+          android:layout_marginStart="@dimen/dot_trip"
+          android:layout_marginEnd="@dimen/dot_trip"/>
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/pairing_no_brush_dialog_content1"
+          android:textAppearance="?textAppearanceBody2"
+          android:textColor="?android:textColorSecondary"
+          android:layout_gravity="start"
+          android:layout_marginTop="@dimen/dot_double"
+          android:layout_marginStart="@dimen/dot_trip"
+          android:layout_marginEnd="@dimen/dot_trip"/>
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/pairing_no_brush_dialog_content2"
+          android:textAppearance="?textAppearanceSubtitle2"
+          android:textColor="?android:textColorSecondary"
+          android:layout_gravity="start"
+          android:layout_marginTop="@dimen/dot_double"
+          android:layout_marginStart="@dimen/dot_trip"
+          android:layout_marginEnd="@dimen/dot_trip"/>
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/pairing_no_brush_dialog_content3"
+          android:textAppearance="?textAppearanceSubtitle2"
+          android:textColor="?android:textColorSecondary"
+          android:layout_gravity="start"
+          android:layout_marginStart="@dimen/dot_trip"
+          android:layout_marginEnd="@dimen/dot_trip"/>
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/pairing_no_brush_dialog_content4"
+          android:textAppearance="?textAppearanceSubtitle2"
+          android:textColor="?android:textColorSecondary"
+          android:layout_gravity="start"
+          android:layout_marginStart="@dimen/dot_trip"
+          android:layout_marginEnd="@dimen/dot_trip"/>
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/pairing_no_brush_dialog_content5"
+          android:textAppearance="?textAppearanceBody2"
+          android:textColor="?android:textColorSecondary"
+          android:layout_gravity="start"
+          android:layout_marginTop="@dimen/dot_double"
+          android:layout_marginStart="@dimen/dot_trip"
+          android:layout_marginEnd="@dimen/dot_trip"
+        />
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textAppearance="?textAppearanceSubtitle2"
+          android:textColor="?android:textColorPrimary"
+          android:text="@string/pairing_no_brush_dialog_content6"
+          android:layout_gravity="start"
+          android:layout_marginTop="@dimen/dot_double"
+          android:layout_marginStart="@dimen/dot_trip"
+          android:layout_marginEnd="@dimen/dot_trip"
+        />
+
+        <Button
+          android:id="@+id/enable_bluetooth_button"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="@string/pairing_no_brush_dialog_get_it"
+          android:layout_marginTop="@dimen/dot_double"
+          android:layout_marginStart="@dimen/dot_trip"
+          android:layout_marginEnd="@dimen/dot_trip"
+          android:layout_marginBottom="@dimen/dot_quin"
+          android:onClick="@{v -> interaction.getItClick()}"/>
+
+      </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

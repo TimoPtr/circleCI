@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+  <item android:alpha="1.0" android:color="?bottomNavigationSelectionColor" android:state_checked="true" />
+  <item android:alpha="0.5" android:color="?android:textColorPrimary" android:state_checked="false" />
+</selector>

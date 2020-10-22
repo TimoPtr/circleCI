@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <data>
+
+    <variable
+      name="viewModel"
+      type="com.kolibree.android.app.ui.settings.notifications.NotificationsViewModel" />
+
+    <import type="com.kolibree.android.brushreminder.model.BrushingReminderType" />
+
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.MaterialToolbar
+      android:id="@+id/toolbar"
+      enableBackNavigation="@{true}"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:navigationIcon="@{@drawable/ic_back_arrow}"
+      app:title="@string/notifications_toolbar_title"
+      app:titleTextAppearance="?textAppearanceHeadline4"
+      tools:visibility="visible" />
+
+    <ScrollView
+      android:id="@+id/notifications_scroll_view"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/match_constraints"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="@dimen/dot_quad"
+          android:layout_marginTop="@dimen/dot_trip"
+          android:text="@string/notifications_brush_reminder_header"
+          android:textAppearance="?textAppearanceOverline1"
+          android:textColor="?android:textColorSecondary" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/dot_six"
+          android:checked="@{viewModel.isBrushingReminderOn()}"
+          android:enabled="@{!viewModel.isChangingReminder}"
+          android:onCheckedChanged="@{(_, isOn) -> viewModel.onBrushingReminderClick(isOn)}"
+          android:paddingStart="@dimen/dot_quad"
+          android:paddingEnd="@dimen/dot_quad"
+          android:text="@string/notifications_brush_reminder_item"
+          android:textAppearance="?textAppearanceHeadline6"
+          android:textColor="?textColorAccentSecondary" />
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="@dimen/dot_quad"
+          android:layout_marginTop="@dimen/dot_double"
+          android:layout_marginEnd="@dimen/dot_quad"
+          android:text="@string/notifications_brush_reminder_description"
+          android:textAppearance="?textAppearanceBody2"
+          android:textColor="?android:textColorSecondary" />
+
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/divider_thickness"
+          android:layout_marginTop="@dimen/dot_trip"
+          android:background="?dividerColor" />
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="@dimen/dot_quad"
+          android:layout_marginTop="@dimen/dot_trip"
+          android:text="@string/notifications_brushing_reminders_title"
+          android:textAppearance="?textAppearanceOverline1"
+          android:textColor="?android:textColorSecondary" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+
+          <TextView
+            android:id="@+id/notifications_morning_reminder"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dot_six"
+            android:background="?selectableItemBackground"
+            android:gravity="center_vertical"
+            android:onClick="@{() -> viewModel.onBrushingReminderTimeClick(BrushingReminderType.MORNING)}"
+            android:paddingStart="@dimen/dot_quad"
+            android:paddingEnd="@dimen/dot_quad"
+            android:text="@{viewModel.morningReminderTime}"
+            android:textAppearance="?textAppearanceHeadline6"
+            android:textColor="?textColorAccentSecondary"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="08:00 AM" />
+
+          <com.google.android.material.switchmaterial.SwitchMaterial
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dot_six"
+            android:checked="@{viewModel.morningReminder.isOn}"
+            android:onCheckedChanged="@{(_, isOn) -> viewModel.onBrushingReminderClick(BrushingReminderType.MORNING, isOn)}"
+            android:paddingStart="@dimen/dot_quad"
+            android:paddingEnd="@dimen/dot_quad"
+            android:textAppearance="?textAppearanceHeadline6"
+            android:textColor="?textColorAccentSecondary"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+          <TextView
+            android:id="@+id/notifications_afternoon_reminder"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dot_six"
+            android:background="?selectableItemBackground"
+            android:gravity="center_vertical"
+            android:onClick="@{() -> viewModel.onBrushingReminderTimeClick(BrushingReminderType.AFTERNOON)}"
+            android:paddingStart="@dimen/dot_quad"
+            android:text="@{viewModel.afternoonReminderTime}"
+            android:paddingEnd="@dimen/dot_quad"
+            android:textAppearance="?textAppearanceHeadline6"
+            android:textColor="?textColorAccentSecondary"
+            app:layout_constraintTop_toBottomOf="@id/notifications_morning_reminder"
+            tools:text="02:00PM" />
+
+          <com.google.android.material.switchmaterial.SwitchMaterial
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dot_six"
+            android:checked="@{viewModel.afternoonReminder.isOn}"
+            android:onCheckedChanged="@{(_, isOn) -> viewModel.onBrushingReminderClick(BrushingReminderType.AFTERNOON, isOn)}"
+            android:paddingStart="@dimen/dot_quad"
+            android:paddingEnd="@dimen/dot_quad"
+            android:textAppearance="?textAppearanceHeadline6"
+            android:textColor="?textColorAccentSecondary"
+            app:layout_constraintTop_toBottomOf="@id/notifications_morning_reminder"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+          <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dot_six"
+            android:background="?selectableItemBackground"
+            android:gravity="center_vertical"
+            android:onClick="@{() -> viewModel.onBrushingReminderTimeClick(BrushingReminderType.EVENING)}"
+            android:paddingStart="@dimen/dot_quad"
+            android:paddingEnd="@dimen/dot_quad"
+            android:text="@{viewModel.eveningReminderTime}"
+            android:textAppearance="?textAppearanceHeadline6"
+            android:textColor="?textColorAccentSecondary"
+            app:layout_constraintTop_toBottomOf="@id/notifications_afternoon_reminder"
+            tools:text="10:00PM" />
+
+          <com.google.android.material.switchmaterial.SwitchMaterial
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dot_six"
+            android:checked="@{viewModel.eveningReminder.isOn}"
+            android:onCheckedChanged="@{(_, isOn) -> viewModel.onBrushingReminderClick(BrushingReminderType.EVENING, isOn)}"
+            android:paddingStart="@dimen/dot_quad"
+            android:paddingEnd="@dimen/dot_quad"
+            android:textAppearance="?textAppearanceHeadline6"
+            android:textColor="?textColorAccentSecondary"
+            app:layout_constraintTop_toBottomOf="@id/notifications_afternoon_reminder"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="@dimen/dot_quad"
+          android:layout_marginTop="@dimen/dot_double"
+          android:layout_marginEnd="@dimen/dot_quad"
+          android:text="@string/notifications_brushing_reminders_description"
+          android:textAppearance="?textAppearanceBody2"
+          android:textColor="?android:textColorSecondary" />
+
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/divider_thickness"
+          android:layout_marginTop="@dimen/dot_trip"
+          android:background="?dividerColor" />
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="@dimen/dot_quad"
+          android:layout_marginTop="@dimen/dot_trip"
+          android:text="@string/notifications_mailing_list_header"
+          android:textAppearance="?textAppearanceOverline1"
+          android:textColor="?android:textColorSecondary" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/dot_six"
+          android:checked="@{viewModel.isNewsletterSubscriptionOn()}"
+          android:enabled="@{!viewModel.isChangingNewsletterSubscription}"
+          android:onCheckedChanged="@{(_, isOn) -> viewModel.onSubscribeNewsletterClick(isOn)}"
+          android:paddingStart="@dimen/dot_quad"
+          android:paddingEnd="@dimen/dot_quad"
+          android:text="@string/notifications_mailing_list_item"
+          android:textAppearance="?textAppearanceHeadline6"
+          android:textColor="?textColorAccentSecondary" />
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="@dimen/dot_quad"
+          android:layout_marginTop="@dimen/dot_double"
+          android:layout_marginEnd="@dimen/dot_quad"
+          android:text="@string/notifications_mailing_list_description"
+          android:textAppearance="?textAppearanceBody2"
+          android:textColor="?android:textColorSecondary" />
+
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/divider_thickness"
+          android:layout_marginTop="@dimen/dot_trip"
+          android:background="?dividerColor" />
+
+      </LinearLayout>
+
+    </ScrollView>
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+

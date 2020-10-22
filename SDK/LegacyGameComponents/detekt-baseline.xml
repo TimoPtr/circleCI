@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <Blacklist></Blacklist>
+  <Whitelist>
+    <ID>ComplexMethod:BrushStartResourceProvider.kt$BrushStartResourceProvider$provideToothbrushPreviewImage</ID>
+    <ID>ComplexMethod:BrushStartResourceProvider.kt$BrushStartResourceProvider$provideToothbrushVideo</ID>
+    <ID>LongMethod:BaseGameFragment.kt$BaseGameFragment$execute</ID>
+  </Whitelist>
+</SmellBaseline>

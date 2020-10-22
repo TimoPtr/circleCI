@@ -1,0 +1,181 @@
+#!/usr/bin/env groovy
+
+library 'kolibree-lib'
+
+GRADLE_PROPERTY_FLAGS = "-PcalculateDynamicVersionCode=false"
+MAIN_APP_GRADLE = "cd MainApp && ./gradlew $GRADLE_PROPERTY_FLAGS"
+
+pipeline {
+
+  agent none
+
+  options {
+    buildDiscarder(logRotator(
+      artifactDaysToKeepStr: '90',
+      artifactNumToKeepStr: '5',
+      daysToKeepStr: '180',
+      numToKeepStr: '25'
+      ))
+    timestamps()
+    skipDefaultCheckout()
+  }
+
+  stages {
+    stage('execute') {
+      input {
+        message '''Please choose the name of AVD you want to recreate and node you want to execute this script on.'''
+        parameters {
+          string(defaultValue: '', description: 'For ex. Nexus_5_API_27', name: 'EMULATOR')
+          string(defaultValue: '', description: 'For ex. android-kl-metal-00', name: 'NODE')
+        }
+        ok 'Execute'
+      }
+
+      stages {
+        stage('validate input') {
+          steps {
+            script {
+              if (EMULATOR == null || EMULATOR?.trim() == false) {
+                error("EMULATOR doesn't have proper value, please re-execute the script and enter proper value.")
+              }
+              if (NODE == null || NODE?.trim() == false) {
+                error("NODE doesn't have proper value, please re-execute the script and enter proper value.") 
+              }
+              echo "Executing recreation of AVD: `$EMULATOR` on node: `$NODE`"
+            }
+          }
+        }
+
+        stage('recreate emulator') {
+          steps {
+            node(NODE) {
+              checkout scm
+              dir('SDK') {
+                kolibree android.appendArtifactoryAuthToGradle()
+              }
+              dir('MainApp') {
+                kolibree android.appendArtifactoryAuthToGradle()
+              }
+
+              script { 
+                final AVD_MANAGER = "$ANDROID_HOME/tools/bin/avdmanager"
+                final EMULATOR_BACKUP = "${EMULATOR}_BACKUP"
+
+                echo "Current list of AVDs:"
+                sh "$AVD_MANAGER list avd"
+
+                try {
+                  try {
+                    sh "$AVD_MANAGER delete avd --name $EMULATOR_BACKUP"
+                  } catch (e) {
+                    //no-op
+                  }
+                  try {
+                    sh "$AVD_MANAGER move avd --name $EMULATOR --rename $EMULATOR_BACKUP"
+                  } catch (e) {
+                    //no-op
+                  }
+                  sh "cd MainApp/test_scripts && ./create_new_spoon_emulator.sh $EMULATOR"
+                } catch (e) {            
+                  sh "$AVD_MANAGER delete avd --name $EMULATOR"
+                  sh "$AVD_MANAGER move avd --name $EMULATOR_BACKUP --rename $EMULATOR"  
+                  throw e
+                }
+
+                echo "List of AVDs after recreation:"
+                sh "$AVD_MANAGER list avd"
+              }
+
+              deleteDir()
+            }
+          }
+        }
+
+        stage('sdk - first pass') {
+          steps {
+            executeSdkTests()
+          }
+        }
+
+        stage('espresso - first pass') {
+          steps {
+            executeEspresso()
+
+          }
+        }
+
+        stage('sdk - second pass') {
+          steps {
+            executeSdkTests()
+          }
+        }
+
+        stage('espresso - second pass') {
+          steps {
+            executeEspresso()
+          }
+        }
+
+        stage('sdk - third pass') {
+          steps {
+            executeSdkTests()
+          }
+        }
+
+        stage('espresso - third pass') {
+          steps {
+            executeEspresso()
+          }
+        }
+      }
+    }
+  }
+}
+
+def executeSdkTests() {
+  kolibree android.startEmulator(
+    'nodeLabel' : NODE,
+    'emulatorName': EMULATOR,
+    'preTest': {
+      checkout scm
+      dir('SDK') {
+        kolibree android.appendArtifactoryAuthToGradle()
+      }
+      dir('MainApp') {
+        kolibree android.appendArtifactoryAuthToGradle()
+      }
+      },
+      'test': {
+        sh "cd SDK && ./gradlew --continue connectedDebugAndroidTest connectedColgateDebugAndroidTest connectedKolibreeDebugAndroidTest"
+        },
+        'postTest': {
+          junit '**/build/outputs/androidTest-results/connected/**/*.xml'
+          deleteDir()
+        }
+        )
+}
+
+def executeEspresso() {
+  kolibree android.startEmulator(
+    'nodeLabel' : NODE,
+    'emulatorName': EMULATOR,
+    'preTest': {
+      checkout scm
+      dir('SDK') {
+        kolibree android.appendArtifactoryAuthToGradle()
+      }
+      dir('MainApp') {
+        kolibree android.appendArtifactoryAuthToGradle()
+      }
+      },
+      'test': {
+        sh "$MAIN_APP_GRADLE clean :app:spoonColgateDebugAndroidTest"
+        },
+        'postTest': {
+          sh "zip -r spoon-report.zip MainApp/app/build/spoon-output/*"
+          archiveArtifacts artifacts: 'spoon-report.zip, sdk-demo-spoon-report.zip'
+          junit 'MainApp/app/build/spoon-output/**/junit-reports/*.xml'
+          deleteDir()
+        }
+        )
+}

@@ -1,0 +1,537 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'poeditor'
+apply plugin: 'com.google.android.gms.oss-licenses-plugin'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.facebook.testing.screenshot'
+
+def taskRequest = getGradle().getStartParameter().getTaskRequests().toString()
+if (!taskRequest.isEmpty() && !taskRequest.contains("Debug")) {
+    println "\nApplying Crashlytics plugin.\n"
+    apply plugin: 'com.google.firebase.crashlytics'
+} else {
+    println "\nSkipping Fabric/Crashlytics plugin.\n"
+}
+
+
+apply from: '../../SDK/buildscripts/jacoco.gradle'
+apply from: '../../SDK/buildscripts/spotless.gradle'
+
+apply from: "$project.rootDir/app/buildscripts/script-git-version.gradle"
+
+/*
+    POEditor common settings, see flavor based configuration below
+ */
+poeditor {
+    apikey '558b8a2323a90201c2ed26c4b1742356'
+    type 'android_strings'
+    tagsNew '1.0'
+}
+
+android {
+    compileSdkVersion versions.compileSdk
+
+    defaultConfig {
+        minSdkVersion versions.minSdk
+        targetSdkVersion versions.targetSdk
+
+        multiDexEnabled true
+        testInstrumentationRunner "com.kolibree.android.test.KolibreeEspressoTestRunner"
+
+        vectorDrawables.useSupportLibrary = true
+
+        proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro', '../SDK/Databinding/proguard-rules.pro'
+
+        buildConfigField "boolean", "ENABLE_SCREENSHOT_TESTING", "${project.hasProperty('enableScreenshotTesting')}"
+
+        return void
+    }
+
+    buildFeatures {
+        dataBinding = true
+    }
+
+    signingConfigs {
+        release {
+            if (project.hasProperty('releaseStoreFilePath')) {
+                storeFile file(project["releaseStoreFilePath"])
+                keyAlias project["releaseAlias"]
+                storePassword project["releaseAliasPass"]
+                keyPassword project["releaseKeyPass"]
+            }
+        }
+
+        beta {
+            if (project.hasProperty('betaStoreFilePath')) {
+                storeFile file(project["betaStoreFilePath"])
+                keyAlias project["betaAlias"]
+                storePassword project["betaAliasPass"]
+                keyPassword project["betaKeyPass"]
+            }
+        }
+
+        debug {
+            storeFile file("${rootProject.rootDir}/../keystores/debug.keystore")
+            keyAlias 'androiddebugkey'
+            storePassword 'android'
+            keyPassword 'android'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+
+            lintOptions {
+                abortOnError true
+                warningsAsErrors true // Don't change this ;)
+            }
+
+            signingConfig signingConfigs.release
+
+            manifestPlaceholders = [appNameSuffix: ""]
+
+            buildConfigField "String", "VERSION_NAME_SUFFIX", "\"" + versionNameSuffix + "\""
+            buildConfigField "boolean", "RELEASE", "true"
+        }
+
+        beta {
+            minifyEnabled true
+            shrinkResources true
+
+            //backend app_version field is limited to 10 chars
+            versionNameSuffix ".b"
+
+            applicationIdSuffix ".beta"
+
+            lintOptions {
+                abortOnError true
+                warningsAsErrors false
+            }
+
+            matchingFallbacks = ['release']
+            signingConfig signingConfigs.beta
+
+            manifestPlaceholders = [appNameSuffix: " Beta"]
+
+            buildConfigField "String", "VERSION_NAME_SUFFIX", "\"" + versionNameSuffix + "\""
+            buildConfigField "boolean", "RELEASE", "false"
+        }
+
+        debug {
+            debuggable true
+            testCoverageEnabled false
+            minifyEnabled false
+            shrinkResources false
+
+            applicationIdSuffix ".debug"
+
+            versionNameSuffix '-SNAPSHOT'
+
+            manifestPlaceholders = [appNameSuffix: " Debug"]
+
+            buildConfigField "String", "VERSION_NAME_SUFFIX", "\"" + versionNameSuffix + "\""
+            buildConfigField "boolean", "RELEASE", "false"
+        }
+    }
+
+    flavorDimensions "branding"
+
+    productFlavors {
+        colgate {
+            dimension 'branding'
+
+            applicationId 'com.colgate.colgateconnect'
+
+            def fileProviderAuthority = "com.colgate.colgateconnect.fileprovider"
+
+            versionCode dynamicProdVersionCode
+            versionName dynamicColgateProdVersionName
+
+            manifestPlaceholders = [
+                appName: "Colgate Connect",
+                fileProviderAuthority: fileProviderAuthority,
+                magicLinkPathPrefix: "/validate_code/colgateconnect"
+            ]
+
+            def resSrcRoot = '../SDK/StaticResourcesColgate/src/main'
+
+            poeditor {
+                variant 'colgate'
+                projectId '363677'
+
+                terms "${resSrcRoot}/res/values/strings.xml"
+                trans 'en', "${resSrcRoot}/res/values/strings.xml"
+                trans 'fr', "${resSrcRoot}/res/values-fr/strings.xml"
+                trans 'es', "${resSrcRoot}/res/values-es/strings.xml"
+                trans 'sv', "${resSrcRoot}/res/values-sv/strings.xml"
+                trans 'it', "${resSrcRoot}/res/values-it/strings.xml"
+                trans 'de', "${resSrcRoot}/res/values-de/strings.xml"
+                trans 'nl', "${resSrcRoot}/res/values-nl/strings.xml"
+                filters 'en', 'translated'
+                filters 'fr', 'translated'
+                filters 'es', 'translated'
+                filters 'sv', 'translated'
+                filters 'it', 'translated'
+                filters 'de', 'translated'
+                filters 'nl', 'translated'
+                filters 'zh-cn', 'translated'
+            }
+
+            screenshots {
+                recordDir = "$rootProject.rootDir/screenshot_master_set/colgateConnect"
+                referenceDir = "$project.rootDir/app/build/screenshotsColgateDebugAndroidTest"
+                failureDir = "$project.rootDir/app/build/screenshotsColgateDebugAndroidTest/failures"
+            }
+        }
+
+        hum {
+            dimension 'branding'
+            getIsDefault().set(true)
+
+            applicationId 'com.colgate.hum'
+
+            def fileProviderAuthority = "com.kolibree.android.homeui.hum.fileprovider"
+
+            versionCode dynamicProdVersionCode
+            versionName dynamicHumProdVersionName
+
+            manifestPlaceholders = [
+                appName: "hum by Colgate",
+                fileProviderAuthority: fileProviderAuthority,
+                magicLinkPathPrefix: "/validate_code/hum"
+            ]
+
+            def resSrcRoot = '../SDK/StaticResourcesHUM/src/main'
+
+            poeditor {
+                variant 'hum'
+                projectId '332667'
+
+                terms "${resSrcRoot}/res/values/strings.xml"
+                trans 'en', "${resSrcRoot}/res/values/strings.xml"
+                filters 'en', 'translated'
+                // TODO add more translations if needed
+            }
+
+            screenshots {
+                recordDir = "$rootProject.rootDir/screenshot_master_set/hum"
+                referenceDir = "$project.rootDir/app/build/screenshotsHumDebugAndroidTest"
+                failureDir = "$project.rootDir/app/build/screenshotsHumDebugAndroidTest/failures"
+            }
+        }
+    }
+
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    sourceSets {
+        //this folder will contained shared resources for build types to be released to the public (beta or release)
+        String sharedReleaseDir = 'src/sharedRelease/java'
+        beta {
+            java.srcDirs += sharedReleaseDir
+        }
+
+        release {
+            java.srcDirs += sharedReleaseDir
+        }
+
+        String sharedTestDir = 'src/sharedTest/java'
+        test {
+            java.srcDirs += sharedTestDir
+            java.srcDirs += 'src/test/kotlin'
+        }
+
+        androidTest {
+            java.srcDirs += sharedTestDir
+        }
+
+        // used by Room, to test migrations
+        androidTest.assets.srcDirs +=
+            files("$projectDir/schemas".toString())
+    }
+
+    packagingOptions {
+        exclude 'META-INF/ASL2.0'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/rxjava.properties'
+        exclude 'META-INF/atomicfu.kotlin_module'
+        return void
+    }
+
+    if (project.hasProperty('devBuild')) {
+        /*
+        skip tasks in dev builds from AS
+
+        https://kolibree.atlassian.net/wiki/spaces/SOF/pages/2755037/Android+Studio+Setup#AndroidStudioSetup-Compilerparameters
+
+        https://patrickjackson.dev/optimizing-build-time/
+         */
+        aaptOptions.cruncherEnabled = false
+        splits.abi.enable = false
+        splits.density.enable = false
+    }
+
+    testOptions {
+        /*
+        Currently this does nothing, but let's hope they implement it in the future
+
+        https://google.github.io/android-gradle-dsl/current/com.android.build.gradle.internal.dsl.TestOptions.html#com.android.build.gradle.internal.dsl.TestOptions:animationsDisabled
+
+        https://stackoverflow.com/questions/43474144/what-does-the-testoptions-animationsdisabled-property-in-android-gradle-plugin-d
+         */
+        animationsDisabled = true
+        unitTests.returnDefaultValues = true
+    }
+
+    applicationVariants.all { variant ->
+        if (variant.buildType.name == "debug") {
+            variant.mergedFlavor.resourceConfigurations.clear()
+            variant.mergedFlavor.resourceConfigurations.add("en")
+            variant.mergedFlavor.resourceConfigurations.add("xxxhdpi")
+        }
+
+        variant.resValue("string", "file_provider_authority", "\"${mergedFlavor.manifestPlaceholders['fileProviderAuthority']}${buildType.applicationIdSuffix}\"")
+    }
+
+    androidExtensions {
+        experimental = true
+    }
+
+    kapt {
+        arguments {
+            arg("room.schemaLocation", "$projectDir/schemas".toString())
+        }
+    }
+}
+
+dependencies {
+    implementation "com.kolibree.android:angle-and-speed-logic:$versions.name"
+    implementation "com.kolibree.android:account-sdk:$versions.name"
+    implementation "com.kolibree.android:auditor:$versions.name"
+    implementation "com.kolibree.android:base-ui:$versions.name"
+    implementation "com.kolibree.android:brushing-quiz:$versions.name"
+    implementation "com.kolibree.android:coach-plus-logic:$versions.name"
+    implementation "com.kolibree.android:commons:$versions.name"
+    implementation "com.kolibree.android:crypto:$versions.name"
+    implementation "com.kolibree.android:databinding:$versions.name"
+    implementation "com.kolibree.android:features:$versions.name"
+    implementation "com.kolibree.android:game:$versions.name"
+    implementation "com.kolibree.android:google-auth:$versions.name"
+    implementation "com.kolibree.android:heuristic:$versions.name"
+    implementation "com.kolibree.android:home-ui:$versions.name"
+    implementation "com.kolibree.android:jaws:$versions.name"
+    implementation "com.kolibree.android:offline-brushings:$versions.name"
+    implementation "com.kolibree.android:pairing:$versions.name"
+    implementation "com.kolibree.android:processed-brushings-kml:$versions.name"
+    implementation "com.kolibree.android:rewards-logic:$versions.name"
+    implementation "com.kolibree.android:shop:$versions.name"
+    implementation "com.kolibree.android:static-resources:$versions.name"
+    implementation "com.kolibree.android:stats:$versions.name"
+    implementation "com.kolibree.android:stats-offline:$versions.name"
+    implementation "com.kolibree.android:synchronizator:$versions.name"
+    implementation "com.kolibree.android:toothbrush-sdk:$versions.name"
+    implementation "com.kolibree.android:toothbrush-update-logic:$versions.name"
+    implementation "com.kolibree.android:tracker:$versions.name"
+    implementation "com.kolibree.android:translations-support:$versions.name"
+    implementation "com.kolibree.android:web-service-sdk:$versions.name"
+    implementation "com.kolibree.android:question-of-the-day:$versions.name"
+    implementation "com.kolibree.android:brush-sync-reminder:$versions.name"
+    implementation "com.kolibree.android:brush-reminder:$versions.name"
+    implementation "com.kolibree.android:angle-and-speed-ui:$versions.name"
+    implementation "com.kolibree.android:base-ui-hum:$versions.name"
+    implementation "com.kolibree.android:guided-brushing-ui:$versions.name"
+    implementation "com.kolibree.android:guided-brushing-tips:$versions.name"
+    implementation "com.kolibree.android:home-ui-hum:$versions.name"
+    implementation "com.kolibree.android:test-brushing:$versions.name"
+    implementation "com.kolibree.android:toothbrush-update-ui-hum:$versions.name"
+    implementation "com.kolibree.android:rewards-hum:$versions.name"
+    implementation "com.kolibree.android:amazon-dash:$versions.name"
+    implementation "com.kolibree.android:toothbrush-battery:$versions.name"
+    implementation "com.kolibree.android:dynamic-cards:$versions.name"
+    implementation "com.kolibree.android:headspace:$versions.name"
+    implementation "com.kolibree.android:partnerships:$versions.name"
+
+    // This allow us to switch all the resources of the app depending on the flavor
+    // the downside of this solution is that every resources need to be available on both
+    // library
+    humImplementation "com.kolibree.android:static-resources-hum:$versions.name"
+    colgateImplementation "com.kolibree.android:static-resources-colgate:$versions.name"
+
+    implementation "com.kolibree.android:unity-game-sdk:$versions.name"
+
+    implementation libraries.kotlinRuntime
+    implementation libraries.coroutines
+    implementation libraries.coroutinesAndroid
+
+    // Android libsgi
+    //noinspection GradleCompatible Facebook is adding customtabs version different than our supportLib
+    implementation libraries.multiDex
+    implementation libraries.supportDesign
+    implementation libraries.supportCardView
+    implementation libraries.supportRecyclerView
+    implementation libraries.supportViewPager2
+    implementation libraries.supportConstraintLayout
+    implementation libraries.supportExifInterface
+    implementation libraries.playCore
+
+    //Data binding
+    api libraries.bindingCollections
+    api libraries.bindingCollectionsRV
+
+    // Lifecycle
+    implementation libraries.lifecycleRuntime
+    implementation libraries.lifecycleExtensions
+    implementation libraries.lifecycleReactiveStreams
+    kapt libraries.lifecycleCompiler
+
+    // Room
+    implementation libraries.roomRuntime
+    implementation libraries.roomRxJava2
+    kapt libraries.roomCompiler
+    androidTestImplementation libraries.roomTesting
+
+    debugImplementation libraries.flipper
+    debugImplementation libraries.flipperNetwork
+    debugImplementation libraries.soloader
+
+    // Dagger
+    implementation libraries.dagger
+    kapt libraries.daggerCompiler
+    kaptAndroidTest libraries.daggerCompiler
+    implementation libraries.daggerAndroid
+    implementation libraries.daggerAndroidSupport
+    kapt libraries.daggerAndroidProcessor
+    kaptAndroidTest libraries.daggerAndroidProcessor
+
+    // JSON conversion
+    implementation libraries.jackson
+
+    // Memory leaks
+    debugImplementation libraries.leakCanary
+
+    // Picasso
+    implementation libraries.okHttp
+    implementation libraries.picasso
+
+    // Avoid some strange Proguard behavior
+    implementation libraries.jsr305
+
+    // RxJava
+    implementation libraries.rxJava
+    implementation libraries.rxAndroid
+    implementation libraries.rxRelay
+    implementation libraries.rxReplayShare
+    implementation libraries.rxLint
+    implementation libraries.rxDogTag
+
+    implementation libraries.gson
+    implementation libraries.threetenAbp
+
+    implementation libraries.navigationFragment
+    implementation libraries.navigationUI
+
+    implementation libraries.materialDialogsCore
+    implementation libraries.materialDialogsInput
+    implementation libraries.materialDialogsLifecycle
+    implementation libraries.materialDialogsDateTime
+
+    lintChecks "com.kolibree.android:lint-rules:$versions.name"
+
+    //for unit test we want the real threeten version, not the one adapted to android
+    testImplementation(libraries.fullThreetenBp) {
+        exclude group: 'com.jakewharton.threetenabp'
+    }
+
+    // Easier logging
+    implementation libraries.timber
+
+    // Firebase
+    implementation platform(libraries.firebaseBom)
+    implementation libraries.firebaseMessaging
+    implementation libraries.firebaseAnalytics
+    betaImplementation libraries.firebaseCrashlytics
+    releaseImplementation libraries.firebaseCrashlytics
+
+    implementation libraries.lottie
+
+    // Support
+    implementation(libraries.zendesk, {
+        exclude group: "com.android.support", module: "support-annotations"
+    })
+
+    testImplementation "com.kolibree.android:testing-unit-base:$versions.name"
+    testImplementation "com.kolibree.android:testing-builders:$versions.name"
+    testImplementation libraries.mockitoInline
+    testImplementation libraries.mockitoKotlin2
+    testImplementation(libraries.architectureCoreTesting, {
+        exclude group: 'com.android.support', module: 'support-compat'
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+    androidTestImplementation "com.kolibree.android:testing-builders:$versions.name"
+    androidTestImplementation "com.kolibree.android:testing-espresso-base:$versions.name"
+
+    androidTestImplementation libraries.mockitoKotlin2
+    androidTestImplementation libraries.supportTestCore
+    androidTestImplementation libraries.timesSquare
+    androidTestImplementation libraries.kotlinReflect
+    androidTestImplementation libraries.licenses
+    androidTestImplementation libraries.screenshotCommon
+
+    //WorkManager
+    implementation libraries.workRuntime
+    implementation libraries.workRuntimeKtx
+    implementation libraries.workRxJava2
+    androidTestImplementation libraries.workTesting
+}
+
+tasks.withType(JavaCompile).configureEach {
+    //enable incremental compilation
+    options.incremental = true
+}
+
+tasks.withType(Test).configureEach {
+    maxParallelForks = Runtime.runtime.availableProcessors().intdiv(2) ?: 1
+    forkEvery = 100
+}
+
+// This exclude the potential dependency that we have in module to static-resources
+// it allow us to inject the branding we want based on the flavor
+configurations {
+    implementation {
+        exclude group: 'com.kolibree.android', module: 'static-resources-branded'
+    }
+}
+
+configurations.all {
+    resolutionStrategy {
+        forcedModules = [
+            "org.jetbrains.kotlin:kotlin-stdlib:$versions.kotlin",
+            "org.jetbrains.kotlin:kotlin-reflect:$versions.kotlin",
+            libraries.fullThreetenBp,
+            libraries.okHttp,
+            libraries.rxJava,
+            libraries.supportAppCompat,
+            libraries.fragmentKtx
+        ]
+    }
+}
+
+apply from: '../../SDK/buildscripts/detekt/detekt.gradle'
+apply from: '../../SDK/buildscripts/lint/lint.gradle'
+apply from: '../../SDK/buildscripts/kapt.gradle'
+apply from: '../../SDK/buildscripts/ndk.gradle'
+apply from: '../../SDK/buildscripts/marathon.gradle'

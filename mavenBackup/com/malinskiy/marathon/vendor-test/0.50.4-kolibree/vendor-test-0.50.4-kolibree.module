@@ -1,0 +1,130 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.malinskiy.marathon",
+    "module": "vendor-test",
+    "version": "0.50.4-kolibree",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.2",
+      "buildId": "5rqox4qe2nglviwvbhck7v5qza"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.localToProject": "public",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "files": [
+        {
+          "name": "vendor-test-0.50.4-kolibree.jar",
+          "url": "vendor-test-0.50.4-kolibree.jar",
+          "size": 28044,
+          "sha512": "7a5df500ad9de99021bd893a6a05db2987fbfe9b4d30228e57a93d395d9a3d304dfc494bb793b675d8d7d1f8137894405957bc1afc580b7a3dae9b8d26cdfcc4",
+          "sha256": "3fca8df4653a3317d364314343ed0e5ed6827a855e89c916a0c134b8671cdcb0",
+          "sha1": "503a44c3b1f77d90bdf865c22a7f2eaf507d2a3a",
+          "md5": "773ac4bf1b76295436beff74e0977cd3"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.localToProject": "public",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.4.10"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.3.1"
+          }
+        },
+        {
+          "group": "io.github.microutils",
+          "module": "kotlin-logging",
+          "version": {
+            "requires": "1.4.9"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-reflect",
+          "version": {
+            "requires": "1.4.10"
+          }
+        },
+        {
+          "group": "org.skyscreamer",
+          "module": "jsonassert",
+          "version": {
+            "requires": "1.5.0"
+          }
+        },
+        {
+          "group": "org.xmlunit",
+          "module": "xmlunit-matchers",
+          "version": {
+            "requires": "2.6.3"
+          }
+        },
+        {
+          "group": "org.amshove.kluent",
+          "module": "kluent",
+          "version": {
+            "requires": "1.40"
+          }
+        },
+        {
+          "group": "com.nhaarman.mockitokotlin2",
+          "module": "mockito-kotlin",
+          "version": {
+            "requires": "2.0.0"
+          }
+        },
+        {
+          "group": "com.malinskiy.marathon",
+          "module": "core",
+          "version": {
+            "requires": "0.50.4-kolibree"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "vendor-test-0.50.4-kolibree.jar",
+          "url": "vendor-test-0.50.4-kolibree.jar",
+          "size": 28044,
+          "sha512": "7a5df500ad9de99021bd893a6a05db2987fbfe9b4d30228e57a93d395d9a3d304dfc494bb793b675d8d7d1f8137894405957bc1afc580b7a3dae9b8d26cdfcc4",
+          "sha256": "3fca8df4653a3317d364314343ed0e5ed6827a855e89c916a0c134b8671cdcb0",
+          "sha1": "503a44c3b1f77d90bdf865c22a7f2eaf507d2a3a",
+          "md5": "773ac4bf1b76295436beff74e0977cd3"
+        }
+      ]
+    }
+  ]
+}

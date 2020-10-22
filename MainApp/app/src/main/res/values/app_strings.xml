@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Contains strings that do not need to be translated-->
+<resources>
+  <string name="secret_custom_environment_title" translatable="false">Custom endpoint details</string>
+  <string name="secret_custom_environment_url_hint" translatable="false">https://api.s.kolibree.com</string>
+  <string name="secret_custom_environment_clientid_hint" translatable="false">Client Id</string>
+  <string name="secret_custom_environment_clientsecret_hint" translatable="false">Client Secret</string>
+</resources>

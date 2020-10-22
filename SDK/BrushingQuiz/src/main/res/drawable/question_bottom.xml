@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:shape="rectangle">
+
+  <solid
+    android:color="?backgroundColor"
+    tools:color="#ffffff" />
+
+  <corners
+    android:bottomLeftRadius="@dimen/dot"
+    android:bottomRightRadius="@dimen/dot" />
+
+  <stroke
+    android:width="@dimen/divider_thickness"
+    android:color="?colorBackgroundDark"
+    tools:color="#000000" />
+
+</shape>

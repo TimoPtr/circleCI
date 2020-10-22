@@ -1,0 +1,36 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.kolibree.android.offlinebrushings">
+
+  <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+  <application>
+
+    <service
+      android:name="com.kolibree.android.offlinebrushings.sync.job.NightsWatchOfflineBrushingsChecker"
+      android:exported="true"
+      android:permission="android.permission.BIND_JOB_SERVICE" />
+
+    <service
+      android:name="com.kolibree.android.offlinebrushings.sync.job.ToothbrushScanJobService"
+      android:exported="true"
+      android:permission="android.permission.BIND_JOB_SERVICE" />
+
+    <receiver
+      android:name=".sync.job.ToothbrushScannedBroadcastReceiver"
+      android:enabled="true" />
+
+    <receiver
+      android:name=".sync.job.NightsWatchBootBroadcastReceiver"
+      android:enabled="true"
+      android:exported="true">
+      <intent-filter>
+        <category android:name="android.intent.category.DEFAULT" />
+
+        <action android:name="android.intent.action.BOOT_COMPLETED" />
+        <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+        <!--For HTC devices-->
+        <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+      </intent-filter>
+    </receiver>
+  </application>
+
+</manifest>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="UnusedResources">
+
+  <!--
+    # Colgate color styleguide
+
+    Sync with https://app.zeplin.io/project/5ef3037da7a4e446be12620d/styleguide/colors?seid=5f0590516fcd63799557644c
+  -->
+
+  <color name="subtlegray">#f3f3f3</color>
+  <color name="lightgray">#d6d6d6</color>
+  <color name="gray">#959392</color>
+  <color name="darkgray">#595655</color>
+  <color name="charcoal">#2d2d2d</color>
+  <color name="black">#1e1e1e</color>
+  <color name="red">#d2010d</color>
+  <color name="orange">#ff6905</color>
+  <color name="darkred">#8f1f1d</color>
+  <color name="teal">#009ca6</color>
+  <color name="red3">#df4d56</color>
+  <color name="red2">#ed999e</color>
+  <color name="red1">#f8d9db</color>
+  <color name="orange3">#ff9650</color>
+  <color name="orange3_10">#1aff9650</color>
+  <color name="orange2">#ffc39b</color>
+  <color name="orange1">#ffe8d9</color>
+  <color name="darkred3">#b16261</color>
+  <color name="darkred2">#d2a5a5</color>
+  <color name="darkred1">#eedddd</color>
+  <color name="maroon">#7D0905</color>
+  <color name="teal3">#4cbac1</color>
+  <color name="teal2">#99d7db</color>
+  <color name="teal1">#d9f0f2</color>
+  <color name="white">#ffffff</color>
+  <color name="black87">#de000000</color>
+  <color name="black50">#80000000</color>
+  <color name="black25">#40000000</color>
+  <color name="white80">#ccffffff</color>
+  <color name="white60">#99ffffff</color>
+  <color name="white30">#50ffffff</color>
+  <color name="white10">#1Affffff</color>
+
+  <color name="divider">#eeeeee</color>
+  <color name="pause_overlay">#B3000000</color>
+  <color name="translucent_system_bar">@color/black25</color>
+
+  <!-- Jaws -->
+  <color name="cleanZoneColor">@color/white</color>
+  <color name="neglectedZoneColor">@color/orange2</color>
+  <color name="darkBlue50">#80337EC1</color>
+  <color name="darkBlue">#337EC1</color>
+  <color name="plaqueColor">#007EFF</color>
+
+  <!-- AVATAR COLORS-->
+  <color name="avatar_color_0">@color/lightgray</color>
+  <color name="avatar_color_1">@color/orange3</color>
+  <color name="avatar_color_2">@color/red3</color>
+  <color name="avatar_color_3">@color/teal3</color>
+  <color name="avatar_color_4">@color/darkred3</color>
+
+</resources>

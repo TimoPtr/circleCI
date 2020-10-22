@@ -1,0 +1,31 @@
+apply plugin: 'java-library'
+apply plugin: "kotlin"
+
+sourceCompatibility = JavaVersion.VERSION_1_8
+targetCompatibility = JavaVersion.VERSION_1_8
+
+dependencies {
+    compileOnly libraries.kotlinRuntime
+    compileOnly libraries.lintApi
+    compileOnly libraries.lintChecks
+
+    testImplementation libraries.lintTests
+}
+
+publisher.skipDeployment = true
+
+// We override the task
+task checkPom {
+    System.out.println('checkPom is disabled for LintRules module')
+}
+
+// Needed for batch unit tests execution
+task testDebugUnitTest {
+    dependsOn test
+}
+
+jar {
+    manifest {
+        attributes 'Lint-Registry-v2': 'com.kolibree.lint.KolibreeLintRegistry'
+    }
+}

@@ -1,0 +1,3 @@
+rootProject.name = 'kolibree-android-app'
+include ':app'
+includeBuild '../SDK'

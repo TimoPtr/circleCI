@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <data>
+
+    <variable
+      name="item"
+      type="com.kolibree.android.app.ui.card.mock.MockCardBindingModel" />
+
+    <variable
+      name="interaction"
+      type="com.kolibree.android.app.ui.card.mock.MockCardInteraction" />
+
+  </data>
+
+  <LinearLayout
+    android:id="@+id/item_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/dot"
+    tools:ignore="HardcodedText">
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding="@dimen/dot"
+      android:text="Some mock card"
+      android:textAppearance="?textAppearanceSubtitle1" />
+
+    <com.google.android.material.card.MaterialCardView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="@dimen/dot"
+      android:layout_marginTop="@dimen/dot"
+      android:layout_marginRight="@dimen/dot"
+      android:layout_marginBottom="@dimen/dot"
+      android:clickable="true"
+      android:elevation="@dimen/dot_quarter"
+      android:focusable="true"
+      android:onClick="@{v -> interaction.onCardClick()}"
+      app:contentPadding="@dimen/dot_trip">
+
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@{item.data.staticValue}"
+        android:textAppearance="?textAppearanceSubtitle1" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+  </LinearLayout>
+
+</layout>

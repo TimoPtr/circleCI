@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout>
+
+  <data>
+
+    <variable
+      name="viewModel"
+      type="com.kolibree.android.testbrushing.TestBrushingViewModel" />
+
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/hum_test_brushing_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.fragment.app.FragmentContainerView
+      android:id="@+id/nav_host_fragment"
+      android:name="androidx.navigation.fragment.NavHostFragment"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      app:defaultNavHost="true"
+      app:navGraph="@navigation/activity_hum_test_brushing_nav_graph" />
+
+    <com.google.android.material.appbar.MaterialToolbar
+      android:id="@+id/toolbar"
+      enableBackNavigation="@{true}"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:navigationIcon="@{@drawable/ic_nav_close}" />
+
+
+    <View
+      android:id="@+id/progress_background"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="?progressOverlayColor"
+      android:clickable="true"
+      android:focusable="true"
+      android:visibility="invisible"
+      app:visibilityAnim="@{viewModel.progressVisible}"
+      tools:visibility="visible" />
+
+    <com.google.android.material.card.MaterialCardView
+      android:id="@+id/progress_view"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:elevation="@dimen/dot_half"
+      android:visibility="invisible"
+      app:cardBackgroundColor="?backgroundColor"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintWidth_percent="0.75"
+      app:visibilityAnim="@{viewModel.progressVisible}"
+      tools:visibility="visible">
+
+      <include
+        layout="@layout/view_progress_indicator_dark"
+        app:progressVisible="@{viewModel.progressVisible}" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

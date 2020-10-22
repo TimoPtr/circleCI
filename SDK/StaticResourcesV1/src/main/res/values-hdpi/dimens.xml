@@ -1,0 +1,15 @@
+<resources>
+  <!-- Common -->
+  <dimen name="kolibree_edittext_margin">10dp</dimen>
+
+  <!-- Welcome screen -->
+  <dimen name="signup_terms_top_margin">30dp</dimen>
+  <dimen name="signup_facebook_top_margin">20dp</dimen>
+
+  <!-- About Screen -->
+  <dimen name="about_text_size">@dimen/normal_text</dimen>
+
+  <!--DASHBOARD-->
+  <dimen name="dashboard_text_size">@dimen/big_text</dimen>
+  <dimen name="dashboard_chart_text_size">@dimen/normal_text</dimen>
+</resources>

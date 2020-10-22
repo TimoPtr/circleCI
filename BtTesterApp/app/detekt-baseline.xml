@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <Blacklist></Blacklist>
+  <Whitelist>
+    <ID>ComplexMethod:OtaViewModel.kt$OtaViewModel$displayProgress</ID>
+    <ID>LongMethod:BluetoothHelper.kt$BluetoothHelper$isBluetoothAvailable</ID>
+    <ID>LongMethod:FreeBrushingTester.kt$FreeBrushingTester$flatMapOnActive</ID>
+    <ID>LongMethod:FreeBrushingTester.kt$FreeBrushingTesterModule$provideFreeBrushingAppContext</ID>
+    <ID>LongMethod:FreeBrushingViewModel.kt$FreeBrushingViewModel$startBrushing</ID>
+    <ID>LongMethod:OtaViewModel.kt$OtaViewModel$displayProgress</ID>
+    <ID>LongMethod:OtaViewModel.kt$OtaViewModel$startOta</ID>
+    <ID>LongMethod:SingleConnectionTester.kt$SingleConnectionTester$connectAndListenToStatus</ID>
+    <ID>LongMethod:SingleConnectionViewModel.kt$SingleConnectionViewModel$startConnection</ID>
+    <ID>LongMethod:SingleConnectionViewModel.kt$SingleConnectionViewModel$startScanFor</ID>
+    <ID>MagicNumber:OtaMockGruwareManager.kt$5</ID>
+    <ID>NestedBlockDepth:OtaMockGruwareManager.kt$OtaMockGruwareManager$jsonPathForToothbrush</ID>
+    <ID>ReturnCount:BluetoothHelper.kt$BluetoothHelper$internal fun isBluetoothAvailable(activity: Activity, bluetoothUtils: IBluetoothUtils): Boolean</ID>
+    <ID>TooGenericExceptionCaught:OtaMockGruwareManager.kt$OtaMockGruwareManager$e: Throwable</ID>
+  </Whitelist>
+</SmellBaseline>

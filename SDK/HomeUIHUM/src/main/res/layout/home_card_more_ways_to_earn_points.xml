@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <data>
+
+    <import type="com.kolibree.databinding.bindingadapter.RecyclerSnapType" />
+
+    <import type="android.view.View" />
+
+    <variable
+      name="item"
+      type="com.kolibree.android.app.ui.home.tab.home.card.morewaystoearnpoints.MoreWaysToEarnPointsCardBindingModel" />
+
+    <variable
+      name="interaction"
+      type="com.kolibree.android.app.ui.home.tab.home.card.morewaystoearnpoints.MoreWaysToEarnPointsCardInteraction" />
+
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/more_ways_to_earn_points_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:theme="@style/AppTheme">
+
+    <TextView
+      android:id="@+id/more_ways_to_earn_points_card_title"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_double"
+      android:layout_marginTop="@dimen/dot_double"
+      android:layout_marginEnd="@dimen/dot_double"
+      android:text="@string/more_ways_to_earn_points_title"
+      android:textAppearance="?textAppearanceHeadline4"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/more_ways_to_earn_points_card_items"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:clipToPadding="false"
+      android:overScrollMode="never"
+      android:paddingStart="@dimen/dot"
+      android:paddingTop="@dimen/dot_double"
+      android:paddingEnd="@dimen/dot"
+      android:paddingBottom="@dimen/dot"
+      app:interaction="@{interaction}"
+      app:items="@{item.data.cards}"
+      app:layoutManager="com.kolibree.android.app.ui.widget.HorizontalLinearLayoutManager"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/more_ways_to_earn_points_card_title"
+      app:snapItems="@{RecyclerSnapType.LINEAR}"
+      tools:listitem="@layout/item_more_ways_to_earn_points" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

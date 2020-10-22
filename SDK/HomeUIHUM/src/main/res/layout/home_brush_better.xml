@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <data>
+
+    <import type="android.view.View" />
+
+    <variable
+      name="item"
+      type="com.kolibree.android.app.ui.home.tab.home.card.brushbetter.BrushBetterCardBindingModel" />
+
+    <variable
+      name="interaction"
+      type="com.kolibree.android.app.ui.home.tab.home.card.brushbetter.BrushBetterCardInteraction" />
+
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/brush_better_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+      android:id="@+id/brush_better_card_title"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_double"
+      android:layout_marginTop="@dimen/dot_double"
+      android:text="@string/brush_better_card_title"
+      android:textAppearance="?textAppearanceHeadline4"
+      app:layout_constraintEnd_toStartOf="@+id/pulsing_dot_brush_better"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_goneMarginEnd="@dimen/dot_double" />
+
+    <com.kolibree.android.app.ui.home.pulsingdot.PulsingDotView
+      android:id="@+id/pulsing_dot_brush_better"
+      android:layout_width="@dimen/dot_six"
+      android:layout_height="@dimen/dot_six"
+      android:layout_marginEnd="@dimen/dot_quad"
+      android:onClick="@{() -> interaction.onPulsingDotClick()}"
+      android:visibility="@{item.pulsingDotVisibility()}"
+      app:layout_constraintBottom_toBottomOf="@+id/brush_better_card_title"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@+id/brush_better_card_title"
+      app:layout_constraintTop_toTopOf="@+id/brush_better_card_title" />
+
+    <TextView
+      android:id="@+id/brush_better_card_body"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_double"
+      android:layout_marginTop="@dimen/dot"
+      android:layout_marginEnd="@dimen/dot_double"
+      android:text="@string/brush_better_card_body"
+      android:textAppearance="?textAppearanceCaption"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/brush_better_card_title" />
+
+    <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/brush_better_card_items"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:clipToPadding="false"
+      android:overScrollMode="never"
+      android:paddingStart="@dimen/dot"
+      android:paddingTop="@dimen/dot_double"
+      android:paddingEnd="@dimen/dot"
+      android:paddingBottom="@dimen/dot"
+      app:interaction="@{interaction}"
+      app:items="@{item.items}"
+      app:layoutManager="com.kolibree.android.app.ui.widget.HorizontalLinearLayoutManager"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/brush_better_card_body"
+      tools:listitem="@layout/item_brush_better" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

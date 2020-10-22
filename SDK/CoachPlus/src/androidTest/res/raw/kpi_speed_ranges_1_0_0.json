@@ -1,0 +1,80 @@
+{
+  "LoMolLeOcc": {
+    "min_stdx": 100.0,
+    "max_stdx": 900.0
+  },
+  "LoMolLeExt": {
+    "min_stdx": 40.0,
+    "max_stdx": 900.0,
+    "min_stdy": 20.0
+  },
+  "LoMolLeInt": {
+    "min_stdx": 40.0,
+    "max_stdx": 900.0,
+    "min_stdy": 20.0
+  },
+  "LoMolRiOcc": {
+    "min_stdx": 100.0,
+    "max_stdx": 900.0
+  },
+  "LoMolRiExt": {
+    "min_stdx": 40.0,
+    "max_stdx": 900.0,
+    "min_stdy": 20.0
+  },
+  "LoMolRiInt": {
+    "min_stdx": 40.0,
+    "max_stdx": 900.0,
+    "min_stdy": 20.0
+  },
+  "LoIncExt": {
+    "min_stdx": 40.0,
+    "max_stdx": 900.0,
+    "min_stdy": 20.0
+  },
+  "LoIncInt": {
+    "min_stdx": 40.0,
+    "max_stdx": 900.0,
+    "min_stdy": 20.0
+  },
+  "UpMolLeOcc": {
+    "min_stdx": 100.0,
+    "max_stdx": 900.0
+  },
+  "UpMolLeExt": {
+    "min_stdx": 40.0,
+    "max_stdx": 900.0,
+    "min_stdy": 20.0
+  },
+  "UpMolLeInt": {
+    "min_stdx": 40.0,
+    "max_stdx": 900.0,
+    "min_stdy": 20.0
+  },
+  "UpMolRiOcc": {
+    "min_stdx": 100.0,
+    "max_stdx": 900.0
+  },
+  "UpMolRiExt": {
+    "min_stdx": 40.0,
+    "max_stdx": 900.0,
+    "min_stdy": 20.0
+  },
+  "UpMolRiInt": {
+    "min_stdx": 40.0,
+    "max_stdx": 900.0,
+    "min_stdy": 20.0
+  },
+  "UpIncExt": {
+    "min_stdx": 40.0,
+    "max_stdx": 900.0,
+    "min_stdy": 20.0
+  },
+  "UpIncInt": {
+    "min_stdx": 40.0,
+    "max_stdx": 900.0,
+    "min_stdy": 20.0
+  },
+  "version": 1,
+  "revision": 0
+}

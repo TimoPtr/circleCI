@@ -1,0 +1,44 @@
+<!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="411dp"
+    android:height="348dp"
+    android:viewportWidth="411"
+    android:viewportHeight="348">
+  <path
+      android:pathData="M43.038,393.456L-69.59,359.924c-19.912,-5.929 -31.248,-26.877 -25.32,-46.789l69.137,-232.21c3.56,-11.958 12.816,-21.372 24.711,-25.134L66.616,34.39c14.68,-4.642 30.707,0.13 40.456,12.045l44.95,54.934c7.901,9.655 10.5,22.599 6.94,34.556L89.826,368.136c-5.928,19.912 -26.876,31.248 -46.788,25.32z"
+      android:fillColor="#EA651B"/>
+  <path
+      android:pathData="M578.08,68.295L516.055,212.75 387.29,293.154l-98.18,-229.95C276.22,33.015 303.328,1.068 335.213,8.87L578.08,68.295z"
+      android:fillColor="#FFB700"/>
+  <path
+      android:pathData="M471.37,266.207c4.541,63.346 -24.872,99.285 -42.62,124.427 -27.607,29.095 -62.563,68.768 -151.39,70.985 -75.345,2.965 -112.409,-30.168 -143.448,-58.949 -40.526,-44.535 -51.104,-70.9 -53.134,-136.463 -0.193,-40.186 15.29,-80.324 42.406,-115.616 38.017,-53.646 98.39,-71.597 154.176,-75.334 58.53,-2.27 105.087,27.252 136.89,59.051 40.673,42.893 53.163,79.719 57.12,131.899z"
+      android:fillColor="#FFE14F"/>
+  <path
+      android:pathData="M210.535,116.697c2.356,3.109 6.497,4.559 10.429,3.314 3.932,-1.245 6.482,-4.815 6.619,-8.714M236.099,108.6c2.357,3.11 6.497,4.559 10.429,3.314 3.932,-1.245 6.483,-4.814 6.619,-8.714M194.835,129.127c13.321,6.215 28.92,7.646 44.038,2.858 15.118,-4.789 27.049,-14.939 34.363,-27.69M59.067,61.162c-1.433,4.286 0.88,8.922 5.165,10.355 4.286,1.433 8.922,-0.88 10.355,-5.165M82.138,68.877c-1.434,4.286 0.879,8.921 5.164,10.355 4.286,1.433 8.922,-0.88 10.355,-5.165"
+      android:strokeLineJoin="round"
+      android:strokeWidth="3.806"
+      android:fillColor="#00000000"
+      android:strokeColor="#413D45"
+      android:strokeLineCap="round"/>
+  <path
+      android:pathData="M44.022,56.131c0.107,15.906 10.206,30.695 26.134,36.022 15.928,5.326 32.892,-0.412 42.546,-13.054"
+      android:strokeLineJoin="round"
+      android:strokeWidth="3.806"
+      android:fillColor="#00000000"
+      android:strokeColor="#413D45"
+      android:strokeLineCap="round"/>
+  <path
+      android:pathData="M329.112,57.607c3.117,1.11 6.731,0.287 9.043,-2.355 2.311,-2.642 2.646,-6.334 1.13,-9.276M326.261,39.877c4.138,1.474 8.936,0.381 12.004,-3.126 3.067,-3.507 3.512,-8.408 1.5,-12.313M307.829,60.948c4.138,1.474 8.936,0.382 12.004,-3.126 3.068,-3.507 3.512,-8.408 1.5,-12.313"
+      android:strokeLineJoin="round"
+      android:strokeWidth="3.425"
+      android:fillColor="#00000000"
+      android:strokeColor="#413D45"
+      android:strokeLineCap="round"/>
+</vector>

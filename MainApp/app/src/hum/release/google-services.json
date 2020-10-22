@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1056513413880",
+    "firebase_url": "https://cp-gaa-prod-colgatehum.firebaseio.com",
+    "project_id": "cp-gaa-prod-colgatehum",
+    "storage_bucket": "cp-gaa-prod-colgatehum.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1056513413880:android:d02dc751934845f2c4e10d",
+        "android_client_info": {
+          "package_name": "com.colgate.hum"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1056513413880-uucl1pck8s02p7refunesn4o48f5ot5i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDo9Rnt2Y2lhvMUnfJQnwNSAqe3ML24OMY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1056513413880-o3c9brvve468b7d09f2eirhnv9kbiguk.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1056513413880-a27mlhv5gk38t52c4jqmcsl8i78bttnj.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.colgate.hum"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

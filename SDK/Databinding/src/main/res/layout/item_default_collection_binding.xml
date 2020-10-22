@@ -1,0 +1,46 @@
+<!--
+  ~ Copyright (c) 2019 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <data>
+
+    <import type="kotlin.Pair" />
+
+    <variable
+      name="data"
+      type="kotlin.Pair&lt;String, Boolean&gt;" />
+
+    <variable
+      name="listener"
+      type="com.kolibree.databinding.OnValueToggledListener" />
+
+  </data>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/dot_double">
+
+    <TextView
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="0.9"
+      android:text="@{data.first}"
+      android:textAppearance="?textAppearanceSubtitle1" />
+
+    <CheckBox
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="0.1"
+      android:checked="@{data.second}"
+      android:onCheckedChanged="@{(button, checked) -> listener.onValueToggled(data.first, checked)}" />
+
+  </LinearLayout>
+</layout>

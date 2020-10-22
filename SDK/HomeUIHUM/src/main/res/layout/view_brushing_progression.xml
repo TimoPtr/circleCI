@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <data>
+
+    <variable
+      name="viewState"
+      type="com.kolibree.android.app.ui.home.tab.home.card.brushingstreak.BrushingStreakProgression" />
+
+    <import type="android.view.View" />
+
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dot_quin">
+
+    <View
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="@dimen/dot"
+      android:layout_marginStart="@dimen/dot_quad"
+      android:layout_marginEnd="@dimen/dot_quad"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="@+id/progression2"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:progression_background="@{viewState.isStepFinished(2)}"
+      tools:background="?colorSecondaryMedium" />
+
+    <View
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="@dimen/dot"
+      android:layout_marginStart="@dimen/dot_quad"
+      android:layout_marginEnd="@dimen/dot_quad"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="@+id/progression3"
+      app:layout_constraintStart_toStartOf="@+id/progression2"
+      app:layout_constraintTop_toTopOf="parent"
+      app:progression_background="@{viewState.isStepFinished(3)}"
+      tools:background="@color/divider" />
+
+    <View
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="@dimen/dot"
+      android:layout_marginStart="@dimen/dot_quad"
+      android:layout_marginEnd="@dimen/dot_quad"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="@id/progression4"
+      app:layout_constraintStart_toStartOf="@id/progression3"
+      app:layout_constraintTop_toTopOf="parent"
+      app:progression_background="@{viewState.isStepFinished(4)}"
+      tools:background="@color/divider" />
+
+    <View
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="@dimen/dot"
+      android:layout_marginStart="@dimen/dot_quad"
+      android:layout_marginEnd="@dimen/dot_quad"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="@id/progression4"
+      app:layout_constraintTop_toTopOf="parent"
+      app:progression_background="@{viewState.isStepFinished(5)}"
+      tools:background="@color/divider" />
+
+    <ImageView
+      android:id="@+id/progression1"
+      android:layout_width="@dimen/dot_quin"
+      android:layout_height="@dimen/dot_quin"
+      android:background="@drawable/shape_circle_white"
+      android:padding="@dimen/dot"
+      android:src="@drawable/ic_check"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toStartOf="@id/progression2"
+      app:layout_constraintHorizontal_chainStyle="spread_inside"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:progression_foreground="@{viewState.isStepFinished(1)}"
+      tools:backgroundTint="?colorSecondaryMedium"
+      tools:tint="@color/white" />
+
+    <ImageView
+      android:id="@+id/progression2"
+      android:layout_width="@dimen/dot_quin"
+      android:layout_height="@dimen/dot_quin"
+      android:background="@drawable/shape_circle_white"
+      android:padding="@dimen/dot"
+      android:src="@drawable/ic_check"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toStartOf="@id/progression3"
+      app:layout_constraintHorizontal_chainStyle="spread_inside"
+      app:layout_constraintStart_toEndOf="@id/progression1"
+      app:layout_constraintTop_toTopOf="parent"
+      app:progression_foreground="@{viewState.isStepFinished(2)}"
+      tools:backgroundTint="?colorSecondaryMedium"
+      tools:tint="@color/divider" />
+
+    <ImageView
+      android:id="@+id/progression3"
+      android:layout_width="@dimen/dot_quin"
+      android:layout_height="@dimen/dot_quin"
+      android:background="@drawable/shape_circle_white"
+      android:padding="@dimen/dot"
+      android:src="@drawable/ic_check"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toStartOf="@id/progression4"
+      app:layout_constraintHorizontal_chainStyle="spread_inside"
+      app:layout_constraintStart_toEndOf="@id/progression2"
+      app:layout_constraintTop_toTopOf="parent"
+      app:progression_foreground="@{viewState.isStepFinished(3)}"
+      tools:backgroundTint="@color/divider"
+      tools:tint="@color/divider" />
+
+    <ImageView
+      android:id="@+id/progression4"
+      android:layout_width="@dimen/dot_quin"
+      android:layout_height="@dimen/dot_quin"
+      android:background="@drawable/shape_circle_white"
+      android:padding="@dimen/dot"
+      android:src="@drawable/ic_check"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toStartOf="@id/progression5"
+      app:layout_constraintHorizontal_chainStyle="spread_inside"
+      app:layout_constraintStart_toEndOf="@id/progression3"
+      app:layout_constraintTop_toTopOf="parent"
+      app:progression_foreground="@{viewState.isStepFinished(4)}"
+      tools:backgroundTint="@color/divider"
+      tools:tint="@color/divider" />
+
+    <ImageView
+      android:id="@+id/progression5"
+      android:layout_width="@dimen/dot_quin"
+      android:layout_height="@dimen/dot_quin"
+      android:background="@drawable/shape_circle_white"
+      android:padding="@dimen/dot"
+      android:src="@drawable/ic_check"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_chainStyle="spread_inside"
+      app:layout_constraintStart_toEndOf="@id/progression4"
+      app:layout_constraintTop_toTopOf="parent"
+      app:progression_foreground="@{viewState.isStepFinished(5)}"
+      tools:backgroundTint="@color/divider"
+      tools:tint="@color/divider" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

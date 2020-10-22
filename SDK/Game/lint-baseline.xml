@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="5" by="lint 4.0.0" client="gradle" variant="debug" version="4.0.0">
+
+    <issue
+        id="SdkPublicExtensionMethodWithoutKeep"
+        message="Please add `@Keep` to this extension function or make it non-public"
+        errorLine1="fun getAvroBrushingMode(model: ToothbrushModel) ="
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/game/bi/KmlAvroCreator.kt"
+            line="148"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="SdkPublicExtensionMethodWithoutKeep"
+        message="Please add `@Keep` to this extension function or make it non-public"
+        errorLine1="fun generateAvroFileName() ="
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/game/bi/KmlAvroCreator.kt"
+            line="155"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="SdkPublicExtensionMethodWithoutKeep"
+        message="Please add `@Keep` to this extension function or make it non-public"
+        errorLine1="fun getCalibrationData(connection: KLTBConnection) ="
+        errorLine2="    ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/game/bi/KmlAvroCreator.kt"
+            line="163"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="SdkPublicExtensionMethodWithoutKeep"
+        message="Please add `@Keep` to this extension function or make it non-public"
+        errorLine1="fun mapToothbrushModelToAvroToothbrushModel(model: ToothbrushModel): String = when (model) {"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/game/bi/KmlAvroCreator.kt"
+            line="172"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="abstract class BaseGameActivity : KolibreeServiceActivity(), GameInteractor.Listener {"
+        errorLine2="               ~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/app/ui/activity/BaseGameActivity.kt"
+            line="39"
+            column="16"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="abstract class BaseGameFragment : BaseDaggerFragment(), GameInteractor.Listener {"
+        errorLine2="               ~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/app/ui/fragment/BaseGameFragment.kt"
+            line="24"
+            column="16"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="abstract class BaseUnityGameFragment : BaseGameFragment(), InternalLifecycle {"
+        errorLine2="               ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/app/ui/fragment/BaseUnityGameFragment.kt"
+            line="35"
+            column="16"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public class DataRecorder_12Zones extends DataRecorder {"
+        errorLine2="             ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/app/utils/dataRecorder/DataRecorder_12Zones.java"
+            line="9"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public class DataRecorder_16Zones extends DataRecorder {"
+        errorLine2="             ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/app/utils/dataRecorder/DataRecorder_16Zones.java"
+            line="9"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public class DataRecorder_8Zones extends DataRecorder {"
+        errorLine2="             ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/app/utils/dataRecorder/DataRecorder_8Zones.java"
+            line="9"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="abstract class UnityPlayerLifecycleActivity("
+        errorLine2="               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/app/ui/activity/UnityPlayerLifecycleActivity.kt"
+            line="65"
+            column="16"/>
+    </issue>
+
+</issues>

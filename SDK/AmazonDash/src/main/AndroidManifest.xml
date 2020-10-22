@@ -1,0 +1,40 @@
+<!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.kolibree.android.amazondash">
+
+  <application>
+
+    <activity
+      android:name=".ui.connect.AmazonDashConnectActivity"
+      android:launchMode="singleTask"
+      android:theme="@style/AppTheme.Light">
+
+      <intent-filter android:autoVerify="true">
+        <action android:name="android.intent.action.VIEW" />
+
+        <category android:name="android.intent.category.DEFAULT" />
+        <category android:name="android.intent.category.BROWSABLE" />
+
+        <data
+          android:pathPrefix="/v4/accounts/oauth/fallback/"
+          android:scheme="https" />
+
+        <!-- Because BE will use different fallback links based on environment -->
+        <!-- we need to specify them all here -->
+        <data android:host="staging.kolibree.com" />
+        <data android:host="kolibree.com" />
+        <data android:host="www.kolibree.com" />
+      </intent-filter>
+    </activity>
+
+  </application>
+
+</manifest>

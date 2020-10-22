@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2019 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+  <item android:state_enabled="true">
+    <shape android:shape="rectangle">
+      <gradient
+        android:endColor="@color/slide_2_red2"
+        android:startColor="@color/slide_2_red1"
+        android:angle="90"/>
+      <size android:width="@dimen/slide2_background_radius"/>
+      <corners
+        android:topLeftRadius="@dimen/slide2_background_radius"
+        android:bottomLeftRadius="@dimen/slide2_background_radius"/>
+    </shape>
+  </item>
+</selector>
+

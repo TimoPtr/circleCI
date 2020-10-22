@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2019 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <data>
+
+    <import type="android.view.View"/>
+
+    <variable
+      name="viewModel"
+      type="com.kolibree.android.plaqless.howto.intro.slide1.SlideOneViewModel"/>
+
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/big_margin"
+    tools:background="@color/plaqless_background_dark">
+
+    <ImageView
+      android:id="@+id/slide1_tootbrush"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:scaleType="fitCenter"
+      android:src="@drawable/ic_pql_tb"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintDimensionRatio="672:1731"
+      android:paddingTop="@dimen/plaqless_margin_top"
+      app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+      android:id="@+id/slide1_title"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:text="@string/slide1_title"
+      android:textColor="@color/white"
+      android:textSize="@dimen/huge_text"
+      android:textStyle="bold"
+      android:layout_marginStart="@dimen/average_margin"
+      android:layout_marginTop="@dimen/plaqless_margin_top"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintWidth_percent="0.6"
+      app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+      android:id="@+id/slide1_description1"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:textSize="@dimen/big_text"
+      android:textColor="@color/white"
+      android:alpha="0"
+      android:layout_marginTop="@dimen/slide1_margin_top"
+      android:visibility="invisible"
+      android:layout_marginStart="@dimen/average_margin"
+      app:visibilityAnim="@{viewModel.isInfoSelected1()}"
+      app:htmlText="@{@string/slide1_description1}"
+      app:layout_constraintWidth_percent="0.55"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/slide1_title"
+      tools:visibility="visible"
+      tools:text="@string/slide1_description1"/>
+
+    <TextView
+      android:id="@+id/slide1_description2"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:textSize="@dimen/big_text"
+      android:textColor="@color/white"
+      android:alpha="0"
+      android:layout_marginTop="@dimen/slide1_margin_top"
+      android:visibility="invisible"
+      android:layout_marginStart="@dimen/average_margin"
+      app:visibilityAnim="@{viewModel.isInfoSelected2()}"
+      app:htmlText="@{@string/slide1_description2}"
+      app:layout_constraintWidth_percent="0.55"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/slide1_title"
+      tools:text="@string/slide1_description2"/>
+
+    <TextView
+      android:id="@+id/slide1_description3"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:textSize="@dimen/big_text"
+      android:textColor="@color/white"
+      android:alpha="0"
+      android:visibility="invisible"
+      android:layout_marginStart="@dimen/average_margin"
+      android:layout_marginTop="@dimen/slide1_margin_top_big"
+      app:visibilityAnim="@{viewModel.isInfoSelected3()}"
+      app:htmlText="@{@string/slide1_description3}"
+      app:layout_constraintWidth_percent="0.55"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/slide1_title"
+      tools:alpha="1"
+      tools:text="@string/slide1_description3"
+      tools:visibility="visible"/>
+
+    <com.kolibree.android.plaqless.howto.intro.slide1.InfoLineView
+      android:id="@+id/line1"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:alpha="0"
+      app:visibilityAnim="@{viewModel.isInfoSelected1()}"/>
+
+    <TextView
+      android:id="@+id/slide1_info1"
+      android:layout_width="@dimen/info_size"
+      android:layout_height="@dimen/info_size"
+      android:text="@string/plaqless_info_letter"
+      android:textColor="@{viewModel.isInfoSelected1() ? @color/plaqless_gray : @color/white}"
+      android:textSize="@dimen/xnormal_text"
+      android:gravity="center"
+      android:textStyle="bold"
+      android:background="@{viewModel.isInfoSelected1() ? @drawable/shape_circle_white : @drawable/shape_circle_gray}"
+      android:onClick="@{() -> viewModel.userClickInfo1()}"
+      app:layout_constraintEnd_toEndOf="@id/slide1_tootbrush"
+      app:layout_constraintStart_toStartOf="@id/slide1_tootbrush"
+      app:layout_constraintBottom_toBottomOf="@id/slide1_tootbrush"
+      app:layout_constraintTop_toTopOf="@id/slide1_tootbrush"
+      app:layout_constraintVertical_bias="0.17"
+      app:layout_constraintHorizontal_bias="0.73"
+      tools:background="@drawable/shape_circle_gray"/>
+
+    <com.kolibree.android.plaqless.howto.intro.slide1.InfoLineView
+      android:id="@+id/line2"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:alpha="0"
+      app:visibilityAnim="@{viewModel.isInfoSelected2()}"/>
+
+    <TextView
+      android:id="@+id/slide1_info2"
+      android:layout_width="@dimen/info_size"
+      android:layout_height="@dimen/info_size"
+      android:text="@string/plaqless_info_letter"
+      android:textColor="@{viewModel.isInfoSelected2() ? @color/plaqless_gray : @color/white}"
+      android:textSize="@dimen/xnormal_text"
+      android:gravity="center"
+      android:textStyle="bold"
+      android:background="@{viewModel.isInfoSelected2() ? @drawable/shape_circle_white : @drawable/shape_circle_gray}"
+      android:onClick="@{() -> viewModel.userClickInfo2()}"
+      app:layout_constraintEnd_toEndOf="@id/slide1_tootbrush"
+      app:layout_constraintStart_toStartOf="@id/slide1_tootbrush"
+      app:layout_constraintBottom_toBottomOf="@id/slide1_tootbrush"
+      app:layout_constraintTop_toTopOf="@id/slide1_tootbrush"
+      app:layout_constraintVertical_bias="0.4"
+      app:layout_constraintHorizontal_bias="0.58"
+      tools:background="@drawable/shape_circle_gray"/>
+
+    <com.kolibree.android.plaqless.howto.intro.slide1.InfoLineView
+      android:id="@+id/line3"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:alpha="0"
+      app:visibilityAnim="@{viewModel.isInfoSelected3()}"
+      tools:alpha="1"/>
+
+    <TextView
+      android:id="@+id/slide1_info3"
+      android:layout_width="@dimen/info_size"
+      android:layout_height="@dimen/info_size"
+      android:text="@string/plaqless_info_letter"
+      android:textColor="@{viewModel.isInfoSelected3() ? @color/plaqless_gray : @color/white}"
+      android:textSize="@dimen/xnormal_text"
+      android:gravity="center"
+      android:textStyle="bold"
+      android:background="@{viewModel.isInfoSelected3() ? @drawable/shape_circle_white : @drawable/shape_circle_gray}"
+      android:onClick="@{() -> viewModel.userClickInfo3()}"
+      app:layout_constraintEnd_toEndOf="@id/slide1_tootbrush"
+      app:layout_constraintStart_toStartOf="@id/slide1_tootbrush"
+      app:layout_constraintBottom_toBottomOf="@id/slide1_tootbrush"
+      app:layout_constraintTop_toTopOf="@id/slide1_tootbrush"
+      app:layout_constraintVertical_bias="0.55"
+      app:layout_constraintHorizontal_bias="0.44"
+      tools:background="@drawable/shape_circle_gray"/>
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
+

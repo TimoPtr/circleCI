@@ -1,0 +1,50 @@
+/*
+ * Copyright (c) 2020 Kolibree. All rights reserved
+ *
+ * Copying this file via any medium without the prior written consent of Kolibree is strictly
+ * prohibited
+ *
+ * Proprietary and confidential
+ */
+
+apply plugin: 'com.android.library'
+
+// You can change this flag if you want to navigates into hum resources set or colgate
+// this will be reset to false in CI in order to publish the SDK
+def isHumBuild = false
+
+// Lint are already applied for Hum and CC static resources module
+tasks.all {
+    if (it.name.contains("lint")) {
+        it.enabled = false
+    }
+}
+
+android {
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+
+    defaultConfig {
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    sourceSets {
+        String humRes = "../StaticResourcesHUM/src/main/res"
+        String colgateRes = "../StaticResourcesColgate/src/main/res"
+        if (isHumBuild) {
+            main.res.srcDirs = [humRes]
+            main.manifest.srcFile "../StaticResourcesHUM/src/main/AndroidManifest.xml"
+        } else {
+            main.res.srcDirs = [colgateRes]
+            main.manifest.srcFile "../StaticResourcesColgate/src/main/AndroidManifest.xml"
+        }
+    }
+}
+
+dependencies {
+    implementation project(path: ':static-resources')
+}

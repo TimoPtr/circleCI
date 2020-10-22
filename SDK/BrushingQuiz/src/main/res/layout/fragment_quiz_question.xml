@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2019 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <data>
+
+    <variable
+      name="viewModel"
+      type="com.kolibree.android.brushingquiz.presentation.quiz.question.QuizScreenViewModel" />
+
+  </data>
+
+  <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+      android:id="@+id/quiz_question_step"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_quad"
+      android:layout_marginTop="@dimen/dot"
+      android:layout_marginEnd="@dimen/dot_quad"
+      android:text="@string/brushing_quiz_steps_counter"
+      android:textAppearance="?textAppearanceOverline1"
+      android:textColor="?android:textColorSecondary"
+      app:screenIndex="@{viewModel.currentScreenIndexLiveData}"
+      app:totalScreens="@{viewModel.totalScreensLiveData}" />
+
+    <TextView
+      android:id="@+id/quiz_question_title"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_quad"
+      android:layout_marginTop="@dimen/dot"
+      android:layout_marginEnd="@dimen/dot_quad"
+      android:text="@{viewModel.quizScreenLiveData.title}"
+      android:textAppearance="@style/TextAppearance.Headline4"
+      tools:text="@string/brushing_quiz_screen_1_title" />
+
+    <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/quiz_question_answers"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_marginStart="@dimen/dot_quad"
+      android:layout_marginTop="@dimen/dot"
+      android:layout_marginEnd="@dimen/dot_quad"
+      android:overScrollMode="never"
+      app:itemBinding="@{viewModel.quizAnswersBinding}"
+      app:items="@{viewModel.answers}"
+      app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+  </LinearLayout>
+</layout>
+

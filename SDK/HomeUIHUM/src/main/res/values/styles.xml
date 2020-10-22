@@ -1,0 +1,101 @@
+<!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<resources>
+
+  <style name="Widget.Button.Google" parent="Widget.Button.Icon">
+    <item name="android:backgroundTint">@color/selector_google_button_background</item>
+    <item name="android:textColor">?googleTextColor</item>
+    <item name="icon">@drawable/ic_google</item>
+    <item name="iconPadding">@dimen/dot_trip</item>
+    <!-- 18dp is from Google branding guidelines-->
+    <item name="iconSize">18dp</item>
+    <item name="iconTint">@null</item>
+    <item name="rippleColor">?rippleColorMono</item>
+  </style>
+
+  <style name="Widget.Button.Email" parent="Widget.Button.Icon">
+    <item name="icon">@drawable/ic_email_button</item>
+    <item name="iconPadding">@dimen/dot_trip</item>
+  </style>
+
+  <!-- Last Brushing card -->
+
+  <style name="LastBrushingCardChartHint">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:gravity">center_horizontal</item>
+    <item name="firstBaselineToTopHeight">0dp</item>
+    <item name="android:singleLine">true</item>
+    <item name="android:includeFontPadding">false</item>
+    <item name="android:textColor">?android:textColorSecondary</item>
+    <item name="android:textAppearance">?textAppearanceCaption</item>
+  </style>
+
+  <style name="LastBrushingCardChartValue">
+    <item name="android:gravity">center_horizontal</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:singleLine">true</item>
+    <item name="android:textAllCaps">true</item>
+    <item name="android:includeFontPadding">false</item>
+    <item name="android:textColor">?android:textColorPrimary</item>
+    <item name="android:textAppearance">?textAppearanceHeadline3</item>
+  </style>
+
+  <style name="CheckupBrushingSummary">
+    <item name="android:gravity">center_vertical</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:textAppearance">?textAppearanceBody2</item>
+    <item name="android:layout_marginStart">@dimen/dot_trip</item>
+    <item name="android:layout_marginEnd">@dimen/dot_trip</item>
+    <item name="android:layout_marginBottom">@dimen/dot_trip</item>
+    <item name="android:background">@drawable/shape_rounded_dot_half</item>
+    <item name="android:backgroundTint">?backgroundColorDark</item>
+    <item name="android:minHeight">@dimen/dot_quin</item>
+    <item name="android:paddingStart">@dimen/dot_double</item>
+    <item name="android:paddingTop">@dimen/dot_half</item>
+    <item name="android:paddingEnd">@dimen/dot_double</item>
+    <item name="android:paddingBottom">@dimen/dot_half</item>
+    <item name="android:textColor">?android:textColorSecondary</item>
+  </style>
+
+  <style name="CheckupDeleteButton" parent="Widget.Button.Icon">
+    <item name="android:layout_marginStart">@dimen/dot_double</item>
+    <item name="android:layout_marginEnd">@dimen/dot_double</item>
+    <item name="android:backgroundTint">?backgroundColor</item>
+    <item name="android:outlineProvider">none</item>
+    <item name="android:text">@string/last_brushing_delete_button</item>
+    <item name="android:textColor">?android:textColorTertiary</item>
+    <item name="elevation">0dp</item>
+    <item name="icon">@drawable/ic_shop_trash_small</item>
+    <item name="iconPadding">@dimen/dot</item>
+    <item name="iconTint">?android:textColorTertiary</item>
+    <item name="rippleColor">?rippleColorMono</item>
+  </style>
+
+  <style name="SpeedometerView">
+    <item name="track_color">@color/neglectedZoneColor</item>
+    <item name="track_color_perfect">?colorSecondaryDark</item>
+    <item name="track_color_disabled">@color/neglectedZoneColor</item>
+    <item name="dot_color">@color/white</item>
+    <item name="dot_color_disabled">@color/transparent</item>
+    <item name="track_width">@dimen/dot_trip</item>
+    <item name="dot_animation_duration">@android:integer/config_shortAnimTime</item>
+    <item name="fade_duration">@integer/mind_your_speed_fade_duration</item>
+  </style>
+
+  <style name="DottedBottomNavigationView" parent="Widget.BottomNavigationView">
+    <item name="dotDiameter">@dimen/dot</item>
+    <item name="dotPadding">1dp</item>
+    <item name="dotColor">?colorSecondaryDark</item>
+    <item name="dotAnimationDuration">@android:integer/config_shortAnimTime</item>
+  </style>
+</resources>

@@ -1,0 +1,68 @@
+apply plugin: 'com.android.library'
+
+apply from: '../buildscripts/kapt.gradle'
+
+android {
+
+    defaultConfig {
+        kapt {
+            arguments {
+                arg("room.schemaLocation", "$projectDir/schemas".toString())
+            }
+        }
+    }
+
+    sourceSets {
+        androidTest.assets.srcDirs += files("$projectDir/schemas".toString())
+    }
+}
+
+dependencies {
+    implementation project(path: ':features')
+    implementation project(path: ':static-resources')
+    implementation project(path: ':static-resources-branded')
+    implementation project(path: ':base-ui')
+    implementation project(path: ':base-ui-hum')
+    implementation project(path: ':commons')
+    implementation project(path: ':databinding')
+    implementation project(path: ':tracker-domain')
+    implementation project(path: ':network')
+    implementation project(path: ':account-internal')
+    implementation project(path: ':account-sdk')
+    implementation project(path: ':synchronizator')
+    implementation project(path: ':toothbrush-sdk')
+    implementation project(path: ':web-service-sdk')
+
+    implementation libraries.supportAppCompat
+
+    implementation libraries.kotlinRuntime
+
+    implementation libraries.rxJava
+    implementation libraries.rxAndroid
+    implementation libraries.rxRelay
+    implementation libraries.rxLint
+
+    implementation libraries.threetenAbp
+
+    implementation libraries.roomRuntime
+    implementation libraries.roomRxJava2
+    kapt libraries.roomCompiler
+
+    implementation libraries.dagger
+    kapt libraries.daggerCompiler
+    implementation libraries.daggerAndroid
+    kapt libraries.daggerAndroidProcessor
+    implementation libraries.daggerAndroidSupport
+
+    implementation libraries.lifecycleRuntime
+    kapt libraries.lifecycleCompiler
+    implementation libraries.lifecycleJava8
+
+    testImplementation libraries.mockitoKotlin2
+    testImplementation project(path: ':testing-unit-base')
+    testImplementation project(path: ':testing-builders')
+    testImplementation project(path: ':testing-pact')
+
+    androidTestImplementation project(path: ':testing-espresso-base')
+    androidTestImplementation libraries.mockitoKotlin2
+}

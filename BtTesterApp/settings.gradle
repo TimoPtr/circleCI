@@ -1,0 +1,5 @@
+rootProject.name = 'kolibree-android-bt-tester'
+
+include ':app'
+includeBuild '../SDK'
+

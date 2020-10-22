@@ -1,0 +1,7 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.kolibree.android.rewards" >
+
+  <application
+    android:networkSecurityConfig="@xml/connected_test_network_security_config" />
+
+</manifest>

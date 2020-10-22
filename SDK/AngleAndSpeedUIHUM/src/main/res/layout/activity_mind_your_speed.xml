@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <data>
+
+    <import type="android.view.View" />
+
+    <import type="com.kolibree.android.angleandspeed.ui.mindyourspeed.MindYouSpeedConstants" />
+
+    <import type="com.kolibree.android.extensions.ContextExtensionsKt" />
+
+    <import type="com.kolibree.android.angleandspeed.ui.R" />
+
+    <variable
+      name="viewModel"
+      type="com.kolibree.android.angleandspeed.ui.mindyourspeed.MindYourSpeedViewModel" />
+
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/root_content_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:fitsSystemWindows="true">
+
+    <View
+      android:id="@+id/view_top"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="@dimen/zero"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.appbar.MaterialToolbar
+      android:id="@+id/toolbar"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:enableBackNavigation="@{true}"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/view_top"
+      app:navigationIcon="@{viewModel.isWaitingForStart ? @drawable/ic_nav_close : @drawable/ic_pause}" />
+
+    <TextView
+      android:id="@+id/mind_your_speed_title"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_double"
+      android:layout_marginEnd="@dimen/dot_double"
+      android:text="@{@string/mind_your_speed_title}"
+      android:textAppearance="?textAppearanceHeadline2"
+      app:layout_constraintTop_toBottomOf="@id/toolbar"
+      app:textHighlight="@{@string/mind_your_speed_title_highlight}"
+      app:textHighlightColor="@{ContextExtensionsKt.getColorFromAttr(context, R.attr.colorSecondaryDark)}"
+      tools:text="@string/mind_your_speed_title" />
+
+    <com.kolibree.android.app.feedback.FeedbackMessageView
+      android:id="@+id/feedback"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/dot_six"
+      android:layout_marginLeft="@dimen/dot_double"
+      android:layout_marginTop="@dimen/mind_your_speed_small_margin"
+      android:layout_marginRight="@dimen/dot_double"
+      app:defaultIcon="@drawable/ic_feedback_all_good"
+      app:defaultMessage="@string/mind_your_speed_no_feedback"
+      app:feedback="@{viewModel.feedback}"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/mind_your_speed_title" />
+
+    <TextView
+      android:id="@+id/start_message"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/dot_six"
+      android:layout_marginLeft="@dimen/dot_double"
+      android:layout_marginTop="@dimen/mind_your_speed_small_margin"
+      android:layout_marginRight="@dimen/dot_double"
+      android:background="@drawable/background_hum_feedback"
+      android:backgroundTint="@color/white"
+      android:gravity="center_vertical|start"
+      android:paddingStart="@dimen/dot_trip"
+      android:paddingEnd="@dimen/dot_trip"
+      android:text="@string/mind_your_speed_start_message"
+      android:textAppearance="?textAppearanceSubtitle2"
+      android:theme="@style/AppTheme"
+      android:visibility="@{viewModel.isWaitingForStart ? View.VISIBLE : View.GONE}"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/mind_your_speed_title" />
+
+    <androidx.constraintlayout.widget.Barrier
+      android:id="@+id/top_barrier"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:barrierDirection="bottom"
+      app:constraint_referenced_ids="feedback" />
+
+    <View
+      android:id="@+id/view_bottom"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="@dimen/zero"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent" />
+
+    <com.kolibree.android.app.widget.zone.ZoneProgressBarView
+      android:id="@+id/progress_bar"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/dot"
+      android:layout_marginStart="@dimen/dot_double"
+      android:layout_marginEnd="@dimen/dot_double"
+      android:layout_marginBottom="@dimen/dot_quad"
+      app:animatedZoneData="@{viewModel.zoneData}"
+      app:layout_constraintBottom_toTopOf="@id/view_bottom"
+      app:stageStepDuration="@{MindYouSpeedConstants.INSTANCE.ESTIMATED_DATA_UPDATE_FREQUENCY}"
+      app:stageTargetDuration="@{MindYouSpeedConstants.INSTANCE.STAGE_DURATION}" />
+
+    <LinearLayout
+      android:id="@+id/legend"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_double"
+      android:layout_marginEnd="@dimen/dot_double"
+      android:layout_marginBottom="@dimen/mind_your_speed_medium_margin"
+      android:orientation="horizontal"
+      app:layout_constraintBottom_toTopOf="@id/progress_bar"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent">
+
+      <TextView
+        style="@style/Widget.TextView.Legend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mind_your_speed_legend_good"
+        app:legendDrawableTintColor="@{ContextExtensionsKt.getColorFromAttr(context, R.attr.colorSecondaryDark)}" />
+
+      <TextView
+        style="@style/Widget.TextView.Legend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/mind_your_speed_medium_margin"
+        android:text="@string/mind_your_speed_legend_slow_or_fast"
+        app:legendDrawableTintColor="@{ContextExtensionsKt.getColorFromAttr(context, R.attr.colorTertiaryDark)}" />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.Barrier
+      android:id="@+id/bottom_barrier"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:barrierDirection="top"
+      app:constraint_referenced_ids="legend" />
+
+    <View
+      android:id="@+id/jaw_background_space"
+      android:layout_width="@dimen/zero"
+      android:layout_height="@dimen/match_constraints"
+      android:layout_marginBottom="@dimen/mind_your_speed_medium_margin"
+      app:layout_constraintBottom_toTopOf="@id/legend"
+      app:layout_constraintHeight_percent="@dimen/jaw_background_space_height_percentage"
+      app:layout_constraintTop_toBottomOf="@id/speedometer" />
+
+    <ImageView
+      android:id="@+id/jaw_placeholder"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="@dimen/match_constraints"
+      android:layout_marginLeft="@dimen/dot_double"
+      android:layout_marginRight="@dimen/dot_double"
+      android:src="@drawable/jaw_placeholder"
+      app:layout_constraintBottom_toBottomOf="@id/jaw_background_space"
+      app:layout_constraintDimensionRatio="1:1"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHeight_percent="@dimen/jaw_height_percentage"
+      app:layout_constraintStart_toStartOf="parent" />
+
+    <com.kolibree.android.app.widget.SpeedometerView
+      android:id="@+id/speedometer"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="@dimen/match_constraints"
+      android:layout_marginLeft="@dimen/dot_double"
+      android:layout_marginTop="@dimen/dot_double"
+      android:layout_marginRight="@dimen/dot_double"
+      android:enabled="@{viewModel.enableSpeedometer}"
+      app:layout_constraintBottom_toTopOf="@id/jaw_background_space"
+      app:layout_constraintDimensionRatio="1.2:1"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/feedback"
+      app:layout_constraintVertical_chainStyle="packed"
+      app:speedFeedback="@{viewModel.speedFeedback}"
+      app:track_width="@dimen/speedometer_thickness" />
+
+    <ImageView
+      android:id="@+id/animation_placeholder"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:src="@drawable/animation_placeholder"
+      app:layout_constraintBottom_toBottomOf="@id/speedometer"
+      app:layout_constraintEnd_toEndOf="@id/speedometer"
+      app:layout_constraintStart_toStartOf="@id/speedometer"
+      app:layout_constraintTop_toTopOf="@id/speedometer"
+      app:layout_constraintVertical_bias="0.6" />
+
+    <View
+      android:id="@+id/background_with_alpha"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@color/pause_overlay"
+      android:clickable="true"
+      android:focusable="true"
+      tools:layout_editor_absoluteX="0dp"
+      tools:layout_editor_absoluteY="0dp"
+      tools:visibility="invisible" />
+
+    <TextView
+      android:id="@+id/mind_your_speed_pause_text"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:text="@string/mind_your_speed_pause_menu_header"
+      android:textAppearance="?textAppearanceHeadline2"
+      app:layout_constraintBottom_toTopOf="@id/mind_your_speed_pause_resume"
+      app:layout_constraintEnd_toEndOf="@id/toolbar"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_chainStyle="packed"
+      tools:visibility="invisible" />
+
+    <Button
+      android:id="@+id/mind_your_speed_pause_resume"
+      style="?materialButtonStyle"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_quin"
+      android:layout_marginTop="@dimen/dot_quad"
+      android:layout_marginEnd="@dimen/dot_quin"
+      android:onClick="@{(v) -> viewModel.onResumeButtonClick()}"
+      android:text="@string/mind_your_speed_pause_menu_resume_button"
+      android:theme="@style/AppTheme"
+      app:layout_constraintBottom_toTopOf="@id/mind_your_speed_pause_restart"
+      app:layout_constraintTop_toBottomOf="@id/mind_your_speed_pause_text"
+      tools:visibility="invisible" />
+
+    <Button
+      android:id="@+id/mind_your_speed_pause_restart"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_quin"
+      android:layout_marginTop="@dimen/mind_your_speed_small_margin"
+      android:layout_marginEnd="@dimen/dot_quin"
+      android:onClick="@{(v) -> viewModel.onRestartButtonClick()}"
+      android:text="@string/mind_your_speed_pause_menu_restart_button"
+      android:theme="@style/AppTheme.Inverse.Red"
+      app:layout_constraintBottom_toTopOf="@id/mind_your_speed_pause_quit"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/mind_your_speed_pause_resume"
+      tools:visibility="invisible" />
+
+    <Button
+      android:id="@+id/mind_your_speed_pause_quit"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_quin"
+      android:layout_marginTop="@dimen/mind_your_speed_small_margin"
+      android:layout_marginEnd="@dimen/dot_quin"
+      android:onClick="@{(v) -> viewModel.onQuitButtonClick()}"
+      android:text="@string/mind_your_speed_pause_menu_quit_button"
+      android:theme="@style/AppTheme.Inverse.Red"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/mind_your_speed_pause_restart"
+      tools:visibility="invisible" />
+
+    <androidx.constraintlayout.widget.Group
+      android:id="@+id/mind_your_speed_pause"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:visibility="@{viewModel.isPaused ? View.VISIBLE : View.GONE}"
+      app:constraint_referenced_ids="background_with_alpha, mind_your_speed_pause_text, mind_your_speed_pause_resume, mind_your_speed_pause_restart, mind_your_speed_pause_quit" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+

@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <Blacklist></Blacklist>
+  <Whitelist>
+    <ID>LongMethod:GruwareFilter.kt$GruwareFilter$filterAvailableUpdates</ID>
+    <ID>LongMethod:OtaChecker.kt$OtaChecker$otaForConnectionMaybe</ID>
+    <ID>TooManyFunctions:OtaChecker.kt$OtaChecker$OtaChecker</ID>
+  </Whitelist>
+</SmellBaseline>

@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <Blacklist></Blacklist>
+  <Whitelist>
+    <ID>LongMethod:AngleAndSpeedUseCaseImpl.kt$AngleAndSpeedUseCaseImpl$onRawData</ID>
+  </Whitelist>
+</SmellBaseline>

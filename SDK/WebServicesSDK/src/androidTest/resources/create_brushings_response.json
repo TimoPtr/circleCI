@@ -1,0 +1,132 @@
+{
+  "total_count": 2,
+  "brushings": [{
+    "id": 127715,
+    "idempotency_key": "884b23cd-6126-4ed5-80d1-c2cef6696223",
+    "duration": 12,
+    "goal_duration": 120,
+    "datetime": "2020-07-02T07:44:50+0200",
+    "profile": 30765,
+    "coins": 0,
+    "quality": null,
+    "points": 6,
+    "game": "ti",
+    "associated_date": "2020-07-02",
+    "initial_coverage": null,
+    "fake": false,
+    "processed_data": null,
+    "account_id": 26082
+  }, {
+    "id": 127541,
+    "idempotency_key": "f9fec79f-a9fe-4a03-8863-074c9c356330",
+    "duration": 12,
+    "goal_duration": 120,
+    "datetime": "2020-07-01T16:36:24+0200",
+    "profile": 30765,
+    "coins": 0,
+    "quality": null,
+    "points": 6,
+    "game": "of",
+    "associated_date": "2020-07-01",
+    "initial_coverage": 9,
+    "fake": false,
+    "toothbrush": {
+      "mac_address": "c0:4b:ae:80:1f:b0",
+      "serial": "ce2x12919000001716",
+      "model": "E2"
+    },
+    "processed_data": {
+      "version": 1,
+      "capabilities": ["MOVEMENT_CORRECTNESS", "ORIENTATION_CORRECTNESS", "SPEED_CORRECTNESS"],
+      "UpIncInt": {
+        "passes": [{
+          "pass_datetime": 0,
+          "effective_time": 30,
+          "correctSpeedRatio": 17,
+          "overSpeedRatio": 0,
+          "underSpeedRatio": 83,
+          "correctMovementRatio": 100,
+          "correctOrientationRatio": 100
+        }, {
+          "pass_datetime": 35,
+          "effective_time": 40,
+          "correctSpeedRatio": 0,
+          "overSpeedRatio": 0,
+          "underSpeedRatio": 100,
+          "correctMovementRatio": 100,
+          "correctOrientationRatio": 100
+        }],
+        "expected_time": 50
+      },
+      "UpIncExt": {
+        "passes": [],
+        "expected_time": 50
+      },
+      "UpMolRiInt": {
+        "passes": [],
+        "expected_time": 50
+      },
+      "UpMolRiExt": {
+        "passes": [],
+        "expected_time": 50
+      },
+      "UpMolRiOcc": {
+        "passes": [{
+          "pass_datetime": 105,
+          "effective_time": 15,
+          "correctSpeedRatio": 0,
+          "overSpeedRatio": 0,
+          "underSpeedRatio": 100,
+          "correctMovementRatio": 100,
+          "correctOrientationRatio": 100
+        }],
+        "expected_time": 50
+      },
+      "UpMolLeInt": {
+        "passes": [],
+        "expected_time": 50
+      },
+      "UpMolLeExt": {
+        "passes": [],
+        "expected_time": 50
+      },
+      "UpMolLeOcc": {
+        "passes": [],
+        "expected_time": 50
+      },
+      "LoIncInt": {
+        "passes": [],
+        "expected_time": 50
+      },
+      "LoIncExt": {
+        "passes": [],
+        "expected_time": 50
+      },
+      "LoMolRiInt": {
+        "passes": [],
+        "expected_time": 50
+      },
+      "LoMolRiExt": {
+        "passes": [],
+        "expected_time": 50
+      },
+      "LoMolRiOcc": {
+        "passes": [],
+        "expected_time": 50
+      },
+      "LoMolLeInt": {
+        "passes": [],
+        "expected_time": 50
+      },
+      "LoMolLeExt": {
+        "passes": [],
+        "expected_time": 50
+      },
+      "LoMolLeOcc": {
+        "passes": [],
+        "expected_time": 50
+      }
+    },
+    "account_id": 26082
+  }]
+}

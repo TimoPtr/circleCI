@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2019 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<resources>
+  <string name="plaqless_info_letter" translatable="false">i</string>
+  <string name="plaqless_how_to_video_url" translatable="false">https://kolibree-website.s3.amazonaws.com/ce1.mp4</string>
+  <string name="slide3_player_ratio" translatable="false">16:9</string>
+</resources>

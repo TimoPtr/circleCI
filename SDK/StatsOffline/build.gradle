@@ -1,0 +1,64 @@
+apply plugin: 'com.android.library'
+
+apply from: '../buildscripts/kapt.gradle'
+
+android {
+    defaultConfig {
+        kapt {
+            arguments {
+                arg("room.schemaLocation", "$projectDir/schemas".toString())
+            }
+        }
+    }
+
+    sourceSets {
+        String sharedCodeDir = 'src/sharedTest/sharedCode'
+
+        test {
+            java.srcDirs += sharedCodeDir
+        }
+
+        androidTest {
+            java.srcDirs += sharedCodeDir
+            assets.srcDirs += files("$projectDir/schemas".toString())
+        }
+    }
+    androidExtensions {
+        experimental = true
+    }
+}
+
+dependencies {
+    implementation project(path: ':features')
+    implementation project(path: ':commons')
+    implementation project(path: ':processed-brushings-kml')
+
+    implementation libraries.kotlinRuntime
+    implementation libraries.coroutines
+
+    implementation libraries.timber
+
+    implementation libraries.threetenAbp
+
+    implementation libraries.dagger
+    kapt libraries.daggerCompiler
+
+    implementation libraries.gson
+
+    // room
+    implementation libraries.roomRuntime
+    implementation libraries.roomRxJava2
+    kapt libraries.roomCompiler
+
+    // Unit tests
+    testImplementation project(path: ':testing-unit-base')
+    testImplementation libraries.mockitoKotlin2
+    testImplementation libraries.kotlinPropertyTesting
+    testImplementation libraries.coroutinesTest
+
+    androidTestImplementation project(path: ':testing-espresso-base')
+    androidTestImplementation libraries.mockitoKotlin2
+    androidTestImplementation libraries.roomTesting
+    androidTestImplementation libraries.coroutinesTest
+    kaptAndroidTest libraries.daggerCompiler
+}

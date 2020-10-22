@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <Blacklist></Blacklist>
+  <Whitelist>
+    <ID>MagicNumber:PactBaseTest.kt$PactBaseTest$30</ID>
+    <ID>MaxLineLength:HeaderInterceptor.kt$HeaderInterceptor.Companion$"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJhY2NvdW50X2lkIjoxLCJjbGllbnRfaWQiOjEsImV4cCI6MzEzNjA5NzE5MX0.8iyCyucoxWqdkVyWPjIQ-_EBrMtUO9tv7E8LHb7Epkdna3wjtyBljh-OKHJLaNsXiuCNHJaFxmXT-ZYoMrNyRw"</ID>
+  </Whitelist>
+</SmellBaseline>

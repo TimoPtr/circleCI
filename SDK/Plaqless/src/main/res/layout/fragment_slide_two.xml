@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2019 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout>
+
+  <data>
+
+    <variable
+      name="viewModel"
+      type="com.kolibree.android.plaqless.howto.intro.slide2.SlideTwoViewModel"/>
+
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/big_margin"
+    android:paddingEnd="@dimen/big_margin"
+    tools:background="@color/plaqless_background_dark">
+
+    <ImageView
+      android:id="@+id/slide2_toothbrush"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:scaleType="fitCenter"
+      android:src="@{viewModel.toothbrushDrawable}"
+      android:paddingTop="@dimen/plaqless_margin_top"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintDimensionRatio="120:601"
+      app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+      android:id="@+id/slide2_title"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:text="@string/slide2_title"
+      android:textColor="@color/white"
+      android:textSize="@dimen/huge_text"
+      android:textStyle="bold"
+      android:layout_marginTop="@dimen/plaqless_margin_top"
+      android:layout_marginStart="@dimen/small_margin"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintWidth_percent="0.5"
+      app:layout_constraintStart_toEndOf="@id/slide2_toothbrush"/>
+
+    <!--This is a hack because layer list and size doesn't work on Android 5-->
+
+    <ImageView
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:enabled="@{viewModel.isDescriptionSelected1()}"
+      app:layout_constraintTop_toTopOf="@id/slide2_description1"
+      app:layout_constraintStart_toStartOf="@id/slide2_description1"
+      app:layout_constraintEnd_toEndOf="@id/slide2_description1"
+      app:layout_constraintBottom_toBottomOf="@id/slide2_description1"
+      android:src="@drawable/slide2_description_background_empty"/>
+
+    <ImageView
+      android:layout_width="@dimen/slide2_background_radius"
+      android:layout_height="0dp"
+      android:enabled="@{viewModel.isDescriptionSelected1()}"
+      app:layout_constraintTop_toTopOf="@id/slide2_description1"
+      app:layout_constraintStart_toStartOf="@id/slide2_description1"
+      app:layout_constraintBottom_toBottomOf="@id/slide2_description1"
+      android:src="@drawable/slide2_description_background_blue"/>
+
+    <LinearLayout
+      android:id="@+id/slide2_description1"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/average_margin"
+      android:layout_marginTop="@dimen/xhuge_margin_plus"
+      android:enabled="@{!viewModel.isDescriptionSelected1()}"
+      android:onClick="@{(v) -> viewModel.userClickDescription1()}"
+      android:padding="@dimen/average_margin"
+      android:paddingBottom="@dimen/small_margin"
+      android:orientation="vertical"
+      app:layout_constraintVertical_chainStyle="packed"
+      app:layout_constraintVertical_bias="0"
+      app:layout_constraintTop_toBottomOf="@id/slide2_title"
+      app:layout_constraintBottom_toTopOf="@id/slide2_description2"
+      app:layout_constraintStart_toStartOf="@id/slide2_title"
+      app:layout_constraintEnd_toEndOf="parent">
+
+      <TextView
+        android:id="@+id/slide2_description1_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="@{viewModel.isDescriptionSelected1()}"
+        android:textColor="@drawable/slide2_text_color_selector"
+        android:text="@string/slide2_description1_title"
+        android:textSize="@dimen/medium_text"/>
+
+      <TextView
+        android:id="@+id/slide2_description1_content1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="@{viewModel.isDescriptionSelected1()}"
+        android:textColor="@drawable/slide2_text_color_selector"
+        android:text="@string/slide2_description1_content1"
+        android:textSize="@dimen/normal_text"
+        android:textStyle="bold"/>
+
+      <TextView
+        android:id="@+id/slide2_description1_content2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="@{viewModel.isDescriptionSelected1()}"
+        android:textColor="@drawable/slide2_text_color_selector"
+        android:text="@string/slide2_description1_content2"
+        android:textSize="@dimen/normal_text"/>
+    </LinearLayout>
+
+    <!--This is a hack because layer list and size doesn't work on Android 5-->
+
+    <ImageView
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:enabled="@{viewModel.isDescriptionSelected2()}"
+      app:layout_constraintTop_toTopOf="@id/slide2_description2"
+      app:layout_constraintStart_toStartOf="@id/slide2_description2"
+      app:layout_constraintEnd_toEndOf="@id/slide2_description2"
+      app:layout_constraintBottom_toBottomOf="@id/slide2_description2"
+      android:src="@drawable/slide2_description_background_empty"/>
+
+    <ImageView
+      android:layout_width="@dimen/slide2_background_radius"
+      android:layout_height="0dp"
+      android:enabled="@{viewModel.isDescriptionSelected2()}"
+      app:layout_constraintTop_toTopOf="@id/slide2_description2"
+      app:layout_constraintStart_toStartOf="@id/slide2_description2"
+      app:layout_constraintBottom_toBottomOf="@id/slide2_description2"
+      android:src="@drawable/slide2_description_background_white"/>
+
+    <LinearLayout
+      android:id="@+id/slide2_description2"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/big_margin"
+      android:enabled="@{!viewModel.isDescriptionSelected2()}"
+      android:onClick="@{(v) -> viewModel.userClickDescription2()}"
+      android:padding="@dimen/average_margin"
+      android:paddingBottom="@dimen/small_margin"
+      android:orientation="vertical"
+      app:layout_constraintTop_toBottomOf="@id/slide2_description1"
+      app:layout_constraintBottom_toTopOf="@id/slide2_description3"
+      app:layout_constraintStart_toStartOf="@id/slide2_description1"
+      app:layout_constraintEnd_toEndOf="parent">
+
+      <TextView
+        android:id="@+id/slide2_description2_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="@{viewModel.isDescriptionSelected2()}"
+        android:textColor="@drawable/slide2_text_color_selector"
+        android:text="@string/slide2_description2_title"
+        android:textSize="@dimen/medium_text"/>
+
+      <TextView
+        android:id="@+id/slide2_description2_content1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="@{viewModel.isDescriptionSelected2()}"
+        android:textColor="@drawable/slide2_text_color_selector"
+        android:text="@string/slide2_description2_content1"
+        android:textSize="@dimen/normal_text"
+        android:textStyle="bold"/>
+
+      <TextView
+        android:id="@+id/slide2_description2_content2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="@{viewModel.isDescriptionSelected2()}"
+        android:textColor="@drawable/slide2_text_color_selector"
+        android:text="@string/slide2_description2_content2"
+        android:textSize="@dimen/normal_text"/>
+    </LinearLayout>
+
+
+    <!--This is a hack because layer list and size doesn't work on Android 5-->
+
+    <ImageView
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:enabled="@{viewModel.isDescriptionSelected3()}"
+      app:layout_constraintTop_toTopOf="@id/slide2_description3"
+      app:layout_constraintStart_toStartOf="@id/slide2_description3"
+      app:layout_constraintEnd_toEndOf="@id/slide2_description3"
+      app:layout_constraintBottom_toBottomOf="@id/slide2_description3"
+      android:src="@drawable/slide2_description_background_empty"/>
+
+    <ImageView
+      android:layout_width="@dimen/slide2_background_radius"
+      android:layout_height="0dp"
+      android:enabled="@{viewModel.isDescriptionSelected3()}"
+      app:layout_constraintTop_toTopOf="@id/slide2_description3"
+      app:layout_constraintStart_toStartOf="@id/slide2_description3"
+      app:layout_constraintBottom_toBottomOf="@id/slide2_description3"
+      android:src="@drawable/slide2_description_background_red"/>
+
+    <LinearLayout
+      android:id="@+id/slide2_description3"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/big_margin"
+      android:enabled="@{!viewModel.isDescriptionSelected3()}"
+      android:onClick="@{(v) -> viewModel.userClickDescription3()}"
+      android:padding="@dimen/average_margin"
+      android:paddingBottom="@dimen/small_margin"
+      android:orientation="vertical"
+      app:layout_constraintTop_toBottomOf="@id/slide2_description2"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toStartOf="@id/slide2_description2"
+      app:layout_constraintEnd_toEndOf="parent">
+
+      <TextView
+        android:id="@+id/slide2_description3_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="@{viewModel.isDescriptionSelected3()}"
+        android:textColor="@drawable/slide2_text_color_selector"
+        android:text="@string/slide2_description3_title"
+        android:textSize="@dimen/medium_text"/>
+
+      <TextView
+        android:id="@+id/slide2_description3_content1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="@{viewModel.isDescriptionSelected3()}"
+        android:textColor="@drawable/slide2_text_color_selector"
+        android:text="@string/slide2_description3_content1"
+        android:textSize="@dimen/normal_text"
+        android:textStyle="bold"/>
+
+      <TextView
+        android:id="@+id/slide2_description3_content2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="@{viewModel.isDescriptionSelected3()}"
+        android:textColor="@drawable/slide2_text_color_selector"
+        android:text="@string/slide2_description3_content2"
+        android:textSize="@dimen/normal_text"/>
+    </LinearLayout>
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+

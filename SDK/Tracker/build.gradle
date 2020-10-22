@@ -1,0 +1,45 @@
+apply plugin: 'com.android.library'
+
+apply from: '../buildscripts/kapt.gradle'
+
+android {
+
+    sourceSets {
+        androidTest {
+            java.srcDirs = ['src/androidTest/kotlin']
+        }
+    }
+}
+
+dependencies {
+    api project(path: ':tracker-domain')
+    implementation project(path: ':web-service-sdk')
+    implementation project(path: ':toothbrush-sdk')
+    implementation project(path: ':commons')
+
+    testImplementation project(path: ':testing-unit-base')
+    testImplementation project(path: ':testing-builders')
+
+    implementation libraries.lifecycleExtensions
+
+    implementation libraries.dagger
+    testImplementation libraries.dagger
+    kapt libraries.daggerCompiler
+
+    implementation libraries.rxJava
+    implementation libraries.rxLint
+
+    implementation libraries.timber
+
+    implementation libraries.threetenAbp
+
+    androidTestImplementation libraries.mockitoKotlin2
+    androidTestImplementation libraries.mockitoAndroid
+    androidTestImplementation libraries.supportTestRunner
+    androidTestImplementation libraries.supportTestRules
+    androidTestImplementation project(path: ':testing-shared')
+    androidTestImplementation(libraries.architectureCoreTesting) {
+        exclude group: 'com.android.support', module: 'support-compat'
+        exclude group: 'com.android.support', module: 'support-annotations'
+    }
+}

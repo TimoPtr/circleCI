@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2019 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  tools:context="com.kolibree.android.app.mvi.brushstart.BrushStartFragment">
+
+  <data>
+
+    <import type="android.view.View" />
+
+    <import type="android.widget.ImageView.ScaleType" />
+
+    <variable
+      name="viewModel"
+      type="com.kolibree.android.app.mvi.brushstart.BrushStartViewModel" />
+
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+      android:id="@+id/bottom_test_box_background"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:background="@color/white"
+      app:layout_constraintBottom_toBottomOf="@id/manual_brush_description"
+      app:layout_constraintTop_toTopOf="@id/electric_brush_description_line1" />
+
+    <TextView
+      android:id="@+id/electric_brush_description_line1"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center|bottom"
+      android:minHeight="@dimen/brush_start_electric_brush_desc_min_height"
+      android:paddingStart="@dimen/average_margin"
+      android:paddingTop="@dimen/xbig_margin"
+      android:paddingEnd="@dimen/average_margin"
+      android:text="@string/test_brushing_session_electric_line1"
+      android:textColor="@color/colorPrimaryDark"
+      android:textSize="@dimen/xbig_text"
+      android:visibility="@{viewModel.isManualToothbrush ? View.GONE : View.VISIBLE}"
+      app:layout_constraintBottom_toTopOf="@id/electric_brush_description_line2"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="1.0"
+      app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+      android:id="@+id/electric_brush_description_line2"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center|top"
+      android:minHeight="@dimen/brush_start_electric_brush_desc_min_height"
+      android:paddingStart="@dimen/average_margin"
+      android:paddingEnd="@dimen/average_margin"
+      android:paddingBottom="@dimen/xbig_margin"
+      android:text="@string/test_brushing_session_electric_line2"
+      android:textColor="@android:color/black"
+      android:textSize="@dimen/xbig_text"
+      android:visibility="@{viewModel.isManualToothbrush ? View.GONE : View.VISIBLE}"
+      app:layout_constraintBottom_toTopOf="@id/manual_brush_description"
+      app:layout_constraintTop_toBottomOf="@id/electric_brush_description_line1" />
+
+    <TextView
+      android:id="@+id/manual_brush_description"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:minHeight="@dimen/brush_start_manual_brush_desc_min_height"
+      android:paddingStart="@dimen/average_margin"
+      android:paddingTop="@dimen/xbig_margin"
+      android:paddingEnd="@dimen/average_margin"
+      android:paddingBottom="@dimen/xbig_margin"
+      android:text="@string/test_brushing_session_manual"
+      android:textColor="@android:color/black"
+      android:textSize="@dimen/xbig_text"
+      android:visibility="@{viewModel.isManualToothbrush ? View.VISIBLE : View.GONE}"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/electric_brush_description_line2"
+      tools:visibility="gone" />
+
+    <ImageView
+      android:id="@+id/preview_video"
+      animatedGif="@{viewModel.previewGifRes}"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:background="@color/brush_start_preview_background"
+      android:scaleType="fitStart"
+      app:layout_constraintBottom_toTopOf="@id/bottom_test_box_background"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:ignore="RtlHardcoded"
+      tools:visibility="gone" />
+
+    <ImageView
+      android:id="@+id/preview_image"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:background="@color/brush_start_preview_background"
+      android:scaleType="fitCenter"
+      android:src="@{viewModel.previewResource}"
+      android:visibility="@{viewModel.isStaticPreview ? View.VISIBLE : View.GONE}"
+      app:layout_constraintBottom_toTopOf="@id/bottom_test_box_background"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:ignore="ContentDescription"
+      tools:src="@drawable/ic_pql_start_session" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout>
+
+  <data>
+
+    <variable
+      name="viewModel"
+      type="com.kolibree.android.glimmer.tweaker.TweakerViewModel" />
+
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <Button
+      android:id="@+id/tweaker_disconnect"
+      style="?android:attr/buttonBarButtonStyle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/disconnect"
+      android:onClick="@{() -> viewModel.onDisconnectButtonClick()}"
+      app:layout_constraintBottom_toTopOf="@+id/tweaker_pager_indicator"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="@dimen/match_constraints"
+      app:layout_constraintBottom_toBottomOf="@id/tweaker_disconnect"
+      app:layout_constraintEnd_toStartOf="@id/tweaker_disconnect"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="@id/tweaker_disconnect" />
+
+    <com.google.android.material.tabs.TabLayout
+      android:id="@+id/tweaker_pager_indicator"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:elevation="@dimen/dot_quarter"
+      app:layout_constraintBottom_toTopOf="@+id/tweaker_pager"
+      app:layout_constraintTop_toBottomOf="@id/tweaker_disconnect"
+      app:tabGravity="fill"
+      app:tabMode="scrollable"
+      app:tabIndicatorHeight="@dimen/dot_quarter" />
+
+    <androidx.viewpager2.widget.ViewPager2
+      android:id="@+id/tweaker_pager"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/match_constraints"
+      android:background="@color/white"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/tweaker_pager_indicator" />
+
+    <View
+      android:id="@+id/progress_background"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="#80000000"
+      android:clickable="true"
+      android:focusable="true"
+      android:visibility="invisible"
+      app:visibilityAnim="@{viewModel.progressVisible}" />
+
+    <ProgressBar
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:visibility="invisible"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:visibilityAnim="@{viewModel.progressVisible}" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

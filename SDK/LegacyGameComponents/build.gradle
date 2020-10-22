@@ -1,0 +1,65 @@
+/*
+ * Copyright (c) 2020 Kolibree. All rights reserved
+ *
+ * Copying this file via any medium without the prior written consent of Kolibree is strictly
+ * prohibited
+ *
+ * Proprietary and confidential
+ */
+
+apply plugin: 'com.android.library'
+
+apply from: '../buildscripts/kapt.gradle'
+
+android {
+
+    androidExtensions {
+        experimental = true
+    }
+
+    sourceSets {
+        androidTest {
+            java.srcDirs = ['src/androidTest/java', 'src/androidTest/kotlin']
+            assets.srcDirs += files("$projectDir/schemas".toString())
+        }
+    }
+    buildFeatures {
+        // We need BuildConfig or we get an error while minifying with R8
+        buildConfig = true
+        dataBinding = true
+    }
+}
+
+dependencies {
+
+    implementation project(path: ':game')
+    implementation project(path: ':commons')
+    implementation project(path: ':databinding')
+    implementation project(path: ':toothbrush-sdk')
+    implementation project(path: ':tracker-domain')
+    implementation project(path: ':auditor')
+    implementation project(path: ':web-service-sdk')
+    implementation project(path: ':static-resources-v1')
+    implementation project(path: ':base-ui')
+    implementation project(path: ':base-ui-v1')
+
+    implementation libraries.rxAndroid
+
+    implementation libraries.kotlinRuntime
+
+    implementation libraries.supportConstraintLayout
+
+    implementation libraries.timber
+    implementation libraries.threetenAbp
+
+    implementation libraries.lifecycleExtensions
+
+    implementation libraries.dagger
+    kapt libraries.daggerCompiler
+
+    implementation libraries.roomRuntime
+
+    testImplementation project(path: ':testing-unit-base')
+    testImplementation project(path: ':testing-builders')
+    testImplementation libraries.mockitoKotlin2
+}

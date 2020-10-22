@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <data>
+
+    <variable
+      name="item"
+      type="com.kolibree.android.app.ui.settings.binding.AdminSettingsItemBindingModel" />
+
+  </data>
+
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/dot_double"
+    android:paddingTop="@dimen/dot_quad"
+    android:paddingEnd="@dimen/dot"
+    android:paddingBottom="@dimen/dot"
+    android:text="@string/settings_item_admin_settings"
+    android:textAllCaps="true"
+    android:textAppearance="?textAppearanceOverline1"
+    android:textColor="?android:textColorSecondary"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toEndOf="@id/icon"
+    app:layout_constraintTop_toTopOf="parent" />
+
+</layout>

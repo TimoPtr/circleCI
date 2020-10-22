@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <data>
+
+    <variable
+      name="item"
+      type="com.kolibree.android.app.ui.settings.binding.DeleteAccountItemBindingModel" />
+
+    <variable
+      name="interaction"
+      type="com.kolibree.android.app.ui.settings.DeleteAccountInteraction" />
+
+  </data>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <Button
+      style="?materialButtonIconStyle"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_quad"
+      android:layout_marginTop="@dimen/dot_half"
+      android:layout_marginEnd="@dimen/dot_quad"
+      android:layout_marginBottom="@dimen/dot_trip"
+      android:backgroundTint="?backgroundColor"
+      android:onClick="@{() -> interaction.onDeleteAccountClick()}"
+      android:outlineProvider="none"
+      android:text="@string/settings_item_delete_account"
+      android:textColor="?android:textColorTertiary"
+      app:icon="@drawable/ic_shop_trash_small"
+      app:iconPadding="@dimen/dot"
+      app:iconTint="?android:textColorTertiary"
+      app:rippleColor="?rippleColorMono" />
+
+  </LinearLayout>
+
+</layout>

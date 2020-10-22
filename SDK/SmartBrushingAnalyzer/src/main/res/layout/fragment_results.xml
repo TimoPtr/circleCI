@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/results_bottom_background"
+  android:orientation="vertical">
+
+  <FrameLayout
+    android:id="@+id/results_preview"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:background="@color/white">
+
+    <com.kolibree.android.mouthmap.widget.jaw.ResultsJawView
+      android:id="@+id/results_jaw"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"/>
+
+    <com.kolibree.android.sba.testbrushing.results.view.AnalysisSuccessfulView
+      android:id="@+id/results_analysis_successful"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"/>
+
+    <com.kolibree.android.sba.testbrushing.results.view.MouthCoverageView
+      android:id="@+id/results_mouth_coverage"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"/>
+
+    <com.kolibree.android.sba.testbrushing.results.view.SpeedView
+      android:id="@+id/results_speed"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"/>
+
+    <com.kolibree.android.sba.testbrushing.results.view.AngleView
+      android:id="@+id/results_angle"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"/>
+
+    <include layout="@layout/layout_tap_to_change_view"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+      android:id="@+id/results_done"
+      android:layout_width="@dimen/min_touch_zone"
+      android:layout_height="@dimen/min_touch_zone"
+      android:layout_margin="@dimen/average_margin"
+      android:padding="@dimen/tiny_margin"
+      android:src="@drawable/ic_done_rounded"
+      android:background="?attr/selectableItemBackground"
+      app:tint="@color/colorPrimaryDark"/>
+
+  </FrameLayout>
+
+  <androidx.viewpager.widget.ViewPager
+    android:id="@+id/results_pager"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/results_bottom_height"
+    android:paddingTop="@dimen/tiny_margin"
+    android:paddingLeft="@dimen/results_pager_padding"
+    android:paddingRight="@dimen/results_pager_padding"
+    android:clipToPadding="false"/>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/results_indicator_container_height"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <View
+      android:id="@+id/results_indicator1"
+      android:layout_width="@dimen/results_indicator"
+      android:layout_height="@dimen/results_indicator"
+      android:background="@drawable/shape_oval_white"
+      tools:background="@drawable/shape_oval_primary_color"/>
+
+    <View
+      android:id="@+id/results_indicator2"
+      android:layout_width="@dimen/results_indicator"
+      android:layout_height="@dimen/results_indicator"
+      android:layout_marginLeft="@dimen/small_margin"
+      android:background="@drawable/shape_oval_white"/>
+
+    <View
+      android:id="@+id/results_indicator3"
+      android:layout_width="@dimen/results_indicator"
+      android:layout_height="@dimen/results_indicator"
+      android:layout_marginLeft="@dimen/small_margin"
+      android:background="@drawable/shape_oval_white"/>
+
+  </LinearLayout>
+
+</LinearLayout>

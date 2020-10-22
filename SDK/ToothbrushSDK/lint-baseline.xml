@@ -1,0 +1,1074 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="5" by="lint 4.0.0" client="gradle" variant="debug" version="4.0.0">
+
+    <issue
+        id="RxDefaultScheduler"
+        message="timer() is using its default scheduler"
+        errorLine1="                return Flowable.timer(retryDelayMillis, TimeUnit.MILLISECONDS);"
+        errorLine2="                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/util/RetryWithDelay.java"
+            line="27"
+            column="24"/>
+    </issue>
+
+    <issue
+        id="RxDefaultScheduler"
+        message="timer() is using its default scheduler"
+        errorLine1="    return Observable.timer(unbindAfterSeconds, TimeUnit.SECONDS)"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/core/ServiceProviderImpl.java"
+            line="166"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="LogNotTimber"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;"
+        errorLine1="    Log.d(TAG, &quot;create ToothbrushListenerThread: &quot;);"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/core/driver/kolibree/ToothbrushListenerThread.java"
+            line="58"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="LogNotTimber"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;"
+        errorLine1="    Log.i(TAG, &quot;BEGIN ToothbrushListenerThread&quot;);"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/core/driver/kolibree/ToothbrushListenerThread.java"
+            line="99"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="LogNotTimber"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;"
+        errorLine1="            Log.e(TAG, &quot;Bad checksum ! &quot; + (mChecksum &amp; 0x55) + &quot; != &quot; + thisByteAsInt);"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/core/driver/kolibree/ToothbrushListenerThread.java"
+            line="228"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="LogNotTimber"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;"
+        errorLine1="      Log.e(TAG, &quot;Disconnected&quot;, e);"
+        errorLine2="      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/core/driver/kolibree/ToothbrushListenerThread.java"
+            line="268"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="LogNotTimber"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;"
+        errorLine1="      Log.e(TAG, &quot;Error while closing InputStream&quot;);"
+        errorLine2="      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/core/driver/kolibree/ToothbrushListenerThread.java"
+            line="285"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="LogNotTimber"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;"
+        errorLine1="      Log.e(TAG, &quot;Exception during write&quot;, e);"
+        errorLine2="      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/core/driver/kolibree/ToothbrushSenderThread.java"
+            line="72"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="UnsafeProtectedBroadcastReceiver"
+        message="This broadcast receiver declares an intent-filter for a protected broadcast action string, which can only be sent by the system, not third-party applications. However, the receiver&apos;s onReceive method does not appear to call getAction to ensure that the received Intent&apos;s action string matches the expected value, potentially making it possible for another actor to send a spoofed intent with no action string or a different action string and cause undesired behavior. In this case, it is possible that the onReceive method passed the received Intent to another method that checked the action string. If so, this finding can safely be ignored."
+        errorLine1="    override fun onReceive(context: Context, intent: Intent) {"
+        errorLine2="                 ~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/BluetoothStateReceiver.kt"
+            line="20"
+            column="18"/>
+    </issue>
+
+    <issue
+        id="UnsafeProtectedBroadcastReceiver"
+        message="This broadcast receiver declares an intent-filter for a protected broadcast action string, which can only be sent by the system, not third-party applications. However, the receiver&apos;s onReceive method does not appear to call getAction to ensure that the received Intent&apos;s action string matches the expected value, potentially making it possible for another actor to send a spoofed intent with no action string or a different action string and cause undesired behavior. In this case, it is possible that the onReceive method passed the received Intent to another method that checked the action string. If so, this finding can safely be ignored."
+        errorLine1="    override fun onReceive(context: Context, intent: Intent) {"
+        errorLine2="                 ~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/scan/ConnectionScannedTracker.kt"
+            line="94"
+            column="18"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="class AccountToothbrushConverters {"
+        errorLine2="      ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/persistence/room/AccountToothbrushConverters.kt"
+            line="12"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public final class AirplaneModeBugException extends Exception {"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/error/AirplaneModeBugException.java"
+            line="9"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public class AraDriver extends KolibreeBleDriver {"
+        errorLine2="             ~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/core/driver/ble/AraDriver.java"
+            line="30"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public final class BadRecordException extends Exception {"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/error/BadRecordException.java"
+            line="8"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public class BluetoothNotEnabledException extends FailureReason {"
+        errorLine2="             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/error/BluetoothNotEnabledException.java"
+            line="12"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public abstract class BooleanToothbrushCommandSuccessCallback"
+        errorLine2="                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/core/driver/kolibree/protocol/callbacks/commands/BooleanToothbrushCommandSuccessCallback.java"
+            line="4"
+            column="23"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public interface BrushingDriver {"
+        errorLine2="                 ~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/core/driver/BrushingDriver.java"
+            line="15"
+            column="18"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public class ByteConverter {"
+        errorLine2="             ~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/util/ByteConverter.java"
+            line="4"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public final class ByteUtils {"
+        errorLine2="                   ~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/util/ByteUtils.java"
+            line="6"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public class Classifier {"
+        errorLine2="             ~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/core/driver/kolibree/movement/detector/orientationtype/supportvectormachine/Classifier.java"
+            line="8"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="class CommandFailedException(message: String) : FailureReason(message)"
+        errorLine2="      ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/error/CommandFailedException.kt"
+            line="3"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public enum CommandFailureReason {"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/core/driver/kolibree/protocol/callbacks/commands/CommandFailureReason.java"
+            line="4"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public interface CommandID {"
+        errorLine2="                 ~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/core/driver/kolibree/commands/CommandID.java"
+            line="8"
+            column="18"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="class CommandNotSupportedException("
+        errorLine2="      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/error/CommandNotSupportedException.kt"
+            line="4"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public class CommandPacket {"
+        errorLine2="             ~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/core/driver/kolibree/protocol/packets/CommandPacket.java"
+            line="4"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public class CommandProtocolManager {"
+        errorLine2="             ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/core/driver/kolibree/commands/CommandProtocolManager.java"
+            line="14"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public class ConnectionEstablishException extends FailureReason {"
+        errorLine2="             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/error/ConnectionEstablishException.java"
+            line="12"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="data class ConnectionStateWrapperImpl(val connectionState: ConnectionState) :"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/wrapper/ConnectionStateWrapperImpl.kt"
+            line="14"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public class Couple {"
+        errorLine2="             ~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/core/driver/kolibree/movement/detector/orientationtype/supportvectormachine/Couple.java"
+            line="4"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public class DeviceNotConnectedException extends FailureReason {"
+        errorLine2="             ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/error/DeviceNotConnectedException.java"
+            line="14"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="object DfuUtils {"
+        errorLine2="       ~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/core/driver/ble/nordic/DfuUtils.kt"
+            line="6"
+            column="8"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public interface EarthMagneticFieldIntensityMeasurementCallback {"
+        errorLine2="                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/core/driver/kolibree/protocol/calibration/EarthMagneticFieldIntensityMeasurementCallback.java"
+            line="4"
+            column="18"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public class EarthMagneticFieldIntensityMeasurementThread extends Thread"
+        errorLine2="             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/core/driver/kolibree/protocol/calibration/EarthMagneticFieldIntensityMeasurementThread.java"
+            line="14"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public enum GattCharacteristic {"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/core/driver/ble/gatt/GattCharacteristic.java"
+            line="11"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public enum GattService {"
+        errorLine2="            ~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/core/driver/ble/gatt/GattService.java"
+            line="11"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public interface IOrientationTypeConsumer {"
+        errorLine2="                 ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/core/driver/kolibree/movement/detector/orientationtype/IOrientationTypeConsumer.java"
+            line="4"
+            column="18"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public interface IPossibleMouthZonesConsumer {"
+        errorLine2="                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/core/driver/kolibree/movement/detector/possiblemouthzones/IPossibleMouthZonesConsumer.java"
+            line="6"
+            column="18"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public interface IRotationsAroundXConsumer {"
+        errorLine2="                 ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/core/driver/kolibree/movement/detector/rotationsaroundx/IRotationsAroundXConsumer.java"
+            line="4"
+            column="18"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public interface IToothbrushCommandFailureCallback {"
+        errorLine2="                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/core/driver/kolibree/protocol/callbacks/commands/IToothbrushCommandFailureCallback.java"
+            line="4"
+            column="18"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public interface IToothbrushCommandSuccessCallback {"
+        errorLine2="                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/core/driver/kolibree/protocol/callbacks/commands/IToothbrushCommandSuccessCallback.java"
+            line="4"
+            column="18"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public class IncompatibleFirmwareVersionException extends Exception {}"
+        errorLine2="             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/core/driver/kolibree/commands/IncompatibleFirmwareVersionException.java"
+            line="4"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public abstract class IntegerToothbrushCommandSuccessCallback"
+        errorLine2="                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/core/driver/kolibree/protocol/callbacks/commands/IntegerToothbrushCommandSuccessCallback.java"
+            line="4"
+            column="23"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="class InvalidConnectionStateException(message: String) : FailureReason(message)"
+        errorLine2="      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/error/InvalidConnectionStateException.kt"
+            line="12"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public class KLTB001BrushingRecord implements Parcelable {"
+        errorLine2="             ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/core/driver/kolibree/KLTB001BrushingRecord.java"
+            line="10"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public class KLTB002ToothbrushUpdater implements ToothbrushUpdater {"
+        errorLine2="             ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/core/ota/kltb002/updater/KLTB002ToothbrushUpdater.java"
+            line="32"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="class KLTB003ToothbrushUpdaterService : DfuBaseService() {"
+        errorLine2="      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/core/ota/kltb003/KLTB003ToothbrushUpdaterService.kt"
+            line="13"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public interface KLTBDriverListener {"
+        errorLine2="                 ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/core/driver/KLTBDriverListener.java"
+            line="15"
+            column="18"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public class KolibreServiceNotAvailableException extends Exception {"
+        errorLine2="             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/error/KolibreServiceNotAvailableException.java"
+            line="4"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public final class KolibreeConfiguration {"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/core/driver/kolibree/config/KolibreeConfiguration.java"
+            line="8"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public final class KolibreeDriver implements KLTBDriver, PacketParserHandler.PacketParserListener {"
+        errorLine2="                   ~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/core/driver/kolibree/KolibreeDriver.java"
+            line="62"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public class KolibreeMeasurement {"
+        errorLine2="             ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/core/driver/kolibree/protocol/measurements/KolibreeMeasurement.java"
+            line="8"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public enum KolibreeStreamAxes {"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/core/driver/kolibree/protocol/streaming/KolibreeStreamAxes.java"
+            line="7"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public enum KolibreeStreamSensors {"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/core/driver/kolibree/protocol/streaming/KolibreeStreamSensors.java"
+            line="7"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public interface ListenerNotifier&lt;LT> {"
+        errorLine2="                 ~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/core/notification/ListenerNotifier.java"
+            line="12"
+            column="18"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public abstract class LongToothbrushCommandSuccessCallback"
+        errorLine2="                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/core/driver/kolibree/protocol/callbacks/commands/LongToothbrushCommandSuccessCallback.java"
+            line="4"
+            column="23"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public class MagnetometerCalibrationData {"
+        errorLine2="             ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/core/driver/kolibree/protocol/calibration/MagnetometerCalibrationData.java"
+            line="6"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public abstract class MagnetometerCalibrationToothbrushCommandSuccessCallback"
+        errorLine2="                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/core/driver/kolibree/protocol/callbacks/commands/MagnetometerCalibrationToothbrushCommandSuccessCallback.java"
+            line="6"
+            column="23"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public enum MessageFromListener {"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/core/driver/kolibree/protocol/MessageFromListener.java"
+            line="4"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="  public static class UnknownMessageTypeException extends Exception {}"
+        errorLine2="                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/core/driver/kolibree/protocol/MessageFromListener.java"
+            line="19"
+            column="23"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public final class MovementDetectorHandler extends Handler {"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/core/driver/kolibree/MovementDetectorHandler.java"
+            line="18"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public class MovementDetectorThread extends Thread"
+        errorLine2="             ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/core/driver/kolibree/MovementDetectorThread.java"
+            line="26"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="class NackException : FailureReason(&quot;Toothbrush returned NACK&quot;)"
+        errorLine2="      ~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/core/driver/kolibree/NackException.kt"
+            line="14"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public final class NordicBleScannerWrapper implements ToothbrushScanner {"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/scan/NordicBleScannerWrapper.java"
+            line="30"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="class NotKolibreeToothbrushException : Exception(&quot;This device is not a Kolibree toothbrush&quot;)"
+        errorLine2="      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/scan/NotKolibreeToothbrushException.kt"
+            line="4"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public class OrientationTypeDetector {"
+        errorLine2="             ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/core/driver/kolibree/movement/detector/orientationtype/OrientationTypeDetector.java"
+            line="18"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="  public enum Transition {"
+        errorLine2="              ~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/core/driver/kolibree/movement/detector/orientationtype/OrientationTypeDetector.java"
+            line="1056"
+            column="15"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="  public enum Orientation {"
+        errorLine2="              ~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/core/driver/kolibree/movement/detector/orientationtype/OrientationTypeDetector.java"
+            line="1062"
+            column="15"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="  public enum State {"
+        errorLine2="              ~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/core/driver/kolibree/movement/detector/orientationtype/OrientationTypeDetector.java"
+            line="1084"
+            column="15"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public final class OtaUpdateFactory {"
+        errorLine2="                   ~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/core/ota/kltb002/updates/OtaUpdateFactory.java"
+            line="30"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="class PayloadReader(data: ByteArray) {"
+        errorLine2="      ~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/core/binary/PayloadReader.kt"
+            line="35"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="    companion object {"
+        errorLine2="              ~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/core/binary/PayloadReader.kt"
+            line="235"
+            column="15"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="class PayloadWriter"
+        errorLine2="      ~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/core/binary/PayloadWriter.kt"
+            line="31"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="    companion object {"
+        errorLine2="              ~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/core/binary/PayloadWriter.kt"
+            line="198"
+            column="15"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="enum class PlaqlessError(val code: Byte) {"
+        errorLine2="           ~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/plaqless/PlaqlessError.kt"
+            line="25"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public class PossibleMouthZonesDetector {"
+        errorLine2="             ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/core/driver/kolibree/movement/detector/possiblemouthzones/PossibleMouthZonesDetector.java"
+            line="15"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public final class ProtocolConstants {"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/core/driver/kolibree/protocol/ProtocolConstants.java"
+            line="4"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public class QuaternionValue {"
+        errorLine2="             ~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/core/driver/kolibree/protocol/measurements/QuaternionValue.java"
+            line="4"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public class RawDataFactory {"
+        errorLine2="             ~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/core/driver/ble/raw/RawDataFactory.java"
+            line="17"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="  public interface RawDataFactoryCallback {"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/core/driver/ble/raw/RawDataFactory.java"
+            line="131"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public final class RetryWithDelay implements Function&lt;Flowable&lt;Throwable>, Publisher&lt;?>> {"
+        errorLine2="                   ~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/util/RetryWithDelay.java"
+            line="8"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public class RotationsAroundXDetector {"
+        errorLine2="             ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/core/driver/kolibree/movement/detector/rotationsaroundx/RotationsAroundXDetector.java"
+            line="30"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public class SVM {"
+        errorLine2="             ~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/core/driver/kolibree/movement/detector/orientationtype/supportvectormachine/SVM.java"
+            line="10"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public class Spheres {"
+        errorLine2="             ~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/core/driver/kolibree/movement/detector/possiblemouthzones/Spheres.java"
+            line="12"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public class StatusRecord {"
+        errorLine2="             ~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/core/driver/kolibree/StatusRecord.java"
+            line="4"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public class StreamingPacket {"
+        errorLine2="             ~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/core/driver/kolibree/protocol/packets/StreamingPacket.java"
+            line="4"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public abstract class StringToothBrushCommandSuccessCallback"
+        errorLine2="                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/core/driver/kolibree/protocol/callbacks/commands/StringToothBrushCommandSuccessCallback.java"
+            line="4"
+            column="23"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public class ThreeAxisValue {"
+        errorLine2="             ~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/core/driver/kolibree/protocol/measurements/ThreeAxisValue.java"
+            line="4"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public abstract class ThreeAxisValueToothbrushCommandSuccessCallback"
+        errorLine2="                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/core/driver/kolibree/protocol/callbacks/commands/ThreeAxisValueToothbrushCommandSuccessCallback.java"
+            line="6"
+            column="23"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public class ToothbrushListenerThread extends Thread {"
+        errorLine2="             ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/core/driver/kolibree/ToothbrushListenerThread.java"
+            line="15"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="class ToothbrushNameProvider @Inject constructor("
+        errorLine2="      ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/connection/toothbrush/ToothbrushNameProvider.kt"
+            line="21"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public abstract class VoidToothbrushCommandSuccessCallback"
+        errorLine2="                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/core/driver/kolibree/protocol/callbacks/commands/VoidToothbrushCommandSuccessCallback.java"
+            line="4"
+            column="23"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="class WriteAndNotifyResponse : ProfileReadResponse() {"
+        errorLine2="      ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/core/driver/ble/nordic/WriteAndNotifyResponse.kt"
+            line="10"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="ObsoleteSdkInt"
+        message="Unnecessary; SDK_INT is never &lt; 23"
+        errorLine1="        return Build.VERSION.SDK_INT &lt;= Build.VERSION_CODES.LOLLIPOP_MR1"
+        errorLine2="               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/core/driver/ble/nordic/KLNordicBleManager.kt"
+            line="785"
+            column="16"/>
+    </issue>
+
+    <issue
+        id="HandlerLeak"
+        message="This Handler class should be static or leaks might occur (anonymous android.os.Handler)"
+        errorLine1="          new Handler() {"
+        errorLine2="          ^">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/core/driver/kolibree/MovementDetectorThread.java"
+            line="110"
+            column="11"/>
+    </issue>
+
+    <issue
+        id="HandlerLeak"
+        message="This Handler class should be static or leaks might occur (anonymous android.os.Handler)"
+        errorLine1="          new Handler() {"
+        errorLine2="          ^">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/core/driver/kolibree/PacketParserThread.java"
+            line="106"
+            column="11"/>
+    </issue>
+
+    <issue
+        id="HandlerLeak"
+        message="This Handler class should be static or leaks might occur (anonymous android.os.Handler)"
+        errorLine1="          new Handler() {"
+        errorLine2="          ^">
+        <location
+            file="src/main/java/com/kolibree/android/sdk/core/driver/kolibree/ToothbrushSenderThread.java"
+            line="45"
+            column="11"/>
+    </issue>
+
+    <issue
+        id="ConvertToWebp"
+        message="One or more images in this project can be converted to the WebP format which typically results in smaller file sizes, even for lossless conversion (but launcher icons should use PNG).">
+        <location
+            file="src/main/res/drawable-xxhdpi/foreground_service_icon.png"/>
+    </issue>
+
+    <issue
+        id="IconMissingDensityFolder"
+        message="Missing density variation folders in `src/main/res`: drawable-hdpi, drawable-mdpi, drawable-xhdpi">
+        <location
+            file="src/main/res"/>
+    </issue>
+
+</issues>

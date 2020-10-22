@@ -1,0 +1,346 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 2,
+    "identityHash": "e8b9eb5c5a0e8b51cbb6ef0c9118c1dd",
+    "entities": [
+      {
+        "tableName": "brushing_session_stat",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `profileId` INTEGER NOT NULL, `creationTime` INTEGER NOT NULL, `duration` INTEGER NOT NULL, `averageSurface` INTEGER NOT NULL, `_averageCheckupMap` TEXT NOT NULL, `assignedDate` INTEGER NOT NULL, `cleanPercent` INTEGER, `missedPercent` INTEGER, `plaqueLeftPercent` INTEGER, `plaqueAggregate` TEXT, FOREIGN KEY(`profileId`, `assignedDate`) REFERENCES `brushing_day_stat`(`profileId`, `day`) ON UPDATE NO ACTION ON DELETE NO ACTION DEFERRABLE INITIALLY DEFERRED)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "profileId",
+            "columnName": "profileId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "creationTime",
+            "columnName": "creationTime",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "duration",
+            "columnName": "duration",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "averageSurface",
+            "columnName": "averageSurface",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "_averageCheckupMap",
+            "columnName": "_averageCheckupMap",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "assignedDate",
+            "columnName": "assignedDate",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "cleanPercent",
+            "columnName": "cleanPercent",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "missedPercent",
+            "columnName": "missedPercent",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "plaqueLeftPercent",
+            "columnName": "plaqueLeftPercent",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "plaqueAggregate",
+            "columnName": "plaqueAggregate",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [
+          {
+            "name": "index_brushing_session_stat_profileId_assignedDate",
+            "unique": false,
+            "columnNames": [
+              "profileId",
+              "assignedDate"
+            ],
+            "createSql": "CREATE  INDEX `index_brushing_session_stat_profileId_assignedDate` ON `${TABLE_NAME}` (`profileId`, `assignedDate`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "brushing_day_stat",
+            "onDelete": "NO ACTION",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "profileId",
+              "assignedDate"
+            ],
+            "referencedColumns": [
+              "profileId",
+              "day"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "brushing_day_stat",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`profileId` INTEGER NOT NULL, `day` INTEGER NOT NULL, `averageDuration` REAL NOT NULL, `averageSurface` REAL NOT NULL, `averageCheckup` TEXT NOT NULL, `isPerfectDay` INTEGER NOT NULL, `totalSessions` INTEGER NOT NULL, `month` INTEGER NOT NULL, `week` TEXT NOT NULL, PRIMARY KEY(`profileId`, `day`), FOREIGN KEY(`profileId`, `month`) REFERENCES `brushing_month_stat`(`profileId`, `month`) ON UPDATE NO ACTION ON DELETE NO ACTION DEFERRABLE INITIALLY DEFERRED, FOREIGN KEY(`profileId`, `week`) REFERENCES `brushing_week_stat`(`profileId`, `week`) ON UPDATE NO ACTION ON DELETE NO ACTION DEFERRABLE INITIALLY DEFERRED)",
+        "fields": [
+          {
+            "fieldPath": "profileId",
+            "columnName": "profileId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "day",
+            "columnName": "day",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "averageDuration",
+            "columnName": "averageDuration",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "averageSurface",
+            "columnName": "averageSurface",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "averageCheckup",
+            "columnName": "averageCheckup",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isPerfectDay",
+            "columnName": "isPerfectDay",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "totalSessions",
+            "columnName": "totalSessions",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "month",
+            "columnName": "month",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "week",
+            "columnName": "week",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "profileId",
+            "day"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [
+          {
+            "name": "index_brushing_day_stat_profileId_month",
+            "unique": false,
+            "columnNames": [
+              "profileId",
+              "month"
+            ],
+            "createSql": "CREATE  INDEX `index_brushing_day_stat_profileId_month` ON `${TABLE_NAME}` (`profileId`, `month`)"
+          },
+          {
+            "name": "index_brushing_day_stat_profileId_week",
+            "unique": false,
+            "columnNames": [
+              "profileId",
+              "week"
+            ],
+            "createSql": "CREATE  INDEX `index_brushing_day_stat_profileId_week` ON `${TABLE_NAME}` (`profileId`, `week`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "brushing_month_stat",
+            "onDelete": "NO ACTION",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "profileId",
+              "month"
+            ],
+            "referencedColumns": [
+              "profileId",
+              "month"
+            ]
+          },
+          {
+            "table": "brushing_week_stat",
+            "onDelete": "NO ACTION",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "profileId",
+              "week"
+            ],
+            "referencedColumns": [
+              "profileId",
+              "week"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "brushing_month_stat",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`profileId` INTEGER NOT NULL, `month` INTEGER NOT NULL, `averageDuration` REAL NOT NULL, `averageSurface` REAL NOT NULL, `averageCheckup` TEXT NOT NULL, `totalSessions` INTEGER NOT NULL, `sessionsPerDay` REAL NOT NULL, PRIMARY KEY(`profileId`, `month`))",
+        "fields": [
+          {
+            "fieldPath": "profileId",
+            "columnName": "profileId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "month",
+            "columnName": "month",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "averageDuration",
+            "columnName": "averageDuration",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "averageSurface",
+            "columnName": "averageSurface",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "averageCheckup",
+            "columnName": "averageCheckup",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "totalSessions",
+            "columnName": "totalSessions",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "sessionsPerDay",
+            "columnName": "sessionsPerDay",
+            "affinity": "REAL",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "profileId",
+            "month"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "brushing_week_stat",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`profileId` INTEGER NOT NULL, `week` TEXT NOT NULL, `averageDuration` REAL NOT NULL, `averageSurface` REAL NOT NULL, `averageCheckup` TEXT NOT NULL, `totalSessions` INTEGER NOT NULL, `sessionsPerDay` REAL NOT NULL, PRIMARY KEY(`profileId`, `week`))",
+        "fields": [
+          {
+            "fieldPath": "profileId",
+            "columnName": "profileId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "week",
+            "columnName": "week",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "averageDuration",
+            "columnName": "averageDuration",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "averageSurface",
+            "columnName": "averageSurface",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "averageCheckup",
+            "columnName": "averageCheckup",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "totalSessions",
+            "columnName": "totalSessions",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "sessionsPerDay",
+            "columnName": "sessionsPerDay",
+            "affinity": "REAL",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "profileId",
+            "week"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"e8b9eb5c5a0e8b51cbb6ef0c9118c1dd\")"
+    ]
+  }
+}

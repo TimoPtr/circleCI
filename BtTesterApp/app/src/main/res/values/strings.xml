@@ -1,0 +1,20 @@
+<resources>
+    <string name="bt_app_name">Kolibre BT tester</string>
+    <string name="scanner_action_cancel">Cancel</string>
+    <string name="scanner_action_scan">Scan</string>
+    <string name="connection">Connection</string>
+    <string name="mac_address">MAC address (for ex. 01:23:45:AB:CD:EF)</string>
+    <string name="tb_name">E2-12345678</string>
+    <string name="bt_status_success">Success</string>
+    <string name="bt_status_failure">Failure</string>
+    <string name="bt_status_unavailable"></string>
+    <string name="single_connection_tester">Single Connection Tester</string>
+    <string name="free_brushing_tester">Free Brushing Tester</string>
+    <string name="legacy_connection_tester">Legacy Connection Tester</string>
+    <string name="ota_tester">OTA Tester</string>
+    <string name="number_of_otas">Number of OTAs to perform</string>
+    <string name="start_ota">Start OTA</string>
+    <string name="ota_iterations">Iteration: %1$d/%2$d</string>
+    <string name="ota_errors">Number of failed OTAs: %d</string>
+
+</resources>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<resources>
+
+  <declare-styleable name="DismissibleTooltip">
+    <attr name="cornerRadius" format="dimension" />
+    <attr name="backgroundColor" format="color" />
+    <attr name="layout" format="reference" />
+  </declare-styleable>
+
+  <declare-styleable name="SlotMachineView">
+    <attr name="startValue" format="integer" />
+    <attr name="endValue" format="integer" />
+    <attr name="reelVerticalPadding" format="dimension" />
+  </declare-styleable>
+
+  <declare-styleable name="SpeedometerView">
+    <attr name="track_width" format="dimension" />
+    <attr name="track_color" format="color" />
+    <attr name="track_color_perfect" format="color" />
+    <attr name="track_color_disabled" format="color" />
+    <attr name="dot_color" format="color" />
+    <attr name="dot_color_disabled" format="color" />
+    <attr name="min" format="integer" />
+    <attr name="max" format="integer" />
+    <attr name="perfect_min" format="integer" />
+    <attr name="perfect_max" format="integer" />
+    <attr name="position" format="integer" />
+    <attr name="dot_animation_duration" format="integer" />
+    <attr name="fade_duration" format="integer" />
+  </declare-styleable>
+
+  <declare-styleable name="FeedbackMessageView">
+    <attr name="defaultMessage" format="string|reference" />
+    <attr name="defaultIcon" format="reference" />
+  </declare-styleable>
+
+  <declare-styleable name="DottedBottomNavigationView">
+    <attr name="dotDiameter" format="dimension" />
+    <attr name="dotPadding" format="dimension" />
+    <attr name="dotColor" format="color" />
+    <attr name="dotAnimationDuration" format="integer" />
+  </declare-styleable>
+  
+</resources>

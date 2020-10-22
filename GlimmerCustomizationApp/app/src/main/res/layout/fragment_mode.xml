@@ -1,0 +1,756 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout>
+
+  <data>
+
+    <variable
+      name="viewModel"
+      type="com.kolibree.android.glimmer.tweaker.mode.ModeViewModel" />
+
+    <import type="android.view.View" />
+
+    <import type="com.kolibree.android.sdk.connection.brushingmode.customizer.BrushingModeSettings" />
+
+    <import type="com.kolibree.android.glimmer.binding.SimpleItemWithIntBinding" />
+
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+      android:id="@+id/mode_apply"
+      style="?android:attr/buttonBarButtonStyle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:enabled="@{viewModel.modifiableLiveData}"
+      android:onClick="@{() -> viewModel.onApplyButtonClick()}"
+      android:text="@string/apply_custom_brushing_mode_settings"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/match_constraints"
+      app:layout_constraintBottom_toTopOf="@id/mode_apply"
+      app:layout_constraintTop_toTopOf="parent">
+
+      <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="@dimen/dot_double"
+        android:paddingEnd="@dimen/dot_double">
+
+        <TextView
+          android:id="@+id/mode_select_hint"
+          style="@style/SettingsHint"
+          android:layout_width="wrap_content"
+          android:layout_height="@dimen/match_constraints"
+          android:layout_marginEnd="@dimen/dot_trip"
+          android:text="@string/select_mode"
+          android:textColor="@color/colorAccent"
+          app:layout_constraintBottom_toBottomOf="@+id/mode_select_spinner"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="@+id/mode_select_spinner" />
+
+        <Spinner
+          android:id="@+id/mode_select_spinner"
+          style="@style/SettingSpinner"
+          android:layout_width="@dimen/match_constraints"
+          android:layout_height="wrap_content"
+          android:textAlignment="textEnd"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toEndOf="@id/mode_select_hint"
+          app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+          android:id="@+id/mode_strength_spinner_hint"
+          style="@style/SettingsHint"
+          android:layout_width="wrap_content"
+          android:layout_height="@dimen/match_constraints"
+          android:layout_marginEnd="@dimen/dot_trip"
+          android:text="@string/strength_management_mode"
+          app:layout_constraintBottom_toBottomOf="@+id/mode_strength_spinner"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="@+id/mode_strength_spinner" />
+
+        <Spinner
+          android:id="@+id/mode_strength_spinner"
+          style="@style/SettingSpinner"
+          android:layout_width="@dimen/match_constraints"
+          android:layout_height="wrap_content"
+          android:selectedItemPosition="@={viewModel.strengthSpinnerPosition}"
+          android:textAlignment="textEnd"
+          app:enabled="@{viewModel.modifiableLiveData}"
+          app:itemBinding="@{SimpleItemWithIntBinding.simpleItemBinding}"
+          app:itemDropDownLayout="@{SimpleItemWithIntBinding.simpleLayout}"
+          app:items="@{viewModel.strengthSpinnerItems}"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toEndOf="@id/mode_strength_spinner_hint"
+          app:layout_constraintTop_toBottomOf="@id/mode_select_spinner" />
+
+        <TextView
+          android:id="@+id/last_segment_strategy_spinner_hint"
+          style="@style/SettingsHint"
+          android:layout_width="wrap_content"
+          android:layout_height="@dimen/match_constraints"
+          android:layout_marginEnd="@dimen/dot_trip"
+          android:text="@string/last_segment_strategy"
+          app:layout_constraintBottom_toBottomOf="@+id/last_segment_strategy_spinner"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="@+id/last_segment_strategy_spinner" />
+
+        <Spinner
+          android:id="@+id/last_segment_strategy_spinner"
+          style="@style/SettingSpinner"
+          android:layout_width="@dimen/match_constraints"
+          android:layout_height="wrap_content"
+          android:selectedItemPosition="@={viewModel.lastSegmentStrategySpinnerPosition}"
+          android:textAlignment="textEnd"
+          app:enabled="@{viewModel.modifiableLiveData}"
+          app:itemBinding="@{SimpleItemWithIntBinding.simpleItemBinding}"
+          app:itemDropDownLayout="@{SimpleItemWithIntBinding.simpleLayout}"
+          app:items="@{viewModel.lastSegmentStrategySpinnerItems}"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toEndOf="@id/last_segment_strategy_spinner_hint"
+          app:layout_constraintTop_toBottomOf="@id/mode_strength_spinner" />
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          app:layout_constraintTop_toBottomOf="@id/last_segment_strategy_spinner"
+          android:orientation="vertical">
+
+          <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="@{viewModel.enabledSegmentCountLiveData > 0 ? View.VISIBLE : View.GONE}"
+            android:layout_marginBottom="@dimen/dot">
+
+            <TextView
+              android:id="@+id/mode_segment_title1"
+              style="@style/SettingsHint"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/mode_segment_1"
+              android:textColor="@color/colorAccent"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent"/>
+
+            <Spinner
+              android:id="@+id/mode_segment_sequence_spinner1"
+              style="@style/SettingSpinner"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:selectedItemPosition="@={viewModel.sequenceSegment1Position}"
+              android:textAlignment="textEnd"
+              android:enabled="@{viewModel.modifiableLiveData}"
+              app:itemBinding="@{SimpleItemWithIntBinding.simpleItemBinding}"
+              app:itemDropDownLayout="@{SimpleItemWithIntBinding.simpleLayout}"
+              app:items="@{viewModel.sequences}"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintTop_toBottomOf="@id/mode_segment_title1"/>
+
+            <TextView
+              android:id="@+id/sequence_pattern_hint1"
+              style="@style/SettingsHint"
+              android:layout_width="@dimen/match_constraints"
+              android:layout_height="@dimen/match_constraints"
+              android:text="@string/sequence_settings"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintEnd_toStartOf="@id/mode_segment_sequence_spinner1"
+              app:layout_constraintTop_toTopOf="@id/mode_segment_sequence_spinner1"
+              app:layout_constraintBottom_toBottomOf="@id/mode_segment_sequence_spinner1"/>
+
+            <com.kolibree.android.glimmer.utils.NumberPicker
+              android:id="@+id/segment_strength1"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintTop_toBottomOf="@id/mode_segment_sequence_spinner1"
+              app:value="@{viewModel.sequenceSegment1LiveData.strength}"
+              app:max="@{10}"
+              app:min="@{1}"
+              app:enabled="@{viewModel.modifiableLiveData}"/>
+
+            <TextView
+              android:id="@+id/sequence_pattern_duration_hint1"
+              style="@style/SettingsHint"
+              android:layout_width="@dimen/match_constraints"
+              android:layout_height="@dimen/match_constraints"
+              android:text="@string/strength"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintEnd_toStartOf="@id/segment_strength1"
+              app:layout_constraintTop_toTopOf="@id/segment_strength1"
+              app:layout_constraintBottom_toBottomOf="@id/segment_strength1"/>
+
+          </androidx.constraintlayout.widget.ConstraintLayout>
+
+          <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="@{viewModel.enabledSegmentCountLiveData > 1 ? View.VISIBLE : View.GONE}"
+            android:layout_marginBottom="@dimen/dot">
+
+            <TextView
+              android:id="@+id/mode_segment_title2"
+              style="@style/SettingsHint"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/mode_segment_2"
+              android:textColor="@color/colorAccent"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent"/>
+
+            <Spinner
+              android:id="@+id/mode_segment_sequence_spinner2"
+              style="@style/SettingSpinner"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:selectedItemPosition="@={viewModel.sequenceSegment2Position}"
+              android:textAlignment="textEnd"
+              android:enabled="@{viewModel.modifiableLiveData}"
+              app:itemBinding="@{SimpleItemWithIntBinding.simpleItemBinding}"
+              app:itemDropDownLayout="@{SimpleItemWithIntBinding.simpleLayout}"
+              app:items="@{viewModel.sequences}"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintTop_toBottomOf="@id/mode_segment_title2"/>
+
+            <TextView
+              android:id="@+id/sequence_pattern_hint2"
+              style="@style/SettingsHint"
+              android:layout_width="@dimen/match_constraints"
+              android:layout_height="@dimen/match_constraints"
+              android:text="@string/sequence_settings"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintEnd_toStartOf="@id/mode_segment_sequence_spinner2"
+              app:layout_constraintTop_toTopOf="@id/mode_segment_sequence_spinner2"
+              app:layout_constraintBottom_toBottomOf="@id/mode_segment_sequence_spinner2"/>
+
+            <com.kolibree.android.glimmer.utils.NumberPicker
+              android:id="@+id/segment_strength2"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintTop_toBottomOf="@id/mode_segment_sequence_spinner2"
+              app:value="@{viewModel.sequenceSegment2LiveData.strength}"
+              app:max="@{10}"
+              app:min="@{1}"
+              app:enabled="@{viewModel.modifiableLiveData}"/>
+
+            <TextView
+              android:id="@+id/sequence_pattern_duration_hint2"
+              style="@style/SettingsHint"
+              android:layout_width="@dimen/match_constraints"
+              android:layout_height="@dimen/match_constraints"
+              android:text="@string/strength"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintEnd_toStartOf="@id/segment_strength2"
+              app:layout_constraintTop_toTopOf="@id/segment_strength2"
+              app:layout_constraintBottom_toBottomOf="@id/segment_strength2"/>
+
+          </androidx.constraintlayout.widget.ConstraintLayout>
+
+          <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="@{viewModel.enabledSegmentCountLiveData > 2 ? View.VISIBLE : View.GONE}"
+            android:layout_marginBottom="@dimen/dot">
+
+            <TextView
+              android:id="@+id/mode_segment_title3"
+              style="@style/SettingsHint"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/mode_segment_3"
+              android:textColor="@color/colorAccent"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent"/>
+
+            <Spinner
+              android:id="@+id/mode_segment_sequence_spinner3"
+              style="@style/SettingSpinner"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:selectedItemPosition="@={viewModel.sequenceSegment3Position}"
+              android:textAlignment="textEnd"
+              android:enabled="@{viewModel.modifiableLiveData}"
+              app:itemBinding="@{SimpleItemWithIntBinding.simpleItemBinding}"
+              app:itemDropDownLayout="@{SimpleItemWithIntBinding.simpleLayout}"
+              app:items="@{viewModel.sequences}"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintTop_toBottomOf="@id/mode_segment_title3"/>
+
+            <TextView
+              android:id="@+id/sequence_pattern_hint3"
+              style="@style/SettingsHint"
+              android:layout_width="@dimen/match_constraints"
+              android:layout_height="@dimen/match_constraints"
+              android:text="@string/sequence_settings"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintEnd_toStartOf="@id/mode_segment_sequence_spinner3"
+              app:layout_constraintTop_toTopOf="@id/mode_segment_sequence_spinner3"
+              app:layout_constraintBottom_toBottomOf="@id/mode_segment_sequence_spinner3"/>
+
+            <com.kolibree.android.glimmer.utils.NumberPicker
+              android:id="@+id/segment_strength3"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintTop_toBottomOf="@id/mode_segment_sequence_spinner3"
+              app:value="@{viewModel.sequenceSegment3LiveData.strength}"
+              app:max="@{10}"
+              app:min="@{1}"
+              app:enabled="@{viewModel.modifiableLiveData}"/>
+
+            <TextView
+              android:id="@+id/sequence_pattern_duration_hint3"
+              style="@style/SettingsHint"
+              android:layout_width="@dimen/match_constraints"
+              android:layout_height="@dimen/match_constraints"
+              android:text="@string/strength"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintEnd_toStartOf="@id/segment_strength3"
+              app:layout_constraintTop_toTopOf="@id/segment_strength3"
+              app:layout_constraintBottom_toBottomOf="@id/segment_strength3"/>
+
+          </androidx.constraintlayout.widget.ConstraintLayout>
+
+          <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="@{viewModel.enabledSegmentCountLiveData > 3 ? View.VISIBLE : View.GONE}"
+            android:layout_marginBottom="@dimen/dot">
+
+            <TextView
+              android:id="@+id/mode_segment_title4"
+              style="@style/SettingsHint"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/mode_segment_4"
+              android:textColor="@color/colorAccent"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent"/>
+
+            <Spinner
+              android:id="@+id/mode_segment_sequence_spinner4"
+              style="@style/SettingSpinner"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:selectedItemPosition="@={viewModel.sequenceSegment4Position}"
+              android:textAlignment="textEnd"
+              android:enabled="@{viewModel.modifiableLiveData}"
+              app:itemBinding="@{SimpleItemWithIntBinding.simpleItemBinding}"
+              app:itemDropDownLayout="@{SimpleItemWithIntBinding.simpleLayout}"
+              app:items="@{viewModel.sequences}"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintTop_toBottomOf="@id/mode_segment_title4"/>
+
+            <TextView
+              android:id="@+id/sequence_pattern_hint4"
+              style="@style/SettingsHint"
+              android:layout_width="@dimen/match_constraints"
+              android:layout_height="@dimen/match_constraints"
+              android:text="@string/sequence_settings"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintEnd_toStartOf="@id/mode_segment_sequence_spinner4"
+              app:layout_constraintTop_toTopOf="@id/mode_segment_sequence_spinner4"
+              app:layout_constraintBottom_toBottomOf="@id/mode_segment_sequence_spinner4"/>
+
+            <com.kolibree.android.glimmer.utils.NumberPicker
+              android:id="@+id/segment_strength4"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintTop_toBottomOf="@id/mode_segment_sequence_spinner4"
+              app:value="@{viewModel.sequenceSegment4LiveData.strength}"
+              app:max="@{10}"
+              app:min="@{1}"
+              app:enabled="@{viewModel.modifiableLiveData}"/>
+
+            <TextView
+              android:id="@+id/sequence_pattern_duration_hint4"
+              style="@style/SettingsHint"
+              android:layout_width="@dimen/match_constraints"
+              android:layout_height="@dimen/match_constraints"
+              android:text="@string/strength"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintEnd_toStartOf="@id/segment_strength4"
+              app:layout_constraintTop_toTopOf="@id/segment_strength4"
+              app:layout_constraintBottom_toBottomOf="@id/segment_strength4"/>
+
+          </androidx.constraintlayout.widget.ConstraintLayout>
+
+          <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="@{viewModel.enabledSegmentCountLiveData > 4 ? View.VISIBLE : View.GONE}"
+            android:layout_marginBottom="@dimen/dot">
+
+            <TextView
+              android:id="@+id/mode_segment_title5"
+              style="@style/SettingsHint"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/mode_segment_5"
+              android:textColor="@color/colorAccent"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent"/>
+
+            <Spinner
+              android:id="@+id/mode_segment_sequence_spinner5"
+              style="@style/SettingSpinner"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:selectedItemPosition="@={viewModel.sequenceSegment5Position}"
+              android:textAlignment="textEnd"
+              android:enabled="@{viewModel.modifiableLiveData}"
+              app:itemBinding="@{SimpleItemWithIntBinding.simpleItemBinding}"
+              app:itemDropDownLayout="@{SimpleItemWithIntBinding.simpleLayout}"
+              app:items="@{viewModel.sequences}"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintTop_toBottomOf="@id/mode_segment_title5"/>
+
+            <TextView
+              android:id="@+id/sequence_pattern_hint5"
+              style="@style/SettingsHint"
+              android:layout_width="@dimen/match_constraints"
+              android:layout_height="@dimen/match_constraints"
+              android:text="@string/sequence_settings"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintEnd_toStartOf="@id/mode_segment_sequence_spinner5"
+              app:layout_constraintTop_toTopOf="@id/mode_segment_sequence_spinner5"
+              app:layout_constraintBottom_toBottomOf="@id/mode_segment_sequence_spinner5"/>
+
+            <com.kolibree.android.glimmer.utils.NumberPicker
+              android:id="@+id/segment_strength5"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintTop_toBottomOf="@id/mode_segment_sequence_spinner5"
+              app:value="@{viewModel.sequenceSegment5LiveData.strength}"
+              app:max="@{10}"
+              app:min="@{1}"
+              app:enabled="@{viewModel.modifiableLiveData}"/>
+
+            <TextView
+              android:id="@+id/sequence_pattern_duration_hint5"
+              style="@style/SettingsHint"
+              android:layout_width="@dimen/match_constraints"
+              android:layout_height="@dimen/match_constraints"
+              android:text="@string/strength"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintEnd_toStartOf="@id/segment_strength5"
+              app:layout_constraintTop_toTopOf="@id/segment_strength5"
+              app:layout_constraintBottom_toBottomOf="@id/segment_strength5"/>
+
+          </androidx.constraintlayout.widget.ConstraintLayout>
+
+          <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="@{viewModel.enabledSegmentCountLiveData > 5 ? View.VISIBLE : View.GONE}"
+            android:layout_marginBottom="@dimen/dot">
+
+            <TextView
+              android:id="@+id/mode_segment_title6"
+              style="@style/SettingsHint"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/mode_segment_6"
+              android:textColor="@color/colorAccent"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent"/>
+
+            <Spinner
+              android:id="@+id/mode_segment_sequence_spinner6"
+              style="@style/SettingSpinner"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:selectedItemPosition="@={viewModel.sequenceSegment6Position}"
+              android:textAlignment="textEnd"
+              android:enabled="@{viewModel.modifiableLiveData}"
+              app:itemBinding="@{SimpleItemWithIntBinding.simpleItemBinding}"
+              app:itemDropDownLayout="@{SimpleItemWithIntBinding.simpleLayout}"
+              app:items="@{viewModel.sequences}"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintTop_toBottomOf="@id/mode_segment_title6"/>
+
+            <TextView
+              android:id="@+id/sequence_pattern_hint6"
+              style="@style/SettingsHint"
+              android:layout_width="@dimen/match_constraints"
+              android:layout_height="@dimen/match_constraints"
+              android:text="@string/sequence_settings"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintEnd_toStartOf="@id/mode_segment_sequence_spinner6"
+              app:layout_constraintTop_toTopOf="@id/mode_segment_sequence_spinner6"
+              app:layout_constraintBottom_toBottomOf="@id/mode_segment_sequence_spinner6"/>
+
+            <com.kolibree.android.glimmer.utils.NumberPicker
+              android:id="@+id/segment_strength6"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintTop_toBottomOf="@id/mode_segment_sequence_spinner6"
+              app:value="@{viewModel.sequenceSegment6LiveData.strength}"
+              app:max="@{10}"
+              app:min="@{1}"
+              app:enabled="@{viewModel.modifiableLiveData}"/>
+
+            <TextView
+              android:id="@+id/sequence_pattern_duration_hint6"
+              style="@style/SettingsHint"
+              android:layout_width="@dimen/match_constraints"
+              android:layout_height="@dimen/match_constraints"
+              android:text="@string/strength"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintEnd_toStartOf="@id/segment_strength6"
+              app:layout_constraintTop_toTopOf="@id/segment_strength6"
+              app:layout_constraintBottom_toBottomOf="@id/segment_strength6"/>
+
+          </androidx.constraintlayout.widget.ConstraintLayout>
+
+          <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="@{viewModel.enabledSegmentCountLiveData > 6 ? View.VISIBLE : View.GONE}"
+            android:layout_marginBottom="@dimen/dot">
+
+            <TextView
+              android:id="@+id/mode_segment_title7"
+              style="@style/SettingsHint"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/mode_segment_7"
+              android:textColor="@color/colorAccent"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent"/>
+
+            <Spinner
+              android:id="@+id/mode_segment_sequence_spinner7"
+              style="@style/SettingSpinner"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:selectedItemPosition="@={viewModel.sequenceSegment7Position}"
+              android:textAlignment="textEnd"
+              android:enabled="@{viewModel.modifiableLiveData}"
+              app:itemBinding="@{SimpleItemWithIntBinding.simpleItemBinding}"
+              app:itemDropDownLayout="@{SimpleItemWithIntBinding.simpleLayout}"
+              app:items="@{viewModel.sequences}"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintTop_toBottomOf="@id/mode_segment_title7"/>
+
+            <TextView
+              android:id="@+id/sequence_pattern_hint7"
+              style="@style/SettingsHint"
+              android:layout_width="@dimen/match_constraints"
+              android:layout_height="@dimen/match_constraints"
+              android:text="@string/sequence_settings"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintEnd_toStartOf="@id/mode_segment_sequence_spinner7"
+              app:layout_constraintTop_toTopOf="@id/mode_segment_sequence_spinner7"
+              app:layout_constraintBottom_toBottomOf="@id/mode_segment_sequence_spinner7"/>
+
+            <com.kolibree.android.glimmer.utils.NumberPicker
+              android:id="@+id/segment_strength7"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintTop_toBottomOf="@id/mode_segment_sequence_spinner7"
+              app:value="@{viewModel.sequenceSegment7LiveData.strength}"
+              app:max="@{10}"
+              app:min="@{1}"
+              app:enabled="@{viewModel.modifiableLiveData}"/>
+
+            <TextView
+              android:id="@+id/sequence_pattern_duration_hint7"
+              style="@style/SettingsHint"
+              android:layout_width="@dimen/match_constraints"
+              android:layout_height="@dimen/match_constraints"
+              android:text="@string/strength"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintEnd_toStartOf="@id/segment_strength7"
+              app:layout_constraintTop_toTopOf="@id/segment_strength7"
+              app:layout_constraintBottom_toBottomOf="@id/segment_strength7"/>
+
+          </androidx.constraintlayout.widget.ConstraintLayout>
+
+          <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="@{viewModel.enabledSegmentCountLiveData > 7 ? View.VISIBLE : View.GONE}"
+            android:layout_marginBottom="@dimen/dot">
+
+            <TextView
+              android:id="@+id/mode_segment_title8"
+              style="@style/SettingsHint"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/mode_segment_8"
+              android:textColor="@color/colorAccent"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent"/>
+
+            <Spinner
+              android:id="@+id/mode_segment_sequence_spinner8"
+              style="@style/SettingSpinner"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:selectedItemPosition="@={viewModel.sequenceSegment8Position}"
+              android:textAlignment="textEnd"
+              android:enabled="@{viewModel.modifiableLiveData}"
+              app:itemBinding="@{SimpleItemWithIntBinding.simpleItemBinding}"
+              app:itemDropDownLayout="@{SimpleItemWithIntBinding.simpleLayout}"
+              app:items="@{viewModel.sequences}"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintTop_toBottomOf="@id/mode_segment_title8"/>
+
+            <TextView
+              android:id="@+id/sequence_pattern_hint8"
+              style="@style/SettingsHint"
+              android:layout_width="@dimen/match_constraints"
+              android:layout_height="@dimen/match_constraints"
+              android:text="@string/sequence_settings"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintEnd_toStartOf="@id/mode_segment_sequence_spinner8"
+              app:layout_constraintTop_toTopOf="@id/mode_segment_sequence_spinner8"
+              app:layout_constraintBottom_toBottomOf="@id/mode_segment_sequence_spinner8"/>
+
+            <com.kolibree.android.glimmer.utils.NumberPicker
+              android:id="@+id/segment_strength8"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintTop_toBottomOf="@id/mode_segment_sequence_spinner8"
+              app:value="@{viewModel.sequenceSegment8LiveData.strength}"
+              app:max="@{10}"
+              app:min="@{1}"
+              app:enabled="@{viewModel.modifiableLiveData}"/>
+
+            <TextView
+              android:id="@+id/sequence_pattern_duration_hint8"
+              style="@style/SettingsHint"
+              android:layout_width="@dimen/match_constraints"
+              android:layout_height="@dimen/match_constraints"
+              android:text="@string/strength"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintEnd_toStartOf="@id/segment_strength8"
+              app:layout_constraintTop_toTopOf="@id/segment_strength8"
+              app:layout_constraintBottom_toBottomOf="@id/segment_strength8"/>
+
+          </androidx.constraintlayout.widget.ConstraintLayout>
+
+          <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+              android:id="@+id/sequence_remove"
+              style="?android:attr/buttonBarButtonStyle"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:enabled="@{viewModel.modifiableLiveData}"
+              android:onClick="@{() -> viewModel.onRemoveButtonClick()}"
+              enabled="@{viewModel.removeButtonEnabledLiveData}"
+              android:text="@string/remove_last_segment"
+              android:layout_weight="1"/>
+
+            <Button
+              android:id="@+id/sequence_add"
+              style="?android:attr/buttonBarButtonStyle"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:enabled="@{viewModel.modifiableLiveData}"
+              android:onClick="@{() -> viewModel.onAddButtonClick()}"
+              enabled="@{viewModel.addButtonEnabledLiveData}"
+              android:text="@string/add_segment"
+              android:layout_weight="1"/>
+          </LinearLayout>
+
+          <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="@{viewModel.enabledSegmentCountLiveData == 8 ? View.GONE : View.VISIBLE}"
+            android:layout_marginBottom="@dimen/dot">
+
+            <TextView
+              android:id="@+id/mode_segment_title_last"
+              style="@style/SettingsHint"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/mode_segment_last"
+              android:textColor="@color/colorAccent"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent"/>
+
+            <Spinner
+              android:id="@+id/mode_segment_sequence_spinner_last"
+              style="@style/SettingSpinner"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:selectedItemPosition="@={viewModel.sequenceSegmentLastPosition}"
+              android:textAlignment="textEnd"
+              android:enabled="@{viewModel.modifiableLiveData}"
+              app:itemBinding="@{SimpleItemWithIntBinding.simpleItemBinding}"
+              app:itemDropDownLayout="@{SimpleItemWithIntBinding.simpleLayout}"
+              app:items="@{viewModel.sequences}"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintTop_toBottomOf="@id/mode_segment_title_last"/>
+
+            <TextView
+              android:id="@+id/sequence_pattern_hint_last"
+              style="@style/SettingsHint"
+              android:layout_width="@dimen/match_constraints"
+              android:layout_height="@dimen/match_constraints"
+              android:text="@string/sequence_settings"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintEnd_toStartOf="@id/mode_segment_sequence_spinner_last"
+              app:layout_constraintTop_toTopOf="@id/mode_segment_sequence_spinner_last"
+              app:layout_constraintBottom_toBottomOf="@id/mode_segment_sequence_spinner_last"/>
+
+            <com.kolibree.android.glimmer.utils.NumberPicker
+              android:id="@+id/segment_strength_last"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintTop_toBottomOf="@id/mode_segment_sequence_spinner_last"
+              app:value="@{viewModel.sequenceSegmentLastLiveData.strength}"
+              app:max="@{10}"
+              app:min="@{1}"
+              app:enabled="@{viewModel.modifiableLiveData}"/>
+
+            <TextView
+              android:id="@+id/sequence_pattern_duration_hint_last"
+              style="@style/SettingsHint"
+              android:layout_width="@dimen/match_constraints"
+              android:layout_height="@dimen/match_constraints"
+              android:text="@string/strength"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintEnd_toStartOf="@id/segment_strength_last"
+              app:layout_constraintTop_toTopOf="@id/segment_strength_last"
+              app:layout_constraintBottom_toBottomOf="@id/segment_strength_last"/>
+
+          </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+      </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
+

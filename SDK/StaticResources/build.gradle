@@ -1,0 +1,32 @@
+/*
+ * Copyright (c) 2020 Kolibree. All rights reserved
+ *
+ * Copying this file via any medium without the prior written consent of Kolibree is strictly
+ * prohibited
+ *
+ * Proprietary and confidential
+ */
+
+apply plugin: 'com.android.library'
+
+android {
+    buildTypes {
+        release {
+            minifyEnabled false
+
+            lintOptions {
+                /*
+                POEditor doesn't add 'translatable=false' attribute to strings, so we need to disable this :(
+
+                I'm sure it'll cause issues in the future, but it's the best we can come up with
+                 */
+                disable 'MissingTranslation'
+            }
+        }
+    }
+}
+
+dependencies {
+    api libraries.supportAppCompat
+    api libraries.supportDesign
+}

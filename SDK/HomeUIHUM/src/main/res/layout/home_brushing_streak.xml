@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <data>
+
+    <import type="android.view.View" />
+
+    <variable
+      name="item"
+      type="com.kolibree.android.app.ui.home.tab.home.card.brushingstreak.BrushingStreakCardBindingModel" />
+
+    <variable
+      name="interaction"
+      type="com.kolibree.android.app.ui.home.tab.home.card.brushingstreak.BrushingStreakCardInteraction" />
+
+  </data>
+
+  <com.google.android.material.card.MaterialCardView
+    android:id="@+id/brushing_streak_card"
+    style="?materialCardViewStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/dot_double"
+    android:layout_marginTop="@dimen/dot_quad"
+    android:layout_marginEnd="@dimen/dot_double"
+    android:clickable="true"
+    android:elevation="@dimen/dot_quarter"
+    android:focusable="true"
+    app:rippleColor="@android:color/transparent">
+
+    <LinearLayout
+      android:id="@+id/parent"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:clickable="@{item.proposal}"
+      android:onClick="@{(v) -> interaction.toggleExpanded(v)}"
+      android:orientation="vertical">
+
+      <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/brushing_streak_top_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?colorQuaternaryLight">
+
+        <TextView
+          android:id="@+id/brushing_streak_title"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="@dimen/dot_trip"
+          android:layout_marginTop="@dimen/dot_quad"
+          android:text="@{item.title(context)}"
+          android:textAppearance="?textAppearanceHeadline4"
+          android:textColor="@color/white"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          tools:text="brushing streak" />
+
+        <TextView
+          android:id="@+id/brushing_streak_subtitle"
+          android:layout_width="@dimen/match_constraints"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/dot_quarter"
+          android:layout_marginBottom="@dimen/dot_quad"
+          android:text="@{item.collapsedDescription(context)}"
+          android:textAppearance="?textAppearanceBody2"
+          android:textColor="@color/white"
+          android:visibility="@{item.proposal ? View.VISIBLE : View.GONE}"
+          app:layout_constraintEnd_toStartOf="@id/brushingStreakImage"
+          app:layout_constraintStart_toStartOf="@id/brushing_streak_title"
+          app:layout_constraintTop_toBottomOf="@id/brushing_streak_title"
+          tools:text="Accept the challenge and get over 80% coverage twice a day for 5 days to earn your points." />
+
+        <Space
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/dot_quad"
+          android:background="?colorAccent"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/brushing_streak_subtitle" />
+
+        <ImageView
+          android:id="@+id/brushingStreakImage"
+          android:layout_width="wrap_content"
+          android:layout_height="@dimen/match_constraints"
+          android:scaleType="fitEnd"
+          android:src="@drawable/ic_brushing_streak_bg"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+          android:id="@+id/brushingStreakPoints"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="@dimen/dot_double"
+          android:background="@drawable/shape_rounded"
+          android:backgroundTint="?smilePointsBackgroundColor"
+          android:gravity="center"
+          android:paddingStart="@dimen/dot"
+          android:paddingTop="@dimen/dot_quarter"
+          android:paddingEnd="@dimen/dot"
+          android:paddingBottom="@dimen/dot_quarter"
+          android:text="@{item.getPoints(context)}"
+          android:textAppearance="?textAppearanceSubtitle2"
+          android:textColor="@color/white"
+          app:layout_constraintBottom_toBottomOf="@id/brushing_streak_title"
+          app:layout_constraintStart_toEndOf="@id/brushing_streak_title"
+          app:layout_constraintTop_toTopOf="@id/brushing_streak_title"
+          tools:text="+50 pts" />
+
+      </androidx.constraintlayout.widget.ConstraintLayout>
+
+      <LinearLayout
+        android:id="@+id/brushing_streak_bottom_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dot_trip"
+        android:visibility="@{item.isExpanded ? View.VISIBLE : View.GONE}">
+
+        <TextView
+          android:id="@+id/brushing_streak_description_title"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="@dimen/dot_trip"
+          android:layout_marginTop="@dimen/dot_trip"
+          android:layout_marginEnd="@dimen/dot_trip"
+          android:text="@{item.expandedTitle(context)}"
+          android:textAppearance="?textAppearanceHeadline5"
+          android:textColor="?android:textColorPrimary"
+          tools:text="You’re doing great!" />
+
+        <TextView
+          android:id="@+id/brushing_streak_description"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="@dimen/dot_trip"
+          android:layout_marginTop="@dimen/dot"
+          android:layout_marginEnd="@dimen/dot_trip"
+          android:text="@{item.expandedDescription(context)}"
+          android:textAppearance="?textAppearanceBody2"
+          android:textColor="?android:textColorSecondary"
+          tools:text="Your last coverage was 83%, why not reward yourself and earn some extra points?" />
+
+        <!-- Container used for challenge progression -->
+        <com.kolibree.android.app.ui.home.tab.home.card.brushingstreak.BrushingProgressionView
+          android:id="@+id/brushing_streak_progression"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/dot_quin"
+          android:layout_marginStart="@dimen/dot_trip"
+          android:layout_marginTop="@dimen/dot_quad"
+          android:layout_marginEnd="@dimen/dot_trip"
+          android:visibility="@{item.multiDaysChallenge ? View.VISIBLE : View.GONE}"
+          app:brushing_progression="@{item.challengeProgression()}"
+          tools:visibility="visible" />
+
+        <Button
+          android:id="@+id/brushing_streak_action_button"
+          style="?materialButtonStyle"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="@dimen/dot_trip"
+          android:layout_marginTop="@dimen/dot_quad"
+          android:layout_marginEnd="@dimen/dot_trip"
+          android:backgroundTint="?brushingStreakActionColor"
+          android:onClick="@{() -> item.onActionItemClick(interaction)}"
+          android:text="@{item.actionButtonText(context)}"
+          android:visibility="@{item.hasActionButton() ? View.VISIBLE : View.GONE}"
+          app:rippleColor="?rippleColorMono"
+          tools:text="@string/brushing_streak_accept_challenge"
+          tools:visibility="visible" />
+
+      </LinearLayout>
+
+    </LinearLayout>
+
+  </com.google.android.material.card.MaterialCardView>
+</layout>

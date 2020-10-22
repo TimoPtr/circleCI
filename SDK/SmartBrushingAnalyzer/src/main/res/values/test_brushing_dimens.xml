@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <dimen name="test_brushing_elevation">3dp</dimen>
+  <dimen name="test_brushing_arrow_z">4dp</dimen>
+  <dimen name="test_brushing_instructions_index_size">30dp</dimen>
+  <dimen name="test_brushing_tip_padding">20dp</dimen>
+  <dimen name="test_brushing_tip_padding_big">30dp</dimen>
+  <dimen name="avatar_dentist_padding">7dp</dimen>
+  <dimen name="test_brushing_lets_see_how_you_brush_top_padding">20dp</dimen>
+  <dimen name="test_brushing_instructions_index_diameter">8dp</dimen>
+</resources>

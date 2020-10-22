@@ -1,0 +1,16 @@
+apply plugin: 'java-library'
+apply plugin: "kotlin"
+
+// We override the task
+task checkPom {
+    System.out.println('checkPom is disabled for Annotation module')
+}
+
+dependencies {
+    implementation libraries.kotlinRuntime
+}
+
+// Needed for batch unit tests execution
+task testDebugUnitTest {
+    dependsOn test
+}

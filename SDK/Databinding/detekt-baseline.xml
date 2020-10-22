@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <Blacklist></Blacklist>
+  <Whitelist>
+    <ID>LongMethod:CollectionViewGroupBindingAdapterExt.kt$bindCollectionOfEntries</ID>
+    <ID>LongMethod:TextViewDatabindingExt.kt$setCompoundDrawable</ID>
+    <ID>LongMethod:TextViewDatabindingExt.kt$setCompoundDrawableAtPosition</ID>
+    <ID>LongMethod:TextViewDatabindingExt.kt$setHighlightText</ID>
+    <ID>LongMethod:ViewAnimationDatabindingExt.kt$setVisibilityWithAnimation</ID>
+    <ID>LongMethod:ViewMarginDatabindingExt.kt$bindLegacyMargins</ID>
+    <ID>LongMethod:ViewMarginDatabindingExt.kt$bindMargins</ID>
+  </Whitelist>
+</SmellBaseline>

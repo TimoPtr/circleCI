@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2019 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~ Proprietary and confidential
+  -->
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+  <item
+    android:id="@android:id/background"
+    android:gravity="center_vertical|fill_horizontal">
+    <shape
+      android:shape="rectangle"
+      android:tint="@color/transparent">
+      <corners android:radius="@dimen/progress_bar_rounded_background_corner_radius" />
+      <size android:height="@dimen/progress_bar_rounded_background_height" />
+    </shape>
+  </item>
+  <item
+    android:id="@android:id/progress"
+    android:bottom="@dimen/progress_bar_rounded_foreground_margin"
+    android:gravity="center_vertical|fill_horizontal"
+    android:left="@dimen/progress_bar_rounded_foreground_margin"
+    android:right="@dimen/progress_bar_rounded_foreground_margin"
+    android:top="@dimen/progress_bar_rounded_foreground_margin">
+    <scale android:scaleWidth="100%">
+      <shape
+        android:shape="rectangle"
+        android:tint="@color/white">
+        <corners android:radius="@dimen/progress_bar_rounded_foreground_corner_radius" />
+        <size android:height="@dimen/progress_bar_rounded_foreground_height" />
+      </shape>
+    </scale>
+  </item>
+</layer-list>
+

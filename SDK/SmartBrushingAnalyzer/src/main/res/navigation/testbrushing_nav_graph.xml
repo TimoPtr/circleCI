@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/testbrushing_nav_graph"
+  app:startDestination="@id/testBrushIntroFragment">
+
+  <fragment
+    android:id="@+id/testBrushIntroFragment"
+    android:label="@string/test_brushing_screen_title"
+    android:name="com.kolibree.android.sba.testbrushing.intro.TestBrushIntroFragment"
+    tools:layout="@layout/fragment_test_brush_intro">
+    <action
+      android:id="@+id/action_testBrushIntroFragment_to_testBrushingSessionFragment"
+      app:destination="@id/testBrushingSessionFragment"
+      app:enterAnim="@anim/slide_in_right"
+      app:exitAnim="@anim/fade_out"
+      app:popEnterAnim="@anim/slide_in_left"
+      app:popExitAnim="@anim/fade_out"/>
+  </fragment>
+
+  <fragment
+    android:id="@+id/testBrushingSessionFragment"
+    android:label="@string/test_brushing_screen_title"
+    android:name="com.kolibree.android.sba.testbrushing.session.TestBrushingSessionFragment"
+    tools:layout="@layout/fragment_brush_start">
+    <action
+      android:id="@+id/action_testBrushSessionFragment_to_testBrushingDuringSessionFragment"
+      app:destination="@id/testBrushingDuringSessionFragment"
+      app:enterAnim="@anim/slide_in_right"
+      app:exitAnim="@anim/fade_out"
+      app:popEnterAnim="@anim/slide_in_left"
+      app:popExitAnim="@anim/fade_out"/>
+  </fragment>
+
+  <fragment
+    android:id="@+id/testBrushingDuringSessionFragment"
+    android:label="@string/test_brushing_screen_title"
+    android:name="com.kolibree.android.sba.testbrushing.duringsession.TestBrushingDuringSessionFragment"
+    tools:layout="@layout/fragment_test_brushing_during_session">
+    <action
+      android:id="@+id/action_testBrushingDuringSessionFragment_to_optimizeAnalysisFragment"
+      app:destination="@id/optimizeAnalysisFragment"
+      app:enterAnim="@anim/slide_in_right"
+      app:exitAnim="@anim/fade_out"
+      app:popEnterAnim="@anim/slide_in_left"
+      app:popExitAnim="@anim/fade_out"
+      app:popUpTo="@+id/testBrushingSessionFragment"/>
+  </fragment>
+
+  <fragment
+    android:id="@+id/optimizeAnalysisFragment"
+    android:label="@string/test_brushing_screen_title"
+    android:name="com.kolibree.android.sba.testbrushing.optimize.OptimizeAnalysisFragment"
+    tools:layout="@layout/fragment_optimize_analysis">
+    <action
+      android:id="@+id/action_optimizeAnalysisFragment_to_testBrushProgressFragment"
+      app:destination="@id/testBrushProgressFragment"
+      app:enterAnim="@anim/slide_in_right"
+      app:exitAnim="@anim/fade_out"
+      app:popEnterAnim="@anim/slide_in_left"
+      app:popExitAnim="@anim/fade_out"/>
+  </fragment>
+
+  <fragment
+    android:id="@+id/testBrushProgressFragment"
+    android:label="@string/test_brushing_analysis_screen_title"
+    android:name="com.kolibree.android.sba.testbrushing.progress.TestBrushProgressFragment"
+    tools:layout="@layout/fragment_test_brush_progress">
+    <action
+      android:id="@+id/action_testBrushProgressFragment_to_resultsFragment"
+      app:destination="@id/resultsFragment"
+      app:enterAnim="@anim/slide_in_right"
+      app:exitAnim="@anim/fade_out"
+      app:popEnterAnim="@anim/slide_in_left"
+      app:popExitAnim="@anim/fade_out"
+      app:popUpTo="@+id/optimizeAnalysisFragment"/>
+    <action
+      android:id="@+id/action_testBrushProgressFragment_to_mouthMapFragment"
+      app:destination="@id/plaqlessResultFragment"
+      app:enterAnim="@anim/slide_in_right"
+      app:exitAnim="@anim/fade_out"
+      app:popEnterAnim="@anim/slide_in_left"
+      app:popExitAnim="@anim/fade_out"
+      app:popUpTo="@+id/optimizeAnalysisFragment"/>
+  </fragment>
+
+  <fragment
+    android:id="@+id/resultsFragment"
+    android:label="@string/test_brushing_analysis_screen_title"
+    android:name="com.kolibree.android.sba.testbrushing.results.ResultsFragment"
+    tools:layout="@layout/fragment_results"/>
+
+  <fragment
+    android:id="@+id/plaqlessResultFragment"
+    android:label="@string/test_brushing_analysis_screen_title"
+    android:name="com.kolibree.android.sba.testbrushing.results.plaqless.PlaqlessResultsFragment"
+    tools:layout="@layout/fragment_plaqless_results"/>
+
+</navigation>

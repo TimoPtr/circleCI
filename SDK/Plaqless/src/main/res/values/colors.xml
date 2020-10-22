@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2019 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~ Proprietary and confidential
+  -->
+
+<resources>
+  <color name="plaqless_background_dark">#2b3046</color>
+  <color name="plaqless_background_midnight">#010416</color>
+  <color name="plaqless_intro_types">#1D2F49</color>
+  <color name="plaqless_intro_start">#DAE1FF</color>
+  <color name="plaqless_intro_start_dark">#B7BFDD</color>
+  <color name="plaqless_intro_type_background">#182945</color>
+  <color name="plaqless_intro_type_cleaned">#E3E3E3</color>
+  <color name="plaqless_intro_type_remains">#008CFF</color>
+  <color name="plaqless_intro_type_missed">#F5B80F</color>
+  <color name="plaqless_gray">#5C5C5C</color>
+  <color name="plaqless_white_semi_transparent">#80FFFFFF</color>
+  <color name="slide_2_background_color">#4A506F</color>
+  <color name="slide_2_blue1">#5EC5FF</color>
+  <color name="slide_2_blue2">#456BFF</color>
+  <color name="slide_2_red1">#FF5B4E</color>
+  <color name="slide_2_red2">#EA372A</color>
+  <color name="slide_3_blue">#A5BBFF</color>
+</resources>

@@ -1,0 +1,73 @@
+<!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+  android:width="190dp"
+  android:height="56dp"
+  android:viewportWidth="190"
+  android:viewportHeight="56">
+  <group>
+    <path
+      android:fillAlpha="0"
+      android:fillColor="#FF000000"
+      android:pathData="M6.284,19.276C16.86,19.276 22.098,28.384 22.098,35.147C22.098,37.35 22.111,51.749 22.111,51.749"
+      android:strokeWidth="8"
+      android:strokeColor="#e75650"
+      android:strokeLineCap="round"
+      android:strokeLineJoin="miter" />
+    <path
+      android:fillAlpha="0"
+      android:fillColor="#FF000000"
+      android:pathData="M21.748,51.513C21.748,51.513 21.771,36.661 21.771,35.223C21.771,28.802 27.045,19.388 38.16,19.388C48.995,19.388 54.362,28.434 54.362,35.15C54.362,37.338 54.375,51.638 54.375,51.638"
+      android:strokeWidth="8"
+      android:strokeColor="#e75650"
+      android:strokeLineCap="round"
+      android:strokeLineJoin="miter" />
+    <path
+      android:fillAlpha="0"
+      android:fillColor="#FF000000"
+      android:pathData="M54.373,51.513C54.373,51.513 54.396,36.661 54.396,35.223C54.396,28.802 59.67,19.388 70.785,19.388C81.62,19.388 86.987,28.434 86.987,35.15C86.987,37.338 87,51.638 87,51.638"
+      android:strokeWidth="8"
+      android:strokeColor="#e75650"
+      android:strokeLineCap="round"
+      android:strokeLineJoin="miter" />
+    <path
+      android:fillAlpha="0"
+      android:fillColor="#FF000000"
+      android:pathData="M86.748,51.513C86.748,51.513 86.771,36.661 86.771,35.223C86.771,28.802 92.045,19.388 103.16,19.388C113.995,19.388 119.362,28.434 119.362,35.15C119.362,37.338 119.375,51.638 119.375,51.638"
+      android:strokeWidth="8"
+      android:strokeColor="#e75650"
+      android:strokeLineCap="round"
+      android:strokeLineJoin="miter" />
+    <path
+      android:fillAlpha="0"
+      android:fillColor="#FF000000"
+      android:pathData="M151.862,51.623C151.862,51.623 151.838,36.668 151.838,35.22C151.838,28.755 146.609,19.276 135.591,19.276C124.848,19.276 119.527,28.384 119.527,35.147C119.527,37.35 119.514,51.749 119.514,51.749"
+      android:strokeWidth="8"
+      android:strokeColor="#e75650"
+      android:strokeLineCap="round"
+      android:strokeLineJoin="miter" />
+    <path
+      android:fillAlpha="0"
+      android:fillColor="#FF000000"
+      android:pathData="M168.411,19.294C168.142,19.282 167.868,19.276 167.591,19.276C156.848,19.276 151.527,28.384 151.527,35.147C151.527,37.35 151.514,51.749 151.514,51.749"
+      android:strokeWidth="8"
+      android:strokeColor="#e75650"
+      android:strokeLineCap="round"
+      android:strokeLineJoin="miter" />
+    <path
+      android:fillAlpha="0"
+      android:fillColor="#FF000000"
+      android:pathData="M168.411,19.356C168.142,19.344 167.868,19.338 167.591,19.338C167.483,19.338 167.375,19.339 167.269,19.341"
+      android:strokeWidth="8"
+      android:strokeColor="#73CECA"
+      android:strokeLineCap="round"
+      android:strokeLineJoin="miter" />
+  </group>
+</vector>

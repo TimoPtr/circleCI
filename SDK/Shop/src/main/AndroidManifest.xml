@@ -1,0 +1,26 @@
+<!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.kolibree.android.shop">
+
+  <application>
+    <meta-data
+      android:name="com.google.android.gms.wallet.api.enabled"
+      android:value="true"/>
+
+    <activity
+      android:name="com.kolibree.android.shop.presentation.checkout.CheckoutActivity"
+      android:label="@string/checkout_toolbar_title"
+      android:screenOrientation="portrait"
+      android:theme="@style/AppTheme.Light"
+      tools:ignore="MissingClass"/>
+  </application>
+</manifest>

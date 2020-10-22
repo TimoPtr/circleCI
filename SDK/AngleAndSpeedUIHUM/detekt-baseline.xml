@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <Blacklist></Blacklist>
+  <Whitelist>
+    <ID>MagicNumber:MindYourSpeedViewState.kt$Stage.COMPLETED$3</ID>
+    <ID>MagicNumber:SpeedometerBindingAdapterExt.kt$50f</ID>
+  </Whitelist>
+</SmellBaseline>

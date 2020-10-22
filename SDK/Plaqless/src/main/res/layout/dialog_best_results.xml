@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2019 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:gravity="center"
+  android:paddingStart="@dimen/rounded_dialog_margin_big"
+  android:paddingEnd="@dimen/rounded_dialog_margin_big"
+  android:orientation="vertical">
+
+  <TextView
+    android:textStyle="bold"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/rounded_dialog_margin_normal"
+    android:layout_marginBottom="@dimen/rounded_dialog_margin_big"
+    android:text="@string/pql_best_results_title"
+    android:textColor="@android:color/black"
+    android:textSize="@dimen/xxxbig_text"/>
+
+  <TextView
+    android:id="@+id/best_results_body"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/average_margin"
+    android:gravity="center"
+    tools:text="@string/pql_best_results_body"
+    android:textColor="@color/black"
+    android:textSize="@dimen/big_text"/>
+
+  <ImageView
+    android:id="@+id/best_results_instruction"
+    android:layout_width="@dimen/best_result_preview_width"
+    android:layout_height="@dimen/best_result_preview_height"
+    android:layout_marginTop="@dimen/rounded_dialog_margin_normal"
+    android:layout_marginBottom="@dimen/rounded_dialog_margin_big"
+    android:layout_marginStart="@dimen/rounded_dialog_margin_big"
+    android:layout_marginEnd="@dimen/rounded_dialog_margin_big"
+    tools:ignore="ContentDescription"/>
+
+  <Button
+    style="@style/WhiteRoundButton"
+    android:id="@+id/best_results_ok"
+    android:layout_height="@dimen/round_button_height"
+    android:layout_width="match_parent"
+    android:layout_marginTop="@dimen/rounded_dialog_margin_big"
+    android:layout_marginBottom="@dimen/rounded_dialog_margin_big"
+    android:text="@string/read_diagram_dialog_ok"
+    android:textStyle="bold"
+    android:textSize="@dimen/xnormal_text"/>
+
+</LinearLayout>

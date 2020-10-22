@@ -1,0 +1,165 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "3bdd69a1adcbe5007b1e48950f53ab49",
+    "entities": [
+      {
+        "tableName": "question_of_the_day",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`question_id` INTEGER NOT NULL, `question_profile_id` INTEGER NOT NULL, `question_text` TEXT NOT NULL, `question_answered` INTEGER NOT NULL, `question_expiration_timestamp` INTEGER NOT NULL, `question_expiration_zone_offset` TEXT NOT NULL, PRIMARY KEY(`question_id`, `question_profile_id`))",
+        "fields": [
+          {
+            "fieldPath": "questionId",
+            "columnName": "question_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "questionProfileId",
+            "columnName": "question_profile_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "questionText",
+            "columnName": "question_text",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "questionAnswered",
+            "columnName": "question_answered",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "questionExpirationTimestamp",
+            "columnName": "question_expiration_timestamp",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "questionExpirationZoneOffset",
+            "columnName": "question_expiration_zone_offset",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "question_id",
+            "question_profile_id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [
+          {
+            "name": "index_question_of_the_day_question_id",
+            "unique": false,
+            "columnNames": [
+              "question_id"
+            ],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_question_of_the_day_question_id` ON `${TABLE_NAME}` (`question_id`)"
+          },
+          {
+            "name": "index_question_of_the_day_question_profile_id",
+            "unique": false,
+            "columnNames": [
+              "question_profile_id"
+            ],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_question_of_the_day_question_profile_id` ON `${TABLE_NAME}` (`question_profile_id`)"
+          }
+        ],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "answer",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`answer_id` INTEGER NOT NULL, `answer_question_id` INTEGER NOT NULL, `answer_profile_id` INTEGER NOT NULL, `answer_text` TEXT NOT NULL, `answer_is_correct` INTEGER NOT NULL, PRIMARY KEY(`answer_id`), FOREIGN KEY(`answer_question_id`, `answer_profile_id`) REFERENCES `question_of_the_day`(`question_id`, `question_profile_id`) ON UPDATE NO ACTION ON DELETE CASCADE )",
+        "fields": [
+          {
+            "fieldPath": "answerId",
+            "columnName": "answer_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "questionId",
+            "columnName": "answer_question_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "questionProfileId",
+            "columnName": "answer_profile_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "answerText",
+            "columnName": "answer_text",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isCorrect",
+            "columnName": "answer_is_correct",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "answer_id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [
+          {
+            "name": "index_answer_answer_id",
+            "unique": false,
+            "columnNames": [
+              "answer_id"
+            ],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_answer_answer_id` ON `${TABLE_NAME}` (`answer_id`)"
+          },
+          {
+            "name": "index_answer_answer_question_id",
+            "unique": false,
+            "columnNames": [
+              "answer_question_id"
+            ],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_answer_answer_question_id` ON `${TABLE_NAME}` (`answer_question_id`)"
+          },
+          {
+            "name": "index_answer_answer_profile_id",
+            "unique": false,
+            "columnNames": [
+              "answer_profile_id"
+            ],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_answer_answer_profile_id` ON `${TABLE_NAME}` (`answer_profile_id`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "question_of_the_day",
+            "onDelete": "CASCADE",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "answer_question_id",
+              "answer_profile_id"
+            ],
+            "referencedColumns": [
+              "question_id",
+              "question_profile_id"
+            ]
+          }
+        ]
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '3bdd69a1adcbe5007b1e48950f53ab49')"
+    ]
+  }
+}

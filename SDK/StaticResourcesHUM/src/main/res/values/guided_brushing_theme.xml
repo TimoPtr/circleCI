@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<resources>
+
+  <style name="GuidedBrushingTheme" parent="AppTheme.Inverse.Teal.TranslucentNavigation">
+    <item name="backgroundColor">@color/downy</item>
+    <item name="android:windowBackground">@color/downy</item>
+    <item name="guidedBrushingTitleColor">@color/white</item>
+    <item name="colorPrimary">@color/white</item>
+    <item name="guidedBrushingDirectionLegendBackgroundColor">@color/seafoam</item>
+    <item name="guidedBrushingIconColor">@color/white</item>
+    <item name="zoneForegroundColor">@color/white</item>
+    <item name="zoneBackgroundColor">@color/dark_blue</item>
+    <item name="zoneOngoingForegroundColor">@color/east_side</item>
+    <item name="zoneOngoingBackgroundColor">@color/seafoam</item>
+    <item name="timerTextAppearance">@style/TextAppearance.Headline2</item>
+  </style>
+
+</resources>

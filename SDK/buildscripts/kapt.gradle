@@ -1,0 +1,52 @@
+apply plugin: 'kotlin-kapt'
+
+android {
+    kapt {
+        useBuildCache = true
+
+        //helps identifying real causes of weird issues, such as NonExistentClass in dagger
+        //https://kotlinlang.org/docs/reference/kapt.html
+        correctErrorTypes true
+
+        arguments {
+            // According to https://google.github.io/dagger/compiler-options.html, fastInit may
+            // improve application component start time. This has to be confirmed before enabling.
+            // TODO enable if faster app component startup is confirmed.
+            arg('dagger.fastInit', 'disabled')
+
+            // Disabling automatic code formatting will save few seconds during compilation.
+            // Although, this should not be used in production, as it may cause unreadable
+            // stacktraces.
+            //
+            // TODO find a way to change this value per variant
+            //
+            // Source:
+            // https://google.github.io/dagger/compiler-options.html
+            // https://github.com/google/dagger/issues/368
+
+            arg('dagger.formatGeneratedSource', 'disabled')
+            arg('dagger.experimentalDaggerErrorMessages', 'enabled')
+            /*
+            Fix for https://github.com/google/dagger/issues/970
+
+            Given 3 modules A, B and C, where
+            - B depends on A
+            - C depends on B
+
+            Dagger complained that C didn't know about classes in A
+
+            By ignoring transitive dependencies, we can keep A as an implementation detail of B
+             */
+            arg('dagger.validateTransitiveComponentDependencies', 'disabled')
+
+            // https://developer.android.com/jetpack/androidx/releases/room#compiler-options
+            arg('room.incremental', 'true')
+        }
+
+        javacOptions {
+            // Increase the max count of errors from annotation processors.
+            // Default is 100.
+            option("-Xmaxerrs", 500)
+        }
+    }
+}

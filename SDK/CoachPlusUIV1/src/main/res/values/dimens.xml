@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2019 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<resources>
+  <dimen name="coach_plus_progress_size">90dp</dimen>
+  <dimen name="coach_plus_feedback_height">65dp</dimen>
+  <dimen name="coach_plus_image_size">105dp</dimen>
+  <dimen name="coach_plus_minimum_gradient">4dp</dimen>
+  <dimen name="coach_plus_feedback_corners_radius">8dp</dimen>
+  <dimen name="coach_plus_feedback_text_padding">70dp</dimen>
+  <dimen name="coach_plus_brushing_mode_dialog_option_radius">6dp</dimen>
+</resources>

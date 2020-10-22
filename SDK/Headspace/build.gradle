@@ -1,0 +1,71 @@
+apply plugin: 'com.android.library'
+
+apply from: '../buildscripts/kapt.gradle'
+
+android {
+    sourceSets {
+        androidTest {
+            java.srcDirs = ['src/androidTest/kotlin']
+        }
+    }
+
+    androidExtensions {
+        experimental = true
+    }
+
+    buildFeatures {
+        dataBinding = true
+    }
+}
+
+//This is private API module -  do not remove this unless discussed and agreed with the team
+publisher.skipDeployment = true
+
+dependencies {
+    implementation project(path: ':partnerships')
+
+    implementation project(path: ':static-resources')
+    implementation project(path: ':static-resources-branded')
+
+    implementation project(path: ':features')
+    implementation project(path: ':commons')
+    implementation project(path: ':tracker-domain')
+    implementation project(path: ':account-internal')
+    implementation project(path: ':base-ui')
+    implementation project(path: ':base-ui-hum')
+    implementation project(path: ':databinding')
+    implementation project(path: ':dynamic-cards')
+
+    implementation libraries.rxJava
+    implementation libraries.rxAndroid
+    implementation libraries.rxRelay
+    implementation libraries.rxLint
+
+    implementation libraries.lifecycleRuntime
+    implementation libraries.lifecycleExtensions
+    implementation libraries.lifecycleReactiveStreams
+    implementation libraries.lifecycleJava8
+
+    implementation libraries.supportRecyclerView
+    implementation libraries.supportDesign
+    implementation libraries.supportConstraintLayout
+    implementation libraries.ktxCore
+    implementation libraries.fragmentKtx
+    implementation libraries.activityKtx
+
+    implementation libraries.threetenAbp
+    implementation libraries.lottie
+
+    implementation libraries.dagger
+    implementation libraries.daggerAndroid
+    implementation libraries.daggerAndroidSupport
+    kapt libraries.daggerCompiler
+    kapt libraries.daggerAndroidProcessor
+
+    testImplementation project(path: ':testing-unit-base')
+    testImplementation libraries.mockitoKotlin2
+
+    androidTestImplementation project(path: ':testing-shared')
+    androidTestImplementation libraries.supportTestRunner
+    androidTestImplementation libraries.supportTestRules
+}

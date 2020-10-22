@@ -1,0 +1,64 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "17f04fa41a7b9d1e484e1b4b440f8042",
+    "entities": [
+      {
+        "tableName": "tutorial",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`profileid` INTEGER NOT NULL, `hasseenpiratetuto` INTEGER NOT NULL, `hasseenpiratetrailer` INTEGER NOT NULL, `hasseenpiratecompletetrailer` INTEGER NOT NULL, `hasseenbreefirstmessage` INTEGER NOT NULL, `gotabadgewithlastbrushing` INTEGER NOT NULL, PRIMARY KEY(`profileid`))",
+        "fields": [
+          {
+            "fieldPath": "profileId",
+            "columnName": "profileid",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "hasSeenPirateTuto",
+            "columnName": "hasseenpiratetuto",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "hasSeenPirateTrailer",
+            "columnName": "hasseenpiratetrailer",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "hasSeenPirateCompleteTrailer",
+            "columnName": "hasseenpiratecompletetrailer",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "hasSeenBreeFirstMessage",
+            "columnName": "hasseenbreefirstmessage",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "gotABadgeWithLastBrushing",
+            "columnName": "gotabadgewithlastbrushing",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "profileid"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '17f04fa41a7b9d1e484e1b4b440f8042')"
+    ]
+  }
+}

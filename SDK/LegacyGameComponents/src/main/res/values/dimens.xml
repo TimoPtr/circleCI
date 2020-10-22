@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2019 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<resources>
+  <dimen name="brush_start_electric_brush_desc_min_height">60dp</dimen>
+  <dimen name="brush_start_manual_brush_desc_min_height">120dp</dimen>
+
+  <dimen name="separator_height">3dp</dimen>
+
+  <dimen name="finish_dialog_button_min_width">115dp</dimen>
+  <dimen name="finish_dialog_small_padding">3dp</dimen>
+
+  <dimen name="toothbrush_picker_width">250dp</dimen>
+  <dimen name="toothbrush_picker_text_width">200dp</dimen>
+  <dimen name="toothbrush_picker_icon_size">@dimen/min_touch_zone</dimen>
+  <dimen name="toothbrush_picker_main_icon_size">50dp</dimen>
+  <dimen name="toothbrush_picker_padding">10dp</dimen>
+  <dimen name="toothbrush_picker_item_height">48dp</dimen>
+  <dimen name="toothbrush_picker_item_divider">1px</dimen>
+
+  <dimen name="read_dialog_direction_min_width">50dp</dimen>
+  <dimen name="read_dialog_direction_radius">10dp</dimen>
+  <dimen name="read_dialog_ok_width">200dp</dimen>
+</resources>

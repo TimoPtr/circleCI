@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <item android:drawable="@drawable/splash_screen_background"/>
+
+  <!--Adding a small space at the bottom makes the colgate logo above the navigation bar
+  on all devices-->
+  <item android:drawable="@drawable/ic_splash_screen"
+    android:gravity="center"/>
+
+  <item android:drawable="@drawable/ic_splash_screen_bottom"
+    android:gravity="center"
+    android:bottom="@dimen/dot_twenty"/>
+</layer-list>

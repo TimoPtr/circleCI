@@ -1,0 +1,77 @@
+apply plugin: 'com.android.library'
+
+apply from: '../buildscripts/kapt.gradle'
+
+android {
+    buildFeatures {
+        dataBinding = true
+    }
+
+    androidExtensions {
+        experimental = true
+    }
+    sourceSets {
+        test {
+            java.srcDirs += ['src/test/java', 'src/test/kotlin']
+        }
+        androidTest {
+            java.srcDirs += ['src/androidTest/java', 'src/androidTest/kotlin']
+        }
+    }
+}
+
+dependencies {
+    implementation project(path: ':coach-plus-logic')
+
+    implementation project(path: ':annotation')
+    implementation project(path: ':features')
+    implementation project(path: ':commons')
+    implementation project(path: ':databinding')
+    implementation project(path: ':game')
+    implementation project(path: ':jaws')
+    implementation project(path: ':web-service-sdk')
+    implementation project(path: ':processed-brushings-kml')
+    implementation project(path: ':toothbrush-sdk')
+    implementation project(path: ':tracker-domain')
+
+    implementation project(path: ':base-ui')
+    implementation project(path: ':base-ui-v1')
+    implementation project(path: ':static-resources')
+    implementation project(path: ':static-resources-v1')
+    implementation project(path: ':legacy-game-components')
+    implementation project(path: ':translations-support')
+
+    implementation libraries.supportAppCompat
+    implementation libraries.supportAnnotations
+    implementation libraries.supportConstraintLayout
+
+    implementation libraries.kotlinRuntime
+
+    implementation libraries.rxJava
+    implementation libraries.rxAndroid
+    implementation libraries.rxLint
+
+    implementation libraries.threetenAbp
+
+    implementation libraries.glide
+
+    implementation libraries.dagger
+    kapt libraries.daggerCompiler
+    implementation libraries.daggerAndroid
+    kapt libraries.daggerAndroidProcessor
+    implementation libraries.daggerAndroidSupport
+
+    implementation libraries.lifecycleExtensions
+
+    testImplementation project(path: ':testing-unit-base')
+    testImplementation project(path: ':testing-builders')
+    testImplementation libraries.junit
+    testImplementation libraries.dagger
+
+    androidTestImplementation project(path: ':testing-shared')
+    androidTestImplementation libraries.mockitoKotlin2
+    androidTestImplementation libraries.mockitoAndroid
+    androidTestImplementation libraries.roomTesting
+    androidTestImplementation libraries.supportTestRunner
+    androidTestImplementation libraries.supportTestRules
+}

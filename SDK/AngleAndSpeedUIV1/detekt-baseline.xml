@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <Blacklist></Blacklist>
+  <Whitelist>
+    <ID>LongMethod:MolarAnimation.kt$MolarAnimation$getSegment</ID>
+    <ID>LongMethod:MolarAnimation.kt$MolarAnimation$initPath</ID>
+    <ID>LongMethod:SpeedControlBrushingAdapter.kt$bindSpeed</ID>
+    <ID>LongMethod:SpeedControlBrushingViewState.kt$SpeedControlBrushingViewState$updateWith</ID>
+    <ID>MagicNumber:SpeedControlBrushingViewState.kt$Stage.COMPLETED$3</ID>
+  </Whitelist>
+</SmellBaseline>

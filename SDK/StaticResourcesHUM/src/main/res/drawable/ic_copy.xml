@@ -1,0 +1,19 @@
+<!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+  <path
+      android:pathData="M15.584,3.684L6.512,3.684C5.68,3.684 5,4.364 5,5.196L5,15.78h1.512L6.512,5.196h9.072L15.584,3.684zM17.852,6.708L9.536,6.708c-0.832,0 -1.512,0.68 -1.512,1.512v10.584c0,0.831 0.68,1.512 1.512,1.512h8.316c0.831,0 1.512,-0.68 1.512,-1.512L19.364,8.22c0,-0.831 -0.68,-1.512 -1.512,-1.512zM9.536,18.804h8.316L17.852,8.22L9.536,8.22v10.584z"
+      android:fillColor="#FFFFFF"
+      android:fillType="evenOdd"/>
+</vector>

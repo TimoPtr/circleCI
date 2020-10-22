@@ -1,0 +1,54 @@
+{
+  "smiles_profile_history": [
+    {
+      "event_type": "Challenge completed",
+      "creation_time": "2018-12-20T12:50:24.361950+00:00",
+      "message": "You have completed a challenge",
+      "smiles_rewards": 1,
+      "challenge_id": 23705
+    },
+    {
+      "event_type": "Brushing session",
+      "creation_time": "2018-12-20T12:50:24.361950+00:00",
+      "message": "You have a brushing session",
+      "smiles_rewards": 2,
+      "brushing_type": "Coach",
+      "brushing_id": 2
+    },
+    {
+      "event_type": "Tier reached",
+      "creation_time": "2018-12-20T12:50:24.361950+00:00",
+      "message": "You have reached Silver Tier",
+      "smiles_rewards": 3,
+      "tier_id": 2
+    },
+    {
+      "event_type": "Smiles redeemed",
+      "creation_time": "2018-12-20T12:50:24.361950+00:00",
+      "message": "You have redeemed smiles",
+      "smiles_rewards": 4,
+      "rewards_id": 2
+    },
+    {
+      "event_type": "Smiles transfer",
+      "creation_time": "2018-12-20T12:50:24.361950+00:00",
+      "message": "You have redeemed smiles",
+      "smiles_rewards": 5,
+      "profile_id": 2
+    },
+    {
+      "event_type": "Crown completed",
+      "creation_time": "2018-12-20T12:50:24.361950+00:00",
+      "message": "You have completed a crown",
+      "smiles_rewards": 6,
+      "profile_id": 2
+    },
+    {
+      "event_type": "Streak completed",
+      "creation_time": "2018-12-20T12:50:24.361950+00:00",
+      "message": "You have completed a streak",
+      "smiles_rewards": 7,
+      "profile_id": 2
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="test_angles_degrees_format" translatable="false">%d°</string>
+  <string name="speed_control_remaining_time_format" translatable="false">00:%02d</string>
+</resources>

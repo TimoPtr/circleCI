@@ -1,0 +1,228 @@
+{
+    "LoMolLeOcc": {
+        "centers": [
+            [
+                180
+            ],
+            [
+                -180
+            ]
+        ],
+        "gains": [
+            [
+                25
+            ],
+            [
+                25
+            ]
+        ]
+    },
+    "LoMolLeExt": {
+        "centers": [
+            [
+                -125
+            ]
+        ],
+        "gains": [
+            [
+                25
+            ]
+        ]
+    },
+    "LoMolLeInt": {
+        "centers": [
+            [
+                125
+            ]
+        ],
+        "gains": [
+            [
+                25
+            ]
+        ]
+    },
+    "LoMolRiOcc": {
+        "centers": [
+            [
+                180
+            ],
+            [
+                -180
+            ]
+        ],
+        "gains": [
+            [
+                25
+            ],
+            [
+                25
+            ]
+        ]
+    },
+    "LoMolRiExt": {
+        "centers": [
+            [
+                125
+            ]
+        ],
+        "gains": [
+            [
+                25
+            ]
+        ]
+    },
+    "LoMolRiInt": {
+        "centers": [
+            [
+                -125
+            ]
+        ],
+        "gains": [
+            [
+                25
+            ]
+        ]
+    },
+    "LoIncExt": {
+        "centers": [
+            [
+                -125
+            ],
+            [
+                125
+            ]
+        ],
+        "gains": [
+            [
+                25
+            ],
+            [
+                25
+            ]
+        ]
+    },
+    "LoIncInt": {
+        "centers": [
+            [
+                180
+            ],
+            [
+                -180
+            ]
+        ],
+        "gains": [
+            [
+                25
+            ],
+            [
+                25
+            ]
+        ]
+    },
+    "UpMolLeOcc": {
+        "centers": [
+            [
+                0
+            ]
+        ],
+        "gains": [
+            [
+                25
+            ]
+        ]
+    },
+    "UpMolLeExt": {
+        "centers": [
+            [
+                -55
+            ]
+        ],
+        "gains": [
+            [
+                25
+            ]
+        ]
+    },
+    "UpMolLeInt": {
+        "centers": [
+            [
+                55
+            ]
+        ],
+        "gains": [
+            [
+                25
+            ]
+        ]
+    },
+    "UpMolRiOcc": {
+        "centers": [
+            [
+                0
+            ]
+        ],
+        "gains": [
+            [
+                25
+            ]
+        ]
+    },
+    "UpMolRiExt": {
+        "centers": [
+            [
+                55
+            ]
+        ],
+        "gains": [
+            [
+                25
+            ]
+        ]
+    },
+    "UpMolRiInt": {
+        "centers": [
+            [
+                -55
+            ]
+        ],
+        "gains": [
+            [
+                25
+            ]
+        ]
+    },
+    "UpIncExt": {
+        "centers": [
+            [
+                -55
+            ],
+            [
+                55
+            ]
+        ],
+        "gains": [
+            [
+                25
+            ],
+            [
+                25
+            ]
+        ]
+    },
+    "UpIncInt": {
+        "centers": [
+            [
+                0
+            ]
+        ],
+        "gains": [
+            [
+                25
+            ]
+        ]
+    },
+    "version": 1,
+    "revision": 0,
+    "type": "kpi",
+    "threshold": 1
+}

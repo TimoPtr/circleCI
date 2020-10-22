@@ -1,0 +1,82 @@
+apply plugin: 'com.android.library'
+
+apply from: '../buildscripts/kapt.gradle'
+
+android {
+    defaultConfig {
+        kapt {
+            arguments {
+                arg("room.schemaLocation", "$projectDir/schemas".toString())
+            }
+        }
+    }
+
+    sourceSets {
+        //this folder will contained shared resources
+        String sharedTestDir = 'src/sharedTest/kotlin'
+        test {
+            java.srcDirs = ['src/test/kotlin', sharedTestDir]
+        }
+        androidTest {
+            java.srcDirs = ['src/androidTest/kotlin', sharedTestDir]
+            assets.srcDirs += files("$projectDir/schemas".toString())
+        }
+    }
+
+    androidExtensions {
+        experimental = true
+    }
+
+    lintOptions {
+        enable 'Interoperability'
+    }
+}
+
+dependencies {
+    implementation project(path: ':commons')
+    implementation project(path: ':processed-brushings-kml')
+
+    implementation project(path: ':web-service-sdk')
+
+    testImplementation project(path: ':testing-unit-base')
+    androidTestImplementation project(path: ':testing-shared')
+
+    implementation libraries.rxJava
+    implementation libraries.rxReplayShare
+    implementation libraries.rxLint
+
+    implementation libraries.timber
+
+    implementation libraries.threetenAbp
+
+    implementation libraries.dagger
+    kapt libraries.daggerCompiler
+
+    // room
+    implementation libraries.roomRuntime
+    implementation libraries.roomRxJava2
+    kapt libraries.roomCompiler
+
+    // Unit tests
+    testImplementation libraries.mockitoKotlin2
+    testImplementation project(path: ":testing-builders")
+
+    androidTestImplementation libraries.mockitoAndroid
+
+    androidTestImplementation libraries.roomTesting
+
+    androidTestImplementation libraries.roomTesting
+    androidTestImplementation libraries.supportTestRunner
+    androidTestImplementation libraries.supportTestRules
+    androidTestImplementation project(path: ':testing-shared')
+
+    testImplementation(libraries.architectureCoreTesting) {
+        exclude group: 'com.android.support', module: 'support-compat'
+        exclude group: 'com.android.support', module: 'support-annotations'
+    }
+    androidTestImplementation(libraries.architectureCoreTesting) {
+        exclude group: 'com.android.support', module: 'support-compat'
+        exclude group: 'com.android.support', module: 'support-annotations'
+    }
+}
+

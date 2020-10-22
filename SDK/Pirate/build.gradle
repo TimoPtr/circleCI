@@ -1,0 +1,52 @@
+apply plugin: 'com.android.library'
+
+apply from: '../buildscripts/kapt.gradle'
+
+android {
+    // We need BuildConfig or we get an error while minifying with R8
+    buildFeatures {
+        buildConfig = true
+    }
+}
+
+dependencies {
+    api project(path: ':pirate-logic')
+    
+    implementation project(path: ':commons')
+    implementation project(path: ':databinding')
+    implementation project(path: ':crypto')
+    implementation project(path: ':game')
+    implementation project(path: ':static-resources')
+    implementation project(path: ':static-resources-branded')
+    implementation project(path: ':base-ui')
+    implementation project(path: ':base-ui-hum')
+    implementation project(path: ':web-service-sdk')
+    implementation project(path: ':translations-support')
+    implementation project(path: ':processed-brushings-kml')
+    implementation project(path: ':toothbrush-sdk')
+    implementation project(path: ':tracker-domain')
+
+    implementation libraries.kotlinRuntime
+
+    implementation libraries.rxJava
+    implementation libraries.rxAndroid
+    implementation libraries.rxLint
+    implementation libraries.rxLint
+
+    implementation libraries.timber
+
+    implementation libraries.dagger
+    kapt libraries.daggerCompiler
+    implementation libraries.daggerAndroid
+    kapt libraries.daggerAndroidProcessor
+    implementation libraries.daggerAndroidSupport
+
+    implementation libraries.lifecycleExtensions
+
+    implementation libraries.threetenAbp
+
+    testImplementation project(path: ':testing-unit-base')
+    testImplementation project(path: ':testing-builders')
+    testImplementation libraries.junit
+    testImplementation libraries.mockitoKotlin2
+}

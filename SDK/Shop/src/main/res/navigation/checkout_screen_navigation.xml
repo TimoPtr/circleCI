@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/home_screen_bottom_navigation"
+  app:startDestination="@id/cart_navigation"
+  tools:ignore="UnusedResources">
+
+  <fragment
+    android:id="@+id/cart_navigation"
+    android:name="com.kolibree.android.shop.presentation.checkout.cart.ShopCartFragment"
+    android:label="@string/cart_tolbar_title"
+    tools:layout="@layout/fragment_shop_cart">
+    <action
+      android:id="@+id/action_cart_navigation_to_another_payment_navigation"
+      app:destination="@id/another_payment_navigation"
+      app:enterAnim="@anim/hum_fragment_enter"
+      app:exitAnim="@anim/hum_fragment_exit"
+      app:popEnterAnim="@anim/hum_fragment_pop_enter"
+      app:popExitAnim="@anim/hum_fragment_pop_exit" />
+
+    <action
+      android:id="@+id/action_cart_navigation_to_shipping_and_billing"
+      app:destination="@id/shipping_billing_navigation"
+      app:enterAnim="@anim/hum_fragment_enter"
+      app:exitAnim="@anim/hum_fragment_exit"
+      app:popEnterAnim="@anim/hum_fragment_pop_enter"
+      app:popExitAnim="@anim/hum_fragment_pop_exit" />
+  </fragment>
+
+  <fragment
+    android:id="@+id/shipping_billing_navigation"
+    android:name="com.kolibree.android.shop.presentation.checkout.shipping.ShippingBillingFragment"
+    android:label="@string/shipping_billing_title"
+    tools:layout="@layout/fragment_shipping_billing" />
+
+  <fragment
+    android:id="@+id/another_payment_navigation"
+    android:name="com.kolibree.android.shop.presentation.checkout.payment.AnotherPaymentFragment"
+    android:label="@string/shop_web_payment_toolbar_title"
+    tools:layout="@layout/fragment_another_payment" />
+
+</navigation>

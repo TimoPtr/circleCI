@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout>
+
+  <data>
+
+    <variable
+      name="viewModel"
+      type="com.kolibree.android.headspace.mindful.ui.HeadspaceMindfulMomentViewModel" />
+
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/headspace_mindful_moment_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:backgroundColorDefault="@{@color/headspace_orange}"
+    app:backgroundColorString="@{viewModel.mindfulMoment.backgroundColorHexString}">
+
+    <com.google.android.material.appbar.MaterialToolbar
+      android:id="@+id/headspace_mindful_moment_toolbar"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:navigationIcon="@{@drawable/leading_icon}"
+      app:onBackNavigationClick="@{v -> viewModel.onCloseClick()}"
+      app:tintColorDefault="@{@color/white}"
+      app:tintColorString="@{viewModel.mindfulMoment.textColorHexString}"
+      app:title="@string/headspace_mindful_moment_title"
+      app:titleTextAppearance="?textAppearanceHeadline4" />
+
+    <com.airbnb.lottie.LottieAnimationView
+      android:id="@+id/headspace_mindful_moment_animation"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:adjustViewBounds="true"
+      android:scaleType="fitEnd"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:lottie_json="@{viewModel.mindfulMoment.animationJson}"
+      tools:src="@drawable/headspace_mindful_moment_sample_graphic" />
+
+    <TextView
+      android:id="@+id/headspace_mindful_moment_quote"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="@dimen/match_constraints"
+      android:layout_margin="@dimen/dot_quin"
+      android:fontFamily="@font/apercu_bold"
+      android:text="@{viewModel.mindfulMoment.quote}"
+      android:textAppearance="?textAppearanceHeadline2"
+      app:autoSizeMaxTextSize="@dimen/headspace_mindful_moment_max_font_size"
+      app:autoSizeMinTextSize="@dimen/headspace_mindful_moment_min_font_size"
+      app:autoSizeTextType="uniform"
+      app:layout_constraintBottom_toTopOf="@id/headspace_mindful_moment_animation"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/headspace_mindful_moment_toolbar"
+      app:textColorDefault="@{@color/white}"
+      app:textColorString="@{viewModel.mindfulMoment.textColorHexString}"
+      tools:text="Mindfulness is less about changing the mind and more about changing our perspective"
+      tools:textColor="@color/white" />
+
+    <Button
+      android:id="@+id/headspace_mindful_moment_share_btn"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_quin"
+      android:layout_marginEnd="@dimen/dot_quin"
+      android:layout_marginBottom="@dimen/dot_double"
+      android:backgroundTint="@color/headspace_dark_blue"
+      android:onClick="@{(v) -> viewModel.onShareClick()}"
+      android:text="@string/headspace_mindful_moment_share_btn"
+      android:textColor="@color/white"
+      app:layout_constraintBottom_toTopOf="@id/headspace_mindful_moment_collect_smile_btn"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+      android:id="@+id/headspace_mindful_moment_collect_smile_btn"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_quin"
+      android:layout_marginEnd="@dimen/dot_quin"
+      android:layout_marginBottom="@dimen/dot_quad"
+      android:onClick="@{(v) -> viewModel.onCollectSmilesClick()}"
+      android:text="@string/headspace_mindful_moment_collect_btn"
+      app:layout_constraintBottom_toTopOf="@id/view_bottom"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+      android:id="@+id/view_bottom"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="@dimen/zero"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

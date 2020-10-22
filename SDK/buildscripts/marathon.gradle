@@ -1,0 +1,41 @@
+apply plugin: 'marathon'
+
+marathon {
+    name = "Marathon"
+
+    poolingStrategy {
+        manufacturer = true
+    }
+    batchingStrategy {
+        fixedSize {
+            size = 200
+        }
+    }
+    flakinessStrategy {
+        probabilityBased {
+            minSuccessRate = 0.8
+            maxCount = 3
+        }
+    }
+    retryStrategy {
+        fixedQuota {
+            retryPerTestQuota = 3
+        }
+    }
+    preferableRecorderType = "screenshot"
+
+    fallbackToScreenshots = true
+    uncompletedTestRetryQuota = 10
+    autoGrantPermission = true
+    applicationPmClear = true
+    testApplicationPmClear = true
+    if (project.hasProperty('marathonClassName') && !project.marathonClassName.isEmpty()) {
+        filteringConfiguration {
+            whitelist {
+                fullyQualifiedClassnameFilter = [project.marathonClassName]
+            }
+        }
+    }
+
+    testOutputTimeoutMillis = 240000
+}

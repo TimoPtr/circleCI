@@ -1,0 +1,100 @@
+/*
+ * Copyright (c) 2019 Kolibree. All rights reserved
+ *
+ * Copying this file via any medium without the prior written consent of Kolibree is strictly
+ * prohibited
+ *
+ * Proprietary and confidential
+ */
+
+apply plugin: 'com.android.library'
+
+apply from: '../buildscripts/kapt.gradle'
+
+android {
+    defaultConfig {
+        kapt {
+            arguments {
+                arg("room.schemaLocation", "$projectDir/schemas".toString())
+            }
+        }
+    }
+
+    androidExtensions {
+        experimental = true
+    }
+
+    sourceSets {
+        androidTest {
+            java.srcDirs = ['src/androidTest/java', 'src/androidTest/kotlin']
+            assets.srcDirs += files("$projectDir/schemas".toString())
+        }
+    }
+
+    aaptOptions {
+        noCompress = ['.unity3d', '.ress', '.resource', '.obb', 'versions.json']
+        ignoreAssetsPattern = "!.svn:!.git:!.ds_store:!*.scc:.*:!CVS:!thumbs.db:!picasa.ini:!*~"
+    }
+
+    packagingOptions {
+        doNotStrip '/*.so'
+        doNotStrip '/*.a'
+    }
+    buildFeatures {
+        // We need BuildConfig or we get an error while minifying with R8
+        buildConfig = true
+        dataBinding = true
+    }
+}
+
+dependencies {
+    api libraries.gameLoader
+
+    implementation project(path: ':features')
+    implementation project(path: ':commons')
+    implementation project(path: ':databinding')
+    implementation project(path: ':toothbrush-sdk')
+    implementation project(path: ':auditor')
+
+    implementation project(path: ':web-service-sdk')
+    implementation project(path: ':processed-brushings-kml')
+
+    implementation project(path: ':static-resources')
+    implementation project(path: ':base-ui')
+    implementation project(path: ':translations-support')
+
+    implementation libraries.kotlinRuntime
+    implementation libraries.coroutines
+
+    implementation libraries.rxAndroid
+    implementation libraries.rxRelay
+
+    implementation libraries.timber
+    implementation libraries.threetenAbp
+
+    implementation libraries.lifecycleRuntime
+
+    implementation libraries.dagger
+    kapt libraries.daggerCompiler
+    implementation libraries.daggerAndroid
+
+    implementation libraries.roomRuntime
+    implementation libraries.roomRxJava2
+    kapt libraries.roomCompiler
+
+    testImplementation project(path: ':testing-unit-base')
+    testImplementation project(path: ':testing-builders')
+    testImplementation libraries.mockitoKotlin2
+    testImplementation libraries.coroutinesTest
+
+    androidTestImplementation project(path: ':testing-espresso-base')
+    androidTestImplementation project(path: ':testing-shared')
+    androidTestImplementation project(path: ":testing-builders")
+    androidTestImplementation libraries.mockitoKotlin2
+    androidTestImplementation libraries.kml
+    androidTestImplementation libraries.supportTestCore
+    androidTestImplementation libraries.supportTestRunner
+    androidTestImplementation libraries.supportTestRules
+    androidTestImplementation libraries.retrofitMock
+    androidTestImplementation libraries.mockWebServer
+}

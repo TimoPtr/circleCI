@@ -1,0 +1,18 @@
+//assumes dependencies.gradle has been imported
+
+apply plugin: "com.diffplug.spotless"
+
+spotless {
+    java {
+        googleJavaFormat()
+
+        removeUnusedImports()
+
+        target '**/*.java'
+    }
+    kotlin {
+        ktlint()
+
+        target '**/*.kt'
+    }
+}

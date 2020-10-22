@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="UnusedResources">
+
+  <!--
+  BUTTONS
+  -->
+
+  <style name="Widget.Button" parent="Widget.MaterialComponents.Button">
+    <item name="android:minHeight">@dimen/standard_touch_size</item>
+    <item name="android:textAppearance">@style/TextAppearance.Button</item>
+    <item name="shapeAppearance">@style/Widget.Button.Shape</item>
+  </style>
+
+  <style name="Widget.Button.Icon" parent="Widget.MaterialComponents.Button.Icon">
+    <item name="android:minHeight">@dimen/standard_touch_size</item>
+    <item name="android:textAppearance">@style/TextAppearance.Button</item>
+    <item name="shapeAppearance">@style/Widget.Button.Shape</item>
+    <item name="iconGravity">textStart</item>
+    <item name="iconPadding">@dimen/dot</item>
+  </style>
+
+  <style name="Widget.Button.OutlinedButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+    <item name="strokeColor">@color/selector_outlined_button_stroke_color</item>
+    <item name="android:minHeight">@dimen/standard_touch_size</item>
+    <item name="android:textAppearance">@style/TextAppearance.Button</item>
+    <item name="shapeAppearance">@style/Widget.Button.Shape</item>
+  </style>
+
+  <style name="Widget.Inverse.Button.OutlinedButton" parent="Widget.Button.OutlinedButton" />
+
+  <style name="Widget.Button.OutlinedButton.Icon" parent="Widget.MaterialComponents.Button.OutlinedButton.Icon">
+    <item name="strokeColor">@color/selector_outlined_button_stroke_color</item>
+    <item name="android:minHeight">@dimen/standard_touch_size</item>
+    <item name="android:textAppearance">@style/TextAppearance.Button</item>
+    <item name="shapeAppearance">@style/Widget.Button.Shape</item>
+    <item name="iconGravity">textStart</item>
+    <item name="iconPadding">@dimen/dot</item>
+  </style>
+
+  <style name="Widget.Inverse.Button.OutlinedButton.Icon" parent="Widget.Button.OutlinedButton.Icon" />
+
+  <style name="Widget.Button.TextButton" parent="Widget.MaterialComponents.Button.TextButton">
+    <item name="android:minHeight">@dimen/standard_touch_size</item>
+    <item name="android:textAppearance">@style/TextAppearance.Button</item>
+    <item name="shapeAppearance">@style/Widget.Button.Shape</item>
+  </style>
+
+  <style name="Widget.Button.TextButton.Secondary">
+    <item name="android:textColor">?android:textColorSecondary</item>
+  </style>
+
+  <style name="Widget.Button.TextButton.Tertiary">
+    <item name="android:textColor">?android:textColorTertiary</item>
+  </style>
+
+  <style name="Widget.RadioButton" parent="Widget.MaterialComponents.CompoundButton.RadioButton">
+    <item name="android:textAppearance">?textAppearanceHeadline6</item>
+    <item name="android:textColor">@color/selector_text_color_checkable</item>
+  </style>
+
+  <style name="Widget.Button.TextButton.Toolbox">
+    <item name="android:textColor">?android:textColorSecondary</item>
+    <item name="rippleColor">?rippleColorMono</item>
+  </style>
+
+  <!--
+  DIALOGS
+  -->
+
+  <style name="ShapeAppearanceOverlay.MaterialAlertDialog.Rounded" parent="">
+    <item name="cornerSize">32dp</item>
+  </style>
+
+  <style name="Widget.TextView" parent="" />
+
+  <style name="Widget.TextView.PointsAwarded">
+    <item name="android:background">@drawable/shape_rounded</item>
+    <item name="android:backgroundTint">@color/orange3</item>
+    <item name="android:ellipsize">end</item>
+    <item name="android:gravity">center</item>
+    <item name="android:maxLines">1</item>
+    <item name="android:minWidth">@dimen/dot_oct</item>
+    <item name="android:textColor">@color/white</item>
+    <item name="android:textAppearance">?textAppearanceSubtitle2</item>
+    <item name="android:paddingStart">@dimen/dot</item>
+    <item name="android:paddingTop">@dimen/dot_quarter</item>
+    <item name="android:paddingEnd">@dimen/dot</item>
+    <item name="android:paddingBottom">@dimen/dot_quarter</item>
+  </style>
+
+  <style name="Widget.TextView.PointsSpent" parent="Widget.TextView.PointsAwarded">
+    <item name="android:backgroundTint">@color/darkred</item>
+  </style>
+
+  <style name="Widget.TextView.NoPointsChanged" parent="Widget.TextView.PointsAwarded">
+    <item name="android:backgroundTint">@color/lightgray</item>
+  </style>
+
+  <style name="Widget.TextView.PointsNotAwardedInfo">
+    <item name="android:background">@drawable/shape_rounded_dot_half</item>
+    <item name="android:backgroundTint">@color/orange3_10</item>
+    <item name="android:textAppearance">?textAppearanceBody2</item>
+    <item name="android:textColor">@color/gray</item>
+  </style>
+
+  <style name="ThemeOverlay.Dialog" parent="ThemeOverlay.MaterialComponents.Dialog">
+    <item name="materialAlertDialogTitleTextStyle">@style/Widget.DialogTitleText</item>
+    <item name="alertDialogBodyTextStyle">@style/Widget.DialogBodyText</item>
+    <item name="alertDialogHeadlineStyle">@style/Widget.DialogHeadlineText</item>
+  </style>
+
+  <style name="Widget.DialogTitleText" parent="">
+    <item name="android:textAppearance">@style/TextAppearance.Headline4</item>
+    <item name="android:textColor">@color/charcoal</item>
+  </style>
+
+  <style name="Widget.DialogBodyText" parent="">
+    <item name="android:textAppearance">@style/TextAppearance.Body2</item>
+    <item name="android:textColor">@color/gray</item>
+  </style>
+
+  <style name="Widget.DialogHeadlineText" parent="">
+    <item name="android:textAppearance">@style/TextAppearance.Headline3</item>
+    <item name="android:textColor">@color/charcoal</item>
+  </style>
+
+  <style name="ThemeOverlay.Dialog.Inverse">
+    <item name="colorPrimary">@color/red</item>
+    <item name="colorAccent">@color/red</item>
+    <item name="android:textColorPrimary">@color/darkgray</item>
+    <item name="android:textColorSecondary">@color/charcoal</item>
+    <item name="android:textColorTertiary">@color/lightgray</item>
+    <item name="materialButtonStyle">@style/Widget.Button</item>
+    <item name="materialButtonOutlinedStyle">@style/Widget.Button.OutlinedButton</item>
+    <item name="materialButtonTextStyle">@style/Widget.Button.TextButton</item>
+    <item name="materialButtonTextStyleSecondary">
+      @style/Widget.Button.TextButton.Secondary
+    </item>
+    <item name="materialButtonTextStyleTertiary">
+      @style/Widget.Button.TextButton.Tertiary
+    </item>
+  </style>
+
+  <style name="ThemeOverlay.Toolbox" parent="">
+    <item name="backgroundColor">@color/black87</item>
+    <item name="android:textColorPrimary">@color/white</item>
+    <item name="android:textColorSecondary">@color/gray</item>
+    <item name="backgroundTint">@color/white</item>
+    <item name="materialButtonStyle">@style/Widget.Button.TextButton.Toolbox</item>
+  </style>
+  <!--
+  INPUT FIELDS
+  -->
+
+  <style name="Widget.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+    <item name="materialThemeOverlay">@style/ThemeOverlay.TextInputLayout</item>
+
+    <item name="boxStrokeColor">@color/selector_input_stroke_color</item>
+    <item name="boxStrokeErrorColor">?colorOnError</item>
+    <item name="startIconTint">?android:textColorTertiary</item>
+
+    <item name="android:textColor">@color/selector_input_text_color</item>
+    <item name="android:textColorHint">?android:textColorSecondary</item>
+    <item name="hintTextColor">?android:textColorSecondary</item>
+    <item name="errorTextColor">?colorOnError</item>
+    <item name="counterTextColor">?android:textColorSecondary</item>
+    <item name="counterOverflowTextColor">?colorOnError</item>
+    <item name="errorIconDrawable">@null</item>
+  </style>
+
+  <style name="Widget.TextInputLayout.Inverse">
+    <item name="materialThemeOverlay">@style/ThemeOverlay.TextInputLayout.Inverse</item>
+    <item name="boxStrokeColor">@color/selector_input_stroke_color_inverse</item>
+    <item name="android:textColorHint">?android:textColorPrimary</item>
+    <item name="hintTextColor">?android:textColorPrimary</item>
+  </style>
+
+  <style name="ThemeOverlay.TextInputLayout" parent="ThemeOverlay.MaterialComponents.TextInputEditText.OutlinedBox">
+    <item name="editTextStyle">@style/Widget.TextInputEditText</item>
+  </style>
+
+  <style name="ThemeOverlay.TextInputLayout.Inverse" parent="ThemeOverlay.MaterialComponents.TextInputEditText.OutlinedBox">
+    <item name="editTextStyle">@style/Widget.TextInputEditText.Inverse</item>
+  </style>
+
+  <style name="Widget.TextInputEditText" parent="Widget.MaterialComponents.TextInputEditText.OutlinedBox">
+    <item name="android:textAppearance">@style/TextAppearance.TextInputEditText</item>
+    <item name="android:textColor">@color/selector_input_text_color</item>
+  </style>
+
+  <style name="Widget.TextInputEditText.Inverse">
+    <item name="android:textColorHint">@color/white30</item>
+  </style>
+
+  <style name="Widget.TextInputLayout.ExposedDropDown">
+    <item name="materialThemeOverlay">@style/ThemeOverlay.TextInputLayout.ExposedDropDown</item>
+    <item name="endIconMode">dropdown_menu</item>
+  </style>
+
+  <style name="Widget.TextInputLayout.ExposedDropDown.Inverse">
+    <item name="materialThemeOverlay">
+      @style/ThemeOverlay.TextInputLayout.ExposedDropDown.Inverse
+    </item>
+    <item name="boxStrokeColor">@color/selector_input_stroke_color_inverse</item>
+    <item name="android:textColorHint">?android:textColorPrimary</item>
+    <item name="hintTextColor">?android:textColorPrimary</item>
+  </style>
+
+  <style name="ThemeOverlay.TextInputLayout.ExposedDropDown" parent="ThemeOverlay.MaterialComponents.TextInputEditText.OutlinedBox">
+    <item name="autoCompleteTextViewStyle">@style/Widget.AutoCompleteTextView</item>
+  </style>
+
+  <style name="ThemeOverlay.TextInputLayout.ExposedDropDown.Inverse" parent="ThemeOverlay.MaterialComponents.TextInputEditText.OutlinedBox">
+    <item name="autoCompleteTextViewStyle">@style/Widget.AutoCompleteTextView.Inverse</item>
+  </style>
+
+  <style name="Widget.AutoCompleteTextView" parent="Widget.MaterialComponents.AutoCompleteTextView.OutlinedBox">
+    <item name="android:textAppearance">@style/TextAppearance.TextInputEditText</item>
+    <item name="android:textColor">@color/selector_input_text_color</item>
+  </style>
+
+  <style name="Widget.AutoCompleteTextView.Inverse">
+    <item name="android:textColorHint">@color/white30</item>
+  </style>
+
+  <style name="TextAppearance.TextInputEditText" parent="TextAppearance.Subtitle1">
+    <item name="fontFamily">@font/hind_semibold</item>
+    <item name="android:textSize">16sp</item>
+    <item name="lineHeight">16sp</item>
+    <item name="android:lineSpacingExtra">0sp</item>
+    <item name="android:includeFontPadding">false</item>
+  </style>
+
+  <!--
+  OTHERS
+  -->
+
+  <style name="Widget.CardView" parent="Widget.MaterialComponents.CardView">
+    <item name="rippleColor">?colorControlHighlight</item>
+    <item name="cardCornerRadius">@dimen/dot</item>
+    <item name="cardElevation">@dimen/dot_quarter</item>
+  </style>
+
+  <style name="Widget.BottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView">
+    <item name="labelVisibilityMode">labeled</item>
+    <item name="itemIconTint">@color/bottom_navigation_colors</item>
+    <item name="itemTextColor">@color/bottom_navigation_colors</item>
+    <item name="itemRippleColor">?rippleColorMono</item>
+  </style>
+
+  <style name="Widget.FloatingActionButton" parent="Widget.MaterialComponents.FloatingActionButton">
+    <item name="backgroundTint">?attr/colorAccent</item>
+    <item name="tint">@color/white</item>
+  </style>
+
+  <style name="Widget.Snackbar" parent="@style/Widget.MaterialComponents.Snackbar">
+    <item name="android:backgroundTint">@color/black87</item>
+    <item name="actionTextColorAlpha">1.0</item>
+    <item name="backgroundOverlayColorAlpha">1.0</item>
+  </style>
+
+  <style name="Widget.Snackbar.Opaque">
+    <item name="android:backgroundTint">@color/black</item>
+  </style>
+
+  <style name="Widget.Button.TextButton.Snackbar" parent="@style/Widget.MaterialComponents.Button.TextButton.Snackbar">
+    <item name="android:textColor">@color/red</item>
+    <item name="android:textAppearance">@style/TextAppearance.Subtitle2</item>
+  </style>
+
+  <style name="TextAppearance.Snackbar.Message" parent="@style/TextAppearance.Subtitle2">
+    <item name="android:textColor">@color/white</item>
+  </style>
+
+  <style name="Widget.BadgeImageView" parent="">
+    <item name="badgeBorderWidth">1dp</item>
+  </style>
+
+  <style name="Widget.TextView.Legend" parent="">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:drawablePadding">@dimen/dot_half</item>
+    <item name="android:textAllCaps">true</item>
+    <item name="android:textAppearance">?textAppearanceOverline2</item>
+  </style>
+
+  <style name="Widget.TextView.MouthMapSideIndicator" parent="">
+    <item name="android:layout_width">@dimen/dot_trip</item>
+    <item name="android:layout_height">@dimen/dot_trip</item>
+    <item name="android:textAppearance">?textAppearanceSubtitle2</item>
+    <item name="android:textColor">?backgroundColorLight</item>
+    <item name="android:gravity">center</item>
+    <item name="android:background">@drawable/ic_mouthmap_legend_background_white</item>
+  </style>
+
+  <style name="Widget.TimerView" parent="">
+    <item name="timerTextAppearance">?textAppearanceHeadline2</item>
+    <item name="timerBubbleColor">?colorPrimary</item>
+  </style>
+
+  <style name="Widget.TimerView.Inverse">
+    <item name="timerBubbleColor">?inverseThemeMainColorDark</item>
+  </style>
+
+  <!--  See https://material.io/components/sheets-bottom#specs-->
+
+  <style name="Widget.BottomSheet.Title" parent="">
+    <item name="android:textAppearance">?textAppearanceHeadline5</item>
+    <item name="android:paddingStart">@dimen/dot_double</item>
+    <item name="android:paddingEnd">@dimen/dot_double</item>
+    <item name="android:gravity">center_vertical</item>
+    <item name="android:minHeight">@dimen/dot_sev</item>
+  </style>
+
+  <style name="Widget.BottomSheet.Item" parent="">
+    <item name="android:textAppearance">?textAppearanceBody2</item>
+    <item name="android:background">?selectableItemBackground</item>
+    <item name="android:drawablePadding">@dimen/dot_quad</item>
+    <item name="android:paddingStart">@dimen/dot_double</item>
+    <item name="android:paddingEnd">@dimen/dot_double</item>
+    <item name="android:drawableTint">?android:textColorSecondary</item>
+    <item name="android:textColor">?android:textColorSecondary</item>
+    <item name="android:gravity">center_vertical</item>
+    <item name="android:minHeight">@dimen/dot_sev</item>
+  </style>
+
+  <style name="Widget.Toolbar" parent="Widget.MaterialComponents.Toolbar">
+    <item name="materialThemeOverlay">@style/ThemeOverlay.Toolbar</item>
+  </style>
+
+  <style name="Widget.Toolbar.Light" parent="Widget.MaterialComponents.Toolbar">
+    <item name="materialThemeOverlay">@style/ThemeOverlay.Toolbar.Light</item>
+  </style>
+
+  <style name="Widget.Toolbar.Dark" parent="Widget.MaterialComponents.Toolbar">
+    <item name="materialThemeOverlay">@style/ThemeOverlay.Toolbar.Dark</item>
+  </style>
+
+  <style name="ThemeOverlay.Toolbar" parent="">
+    <item name="colorPrimary">@color/red</item>
+    <item name="colorOnPrimary">@color/white</item>
+    <item name="toolbarIconTint">@color/white</item>
+    <item name="badgeBorderWidth">1dp</item>
+  </style>
+
+  <style name="ThemeOverlay.Toolbar.Transparent">
+    <item name="colorPrimary">#00000000</item>
+  </style>
+
+  <style name="ThemeOverlay.Toolbar.Light">
+    <item name="colorPrimary">@color/white</item>
+    <item name="colorOnPrimary">@color/charcoal</item>
+    <item name="toolbarIconTint">@color/charcoal</item>
+  </style>
+
+  <style name="ThemeOverlay.Toolbar.Dark">
+    <item name="colorPrimary">@color/darkred</item>
+  </style>
+
+  <style name="Widget.AppCompat.Toolbar.Button.Navigation.Light">
+    <item name="tint">@color/charcoal</item>
+  </style>
+
+  <!-- ProgressBar styles -->
+  <style name="Widget.ProgressBar.Horizontal" parent="Widget.AppCompat.ProgressBar.Horizontal">
+    <item name="android:progressDrawable">@drawable/progress</item>
+  </style>
+
+  <style name="Widget.PageIndicator" parent="Base.Widget.Design.TabLayout">
+    <item name="tabIndicatorHeight">0dp</item>
+    <item name="tabPaddingBottom">@dimen/dot_half</item>
+    <item name="tabPaddingStart">@dimen/dot_half</item>
+    <item name="tabBackground">@drawable/page_indicator_selector</item>
+    <item name="tabGravity">center</item>
+  </style>
+
+  <style name="ThemeOverlay.NumberPicker" parent="">
+    <item name="colorControlNormal">@color/red</item>
+  </style>
+
+  <style name="SpeedometerView" />
+
+  <style name="DottedBottomNavigationView" parent="Widget.BottomNavigationView" />
+
+  <style name="GuidedBrushingStartTopImageStyle">
+    <item name="android:scaleType">centerCrop</item>
+  </style>
+
+  <style name="GuidedBrushingItemStyle">
+    <item name="android:scaleType">fitEnd</item>
+    <item name="android:background">@color/teal1</item>
+  </style>
+
+  <style name="Widget.Button.Icon.ProfileSettings" parent="Widget.Button.Icon">
+    <item name="iconTint">@color/red</item>
+    <item name="android:textColor">@color/red</item>
+    <item name="backgroundTint">@color/white</item>
+    <item name="rippleColor">@color/red2</item>
+  </style>
+
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  style="@style/LinearLayoutWithDividers"
+  android:layout_width="match_parent"
+  android:layout_height="?listPreferredItemHeight"
+  android:clickable="false"
+  android:orientation="horizontal">
+
+  <LinearLayout
+    style="@style/LinearLayoutWithDividers"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="0.7"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <TextView
+      android:id="@+id/orphan_brushing_title"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      tools:text="Jan, 06, 2017 - 21:02" />
+
+    <TextView
+      android:id="@+id/orphan_brushing_subtitle"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      tools:text="Duration: 2 min 00 s, Surface: 78%" />
+  </LinearLayout>
+
+  <ImageButton
+    android:id="@+id/orphan_brushing_delete"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="0.15"
+    android:src="@android:drawable/ic_delete" />
+
+  <ImageButton
+    android:id="@+id/orphan_brushing_assign"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="0.15"
+    android:src="@drawable/ic_person_add_black_24dp" />
+</LinearLayout>

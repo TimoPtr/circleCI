@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="5" by="lint 4.0.0" client="gradle" variant="debug" version="4.0.0">
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="class BestResultsDialog : SimpleRoundedDialog() {"
+        errorLine2="      ~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/kotlin/com/kolibree/android/plaqless/dialog/BestResultsDialog.kt"
+            line="25"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="    companion object {"
+        errorLine2="              ~~~~~~">
+        <location
+            file="src/main/kotlin/com/kolibree/android/plaqless/dialog/BestResultsDialog.kt"
+            line="27"
+            column="15"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="class InfoLineView @JvmOverloads constructor("
+        errorLine2="      ~~~~~~~~~~~~">
+        <location
+            file="src/main/kotlin/com/kolibree/android/plaqless/howto/intro/slide1/InfoLineView.kt"
+            line="21"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="ConvertToWebp"
+        message="One or more images in this project can be converted to the WebP format which typically results in smaller file sizes, even for lossless conversion (but launcher icons should use PNG).">
+        <location
+            file="src/main/res/drawable-xxhdpi/ic_intro_jaws.png"/>
+    </issue>
+
+    <issue
+        id="RtlSymmetry"
+        message="When you define `paddingEnd` you should probably also define `paddingStart` for right-to-left symmetry"
+        errorLine1="    android:paddingEnd=&quot;@dimen/big_margin&quot;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_slide_two.xml"
+            line="28"
+            column="5"/>
+    </issue>
+
+</issues>

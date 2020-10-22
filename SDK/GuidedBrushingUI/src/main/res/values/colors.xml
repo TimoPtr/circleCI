@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- specification: https://confluence.kolibree.com/pages/viewpage.action?pageId=7241957#id-3DCoach(Coach+)-4.1.3DmodelforCoach+ -->
+<resources>
+  <!-- TODO modify those colors if needed -->
+  <color name="guided_brushing_default_neglected_color">#5398d5</color>
+  <color name="guided_brushing_default_clean_color">@color/white</color>
+  <color name="guided_brushing_default_background_color">#73ceca</color>
+  <color name="guided_brushing_default_title_color">@color/white</color>
+  <color name="guided_brushing_default_plaque_color">#26B6FF</color>
+  <color name="guided_brushing_feedback_background">@color/white</color>
+</resources>

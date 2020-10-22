@@ -1,0 +1,988 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ok">"确定"</string>
+
+    <!-- Home menu -->
+    <string name="action_account_settings">"帐户"</string>
+    <string name="action_users_settings">"个人资料"</string>
+    <string name="action_go_to_slideshow">"浏览"</string>
+    <string name="action_about">"关于"</string>
+    <string name="action_logout">"退出"</string>
+    <string name="action_spread_the_word">"告诉您的好友们吧"</string>
+    <string name="action_help">"帮助中心"</string>
+    <string name="action_change_profile">"修改个人资料"</string>
+    <string name="action_edit_profile">"编辑个人资料"</string>
+
+    <!-- LOGIN AND REGISTRATION -->
+    <string name="login">"登录"</string>
+    <string name="connect_">"连接  &gt;"</string>
+    <string name="male">"男"</string>
+    <string name="female">"女"</string>
+    <string name="signup">"注册"</string>
+    <string name="create_profile">"创建个人信息"</string>
+    <string name="edit_profile">"编辑个人信息"</string>
+    <string name="email_hint">"电子邮箱"</string>
+    <string name="password_hint">"密码"</string>
+    <string name="password_confirm_hint">"确认密码"</string>
+    <string name="firstname_hint">"名"</string>
+    <string name="lastname_hint">"姓"</string>
+    <string name="birthday_hint">"您的生日"</string>
+    <string name="create">"创建  &gt;"</string>
+    <string name="btn_next">"下一步 &gt;"</string>
+    <string name="choose_picture_hint">"设置头像"</string>
+    <string name="choose_picture_gallery">"选择照片"</string>
+    <string name="choose_picture_take">"拍照"</string>
+    <string name="gender_hint">"您的性别"</string>
+    <string name="handedness_hint">"您习惯哪只手刷牙？"</string>
+    <string name="country_hint">"您住在哪里？"</string>
+    <string name="forgotten_password">"忘记密码？"</string>
+    <string name="email_missing">"未输入电子邮件地址"</string>
+    <string name="email_invalid">"电子邮件地址无效"</string>
+    <string name="firstname_missing">"未输入名"</string>
+    <string name="lastname_missing">"未输入姓"</string>
+    <string name="birthday_missing">"年龄错误"</string>
+    <string name="picture_missing">"请选择图片"</string>
+    <string name="gender_missing">"未选择性别"</string>
+    <string name="handedness_missing">"未输入用手习惯"</string>
+    <string name="country_missing">"未选择国家"</string>
+    <string name="password_missing">"未输入密码"</string>
+    <string name="password_confirmation_missing">"未确认密码"</string>
+    <string name="passwords_dont_match">"密码不符"</string>
+    <string name="reset_password">"重置密码"</string>
+    <string name="reset_password_ok">"请检查收件箱，按指示重置密码"</string>
+    <string name="reset_password_ko">"重置密码时出错"</string>
+    <string name="terms_of_use_terms">"条款和条件"</string>
+    <string name="terms_of_use_policy">"隐私政策"</string>
+    <string name="account_created_title">"棒棒哒！"</string>
+    <string name="account_created_message">"您的帐户已建立
+您可以开始刷牙了"</string>
+    <string name="facebook_login">"用Facebook登录"</string>
+    <string name="facebook_signup">"用Facebook注册"</string>
+    <string name="please_wait">"请等待"</string>
+    <string name="choose_picture_local">"在Colgate Connect中选择"</string>
+    <string name="terms_of_use">"我同意"<![CDATA[<u><a href=\"%1$s\">%2$s</a></u>]]>"及"<![CDATA[<u><a href=\"%3$s\">%4$s</a></u>]]>"."</string>
+
+    <!-- ACCOUNT ACTIVITY -->
+    <string name="account">"帐户"</string>
+    <string name="change_password">"更换密码"</string>
+    <string name="new_password">"新密码"</string>
+    <string name="old_password">"旧密码"</string>
+    <string name="confirm_new_pasword">"确认新密码"</string>
+    <string name="help_title">"帮助我们"</string>
+    <string name="help_message">"向我们匿名发送您的刷牙数据，帮助我们提高运动传感器的精确度
+（可以在APP设置中随时更改您的偏好）"</string>
+    <string name="old_password_missing">"未输入旧密码"</string>
+    <string name="new_password_missing">"未输入新密码"</string>
+    <string name="new_password_confirm_missing">"未确认新密码"</string>
+    <string name="password_updated">"您的密码已更改"</string>
+    <string name="password_updated_title">"成功"</string>
+    <string name="musicchoosertitle">"选择智能刷牙教练音效"</string>
+
+    <!-- EDIT PROFILE ACTIVITY -->
+    <string name="personal_info">"个人信息"</string>
+    <string name="brushing_settings">"刷牙设置"</string>
+    <string name="right_handed">"右手"</string>
+    <string name="left_handed">"左手"</string>
+    <string name="coach_brushing_time">"刷牙时间"</string>
+    <string name="coach_brushing_time_duration">"每次刷牙所用时间: %1$s"</string>
+    <string name="coach_sound_value">"使用刷牙教练刷牙的音乐: %1$s"</string>
+    <string name="none">"无"</string>
+    <string name="music">"音乐"</string>
+    <string name="sounds">"音效"</string>
+    <string name="no_music_file">"未选择文件"</string>
+    <string name="transition_sounds">"过渡音"</string>
+    <string name="no_artist">"无歌手信息"</string>
+    <string name="no_title">"无标题"</string>
+    <string name="brushing_time_hint">"刷牙时间"</string>
+    <string name="profiles">"个人信息"</string>
+    <string name="delete_profile_title">"删除个人信息"</string>
+    <string name="delete_profile_message">"您确定要删除此个人信息吗？"</string>
+
+    <!-- ADD PROFILE ACTIVITY -->
+    <string name="add_profile">"新增个人信息"</string>
+
+    <!-- Leaderboard -->
+    <string name="leaderboard">"排名"</string>
+
+    <!-- About -->
+    <string name="kolibree_version">"版本 %1$s (%2$s) 
+帐户 %3$s"</string>
+    <string name="kolibree_about">"我们相信
+科技可帮助预防口腔疾病及蛀牙
+而且我们正在将这一信念付诸实践"</string>
+    <string name="about_terms">"条款及隐私政策"</string>
+    <string name="about">"关于"</string>
+    <string name="kolibree_rights">"Colgate Connect，Colgate Connect标志及其所有商标都归Colgate Connect所有
+版权所有"</string>
+
+    <!-- Checkup -->
+    <string name="get_tb">"在商城中购买"</string>
+
+    <!-- Checkup -->
+    <string name="checkup">"检查"</string>
+    <string name="neglected_areas">"未刷部位"</string>
+    <string name="well_brushed_areas">"已刷部位"</string>
+    <string name="refresh">"刷新"</string>
+    <string name="checkup_duration">"时长"</string>
+    <string name="checkup_not_connected">"这次刷牙没有表面覆盖数据"</string>
+    <string name="checkup_empty">"连接牙刷"</string>
+
+    <!-- corrected based on feedback from JV team -->
+    <string name="connect_tb_hint">"连接您的Colgate Connect牙刷
+看看还有哪些区域没刷到"</string>
+
+    <!-- Options Menu -->
+    <string name="menu_connect">"连接设备"</string>
+
+    <!-- SetupToothbrushActivity -->
+    <string name="none_paired">"未与任何设备配对"</string>
+    <string name="none_found">"未发现设备"</string>
+
+    <!-- ConnectDeviceDialogActivity -->
+    <string name="toothbrushes">"牙刷"</string>
+    <string name="none_connected">"未连接设备"</string>
+    <string name="select_a_device">"可用设备"</string>
+    <string name="connect">"连接"</string>
+    <string name="restart">"重启"</string>
+    <string name="quit">"退出"</string>
+    <string name="pause">"暂停"</string>
+    <string name="next">"下一步"</string>
+    <string name="cancel">"取消"</string>
+    <string name="notnow">"以后再说"</string>
+    <string name="information">"信息"</string>
+    <string name="error">"错误"</string>
+
+    <!-- SwitchGame Coach Fragment -->
+    <string name="no_tb_connected">"未连接牙刷"</string>
+    <string name="description_no_tb_connected_pirate">"连接牙刷，开始海盗大争霸吧"</string>
+    <string name="description_no_tb_connected_coach">"暂时不用Colgate Connect牙刷来刷牙？"</string>
+
+    <!-- Coach Game Fragment -->
+    <string name="resume">"继续"</string>
+    <string name="coach_something_wrong">"出错了，请稍候再试"</string>
+
+    <!-- Coach Game Fragment -->
+    <string name="points">"积分"</string>
+
+    <!-- Settings ToothBrush Fragment -->
+    <string name="user_mode_title">"牙刷用户"</string>
+
+    <!-- Settings ToothBrush Fragment -->
+    <string name="toothbrush_information">"牙刷信息"</string>
+    <string name="title_toothbrush">"牙刷ID"</string>
+    <string name="battery_level">"电池电量"</string>
+    <string name="find_toothbrush">"找到牙刷"</string>
+    <string name="blink_toothbrush">"让牙刷指示灯闪烁"</string>
+    <string name="toothbrush_blinking">"闪烁"</string>
+    <string name="ota_toothbrush_title">"固件版本"</string>
+    <string name="hardware_version_title">"硬件版本"</string>
+    <string name="software_version_title">"固件版本"</string>
+    <string name="user_mode_not_known">"请设置用户"</string>
+    <string name="settings_shared_toothbrush">"共享牙刷"</string>
+    <string name="toothbrush_owner_everyone">"每个人"</string>
+    <string name="toothbrush_firmware_update_available">"更新牙刷"</string>
+    <string name="toothbrush_firmware_update_title">"更新牙刷"</string>
+    <string name="toothbrush_firmware_update_button">"更新"</string>
+    <string name="firmware_upgrade_error">"出错了，请稍候再试"</string>
+    <string name="toothbrush_firmware_update_progress_label">"正在安装"</string>
+    <string name="toothbrush_firmware_update_rebooting_label">"正在重启"</string>
+    <string name="toothbrush_firmware_update_success">"您的Colgate Connect牙刷已更新"</string>
+
+    <!-- Settings Pairing Fragment -->
+    <string name="pairing_kolibree_1">"长按牙刷按钮，直至LED灯闪烁蓝光，使牙刷处于可被找到状态"</string>
+    <string name="pairing_kolibree_2">"当牙刷匹配窗口弹出时，请输入PIN码："</string>
+    <string name="pairing_kolibree_4">"0"</string>
+    <string name="pop_up_connect_fail_title">"哎呀"</string>
+    <string name="pop_up_connect_fail_msg">"牙刷未成功与设备建立连接，请检查牙刷是否开启，并再次尝试连接"</string>
+
+    <!-- Switch Game Fragment -->
+    <string name="coach_game_name">"智能刷牙教练"</string>
+    <string name="pirate_game_name">"海盗大争霸"</string>
+    <string name="coach_plus_game_name">"智能刷牙教练"</string>
+    <string name="sba_game_name">"智能刷牙分析师"</string>
+    <string name="rabbids_game_name">"疯狂兔子"</string>
+    <string name="offline_game_name">"离线刷牙"</string>
+    <string name="coach_game_description">"智能刷牙教练将告诉您如何更准确地刷牙
+"</string>
+    <string name="pirate_game_description">"海盗大争霸
+牙刷变身游戏机
+刷牙同时来抢夺金币吧"</string>
+    <string name="activities_warning">"新的刷牙数据将分配给以上选定的个人信息"</string>
+    <string name="transition_game">"transition_game"</string>
+    <string name="game_brush_not_allow_title">"哎呀"</string>
+    <string name="game_brush_not_allow_msg">"一天刷三次牙以上可能会伤害牙龈"</string>
+    <string name="upper_arch">"上牙弓"</string>
+    <string name="lower_arch">"下牙弓"</string>
+    <string name="delete_profile">"删除"</string>
+    <string name="logout_title">"退出"</string>
+    <string name="logout_message">"您确定要退出吗？"</string>
+    <string name="load_avatar_error">"真抱歉
+请检查网络连接以加载个人头像"</string>
+
+    <!-- Connection Lost Dialog -->
+    <string name="lost_connection_dialog_title">"哎呀"</string>
+    <string name="lost_connection_dialog_msg">"未检测到您的牙刷
+请再次连接牙刷以完成配置"</string>
+    <string name="send">"发送"</string>
+    <string name="points_pts">"+%d点"</string>
+    <string name="account_settings_help">"向我们匿名发送您的刷牙数据，帮助我们提高运动传感器的精确度"</string>
+    <string name="account_settings_digest">"每周收取完整的刷牙报告，包括关于您口腔卫生的重要信息"</string>
+    <string name="account_settings_digest_title">"每周小结"</string>
+    <string name="toothbrush_status_connecting">"连接中"</string>
+    <string name="toothbrush_status_pairing">"正在匹配"</string>
+    <string name="checkup_hint_1">"如想查看牙齿检查报告，请刷牙时打开App中的刷牙功能"</string>
+    <string name="checkup_hint_2">"该牙齿检查仅适用于您使用App期间的刷牙情况"</string>
+    <string name="checkup_error_no_data_title">"哎呀，我们数据不足"</string>
+    <string name="checkup_error_no_data_hint">"如想查看牙齿检查报告，请在刷牙时选择App“刷牙”选项中任一项"</string>
+    <string name="checkup_error_no_internet_title">"哎呀，您未接入互联网"</string>
+    <string name="checkup_error_no_internet_hint">"接入互联网以更新您的刷牙数据"</string>
+    <string name="um_welcome_title">"Hello %s!"</string>
+    <string name="um_warning_title">"请小心"</string>
+    <string name="um_yes">"是"</string>
+    <string name="um_no">"否"</string>
+    <string name="um_cancel">"取消"</string>
+    <string name="um_edit">"变更"</string>
+    <string name="um_next">"下一步"</string>
+    <string name="um_great">"棒棒哒！"</string>
+    <string name="um_understood">"我明白"</string>
+    <string name="um_already_associated">"该牙刷已与用户绑定"</string>
+    <string name="um_already_associated_known">"该牙刷已与用户 %s 绑定"</string>
+    <string name="um_already_associated2_known">"将该牙刷与 %s 的个人信息绑定吗？"</string>
+    <string name="um_already_associated2">"是否要修改设置，更换该牙刷的绑定用户？"</string>
+    <string name="um_already_associated2_self">"是否要修改设置，将该牙刷与您的个人信息绑定？"</string>
+    <string name="um_warning_message">"牙刷的设置将被更改，可被所有用户使用
+
+未使用App的刷牙数据将不被保存"</string>
+    <string name="um_warning_hint">"您可稍后在牙刷设置中修改此共享模式"</string>
+    <string name="um_pairing_warning_hint">"以前的绑定将取消"</string>
+    <string name="um_pairing_um_users_title_one">"找到新牙刷
+谁在使用呢？"</string>
+    <string name="um_pairing_um_users_title_several">"该牙刷将由谁使用呢？"</string>
+    <string name="um_pairing_um_users_entry">"只有 %s"</string>
+    <string name="um_pairing_um_users_entry_several">"共享牙刷"</string>
+    <string name="um_shared_tb">"共享牙刷"</string>
+    <string name="um_shared_tb_hint">"其他用户在更换牙刷头的情况下也可使用此牙刷
+刷牙前选择新用户头像即可"</string>
+    <string name="um_dont_forget">"别忘啦！"</string>
+    <string name="um_dont_forget_hint">"如果您刷牙时未使用App，您的刷牙数据将无法保存"</string>
+    <string name="um_new_tb_associated">"检测到新牙刷，且已将其添加至您的个人信息中"</string>
+    <string name="um_warning_message_plural">"牙刷的设置将被更改，可被所有用户使用
+
+未使用App的刷牙数据将不被保存"</string>
+    <string name="um_pairing_um_pairing_confirmation_1">"无论您是否打开Colgate Connect APP，您都可以使用此牙刷"</string>
+    <string name="um_pairing_um_pairing_confirmation_2">"您的牙刷可自动存储刷牙数据，但请每周至少1次与Colgate Connect App同步，保持数据更新"</string>
+    <string name="um_welcome_hint">"想在个人信息中添加一把新的Colgate Connect牙刷吗？"</string>
+
+    <!-- Notifications -->
+    <string name="tb_sync.notification.standard.2">"记得同步您的刷牙数据，这样会有更好的Colgate Connect体验"</string>
+    <string name="tb_sync.notification.standard.6">"即使之前刷牙时未开启Colgate Connect App，也请同步您的牙刷以存储数据"</string>
+    <string name="tb_sync.notification.standard.7">"想知道最近刷得如何吗？
+用Colgate Connect App同步一下吧"</string>
+    <string name="tb_sync.notification.standard.8">"记得经常同步刷牙数据，让Colgate Connect来评估您的牙齿健康状况"</string>
+    <string name="tb_sync.notification.standard.1">"点击同步刷牙数据"</string>
+    <string name="tb_sync.notification.standard.3">"想了解您的牙齿健康状况吗？
+点击同步刷牙数据"</string>
+    <string name="tb_sync.notification.standard.4">"牙刷在您身旁吗？
+点击同步刷牙数据"</string>
+    <string name="tb_sync.notification.standard.5">"点击使刷牙数据同步并更新您的牙齿健康报告"</string>
+    <string name="tb_sync.notification.standard.9">"现在同步刷牙数据以查看您的进度"</string>
+    <string name="tb_sync.notification.standard.10">"最近刷得还好吗？
+同步数据来了解一下"</string>
+    <string name="tb_sync.notification.standard.11">"牙刷在您身旁吗？
+同步一下数据吧"</string>
+    <string name="tb_sync.notification.standard.12">"同步牙刷以更新数据"</string>
+    <string name="tb_sync.enable.bluetooth.title">"开启蓝牙"</string>
+    <string name="about_attributions_hint">"此应用使用以下程序库："</string>
+    <string name="about_attributions_website">"网站"</string>
+    <string name="about_attributions_license">"许可"</string>
+
+    <!-- Setup toothbrush tunnel -->
+    <string name="setup_toothbrush_connect_m1_title">"连接您的 M1"</string>
+    <string name="setup_toothbrush_connect_kolibree_title">"连接您的 Kolibree V1"</string>
+    <string name="setup_toothbrush_choose_model">"您的牙刷为何种类型？"</string>
+    <string name="setup_toothbrush_choose_model_ara">"Ara"</string>
+    <string name="setup_toothbrush_another_toothbrush_title">"另外"</string>
+    <string name="setup_toothbrush_another_toothbrush_buy">"去商城逛逛吧"</string>
+    <string name="setup_toothbrush_another_toothbrush_to_coach">"与智能刷牙教练一起刷牙"</string>
+    <string name="setup_toothbrush_choose_model_help"><![CDATA[我不知道 <b>我的牙刷是什么类型</b>]]></string>
+    <string name="setup_toothbrush_choose_model_help_title">"如何鉴别我的牙刷？"</string>
+    <string name="setup_toothbrush_get_one">"在商城中购买"</string>
+    <string name="setup_toothbrush_proceed_without">"谢谢，我暂时不需要@"</string>
+    <string name="setup_toothbrush_model_ara">"Ara"</string>
+    <string name="setup_toothbrush_ara_charger">"把牙刷放到充电座上，按下开始按钮"</string>
+    <string name="setup_toothbrush_m1_instructions">"摇动您的Connect M1以激活蓝牙配对，然后点击“搜索”按钮"</string>
+    <string name="setup_toothbrush_ara_charger_start">"开始"</string>
+    <string name="setup_toothbrush_ara_no_charger">"我没有充电器"</string>
+    <string name="setup_toothbrush_searching">"正在搜索...?%d %%"</string>
+    <string name="setup_toothbrush_connecting">"连接中"</string>
+    <string name="setup_toothbrush_ara_wait">"请等待
+App正在搜索您的牙刷"</string>
+    <string name="setup_toothbrush_rename_hint">"您可以在设置中更改这些参数"</string>
+    <string name="setup_toothbrush_rename_ara_done">"完成"</string>
+    <string name="setup_toothbrush_rename_ara_choose_name">"请选择名称"</string>
+    <string name="setup_searching">"正在搜索牙刷"</string>
+    <string name="setup_barcode_hint">"请在包装上找到您的牙刷名称"</string>
+    <string name="setup_permission_popup">"您的设备需要开启定位功能以找到牙刷
+仅在首次连接时需要此操作"</string>
+    <string name="setup_popup_help_title">"还没有看到您的牙刷吗？"</string>
+    <string name="setup_popup_help_message">"如果您的牙刷就在身旁，却没有在此显示，它可能已经与另一台设备相连
+请关闭蓝牙或者在另一台设备中忽略该牙刷
+您将在此处看到您的牙刷"</string>
+    <string name="setup_connected_title">"恭喜 %s! 
+您的牙刷已成功连接"</string>
+    <string name="setup_connected_hint">"您牙刷的名称为：\"%1$s\"
+您可以在设置中进行更改"</string>
+    <string name="setup_connected_button">"现在开始吧"</string>
+    <string name="setup_summary_message">"您的刷牙数据将自动存储在牙刷中
+记得每周至少1次将牙刷连接至App以保存数据"</string>
+    <string name="setup_toothbrush_choose_model_e1">"Connect E1"</string>
+    <string name="setup_toothbrush_connect_ara_title">"正在连接 E1"</string>
+    <string name="setup_toothbrush_another_toothbrush_text">"与小高教练一起刷牙
+如果您没有Colgate Connect牙刷，将无法获得完整的用户体验
+现在购买还为时不晚 :)"</string>
+    <string name="setup_toothbrush_choose_model_help_top">"Colgate Connect E1"</string>
+    <string name="setup_toothbrush_choose_model_help_bottom">"Colgate Connect M1"</string>
+    <string name="setup_toothbrush_choose_model_buy">"在商城中再购买一支Colgate Connect牙刷！"</string>
+    <string name="setup_summary_title">"无论是否启用App，
+您都可以使用此牙刷"</string>
+    <string name="setup_toothbrush_choose_model_another">"我没有Colgate Connect牙刷"</string>
+    <string name="setup_toothbrush_choose_model_m1">"Connect M1"</string>
+
+    <!-- Toothbrush -->
+    <string name="forget_toothbrush">"忽略该牙刷"</string>
+    <string name="forget_toothbrush_popup_title">"您是否要忽略 %s？"</string>
+    <string name="forget_toothbrush_popup_message">"该设备将不会再自动与该牙刷建立连接"</string>
+    <string name="forget_toothbrush_forget">"忽略"</string>
+    <string name="my_toothbrushes">"我的牙刷"</string>
+    <string name="my_toothbrush">"我的牙刷"</string>
+    <string name="my_ara">"我的Ara"</string>
+    <string name="my_connect_m1">"我的Connect M1"</string>
+    <string name="my_connect_e1">"我的Connect E1"</string>
+    <string name="my_kolibree">"我的Kolibree V1"</string>
+    <string name="toothbrush_name">"名称"</string>
+    <string name="toothbrush_personalized_name">"个性化名称"</string>
+    <string name="toothbrush_none">"无"</string>
+    <string name="toothbrush_serial_number">"序列号"</string>
+    <string name="toothbrush_mac">"MAC地址"</string>
+    <string name="toothbrush_hardware_version">"硬件版本"</string>
+    <string name="toothbrush_software_version">"软件版本"</string>
+    <string name="toothbrush_software_version_ara">"%1$s (%2$s)"</string>
+    <string name="toothbrush_update_now">"现在更新"</string>
+    <string name="toothbrush_update_hint">"您的牙刷软件有更新了(%s)"</string>
+
+    <!-- User mode dialog -->
+    <string name="user_mode_dialog_title">"牙刷用户"</string>
+
+    <!-- Popup toothbrush not available -->
+    <string name="popup_toothbrush_unavailable_title">"未与任何牙刷建立连接"</string>
+    <string name="popup_toothbrush_unavailable_alternate_title">"未与任何牙刷建立连接"</string>
+    <string name="popup_toothbrush_unavailable_message">"确保您的牙刷已打开，并且靠近设备，连接将自动建立"</string>
+
+    <!-- Popup choose toothbrush -->
+    <string name="popup_choose_toothbrush_title">"选择牙刷以继续"</string>
+    <string name="popup_choose_toothbrush_manual">"手动牙刷"</string>
+
+    <!-- Popup brushing records -->
+    <string name="popup_brushing_record_title">"棒棒哒！"</string>
+    <string name="popup_brushing_record_message_singular">"您刚刚同步了1次离线刷牙数据"</string>
+    <string name="popup_brushing_record_message_multiple">"您刚刚同步了%d次离线刷牙数据"</string>
+
+    <!-- Popup mandatory update -->
+    <string name="popup_mandatory_update_title">"强制更新"</string>
+    <string name="popup_mandatory_update_message">"您的牙刷需要更新才可正常使用"</string>
+    <string name="popup_mandatory_update_button">"现在更新"</string>
+    <string name="popup_mandatory_enable_internet">"请接入互联网以开始更新"</string>
+    <string name="firmware_upgrade_downloading">"正在下载"</string>
+    <string name="firmware_upgrade_rebooting">"正在重启"</string>
+    <string name="firmware_upgrade_installing">"正在安装"</string>
+    <string name="firmware_upgrade_cancel">"取消"</string>
+    <string name="firmware_upgrade_upgrade">"更新"</string>
+    <string name="firmware_upgrade_error_dialog">"固件更新失败：
+%s"</string>
+    <string name="firmware_success">"您的牙刷已更新"</string>
+    <string name="firmware_upgrade_retry">"再次尝试"</string>
+
+    <!-- Home -->
+    <string name="tab_home">"主页"</string>
+    <string name="tab_brush">"刷牙"</string>
+
+    <!-- Home -->
+    <string name="tab_checkup">"检查"</string>
+
+    <!-- Dashboard -->
+    <string name="dashboard_hint">"每周平均数据"</string>
+    <string name="dashboard_last_session_hint">"最近一次刷牙"</string>
+    <string name="dashboard_duration">"时长"</string>
+    <string name="dashboard_frequency">"频率"</string>
+    <string name="dashboard_surface">"牙面"</string>
+    <string name="dashboard_coverage">"覆盖率"</string>
+    <string name="dashboard_minutes">"分钟"</string>
+    <string name="dashboard_per_day">"每天"</string>
+    <string name="dashboard_percentage">"覆盖率"</string>
+    <string name="dashboard_no_bluetooth">"请打开设备的蓝牙功能"</string>
+    <string name="dashboard_week">"周"</string>
+    <string name="dashboard_average_duration">"平均每次刷牙用时：
+%s"</string>
+    <string name="dashboard_average_duration_hint">"牙医建议，每天刷牙2次，每次2分钟可以降低蛀牙风险"</string>
+    <string name="dashboard_average_regularity">"平均每天刷牙次数：
+%s"</string>
+    <string name="dashboard_average_frequency_hint">"牙医建议，每天刷牙2次可降低蛀牙风险
+
+每天刷牙超过3次对牙龈有害"</string>
+    <string name="dashboard_average_surface">"平均覆盖牙面：
+%s"</string>
+    <string name="dashboard_average_surface_hint">"蛀牙无处不在！
+
+每颗牙的牙面都很重要，所以您的目标是 - 100%:)"</string>
+    <string name="dashboard_last_session_empty">"-"</string>
+
+    <!-- Profile -->
+    <string name="edit_profile_smart_brushing_analyser">@string/sba_game_name</string>
+    <string name="profile_information_name">"名称"</string>
+    <string name="profile_information_name_hint">"您的名字"</string>
+    <string name="profile_information_age">"年龄"</string>
+    <string name="profile_information_age_hint">"您多少岁？"</string>
+    <string name="profile_information_gender_hint">"性别"</string>
+    <string name="profile_information_handedness_hint">"刷牙用手习惯"</string>
+    <string name="profile_years_old">"岁"</string>
+    <string name="profile_picture_dialog_title">"设置您的头像"</string>
+    <string name="profile_set_picture">"新增图片"</string>
+    <string name="profile_created_title">"太棒了"</string>
+    <string name="profile_created_message">"您的个人信息已建立
+现在开刷吧"</string>
+    <string name="profile_last_sba">"最近一次智能刷牙分析"</string>
+    <string name="profile_my_profiles">"个人信息"</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_subtitle">"您的智能刷牙小伙伴"</string>
+    <string name="onboarding_login"><![CDATA[已有帐户？<b>登录</b>]]></string>
+    <string name="onboarding_start">"开始体验吧"</string>
+
+    <!-- Sign up tunnel -->
+    <string name="sign_up_profile_info_title">"相互了解一下"</string>
+    <string name="sign_up_profile_wait">@string/please_wait</string>
+    <string name="sign_up_profile_info_next">"加入Colgate Connect"</string>
+
+    <!-- Delete account popup -->
+    <string name="delete_account">"删除我的帐户"</string>
+    <string name="delete_account_popup_message">"您确定要删除帐户吗？
+此操作不可撤销"</string>
+    <string name="delete_account_popup_yes">"是的，删除我的帐户"</string>
+
+    <!-- Checkup Popup -->
+    <string name="checkup_popup_title">"检查"</string>
+    <string name="checkup_popup_message_last">"这是您上次刷牙时的检查报告
+请多注意您没有刷到的黄色区域，蛀牙风险更高"</string>
+    <string name="checkup_popup_message">"本检查报告提供了您的刷牙状况
+请多注意您没有刷到的黄色区域，蛀牙风险更高"</string>
+
+    <!-- Turn on your toothbrush popup -->
+    <string name="setup_ara_popup_title">"重要信息"</string>
+    <string name="setup_ara_popup_message">"请先按两次牙刷按钮，再继续"</string>
+
+    <!-- Add ara user activity -->
+    <string name="add_ara_user_add_profile">"新增个人信息"</string>
+    <string name="add_ara_user_hint">"您稍后可以在牙刷设置中变更此绑定"</string>
+    <string name="add_ara_user_subtitle">"该牙刷将由谁使用呢？"</string>
+    <string name="add_ara_shared">"共享"</string>
+
+    <!-- No BLE popup -->
+    <string name="no_ble_popup_message">"本设备与低功耗蓝牙不兼容
+电量不足"</string>
+
+    <!-- BRUSH HEAD RENEWAL DIALOG -->
+    <string name="brush_head_dialog_title">"更新您的牙刷刷头， %1$s"</string>
+    <string name="brush_head_dialog_message">"恭喜！
+您已累计刷牙120次以上，该更换刷头了"</string>
+    <string name="brush_head_buy_now">"现在购买"</string>
+    <string name="brush_head_remind">"以后再说"</string>
+    <string name="brush_head_no">"不用，谢谢"</string>
+    <string name="title_activity_slideshow">"幻灯片"</string>
+
+    <!-- Popup toothbrush belongs to another user -->
+    <string name="popup_assign_toothbrush_data_dialog">"当前个人信息为%1$s，但您在使用%2$s的牙刷
+数据应该分配给谁呢？"</string>
+
+    <!-- ORPHAN BRUSHINGS -->
+    <string name="orphan_brushings">"未分配的刷牙数据"</string>
+    <string name="orphan_brushings_assign_hint">"分配选定的刷牙数据"</string>
+    <string name="orphan_brushings_delete_hint">"删除选定的刷牙数据"</string>
+    <string name="orphan_brushing_subtitle">"时长：%1$s 分 %2$s 秒，牙面 %3$d%%"</string>
+    <string name="orphan_brushings_detelete_title">"您确定吗？"</string>
+    <string name="orphan_brushings_detelete_message">"您确定要删除这些数据吗？
+该操作不可撤销"</string>
+    <string name="orphan_brushings_empty">"无未分配的刷牙数据
+棒棒哒！"</string>
+
+    <!-- PROFILE LIST DIALOG -->
+    <string name="profile_list_dialog_title">"选择个人信息"</string>
+
+    <!-- SLIDESHOW -->
+    <string name="slideshow_next">"下一步"</string>
+    <string name="slideshow_skip">"跳过"</string>
+    <string name="slideshow_alright_button">"好的"</string>
+    <string name="slideshow_here_to_help_title">"小高在此帮助您"</string>
+    <string name="slideshow_here_to_help_message">"想要牙齿更清洁吗？
+我们开发了一些新功能，来帮助您升级口腔健康"</string>
+    <string name="slideshow_here_to_help_button">"了解一下我们的活动吧"</string>
+    <string name="slideshow_meet_coach_title">"认识一下智能刷牙教练"</string>
+    <string name="slideshow_meet_coach_message">"“智能刷牙教练”使用2D视图显示口腔的应刷区域
+帮助您养成更好的刷牙习惯
+
+"</string>
+    <string name="slideshow_pirate_title">"海盗大争霸"</string>
+    <string name="slideshow_pirate_message">"牙刷变身游戏机
+一起来收集硬币，搜寻黑胡子海盗的宝藏吧"</string>
+    <string name="slideshow_pirate_additional_message">"（更多游戏开发中）"</string>
+    <string name="slideshow_dashboard_title">"您的刷牙数据库"</string>
+
+    <!-- Slideshow -->
+    <string name="slideshow_dashboard_message">"显示关于您的刷牙信息"</string>
+    <string name="slideshow_taking_care_brush_title">"呵护您的牙刷"</string>
+    <string name="slideshow_taking_care_brush_message">"经常用湿布清洁牙刷手柄和充电座
+
+如果您所用牙膏含有小苏打、碳酸氢盐或过氧化，请尤其保持牙刷和充电座的清洁"</string>
+    <string name="slideshow_personalize_brush_title">"个性化您的牙刷"</string>
+    <string name="slideshow_personalize_brush_message">"从设置进入个人信息，
+在“刷牙时间”里设置您的刷牙时长"</string>
+    <string name="slideshow_dentist_tip_title">"牙医建议"</string>
+    <string name="slideshow_dentist_tip_message">"让牙刷与牙齿呈45度角，
+从牙龈到牙齿边缘小幅刷动
+
+刷门牙时，不要忘记正反面都要刷哦"</string>
+
+    <!-- SPREAD THE WORD -->
+    <string name="spread_the_word">"告诉您的好友们吧"</string>
+    <string name="spread_review_app">"查看App"</string>
+    <string name="spread_tell_a_friend">"告诉好友"</string>
+    <string name="spread_newsletter">"新闻资讯"</string>
+    <string name="spread_facebook">"Facebook"</string>
+    <string name="spread_twitter">"Twitter"</string>
+    <string name="spread_instagram">"Instagram"</string>
+    <string name="spread_youtube">"Youtube"</string>
+
+    <!-- TOOTHBRUSH LIST -->
+    <string name="toothbrush_removed">"已删除牙刷"</string>
+    <string name="undo">"撤回"</string>
+    <string name="checkup_coverage_100">"棒棒哒！
+这次刷牙真是完美，所有牙齿都刷够时间了"</string>
+    <string name="checkup_coverage_85">"棒棒哒！
+您已经刷得接近完美，再接再厉！"</string>
+    <string name="checkup_coverage_50">"您能刷得更好
+下次多注意黄色区域，这些区域的时间还不够"</string>
+    <string name="checkup_coverage_below_50">"小心蛀牙！
+下次刷牙时请多注意黄色区域，这些区域没有刷到"</string>
+    <string name="checkup_coverage_no_data">"这次刷牙没有表面覆盖数据"</string>
+
+    <!-- User in OTA screen, but no OTA associated to toothbrush -->
+    <string name="firmware_upgrade_ota_not_available">"还没有更新"</string>
+
+    <!-- Dialog displayed after user pressed cancel button in update ota -->
+    <string name="firmware_upgrade_cancel_dialog_message">"您确定要取消更新吗？"</string>
+    <string name="welcome_email_hint">"您的电子邮箱是多少？"</string>
+    <string name="welcome_email_facebook_hint">"我们不会往您的Facebook上发布任何信息"</string>
+    <string name="welcome_email_or">"- 或者 -"</string>
+    <string name="welcome_email_facebook_button">"继续用Facebook登录"</string>
+    <string name="welcome_password_hint">"您的密码"</string>
+    <string name="welcome_password_magic_link_button">"请用电子邮件发给我登录链接"</string>
+    <string name="welcome_inbox_title">"请检查您的邮箱"</string>
+    <string name="welcome_inbox_hint">"无需记忆冗长的密码，我们刚刚给您发送了登录电子邮件
+在手机上打开邮件，点击里面的链接以进行登录
+注意：此链接在30分钟后失效"</string>
+    <string name="coppa_pending_parental_consent">"还没获得父母同意"</string>
+    <string name="coppa_prevent_dialog_title">"已关闭此功能"</string>
+    <string name="coppa_prevent_dialog_message">"此操作需要父母同意"</string>
+    <string name="welcome_birthday_title">"您的生日"</string>
+    <string name="welcome_birthday_day">"日"</string>
+    <string name="welcome_birthday_month">"月"</string>
+    <string name="welcome_birthday_year">"年"</string>
+    <string name="logout_warning_dialog_title">"警告"</string>
+    <string name="logout_warning_dialog_message">"您的帐户中记录有10次以上刷牙数据，请将您的帐户与电子邮箱绑定，否则您将丢失数据：您退出后将无法再次登录帐户"</string>
+    <string name="logout_warning_dialog_enter_email">"请输入电子邮件地址"</string>
+    <string name="logout_warning_dialog_button_continue">"不用，谢谢"</string>
+    <string name="save_your_data">"保存您的数据"</string>
+    <string name="save_your_data_title">"别丢了您的数据！"</string>
+
+    <!-- facebook is irrelevant to china -->
+    <string name="save_your_data_subtitle">"输入您的电子邮件地址录以保存您的数据"</string>
+    <string name="save_your_data_fb_button">"用Facebook登录"</string>
+    <string name="save_your_data_email_button">"用电子邮箱注册"</string>
+    <string name="save_your_data_cancel_button">"不用，谢谢"</string>
+    <string name="save_your_data_email_hint">"您的电子邮箱是什么？"</string>
+    <string name="save_your_data_submit">"提交"</string>
+    <string name="your_data_saved_title">"您的数据已保存"</string>
+    <string name="your_data_saved_subtitle">"您可以随时读取您的数据"</string>
+    <string name="your_data_saved_ok">"确定"</string>
+    <string name="welcome_birthday_invalid_day">"日期无效"</string>
+    <string name="welcome_birthday_invalid_month">"月份无效"</string>
+    <string name="welcome_birthday_invalid_year">"年份无效"</string>
+    <string name="welcome_birthday_invalid_date">"出生日期无效"</string>
+    <string name="terms_of_use_not_clicked">"您必须同意条款和条件"</string>
+    <string name="parent_consent_title">"电子邮箱"</string>
+    <string name="parent_consent_instructions">"请提供您父母或监护人的电子邮件地址，我们将与他或她取得联系，以进入下一步骤"</string>
+    <string name="parent_consent_hint">"父母或监护人的电子邮件地址"</string>
+    <string name="register_email_dialog_title">"注册您的电子邮箱"</string>
+    <string name="register_email_dialog_message">"您的帐户中记录有10次以上刷牙数据
+请将您的帐户与电子邮箱绑定，否则数据会丢失
+退出后将无法再次登录帐户"</string>
+    <string name="register_email_dialog_ok">"请输入电子邮件地址"</string>
+    <string name="register_email_dialog_cancel">"以后再说"</string>
+    <string name="help_us_customize_title">"帮助我们为您定制更好的体验"</string>
+    <string name="setup_toothbrush_m1_search">"搜索"</string>
+    <string name="sba_game_description">"使用智能刷牙分析师，了解您的刷牙习惯，以及如何改善"</string>
+    <string name="validate_birthday_error">"由于服务器错误，操作失败
+请再次尝试"</string>
+    <string name="edit_profile_birthday">"您的生日"</string>
+    <string name="error_no_internet">"未接入互联网"</string>
+    <string name="something_went_wrong">"出错了，请稍候再试"</string>
+    <string name="um_attention_title">"警告"</string>
+    <string name="get_my_data">"获取我的数据"</string>
+    <string name="no_email_title">"您的账户未绑定邮箱"</string>
+    <string name="no_email_message">"您的账户未绑定邮箱
+请在继续前绑定邮箱"</string>
+    <string name="title_success">"成功"</string>
+    <string name="operation_failed_title">"出错了"</string>
+    <string name="operation_failed">"系统问题导致错误
+请稍后再试"</string>
+    <string name="email_gdpr">"一封有压缩文件的邮件将很快发送给 %s"</string>
+
+    <!-- Fuzzy -->
+    <string name="privacy_not_clicked">"您必须同意隐私政策"</string>
+
+    <!-- Fuzzy -->
+    <string name="terms_and_condition_agreement">"我同意"<![CDATA[<u><a href=\"%1$s\">%2$s</a></u>]]></string>
+
+    <!-- Fuzzy -->
+    <string name="privacy_agreement">"我承认"<![CDATA[<u><a href=\"%1$s\">%2$s</a></u>]]></string>
+    <string name="choose_method_title">"登录"</string>
+    <string name="choose_method_sms">"通过短信登录"</string>
+    <string name="choose_method_we_chat">"通过微信登录"</string>
+    <string name="sms_login_title">"通过短信登录"</string>
+    <string name="sms_login_hint">"你的电话号码是什么？"</string>
+    <string name="sms_login_get_code">"获取验证码"</string>
+    <string name="sms_login_code_desc">"输入您刚收到的短信代码，然后确定"</string>
+    <string name="sms_login_ok">"确定"</string>
+    <string name="exit">"退出"</string>
+    <string name="retry">"再试一次"</string>
+    <string name="no_facebook_account_linked">"该Facebook帐户尚未与Colgate Connect帐户绑定"</string>
+    <string name="sms_login_invalid_number">"无效的电话号码"</string>
+    <string name="mouth_zone_bottom_incisor_exterior">"中下方、外牙面"</string>
+    <string name="mouth_zone_bottom_incisor_interior">"中下方、内牙面"</string>
+    <string name="mouth_zone_bottom_molar_left_exterior">"左下方、外牙面"</string>
+    <string name="mouth_zone_bottom_molar_left_interior">"左下方、内牙面"</string>
+    <string name="mouth_zone_bottom_molar_left_occlusal">"左下方、咀嚼面"</string>
+    <string name="mouth_zone_bottom_molar_right_occlusal">"右下方、咀嚼面"</string>
+    <string name="mouth_zone_bottom_molar_right_exterior">"右下方、外牙面"</string>
+    <string name="mouth_zone_bottom_molar_right_interior">"右下方、内牙面"</string>
+    <string name="mouth_zone_top_incisor_exterior">"中上方、外牙面"</string>
+    <string name="mouth_zone_top_incisor_interior">"中上方、内牙面"</string>
+    <string name="mouth_zone_top_molar_left_exterior">"左上方、外牙面"</string>
+    <string name="mouth_zone_top_molar_left_interior">"左上方、内牙面"</string>
+    <string name="mouth_zone_top_molar_left_occlusal">"左上方、咀嚼面"</string>
+    <string name="mouth_zone_top_molar_right_exterior">"右上方、外牙面"</string>
+    <string name="mouth_zone_top_molar_right_interior">"右上方、内牙面"</string>
+    <string name="mouth_zone_top_molar_right_occlusal">"右上方、咀嚼面"</string>
+    <string name="mouth_zone_wrong">"检测到错误区域"</string>
+    <string name="upgrade_app_title">"升级并继续"</string>
+    <string name="upgrade_app_msg">"请升级至最新版本以继续使用
+我们修复了一些漏洞"</string>
+    <string name="coach_pluse_game_description">"体验3D刷牙乐趣，保你刷到100%！"</string>
+    <string name="kolibree_pro_start_popup_title">"Colgate Connect专业版"</string>
+    <string name="kolibree_pro_start_popup_message">"您想与牙医/牙科诊所％s分享您的刷牙数据，以便定期监测吗？"</string>
+    <string name="kolibree_pro_start_popup_accept">"同意"</string>
+    <string name="kolibree_pro_start_popup_decline">"以后再说"</string>
+    <string name="kolibree_pro_settings_title">"Colgate Connect专业版"</string>
+    <string name="kolibree_pro_settings_hint">"选择此选项可与牙医/牙科诊所共享您的刷牙数据，以便他们定期进行监控。"</string>
+    <string name="kolibree_pro_practitioners_short">"以下是可以访问刷牙数据的专业人士。 学到更多"</string>
+    <string name="kolibree_pro_practitioners_short_token">"了解更多"</string>
+    <string name="kolibree_pro_practitioners_full">"以下是可以访问刷牙数据的专业人士。
+
+通过这些信息，他们能够每天按照您的牙齿刷牙质量，并为您提供个性化的建议，以改善您的习惯，使您可以实现最佳的牙齿卫生。
+只要您愿意，就可以停止共享数据。 有关详细信息，请访问我们的网站http://www.kolibree.com"</string>
+    <string name="kolibree_pro_practitioners_revoke_title">"停止与％s共享数据？"</string>
+    <string name="kolibree_pro_practitioners_revoke_message">"如果不与该专家分享数据，您的Colgate Connect专业版随访程序将终止。如果以后想继续随访，该牙科专家需要向您发送Colgate Connect专业版随访邀请，以再次访问您的数据。
+
+确定继续吗？"</string>
+    <string name="kolibree_pro_practitioners_header">"我的牙科团队"</string>
+    <string name="kolibree_pro_quit_popup_title">"确定要退出吗？"</string>
+    <string name="kolibree_pro_quit_popup_message">"通过停止Colgate Connect Pro流程，您不会与牙科诊所分享您的数据，并且他们无法监控您的刷牙会话。"</string>
+    <string name="kolibree_pro_quit_popup_continue">"继续"</string>
+    <string name="kolibree_pro_quit_popup_quit">"仍然退出"</string>
+    <string name="kolibree_pro_quit_popup_remind_me_later">"以后再提醒"</string>
+    <string name="kolibree_pro_channel_name">"Colgate Connect专业版"</string>
+    <string name="kolibree_pro_channel_description">"Colgate Connect Pro通知"</string>
+    <string name="kolibree_pro_notification_title">"Colgate Connect专业版"</string>
+    <string name="kolibree_pro_notification_description">"注册你的牙刷"</string>
+    <string name="kolibree_practitioners_popup_message">"您是否同意与您的牙科诊所％1$s分享您的刷牙数据以进行监测？"</string>
+    <string name="kolibree_practitioners_accept">"确定"</string>
+    <string name="kolibree_practitioners_decline">"不用，谢谢"</string>
+    <string name="running_in_background">"正在运行"</string>
+
+    <!-- Dialog displayed after user pressed cancel button in update ota -->
+    <string name="coach_settings_choose_music">"选择音乐"</string>
+    <string name="coach_settings_coach_sounds_title">"音效设置"</string>
+    <string name="coach_settings_shuffle">"随机播放"</string>
+    <string name="coach_settings_music">"音乐"</string>
+    <string name="coach_settings_transitions_sounds">"过渡声音"</string>
+    <string name="coach_settings_display_brushing_movements">"显示刷牙动作"</string>
+    <string name="coach_settings_display_helps_texts">"显示帮助文本"</string>
+    <string name="coach_settings_sounds">"音效"</string>
+    <string name="tb_toolbar_connect">"连接牙刷"</string>
+    <string name="tb_toolbar_connected">"已连接"</string>
+    <string name="tb_toolbar_retrieving_brushing">"检索牙刷"</string>
+    <string name="tb_toolbar_disconnected">"未连接"</string>
+    <string name="tb_toolbar_enable_bleutooth">"请开启蓝牙"</string>
+    <string name="tb_toolbar_last_sync_title">"上一次同步"</string>
+    <string name="tb_toolbar_last_sync_today">"今天"</string>
+    <string name="tb_toolbar_last_sync_yesterday">"昨天"</string>
+    <string name="tb_toolbar_connecting">"正在连接"</string>
+    <string name="welcome_have_account">"已有帐户？登录"</string>
+    <string name="welcome_have_account_login">"登录"</string>
+    <string name="connecting_dialog_title">"连接中..."</string>
+    <string name="connecting_dialog_stop">"停止"</string>
+    <string name="e1_troubleshooting_yes">"是"</string>
+    <string name="e1_troubleshooting_no">"否"</string>
+    <string name="test_brushing_start">"开始刷吧"</string>
+    <string name="test_brushing_tip">"您是否知道大多数人只刷牙40％的牙齿表面？"</string>
+    <string name="test_brushing_lets_see_how_you_brush">"现在我们看看你刷得怎么样："</string>
+    <string name="test_brushing_instructions_1">"像平常那样刷牙"</string>
+    <string name="test_brushing_instructions_2">"看看你刷的多有效"</string>
+    <string name="test_brushing_instructions_3">"跟着个性化刷牙教练来改善你的刷牙技巧吧"</string>
+    <string name="test_brushing_screen_title">"智能刷牙分析师"</string>
+    <string name="profile">"个人信息"</string>
+    <string name="tab_rewards">"奖励"</string>
+    <string name="rewards_tab_challenges">"挑战"</string>
+    <string name="rewards_tab_tier">"级别"</string>
+    <string name="rewards_tab_smiles">"我的微笑积分"</string>
+    <string name="test_brushing_session_electric_line1">"打开牙刷，"</string>
+    <string name="test_brushing_session_electric_line2">"就像平常刷牙那样刷"</string>
+    <string name="test_brushing_session_manual">"就像平常刷牙那样刷"</string>
+    <string name="durring_session_description_step1">"像往常一样，柔和的刷你的牙齿和牙龈"</string>
+    <string name="durring_session_highlighted_step1">"刷你的牙齿和牙龈"</string>
+    <string name="durring_session_description_step2">"像往常一样完成刷牙的时候停止"</string>
+    <string name="durring_session_description_step3">"声波震动会帮助清除牙菌斑"</string>
+    <string name="durring_session_highlighted_step3">"声波震动"</string>
+    <string name="durring_session_description_step3_manual">"清洁刷毛和抛光杯会帮助清除更多牙菌斑，牙渍和细菌"</string>
+    <string name="durring_session_highlighted_step3_manual">"清洁刷毛和抛光杯"</string>
+    <string name="durring_session_description_step4">"通过分析刷牙行为我们可以帮助你改进你的刷牙技巧"</string>
+    <string name="durring_session_highlighted_step4">"改善您的刷牙技巧"</string>
+
+    <!-- optimize analyser -->
+    <string name="optimize_your_brushing_analysis">"优化你的刷牙分析"</string>
+    <string name="which_hand_do_you_hold_your_toothbrush_with">"你用哪个手拿牙刷？"</string>
+    <string name="left">"左手"</string>
+    <string name="right">"右手"</string>
+    <string name="how_many_times_a_day_do_you_brush_your_teeth">"你每天刷几次牙"</string>
+    <string name="get_my_results">"看我的结果"</string>
+    <string name="finish_brushing_dialog_title">"你刷完了吗？"</string>
+    <string name="finish_brushing_dialog_yes">"我已刷好了"</string>
+    <string name="finish_brushing_dialog_resume">"尚未，请继续刷牙"</string>
+    <string name="my_connect_e2">"我的Connect E2"</string>
+    <string name="results_analysis_successful_title">"分析成功"</string>
+    <string name="results_analysis_successful_body">"看看你的刷牙技巧有多好"</string>
+    <string name="results_mouth_coverage_title">"口腔覆盖"</string>
+    <string name="results_mouth_coverage_hint">"如何看懂这张图表？"</string>
+    <string name="analysis_in_progress">"正在分析中"</string>
+    <string name="brushing_progress_msg_1">"刷牙时长"</string>
+    <string name="brushing_progress_msg_2">"口腔覆盖"</string>
+    <string name="brushing_progress_msg_3">"角度分析"</string>
+    <string name="brushing_progress_msg_4">"刷牙运动"</string>
+    <string name="results_mouth_coverage_tooth_dirty">"需要刷得更多"</string>
+    <string name="mouth_coverage_perfect">"恭喜！这次刷得完美！"</string>
+    <string name="mouth_coverage_good">"你漏刷了一些地方。跟着智能刷牙教练刷到100%吧"</string>
+    <string name="mouth_coverage_medium">"你能刷得更好的。试试智能刷牙教练吧，这样就不会漏刷了"</string>
+    <string name="mouth_coverage_bad">"还有进步空间哦。试试智能刷牙教练吧，这样就不会漏刷了"</string>
+    <string name="mouth_coverage_no_data">"这次刷牙没有表面覆盖数据"</string>
+    <string name="read_diagram_dialog_body">"就像照镜子一样，屏幕上口腔图片的右边就是你口腔的右边"</string>
+    <string name="read_diagram_dialog_title">"查看图表"</string>
+    <string name="read_diagram_dialog_ok">"明白"</string>
+    <string name="read_diagram_dialog_top">"上"</string>
+    <string name="read_diagram_dialog_bottom">"下"</string>
+    <string name="read_diagram_dialog_left">"左"</string>
+    <string name="read_diagram_dialog_right">"右"</string>
+    <string name="hint_tap_to_change_view">"更改显示，请点击"</string>
+    <string name="test_brushing_analysis_screen_title">"分析"</string>
+    <string name="dialog_lost_connexion_quit_btn">"退出，稍后再试"</string>
+    <string name="dialog_lost_connexion_title">"牙刷断开连接了"</string>
+    <string name="dialog_lost_connexion_description">"牙刷断开连接了，请稍后重新连接或重新开始刷牙"</string>
+    <string name="speed_proper">"正确
+速度"</string>
+    <string name="speed_too_fast">"太快"</string>
+    <string name="speed_card_title">"刷牙速度"</string>
+    <string name="speed_card_hint">"了解更多"</string>
+    <string name="speed_learn_more_dialog_title">"刷牙速度"</string>
+    <string name="speed_learn_more_dialog_body_top">"刷得越快越用力可能感觉越有效，但其实这样刷会导致牙齿和牙龈更加不健康。试着刷得更慢一下，一颗颗刷，让刷毛能够清洁齿缝间"</string>
+    <string name="speed_learn_more_dialog_body_bottom">"尝试慢慢刷牙，一次只注意一颗牙齿，并让刷毛在牙齿之间清洁。"</string>
+    <string name="speed_learn_more_dialog_help">"需要帮助来看懂图表吗？"</string>
+    <string name="speed_description_by_groups">"你在刷%1$s时刷得过快了。稍微慢点儿这样保持牙齿更健康"</string>
+    <string name="speed_description_average">"你在刷%1$s时刷得过快了。稍微慢点儿这样保持牙齿更健康"</string>
+    <string name="speed_description_all_good">"没有信息要报告!"</string>
+    <string name="speed_group_occlusal">"你的咬合"</string>
+    <string name="speed_group_outside_molars">"你的臼齿的外表面"</string>
+    <string name="speed_group_inside_molars">"你的臼齿的内表面"</string>
+    <string name="speed_group_outside_incisives">"你的门牙外表面"</string>
+    <string name="speed_group_inside_incisives">"你的门牙内表面"</string>
+    <string name="speed_quadrant_top_left">"你的左上象限"</string>
+    <string name="speed_quadrant_top_right">"你的右上象限"</string>
+    <string name="speed_quadrant_bottom_left">"你的左下象限"</string>
+    <string name="speed_quadrant_bottom_right">"你的右下象限"</string>
+    <string name="speed_too_slow">"太慢"</string>
+
+    <!-- Fuzzy -->
+    <string name="game_loader_download_game">"下载"</string>
+
+    <!-- Fuzzy -->
+    <string name="game_loader_game_requires_update">"强制更新"</string>
+
+    <!-- Fuzzy -->
+    <string name="game_loader_game_download_in_progress">"下载"</string>
+
+    <!-- Fuzzy -->
+    <string name="game_loader_update_available">"更新可用"</string>
+    <string name="ota.low.battery.subtitle">"请给牙刷充电或者更换电池以进行更新。"</string>
+    <string name="ota.low.battery.title">"牙刷电量不足。"</string>
+    <string name="toothbrush.battery.change.required">"请立即更换电池。"</string>
+    <string name="toothbrush.battery.few.days">"电池寿命只剩下几天，请准备更换电池。"</string>
+    <string name="toothbrush.battery.few.weeks">"如果您使用的是劲量AAA碱性电池（标准电池），其寿命还剩数周。其他类型电池的寿命可能并不长。"</string>
+    <string name="toothbrush.battery.six.months">"如果您使用的是劲量AAA碱性电池（标准电池），其寿命还有6个月以上。其他类型电池的寿命可能并不长。"</string>
+    <string name="toothbrush.battery.three.months">"如果您使用的是劲量AAA碱性电池（标准电池），其寿命还应有3个月以上。其他类型电池的寿命可能并不长。"</string>
+    <string name="toothbrush.battery.state.change.required">"已空"</string>
+    <string name="toothbrush.battery.state.few.days">"数日"</string>
+    <string name="toothbrush.battery.state.few.weeks">"数周"</string>
+    <string name="toothbrush.battery.state.six.months">"6个月以上"</string>
+    <string name="toothbrush.battery.state.three.months">"3个月以上"</string>
+    <string name="toothbrush.battery.state.unknown">"未知"</string>
+
+    <!-- Fuzzy -->
+    <string name="delete_game_dialog_title">"您确定要删除%1$s吗？"</string>
+
+    <!-- Fuzzy -->
+    <string name="delete_game_dialog_body">"您以后可以再次下载。"</string>
+
+    <!-- Fuzzy -->
+    <string name="delete_game_dialog_ok">"删除"</string>
+
+    <!-- Fuzzy -->
+    <string name="delete_game_dialog_cancel">"取消"</string>
+    <string name="current_tier_smiles_label_description">"每次刷牙可获得%1$s"</string>
+    <string name="coach_start_message_title">"启动牙刷，开始刷牙吧"</string>
+    <string name="coach_dialog_start_message_body">"使用连接的智能牙刷启动智能刷牙教练"</string>
+    <string name="coach_manual_dialog_start_message_body">"点击开始，启动手动版刷牙教练"</string>
+    <string name="coach_start_message_title_manual">"启动牙刷，开始刷牙吧
+"</string>
+    <string name="plaqless_intro_type_cleand">"已清洁"</string>
+    <string name="plaqless_intro_type_remains">"仍然牙结石有残留"</string>
+    <string name="plaqless_intro_type_missed">"漏刷"</string>
+    <string name="slide2_description3_content2">"冲洗传感器或更换刷牙角度"</string>
+    <string name="intro_start_test">"开始测试"</string>
+    <string name="pql_best_results_ok">"明白"</string>
+    <string name="pql_brushing_progress_msg">"建立分析"</string>
+    <string name="intro_do_later">"等会再刷"</string>
+    <string name="pql_durring_session_description_step1">"当你刷牙的时候要注意LED灯的颜色"</string>
+    <string name="mouth_map_left">"左"</string>
+    <string name="mouth_map_right">"右"</string>
+    <string name="mouth_map_clean_score">"清除分数"</string>
+    <string name="mouth_map_close">"回到主页"</string>
+    <string name="mouth_map_dialog_ok">"明白"</string>
+    <string name="missed_area_dialog_title">"漏刷区域"</string>
+    <string name="missed_area_dialog_body"><![CDATA[黄色代表<b>没有刷到的区域</b>]]></string>
+    <string name="clean_score_dialog_title">"清除分数"</string>
+    <string name="clean_score_dialog_clean"><![CDATA[<b>%s</b> 洁净]]></string>
+    <string name="clean_score_dialog_remains"><![CDATA[<b>%s</b> 牙结石残留]]></string>
+    <string name="clean_score_dialog_missed"><![CDATA[<b>%s</b> 漏刷]]></string>
+    <string name="build_up_remains_dialog_body"><![CDATA[蓝色区域表示<b>仍有牙结石残留</b>建议你再刷一下这些区域]]></string>
+    <string name="coach_plus_feedback_message_speed_fast">"小心，你刷得太快了!"</string>
+    <string name="coach_plus_feedback_message_speed_slow">"你刷的太慢了!"</string>
+    <string name="coach_plus_feedback_message_wrong_angle_incisors_interior">"请调整您的刷头垂直倾斜度"</string>
+    <string name="coach_plus_feedback_message_wrong_angle_other_zones">"调整刷头角度（45度)"</string>
+    <string name="crown_explanation_dialog_ok">"明白"</string>
+    <string name="coach_plus_feedback_message_wrong_handle">"将牙刷保持在水平位置"</string>
+    <string name="brushing_program_button_text">"刷牙计划"</string>
+    <string name="brushing_quiz_label">"刷牙计划"</string>
+    <string name="brushing_quiz_screen_1_title">"您如何评价您目前的口腔护理程序？"</string>
+    <string name="brushing_quiz_screen_1_answer_1">"非常好"</string>
+    <string name="brushing_quiz_screen_1_answer_2">"平均值"</string>
+    <string name="brushing_quiz_screen_1_answer_3">"可以改进"</string>
+    <string name="brushing_quiz_screen_2_title">"您经常口香糖或牙齿敏感吗？"</string>
+    <string name="brushing_quiz_screen_2_answer_1">"不经常"</string>
+    <string name="brushing_quiz_screen_2_answer_2">"经常"</string>
+    <string name="brushing_quiz_screen_3_answer_1">"更白的牙齿"</string>
+    <string name="brushing_quiz_screen_3_answer_2">"更新鲜的气息"</string>
+    <string name="brushing_quiz_screen_3_answer_3">"保护敏感的牙齿或牙龈"</string>
+    <string name="brushing_quiz_screen_3_title">"你今天最想做什么？"</string>
+    <string name="brushing_quiz_screen_2_answer_3">"日常"</string>
+    <string name="brushing_quiz_confirmation_title">"感谢您完成测验"</string>
+    <string name="brushing_quiz_program_whitening">"深度清洁"</string>
+    <string name="brushing_quiz_program_sensitive">"牙龈呵护"</string>
+    <string name="brushing_quiz_program_everyday_care">"日常清洁"</string>
+    <string name="brushing_quiz_confirmation_brushing_program">"你的刷牙计划是\n\n%1$s"</string>
+    <string name="brushing_quiz_confirmation_try_it">"现在就试试"</string>
+    <string name="brushing_quiz_confirmation_confirm">"确认计划"</string>
+    <string name="brushing_quiz_confirmation_revert">"还原"</string>
+    <string name="brushing_quiz_confirmation_try_it_not_paired">"您必须将智能牙刷连接到您的设备以测试刷牙计划"</string>
+    <string name="test_angles_activity_name">"测试您的刷牙角度"</string>
+    <string name="brushing_program_dialog_title">"选择计划"</string>
+    <string name="brushing_program_dialog_slow">"牙龈呵护"</string>
+    <string name="brushing_program_dialog_regular">"日常清洁"</string>
+    <string name="brushing_program_dialog_strong">"深度清洁"</string>
+    <string name="brushing_program_dialog_current">"(当前)"</string>
+    <string name="test_angles_intro_header">"测试您的刷牙角度"</string>
+    <string name="test_angles_intro_body">"将牙刷与牙龈面保持45度角
+
+按照说明评估和改进您的刷牙技术。"</string>
+    <string name="test_angles_intro_start_button">"让我们开始测试刷牙角度吧"</string>
+    <string name="login_hint_enable_network">"请接入互联网来创建您的账户"</string>
+    <string name="test_angles_state_correct">"正确，继续保持"</string>
+    <string name="test_angles_state_incorrect">"错误，请调整角度"</string>
+    <string name="test_angles_molar_hint">"刷槽牙的外表面并保持正确的角度20秒钟"</string>
+    <string name="test_angles_incisor_hint">"垂直倾斜牙刷以切入内门牙表面"</string>
+    <string name="test_angles_confirmation_hint">"很好！您现在可以退出刷牙角度测试了"</string>
+    <string name="test_angles_confirmation_hint_highlight">"退出刷牙角度测试"</string>
+    <string name="coach_plus_title">"智能刷牙教练"</string>
+    <string name="speed_control_activity_name">"速度控制"</string>
+    <string name="speed_control_intro_header">"速度控制"</string>
+    <string name="speed_control_intro_body">"刷得太快会伤害您的牙龈哦. 按照说明评估和改进您的技术"</string>
+    <string name="speed_control_intro_start_button">"立即开始刷牙"</string>
+    <string name="speed_control_confirmation_hint">"很好！您现在可以退出刷牙速度测试了"</string>
+    <string name="speed_control_confirmation_hint_highlight">"退出刷牙测试功能"</string>
+    <string name="speed_control_brushing_stage1_hint">"刷槽牙的外表面"</string>
+    <string name="speed_control_brushing_stage1_hint_highlight">"槽牙"</string>
+    <string name="speed_control_brushing_stage2_hint">"刷槽牙的咀嚼面"</string>
+    <string name="speed_control_brushing_stage2_hint_highlight">"槽牙"</string>
+    <string name="speed_control_brushing_stage3_hint">"刷门牙的前（外）表面"</string>
+    <string name="speed_control_brushing_stage3_hint_highlight">"门牙"</string>
+    <string name="speed_control_feedback_underspeed">"太慢了哟~"</string>
+    <string name="speed_control_feedback_overspeed">"太快了哟~"</string>
+    <string name="speed_control_feedback_correct">" "</string>
+
+    <!-- Fuzzy -->
+    <string name="firmware_upgrade_welcome">"为防止牙刷宕机，升级过程中：
+1. 请保持固件升级界面打开，不要退出；
+2. 保持牙刷处于充电状态；
+3. 确保手机与牙刷在3米范围内。"</string>
+    <string name="ota_blocker_must_be_charging">"请把牙刷放在充电器上"</string>
+
+    <!-- OTA update message for non-rechargeable toothbrushes -->
+    <string name="firmware_upgrade_welcome_nonrechargeable">"为防止牙刷损坏，整个升级过程中：
+1、保持此界面始终显示，不要退出。
+2、保持牙刷处于充电状态，不要从充电器上移走。
+3、确保手机和牙刷在3米范围内"</string>
+    <string name="brushing_quiz_screen_1_answer_1_hint">"我每次刷2分钟，每天至少2次"</string>
+    <string name="brushing_quiz_screen_1_answer_2_hint">"我每次刷2分钟，每天至少2次"</string>
+    <string name="brushing_quiz_screen_1_answer_3_hint">"我每次刷2分钟，每天至少2次"</string>
+    <string name="brushing_quiz_screen_2_answer_1_hint">"几乎没有"</string>
+    <string name="brushing_quiz_screen_2_answer_2_hint">"每周1到2次"</string>
+    <string name="brushing_quiz_screen_2_answer_3_hint">"每天至少一次"</string>
+    <string name="brushing_quiz_screen_3_answer_1_hint">"最强的振动"</string>
+    <string name="brushing_quiz_screen_3_answer_2_hint">"中等的振动"</string>
+    <string name="brushing_quiz_screen_3_answer_3_hint">"最低的振动"</string>
+    <string name="brushing_quiz_your_program">"你的刷牙程序是"</string>
+    <string name="brushing_quiz_reset">"重置为默认"</string>
+    <string name="brushing_quiz_toolbar_title">"刷牙程序"</string>
+    <string name="quiz_confirmation_title">"测验完成"</string>
+    <string name="quiz_program_whitening">"深层清洁"</string>
+    <string name="quiz_program_sensitive">"敏感清洁"</string>
+    <string name="quiz_program_everyday_care">"正常清洁"</string>
+    <string name="quiz_confirmation_brushing_program">"确认程序"</string>
+    <string name="brushing_quiz_steps_counter">"%2$s 的第 %1$s 步"</string>
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<!--These should be not considered as private because app will expose then in URL-->
+<resources>
+  <dimen name="tap_to_copy_border_stroke_width">1dp</dimen>
+  <dimen name="tap_to_copy_border_dash_width">3dp</dimen>
+  <dimen name="tap_to_copy_border_dash_gap">3dp</dimen>
+
+  <dimen name="headspace_mindful_moment_max_font_size">34sp</dimen>
+  <dimen name="headspace_mindful_moment_min_font_size">16sp</dimen>
+</resources>

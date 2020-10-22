@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <data>
+
+    <variable
+      name="item"
+      type="com.kolibree.android.app.ui.settings.binding.HeaderValueSettingsNotClickableItemBindingModel" />
+
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dot_sev"
+    android:layout_marginTop="@dimen/dot_half"
+    android:layout_marginBottom="@dimen/dot_half">
+
+    <TextView
+      android:id="@+id/header"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_quad"
+      android:text="@{item.headerTextRes}"
+      android:textAppearance="?textAppearanceOverline2"
+      android:textColor="?colorOnSecondary"
+      android:textAllCaps="true"
+      app:layout_constraintBottom_toTopOf="@+id/value"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+      android:id="@+id/value"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="@dimen/dot_quad"
+      android:layout_marginTop="@dimen/dot_half"
+      android:text="@{item.value}"
+      android:textAppearance="?textAppearanceHeadline6"
+      android:textColor="?textColorAccentSecondary"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="@id/header"
+      app:layout_constraintTop_toBottomOf="@id/header"
+      tools:text="@string/settings_item_about" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

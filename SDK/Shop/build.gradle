@@ -1,0 +1,123 @@
+/*
+ * Copyright (c) 2020 Kolibree. All rights reserved
+ *
+ * Copying this file via any medium without the prior written consent of Kolibree is strictly
+ * prohibited
+ *
+ * Proprietary and confidential
+ */
+
+//This is a missing Shopify SDK dependency, we need to add it on our own to prevent runtime issues.
+//We use AndroidThreeTen for date/time manipulation and we don't want JodaTime to spread across
+//the app - therefore we are keeping this as Shop internal dependency declaration.
+ext.shopDepVersions = [
+    jodaTime: '2.10.5'
+]
+ext.shopLibraries = [
+    jodaTime: "joda-time:joda-time:$shopDepVersions.jodaTime"
+]
+
+apply plugin: 'com.android.library'
+
+apply from: '../buildscripts/kapt.gradle'
+
+android {
+    buildFeatures {
+        dataBinding = true
+    }
+
+    kapt {
+        arguments {
+            arg("room.schemaLocation", "$projectDir/schemas".toString())
+        }
+    }
+
+    androidExtensions {
+        experimental = true
+    }
+
+    sourceSets {
+        androidTest {
+            assets.srcDirs += files("$projectDir/schemas".toString())
+        }
+
+        String sharedTestDir = 'src/sharedTest/kotlin'
+        test {
+            java.srcDirs += sharedTestDir
+            java.srcDirs += 'src/test/kotlin'
+        }
+
+        androidTest {
+            java.srcDirs += sharedTestDir
+        }
+    }
+}
+
+dependencies {
+    implementation project(path: ':features')
+    implementation project(path: ':account-internal')
+    implementation project(path: ':databinding')
+    implementation project(path: ':account-internal')
+    implementation project(path: ':network')
+    implementation project(path: ':static-resources')
+    implementation project(path: ':static-resources-branded')
+    implementation project(path: ':base-ui')
+    implementation project(path: ':base-ui-hum')
+    implementation project(path: ':commons')
+    implementation project(path: ':tracker-domain')
+    implementation project(path: ':crypto')
+    implementation project(path: ':rewards-logic')
+    implementation project(path: ':account-internal')
+    implementation project(path: ':web-service-sdk')
+
+    implementation libraries.shopify
+    implementation shopLibraries.jodaTime
+
+    implementation libraries.okHttp
+
+    implementation libraries.timesSquare
+
+    implementation libraries.rxJava
+    implementation libraries.rxAndroid
+    implementation libraries.rxRelay
+    implementation libraries.rxLint
+
+    implementation libraries.supportRecyclerView
+    implementation libraries.supportDesign
+    implementation libraries.supportConstraintLayout
+    implementation libraries.supportAutofill
+
+    implementation libraries.bindingCollections
+    implementation libraries.bindingCollectionsRV
+
+    implementation libraries.navigationFragment
+    implementation libraries.navigationUI
+
+    implementation libraries.dagger
+    kapt libraries.daggerCompiler
+    implementation libraries.daggerAndroid
+    kapt libraries.daggerAndroidProcessor
+
+    implementation libraries.threetenAbp
+
+    implementation libraries.googleWallet
+
+    implementation libraries.roomRuntime
+    implementation libraries.roomRxJava2
+    kapt libraries.roomCompiler
+
+    testImplementation project(path: ':testing-unit-base')
+    testImplementation project(path: ':testing-pact')
+    testImplementation project(path: ':testing-builders')
+    testImplementation libraries.mockitoKotlin2
+    testImplementation libraries.mockk
+
+    androidTestImplementation project(path: ":testing-builders")
+    androidTestImplementation libraries.supportTestCore
+    androidTestImplementation libraries.supportTestRunner
+    androidTestImplementation libraries.supportTestRules
+    androidTestImplementation libraries.retrofitMock
+    androidTestImplementation libraries.mockWebServer
+    androidTestImplementation libraries.mockitoAndroid
+    androidTestImplementation(libraries.mockkAndroid)
+}

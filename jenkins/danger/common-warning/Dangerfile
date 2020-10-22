@@ -1,0 +1,31 @@
+# Danger is a highly customizable tool for automatic code review.
+# On its own, it does nothing except interpreting the custom rules we provide in this file.
+
+# However, it has plugins (like 'danger-android_lint') which can allow us to digest reports, like lint.
+
+# Official and well detailed documentation of this tool can be found here : https://danger.systems/ruby/
+# The upper link also provides an exhaustive list of all Danger plugins which can be installed.
+
+# All the Danger scoped variable can be found here : https://danger.systems/reference.html
+
+load 'jenkins/danger/utils.rb'
+
+modified_modules = get_modified_modules_names(git.added_files + git.modified_files + git.deleted_files)
+jira_starting_uri = "https://kolibree.atlassian.net/browse/KLTB002"
+
+# Common informational messages & Warnings
+markdown('<table><tr><th width="100%">:bookmark_tabs: Modified Modules :bookmark_tabs:</th></tr>' << modified_modules.map { |mod| '<tr><td>' << mod.to_s << '</td></tr>' }.join << '</table>') unless modified_modules.empty?
+
+warn "Please provide a summary in the Pull Request description" unless github.pr_body.length > 5
+
+warn "If this PR contains impacting changes, "\
+     "consider assigning someone for testing this feature's consistency" unless github.pr_json['assignee']
+
+warn "Please link a JIRA task associated with this PR following this URI rule : "\
+     "https://kolibree.atlassian.net/browse/[your issue key, starting with KLTB002]" unless github.pr_body.include? jira_starting_uri
+
+warn "This PR has " + git.lines_of_code.to_s + " modified lines of code. "\
+     "For your reviewers sake, be careful about its size :)" if git.lines_of_code > 1500
+
+failure "This PR has conflicts and is not mergeable : Be aware that the CI only runs completely the mergeable PR" unless github.pr_json["mergeable"]
+

@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="UnusedResources">
+
+  <style name="Base.AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+
+    <!-- Color -->
+    <item name="android:statusBarColor">#14000000</item>
+    <item name="android:navigationBarColor">#80000000</item>
+    <item name="colorPrimary">@color/red</item>
+    <item name="colorAccent">@color/red</item>
+    <item name="colorPrimaryDark">@color/darkred</item>
+    <item name="backgroundColor">@color/subtlegray</item>
+    <item name="progressOverlayColor">@color/black50</item>
+    <item name="colorOnSurface">@color/gray</item>
+    <item name="colorOnError">@color/red</item>
+    <item name="colorOnSecondary">@color/gray</item>
+    <item name="rippleColorMono">@color/gray</item>
+    <item name="colorControlActivated">@color/red</item>
+    <item name="colorBackgroundDark">@color/lightgray</item>
+
+    <item name="colorSecondary">@color/red3</item>
+    <item name="colorPrimaryLight">@color/red1</item>
+    <item name="colorSecondaryLight">@color/red2</item>
+    <item name="colorSecondaryMedium">@color/teal3</item>
+    <item name="colorSecondaryDark">@color/teal</item>
+    <item name="colorTertiaryLight">@color/orange</item>
+    <item name="colorTertiaryMedium">@color/orange</item>
+    <item name="colorTertiaryDark">@color/orange2</item>
+    <item name="colorQuaternaryLight">@color/teal</item>
+    <item name="bottomNavigationSelectionColor">@color/red</item>
+    <item name="googleTextColor">@color/gray</item>
+    <item name="backgroundColorDark">@color/subtlegray</item>
+    <item name="backgroundColorLight">@color/white</item>
+
+    <item name="brushingStreakActionColor">@color/red</item>
+    <item name="smilePointsBackgroundColor">@color/orange3</item>
+    <item name="guidedBrushingStartTopBackgroundColor">@color/teal1</item>
+
+    <item name="android:textColorPrimary">@color/darkgray</item>
+    <item name="android:textColorPrimaryDisableOnly">@color/gray</item>
+    <item name="android:textColorSecondary">@color/gray</item>
+    <item name="android:textColorTertiary">@color/lightgray</item>
+    <item name="textColorAccent">@color/red</item>
+    <item name="textColorAccentSecondary">@color/black</item>
+    <item name="android:textColorHighlight">@color/gray</item>
+
+    <item name="toolbarCollapsedBackground">@color/white</item>
+    <item name="toolbarExpandedBackground">@color/transparent_white</item>
+    <item name="onToolbarCollapsedBackground">@color/darkgray</item>
+    <item name="onToolbarExpandedBackground">@color/white</item>
+
+    <item name="connectedIconAlpha">@dimen/connected_icon_alpha</item>
+    <item name="disconnectedIconAlpha">@dimen/disconnected_icon_alpha</item>
+
+    <item name="android:windowTranslucentNavigation">true</item>
+
+    <!--
+    TEXT
+    -->
+
+    <!-- Hind font has a very large interline, we need to compensate that-->
+    <item name="android:lineSpacingMultiplier">0.75</item>
+
+    <item name="android:textAppearance">@style/TextAppearance.Body1</item>
+
+    <item name="textAppearanceHeadline1">@style/TextAppearance.Headline1</item>
+    <item name="textAppearanceHeadline2">@style/TextAppearance.Headline2</item>
+    <item name="textAppearanceHeadline3">@style/TextAppearance.Headline3</item>
+    <item name="textAppearanceHeadline4">@style/TextAppearance.Headline4</item>
+    <item name="textAppearanceHeadline5">@style/TextAppearance.Headline5</item>
+    <item name="textAppearanceHeadline6">@style/TextAppearance.Headline6</item>
+
+    <item name="textAppearanceSubtitle1">@style/TextAppearance.Subtitle1</item>
+    <item name="textAppearanceSubtitle2">@style/TextAppearance.Subtitle2</item>
+
+    <item name="textAppearanceBody1">@style/TextAppearance.Body1</item>
+    <item name="textAppearanceBody2">@style/TextAppearance.Body2</item>
+
+    <item name="textAppearanceButton">@style/TextAppearance.Button</item>
+    <item name="android:textAppearanceButton">@style/TextAppearance.Button</item>
+
+    <item name="textAppearanceCaption">@style/TextAppearance.Caption</item>
+
+    <item name="textAppearanceOverline">@style/TextAppearance.Overline</item>
+    <item name="textAppearanceOverline1">@style/TextAppearance.Overline</item>
+    <item name="textAppearanceOverline2">@style/TextAppearance.Overline2</item>
+
+    <!--
+    WIDGETS
+    -->
+
+    <item name="buttonStyle">@style/Widget.Button</item>
+    <item name="radioButtonStyle">@style/Widget.RadioButton</item>
+    <item name="materialButtonStyle">@style/Widget.Button</item>
+    <item name="materialButtonIconStyle">@style/Widget.Button.Icon</item>
+    <item name="materialButtonOutlinedStyle">@style/Widget.Button.OutlinedButton</item>
+    <item name="materialButtonOutlinedIconStyle">
+      @style/Widget.Button.OutlinedButton.Icon
+    </item>
+    <item name="materialButtonTextStyle">@style/Widget.Button.TextButton</item>
+    <item name="materialButtonTextStyleSecondary">@style/Widget.Button.TextButton.Secondary</item>
+    <item name="materialButtonTextStyleTertiary">@style/Widget.Button.TextButton.Tertiary</item>
+    <item name="android:textViewStyle">@style/Widget.TextView</item>
+    <item name="bottomNavigationStyle">@style/Widget.BottomNavigationView</item>
+
+    <item name="shapeAppearanceMediumComponent">@style/Widget.MediumComponent.Shape</item>
+    <item name="materialAlertDialogTheme">@style/ThemeOverlay.Dialog</item>
+
+    <item name="alertDialogCornerRadius">@dimen/dot</item>
+    <item name="alertDialogVerticalSpacing">@dimen/dot_double</item>
+    <item name="alertDialogInsetStart">@dimen/dot_trip</item>
+    <item name="alertDialogInsetTop">@dimen/dot_trip</item>
+    <item name="alertDialogInsetEnd">@dimen/dot_trip</item>
+    <item name="alertDialogInsetBottom">@dimen/dot_trip</item>
+    <item name="alertDialogHorizontalBackgroundInset">@dimen/dot_double</item>
+    <item name="alertDialogMinWidth">300dp</item>
+
+    <item name="materialCardViewStyle">@style/Widget.CardView</item>
+
+    <item name="textInputStyle">@style/Widget.TextInputLayout</item>
+    <item name="autoCompleteTextInputLayoutStyle">@style/Widget.TextInputLayout.ExposedDropDown</item>
+
+    <item name="snackbarStyle">@style/Widget.Snackbar</item>
+    <item name="snackbarButtonStyle">@style/Widget.Button.TextButton.Snackbar</item>
+    <item name="snackbarTextViewStyle">@style/TextAppearance.Snackbar.Message</item>
+
+    <item name="floatingActionButtonStyle">@style/Widget.FloatingActionButton</item>
+
+    <item name="badgeImageViewStyle">@style/Widget.BadgeImageView</item>
+    <item name="badgeBorderWidth">1dp</item>
+
+    <item name="timerViewStyle">@style/Widget.TimerView</item>
+
+    <item name="appBarLayoutStyle">@style/Widget.Toolbar</item>
+    <item name="toolbarStyle">@style/Widget.Toolbar</item>
+
+    <item name="dividerColor">@color/divider</item>
+
+    <item name="zoneForegroundColor">@color/white</item>
+    <item name="zoneBackgroundColor">@color/neglectedZoneColor</item>
+    <item name="zoneOngoingForegroundColor">@color/orange</item>
+    <item name="zoneOngoingBackgroundColor">@color/teal3</item>
+
+    <item name="inAppBrushingsColor">@color/teal3</item>
+    <item name="offlineBrushingsColor">@color/orange3</item>
+
+    <item name="streakProgressionForegroundColor">@color/white</item>
+    <item name="streakProgressionBackgroundColor">@color/teal</item>
+    <item name="streakProgressionInactiveColor">@color/divider</item>
+
+    <item name="android:progressBarStyleHorizontal">@style/Widget.ProgressBar.Horizontal</item>
+
+    <item name="speedometerViewStyle">@style/SpeedometerView</item>
+    <item name="dottedBottomNavigationViewStyle">@style/DottedBottomNavigationView</item>
+
+    <item name="feedbackMessageBackgroundColor">@color/white</item>
+    <item name="feedbackMessageTextColor">@color/darkgray</item>
+    <item name="feedbackMessageWrongBackgroundColor">@color/orange3</item>
+    <item name="feedbackMessageWrongTextColor">@color/white</item>
+
+    <item name="jawCurrentColor">@color/orange</item>
+    <item name="jawMissedColor">@color/orange2</item>
+
+    <item name="copiedToClipboardTextColor">@color/teal</item>
+    <item name="copiedToClipboardBackgroundColor">@color/teal</item>
+    <item name="copiedToClipboardRippleColor">@color/white80</item>
+
+    <!-- Follow `<enum name="centerCrop" value="6" />` -->
+    <item name="testBrushingHeaderScaleType">6</item>
+    <!-- Follow `<enum name="centerCrop" value="6" />` -->
+    <item name="testBrushingAnimationScaleType">6</item>
+
+    <item name="completeProfileBubbleBackgroundColor">@color/black87</item>
+    <item name="completeProfileBubbleActionColor">@color/red3</item>
+
+    <item name="changeProfileAvatarIconColor">@color/teal3</item>
+  </style>
+
+  <style name="AppTheme" parent="Base.AppTheme" />
+
+  <style name="AppTheme.Light">
+    <item name="backgroundColor">@color/subtlegray</item>
+    <item name="progressOverlayColor">@color/white80</item>
+    <item name="android:windowLightStatusBar">true</item>
+    <item name="android:windowTranslucentNavigation">false</item>
+  </style>
+
+  <!-- Use to override activity outside the sdk/app -->
+  <style name="AppTheme.Light.DarkStatusBar">
+    <item name="android:windowLightStatusBar">false</item>
+    <item name="android:statusBarColor">?android:colorPrimary</item>
+  </style>
+
+  <style name="AppTheme.LightActionBar">
+    <item name="appBarLayoutStyle">@style/Widget.Toolbar.Light</item>
+    <item name="toolbarStyle">@style/Widget.Toolbar.Light</item>
+  </style>
+
+  <style name="AppTheme.DarkActionBar">
+    <item name="appBarLayoutStyle">@style/Widget.Toolbar.Dark</item>
+    <item name="toolbarStyle">@style/Widget.Toolbar.Dark</item>
+  </style>
+
+  <style name="ThemeOverlay.SupportActionBar.Dark" parent="ThemeOverlay.MaterialComponents.ActionBar.Surface">
+    <item name="android:textColorPrimary">@color/white</item>
+  </style>
+
+  <style name="Widget.ActonBar.Light" parent="Widget.AppCompat.Light.ActionBar.Solid">
+    <item name="titleTextStyle">@style/TextAppearance.Headline4</item>
+  </style>
+
+  <style name="AppTheme.Light.DarkStatusBar.SupportActionBar">
+    <item name="windowActionBar">true</item>
+    <item name="windowNoTitle">false</item>
+    <item name="android:homeAsUpIndicator">@drawable/ic_back_arrow_small</item>
+    <item name="actionBarTheme">@style/ThemeOverlay.SupportActionBar.Dark</item>
+    <item name="actionBarStyle">@style/Widget.ActonBar.Light</item>
+  </style>
+
+  <!--
+  INVERSE
+  -->
+
+  <style name="Base.AppTheme.Inverse" parent="AppTheme">
+
+    <item name="android:windowTranslucentNavigation">false</item>
+
+    <!-- Color -->
+    <item name="inverseThemeMainColor">@color/gray</item>
+    <item name="inverseThemeMainColorDark">@color/black</item>
+    <item name="colorPrimary">@color/white</item>
+    <item name="colorAccent">@color/white</item>
+    <item name="backgroundColor">?inverseThemeMainColor</item>
+    <item name="android:windowBackground">?inverseThemeMainColor</item>
+    <item name="colorOnPrimary">?inverseThemeMainColor</item>
+    <item name="colorOnSurface">@color/white</item>
+    <item name="colorOnError">?inverseThemeMainColorDark</item>
+    <item name="colorOnSecondary">@color/white80</item>
+    <item name="rippleColorMono">@color/gray</item>
+
+    <item name="android:textColorPrimary">@color/white</item>
+    <item name="android:textColorPrimaryDisableOnly">@color/white60</item>
+    <item name="android:textColorSecondary">@color/white80</item>
+    <item name="android:textColorTertiary">@color/white</item>
+    <item name="textColorAccent">@color/white</item>
+    <item name="textColorAccentSecondary">@color/white</item>
+    <item name="android:textColorHighlight">@color/white30</item>
+    <item name="colorControlActivated">@color/white</item>
+
+    <item name="toolbarCollapsedBackground">?inverseThemeMainColor</item>
+    <item name="toolbarExpandedBackground">?inverseThemeMainColor</item>
+    <item name="onToolbarCollapsedBackground">?inverseThemeMainColor</item>
+    <item name="onToolbarExpandedBackground">?inverseThemeMainColor</item>
+
+    <!--
+    TEXT
+    -->
+    <item name="textAppearanceSubtitle1">@style/TextAppearance.Inverse.Subtitle1
+    </item>
+
+    <!--
+    WIDGETS
+    -->
+
+    <item name="buttonStyle">@style/Widget.Button</item>
+    <item name="materialButtonStyle">@style/Widget.Button</item>
+    <item name="materialButtonIconStyle">@style/Widget.Button.Icon</item>
+    <item name="materialButtonOutlinedStyle">
+      @style/Widget.Inverse.Button.OutlinedButton
+    </item>
+    <item name="materialButtonOutlinedIconStyle">
+      @style/Widget.Inverse.Button.OutlinedButton.Icon
+    </item>
+
+    <item name="textInputStyle">@style/Widget.TextInputLayout.Inverse</item>
+    <item name="autoCompleteTextInputLayoutStyle">@style/Widget.TextInputLayout.ExposedDropDown.Inverse</item>
+
+    <item name="snackbarStyle">@style/Widget.Snackbar.Opaque</item>
+
+    <item name="materialAlertDialogTheme">@style/ThemeOverlay.Dialog.Inverse</item>
+
+    <item name="timerViewStyle">@style/Widget.TimerView.Inverse</item>
+  </style>
+
+  <style name="AppTheme.Inverse" parent="Base.AppTheme.Inverse" />
+
+  <style name="AppTheme.Inverse.Red">
+    <item name="inverseThemeMainColor">@color/red</item>
+    <item name="inverseThemeMainColorDark">@color/maroon</item>
+  </style>
+
+  <style name="AppTheme.Inverse.Red.TranslucentNavigation">
+    <item name="android:windowTranslucentNavigation">true</item>
+  </style>
+
+  <style name="AppTheme.Launcher" parent="AppTheme.Inverse.Red">
+    <item name="android:windowBackground">@drawable/splash_screen</item>
+  </style>
+
+  <style name="AppTheme.Inverse.Teal">
+    <item name="inverseThemeMainColor">@color/teal2</item>
+    <item name="inverseThemeMainColorDark">@color/teal3</item>
+  </style>
+
+  <style name="AppTheme.Inverse.Teal.TranslucentNavigation">
+    <item name="android:windowTranslucentNavigation">true</item>
+  </style>
+
+  <style name="AppTheme.Inverse.Blue">
+    <item name="inverseThemeMainColor">@color/teal3</item>
+  </style>
+
+  <style name="AppTheme.Inverse.Blue.TranslucentNavigation">
+    <item name="android:windowTranslucentNavigation">true</item>
+  </style>
+
+
+  <!--
+  OVERLAYS
+  -->
+
+  <style name="AppActionBarTheme" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar" />
+
+  <style name="AppActionBarTheme.Transparent">
+
+  </style>
+
+  <style name="AppPopupTheme" parent="ThemeOverlay.MaterialComponents.Light" />
+
+</resources>

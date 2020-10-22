@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <data>
+
+    <import type="android.view.View" />
+
+    <variable
+      name="item"
+      type="com.kolibree.android.app.ui.home.tab.home.card.question.QuestionCardBindingModel" />
+
+    <variable
+      name="interaction"
+      type="com.kolibree.android.app.ui.home.tab.home.card.question.QuestionCardInteraction" />
+
+  </data>
+
+  <com.google.android.material.card.MaterialCardView
+    android:id="@+id/question_card"
+    style="@style/Widget.CardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dot_double"
+    android:clickable="true"
+    android:focusable="true"
+    android:onClick="@{(v) -> interaction.onClick()}"
+    android:theme="@style/AppTheme.Inverse.Red"
+    app:cardBackgroundColor="?inverseThemeMainColor"
+    app:cardCornerRadius="@dimen/dot">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:paddingStart="@dimen/dot_double"
+      android:paddingTop="@dimen/dot_quin"
+      android:paddingEnd="@dimen/dot_double"
+      android:paddingBottom="@dimen/dot_quad">
+
+      <ImageView
+        android:id="@+id/question_card_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/question_icon_small"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+      <TextView
+        android:id="@+id/question_card_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dot_double"
+        android:gravity="center"
+        android:text="@string/question_of_the_day_card_title"
+        android:textAppearance="?textAppearanceHeadline4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question_card_icon" />
+
+      <TextView
+        android:id="@+id/question_card_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dot"
+        android:gravity="center"
+        android:text="@{item.getQuestion(context)}"
+        android:textAppearance="?textAppearanceBody2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question_card_title"
+        tools:text="How many teeth does crocodile have?" />
+
+      <TextView
+        android:id="@+id/question_card_points"
+        style="@style/Widget.TextView.PointsAwarded"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dot_trip"
+        android:layout_marginBottom="@dimen/dot_quad"
+        android:minWidth="@dimen/dot_thirteen"
+        android:text="@{item.points(context)}"
+        android:visibility="@{item.pointsVisibility()}"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question_card_question"
+        tools:text="+50 points" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+  </com.google.android.material.card.MaterialCardView>
+
+</layout>

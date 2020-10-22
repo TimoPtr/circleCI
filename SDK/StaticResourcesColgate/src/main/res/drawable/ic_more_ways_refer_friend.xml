@@ -1,0 +1,31 @@
+<!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+  android:width="42dp"
+  android:height="42dp"
+  android:viewportWidth="42"
+  android:viewportHeight="42">
+  <group>
+    <clip-path android:pathData="M0,0H42V42H0z" />
+    <path
+      android:fillColor="#D2010D"
+      android:fillType="evenOdd"
+      android:pathData="M18.784,20.181c5.297,0 9.59,-4.294 9.59,-9.59 0,-5.297 -4.293,-9.591 -9.59,-9.591s-9.59,4.294 -9.59,9.59c0,5.297 4.293,9.591 9.59,9.591zM25.257,42H2v-9.5c0,-3.575 2.898,-6.474 6.474,-6.474h20.62c3.575,0 6.473,2.899 6.473,6.474V42" />
+    <path
+      android:fillColor="#009CA6"
+      android:pathData="M34.512,25.5m-7.5,0a7.5,7.5 0,1 1,15 0a7.5,7.5 0,1 1,-15 0"
+      android:strokeWidth="2"
+      android:strokeColor="#fff" />
+    <path
+      android:fillColor="#fff"
+      android:fillType="evenOdd"
+      android:pathData="M35.012,23.5c0,-0.276 -0.224,-0.5 -0.5,-0.5s-0.5,0.224 -0.5,0.5V25h-1.5c-0.276,0 -0.5,0.224 -0.5,0.5s0.224,0.5 0.5,0.5h1.5v1.5c0,0.276 0.224,0.5 0.5,0.5s0.5,-0.224 0.5,-0.5V26h1.5c0.276,0 0.5,-0.224 0.5,-0.5s-0.224,-0.5 -0.5,-0.5h-1.5v-1.5z" />
+  </group>
+</vector>

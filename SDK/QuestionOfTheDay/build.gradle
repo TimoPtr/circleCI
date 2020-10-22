@@ -1,0 +1,76 @@
+apply plugin: 'com.android.library'
+
+apply from: '../buildscripts/kapt.gradle'
+
+android {
+
+    defaultConfig {
+        kapt {
+            arguments {
+                arg("room.schemaLocation", "$projectDir/schemas".toString())
+            }
+        }
+    }
+
+    sourceSets {
+        androidTest.assets.srcDirs += files("$projectDir/schemas".toString())
+    }
+
+    buildFeatures {
+        dataBinding = true
+    }
+
+    androidExtensions {
+        experimental = true
+    }
+}
+
+dependencies {
+    implementation project(path: ':features')
+    implementation project(path: ':static-resources')
+    implementation project(path: ':static-resources-branded')
+    implementation project(path: ':base-ui')
+    implementation project(path: ':base-ui-hum')
+    implementation project(path: ':commons')
+    implementation project(path: ':databinding')
+    implementation project(path: ':tracker-domain')
+    implementation project(path: ':network')
+    implementation project(path: ':account-internal')
+    implementation project(path: ':synchronizator')
+
+    implementation libraries.supportAppCompat
+
+    implementation libraries.kotlinRuntime
+
+    implementation libraries.rxJava
+    implementation libraries.rxAndroid
+    implementation libraries.rxLint
+
+    implementation libraries.flexbox
+    implementation libraries.lottie
+    implementation libraries.threetenAbp
+
+    implementation libraries.roomRuntime
+    implementation libraries.roomRxJava2
+    kapt libraries.roomCompiler
+    androidTestImplementation libraries.roomTesting
+
+    implementation libraries.dagger
+    kapt libraries.daggerCompiler
+    implementation libraries.daggerAndroid
+    kapt libraries.daggerAndroidProcessor
+    implementation libraries.daggerAndroidSupport
+
+    implementation libraries.navigationFragment
+    implementation libraries.navigationUI
+    implementation libraries.supportConstraintLayout
+
+    implementation libraries.threetenAbp
+
+    testImplementation libraries.mockitoKotlin2
+    testImplementation project(path: ':testing-unit-base')
+    testImplementation project(path: ':testing-builders')
+    testImplementation project(path: ':testing-pact')
+    androidTestImplementation project(path: ':testing-espresso-base')
+    androidTestImplementation project(path: ':testing-shared')
+}

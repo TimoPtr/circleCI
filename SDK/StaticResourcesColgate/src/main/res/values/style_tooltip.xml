@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="UnusedResources">
+
+  <style name="Widget.SmallComponent.Shape" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+    <item name="cornerSize">@dimen/dot_quad</item>
+  </style>
+
+  <style name="Widget.Button.Shape" parent="Widget.SmallComponent.Shape">
+    <item name="android:solidColor">?android:backgroundTint</item>
+  </style>
+
+  <style name="Widget.MediumComponent.Shape" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+    <item name="cornerSize">@dimen/dot_six</item>
+  </style>
+
+  <style name="ThemeOverlay.DismissibleTooltip" parent="">
+    <item name="cornerRadius">@dimen/dot_trip</item>
+    <item name="backgroundColor">#B0000000</item>
+    <item name="android:textColor">@color/white</item>
+    <item name="shapeAppearance">@style/Widget.MediumComponent.Shape</item>
+  </style>
+
+
+</resources>

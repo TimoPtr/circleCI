@@ -1,0 +1,96 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    build-pipeline: android-ui
+spec:
+  podAntiAffinity:
+    requiredDuringSchedulingIgnoredDuringExecution:
+    - labelSelector:
+        matchExpressions:
+          - key: build-pipeline
+            operator: In
+            values:
+              - android-ui
+      topologyKey: "kubernetes.io/hostname"
+  initContainers:
+    - name: install-kmod
+      image: 578632855654.dkr.ecr.us-east-2.amazonaws.com/ci/anbox-with-sdk:1.8-android7
+      command: ["/bin/bash"]
+      args: ["-exc", "cp -f /install-kmod.sh /host/tmp/aind-install-kmod.sh && cd /host && chroot . bash /tmp/aind-install-kmod.sh"]
+      securityContext:
+        privileged: true
+      volumeMounts:
+        - name: host-root
+          mountPath: /host
+    # Remounting /sys as read-write in initContainers propagates to the Pod sandbox and the containers.
+    # Required by anbox session-manager.
+    # https://github.com/aind-containers/aind/issues/21 https://github.com/containerd/containerd/issues/3221 https://github.com/moby/moby/issues/24000#issuecomment-613194003
+    - name: fix-sandbox-sysfs
+      image: 578632855654.dkr.ecr.us-east-2.amazonaws.com/ci/anbox-with-sdk:1.8-android7
+      command: ["/bin/bash"]
+      args: ["-exc", "mount -o remount,rw /sys"]
+      securityContext:
+        privileged: true
+  containers:
+    - name: anbox-with-sdk
+      image: 578632855654.dkr.ecr.us-east-2.amazonaws.com/ci/anbox-with-sdk:1.8-android7
+      tty: true
+      env:
+        - name: ANDROID_HOME
+          value: "/opt/android-sdk"
+        - name: ANDROID_ADB_USER_MANAGED_MODE
+          value: "true"
+        - name: ADB_TRACE
+          value: "all"
+      securityContext:
+        privileged: true
+        capabilities:
+          add:
+            - SYS_ADMIN
+      volumeMounts:
+        - name: host-lib-modules
+          readOnly: true
+          mountPath: /lib/modules
+        - name: efs-pvc
+          mountPath: /root/.ssh/known_hosts
+          subPath: ssh/known_hosts
+          readOnly: true
+        - name: efs-pvc
+          mountPath: /opt/android-sdk
+          subPath: android_sdk/
+          readOnly: true
+        - name: dev-fuse
+          mountPath: /dev/fuse
+      resources:
+        requests:
+          memory: "25000Mi"
+          cpu: "9000m"
+        limits:
+          memory: "33000Mi"
+          cpu: "15000m"
+      livenessProbe:
+        exec:
+          command: ["pgrep", "-f", "org.anbox.appmgr"]
+        initialDelaySeconds: 40
+        periodSeconds: 15
+  volumes:
+    - name: host-root
+      hostPath:
+        path: /
+    - name: host-lib-modules
+      hostPath:
+        path: /lib/modules
+    - name: dev-fuse
+      hostPath:
+        path: /dev/fuse
+    - name: efs-pvc
+      persistentVolumeClaim:
+        claimName: pvc-ci
+  nodeSelector:
+    instance: "functional"
+  tolerations:
+    - key: "functional"
+      operator: "Exists"
+      effect: "NoExecute"

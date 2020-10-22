@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!-- Theme colors definition -->
+  <color name="colorPrimary">#da291c</color>
+  <color name="colorPrimaryDark">#D11C29</color>
+  <color name="colorAccent">@color/grey_lighter</color>
+
+  <color name="tabIndicator">@color/white</color>
+  <color name="colorPrimaryPressed">@color/colorPrimaryDark</color>
+  <color name="colorPrimaryDisabled">#42da291c</color>
+
+  <!-- Custom colors definition -->
+  <color name="whitePressed">#E0E0E0</color>
+
+  <!-- Text only light buttons colors -->
+  <color name="buttonTextOnlyLight">@color/white</color>
+  <color name="buttonTextOnlyLightPressed">@color/whitePressed</color>
+
+  <!-- Text only dark buttons colors -->
+  <color name="buttonTextOnlyDark">@color/colorPrimary</color>
+  <color name="buttonTextOnlyDarkPressed">@color/colorPrimaryPressed</color>
+
+  <!-- Coach -->
+  <color name="coachPrimary">@color/colorPrimary</color>
+  <color name="coachThumbnailBackground">@color/transparent</color>
+  <color name="coachThumbnailText">@color/grey_lighter</color>
+  <color name="coachZoneGood">#3bd4ae</color>
+  <color name="coachZoneWrong">#ff5c5e</color>
+
+  <!-- Slideshow -->
+  <color name="slideshow_meet_coach_background">#d34ad0</color>
+
+  <!-- Slideshow -->
+  <color name="toothbrush_list_delete_background">#cc0000</color>
+
+  <!-- Dashboard -->
+  <color name="dashboard_btn_pressed">@color/colorPrimaryDark</color>
+  <color name="metric_average">#ffde17</color>
+  <color name="metric_perfect_smooth">#aaf798</color>
+  <color name="metric_perfect">#73dd2c</color>
+
+  <!-- TOOTHBRUSH LIST -->
+  <color name="remove_background">#8b0304</color>
+
+  <!-- Welcome -->
+  <color name="welcome_birthday_input_bg_validated">#1Ada291c</color>
+
+  <!-- SBA -->
+  <color name="sba_thumbnail_background">@color/white</color>
+
+  <color name="toothbrush_toolbar_background">#A60003</color>
+
+  <color name="profile_color_link">#d2010d</color>
+</resources>

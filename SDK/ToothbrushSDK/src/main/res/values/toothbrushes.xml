@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string translatable="false" name="displayable_name_ara">Ara</string>
+  <string translatable="false" name="displayable_name_m1">M1</string>
+  <string translatable="false" name="displayable_name_e1">E1</string>
+  <string translatable="false" name="displayable_name_e2">E2</string>
+  <string translatable="false" name="displayable_name_b1">B1</string>
+  <string translatable="false" name="displayable_name_pql">Plaqless</string>
+  <string translatable="false" name="displayable_name_hilink">HiLink</string>
+  <string translatable="false" name="displayable_name_hum_electric">Hum Electric</string>
+  <string translatable="false" name="displayable_name_hum_battery">Hum Battery</string>
+  <string translatable="false" name="displayable_name_glint">Glint</string>
+</resources>

@@ -1,0 +1,2 @@
+apply from: "${rootProject.rootDir}/../SDK/buildscripts/ndk.gradle"
+apply from: "${rootProject.rootDir}/../SDK/buildscripts/kapt.gradle"

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<resources>
+  <string name="pirate_lanes_key" translatable="false">F55173A852455BA8512C03563C2C9512D513C50911C3577E9DDA7EF73CE6A341CF04811607C461B25EBA4F1E71FD1769</string>
+  <string name="pirate_lanes_iv" translatable="false">1815D962A9A269B2E1358B5CCA55E395</string>
+</resources>

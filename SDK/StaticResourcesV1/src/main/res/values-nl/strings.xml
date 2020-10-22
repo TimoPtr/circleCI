@@ -1,0 +1,1234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ok">"OK"</string>
+
+    <!-- Home menu -->
+    <string name="action_account_settings">"Account"</string>
+    <string name="action_users_settings">"Profielen"</string>
+    <string name="action_go_to_slideshow">"Volg de rondleiding"</string>
+    <string name="action_about">"Over"</string>
+    <string name="action_logout">"Afmelden"</string>
+    <string name="action_spread_the_word">"Vertel het voort"</string>
+    <string name="action_help">"Helpcenter"</string>
+    <string name="action_change_profile">"Ander profiel"</string>
+    <string name="action_edit_profile">"Profiel bewerken"</string>
+
+    <!-- LOGIN AND REGISTRATION -->
+    <string name="login">"Aanmelden"</string>
+    <string name="connect_">"Verbinding   &gt;"</string>
+    <string name="male">"Man"</string>
+    <string name="female">"Vrouw"</string>
+    <string name="signup">"Registreren"</string>
+    <string name="create_profile">"Profiel aanmaken"</string>
+    <string name="edit_profile">"Profiel bewerken"</string>
+    <string name="email_hint">"E-mail"</string>
+    <string name="password_hint">"Wachtwoord"</string>
+    <string name="password_confirm_hint">"Wachtwoord bevestigen"</string>
+    <string name="firstname_hint">"Voornaam"</string>
+    <string name="lastname_hint">"Familienaam"</string>
+    <string name="birthday_hint">"Uw verjaardag"</string>
+    <string name="create">"Aanmaken   &gt;"</string>
+    <string name="btn_next">"Volgende   &gt;"</string>
+    <string name="choose_picture_hint">"Profielafbeelding instellen"</string>
+    <string name="choose_picture_gallery">"Een foto selecteren"</string>
+    <string name="choose_picture_take">"Een foto maken"</string>
+    <string name="gender_hint">"Uw geslacht"</string>
+    <string name="handedness_hint">"Welk hand gebruikt u om uw tanden te poetsen?"</string>
+    <string name="country_hint">"Waar woont u?"</string>
+    <string name="forgotten_password">"Wachtwoord vergeten?"</string>
+    <string name="email_missing">"E-mailadres ontbreekt"</string>
+    <string name="email_invalid">"E-mailadres ongeldig"</string>
+    <string name="firstname_missing">"Voornaam ontbreekt"</string>
+    <string name="lastname_missing">"Familienaam ontbreekt"</string>
+    <string name="birthday_missing">"Leeftijd onjuist"</string>
+    <string name="picture_missing">"Gelieve een afbeelding te selecteren"</string>
+    <string name="gender_missing">"Geslacht is niet aangegeven"</string>
+    <string name="handedness_missing">"Gebruikte hand ontbreekt"</string>
+    <string name="country_missing">"Land is niet gedefinieerd"</string>
+    <string name="password_missing">"Wachtwoord ontbreekt"</string>
+    <string name="password_confirmation_missing">"Wachtwoord is niet bevestigd"</string>
+    <string name="passwords_dont_match">"Oeps, de wachtwoorden stemmen niet overeen."</string>
+    <string name="reset_password">"Wachtwoord opnieuw instellen"</string>
+    <string name="reset_password_ok">"Gelieve uw postvak-in te controleren en de aanwijzingen te volgen om uw wachtwoord opnieuw in te stellen."</string>
+    <string name="reset_password_ko">"Er heeft zich een fout voorgedaan bij het opnieuw instellen van uw wachtwoord."</string>
+    <string name="terms_of_use_terms">"Algemene voorwaarden"</string>
+    <string name="terms_of_use_policy">"Privacybeleid"</string>
+    <string name="account_created_title">"Hoera!"</string>
+    <string name="account_created_message">"Uw account is aangemaakt.
+U bent nu klaar om uw tanden te poetsen!"</string>
+    <string name="facebook_login">"Aanmelden met Facebook"</string>
+    <string name="facebook_signup">"Registreren met Facebook"</string>
+    <string name="please_wait">"Even geduld..."</string>
+    <string name="choose_picture_local">"Kies uit Colgate Connect"</string>
+    <string name="terms_of_use">"Ik ga akkoord met de "<![CDATA[<u><a href=\"%1$s\">%2$s</a></u>]]>" en ik erken het "<![CDATA[<u><a href=\"%3$s\">%4$s</a></u>]]>"."</string>
+
+    <!-- ACCOUNT ACTIVITY -->
+    <string name="account">"Account"</string>
+    <string name="change_password">"Wachtwoord wijzigen"</string>
+    <string name="new_password">"Nieuw wachtwoord"</string>
+    <string name="old_password">"Oud wachtwoord"</string>
+    <string name="confirm_new_pasword">"Nieuw wachtwoord bevestigen"</string>
+    <string name="help_title">"Help ons"</string>
+    <string name="help_message">"Help ons de nauwkeurigheid van de bewegingssensoren te verbeteren door ons uw poetsgegevens anoniem te bezorgen.
+(U kunt uw voorkeuren te allen tijde wijzigen in de app-instellingen)"</string>
+    <string name="old_password_missing">"Oud wachtwoord ontbreekt"</string>
+    <string name="new_password_missing">"Nieuw wachtwoord ontbreekt"</string>
+    <string name="new_password_confirm_missing">"Nieuw wachtwoord niet bevestigd"</string>
+    <string name="password_updated">"Uw wachtwoord werd geüpdatet"</string>
+    <string name="password_updated_title">"Succes"</string>
+    <string name="musicchoosertitle">"Muziek voor Coach kiezen"</string>
+
+    <!-- EDIT PROFILE ACTIVITY -->
+    <string name="personal_info">"Persoonsgegevens"</string>
+    <string name="brushing_settings">"Poetsinstellingen"</string>
+    <string name="right_handed">"Rechtshandig"</string>
+    <string name="left_handed">"Linkshandig"</string>
+    <string name="coach_brushing_time">"Tijd om te poetsen"</string>
+    <string name="coach_brushing_time_duration">"Duur van een poetsbeurt: %1$s"</string>
+    <string name="coach_sound_value">"Muziek tijdens poetsbeurt in Coach %1$s"</string>
+    <string name="none">"geen"</string>
+    <string name="music">"Muziek"</string>
+    <string name="sounds">"Geluiden"</string>
+    <string name="no_music_file">"Geen bestand geselecteerd"</string>
+    <string name="transition_sounds">"Overgangsgeluiden"</string>
+    <string name="no_artist">"Geen artiest"</string>
+    <string name="no_title">"Geen titel"</string>
+    <string name="brushing_time_hint">"Tijd om te poetsen"</string>
+    <string name="profiles">"Profielen"</string>
+    <string name="delete_profile_title">"Profiel verwijderen"</string>
+    <string name="delete_profile_message">"Weet u zeker dat u dit profiel wenst te verwijderen?"</string>
+
+    <!-- ADD PROFILE ACTIVITY -->
+    <string name="add_profile">"Nieuw profiel toevoegen"</string>
+
+    <!-- Leaderboard -->
+    <string name="leaderboard">"Classificatie"</string>
+
+    <!-- About -->
+    <string name="kolibree_version">"Versie %1$s (%2$s)
+Account %3$s"</string>
+    <string name="kolibree_about">"We zijn ervan overtuigd dat technologie kan helpen mondaandoeningen en gaatjes te voorkomen en we zetten deze overtuiging om in werkelijkheid."</string>
+    <string name="about_terms">"Algemene voorwaarden en Privacybeleid."</string>
+    <string name="about">"Over"</string>
+    <string name="kolibree_rights">"Colgate Connect, het logo Colgate Connect en alle handelsmerken van Colgate Connect zijn eigendom van Colgate Connect.
+Alle rechten voorbehouden."</string>
+
+    <!-- Checkup -->
+    <string name="get_tb">"Koop er een in de winkel!"</string>
+
+    <!-- Checkup -->
+    <string name="checkup">"Controle"</string>
+    <string name="neglected_areas">"Verwaarloosde zones"</string>
+    <string name="well_brushed_areas">"Goed gepoetste zones"</string>
+    <string name="refresh">"Verversen"</string>
+    <string name="checkup_duration">"Duur"</string>
+    <string name="checkup_not_connected">"Geen oppervlaktegegevens beschikbaar voor deze poetsbeurt."</string>
+    <string name="checkup_empty">"Mijn tandenborstel nu aansluiten"</string>
+    <string name="connect_tb_hint">"Poets je tanden met je Colgate Connect tandenborstel om te zien welke gebieden je misschien hebt gemist."</string>
+
+    <!-- Options Menu -->
+    <string name="menu_connect">"Een toestel aansluiten"</string>
+
+    <!-- SetupToothbrushActivity -->
+    <string name="none_paired">"Er zijn geen toestellen gekoppeld"</string>
+    <string name="none_found">"Geen toestellen gevonden"</string>
+
+    <!-- ConnectDeviceDialogActivity -->
+    <string name="toothbrushes">"Tandenborstels"</string>
+    <string name="none_connected">"Geen toestel aangesloten"</string>
+    <string name="select_a_device">"Beschikbare toestellen"</string>
+    <string name="connect">"Aansluiten"</string>
+    <string name="restart">"Opnieuw opstarten"</string>
+    <string name="quit">"Afsluiten"</string>
+    <string name="pause">"Pauze"</string>
+    <string name="next">"Volgende"</string>
+    <string name="cancel">"Annuleren"</string>
+    <string name="notnow">"Niet nu"</string>
+    <string name="information">"Informatie"</string>
+    <string name="error">"Fout"</string>
+
+    <!-- SwitchGame Coach Fragment -->
+    <string name="no_tb_connected">"Tandenborstel niet aangesloten"</string>
+    <string name="description_no_tb_connected_pirate">"Gelieve uw tandenborstel aan te sluiten om uw tanden te poetsen met Go!Pirate."</string>
+    <string name="description_no_tb_connected_coach">"Wenst u uw tanden te poetsen zonder uw Colgate Connect tandenborstel?"</string>
+
+    <!-- Coach Game Fragment -->
+    <string name="resume">"Doorgaan"</string>
+    <string name="coach_something_wrong">"Er is iets fout gelopen. Gelieve het later opnieuw te proberen."</string>
+
+    <!-- Coach Game Fragment -->
+    <string name="points">"Punten"</string>
+
+    <!-- Settings ToothBrush Fragment -->
+    <string name="user_mode_title">"Gebruiker tandenborstel"</string>
+
+    <!-- Settings ToothBrush Fragment -->
+    <string name="toothbrush_information">"Informatie tandenborstel"</string>
+    <string name="title_toothbrush">"ID tandenborstel"</string>
+    <string name="battery_level">"Batterijniveau"</string>
+    <string name="find_toothbrush">"Tandenborstel identificeren"</string>
+    <string name="blink_toothbrush">"Doe uw tandenborstel knipperen"</string>
+    <string name="toothbrush_blinking">"Aan het knipperen"</string>
+    <string name="ota_toothbrush_title">"Firmwareversie"</string>
+    <string name="hardware_version_title">"Hardwareversie"</string>
+    <string name="software_version_title">"Firmwareversie"</string>
+    <string name="user_mode_not_known">"Gelieve de gebruiker in te stellen"</string>
+    <string name="settings_shared_toothbrush">"Gedeelde tandenborstel"</string>
+    <string name="toothbrush_owner_everyone">"Iedereen"</string>
+    <string name="toothbrush_firmware_update_available">"Uw tandenborstel updaten"</string>
+    <string name="toothbrush_firmware_update_title">"Uw tandenborstel updaten"</string>
+    <string name="toothbrush_firmware_update_button">"Update"</string>
+    <string name="firmware_upgrade_error">"Firmware-upgrade mislukt:
+%s"</string>
+    <string name="toothbrush_firmware_update_progress_label">"Bezig met installeren..."</string>
+    <string name="toothbrush_firmware_update_rebooting_label">"Bezig met opnieuw opstarten"</string>
+    <string name="toothbrush_firmware_update_success">"Uw Colgate Connect tandenborstel werd geüpgraded"</string>
+
+    <!-- Settings Pairing Fragment -->
+    <string name="pairing_kolibree_1">"Houd de knop op uw tandenborstel ingedrukt tot het LED-lampje blauw knippert."</string>
+    <string name="pairing_kolibree_2">"Als een pop-up u vraagt uw tandenborstel te koppelen, voer dan de volgende pincode in:"</string>
+    <string name="pairing_kolibree_4">"0000"</string>
+    <string name="pop_up_connect_fail_title">"O-oh!"</string>
+    <string name="pop_up_connect_fail_msg">"Uw tandenborstel en uw toestel konden niet worden verbonden. Gelieve te controleren of uw tandenborstel aan staat en opnieuw te proberen."</string>
+
+    <!-- Switch Game Fragment -->
+    <string name="coach_game_name">"Coach"</string>
+    <string name="pirate_game_name">"GoPirate"</string>
+    <string name="coach_plus_game_name">"Coach Plus"</string>
+    <string name="sba_game_name">@string/test_brushing_screen_title</string>
+    <string name="rabbids_game_name">"Konijnen"</string>
+    <string name="offline_game_name">"Offline poetsbeurt"</string>
+    <string name="coach_game_description">"Coach helpt u bij het poetsen door u de te poetsen zones te tonen. Oefening baart kunst!"</string>
+    <string name="pirate_game_description">"Poetsen wordt kinderspel: grijp de stukken die u onderweg vindt terwijl u poetst."</string>
+    <string name="activities_warning">"Er worden nieuwe poetsgegevens toegewezen aan het hierboven geselecteerde profiel"</string>
+    <string name="transition_game">"transition_game"</string>
+    <string name="game_brush_not_allow_title">"Oeps"</string>
+    <string name="game_brush_not_allow_msg">"Meer dan drie keer per dag poetsen kan het tandvlees beschadigen."</string>
+    <string name="upper_arch">"Bovenste
+boog"</string>
+    <string name="lower_arch">"Onderste
+boog"</string>
+    <string name="delete_profile">"Wissen"</string>
+    <string name="logout_title">"Afmelden"</string>
+    <string name="logout_message">"Weet u zeker dat u wenst af te melden?"</string>
+    <string name="load_avatar_error">"o-oh, dat is vervelend…
+Controleer uw netwerkaansluiting om de profielen te laden."</string>
+
+    <!-- Connection Lost Dialog -->
+    <string name="lost_connection_dialog_title">"Mayday!"</string>
+    <string name="lost_connection_dialog_msg">"Uw tandenborstel werd niet gedetecteerd. Gelieve hem opnieuw aan te sluiten om de configuratie te voltooien."</string>
+    <string name="send">"Verzenden"</string>
+    <string name="points_pts">"+%d ptn"</string>
+    <string name="account_settings_help">"Help ons de nauwkeurigheid van de bewegingssensoren te verbeteren door ons uw poetsgegevens anoniem te bezorgen."</string>
+    <string name="account_settings_digest">"Ontvang elke week een volledig poetsverslag met daarin de voornaamste informatie over uw mondhygiëne."</string>
+    <string name="account_settings_digest_title">"Wekelijks overzicht"</string>
+    <string name="toothbrush_status_connecting">"Bezig met verbinden..."</string>
+    <string name="toothbrush_status_pairing">"Bezig met koppelen..."</string>
+    <string name="checkup_hint_1">"Poets om uw gebitsoverzicht weer te geven uw tanden met een van de app-activiteiten."</string>
+    <string name="checkup_hint_2">"Dit overzicht houdt enkel rekening met de poetsbeurten die u met de app doet."</string>
+    <string name="checkup_error_no_data_title">"Oeps, we hebben niet voldoende gegevens."</string>
+    <string name="checkup_error_no_data_hint">"Poets om uw gebitsoverzicht weer te geven uw tanden met een van de app-activiteiten."</string>
+    <string name="checkup_error_no_internet_title">"Oeps, u bent niet verbonden met het internet."</string>
+    <string name="checkup_error_no_internet_hint">"Maak verbinding met het internet om uw poetsgegevens te updaten."</string>
+    <string name="um_welcome_title">"Hallo %s!"</string>
+    <string name="um_warning_title">"Voorzichtig"</string>
+    <string name="um_yes">"Ja"</string>
+    <string name="um_no">"Nee"</string>
+    <string name="um_cancel">"Annuleren"</string>
+    <string name="um_edit">"Wijzigen"</string>
+    <string name="um_next">"Volgende"</string>
+    <string name="um_great">"Fantastisch"</string>
+    <string name="um_understood">"Ik begrijp het"</string>
+    <string name="um_already_associated">"Deze tandenborstel is al gekoppeld aan een persoon."</string>
+    <string name="um_already_associated_known">"Deze tandenborstel is al gekoppeld aan %s."</string>
+    <string name="um_already_associated2_known">"Zou u deze tandenborstel graag rechtstreeks aan het profiel van %s willen koppelen?"</string>
+    <string name="um_already_associated2">"Wenst u de instellingen te wijzigen en deze tandenborstel aan iemand anders te koppelen?"</string>
+    <string name="um_already_associated2_self">"Wenst u de instellingen te wijzigen en deze tandenborstel aan uw profiel te koppelen?"</string>
+    <string name="um_warning_message">"De instellingen van uw tandenborstel worden gewijzigd zodat u hem voor alle profielen kunt gebruiken.
+
+Poetsbeurten zonder de app worden niet langer bewaard."</string>
+    <string name="um_warning_hint">"U kunt deze deelmodus later wijzigen in de instellingen van elke van uw tandenborstels."</string>
+    <string name="um_pairing_warning_hint">"De vorige koppeling gaat verloren."</string>
+    <string name="um_pairing_um_users_title_one">"Er is een nieuwe tandenborstel gedetecteerd!
+Wie gebruikt deze?"</string>
+    <string name="um_pairing_um_users_title_several">"Wie zal deze tandenborstel gebruiken?"</string>
+    <string name="um_pairing_um_users_entry">"Enkel %s"</string>
+    <string name="um_pairing_um_users_entry_several">"Gedeelde tandenborstel"</string>
+    <string name="um_shared_tb">"Gedeelde tandenborstel"</string>
+    <string name="um_shared_tb_hint">"Andere accountgebruikers kunnen deze borstel gebruiken als ze de borstelkop vervangen. Kies gewoon de nieuwe gebruiker voordat u uw tanden poetst."</string>
+    <string name="um_dont_forget">"Vergeet het niet!"</string>
+    <string name="um_dont_forget_hint">"Als u uw tanden poetst zonder de app, worden uw poetsgegevens niet bewaard."</string>
+    <string name="um_new_tb_associated">"Er is een nieuwe tandenborstel gedetecteerd en toegevoegd aan uw profiel."</string>
+    <string name="um_warning_message_plural">"De instellingen van uw tandenborstels worden gewijzigd zodat u hen voor alle profielen kunt gebruiken.
+
+Poetsbeurten zonder de app worden niet langer bewaard."</string>
+    <string name="um_pairing_um_pairing_confirmation_1">"U kunt de tandenborstel met of zonder de Colgate Connect app gebruiken."</string>
+    <string name="um_pairing_um_pairing_confirmation_2">"Uw tandenborstel bewaart automatisch uw poetsgegevens, maar denk eraan hem minstens één keer per week te synchroniseren met de Colgate Connect app om hem geüpdatet te houden."</string>
+    <string name="um_welcome_hint">"Wenst u een nieuwe Colgate Connect tandenborstel toe te voegen aan uw profiel?"</string>
+
+    <!-- Notifications -->
+    <string name="tb_sync.notification.standard.2">"Denk eraan uw poetsbeurten te synchroniseren om uw Colgate Connect ervaring te optimaliseren."</string>
+    <string name="tb_sync.notification.standard.6">"Synchroniseer uw tandenborstel om uw geregistreerde gegevens te bewaren zelfs als u uw tanden hebt gepoetst zonder de Colgate Connect app te openen"</string>
+    <string name="tb_sync.notification.standard.7">"Wenst u te weten of u uw tanden de afgelopen dagen goed hebt gepoetst? Synchroniseer uw poetsbeurten met de Colgate Connect app."</string>
+    <string name="tb_sync.notification.standard.8">"Denk eraan uw poetsbeurten nu en dan te synchroniseren zodat Colgate Connect uw tandhygiëne kan analyseren!"</string>
+    <string name="tb_sync.notification.standard.1">"Raak aan om uw poetsbeurten te synchroniseren."</string>
+    <string name="tb_sync.notification.standard.3">"Wenst u meer te weten over tandhygiëne? Raak aan om uw poetsbeurten te synchroniseren."</string>
+    <string name="tb_sync.notification.standard.4">"Bent u in de buurt van uw tandenborstel? Raak aan om uw poetsbeurten te synchroniseren!"</string>
+    <string name="tb_sync.notification.standard.5">"Druk om uw poetsbeurten te synchroniseren en uw tandverslag te updaten."</string>
+    <string name="tb_sync.notification.standard.9">"Synchroniseer uw poetsbeurten nu om uw vooruitgang te controleren."</string>
+    <string name="tb_sync.notification.standard.10">"Hoe effectief was uw laatste poetsbeurt? Synchroniseer om erachter te komen."</string>
+    <string name="tb_sync.notification.standard.11">"Is uw tandenborstel in de buurt? Synchroniseer uw poetsbeurten!"</string>
+    <string name="tb_sync.notification.standard.12">"Synchroniseer uw tandenborstel om uw poetsindicators te updaten."</string>
+    <string name="tb_sync.enable.bluetooth.title">"Bluetooth inschakelen"</string>
+    <string name="about_attributions_hint">"Deze toepassing maakt gebruik van de volgende bibliotheken:"</string>
+    <string name="about_attributions_website">"website"</string>
+    <string name="about_attributions_license">"licentie"</string>
+
+    <!-- Setup toothbrush tunnel -->
+    <string name="setup_toothbrush_connect_m1_title">"Sluit uw M1 aan"</string>
+    <string name="setup_toothbrush_connect_kolibree_title">"Bezig met aansluiten van uw Kolibree V1"</string>
+    <string name="setup_toothbrush_choose_model">"Welke tandenborstel hebt u?"</string>
+    <string name="setup_toothbrush_choose_model_ara">"Ara"</string>
+    <string name="setup_toothbrush_another_toothbrush_title">"Nog iets!"</string>
+    <string name="setup_toothbrush_another_toothbrush_buy">"Laten we naar de winkel gaan!"</string>
+    <string name="setup_toothbrush_another_toothbrush_to_coach">"Borstel met Coach"</string>
+    <string name="setup_toothbrush_choose_model_help"><![CDATA[Ik weet niet <b>welke tandenborstel ik heb</b>]]></string>
+    <string name="setup_toothbrush_choose_model_help_title">"Hoe identificeer ik mijn tandenborstel?"</string>
+    <string name="setup_toothbrush_get_one">"Koop er een in de winkel!"</string>
+    <string name="setup_toothbrush_proceed_without">"Bedankt maar ik zal zonder @doorgaan"</string>
+    <string name="setup_toothbrush_model_ara">"Ara"</string>
+    <string name="setup_toothbrush_ara_charger">"Zet de tandenborstel op de lader en druk op de Start-knop."</string>
+    <string name="setup_toothbrush_m1_instructions">"Schud met uw Connect M1 om verbinding mogelijk te maken. De LED knippert blauw."</string>
+    <string name="setup_toothbrush_ara_charger_start">"Start"</string>
+    <string name="setup_toothbrush_ara_no_charger">"Ik heb geen lader"</string>
+    <string name="setup_toothbrush_searching">"Bezig met zoeken…
+%d %%"</string>
+    <string name="setup_toothbrush_connecting">"Bezig met verbinden..."</string>
+    <string name="setup_toothbrush_ara_wait">"Nog even geduld!
+De app is op zoek naar uw
+tandenborstel."</string>
+    <string name="setup_toothbrush_rename_hint">"U kunt deze nieuwe parameters wijzigen in de instellingen van uw tandenborstel."</string>
+    <string name="setup_toothbrush_rename_ara_done">"Klaar"</string>
+    <string name="setup_toothbrush_rename_ara_choose_name">"Kies een naam"</string>
+    <string name="setup_searching">"Bezig met zoeken naar tandenborstels..."</string>
+    <string name="setup_barcode_hint">"Controleer de naam van uw tandenborstel, die u op de verpakking kunt vinden"</string>
+    <string name="setup_permission_popup">"Android heeft locatierechten nodig om verbinding te maken met elk Bluetooth Low Energy-apparaat. Schakel dit alstublieft in het volgende dialoogvenster in om uw tandenborstel aan te sluiten."</string>
+    <string name="setup_popup_help_title">"Ziet u uw tandenborstel niet?"</string>
+    <string name="setup_popup_help_message">"Als uw tandenborstel vlak bij u is maar hier niet verschijnt, is hij misschien al aangesloten op een ander toestel.
+
+Deactiveer de bluetooth of vergeet de tandenborstel op het andere toestel.
+
+U ziet de tandenborstel hier verschijnen!"</string>
+    <string name="setup_connected_title">"Gefeliciteerd %s!
+Uw tandenborstel is nu aangesloten."</string>
+    <string name="setup_connected_hint">"Uw tandenborstel heet: \"%1$s\"
+U kunt dit wijzigen in de instellingen!"</string>
+    <string name="setup_connected_button">"Kom aan!"</string>
+    <string name="setup_summary_message">"Uw poetsgegevens worden automatisch bewaard in de tandenborstel. Denk eraan uw borstel minstens één keer per week te verbinden met de app om uw gegevens te bewaren."</string>
+    <string name="setup_toothbrush_choose_model_e1">"Connect E1"</string>
+    <string name="setup_toothbrush_connect_ara_title">"Bezig met aansluiten van uw E1"</string>
+    <string name="setup_toothbrush_another_toothbrush_text">"U kunt poetsen met onze Coach!
+
+Zonder een Colgate Connect tandenborstel mist u echter de volledige Connect ervaring.
+
+Hopelijk is het nite te laat om er meteen eentje te kopen :)"</string>
+    <string name="setup_toothbrush_choose_model_help_top">"Colgate Connect E1"</string>
+    <string name="setup_toothbrush_choose_model_help_bottom">"Colgate Connect M1"</string>
+    <string name="setup_toothbrush_choose_model_buy">"Koop nog een Colgate Connect
+tandenborstel in de winkel!"</string>
+    <string name="setup_summary_title">"U kunt de tandenborstel met of zonder de Colgate Connect app gebruiken"</string>
+    <string name="setup_toothbrush_choose_model_another">"Ik heb geen Colgate Connect tandenborstel"</string>
+    <string name="setup_toothbrush_choose_model_m1">"Connect M1"</string>
+
+    <!-- Toothbrush -->
+    <string name="forget_toothbrush">"Vergeet deze tandenborstel"</string>
+    <string name="forget_toothbrush_popup_title">"Weet u zeker dat u %s wenst te vergeten?"</string>
+    <string name="forget_toothbrush_popup_message">"Dit toestel wordt niet langer automatisch aangesloten op de tandenborstel."</string>
+    <string name="forget_toothbrush_forget">"Vergeten"</string>
+    <string name="my_toothbrushes">"Mijn tandenborstels"</string>
+    <string name="my_toothbrush">"Mijn tandenborstel"</string>
+    <string name="my_ara">"Mijn Ara"</string>
+    <string name="my_connect_m1">"Mijn Connect M1"</string>
+    <string name="my_connect_e1">"Mijn Connect E1"</string>
+    <string name="my_kolibree">"Mijn Kolibree V1"</string>
+    <string name="toothbrush_name">"Naam"</string>
+    <string name="toothbrush_personalized_name">"Gepersonaliseerde naam"</string>
+    <string name="toothbrush_none">"Geen"</string>
+    <string name="toothbrush_serial_number">"Serienummer"</string>
+    <string name="toothbrush_mac">"MAC-adres"</string>
+    <string name="toothbrush_hardware_version">"Hardwareversie"</string>
+    <string name="toothbrush_software_version">"Softwareversie"</string>
+    <string name="toothbrush_software_version_ara">"%1$s (%2$s)"</string>
+    <string name="toothbrush_update_now">"Nu updaten"</string>
+    <string name="toothbrush_update_hint">"Er is een nieuwe update (%s) beschikbaar voor uw tandenborstel."</string>
+
+    <!-- User mode dialog -->
+    <string name="user_mode_dialog_title">"Gebruiker tandenborstel"</string>
+
+    <!-- Popup toothbrush not available -->
+    <string name="popup_toothbrush_unavailable_title">"Geen tandenborstel aangesloten"</string>
+    <string name="popup_toothbrush_unavailable_alternate_title">"Geen tandenborstel
+aangesloten"</string>
+    <string name="popup_toothbrush_unavailable_message">"Zorg dat uw tandenborstel aan staat en houd hem dichter bij uw toestel, er wordt automatisch verbinding gemaakt."</string>
+
+    <!-- Popup choose toothbrush -->
+    <string name="popup_choose_toothbrush_title">"Selecteer een tandenborstel om door te gaan"</string>
+    <string name="popup_choose_toothbrush_manual">"Manuele tandenborstel"</string>
+
+    <!-- Popup brushing records -->
+    <string name="popup_brushing_record_title">"Goed zo!"</string>
+    <string name="popup_brushing_record_message_singular">"U hebt net 1 offline poetsbeurt gesynchroniseerd."</string>
+    <string name="popup_brushing_record_message_multiple">"U hebt net %d offline poetsbeurten gesynchroniseerd."</string>
+
+    <!-- Popup mandatory update -->
+    <string name="popup_mandatory_update_title">"Verplichte update"</string>
+    <string name="popup_mandatory_update_message">"Uw tandenborstel moet worden geüpdatet om naar behoren te werken."</string>
+    <string name="popup_mandatory_update_button">"Nu updaten"</string>
+    <string name="popup_mandatory_enable_internet">"Maak verbinding met het internet om de update te starten."</string>
+    <string name="firmware_upgrade_downloading">"Bezig met downloaden..."</string>
+    <string name="firmware_upgrade_rebooting">"Bezig met opnieuw opstarten..."</string>
+    <string name="firmware_upgrade_installing">"Bezig met installeren..."</string>
+    <string name="firmware_upgrade_cancel">"Annuleren"</string>
+    <string name="firmware_upgrade_upgrade">"Upgraden"</string>
+    <string name="firmware_upgrade_error_dialog">"Firmware-upgrade mislukt:
+%s"</string>
+    <string name="firmware_success">"Uw tandenborstel is geüpdatet"</string>
+    <string name="firmware_upgrade_retry">"Opnieuw proberen"</string>
+
+    <!-- Home -->
+    <string name="tab_home">"Begin"</string>
+    <string name="tab_brush">"Activiteiten"</string>
+
+    <!-- Home -->
+    <string name="tab_checkup">"Controle"</string>
+
+    <!-- Dashboard -->
+    <string name="dashboard_hint">"Wekelijks gemiddelde"</string>
+    <string name="dashboard_last_session_hint">"Laatste poetsbeurt"</string>
+    <string name="dashboard_duration">"Duur"</string>
+    <string name="dashboard_frequency">"Frequentie"</string>
+    <string name="dashboard_surface">"Oppervlakte"</string>
+    <string name="dashboard_coverage">"Glazuur"</string>
+    <string name="dashboard_minutes">"Minuten"</string>
+    <string name="dashboard_per_day">"Per dag"</string>
+    <string name="dashboard_percentage">"Percentage"</string>
+    <string name="dashboard_no_bluetooth">"Gelieve de Bluetooth van uw toestel in te schakelen"</string>
+    <string name="dashboard_week">"Week"</string>
+    <string name="dashboard_average_duration">"Gemiddelde duur:
+%s/poetsbeurt"</string>
+    <string name="dashboard_average_duration_hint">"Volgens tandartsen verminderen twee poetsbeurten van elk 2 minuten per dag het risico van tandbederf."</string>
+    <string name="dashboard_average_regularity">"Gemiddelde poetsbeurten:
+%s maal/mag"</string>
+    <string name="dashboard_average_frequency_hint">"Volgens tandartsen vermindert uw tanden twee maal per dag poetsen de risico's van tandbederf.
+
+Meer dan drie keer uw tanden poetsen per dag is schadelijk voor uw tandvlees."</string>
+    <string name="dashboard_average_surface">"Gemiddelde gepoetste oppervlakte:
+%s"</string>
+    <string name="dashboard_average_surface_hint">"Tandbederf is overal te vinden!
+
+Elke oppervlakte van elke tand is belangrijk, dus u moet mikken op 100% gepoetste oppervlaktes :)"</string>
+    <string name="dashboard_last_session_empty">"-"</string>
+
+    <!-- Profile -->
+    <string name="edit_profile_smart_brushing_analyser">@string/sba_game_name</string>
+    <string name="profile_information_name">"Voornaam"</string>
+    <string name="profile_information_name_hint">"Jouw voornaam"</string>
+    <string name="profile_information_age">"Leeftijd"</string>
+    <string name="profile_information_age_hint">"Hoe oud bent u?"</string>
+    <string name="profile_information_gender_hint">"Geslacht"</string>
+    <string name="profile_information_handedness_hint">"Gebruikte hand"</string>
+    <string name="profile_years_old">"jaar oud"</string>
+    <string name="profile_picture_dialog_title">"Profielafbeelding instellen"</string>
+    <string name="profile_set_picture">"Een afbeelding toevoegen"</string>
+    <string name="profile_created_title">"Hoera!"</string>
+    <string name="profile_created_message">"Uw profiel is aangemaakt. U bent nu klaar om uw tanden te poetsen!"</string>
+    <string name="profile_last_sba">"Laatste Slimme Poetsanalyse"</string>
+    <string name="profile_my_profiles">"Profielen"</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_subtitle">"Uw slimme poets-
+vriend"</string>
+    <string name="onboarding_login"><![CDATA[Hebt u al een account? <b>Aanmelden</b>]]></string>
+    <string name="onboarding_start">"Start de ervaring"</string>
+
+    <!-- Sign up tunnel -->
+    <string name="sign_up_profile_info_title">"Laten we elkaar
+leren kennen"</string>
+    <string name="sign_up_profile_wait">"Even geduld..."</string>
+    <string name="sign_up_profile_info_next">"Word Colgate Connect"</string>
+
+    <!-- Delete account popup -->
+    <string name="delete_account">"Mijn account wissen"</string>
+    <string name="delete_account_popup_message">"Weet u zeker dat u uw account wenst te wissen? Deze bewerking is onomkeerbaar."</string>
+    <string name="delete_account_popup_yes">"ja, wis mijn aacount"</string>
+
+    <!-- Checkup Popup -->
+    <string name="checkup_popup_title">"Controle"</string>
+    <string name="checkup_popup_message_last">"Deze controle toont uw laatste poetsbeurt. Let in het bijzonder op de gele zones, aangezien deze verwaarloosd zijn en een hoger risico van tandplak vertonen!"</string>
+    <string name="checkup_popup_message">"Deze controle toont uw poetsbeurten. Let in het bijzonder op de gele zones, aangezien deze verwaarloosd zijn en een hoger risico van tandplak vertonen!"</string>
+
+    <!-- Turn on your toothbrush popup -->
+    <string name="setup_ara_popup_title">"Belangrijk!"</string>
+    <string name="setup_ara_popup_message">"Gelieve alvorens u doorgaat twee keer op de knop van uw tandenborstel te drukken."</string>
+
+    <!-- Add ara user activity -->
+    <string name="add_ara_user_add_profile">"Profiel toevoegen"</string>
+    <string name="add_ara_user_hint">"U kunt deze koppeling later wijzigen in de instellingen van uw tandenborstel."</string>
+    <string name="add_ara_user_subtitle">"Wie zal deze tandenborstel gebruiken?"</string>
+    <string name="add_ara_shared">"Gedeeld"</string>
+
+    <!-- No BLE popup -->
+    <string name="no_ble_popup_message">"Dit toestel is niet compatibel met Bluetooth Low Energy"</string>
+
+    <!-- BRUSH HEAD RENEWAL DIALOG -->
+    <string name="brush_head_dialog_title">"Vervang uw borstelkop, %1$s"</string>
+    <string name="brush_head_dialog_message">"Gefeliciteerd! U hebt al meer dan 12 poetsbeurten. Het is tijd om uw borstelkop te vervangen."</string>
+    <string name="brush_head_buy_now">"Nu kopen"</string>
+    <string name="brush_head_remind">"Later"</string>
+    <string name="brush_head_no">"Nee bedankt"</string>
+    <string name="title_activity_slideshow">"Diavoorstelling"</string>
+
+    <!-- Popup toothbrush belongs to another user -->
+    <string name="popup_assign_toothbrush_data_dialog">"Het actieve profiel is %1$s maar u gebruikt de tandenborstel van %2$s! Aan wie moeten de gegevens worden toegewezen?"</string>
+
+    <!-- ORPHAN BRUSHINGS -->
+    <string name="orphan_brushings">"Niet-toegewezen poetsbeurten"</string>
+    <string name="orphan_brushings_assign_hint">"Geselecteerde poetsbeurten toewijzen"</string>
+    <string name="orphan_brushings_delete_hint">"Geselecteerde poetsbeurten wissen"</string>
+    <string name="orphan_brushing_subtitle">"Duur: %1$s min %2$s s, Oppervlakte %3$d%%"</string>
+    <string name="orphan_brushings_detelete_title">"Bent u zeker?"</string>
+    <string name="orphan_brushings_detelete_message">"Weet u zeker dat u deze poetsbeurten wenst te verwijderen? Deze handeling is onomkeerbaar."</string>
+    <string name="orphan_brushings_empty">"Niet-toegewezen poetsbeurten. Fantastisch!"</string>
+
+    <!-- PROFILE LIST DIALOG -->
+    <string name="profile_list_dialog_title">"Selecteer een profiel"</string>
+
+    <!-- SLIDESHOW -->
+    <string name="slideshow_next">"Volgende"</string>
+    <string name="slideshow_skip">"Overslaan"</string>
+    <string name="slideshow_alright_button">"Goed!"</string>
+    <string name="slideshow_here_to_help_title">"We zijn er om te helpen!"</string>
+    <string name="slideshow_here_to_help_message">"Wenst u nog schonere tanden?
+We hebben enkele leuke, nieuwe eigenschappen ontwikkeld om uw mondhygiëne nog te verbeteren."</string>
+    <string name="slideshow_here_to_help_button">"Ontdek onze activiteiten"</string>
+    <string name="slideshow_meet_coach_title">"Ontmoet de coach"</string>
+    <string name="slideshow_meet_coach_message">"We hebben een coachprogramma om u te helpen uw poetsgewoontes op lange termijn te verbeteren
+
+Coach is een 2D-weergave van de te poetsen zone in de mond."</string>
+    <string name="slideshow_pirate_title">"Speel met Go Pirate!"</string>
+    <string name="slideshow_pirate_message">"Verander uw tandenborstel in een spelconsole! Verzamel munten en jaag op de schat van Zwartbaard!"</string>
+    <string name="slideshow_pirate_additional_message">"(en binnenkort nog meer games)"</string>
+    <string name="slideshow_dashboard_title">"Uw Dashboard"</string>
+
+    <!-- Slideshow -->
+    <string name="slideshow_dashboard_message">"Duidelijke en waardevolle informatie over uzelf en uw poetsgewoontes op één enkele plaats."</string>
+    <string name="slideshow_taking_care_brush_title">"Verzorging van uw borstel"</string>
+    <string name="slideshow_taking_care_brush_message">"Maak regelmatig het handvat en de laadbasis schoon met een vochtige doek.
+
+Dit is vooral belangrijk als uw tandpasta zuiveringszout of andere bicarbonaten of peroxide bevat"</string>
+    <string name="slideshow_personalize_brush_title">"Personaliseer uw borstel!"</string>
+    <string name="slideshow_personalize_brush_message">"Om de standaard poetstijd te wijzigen, gaat u naar instellingen en uw profiel. Stel de gewenste tijd in onder Poetstijd"</string>
+    <string name="slideshow_dentist_tip_title">"Tip van de tandarts"</string>
+    <string name="slideshow_dentist_tip_message">"Houd de tandenborstel in een hoek van 45° op uw tanden en maak kleine bewegingen van het tandvlees naar de rand van de tanden toe
+
+Vergeet voor uw snijtanden niete vóór en achter het tandoppervlak te poetsen"</string>
+
+    <!-- SPREAD THE WORD -->
+    <string name="spread_the_word">"Vertel het voort"</string>
+    <string name="spread_review_app">"Beoordeel de app"</string>
+    <string name="spread_tell_a_friend">"Zeg het tegen een vriend"</string>
+    <string name="spread_newsletter">"Nieuwsbrief"</string>
+    <string name="spread_facebook">"Facebook"</string>
+    <string name="spread_twitter">"Twitter"</string>
+    <string name="spread_instagram">"Instagram"</string>
+    <string name="spread_youtube">"Youtube"</string>
+
+    <!-- TOOTHBRUSH LIST -->
+    <string name="toothbrush_removed">"Tandenborstel verwijderd"</string>
+    <string name="undo">"ONGEDAAN MAKEN"</string>
+    <string name="checkup_coverage_100">"Gefeliciteerd! Dat is een perfecte poetsbeurt. Al uw tanden werden lang genoeg gepoetst."</string>
+    <string name="checkup_coverage_85">"Goed zo, uw poetsbeurt is bijna perfect. Doe zo voort."</string>
+    <string name="checkup_coverage_50">"U kan beter. Let de volgende keer extra op de gele zones. Deze werden niet lang genoeg gepoetst."</string>
+    <string name="checkup_coverage_below_50">"Plakalarm! Let de volgende keer extra op de gele zones. Deze werden verwaarloosd"</string>
+    <string name="checkup_coverage_no_data">"Geen oppervlaktegegevens beschikbaar voor deze poetsbeurt."</string>
+
+    <!-- User in OTA screen, but no OTA associated to toothbrush -->
+    <string name="firmware_upgrade_ota_not_available">"Geen update beschikbaar"</string>
+
+    <!-- Dialog displayed after user pressed cancel button in update ota -->
+    <string name="firmware_upgrade_cancel_dialog_message">"Weet je zeker dat je de update wilt annuleren?"</string>
+    <string name="welcome_email_hint">"Wat is uw e-mailadres?"</string>
+    <string name="welcome_email_facebook_hint">"We zullen niets op Facebook publiceren"</string>
+    <string name="welcome_email_or">"– of –"</string>
+    <string name="welcome_email_facebook_button">"Doorgaan met Facebook"</string>
+    <string name="welcome_password_hint">"Wat is uw e-wachtwoord?"</string>
+    <string name="welcome_password_magic_link_button">"E-mail me een link om in te loggen"</string>
+    <string name="welcome_inbox_title">"Controleer uw postvak-in"</string>
+    <string name="welcome_inbox_hint">"Niet nodig om een lang of moeilijk te typen wachtwoord te herinneren. We hebben u net een e-mail gestuurd om u te helpen bij het aanmelden.
+
+Open het vanaf je smartphone en klik op de meegeleverde link om in te loggen. Maar schiet op, de link vervalt na 30 minuten."</string>
+    <string name="coppa_pending_parental_consent">"In afwachting van toestemming van de ouders"</string>
+    <string name="coppa_prevent_dialog_title">"Functie uitgeschakeld"</string>
+    <string name="coppa_prevent_dialog_message">"Ouderlijke toestemming is vereist om deze actie uit te voeren"</string>
+    <string name="welcome_birthday_title">"Waar bent u geboren?"</string>
+    <string name="welcome_birthday_day">"Dag"</string>
+    <string name="welcome_birthday_month">"Maand"</string>
+    <string name="welcome_birthday_year">"Jaar"</string>
+    <string name="logout_warning_dialog_title">"Waarschuwing"</string>
+    <string name="logout_warning_dialog_message">"Je hebt meer dan 10 poetssessies opgenomen in je account. Koppel uw account aan uw e-mailadres of u verliest uw gegevens: na het afmelden hebt u geen toegang tot uw account."</string>
+    <string name="logout_warning_dialog_enter_email">"Voer email in"</string>
+    <string name="logout_warning_dialog_button_continue">"Nee bedankt"</string>
+    <string name="save_your_data">"Uw gegevens bewaren"</string>
+    <string name="save_your_data_title">"Verlies je gegevens niet!"</string>
+    <string name="save_your_data_subtitle">"Klik hieronder om te ondertekenen en uw gegevens te beveiligen"</string>
+    <string name="save_your_data_fb_button">"Aanmelden met Facebook"</string>
+    <string name="save_your_data_email_button">"Registreren via e-mail"</string>
+    <string name="save_your_data_cancel_button">"Nee bedankt"</string>
+    <string name="save_your_data_email_hint">"Wat is uw e-mailadres?"</string>
+    <string name="save_your_data_submit">"Versturen"</string>
+    <string name="your_data_saved_title">"Uw gegevens zijn nu opgeslagen"</string>
+    <string name="your_data_saved_subtitle">"Uw account is nu geüpdatet en gekoppeld aan uw gegevens"</string>
+    <string name="your_data_saved_ok">"OK"</string>
+    <string name="welcome_birthday_invalid_day">"De dag is niet geldig"</string>
+    <string name="welcome_birthday_invalid_month">"De maand is niet geldig"</string>
+    <string name="welcome_birthday_invalid_year">"Het jaar is niet geldig"</string>
+    <string name="welcome_birthday_invalid_date">"Verjaardag ongeldig"</string>
+    <string name="terms_of_use_not_clicked">"U moet akkoord gaan met de algemene voorwaarden"</string>
+    <string name="parent_consent_title">"E-mail"</string>
+    <string name="parent_consent_instructions">"Gelieve ons het e-mailadres van uw ouders of voogd te bezorgen zodat we contact met hen kunnen opnemen voor de volgende stappen!"</string>
+    <string name="parent_consent_hint">"E-mailadres ouder of voogd"</string>
+    <string name="register_email_dialog_title">"Registreer uw e-mail"</string>
+    <string name="register_email_dialog_message">"Er zijn meer dan 10 poetsbeurten bewaard op uw account. Koppel uw account aan uw e-mailadres of uw verliest uw gegevens: u hebt geen toegang tot uw account nadat u bent afgemeld."</string>
+    <string name="register_email_dialog_ok">"Voer email in"</string>
+    <string name="register_email_dialog_cancel">"Niet nu"</string>
+    <string name="help_us_customize_title">"Help ons om uw\nervaring aan te passen"</string>
+    <string name="setup_toothbrush_m1_search">"Zoeken"</string>
+    <string name="sba_game_description">"Gebruik de Borsteltestom uw poetsgewoonten te diagnosticeren en verbeterpunten te identificeren."</string>
+    <string name="validate_birthday_error">"Vanwege een serverfout is de bewerking mislukt. Probeer het opnieuw."</string>
+    <string name="edit_profile_birthday">"Uw verjaardag"</string>
+    <string name="error_no_internet">"Geen internet verbinding"</string>
+    <string name="something_went_wrong">"Er is iets fout gelopen. Gelieve het later opnieuw te proberen."</string>
+    <string name="um_attention_title">"Voorzichtig"</string>
+    <string name="get_my_data">"Mijn gegevens ophalen"</string>
+    <string name="no_email_title">"Geen e-mail voor uw account"</string>
+    <string name="no_email_message">"Er is geen e-mail gekoppeld aan uw account. Gelieve een e-mail in te stellen voor uw account om door te gaan"</string>
+    <string name="title_success">"Succes"</string>
+    <string name="operation_failed_title">"Bewerking mislukt"</string>
+    <string name="operation_failed">"Omwille van een serverfout is de bewerking mislukt. Gelieve het later opnieuw te proberen."</string>
+    <string name="email_gdpr">"Een e-mail waarmee u al uw gegevens kunt ophalen, wordt binnenkort naar %s verzonden."</string>
+    <string name="privacy_not_clicked">"U moet akkoord gaan met het privacybeleid"</string>
+    <string name="terms_and_condition_agreement">"Ik ga akkoord met de "<![CDATA[<u><a href=\"%1$s\">%2$s</a></u>]]></string>
+    <string name="privacy_agreement">"Ik erken het "<![CDATA[<u><a href=\"%1$s\">%2$s</a></u>]]></string>
+    <string name="choose_method_title">"Aanmelden"</string>
+    <string name="choose_method_sms">"Log in via sms"</string>
+    <string name="choose_method_we_chat">"Log in via WeChat"</string>
+    <string name="sms_login_title">"Log in via sms"</string>
+    <string name="sms_login_hint">"Wat is je telefoonnummer?"</string>
+    <string name="sms_login_get_code">"Haal verificatiecode op"</string>
+    <string name="sms_login_code_desc">"Voer de code in die u zojuist per SMS hebt ontvangen en druk op de knop OK."</string>
+    <string name="sms_login_ok">"OK"</string>
+    <string name="exit">"Afsluiten"</string>
+    <string name="retry">"Opnieuw proberen"</string>
+    <string name="no_facebook_account_linked">"Dit Facebook-account is niet gekoppeld aan een Colgate Connect account."</string>
+    <string name="sms_login_invalid_number">"Ongeldig telefoonnummer"</string>
+    <string name="mouth_zone_bottom_incisor_exterior">"Onderaan, midden, buitenoppervlakte"</string>
+    <string name="mouth_zone_bottom_incisor_interior">"Onderaan, midden, binnenoppervlakte"</string>
+    <string name="mouth_zone_bottom_molar_left_exterior">"Onderaan, links, buitenoppervlakte"</string>
+    <string name="mouth_zone_bottom_molar_left_interior">"Onderaan, links, binnenoppervlakte"</string>
+    <string name="mouth_zone_bottom_molar_left_occlusal">"Onderaan, links, kauwoppervlakte"</string>
+    <string name="mouth_zone_bottom_molar_right_occlusal">"Onderaan, rechts, kauwoppervlakte"</string>
+    <string name="mouth_zone_bottom_molar_right_exterior">"Onderaan, rechts, buitenoppervlakte"</string>
+    <string name="mouth_zone_bottom_molar_right_interior">"Onderaan, rechts, binnenoppervlakte"</string>
+    <string name="mouth_zone_top_incisor_exterior">"Bovenaan, midden, buitenoppervlakte"</string>
+    <string name="mouth_zone_top_incisor_interior">"Bovenaan, midden, binnenoppervlakte"</string>
+    <string name="mouth_zone_top_molar_left_exterior">"Bovenaan, links, buitenoppervlakte"</string>
+    <string name="mouth_zone_top_molar_left_interior">"Bovenaan, links, binnenoppervlakte"</string>
+    <string name="mouth_zone_top_molar_left_occlusal">"Bovenaan, links, kauwoppervlakte"</string>
+    <string name="mouth_zone_top_molar_right_exterior">"Bovenaan, rechts, buitenoppervlakte"</string>
+    <string name="mouth_zone_top_molar_right_interior">"Bovenaan, rechts, binnenoppervlakte"</string>
+    <string name="mouth_zone_top_molar_right_occlusal">"Bovenaan, rechts, kauwoppervlakte"</string>
+    <string name="mouth_zone_wrong">"Foute zone gedetecteerd"</string>
+    <string name="upgrade_app_title">"Upgraden om door te gaan"</string>
+    <string name="upgrade_app_msg">"Gelieve om door te gaan met de app te upgraden naar de laatste versie; We hebben enkele kritische bugs verwijderd."</string>
+    <string name="coach_pluse_game_description">"Een 3D-poetservaring die 100%% oppervlaktedekking waarborgt."</string>
+    <string name="kolibree_pro_start_popup_title">"Colgate Connect Pro"</string>
+    <string name="kolibree_pro_start_popup_message">"Wilt u uw poetsgegevens delen met uw tandarts / tandartspraktijk %s, zodat ze een regelmatige controle kunnen hebben?"</string>
+    <string name="kolibree_pro_start_popup_accept">"Aanvaarden"</string>
+    <string name="kolibree_pro_start_popup_decline">"Niet nu"</string>
+    <string name="kolibree_pro_settings_title">"Colgate Connect Pro"</string>
+    <string name="kolibree_pro_settings_hint">"Selecteer deze optie om uw poetsgegevens met uw tandarts / tandartspraktijk te delen, zodat ze een regelmatige controle kunnen hebben."</string>
+    <string name="kolibree_pro_practitioners_short">"Hier zijn de professionals die toegang hebben tot uw poetsgegevens. Kom meer te weten"</string>
+    <string name="kolibree_pro_practitioners_short_token">"Meer weten"</string>
+    <string name="kolibree_pro_practitioners_full">"Hier zijn de professionals die toegang hebben tot uw poetsgegevens.
+
+Door deze informatie kunnen ze de kwaliteit van uw tandenpoetsen van dag tot dag volgen en u persoonlijk advies geven om uw gewoonten te verbeteren en het voor u mogelijk te maken om een ​​optimale mondhygiëne te bereiken.
+Het is mogelijk om te stoppen met het delen van uw gegevens wanneer u dat wenst. Voor meer informatie, bezoek onze website op http://www.connectpro.colgate.com"</string>
+    <string name="kolibree_pro_practitioners_revoke_title">"Stoppen met het delen van gegevens met %s?"</string>
+    <string name="kolibree_pro_practitioners_revoke_message">"Door niet langer gegevens te delen met deze professional, beëindigt u de gepersonaliseerde Colgate Connect Pro opvolging. Als u de opvolging later wenst te hervatten, moet deze tandarts u een Colgate Connect Pro uitnodiging sturen om opnieuw toegang te hebben tot uw gegevens.
+
+Weet u zeker dat u wenst door te gaan?"</string>
+    <string name="kolibree_pro_practitioners_header">"Mijn tandartsenteam"</string>
+    <string name="kolibree_pro_quit_popup_title">"Weet u zeker dat u wenst af te sluiten?"</string>
+    <string name="kolibree_pro_quit_popup_message">"Door het Colgate Connect Pro-proces te stoppen, deel je je gegevens niet met je tandartspraktijk en kunnen ze je poetssessies niet volgen."</string>
+    <string name="kolibree_pro_quit_popup_continue">"Doorgaan"</string>
+    <string name="kolibree_pro_quit_popup_quit">"Toch afsluiten"</string>
+    <string name="kolibree_pro_quit_popup_remind_me_later">"Herinner me er later aan"</string>
+    <string name="kolibree_pro_channel_name">"Colgate Connect Pro"</string>
+    <string name="kolibree_pro_channel_description">"Colgate Connect Pro-meldingen"</string>
+    <string name="kolibree_pro_notification_title">"Colgate Connect Pro"</string>
+    <string name="kolibree_pro_notification_description">"Registreer je tandenborstel"</string>
+    <string name="kolibree_practitioners_popup_message">"Stemt u ermee in uw poetsgegevens te delen met uw tandartsenpraktijk %1$s voor monitoringdoeleinden?"</string>
+    <string name="kolibree_practitioners_accept">"OK"</string>
+    <string name="kolibree_practitioners_decline">"Nee bedankt"</string>
+    <string name="running_in_background">"is verbonden met je tandenborstel"</string>
+
+    <!-- Dialog displayed after user pressed cancel button in update ota -->
+    <string name="coach_settings_choose_music">"Muziek kiezen"</string>
+    <string name="coach_settings_coach_sounds_title">"Coach-geluiden"</string>
+    <string name="coach_settings_shuffle">"Willekeurig"</string>
+    <string name="coach_settings_music">"Muziek"</string>
+    <string name="coach_settings_transitions_sounds">"Overgangen klinkt"</string>
+    <string name="coach_settings_display_brushing_movements">"Poetsbewegingen weergeven"</string>
+    <string name="coach_settings_display_helps_texts">"Display helpt teksten"</string>
+    <string name="coach_settings_sounds">"Geluiden"</string>
+    <string name="setup_i_dont_have_connect_e1">"Ik heb geen E1 tandenborstel"</string>
+    <string name="tb_toolbar_connect">"Sluit een tandenborstel aan"</string>
+    <string name="tb_toolbar_connected">"Verbonden"</string>
+    <string name="tb_toolbar_retrieving_brushing">"Borstelsessies ophalen"</string>
+    <string name="tb_toolbar_disconnected">"Losgekoppeld"</string>
+    <string name="tb_toolbar_enable_bleutooth">"Schakel alstublieft Bluetooth in"</string>
+    <string name="tb_toolbar_last_sync_title">"Laatste synchro."</string>
+    <string name="tb_toolbar_last_sync_today">"Vandaag"</string>
+    <string name="tb_toolbar_last_sync_yesterday">"Gisteren"</string>
+    <string name="tb_toolbar_last_sync_never">"Nooit"</string>
+    <string name="tb_toolbar_connecting">"Bezig met verbinden"</string>
+    <string name="m1_fake_dialog_title">"Setup initiëren"</string>
+    <string name="m1_fake_dialog_initiating_setup">"Houd alsjeblieft je tandenborstel stil of plaats hem op een vlakke ondergrond tijdens de installatie"</string>
+    <string name="m1_fake_dialog_configuring">"Configureren…"</string>
+    <string name="m1_fake_dialog_calibrating">"Configureren…"</string>
+    <string name="m1_fake_dialog_completed">"Setup voltooid!"</string>
+    <string name="m1_fake_dialog_ready_to_use">"Uw M1 is klaar voor gebruik"</string>
+    <string name="m1_fake_dialog_dont_move_brush">"Verplaats uw M1 niet tijdens de installatie"</string>
+    <string name="welcome_title">"Welkom"</string>
+    <string name="welcome_subtitle">"Ervaar de mondgezondheid\n van de toekomst"</string>
+    <string name="welcome_connect_tb">"Sluit mijn slimme tandenborstel aan"</string>
+    <string name="welcome_no_smrt_tb">"Ik heb geen slimme tandenborstel"</string>
+    <string name="welcome_have_account">"Hebt u al een account? Aanmelden"</string>
+    <string name="welcome_have_account_login">"Aanmelden"</string>
+    <string name="tb_model_selection_toolbar_title">"Sluit uw tandenborstel aan"</string>
+    <string name="tb_model_selection_title">"Welke tandenborstel heb je ?."</string>
+    <string name="activate_bt_title">"Bluetooth"</string>
+    <string name="activate_bt_button">"Activeer Bluetooth"</string>
+    <string name="activate_bt_description">"Om je tandenborstel aan te sluiten, activeer je de Bluetooth van je apparaat"</string>
+    <string name="location_permission_title">"Locatie toestemming"</string>
+    <string name="location_permission_button">"Toestemming geven"</string>
+    <string name="connecting_dialog_title">"Bezig met verbinden..."</string>
+    <string name="connecting_dialog_stop">"Stop"</string>
+    <string name="connection_successful_dialog_title">"Verbinding gelukt"</string>
+    <string name="connection_successful_dialog_message">"Zet je tandenborstel uit"</string>
+    <string name="connection_error_dialog_title">"Verbindingsfout"</string>
+    <string name="tb_connection_title">"Wakker worden met je tandenborstel"</string>
+    <string name="tb_connection_subtitle">"Druk op de XXX knop op uw tandenborstel"</string>
+    <string name="tb_connection_subtitle_manual">"Schud je tandenborstel om het Bluetooth-verbindingsproces te activeren"</string>
+    <string name="tb_connection_nothing">"Niks gebeurt?"</string>
+    <string name="detection_popup_title">"Een %1$s-tandenborstel is gedetecteerd!"</string>
+    <string name="detection_popup_question">"Zie je dat je tandenborstel blauw knippert?"</string>
+    <string name="detection_popup_yes">"Ja, verbinden"</string>
+    <string name="detection_popup_no">"Nee, blijf zoeken naar mijn tandenborstel"</string>
+    <string name="e1_troubleshooting_title">"Probeert u verbinding te maken met Connect E1-tandenborstel?"</string>
+    <string name="e1_troubleshooting_no_tb">"Ik heb geen Colgate Connect-tandenborstel"</string>
+    <string name="e1_troubleshooting_yes">"Ja"</string>
+    <string name="e1_troubleshooting_no">"Nee"</string>
+    <string name="blink_toothbrush_led">"Knipperen"</string>
+    <string name="test_brushing_start">"Begin nu met poetsen"</string>
+    <string name="test_brushing_tip">"Wist je dat de meeste volwassenen slechts 40% van het oppervlak van hun tanden poetsen?"</string>
+    <string name="test_brushing_lets_see_how_you_brush">"Laten we nu eens kijken hoe je penseelt:"</string>
+    <string name="test_brushing_instructions_1">"Poets je tanden zoals je gewoonlijk doet"</string>
+    <string name="test_brushing_instructions_2">"Ontdek hoe effectief je poetst"</string>
+    <string name="test_brushing_instructions_3">"Gebruik onze Coach om je techniek te verbeteren"</string>
+    <string name="test_brushing_screen_title">"Borsteltestom"</string>
+    <string name="dialog_conn_error_title">"We konden je tandenborstel niet vinden."</string>
+    <string name="dialog_conn_error_description">"Als u de Bluetooth-functie uit- en inschakelt, worden verbindingsproblemen meestal opgelost."</string>
+    <string name="dialog_conn_error_description_small">"Als uw tandenborstel dicht bij u staat maar nog steeds niet wordt weergegeven, kan het zijn dat deze moet worden ingeschakeld, een laag batterijniveau heeft of al is verbonden met een ander apparaat."</string>
+    <string name="profile_data_saved_info">"Uw gegevens worden opgeslagen"</string>
+    <string name="profile">"Profiel"</string>
+    <string name="birth_date_hint">"We verrassen je voor je verjaardag!"</string>
+    <string name="email_already_used_error">"Dit e-mailadres is al in gebruik"</string>
+    <string name="tab_rewards">"Beloningen"</string>
+    <string name="rewards_tab_challenges">"Uitdagingen"</string>
+    <string name="rewards_tab_tier">"Niveau"</string>
+    <string name="rewards_tab_smiles">"Winkel"</string>
+    <string name="header_smiles">"%1$s Smiles-punten"</string>
+    <string name="rewards_support_url">"https://colgateconnect.zendesk.com/hc/en-us/articles/115005703746"</string>
+    <string name="test_brushing_session_electric_line1">"Zet je tandenborstel aan"</string>
+    <string name="test_brushing_session_electric_line2">"en begin te poetsen zoals je gewoonlijk doet!"</string>
+    <string name="test_brushing_session_manual">"Begin je tanden te poetsen zoals je gewoonlijk doet!"</string>
+    <string name="durring_session_description_step1">"Poets je tanden en tandvlees voorzichtig zoals je een gewone tandenborstel zou gebruiken"</string>
+    <string name="durring_session_highlighted_step1">"tanden en tandvlees voorzichtig"</string>
+    <string name="durring_session_description_step2">"Stop met poetsen als je dat normaal zou doen"</string>
+    <string name="durring_session_description_step3">"Sonische trillingen helpen tandplak verwijderen"</string>
+    <string name="durring_session_highlighted_step3">"Sonische trillingen"</string>
+    <string name="durring_session_description_step3_manual">"Het unieke ontwerp van de tandenborstel helpt meer plaque, vlekken en bacteriën te verwijderen."</string>
+    <string name="durring_session_highlighted_step3_manual">"Het unieke ontwerp van de tandenborstel"</string>
+    <string name="durring_session_description_step4">"We analyseren uw poetsbeurt om u te helpen uw techniek te verbeteren"</string>
+    <string name="durring_session_highlighted_step4">"uw techniek te verbeteren"</string>
+
+    <!-- optimize analyser -->
+    <string name="optimize_your_brushing_analysis">"Optimaliseer de analyse"</string>
+    <string name="which_hand_do_you_hold_your_toothbrush_with">"Met welke hand houd je je tandenborstel in?"</string>
+    <string name="left">"Links"</string>
+    <string name="right">"Rechts"</string>
+    <string name="how_many_times_a_day_do_you_brush_your_teeth">"Hoeveel keer per dag poetst u uw tanden?"</string>
+    <string name="get_my_results">"Krijg mijn resultaten"</string>
+    <string name="finish_brushing_dialog_title">"Ben je klaar?"</string>
+    <string name="finish_brushing_dialog_yes">"Ik ben klaar"</string>
+    <string name="finish_brushing_dialog_resume">"Nog niet, hervat"</string>
+    <string name="my_connect_e2">"Mijn Connect E2"</string>
+    <string name="setup_toothbrush_connect_e2_title">"Sluit uw E2 aan"</string>
+    <string name="results_analysis_successful_title">"Analyse uitgevoerd"</string>
+    <string name="results_analysis_successful_body">"Ontdek hoe goed je poetstechniek is."</string>
+    <string name="results_mouth_coverage_title">"Bedekt oppervlak"</string>
+    <string name="results_mouth_coverage_hint">"Hoe het schema te lezen?"</string>
+    <string name="analysis_in_progress">"Analyse wordt uitgevoerd"</string>
+    <string name="brushing_progress_msg_1">"Poetsduur"</string>
+    <string name="brushing_progress_msg_2">"Bedekt oppervlak"</string>
+    <string name="brushing_progress_msg_3">"Hoek analyse"</string>
+    <string name="brushing_progress_msg_4">"Borstelen bewegingen"</string>
+    <string name="select_a_toothbrush_to_continue">"Selecteer een tandenborstel om door te gaan."</string>
+    <string name="results_mouth_coverage_tooth_clean">"Schoon"</string>
+    <string name="results_mouth_coverage_tooth_dirty">"Meer\npoetswerk nodig"</string>
+    <string name="mouth_coverage_perfect">"Gefeliciteerd! Dat is een perfecte poetssessie."</string>
+    <string name="mouth_coverage_good">"Je hebt een paar gebieden gemist. Probeer onze coach om 100% te bereiken."</string>
+    <string name="mouth_coverage_medium">"Je kunt het niet eens beter. Probeer onze coach zodat je geen enkele zone mist."</string>
+    <string name="mouth_coverage_bad">"Je kunt beter doen. Probeer onze coach zodat je geen enkele zone mist."</string>
+    <string name="mouth_coverage_no_data">"Geen oppervlaktegegevens beschikbaar voor deze poetsbeurt."</string>
+    <string name="read_diagram_dialog_body">"Het is alsof je in de spiegel kijkt, de rechterkant van de kaak op het scherm is de rechterkant van je mond"</string>
+    <string name="read_diagram_dialog_title">"Schema-uitleg"</string>
+    <string name="read_diagram_dialog_ok">"OK"</string>
+    <string name="read_diagram_dialog_top">"Top"</string>
+    <string name="read_diagram_dialog_bottom">"Bodem"</string>
+    <string name="read_diagram_dialog_left">"Links"</string>
+    <string name="read_diagram_dialog_right">"Rechts"</string>
+    <string name="hint_tap_to_change_view">"Verander de weergave"</string>
+    <string name="test_brushing_analysis_screen_title">"Analyse"</string>
+    <string name="dialog_lost_connexion_quit_btn">"Sluit af (en begin later opnieuw)"</string>
+    <string name="dialog_lost_connexion_title">"Verbinding verbroken"</string>
+    <string name="dialog_lost_connexion_description">"De verbinding met uw tandenborstel is verloren gegaan.
+Wacht tot het opnieuw verbinding maakt of je poetssessie later opnieuw start."</string>
+
+    <!-- Pirate game does not work on user's Android version -->
+    <string name="pirate_not_supported_os_version">"Update naar Android 6 of hoger om GoPirate te gebruiken."</string>
+    <string name="speed_proper">"Goede
+snelheid"</string>
+    <string name="speed_too_fast">"Te
+snel"</string>
+    <string name="speed_card_title">"Poets snelheid"</string>
+    <string name="speed_card_hint">"Meer weten"</string>
+    <string name="speed_learn_more_dialog_title">"Poets snelheid"</string>
+    <string name="speed_learn_more_dialog_body_top">"Een hard en snel poetsen kan effectiever aanvoelen, maar echt poetsen met deze beweging bevordert ongezonde opbouw tussen je tanden en tandvlees."</string>
+    <string name="speed_learn_more_dialog_body_bottom">"Probeer langzamer te borstelen, waarbij u zich op één tand tegelijk concentreert, zodat de borstelkop de ruimte tussen de tanden kan reinigen."</string>
+    <string name="speed_learn_more_dialog_help">"Hulp nodig om het schema te begrijpen?"</string>
+    <string name="speed_description_by_groups">"Je bewegingen waren te snel tijdens het poetsen %1$s. Vertragen om je tanden gezond te houden."</string>
+    <string name="speed_description_average">"Je bewegingen waren te snel voor %1$s van je poetsbeurt. Vertragen om je tanden gezond te houden."</string>
+    <string name="speed_description_all_good">"Niets te melden!"</string>
+    <string name="speed_group_occlusal">"je kauwvlak"</string>
+    <string name="speed_group_outside_molars">"het buitenoppervlak van je kiezen"</string>
+    <string name="speed_group_inside_molars">"het binnenoppervlak van je kiezen"</string>
+    <string name="speed_group_outside_incisives">"het buitenoppervlak van je snijtanden"</string>
+    <string name="speed_group_inside_incisives">"het binnenoppervlak van je snijtanden"</string>
+    <string name="speed_quadrant_top_left">"je kwadrant linksboven"</string>
+    <string name="speed_quadrant_top_right">"je kwadrant rechtsboven"</string>
+    <string name="speed_quadrant_bottom_left">"je kwadrant linksonder"</string>
+    <string name="speed_quadrant_bottom_right">"je kwadrant rechtsonder"</string>
+    <string name="speed_too_slow">"Te
+traag"</string>
+    <string name="game_loader_download_game">"Downloaden"</string>
+    <string name="game_loader_game_requires_update">"Verplichte update"</string>
+    <string name="game_loader_game_download_in_progress">"Het downloaden"</string>
+    <string name="game_loader_update_available">"Update beschikbaar"</string>
+    <string name="ota.low.battery.subtitle">"Laad/vervang de batterij van uw tandenborstel om te updaten."</string>
+    <string name="ota.low.battery.title">"De batterijniveau van de tandenborstel is te laag"</string>
+    <string name="toothbrush.battery.change.required">"Vervang uw batterij onmiddellijk."</string>
+    <string name="toothbrush.battery.few.days">"Nog slechts enkele dagen batterijduur over, maak u klaar voor vervanging."</string>
+    <string name="toothbrush.battery.few.weeks">"Nog enkele weken batterijduur over als u onze standaard AAA alkalinebatterij van Energizer gebruikt. Andere soorten batterijen kunnen voor een kortere batterijduur zorgen."</string>
+    <string name="toothbrush.battery.six.months">"Nog meer dan 6 maanden batterijduur over als u onze standaard AAA alkalinebatterij van Energizer gebruikt. Andere soorten batterijen kunnen voor een kortere batterijduur zorgen."</string>
+    <string name="toothbrush.battery.three.months">"Nog meer dan 3 maanden batterijduur over als u onze standaard AAA alkalinebatterij van Energizer gebruikt. Andere soorten batterijen kunnen voor een kortere batterijduur zorgen."</string>
+    <string name="toothbrush.battery.state.change.required">"leeg"</string>
+    <string name="toothbrush.battery.state.few.days">"enkele dagen"</string>
+    <string name="toothbrush.battery.state.few.weeks">"Enkele weken"</string>
+    <string name="toothbrush.battery.state.six.months">"6+ maanden"</string>
+    <string name="toothbrush.battery.state.three.months">"3+ maanden"</string>
+    <string name="toothbrush.battery.state.unknown">"onbekend"</string>
+    <string name="delete_game_dialog_title">"Weet je zeker dat je wilt verwijderen %1$s?"</string>
+    <string name="delete_game_dialog_body">"Je kunt het later opnieuw downloaden."</string>
+    <string name="delete_game_dialog_ok">"Wissen"</string>
+    <string name="delete_game_dialog_cancel">"Annuleren"</string>
+    <string name="tb_toolbar_enable_location">"Schakel de locatieservice in"</string>
+    <string name="my_connect_b1">"Mijn Connect B1"</string>
+    <string name="setup_toothbrush_connect_b1_title">"Sluit uw B1 aan"</string>
+    <string name="challenge_details_won">"gewonnen"</string>
+    <string name="challenge_details_close">"Sluiten"</string>
+    <string name="challenge_details_completed_on">"Voltooid op"</string>
+    <string name="challenge_details_start">"Start deze uitdaging"</string>
+    <string name="challenge_details_not_completed">"Nog niet voltooid"</string>
+    <string name="challenge_details_continue">"Ga door met deze uitdaging"</string>
+    <string name="current_tier_smiles_label_description">"Elke poetsbeurt levert u %1$s op"</string>
+    <string name="next_tier_label">"Volgende niveau"</string>
+    <string name="next_tier_description">"Voltooi nog %1$s  uitdagingen om niveau %2$s te halen"</string>
+    <string name="future_tier_description">"Elke poetsbeurt levert u +%1$s op"</string>
+    <string name="coach_start_message_title">"Zet je tandenborstel aan om je Coached brushing sessie te starten"</string>
+    <string name="coach_dialog_start_message_title">"Laten we beginnen"</string>
+    <string name="coach_dialog_start_message_body">"Zet je tandenborstel aan om je Coached brushing sessie te starten"</string>
+    <string name="coach_dialog_start_message_cancel">"Annuleren"</string>
+    <string name="coach_manual_dialog_start_message_body">"Klik op de knop om uw handmatige Coached brushing sessie te starten"</string>
+    <string name="coach_manual_dialog_start_message_start">"Start"</string>
+    <string name="buy">"Kopen"</string>
+    <string name="smiles_count">"Je hebt %s Smiles"</string>
+    <string name="smiles_history_link">"Zie Smiles-punten geschiedenis"</string>
+    <string name="challenge_details_action_offline">"Wat is offline poetsen?"</string>
+    <string name="offline_brushing_toolbar_title">"Offline poetsbeurt"</string>
+    <string name="offline_brushing_title">"U kunt uw Colgate Connect-tandenborstel met of zonder de app gebruiken"</string>
+    <string name="offline_brushing_point1">"Penseel met Colgate Connect terwijl de app niet open is: je poetstechniek wordt nog steeds geanalyseerd"</string>
+    <string name="offline_brushing_point2">"U kunt vervolgens uw tandenborstel synchroniseren door eenvoudig uw app te openen en nieuwe inzichten te ontdekken"</string>
+    <string name="smiles_history">"Smiles-punten geschiedenis"</string>
+    <string name="smiles_history_brushing">"Poetsen"</string>
+    <string name="smiles_history_challenge_completed">"Uitdaging voltooid: %s"</string>
+    <string name="smiles_history_offline_brushing">"Offline poetsbeurt"</string>
+    <string name="smiles_history_online_brushing">"Poetsen met %s"</string>
+    <string name="smiles_history_transfer_from">"%s Smiles ontvangen van %s"</string>
+    <string name="smiles_history_transfer_in">"%s Smiles ontvangen"</string>
+    <string name="smiles_history_transfer_out">"%s Smiles overgedragen"</string>
+    <string name="smiles_history_transfer_to">"%s Smiles overgedragen aan %s"</string>
+    <string name="smiles_history_tier_reached">"%s niveau bereikt. Elke tanden poetsen brengt je %s Smiles."</string>
+    <plurals name="challenge_details_more_to_earn">
+        <item quantity="one">"Nog %1$d extra om %2$d smile te verdienen!"</item>
+        <item quantity="other">"Nog %1$d extra om %2$d smiles te verdienen!"</item>
+    </plurals>
+    <string name="smiles_history_smiles_count">"%s Smiles"</string>
+    <string name="coach_start_message_title_manual">"Schud je tandenborstel om je Coached brushing sessie te starten"</string>
+    <string name="smiles_history_week_streak">"Wekelijkse serie"</string>
+    <string name="transfer_smiles">"Smiles overdragen"</string>
+    <string name="family_smiles">"Familieleden"</string>
+    <string name="rewards_error_no_internet_connection">"Schakel uw internetverbinding in om Beloningsgegevens te laden."</string>
+    <string name="rewards_error_synchronisation_failed">"Er is een fout opgetreden tijdens het laden van gegevens. Probeer het later opnieuw."</string>
+    <string name="smiles_transfer_title">"Smiles overdragen"</string>
+    <string name="smiles_transfer_current_balance">"Huidig saldo"</string>
+    <string name="smiles_transfer_transfer_amount">"Hoeveelheid overdragen"</string>
+    <string name="smiles_transfer_to">"Overdragen naar"</string>
+    <string name="smiles_transfer_validate">"Overdragen"</string>
+    <string name="smiles_transfer_smiles">"Smiles"</string>
+    <string name="smiles_transfer_smiles_won">"%s Smiles gewonnen"</string>
+    <string name="smiles_transfer_done">"Overdracht klaar!"</string>
+    <string name="challenge_feedback_collect_smiles">"Verzamel mijn Smiles"</string>
+    <string name="multi_challenge_feedback_title">"Felicitatie!"</string>
+    <string name="multi_challenge_feedback_message_part1">"Je hebt"</string>
+    <plurals name="multi_challenge_feedback_message_part2">
+        <item quantity="one">"%1$d nieuwe uitdaging."</item>
+        <item quantity="other">"%1$d nieuwe uitdagingen."</item>
+    </plurals>
+    <string name="multi_challenge_feedback_message_part3">"Veeg om ze te ontdekken."</string>
+
+    <!-- Fuzzy -->
+    <plurals name="smiles_feedback_good">
+        <item quantity="one">"Wat een mooie poetsbeurt!\nJe hebt zojuist %1$d Smile gewonnen!"</item>
+        <item quantity="other">"Wat een mooie poetsbeurt!\nJe hebt zojuist %1$d Smiles gewonnen!"</item>
+    </plurals>
+    <string name="smiles_feedback_bad">"Helaas heb je geen Smiles gewonnen met dit poetsen.\nU moet ten minste 50%% van de oppervlaktedekking behalen om Smiles te winnen."</string>
+    <string name="my_plaqless">"Mijn Plaqless Pro"</string>
+    <string name="setup_toothbrush_plaqless_title">"Verbind je Plaqless Pro"</string>
+    <string name="new_tier_title">"Je hebt de %s laag bereikt"</string>
+    <string name="new_tier_message">"Gefeliciteerd %s, je hebt %s uitdagingen voltooid. Ga door!"</string>
+    <string name="new_tier_coins">"Vanaf nu brengt elke tandenpoetsen je naar boven"</string>
+    <string name="feedback_offline_sync">"Hé, je hebt %s poetsbeurten gesynchroniseerd en %s Smiles gewonnen!"</string>
+    <string name="feedback_offline_sync_no_smiles">"Hé, je hebt %s keer poetsen gesynchroniseerd maar geen Smiles gewonnen.\nU moet ten minste 50%% oppervlaktedekking behalen om Smiles te winnen."</string>
+    <string name="pql_connection_title">"Begin door op de XXX knop op uw tandenborstel te drukken"</string>
+    <string name="pql_connection_description"><![CDATA[Let op het knipperende <b>bluetooth-symbool</b>]]></string>
+    <string name="calendar_tab">"Kalender"</string>
+    <string name="detection_popup_pql_no">"Blijf zoeken naar mijn penseel"</string>
+    <string name="detection_popup_pql_yes">"Aansluiten"</string>
+    <string name="plaqless_intro_title">"Welkom bij Colgate Plaqless Pro"</string>
+    <string name="plaqless_intro_subtitle"><![CDATA[Dagelijks afbouwen is de <b>sleutel tot een goede mondgezondheid.</b>]]></string>
+    <string name="plaqless_intro_type_title">"Plaqless Pro geeft aan:"</string>
+    <string name="plaqless_intro_type_cleand">"Schoongemaakt"</string>
+    <string name="plaqless_intro_type_remains">"Tandplak resten op"</string>
+    <string name="plaqless_intro_type_missed">"Gemiste"</string>
+    <string name="plaqless_intro_start">"Begin"</string>
+    <string name="slide1_title">"Meer informatie over de tandenborstel"</string>
+    <string name="slide1_description1"><![CDATA[<b>Geavanceerde Slimme Sensoren</b> detecteren tandplak op uw tanden]]></string>
+    <string name="slide1_description2"><![CDATA[<b>Indicatielampje</b> licht op om uw tanden te poetsen]]></string>
+    <string name="slide1_description3"><![CDATA[<b>Timer</b> licht elke 30 seconden op]]></string>
+    <string name="slide2_title">"Indicatielampje"</string>
+    <string name="slide2_description1_title">"Blauw"</string>
+    <string name="slide2_description1_content1">"Tandplak wordt gedetecteerd"</string>
+    <string name="slide2_description1_content2">"Borstel te verwijderen"</string>
+    <string name="slide2_description2_title">"Wit"</string>
+    <string name="slide2_description2_content1">"Ruimte schoon is"</string>
+    <string name="slide2_description2_content2">"Ga verder met de volgende paragraaf"</string>
+    <string name="slide2_description3_title">"Rood"</string>
+    <string name="slide2_description3_content1">"Sensor bedekt"</string>
+    <string name="slide2_description3_content2">"Spoel de sensor of wijzig borstel hoek"</string>
+    <string name="intro_start_test">"Start de test"</string>
+    <string name="dashboard_pql_tip_tricks_title">"Trucs"</string>
+    <string name="dashboard_pql_tip_tricks_body">"Leer hoe u uw resultaten kunt optimaliseren"</string>
+    <string name="pql_best_results_title">"Voor de beste resultaten"</string>
+    <string name="pql_best_results_body">"Houd de tandenborstel in een horizontale positie om een ​​effectieve techniek te garanderen."</string>
+    <string name="pql_best_results_body_highlight">"horizontale"</string>
+    <string name="pql_best_results_ok">"Ik begreep het"</string>
+    <string name="pql_brushing_progress_msg">"Tandplak analyse"</string>
+    <string name="intro_do_later">"Ik doe het later"</string>
+    <string name="pql_durring_session_description_step1">"Let op de LED-ring kleur terwijl je je tanden poetst"</string>
+    <string name="pql_durring_session_description_step1_highlighted">"LED-ring kleur"</string>
+    <string name="mouth_map_left">"L"</string>
+    <string name="mouth_map_right">"R"</string>
+    <string name="mouth_map_clean_score">"schoon score"</string>
+    <string name="mouth_map_close">"Ga naar startpagina"</string>
+    <string name="mouth_map_dialog_ok">"Ik begreep het"</string>
+    <string name="missed_area_dialog_title">"Gemist\nGebied"</string>
+    <string name="missed_area_dialog_body"><![CDATA[Geel geeft <b>gebieden aan die u niet hebt geborsteld</b>]]></string>
+    <string name="clean_score_dialog_title">"schoon score"</string>
+    <string name="clean_score_dialog_clean"><![CDATA[<b>%s</b> schoon]]></string>
+    <string name="clean_score_dialog_remains"><![CDATA[<b>%s</b> tandplak resten op]]></string>
+    <string name="clean_score_dialog_missed"><![CDATA[<b>%s</b> gemiste]]></string>
+    <string name="build_up_remains_dialog_title">"Tandplak\nresten op"</string>
+    <string name="build_up_remains_dialog_body"><![CDATA[Blauw geeft de gebieden <b>aan waar plaque is</b>. We raden aan ze opnieuw te borstelen]]></string>
+    <string name="coach_plus_feedback_message_speed_fast">"Wees voorzichtig, je poetst te snel!"</string>
+    <string name="coach_plus_feedback_message_speed_slow">"Je poetst te langzaam!"</string>
+
+    <!-- Fuzzy -->
+    <string name="coach_plus_feedback_message_wrong_angle_incisors_interior">"Pas de verticale kanteling van uw tandenborstel aan"</string>
+
+    <!-- Fuzzy -->
+    <string name="coach_plus_feedback_message_wrong_angle_other_zones">"Pas de hoek van de tandenborstel aan (45°)"</string>
+    <string name="crown_explanation_dialog_title">"Perfecte dag"</string>
+    <string name="crown_explanation_dialog_body">"Poets je tanden 2 keer per dag met meer dan 80%% van de oppervlakte dekking per poetsen om je kroon te verdienen!"</string>
+    <string name="crown_explanation_dialog_ok">"Ik begreep het"</string>
+    <string name="week_streak_dialog_title">"Wekelijkse serie!"</string>
+    <string name="week_streak_dialog_body">"Gefeliciteerd, je hebt je tanden 2 keer per dag 7 dagen op rij geborsteld. Je hebt %s Smiles gewonnen."</string>
+    <string name="week_streak_dialog_ok">"Verzamel mijn %s Smiles"</string>
+    <string name="slide3_title">"Bekijk de borstel in actie"</string>
+    <string name="slide3_try_brush_now">"Probeer nu het penseel uit"</string>
+    <string name="slide3_try_brush_later">"Ik doe het later"</string>
+    <string name="coach_plus_feedback_message_wrong_handle">"Houd uw tandenborstel horizontaal"</string>
+    <string name="brushing_program_button_text">"Borstelen programma"</string>
+    <string name="brushing_quiz_label">"Borstelen programma"</string>
+    <string name="brushing_quiz_screen_1_title">"Hoe zou u uw huidige mondverzorgings routine beoordelen?"</string>
+    <string name="brushing_quiz_screen_1_answer_1">"Redelijk goed"</string>
+    <string name="brushing_quiz_screen_1_answer_2">"Gemiddelde"</string>
+    <string name="brushing_quiz_screen_1_answer_3">"Kan verbeterd worden"</string>
+    <string name="brushing_quiz_screen_2_title">"Hoe vaak heb je last van tandvlees of tandgevoeligheid?"</string>
+    <string name="brushing_quiz_screen_2_answer_1">"Niet vaak"</string>
+    <string name="brushing_quiz_screen_2_answer_2">"Vaak"</string>
+    <string name="brushing_quiz_screen_3_answer_1">"Wittere tanden"</string>
+    <string name="brushing_quiz_screen_3_answer_2">"Frisdere adem"</string>
+    <string name="brushing_quiz_screen_3_answer_3">"Bescherming van gevoelige tanden of tandvlees"</string>
+    <string name="brushing_quiz_screen_3_title">"Waar zou je vandaag het liefst aan werken?"</string>
+    <string name="brushing_quiz_screen_2_answer_3">"Dagelijks"</string>
+    <string name="brushing_quiz_confirmation_title">"Bedankt voor het invullen van de quiz"</string>
+    <string name="brushing_quiz_program_whitening">"Whitening programma"</string>
+    <string name="brushing_quiz_program_sensitive">"Gevoelig programma"</string>
+    <string name="brushing_quiz_program_everyday_care">"Dagelijkse verzorging"</string>
+    <string name="brushing_quiz_confirmation_brushing_program">"Uw poetsprogramma is\n\n%1$s"</string>
+    <string name="brushing_quiz_confirmation_try_it">"Probeer het nu"</string>
+    <string name="brushing_quiz_confirmation_confirm">"Programma bevestigen"</string>
+    <string name="brushing_quiz_confirmation_revert">"Annuleren"</string>
+    <string name="brushing_quiz_confirmation_try_it_not_paired">"U moet een elektrische tandenborstel op uw apparaat hebben aangesloten om het"</string>
+    <string name="test_angles_activity_name">"Hoeken"</string>
+
+    <!-- Default push notification channel -->
+    <!-- Fuzzy -->
+    <string name="push_notification_channel_general">"Algemene meldingen"</string>
+    <string name="brushing_program_dialog_title">"Selecteer uw programma"</string>
+    <string name="brushing_program_dialog_slow">"Gevoelig programma"</string>
+    <string name="brushing_program_dialog_regular">"Dagelijkse verzorging"</string>
+    <string name="brushing_program_dialog_strong">"Whitening programma"</string>
+    <string name="brushing_program_dialog_current">"(huidig)"</string>
+    <string name="test_angles_intro_header">"Hoeken"</string>
+    <string name="test_angles_intro_body">"Houd je tandenborstel in een hoek van 45 graden in de richting van de tandvleesrand.
+
+Volg de instructies om uw techniek te evalueren en te verbeteren."</string>
+    <string name="test_angles_intro_start_button">"Start"</string>
+    <string name="login_hint_enable_network">"Schakel internettoegang in om uw account aan te maken"</string>
+    <string name="test_angles_state_correct">"Goed"</string>
+    <string name="test_angles_state_incorrect">"Slecht"</string>
+    <string name="test_angles_molar_hint">"Borstel het buitenste oppervlak van je kiezen en houd de juiste hoek gedurende 20 seconden"</string>
+    <string name="test_angles_incisor_hint">"Kantel uw tandenborstel verticaal voor het onderste snijtandoppervlak"</string>
+    <string name="test_angles_confirmation_hint">"Dat is het! U kunt nu de Hoekenactiviteit verlaten."</string>
+    <string name="test_angles_confirmation_hint_highlight">"de Hoekenactiviteit verlaten"</string>
+    <string name="offline_brushing_notification_single_no_smiles_title">"Je hebt geen enkel Smiles gewonnen"</string>
+    <string name="offline_brushing_notification_single_no_smiles_content">"Vereist 50% oppervlakte of meer"</string>
+    <string name="offline_brushing_notification_single_with_smiles_title">"Wat een fijn poetsen!"</string>
+    <string name="offline_brushing_notification_single_with_smiles_content">"Je hebt zojuist %1$s Smiles gewonnen!"</string>
+    <string name="offline_brushing_notification_multiple_no_smiles_title">"Je hebt %1$s borstels gesynchroniseerd"</string>
+    <string name="offline_brushing_notification_multiple_no_smiles_content">"Krijg 50% oppervlakte of meer om Smiles te winnen"</string>
+    <string name="offline_brushing_notification_multiple_with_smiles_title">"Je hebt %1$s borstels gesynchroniseerd"</string>
+    <string name="offline_brushing_notification_multiple_with_smiles_content">"En won %1$s Smiles !"</string>
+    <string name="coach_plus_feedback_message_out_of_mouth">"Steek je tandenborstel in je mond"</string>
+    <string name="coach_plus_feedback_message_rinse_brush_head">"Reinig de tandenborstelsensor"</string>
+    <string name="coach_plus_title">"Coached brushing"</string>
+    <string name="dashboard_clean_score_title">"Schoon"</string>
+    <string name="dashboard_clean_score_subtitle">"Score"</string>
+
+    <!-- Notifications related to brush connectivity -->
+    <string name="push_notification_channel_kolibree_service">"Tandenborstel-connectiviteit"</string>
+
+    <!-- Notifications related to offline brushings retrieval -->
+    <string name="push_notification_channel_night_watch">"Offline penselen"</string>
+    <string name="speed_control_activity_name">"Snelheidscontrole"</string>
+    <string name="speed_control_intro_header">"Snelheidscontrole"</string>
+    <string name="speed_control_intro_body">"Je tanden te snel poetsen kan je tandvlees beschadigen.
+
+Volg de instructies om uw techniek te evalueren en te verbeteren"</string>
+    <string name="speed_control_intro_start_button">"Begin nu met poetsen"</string>
+    <string name="speed_control_confirmation_hint">"Dat is het! U kunt nu de snelheidscontroleactiviteit verlaten."</string>
+    <string name="speed_control_confirmation_hint_highlight">"de snelheidscontroleactiviteit verlaten"</string>
+    <string name="speed_control_brushing_stage1_hint">"Borstel je kiezen
+buitenoppervlak"</string>
+    <string name="speed_control_brushing_stage1_hint_highlight">"kiezen"</string>
+    <string name="speed_control_brushing_stage2_hint">"Borstel je kiezen
+kauwoppervlak"</string>
+    <string name="speed_control_brushing_stage2_hint_highlight">"kiezen"</string>
+    <string name="speed_control_brushing_stage3_hint">"Poets je voortanden
+buitenoppervlak"</string>
+    <string name="speed_control_brushing_stage3_hint_highlight">"Voor tanden
+buitenste"</string>
+    <string name="speed_control_feedback_underspeed">"Te traag !"</string>
+    <string name="speed_control_feedback_overspeed">"Te snel !"</string>
+    <string name="speed_control_feedback_correct">" "</string>
+    <string name="activity_not_compatible_with_plaqless">"Deze activiteit is momenteel niet compatibel met uw Plaqless Pro"</string>
+    <string name="personal_challenge_objective">"Doelstelling"</string>
+    <string name="personal_challenge_level">"Niveau"</string>
+    <string name="personal_challenge_period">"Periode"</string>
+    <string name="personal_challenge_objective_streak">"Streak"</string>
+    <string name="personal_challenge_objective_coverage">"Dekking"</string>
+    <string name="personal_challenge_objective_duration">"Looptijd"</string>
+    <string name="personal_challenge_level_easy">"Gemakkelijk"</string>
+    <string name="personal_challenge_level_hard">"Moeilijk"</string>
+    <string name="personal_challenge_streak_easy">"Poets één keer per dag gedurende %1$s op rij → %2$d glimlachen"</string>
+    <string name="personal_challenge_streak_hard">"Poets tweemaal daags gedurende %1$s op rij → %2$d glimlachen"</string>
+    <string name="personal_challenge_coverage_easy">"Doe een poetsbeurt met minimaal 80%% dekking één keer per dag gedurende %1$s → %2$d glimlachen"</string>
+    <string name="personal_challenge_coverage_hard">"Doe een poetsbeurt met minimaal 80%% dekking tweemaal daags gedurende %1$s → %2$d glimlachen"</string>
+    <string name="personal_challenge_duration_easy">"Poets minimaal 2 minuten eenmaal daags gedurende %1$s → %2$d glimlachen"</string>
+    <string name="personal_challenge_duration_hard">"Poets minimaal 2 minuten tweemaal daags gedurende %1$s → %2$d glimlachen"</string>
+    <plurals name="duration_days">
+        <item quantity="one">"%1$d dag"</item>
+        <item quantity="other">"%1$d dagen"</item>
+    </plurals>
+    <string name="personal_challenge_proposed_challenge">"VOORGESTELDE UITDAGING"</string>
+    <string name="personal_challenge_currently_active_challenge">"HUIDIGE UITDAGING"</string>
+    <string name="personal_challenge_create">"Creëer uitdaging"</string>
+    <string name="personal_challenge_update">"Update de bestaande uitdaging"</string>
+    <string name="personal_challenge_delete">"Actieve uitdaging verwijderen"</string>
+    <string name="personal_challenge_title">"Persoonlijke uitdaging"</string>
+    <string name="personal_challenge_toolbar">"Uitdagingen"</string>
+    <string name="personal_challenge_save">"Opslaan"</string>
+    <string name="personal_challenge_define_your_challenge">"Bepaal je eigen uitdaging en word beloond."</string>
+    <string name="personal_challenge_parameters">"UITDAGENDE PARAMETERS"</string>
+    <string name="personal_challenge_parameter_target">"Mijn verbeteren"</string>
+    <string name="personal_challenge_parameter_level">"Niveau"</string>
+    <string name="personal_challenge_parameter_period">"Uitdagings periode"</string>
+    <string name="personal_challenge_result">"Resulterende uitdaging"</string>
+    <string name="personal_challenge_update_dialog_title">"Update de uitdaging"</string>
+    <string name="personal_challenge_update_dialog_body">"Weet je zeker dat je je huidige uitdaging wilt bijwerken?"</string>
+    <string name="personal_challenge_update_dialog_yes">"Ja"</string>
+    <string name="personal_challenge_update_dialog_no">"Nee"</string>
+    <string name="personal_challenge_completed_title">"Persoonlijke uitdaging"</string>
+    <string name="personal_challenge_completed_message">"Gefeliciteerd! Je hebt je persoonlijke uitdaging voltooid"</string>
+
+    <!-- CHALLENGE RECOMMENDATIONS -->
+    <string name="easy_coverage_2_days_title_1">"Goed begin!"</string>
+    <string name="easy_coverage_2_days_body_1">"Wilt u uw dekkingsgraad blijven verbeteren met een gecoachte borstelactiviteit?"</string>
+    <string name="easy_coverage_2_days_accepted_1">"Doe een borstelbeurt met minimaal 80%% dekking per dag gedurende 2 dagen."</string>
+    <string name="hard_coverage_2_days_title_2">"Ga zo door!"</string>
+    <string name="hard_coverage_2_days_body_2">"Je hebt twee keer per dag geborsteld in de afgelopen 3 dagen. Hoe zit het met het werken aan de kwaliteit van uw borstelwerk?"</string>
+    <string name="hard_coverage_2_days_accepted_2">"Doe een borstelsessie met minstens 80%% dekking twee keer per dag gedurende 2 dagen"</string>
+    <string name="easy_streak_2_days_title_3">"Waar ben je geweest?"</string>
+    <string name="easy_streak_2_days_body_3">"Borstel elke dag met ons mee voor 2 dagen en krijg %s glimlachpunten!"</string>
+    <string name="easy_streak_2_days_accepted_3">"Je kunt veel beter!"</string>
+    <string name="easy_streak_2_days_title_4">"Je kunt veel beter!"</string>
+    <string name="easy_streak_2_days_body_4">"We hebben je de afgelopen dagen zelden met ons zien poetsen. Wil je opnieuw beginnen?"</string>
+    <string name="easy_streak_2_days_accepted_4">"Borstel elke dag met ons mee voor 2 dagen en krijg %s glimlachpunten!"</string>
+    <string name="hard_streak_2_days_title_5">"Goed begin!"</string>
+    <string name="hard_streak_2_days_body_5">"Je hebt de afgelopen dagen elke dag met ons gepoetst. Wil je het nog beter doen?"</string>
+    <string name="hard_streak_2_days_accepted_5">"Borstel twee keer per dag met ons mee voor 2 dagen en krijg %s glimlachpunten!"</string>
+    <string name="easy_streak_1_day_title_6">"Ontdek offline poetsen!"</string>
+    <string name="easy_streak_1_day_body_6">"U kunt met ons poetsen, zelfs als u niet aan de telefoon bent. Probeer het eens?"</string>
+    <string name="easy_streak_1_day_accepted_6">"Poets vandaag nog offline en controleer vervolgens uw app om te zien hoe u het net deed"</string>
+    <string name="easy_coverage_1_day_title_7">"Ontdek onze Coached brushing!"</string>
+    <string name="easy_coverage_1_day_body_7">"Ontdek onze Coached brushing! De beste manier om resultaten te behalen"</string>
+    <string name="easy_coverage_1_day_accepted_7">"Doe vandaag je eerste gecoate poetsbeurt; de beste manier om resultaten te behalen!"</string>
+    <string name="hard_streak_7_days_title_8">"Goede start!"</string>
+    <string name="hard_streak_7_days_body_8">"Je hebt de afgelopen dagen elke dag met ons gepoetst. Wil je het nog beter doen?"</string>
+    <string name="hard_streak_7_days_accepted_8">"Borstel twee keer per dag in de komende 7 dagen en krijg %s glimlachpunten"</string>
+    <string name="hard_streak_7_days_title_9">"Goed begin!"</string>
+    <string name="hard_streak_7_days_body_9">"Je hebt de afgelopen dagen elke dag met ons gepoetst. Wil je het nog beter doen?"</string>
+    <string name="hard_streak_7_days_accepted_9">"Borstel twee keer per dag in de komende 7 dagen en krijg %s glimlachpunten"</string>
+    <string name="easy_streak_7_days_title_10">"Valse start!"</string>
+    <string name="easy_streak_7_days_body_10">"We hebben je de afgelopen dagen niet veel gezien. Wil je een frisse start maken?"</string>
+    <string name="easy_streak_7_days_accepted_10">"Borstel elke dag met ons mee in de komende 7 dagen en krijg %s glimlachpunten"</string>
+    <string name="easy_streak_7_days_title_11">"Waar ben je geweest?"</string>
+    <string name="easy_streak_7_days_body_11">"We hebben je de afgelopen dagen niet met ons zien poetsen. Wil je opnieuw beginnen?"</string>
+    <string name="easy_streak_7_days_accepted_11">"Borstel elke dag met ons mee in de komende 7 dagen en krijg %s glimlachpunten"</string>
+    <string name="easy_streak_7_days_title_12">"Je kunt veel beter!"</string>
+    <string name="easy_streak_7_days_body_12">"We hebben je de afgelopen dagen zelden met ons zien poetsen. Wil je opnieuw beginnen?"</string>
+    <string name="easy_streak_7_days_accepted_12">"Borstel elke dag met ons mee in de komende 7 dagen en krijg %s glimlachpunten"</string>
+    <string name="hard_streak_7_days_title_13">"Er is ruimte voor verbetering!"</string>
+    <string name="hard_streak_7_days_body_13">"We hebben je de afgelopen dagen zelden met ons zien poetsen. Wil je opnieuw beginnen?"</string>
+    <string name="hard_streak_7_days_accepted_13">"Borstel twee keer per dag in de komende 7 dagen en krijg %s glimlachpunten"</string>
+    <string name="hard_streak_7_days_title_14">"Je bent op de goede weg!"</string>
+    <string name="hard_streak_7_days_body_14">"Je hebt het deze week veel beter gedaan dan voorheen. Ga zo door"</string>
+    <string name="hard_streak_7_days_accepted_14">"Borstel twee keer per dag in de komende 7 dagen en krijg %s glimlachpunten"</string>
+    <string name="hard_streak_7_days_title_15">"Goede vooruitgang!"</string>
+    <string name="hard_streak_7_days_body_15">"Je bent niet ver van de perfectie. Hou het goede werk"</string>
+    <string name="hard_streak_7_days_accepted_15">"Borstel twee keer per dag in de komende 7 dagen en krijg %s glimlachpunten"</string>
+    <string name="easy_coverage_7_days_title_16">"Ga zo door!"</string>
+    <string name="easy_coverage_7_days_body_16">"Je hebt twee keer per dag geborsteld in de afgelopen 7 dagen. Hoe zit het met het werken aan de kwaliteit van uw borstelwerk?"</string>
+    <string name="easy_coverage_7_days_accepted_16">"Doe een borstelbeurt met minstens 80%% dekking per dag gedurende 7 dagen"</string>
+    <string name="hard_coverage_7_days_title_17">"Geweldige week!"</string>
+    <string name="hard_coverage_7_days_body_17">"Je hebt twee keer per dag geborsteld in de afgelopen 7 dagen. Hoe zit het met het verhogen van uw oppervlaktedekking?"</string>
+    <string name="hard_coverage_7_days_accepted_17">"Doe een borstelsessie met minstens 80%% dekking twee keer per dag gedurende 7 dagen"</string>
+    <string name="hard_coverage_14_days_title_18">"Geweldige week!"</string>
+    <string name="hard_coverage_14_days_body_18">"Je hebt in de afgelopen 7 dagen consequent 80%% van de dekking twee keer per dag bereikt. Laten we het 2 weken proberen!"</string>
+    <string name="hard_coverage_14_days_accepted_18">"Doe een borstelsessie met minstens 80%% dekking twee keer per dag gedurende 14 dagen"</string>
+    <string name="hard_coverage_30_days_title_19">"Uitstekende!"</string>
+    <string name="hard_coverage_30_days_body_19">"U hebt in de afgelopen 2 weken consequent 80%% van de dekking twee keer per dag bereikt. Laten we 1 maand proberen!"</string>
+    <string name="hard_coverage_30_days_accepted_19">"Doe een borstelsessie met minstens 80%% dekking twee keer per dag gedurende 30 dagen"</string>
+    <string name="welcome_email_google_button">"Log in met Google"</string>
+    <string name="easy_coverage_2_days_body_highlighted_1">"Gecoached borstelen"</string>
+    <string name="ongoing_challenge_title_1">"Gefeliciteerd!"</string>
+    <string name="ongoing_challenge_title_2">"Geweldig!"</string>
+    <string name="ongoing_challenge_streak_7_days_easy">"Je poetst al elke dag voor %s dagen. U moet %s meer dagen borstelen om %s glimlach te verdienen"</string>
+    <string name="ongoing_challenge_streak_7_days_hard">"Je poetst al twee keer per dag voor %s dagen. U moet %s meer dagen voltooien om %s glimlach te verdienen"</string>
+    <string name="ongoing_challenge_coverage_7_days_easy">"Je hebt al minstens 1 keer per dag meer dan 80%% van de dekking van een dag geborsteld, gedurende %s van de dagen. Voltooi %s meer dagen"</string>
+    <string name="ongoing_challenge_coverage_7_days_hard">"Je hebt al twee keer per dag geborsteld voor %s dagen als een ster. Voltooi %s meer dagen zoals deze"</string>
+    <string name="ongoing_challenge_coverage_14_days_hard">"U heeft al twee keer per dag meer dan 80%% van de dekking voor %s van de dagen geborsteld. Voltooi %s meer dagen zoals deze"</string>
+    <string name="ongoing_challenge_coverage_30_days_hard">"U heeft al twee keer per dag meer dan 80%% van de dekking voor %s van de dagen geborsteld. Voltooi %s meer dagen zoals deze"</string>
+    <string name="ongoing_challenge_general_easy">"U poetst al %s dagen lang één keer per dag. Voltooi %s meer dagen zoals deze"</string>
+    <string name="ongoing_challenge_general_hard">"Je poetst al twee keer per dag voor %s dagen. Voltooi %s meer dagen zoals deze"</string>
+    <string name="ongoing_challenge_completed">"Je hebt al %s dagen lang elke dag geborsteld"</string>
+    <string name="ongoing_challenge_personal_new">"Borstel elke dag met ons mee in de volgende %s dagen en krijg %s glimlachpunten"</string>
+    <string name="ongoing_challenge_personal_title">"Daag jezelf uit"</string>
+    <string name="ongoing_challenge_no_recommendation_title">"Houd het op het goede spoor!"</string>
+    <string name="ongoing_challenge_no_recommendation_body">"Blijf bij ons poetsen en krijg een uitdaging op basis van je prestaties."</string>
+    <string name="checkout_toolbar_title">"Winkelwagen"</string>
+    <string name="cart_empty">"Je winkelwagen is leeg"</string>
+    <string name="cart_total">"Totaal"</string>
+    <string name="cart_buy_another_method">"Gebruik een andere betaalmethode"</string>
+    <string name="shop_add_to_cart">"Voeg toe aan winkelmandje"</string>
+    <string name="shop_points">"%s Punten"</string>
+    <string name="shop_or_price">"of %s"</string>
+    <string name="shop_no_products">"Er zijn geen producten beschikbaar"</string>
+    <string name="shop_discount_amount">"Bespaar %s"</string>
+    <string name="shop_discount_caption">"onze punten gebruiken bij het afrekenen!"</string>
+    <string name="shop_web_payment_dialog_title">"Bent u zeker?"</string>
+    <string name="shop_web_payment_dialog_content">"Als u deze pagina verlaat, wordt de lopende aankoop geannuleerd"</string>
+    <string name="shop_web_payment_dialog_positive">"Ja"</string>
+    <string name="shop_web_payment_dialog_negative">"Nee"</string>
+    <string name="shop_web_payment_toolbar_title">"Uitchecken"</string>
+    <string name="cart_use_smiles">"Gebruik glimlachtpunten"</string>
+    <string name="cart_smiles_amount_hint">"%d glimlachpunten (%s) beschikbaar"</string>
+    <string name="google_sign_in_error">"Aanmelden bij Google is mislukt."</string>
+    <string name="cart_sub_total">"Subtotaal"</string>
+    <string name="cart_smiles_discount_applied">"Punten toegepast korting"</string>
+    <string name="cart_use_smile_points">"Gebruik mijn %s punten (-%s)"</string>
+    <string name="firmware_upgrade_welcome">"Uw tandenborstel upgraden duurt enkele minuten, gelieve uw tandenborstel niet uit te zetten."</string>
+</resources>

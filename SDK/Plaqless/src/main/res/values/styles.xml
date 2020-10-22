@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2019 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~ Proprietary and confidential
+  -->
+
+<resources>
+
+  <style name="PlqRoundButton" parent="android:Widget.Button">
+    <item name="android:background">@drawable/shape_pql_intro_start</item>
+    <item name="android:textColor">@color/plaqless_background_dark</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:textSize">@dimen/big_text</item>
+    <item name="android:textAllCaps">false</item>
+  </style>
+
+</resources>

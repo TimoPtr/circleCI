@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:background="@color/white"
+  android:orientation="vertical">
+
+  <FrameLayout
+    android:id="@+id/mouth_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="50dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/fragment_mouth_datetime">
+
+    <com.kolibree.android.jaws.color.ColorJawsView
+      android:id="@+id/fragment_mouth_mouthView"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" />
+  </FrameLayout>
+
+  <TextView
+    android:id="@+id/fragment_mouth_datetime"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:gravity="center_horizontal"
+    android:padding="10dp"
+    android:textColor="@color/colorPrimary"
+    android:textSize="16sp"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:text="Today at 11:20" />
+
+  <TextView
+    android:id="@+id/fragment_mouth_duration_caption"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:gravity="center"
+    android:textSize="@dimen/checkup_ring_caption_text_size"
+    android:textStyle="bold"
+    app:layout_constraintBottom_toBottomOf="@id/fragment_mouth_duration_ring"
+    app:layout_constraintLeft_toLeftOf="@id/fragment_mouth_duration_ring"
+    app:layout_constraintRight_toRightOf="@id/fragment_mouth_duration_ring"
+    app:layout_constraintTop_toTopOf="@id/fragment_mouth_duration_ring"
+    tools:text="1'30" />
+
+  <TextView
+    android:id="@+id/fragment_mouth_duration_label"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/checkup_duration_margin"
+    android:gravity="center_horizontal"
+    android:text="@string/checkup_duration"
+    app:layout_constraintLeft_toLeftOf="@+id/fragment_mouth_duration_ring"
+    app:layout_constraintRight_toRightOf="@+id/fragment_mouth_duration_ring"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <com.kolibree.android.app.ui.widget.RingChartView
+    android:id="@+id/fragment_mouth_duration_ring"
+    android:layout_width="@dimen/checkup_ring_diameter"
+    android:layout_height="@dimen/checkup_ring_diameter"
+    android:layout_marginTop="@dimen/tiny_margin"
+    android:layout_marginEnd="@dimen/checkup_orphan_btn_margin"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/fragment_mouth_duration_label"
+    app:ringBackgroundColor="@color/dashboard_chart_background"
+    app:ringColor="@color/colorPrimary"
+    app:thickness="@dimen/checkup_ring_thickness" />
+
+  <com.kolibree.android.app.ui.widget.RingChartView
+    android:id="@+id/fragment_mouth_surface_ring"
+    android:layout_width="@dimen/checkup_ring_diameter_big"
+    android:layout_height="@dimen/checkup_ring_diameter_big"
+    app:layout_constraintBottom_toBottomOf="@id/mouth_container"
+    app:layout_constraintLeft_toLeftOf="@id/mouth_container"
+    app:layout_constraintRight_toRightOf="@id/mouth_container"
+    app:layout_constraintTop_toTopOf="@id/mouth_container"
+    app:ringBackgroundColor="@color/dashboard_chart_background"
+    app:ringColor="@color/colorPrimary"
+    app:thickness="@dimen/checkup_ring_thickness_big" />
+
+  <TextView
+    android:id="@+id/fragment_mouth_surface_caption"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:gravity="center"
+    android:textSize="@dimen/checkup_ring_caption_text_size_big"
+    android:textStyle="bold"
+    app:layout_constraintBottom_toBottomOf="@id/fragment_mouth_surface_ring"
+    app:layout_constraintLeft_toLeftOf="@id/fragment_mouth_surface_ring"
+    app:layout_constraintRight_toRightOf="@id/fragment_mouth_surface_ring"
+    app:layout_constraintTop_toTopOf="@id/fragment_mouth_surface_ring"
+    tools:text="75%" />
+
+  <TextView
+    android:id="@+id/fragment_mouth_surface_label"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:gravity="center_horizontal"
+    android:text="@string/dashboard_surface"
+    android:textSize="20sp"
+    app:layout_constraintBottom_toTopOf="@id/fragment_mouth_surface_ring"
+    app:layout_constraintLeft_toLeftOf="@id/fragment_mouth_surface_ring"
+    app:layout_constraintRight_toRightOf="@id/fragment_mouth_surface_ring" />
+
+  <ImageView
+    android:id="@+id/deleteBrushing"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="20dp"
+    android:layout_marginTop="50dp"
+    android:layout_marginBottom="@dimen/checkup_orphan_btn_margin"
+    android:src="@drawable/baseline_delete_black_36dp"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/fragment_mouth_datetime"
+    tools:ignore="ContentDescription" />
+
+  <FrameLayout
+    android:id="@+id/checkup_navigate_to_orphan_container"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/checkup_orphan_btn_margin"
+    android:layout_marginEnd="8dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="@+id/fragment_mouth_duration_ring"
+    app:layout_constraintStart_toStartOf="@id/fragment_mouth_duration_ring">
+
+    <ImageView
+      android:id="@+id/checkup_navigate_to_orphan"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:src="@drawable/ic_double_chain"
+      tools:ignore="ContentDescription" />
+
+    <ImageView
+      android:id="@+id/checkup_navigate_to_orphan_new_content"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="end"
+      android:layout_marginTop="5dp"
+      android:layout_marginEnd="5dp"
+      android:src="@drawable/red_circle"
+      android:visibility="gone"
+      tools:ignore="ContentDescription"
+      tools:visibility="visible" />
+  </FrameLayout>
+
+  <TextView
+    android:id="@+id/kpi_speed"
+    style="@style/KpiView"
+    android:text="@string/speed"
+    app:layout_constraintBottom_toTopOf="@id/kpi_angle"
+    app:layout_constraintLeft_toLeftOf="parent" />
+  <TextView
+    android:id="@+id/kpi_angle"
+    style="@style/KpiView"
+    android:text="@string/angle"
+    app:layout_constraintBottom_toTopOf="@id/kpi_movement"
+    app:layout_constraintLeft_toLeftOf="parent" />
+  <TextView
+    android:id="@+id/kpi_movement"
+    style="@style/KpiView"
+    android:text="@string/movement"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

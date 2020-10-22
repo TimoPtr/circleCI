@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<resources>
+  <integer name="ic_connection_loop_duration">1000</integer>
+  <integer name="test_brushing_animation_start_frame">103</integer>
+  <integer name="test_brushing_animation_end_frame">121</integer>
+</resources>

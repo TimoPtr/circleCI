@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2019 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <data>
+
+    <import type="com.kolibree.android.sdk.persistence.model.AccountToothbrush" />
+
+    <variable
+      name="toothbrushes"
+      type="java.util.List&lt;AccountToothbrush>" />
+
+    <variable
+      name="onClickListener"
+      type="com.kolibree.databinding.OnItemClickListener&lt;AccountToothbrush>" />
+
+  </data>
+
+  <FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="@dimen/toothbrush_picker_width"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:background="@drawable/background_rounded_white">
+
+      <ImageView
+        android:id="@+id/close_button"
+        android:layout_width="@dimen/toothbrush_picker_icon_size"
+        android:layout_height="@dimen/toothbrush_picker_icon_size"
+        android:layout_marginTop="@dimen/small_margin"
+        android:layout_marginRight="@dimen/small_margin"
+        android:background="?actionBarItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="@dimen/toothbrush_picker_padding"
+        android:src="@drawable/baseline_clear_white_48dp"
+        app:tint="@color/grey_light"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription,RtlHardcoded" />
+
+      <ImageView
+        android:id="@+id/toothbrush_icon"
+        android:layout_width="@dimen/toothbrush_picker_main_icon_size"
+        android:layout_height="@dimen/toothbrush_picker_main_icon_size"
+        android:layout_marginTop="@dimen/xbig_margin"
+        android:src="@drawable/ic_tb"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/close_button"
+        tools:ignore="ContentDescription" />
+
+      <TextView
+        android:id="@+id/toothbrush_body_text"
+        android:layout_width="@dimen/toothbrush_picker_text_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/xhuge_margin"
+        android:gravity="center_horizontal"
+        android:text="@string/select_a_toothbrush_to_continue"
+        android:textAppearance="?textAppearanceHeadline4"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toothbrush_icon" />
+
+      <LinearLayout
+        android:id="@+id/brush_list"
+        entries="@{toothbrushes}"
+        layout="@{@layout/item_toothbrush_picker}"
+        onItemClick="@{onClickListener}"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/xhuge_margin"
+        android:layout_marginBottom="@dimen/tiny_margin"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toothbrush_body_text" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+  </FrameLayout>
+
+</layout>

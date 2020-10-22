@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/average_margin">
+
+    <LinearLayout
+      android:id="@+id/too_slow_speed"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_above="@+id/too_fast_speed"
+      android:layout_alignParentStart="true"
+      android:gravity="center"
+      android:orientation="horizontal">
+
+      <ImageView
+        android:id="@+id/speed_tooth_too_slow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_slow_teeth"/>
+
+      <TextView
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/tiny_margin"
+        android:text="@string/speed_too_slow"
+        android:textColor="@color/black"
+        android:textSize="@dimen/medium_text"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+      android:id="@+id/too_fast_speed"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/average_margin"
+      android:layout_alignParentBottom="true"
+      android:layout_alignParentStart="true"
+      android:gravity="center"
+      android:orientation="horizontal">
+
+      <ImageView
+        android:id="@+id/speed_tooth_too_fast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_fast_teeth"/>
+
+      <TextView
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/tiny_margin"
+        android:text="@string/speed_too_fast"
+        android:textColor="@color/black"
+        android:textSize="@dimen/medium_text"/>
+
+    </LinearLayout>
+
+  </RelativeLayout>
+
+</merge>

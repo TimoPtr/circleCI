@@ -1,0 +1,12 @@
+apply plugin: 'com.android.library'
+
+apply from: '../buildscripts/kapt.gradle'
+
+dependencies {
+    implementation project(path: ':static-resources-v1')
+    implementation project(path: ':offline-brushings')
+
+    implementation libraries.dagger
+    implementation libraries.daggerAndroid
+    kapt libraries.daggerCompiler
+}

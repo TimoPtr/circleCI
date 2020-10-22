@@ -1,0 +1,70 @@
+/*
+ * Copyright (c) 2020 Kolibree. All rights reserved
+ *
+ * Copying this file via any medium without the prior written consent of Kolibree is strictly
+ * prohibited
+ *
+ * Proprietary and confidential
+ */
+
+apply plugin: 'com.android.library'
+
+apply from: '../buildscripts/kapt.gradle'
+
+android {
+    androidExtensions {
+        experimental = true
+    }
+
+    buildFeatures {
+        dataBinding = true
+    }
+
+    defaultConfig {
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    defaultConfig {
+        kapt {
+            javacOptions {
+                option("room.schemaLocation", "$projectDir/schemas".toString())
+            }
+        }
+    }
+}
+
+dependencies {
+    implementation project(path: ':commons')
+    implementation project(path: ':static-resources-branded')
+    implementation project(path: ':base-ui')
+    implementation project(path: ':base-ui-hum')
+    implementation project(path: ':databinding')
+    implementation project(path: ':tracker')
+    implementation project(path: ':toothbrush-update-logic')
+    implementation project(path: ':toothbrush-sdk')
+
+    implementation libraries.kotlinRuntime
+
+    implementation libraries.supportConstraintLayout
+    implementation libraries.fragmentKtx
+
+    implementation libraries.navigationFragment
+    implementation libraries.navigationUI
+
+    implementation libraries.rxJava
+    implementation libraries.rxAndroid
+    implementation libraries.rxLint
+
+    implementation libraries.timber
+
+    implementation libraries.lottie
+
+    implementation libraries.dagger
+    kapt libraries.daggerCompiler
+    implementation libraries.daggerAndroid
+    kapt libraries.daggerAndroidProcessor
+
+    testImplementation project(path: ':testing-unit-base')
+    testImplementation project(path: ':testing-builders')
+    testImplementation libraries.mockitoKotlin
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <declare-styleable name="RingChartView">
+
+    <!-- Ring thickness in DP -->
+    <attr format="dimension" name="thickness"/>
+
+    <!-- Ring color -->
+    <attr format="color|reference" name="ringColor"/>
+
+    <!-- Ring background color -->
+    <attr format="color|reference" name="ringBackgroundColor"/>
+  </declare-styleable>
+</resources>

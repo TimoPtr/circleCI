@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout">
+
+  <TextView
+    android:id="@+id/timerMinutesTenth"
+    android:layout_width="@dimen/match_constraints"
+    android:layout_height="@dimen/match_constraints"
+    android:layout_gravity="center"
+    android:layout_marginEnd="@dimen/dot_half"
+    android:background="@drawable/bg_timer_bubble"
+    android:gravity="center"
+    app:autoSizeTextType="uniform"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintDimensionRatio="5:7"
+    app:layout_constraintEnd_toStartOf="@id/timerMinutesUnit"
+    app:layout_constraintHorizontal_bias="0.5"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintWidth_percent="0.21"
+    tools:text="0" />
+
+  <TextView
+    android:id="@+id/timerMinutesUnit"
+    android:layout_width="@dimen/match_constraints"
+    android:layout_height="@dimen/match_constraints"
+    android:background="@drawable/bg_timer_bubble"
+    android:gravity="center"
+    app:autoSizeTextType="uniform"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintDimensionRatio="5:7"
+    app:layout_constraintEnd_toStartOf="@id/timerSeparator"
+    app:layout_constraintHorizontal_bias="0.5"
+    app:layout_constraintStart_toEndOf="@id/timerMinutesTenth"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintWidth_percent="0.21"
+    tools:text="1" />
+
+  <TextView
+    android:id="@+id/timerSeparator"
+    android:layout_width="@dimen/match_constraints"
+    android:layout_height="@dimen/match_constraints"
+    android:gravity="center"
+    android:text=":"
+    app:autoSizeTextType="uniform"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toStartOf="@id/timerSecondsTenth"
+    app:layout_constraintStart_toEndOf="@id/timerMinutesUnit"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:ignore="HardcodedText" />
+
+  <TextView
+    android:id="@+id/timerSecondsTenth"
+    android:layout_width="@dimen/match_constraints"
+    android:layout_height="@dimen/match_constraints"
+    android:layout_gravity="center"
+    android:background="@drawable/bg_timer_bubble"
+    android:gravity="center"
+    app:autoSizeTextType="uniform"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintDimensionRatio="5:7"
+    app:layout_constraintEnd_toStartOf="@id/timerSecondsUnit"
+    app:layout_constraintHorizontal_bias="0.5"
+    app:layout_constraintStart_toEndOf="@id/timerSeparator"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintWidth_percent="0.21"
+    tools:text="1" />
+
+  <TextView
+    android:id="@+id/timerSecondsUnit"
+    android:layout_width="@dimen/match_constraints"
+    android:layout_height="@dimen/match_constraints"
+    android:layout_marginStart="@dimen/dot_half"
+    android:background="@drawable/bg_timer_bubble"
+    android:gravity="center"
+    app:autoSizeTextType="uniform"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintDimensionRatio="5:7"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.5"
+    app:layout_constraintStart_toEndOf="@id/timerSecondsTenth"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintWidth_percent="0.21"
+    tools:text="1" />
+
+</merge>

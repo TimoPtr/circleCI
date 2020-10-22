@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <data>
+
+    <import type="android.view.View" />
+
+    <variable
+      name="viewModel"
+      type="com.kolibree.android.app.ui.home.toolbox.ToolboxViewModel" />
+
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/toolbox"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?backgroundColor"
+    android:clickable="true"
+    android:elevation="@dimen/dot"
+    android:focusable="true"
+    android:padding="@dimen/dot_quin"
+    android:theme="@style/ThemeOverlay.Toolbox"
+    android:visibility="gone"
+    app:visibilityTransition="@{viewModel.toolboxVisible ? View.VISIBLE : View.GONE}">
+
+    <FrameLayout
+      android:id="@+id/icon_container"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:layout_constraintBottom_toTopOf="@id/subtitle"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_chainStyle="packed">
+
+      <com.kolibree.android.app.ui.home.pulsingdot.PulsingDotView
+        android:id="@+id/pulsing_dot_toolbox"
+        android:layout_width="@dimen/dot_nine"
+        android:layout_height="@dimen/dot_nine"
+        android:visibility="@{viewModel.pulsingDotVisible ? View.VISIBLE : View.GONE}"
+        tools:visibility="gone" />
+
+      <ImageView
+        android:id="@+id/icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@{viewModel.iconRes}"
+        android:visibility="@{viewModel.iconVisible ? View.VISIBLE : View.GONE}"
+        tools:src="@drawable/earning_points_icon" />
+
+    </FrameLayout>
+
+    <TextView
+      android:id="@+id/subtitle"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/dot_trip"
+      android:gravity="center_horizontal"
+      android:text="@{viewModel.subTitle}"
+      android:textAppearance="?textAppearanceOverline"
+      android:textColor="?android:textColorSecondary"
+      android:visibility="@{viewModel.subTitleVisible ? View.VISIBLE : View.GONE}"
+      app:layout_constraintBottom_toTopOf="@id/title"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/icon_container"
+      tools:text="HOW SMILE POINTS WORK" />
+
+    <TextView
+      android:id="@+id/title"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/dot_double"
+      android:gravity="center_horizontal"
+      android:text="@{viewModel.title}"
+      android:visibility="@{viewModel.titleVisible ? View.VISIBLE : View.GONE}"
+      app:layout_constraintBottom_toTopOf="@id/body"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/subtitle"
+      app:textAppearance="@{viewModel.titleAppearance}"
+      tools:text="Get rewarded for daily improvement" />
+
+    <TextView
+      android:id="@+id/body"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/dot"
+      android:gravity="center_horizontal"
+      android:text="@{viewModel.body}"
+      android:textAppearance="?textAppearanceBody1"
+      android:visibility="@{viewModel.bodyVisible ? View.VISIBLE : View.GONE}"
+      app:layout_constraintBottom_toTopOf="@id/detailsButton"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/title"
+      tools:text="For every 10 points you earn $1 to redeem in the shop on refill brush heads, new toothbrushes, and more. You can apply your points toward any order at any time, no need to wait." />
+
+    <Button
+      android:id="@+id/detailsButton"
+      style="?materialButtonTextStyle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/dot"
+      android:onClick="@{v -> viewModel.onDetailsClick()}"
+      android:text="@{viewModel.detailsButton}"
+      android:visibility="@{viewModel.detailsButtonVisible ? View.VISIBLE : View.GONE}"
+      app:layout_constraintBottom_toTopOf="@id/confirmButton"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/body"
+      tools:text="Learn more" />
+
+    <Button
+      android:id="@+id/confirmButton"
+      style="?materialButtonStyle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/dot"
+      android:backgroundTint="@color/white"
+      android:minWidth="@dimen/dot_thirteen"
+      android:onClick="@{v -> viewModel.onConfirmClick()}"
+      android:text="@{viewModel.confirmButton}"
+      android:visibility="@{viewModel.confirmButtonVisible ? View.VISIBLE : View.GONE}"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/detailsButton"
+      app:layout_goneMarginTop="@dimen/dot_trip"
+      tools:text="Got it" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <Blacklist></Blacklist>
+  <Whitelist>
+    <ID>ComplexMethod:BrushingsForCurrentProfileUseCase.kt$BrushingsForCurrentProfileUseCaseImpl.Companion$getGameBrushingConstraint</ID>
+    <ID>LongMethod:HorizontalNavigationController.kt$HorizontalNavigationController$performNavigationTo</ID>
+  </Whitelist>
+</SmellBaseline>

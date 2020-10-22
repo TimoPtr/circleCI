@@ -1,0 +1,8 @@
+apply plugin: 'com.android.library'
+
+dependencies {
+    implementation libraries.kml
+    implementation libraries.supportAnnotations
+
+    testImplementation libraries.junit
+}

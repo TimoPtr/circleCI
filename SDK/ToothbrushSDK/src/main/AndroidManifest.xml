@@ -1,0 +1,55 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  package="com.kolibree.android.sdk">
+
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+  <uses-permission android:name="android.permission.BLUETOOTH" />
+  <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+  <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+  <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+  <uses-feature
+    android:name="android.hardware.bluetooth_le"
+    android:required="false" />
+  <uses-feature android:name="android.hardware.location.gps" />
+
+  <!-- Nordic DFU library is only available since android 4.3 -->
+  <uses-sdk tools:overrideLibrary="no.nordicsemi.android.dfu" />
+
+  <application>
+    <!-- Kolibree toothbrushes service -->
+    <service
+      android:name=".core.KolibreeService"
+      android:enabled="true"
+      android:exported="false" />
+
+    <!-- M1 DFU service implementation -->
+    <service
+      android:name="com.kolibree.android.sdk.core.ota.kltb003.KLTB003ToothbrushUpdaterService"
+      android:enabled="true"
+      android:exported="false" />
+
+    <receiver
+      android:name=".BluetoothStateReceiver"
+      android:enabled="true"
+      android:exported="true">
+      <intent-filter>
+        <action android:name="android.bluetooth.adapter.action.STATE_CHANGED" />
+      </intent-filter>
+    </receiver>
+
+    <receiver
+      android:name=".scan.BluetoothSessionResetterBroadcastReceiver"
+      android:enabled="true"
+      android:exported="true">
+      <intent-filter>
+        <category android:name="android.intent.category.DEFAULT" />
+
+        <action android:name="android.intent.action.BOOT_COMPLETED" />
+        <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+        <!--For HTC devices-->
+        <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+      </intent-filter>
+    </receiver>
+  </application>
+</manifest>

@@ -1,0 +1,50 @@
+apply plugin: 'com.android.library'
+
+apply from: '../buildscripts/kapt.gradle'
+
+android {
+    androidExtensions {
+        experimental = true
+    }
+
+    buildFeatures {
+        dataBinding = true
+    }
+}
+
+//This is private API module -  do not remove this unless discussed and agreed with the team
+publisher.skipDeployment = true
+
+dependencies {
+    implementation project(path: ':static-resources')
+
+    implementation project(path: ':commons')
+    implementation project(path: ':base-ui')
+    implementation project(path: ':databinding')
+
+    api libraries.bindingCollections
+    api libraries.bindingCollectionsRV
+
+    implementation libraries.rxJava
+    implementation libraries.rxAndroid
+    implementation libraries.rxRelay
+    implementation libraries.rxLint
+
+    implementation libraries.lifecycleRuntime
+    implementation libraries.lifecycleExtensions
+    implementation libraries.lifecycleReactiveStreams
+    api libraries.lifecycleJava8
+
+    implementation libraries.supportRecyclerView
+    implementation libraries.supportDesign
+    implementation libraries.supportConstraintLayout
+    implementation libraries.ktxCore
+    implementation libraries.fragmentKtx
+    implementation libraries.activityKtx
+
+    implementation libraries.dagger
+    kapt libraries.daggerCompiler
+
+    testImplementation project(path: ':testing-unit-base')
+    testImplementation libraries.mockitoKotlin2
+}

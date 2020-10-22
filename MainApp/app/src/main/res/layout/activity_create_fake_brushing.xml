@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <data>
+
+    <variable
+      name="viewModel"
+      type="com.kolibree.android.app.ui.settings.secret.fakebrushings.CreateFakeBrushingViewModel" />
+
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/root_content_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <com.google.android.material.appbar.MaterialToolbar
+      android:id="@+id/toolbar"
+      enableBackNavigation="@{true}"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:theme="?defaultToolbarTheme"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:navigationIcon="@{@drawable/ic_back_arrow}"
+      app:title="Create Fake Brushing"
+      app:titleTextAppearance="?textAppearanceHeadline4" />
+
+    <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/widget_guideline"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      app:layout_constraintGuide_percent="0.3" />
+
+    <TextView
+      android:id="@+id/fake_brushing_activity_label"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_margin="@dimen/dot_double"
+      android:text="Activity:"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/toolbar"
+      tools:ignore="HardcodedText" />
+
+    <Spinner
+      android:id="@+id/games_spinner"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_margin="@dimen/dot_double"
+      android:layout_marginStart="@dimen/dot_double"
+      android:gravity="start"
+      android:selectedItemPosition="@={viewModel.gamePosition}"
+      app:itemBinding="@{viewModel.gameBinding}"
+      app:itemDropDownLayout="@{@layout/item_spinner_game}"
+      app:items="@{viewModel.games}"
+      app:layout_constraintBottom_toBottomOf="@id/fake_brushing_activity_label"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@id/widget_guideline"
+      app:layout_constraintTop_toTopOf="@id/fake_brushing_activity_label" />
+
+    <TextView
+      android:id="@+id/fake_brushing_toothbrush_label"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_margin="@dimen/dot_double"
+      android:text="Toothbrush:"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/fake_brushing_activity_label"
+      tools:ignore="HardcodedText" />
+
+    <Spinner
+      android:id="@+id/toothbrush_spinner"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_margin="@dimen/dot_double"
+      android:layout_marginStart="@dimen/dot_double"
+      android:gravity="start"
+      android:selectedItemPosition="@={viewModel.connectionsPosition}"
+      app:itemBinding="@{viewModel.connectionBinding}"
+      app:itemDropDownLayout="@{@layout/item_spinner_connection}"
+      app:items="@{viewModel.connectionNames}"
+      app:layout_constraintBottom_toBottomOf="@id/fake_brushing_toothbrush_label"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@id/widget_guideline"
+      app:layout_constraintTop_toTopOf="@id/fake_brushing_toothbrush_label" />
+
+    <TextView
+      android:id="@+id/fake_brushing_select_date_label"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_margin="@dimen/dot_double"
+      android:text="Brushing Date:"
+      app:layout_constraintBottom_toTopOf="@id/fake_brushing_create"
+      app:layout_constraintStart_toStartOf="parent"
+      tools:ignore="HardcodedText" />
+
+    <Button
+      android:id="@+id/fake_brushing_select_date"
+      style="@style/Widget.Button.TextButton"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="@dimen/dot_double"
+      android:onClick="@{(v) -> viewModel.onUserClickOnSelectDate()}"
+      android:text="@{viewModel.selectedDateTime}"
+      app:layout_constraintBottom_toBottomOf="@id/fake_brushing_select_date_label"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@id/widget_guideline"
+      app:layout_constraintTop_toTopOf="@id/fake_brushing_select_date_label"
+      tools:text="Tue., Oct 5, 14:42" />
+
+    <Button
+      android:id="@+id/fake_brushing_create"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_margin="@dimen/dot_double"
+      android:onClick="@{(v) -> viewModel.createFakeBrushing()}"
+      android:text="Create fake brushing"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      tools:ignore="HardcodedText" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+

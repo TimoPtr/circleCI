@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <data>
+
+    <variable
+      name="viewModel"
+      type="com.kolibree.android.app.ui.onboarding.enteremail.EnterEmailViewModel" />
+
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/enter_email_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false">
+
+    <View
+      android:id="@+id/content"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="@dimen/match_constraints"
+      android:layout_marginStart="@dimen/dot_quad"
+      android:layout_marginEnd="@dimen/dot_quad"
+      android:layout_marginBottom="@dimen/dot_double"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHeight_percent="0.85"
+      app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+      android:id="@+id/header"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:text="@string/onboarding_enter_email_header"
+      android:textAppearance="?textAppearanceHeadline2"
+      app:layout_constraintEnd_toEndOf="@id/content"
+      app:layout_constraintStart_toStartOf="@id/content"
+      app:layout_constraintTop_toTopOf="@id/content" />
+
+    <TextView
+      android:id="@+id/subtitle"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/dot_double"
+      android:text="@string/onboarding_enter_email_subtitle"
+      android:textAppearance="?textAppearanceHeadline4"
+      app:layout_constraintEnd_toEndOf="@id/content"
+      app:layout_constraintStart_toStartOf="@id/content"
+      app:layout_constraintTop_toBottomOf="@+id/header" />
+
+    <TextView
+      android:id="@+id/body"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/dot"
+      android:text="@string/onboarding_enter_email_body"
+      android:textAppearance="?textAppearanceBody2"
+      app:layout_constraintEnd_toEndOf="@id/content"
+      app:layout_constraintStart_toStartOf="@id/content"
+      app:layout_constraintTop_toBottomOf="@+id/subtitle" />
+
+    <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/email_input_layout"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/dot"
+      android:enabled="@{viewModel.emailInputEnabled}"
+      android:hint="@string/onboarding_enter_email_input_hint"
+      app:error="@{viewModel.emailValidationError}"
+      app:layout_constraintEnd_toEndOf="@id/content"
+      app:layout_constraintStart_toStartOf="@id/content"
+      app:layout_constraintTop_toBottomOf="@+id/body">
+
+      <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/email_input_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="@{viewModel.emailInputEnabled}"
+        android:imeOptions="actionDone"
+        android:inputType="textEmailAddress"
+        android:lines="1"
+        android:text="@={viewModel.email}"
+        app:onImeAction="@{action -> viewModel.onImeAction(action)}" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+      android:id="@+id/finish_button"
+      style="?materialButtonStyle"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="@dimen/dot"
+      android:alpha="0"
+      android:enabled="@{viewModel.buttonsEnabled}"
+      android:onClick="@{v -> viewModel.onFinishButtonClicked()}"
+      android:text="@string/onboarding_enter_email_finish_button"
+      app:layout_constraintBottom_toBottomOf="@id/content"
+      app:layout_constraintEnd_toEndOf="@id/content"
+      app:layout_constraintStart_toStartOf="@id/content"
+      tools:alpha="1" />
+
+    <com.kolibree.android.app.widget.AnimatorGroup
+      android:id="@+id/bottom_buttons"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:constraint_referenced_ids="finish_button"
+      tools:ignore="MissingConstraints" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

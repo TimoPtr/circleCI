@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  tools:context="com.kolibree.android.app.ui.home.HomeScreenActivity">
+
+  <data>
+
+    <variable
+      name="item"
+      type="com.kolibree.android.app.ui.home.tab.activities.card.games.GamesCardItem" />
+
+    <variable
+      name="interaction"
+      type="com.kolibree.android.app.ui.home.tab.activities.card.games.GamesCardInteraction" />
+
+  </data>
+
+  <androidx.cardview.widget.CardView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dot"
+    android:clickable="true"
+    android:elevation="@dimen/dot_half"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:onClick="@{() -> interaction.onCardClick(item)}"
+    app:cardCornerRadius="@dimen/dot">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="@dimen/games_card_item_width"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="@dimen/dot_double">
+
+      <ImageView
+        android:id="@+id/games_card_item_icon"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/games_card_item_icon_height"
+        android:scaleType="centerCrop"
+        android:src="@{item.logoRes}"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@tools:sample/backgrounds/scenic" />
+
+      <TextView
+        android:id="@+id/games_card_item_points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dot_trip"
+        android:layout_marginEnd="@dimen/dot_double"
+        android:background="@drawable/shape_rounded"
+        android:backgroundTint="?smilePointsBackgroundColor"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:paddingStart="@dimen/dot_double"
+        android:paddingTop="@dimen/dot_half"
+        android:paddingEnd="@dimen/dot_double"
+        android:paddingBottom="@dimen/dot_half"
+        android:text="@{item.getPoints(context)}"
+        android:textAppearance="?textAppearanceHeadline5"
+        android:textColor="@color/white"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="@id/games_card_item_icon"
+        app:layout_constraintEnd_toEndOf="@id/games_card_item_icon"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/games_card_item_icon"
+        app:layout_constraintTop_toBottomOf="@id/games_card_item_icon"
+        tools:text="+50 points" />
+
+      <TextView
+        android:id="@+id/games_card_item_title"
+        android:layout_width="@dimen/match_constraints"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dot_double"
+        android:layout_marginEnd="@dimen/dot"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="@{item.title}"
+        android:textAppearance="?textAppearanceHeadline4"
+        app:layout_constraintEnd_toStartOf="@id/statusBarrier"
+        app:layout_constraintStart_toStartOf="@id/games_card_item_points"
+        app:layout_constraintTop_toBottomOf="@id/games_card_item_points"
+        tools:text="Rabbids - FREE" />
+
+      <TextView
+        android:id="@+id/games_card_item_body"
+        android:layout_width="@dimen/match_constraints"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dot_half"
+        android:ellipsize="end"
+        android:lines="2"
+        android:text="@{item.body}"
+        android:textAppearance="?textAppearanceBody2"
+        android:textColor="?android:textColorSecondary"
+        app:layout_constraintEnd_toEndOf="@id/games_card_item_title"
+        app:layout_constraintStart_toStartOf="@id/games_card_item_title"
+        app:layout_constraintTop_toBottomOf="@id/games_card_item_title"
+        tools:text="Some short description about the game will be here." />
+
+      <ProgressBar
+        android:id="@+id/games_card_item_status_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="@dimen/dot_quin"
+        android:layout_height="@dimen/dot_quin"
+        android:layout_marginEnd="@dimen/dot_trip"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="@{item.progress}"
+        android:progressDrawable="@drawable/item_games_card_progress_indicator"
+        android:progressTint="@{item.getProgressColor(context)}"
+        android:secondaryProgress="100"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/games_card_item_title"
+        tools:progress="50"
+        tools:progressTint="@color/red" />
+
+      <ImageView
+        android:id="@+id/games_card_item_status_icon"
+        android:layout_width="@dimen/match_constraints"
+        android:layout_height="@dimen/match_constraints"
+        android:padding="@dimen/dot_half"
+        android:src="@{item.getStatusIconRes()}"
+        app:layout_constraintBottom_toBottomOf="@id/games_card_item_status_progress"
+        app:layout_constraintEnd_toEndOf="@id/games_card_item_status_progress"
+        app:layout_constraintStart_toStartOf="@id/games_card_item_status_progress"
+        app:layout_constraintTop_toTopOf="@id/games_card_item_status_progress"
+        app:tint="@{item.getStatusIconColor(context)}"
+        tools:src="@drawable/ic_download_start"
+        tools:tint="?colorPrimary" />
+
+      <TextView
+        android:id="@+id/games_card_item_size"
+        android:layout_width="@dimen/match_constraints"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="@{item.size}"
+        android:textAppearance="?textAppearanceBody2"
+        android:textColor="?android:textColorSecondary"
+        app:layout_constraintBottom_toBottomOf="@id/games_card_item_body"
+        app:layout_constraintEnd_toEndOf="@id/games_card_item_status_progress"
+        app:layout_constraintStart_toStartOf="@id/games_card_item_status_progress"
+        app:layout_constraintTop_toBottomOf="@id/games_card_item_status_progress"
+        app:layout_constraintVertical_bias="1.0"
+        tools:text="23MB" />
+
+      <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/statusBarrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left"
+        app:constraint_referenced_ids="games_card_item_size,games_card_item_status_progress" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+  </androidx.cardview.widget.CardView>
+
+</layout>

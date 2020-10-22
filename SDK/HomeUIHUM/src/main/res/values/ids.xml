@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<resources>
+
+  <item name="bottom_navigation_home" type="id" />
+  <item name="bottom_navigation_shop" type="id" />
+  <item name="bottom_navigation_activities" type="id" />
+  <item name="bottom_navigation_profile" type="id" />
+
+  <item name="terms_url" type="string" translatable="false" />
+  <item name="rewards_terms_url" type="string" translatable="false" />
+  <item name="privacy_url" type="string" translatable="false" />
+  <item name="contact_us_url" type="string" translatable="false"/>
+
+  <item name="pending_label_animator" type="id" />
+
+  <item name="toothbrush_icon" type="id" />
+</resources>

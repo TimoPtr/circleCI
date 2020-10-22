@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <Blacklist></Blacklist>
+  <Whitelist>
+    <ID>ComplexCondition:StatsOfflineTestBuilder.kt$cleanPercent == null &amp;&amp; missedPercent == null &amp;&amp; plaqueLeftPercent == null &amp;&amp; plaqueAggregate == null</ID>
+    <ID>LongMethod:AddSpeedAndAngleKpiColumnsMigration.kt$AddSpeedAndAngleKpiColumnsMigration$addStatsAndAngleColumnsToTable</ID>
+    <ID>LongMethod:AggregatedStatsRepositoryImpl.kt$AggregatedStatsRepositoryImpl$dayStats</ID>
+    <ID>LongMethod:AggregatedStatsRepositoryImpl.kt$AggregatedStatsRepositoryImpl$monthStatsSingle</ID>
+    <ID>LongMethod:AggregatedStatsRepositoryImpl.kt$AggregatedStatsRepositoryImpl$periodStats</ID>
+    <ID>LongMethod:AggregatedStatsRepositoryImpl.kt$AggregatedStatsRepositoryImpl$weekStatsSingle</ID>
+    <ID>LongMethod:RemoveBrushingSessionGeneratedKeyMigration.kt$RemoveBrushingSessionGeneratedKeyMigration$recreateAllTables</ID>
+    <ID>LongMethod:RemoveBrushingSessionGeneratedKeyMigration.kt$RemoveBrushingSessionGeneratedKeyMigration$removeBrushingSessionGeneratedKey</ID>
+    <ID>LongMethod:StatsOfflineLocalBrushingsProcessorImpl.kt$StatsOfflineLocalBrushingsProcessorImpl$toBrushingSessionStat</ID>
+    <ID>LongMethod:StatsOfflineLocalBrushingsProcessorImpl.kt$StatsOfflineLocalBrushingsProcessorImpl$updatedMonthsFromNewSessions</ID>
+    <ID>LongMethod:StatsOfflineLocalBrushingsProcessorImpl.kt$StatsOfflineLocalBrushingsProcessorImpl$updatedWeeksFromNewSessions</ID>
+    <ID>ThrowsCount:AverageCheckup.kt$ internal fun AverageCheckup.validate()</ID>
+    <ID>TooGenericExceptionCaught:StatsOfflineLocalBrushingsProcessorImpl.kt$StatsOfflineLocalBrushingsProcessorImpl$e: Exception</ID>
+    <ID>TooManyFunctions:StatsOfflineDao.kt$StatsOfflineDao$StatsOfflineDao</ID>
+    <ID>UnnecessaryAbstractClass:StatsOfflineDao.kt$StatsOfflineDao</ID>
+  </Whitelist>
+</SmellBaseline>

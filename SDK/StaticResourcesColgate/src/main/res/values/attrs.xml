@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<resources>
+
+  <attr name="rippleColorMono" format="color" />
+  <attr name="dividerColor" format="color" />
+  <attr name="progressOverlayColor" format="color" />
+  <attr name="inverseThemeMainColor" format="color" />
+  <attr name="inverseThemeMainColorDark" format="color" />
+
+  <attr name="speedometerViewStyle" format="reference" />
+  <attr name="dottedBottomNavigationViewStyle" format="reference" />
+</resources>

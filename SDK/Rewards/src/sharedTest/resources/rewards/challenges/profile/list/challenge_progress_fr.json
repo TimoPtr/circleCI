@@ -1,0 +1,295 @@
+{
+  "progress": {
+    "catalog": [
+      {
+        "category": "Débutant",
+        "challenges": [
+          {
+            "completion_time": "",
+            "completion_details": null,
+            "group": null,
+            "smiles_reward": 3,
+            "challenge_id": 6,
+            "percentage": 0,
+            "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_FirstSmartBrushingAnalyzer.png",
+            "challenge_name": "Premier Analyseur de Brossage Intelligent"
+          },
+          {
+            "completion_time": "2018-12-04 17:22:54.493564+00:00",
+            "completion_details": null,
+            "group": null,
+            "smiles_reward": 5,
+            "challenge_id": 1,
+            "percentage": 100,
+            "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_Coach_1st.png",
+            "challenge_name": "Premier Coach"
+          },
+          {
+            "completion_time": "",
+            "completion_details": null,
+            "group": null,
+            "smiles_reward": 5,
+            "challenge_id": 2,
+            "percentage": 0,
+            "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_Coach%2B_1st.png",
+            "challenge_name": "Premier Coach+"
+          },
+          {
+            "completion_time": "",
+            "completion_details": null,
+            "group": null,
+            "smiles_reward": 5,
+            "challenge_id": 3,
+            "percentage": 0,
+            "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_GoP.png",
+            "challenge_name": "Premier Pirate"
+          },
+          {
+            "completion_time": "",
+            "completion_details": null,
+            "group": null,
+            "smiles_reward": 5,
+            "challenge_id": 4,
+            "percentage": 0,
+            "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_Rab.png",
+            "challenge_name": "Premier Lapins Crétins"
+          },
+          {
+            "completion_time": "",
+            "completion_details": null,
+            "group": null,
+            "smiles_reward": 3,
+            "challenge_id": 5,
+            "percentage": 0,
+            "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_FirstOfflineBrushing.png",
+            "challenge_name": "Premier brossage offline"
+          }
+        ],
+        "category_id": 5
+      },
+      {
+        "category": "Activités",
+        "challenges": [
+          {
+            "completion_time": "2018-12-04 17:41:24.653342+00:00",
+            "completion_details": {
+              "completion": 6,
+              "rules": 600
+            },
+            "group": 3,
+            "smiles_reward": 10,
+            "challenge_id": 17,
+            "percentage": 67,
+            "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_PirateRunner_10.png",
+            "challenge_name": "Pirate 10"
+          },
+          {
+            "completion_time": "",
+            "completion_details": {
+              "completion": 0,
+              "rules": 5
+            },
+            "group": 4,
+            "smiles_reward": 10,
+            "challenge_id": 21,
+            "percentage": 0,
+            "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_RabbisJumper_50.png",
+            "challenge_name": "Lapins Crétins 50"
+          },
+          {
+            "completion_time": "",
+            "completion_details": {
+              "completion": 0,
+              "rules": 5
+            },
+            "group": 2,
+            "smiles_reward": 10,
+            "challenge_id": 12,
+            "percentage": 0,
+            "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_Coach%2B_5.png",
+            "challenge_name": "Coach+ 5"
+          },
+          {
+            "completion_time": "",
+            "completion_details": {
+              "completion": 23,
+              "rules": 30
+            },
+            "group": 1,
+            "smiles_reward": 60,
+            "challenge_id": 9,
+            "percentage": 76,
+            "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_Coach_30.png",
+            "challenge_name": "Coach 30"
+          },
+          {
+            "completion_time": "2018-12-04 17:41:24.653342+00:00",
+            "completion_details": {
+              "completion": 23,
+              "rules": 15
+            },
+            "group": 1,
+            "smiles_reward": 30,
+            "challenge_id": 8,
+            "percentage": 100,
+            "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_Coach_15.png",
+            "challenge_name": "Coach 15"
+          },
+          {
+            "completion_time": "2018-12-04 17:33:39.078638+00:00",
+            "completion_details": {
+              "completion": 23,
+              "rules": 5
+            },
+            "group": 1,
+            "smiles_reward": 10,
+            "challenge_id": 7,
+            "percentage": 100,
+            "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_Coach_5.png",
+            "challenge_name": "Coach 5"
+          }
+        ],
+        "category_id": 10
+      },
+      {
+        "category": "Performance",
+        "challenges": [
+          {
+            "completion_time": "",
+            "completion_details": {
+              "completion": 0,
+              "rules": 14
+            },
+            "group": 6,
+            "smiles_reward": 30,
+            "challenge_id": 29,
+            "percentage": 7,
+            "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_ConsistentUser_14.png",
+            "challenge_name": "Utilisateur régulier 14"
+          },
+          {
+            "completion_time": "2018-12-04 17:42:29.436591+00:00",
+            "completion_details": {
+              "completion": 0,
+              "rules": 7
+            },
+            "group": 6,
+            "smiles_reward": 10,
+            "challenge_id": 28,
+            "percentage": 100,
+            "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_ConsistentUser_7.png",
+            "challenge_name": "Utilisateur régulier 7"
+          },
+          {
+            "completion_time": "",
+            "completion_details": {
+              "completion": 14,
+              "rules": 25
+            },
+            "group": 5,
+            "smiles_reward": 10,
+            "challenge_id": 26,
+            "percentage": 56,
+            "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_AppFanatic_25.png",
+            "challenge_name": "Brush fanatic 25"
+          },
+          {
+            "completion_time": "2018-12-04 17:41:24.619367+00:00",
+            "completion_details": {
+              "completion": 14,
+              "rules": 10
+            },
+            "group": 5,
+            "smiles_reward": 5,
+            "challenge_id": 25,
+            "percentage": 100,
+            "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_AppFanatic_10.png",
+            "challenge_name": "Brush fanatic 10"
+          },
+          {
+            "completion_time": "",
+            "completion_details": {
+              "completion": 0,
+              "rules": 1
+            },
+            "group": 7,
+            "smiles_reward": 3,
+            "challenge_id": 34,
+            "percentage": 0,
+            "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_OfflineBrusher_1.png",
+            "challenge_name": "Brosseur offline 1"
+          }
+        ],
+        "category_id": 20
+      },
+      {
+        "category": "Pour rire",
+        "challenges": [
+          {
+            "completion_time": "",
+            "completion_details": null,
+            "group": null,
+            "smiles_reward": 5,
+            "challenge_id": 38,
+            "percentage": 0,
+            "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_BirthdayBrusher.png",
+            "challenge_name": "Brossage d'anniversaire"
+          },
+          {
+            "completion_time": "",
+            "completion_details": null,
+            "group": null,
+            "smiles_reward": 5,
+            "challenge_id": 41,
+            "percentage": 0,
+            "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_NewyearBrushert.png",
+            "challenge_name": "Brossage du nouvel an"
+          },
+          {
+            "completion_time": "",
+            "completion_details": null,
+            "group": null,
+            "smiles_reward": 5,
+            "challenge_id": 42,
+            "percentage": 0,
+            "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_PatricksDayBrusher.png",
+            "challenge_name": "Brossage de la Saint Patrick"
+          },
+          {
+            "completion_time": "",
+            "completion_details": null,
+            "group": null,
+            "smiles_reward": 5,
+            "challenge_id": 43,
+            "percentage": 0,
+            "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_Valentine.png",
+            "challenge_name": "Brossage de la Saint Valentin"
+          },
+          {
+            "completion_time": "",
+            "completion_details": null,
+            "group": null,
+            "smiles_reward": 5,
+            "challenge_id": 39,
+            "percentage": 0,
+            "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_Christmas_1.png",
+            "challenge_name": "Brossage de Noël"
+          },
+          {
+            "completion_time": "",
+            "completion_details": null,
+            "group": null,
+            "smiles_reward": 5,
+            "challenge_id": 40,
+            "percentage": 0,
+            "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_HalloweenBrusher.png",
+            "challenge_name": "Brossage d'Halloween"
+          }
+        ],
+        "category_id": 30
+      }
+    ],
+    "language": "FR"
+  },
+  "total_smiles": 83
+}

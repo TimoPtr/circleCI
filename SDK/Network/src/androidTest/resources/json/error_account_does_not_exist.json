@@ -1,0 +1,7 @@
+{
+  "display_message": "This account does not exist.",
+  "message": "E04: Account does not exist.",
+  "internal_error_code": 4,
+  "detail": "Account does not exist.",
+  "http_code": 404
+}

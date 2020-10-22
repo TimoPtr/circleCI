@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:gravity="center"
+  android:orientation="vertical"
+  android:paddingLeft="15dp"
+  android:paddingRight="15dp">
+
+  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="20dp"
+    android:gravity="center"
+    android:text="@string/popup_update_required"
+    android:textColor="@color/colorPrimary"
+    android:textSize="@dimen/xxbig_text" />
+
+  <TextView
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp"
+    android:gravity="center"
+    android:text="@string/popup_update_required_desc"
+    android:textColor="@color/grey_light"
+    android:textSize="@dimen/big_text" />
+
+  <Button
+    android:id="@+id/btn"
+    android:layout_width="@dimen/round_button_width"
+    android:layout_height="@dimen/round_button_height"
+    android:layout_marginBottom="20dp"
+    android:background="@drawable/bg_primary_color"
+    android:elevation="1dp"
+    android:gravity="center"
+    android:padding="15dp"
+    android:text="@string/update_now"
+    android:textColor="@android:color/white" />
+
+</LinearLayout>

@@ -1,0 +1,113 @@
+apply plugin: 'jacoco'
+
+jacoco {
+    toolVersion = "0.8.2"
+}
+
+tasks.withType(Test).configureEach {
+    jacoco.includeNoLocationClasses = true
+    testLogging {
+        debug {
+            events "started", "skipped", "failed"
+            exceptionFormat "full"
+        }
+
+    }
+}
+
+// get class dirs for project dependencies
+FileTree getJacocoClassDirs(List<Project> projects, String destinationDir, String variant) {
+
+    // files to exclude
+    def excludes = [
+            '**/R.class',
+            '**/R$*.class',
+            '**/BuildConfig.*',
+            '**/Manifest*.*',
+            '**/*Test*.*',
+            'android/**/*.*',
+            // Dagger
+            '**/*Dagger*.*',
+            '**/Dagger*Component.class',
+            '**/Dagger*Component$Builder.class',
+            '**/*MembersInjector*.*',
+            '**/*_MembersInjector.class',
+            '**/*_Factory.*',
+            '**/*Module_*Factory.class',
+            '**/*_Provide*Factory*.*',
+            '**/*_MembersInjector.class',
+            '**/Dagger*Component*.class',
+            '**/Dagger*Subcomponent*.class',
+            '**/*Subcomponent$Builder.class',
+            '**/*Module_*Factory.class',
+            '**/*Dao_Impl.class',
+    ]
+    def classDirs = fileTree(dir: destinationDir, excludes: excludes)
+
+
+    projects.each {
+        def projBuildDir = it.buildDir
+        //println "projBuildDir $projBuildDir"
+        def javaClasses = fileTree(dir: "$projBuildDir/intermediates/javac/debug/compileDebugJavaWithJavac/classes", excludes: excludes)
+        def kotlinClasses = fileTree(dir: "$projBuildDir/tmp/kotlin-classes/${variant}", excludes: excludes)
+        classDirs += javaClasses
+        classDirs += kotlinClasses
+    }
+    return classDirs
+}
+
+// get source dirs for project dependencies
+FileCollection getJacocoSrcDirs(List<Project> projects, String variantName) {
+    Set srcDirs = []
+
+    projects.each {
+        def projDir = it.projectDir
+        //println "projectDir ->  $projDir/src/main/java"
+        srcDirs.add("${projDir}/src/main/java") // assuming that android main sourceSets is here
+        srcDirs.add("${projDir}/src/${variantName}/java") // pick as well the variant source files
+    }
+    return files(srcDirs)
+}
+
+pluginManager.withPlugin('com.android.application') {
+    project.afterEvaluate {
+        android.applicationVariants.all { variant ->
+            generateCodeCoverageTask(variant)
+        }
+    }
+}
+
+pluginManager.withPlugin('com.android.library') {
+    project.afterEvaluate {
+        android.libraryVariants.all { variant ->
+            generateCodeCoverageTask(variant)
+        }
+    }
+}
+
+def generateCodeCoverageTask(variant) {
+    def variantName = variant.name
+    def dest = "${variant.javaCompiler.destinationDir}"
+    def testTaskName = "test${variantName.capitalize()}UnitTest"
+
+    tasks.register("${testTaskName}WithCoverage", JacocoReport) {
+        dependsOn(tasks.named("$testTaskName"))
+
+        group = "Reporting"
+        description = "Generate Jacoco coverage reports for the ${variantName.capitalize()} build."
+
+        reports {
+            xml.enabled true // for jenkins
+            csv.enabled false
+            html.destination new File("${buildDir}/reports/jacoco") // output file html
+        }
+
+        // get all the projects including the ones in the AndroidModuleSDK
+        def projects = Arrays.asList(project)
+
+        classDirectories.setFrom(getJacocoClassDirs(projects, dest, variantName))
+        sourceDirectories.setFrom(getJacocoSrcDirs(projects, variantName))
+        executionData.setFrom(fileTree(dir: "$project.buildDir",
+            includes: ["jacoco/*.exec", "outputs/code-coverage/connected/*coverage.ec"]))
+    }
+}

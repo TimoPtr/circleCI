@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout>
+
+  <data>
+
+    <variable
+      name="viewModel"
+      type="com.kolibree.android.glimmer.tweaker.curve.CurveViewModel" />
+
+    <import type="com.kolibree.android.glimmer.R" />
+
+    <import type="com.kolibree.android.sdk.connection.brushingmode.customizer.curve.BrushingModeCurve" />
+
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+      android:id="@+id/curve_apply"
+      style="?android:attr/buttonBarButtonStyle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/apply_custom_curve_settings"
+      android:enabled="@{viewModel.curveSettingsLiveData.modifiable}"
+      android:onClick="@{() -> viewModel.onApplyButtonClick()}"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/match_constraints"
+      app:layout_constraintBottom_toTopOf="@id/curve_apply"
+      app:layout_constraintTop_toTopOf="parent">
+
+      <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="@dimen/dot_double"
+        android:paddingEnd="@dimen/dot_double">
+
+        <TextView
+          android:id="@+id/curve_select_hint"
+          style="@style/SettingsHint"
+          android:layout_width="wrap_content"
+          android:layout_height="@dimen/match_constraints"
+          android:layout_marginEnd="@dimen/dot_trip"
+          android:text="@string/select_curve"
+          android:textColor="@color/colorAccent"
+          app:layout_constraintBottom_toBottomOf="@id/curve_select_spinner"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="@+id/curve_select_spinner" />
+
+        <Spinner
+          android:id="@+id/curve_select_spinner"
+          style="@style/SettingSpinner"
+          android:layout_width="@dimen/match_constraints"
+          android:layout_height="wrap_content"
+          android:textAlignment="textEnd"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toEndOf="@id/curve_select_hint"
+          app:layout_constraintTop_toTopOf="parent" />
+
+        <com.kolibree.android.glimmer.utils.NumberPicker
+          android:id="@+id/curve_voltage_picker"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:value="@{viewModel.curveSettingsLiveData.referenceVoltageMv}"
+          app:enabled="@{viewModel.curveSettingsLiveData.modifiable}"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/curve_select_spinner" />
+
+        <TextView
+          android:id="@+id/curve_voltage_hint"
+          style="@style/SettingsHint"
+          android:layout_width="wrap_content"
+          android:layout_height="@dimen/match_constraints"
+          android:text="@string/reference_voltage_mv"
+          app:layout_constraintBottom_toBottomOf="@id/curve_voltage_picker"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="@+id/curve_voltage_picker" />
+
+        <com.kolibree.android.glimmer.utils.NumberPicker
+          android:id="@+id/curve_divider_picker"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="@dimen/dot_double"
+          app:value="@{viewModel.curveSettingsLiveData.divider}"
+          app:enabled="@{viewModel.curveSettingsLiveData.modifiable}"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/curve_voltage_picker" />
+
+        <TextView
+          android:id="@+id/curve_divider_hint"
+          style="@style/SettingsHint"
+          android:layout_width="wrap_content"
+          android:layout_height="@dimen/match_constraints"
+          android:text="@string/fixed_divider"
+          app:layout_constraintBottom_toBottomOf="@id/curve_divider_picker"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="@+id/curve_divider_picker" />
+
+        <include layout="@layout/item_curve_slope"
+          android:id="@+id/curve_slope10"
+          app:layout_constraintTop_toBottomOf="@id/curve_divider_picker"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          app:value="@{viewModel.curveSettingsLiveData.slope10PercentsDutyCycle}"
+          app:hint="@{R.string.a_value_for_10_dc}"
+          app:viewModel="@{viewModel}"/>
+
+        <include layout="@layout/item_curve_slope"
+          android:id="@+id/curve_slope20"
+          app:layout_constraintTop_toBottomOf="@id/curve_slope10"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          app:value="@{viewModel.curveSettingsLiveData.slope20PercentsDutyCycle}"
+          app:hint="@{R.string.a_value_for_20_dc}"
+          app:viewModel="@{viewModel}"/>
+
+        <include layout="@layout/item_curve_slope"
+          android:id="@+id/curve_slope30"
+          app:layout_constraintTop_toBottomOf="@id/curve_slope20"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          app:value="@{viewModel.curveSettingsLiveData.slope30PercentsDutyCycle}"
+          app:hint="@{R.string.a_value_for_30_dc}"
+          app:viewModel="@{viewModel}"/>
+
+        <include layout="@layout/item_curve_slope"
+          android:id="@+id/curve_slope40"
+          app:layout_constraintTop_toBottomOf="@id/curve_slope30"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          app:value="@{viewModel.curveSettingsLiveData.slope40PercentsDutyCycle}"
+          app:hint="@{R.string.a_value_for_40_dc}"
+          app:viewModel="@{viewModel}"/>
+
+        <include layout="@layout/item_curve_slope"
+          android:id="@+id/curve_slope50"
+          app:layout_constraintTop_toBottomOf="@id/curve_slope40"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          app:value="@{viewModel.curveSettingsLiveData.slope50PercentsDutyCycle}"
+          app:hint="@{R.string.a_value_for_50_dc}"
+          app:viewModel="@{viewModel}"/>
+
+        <include layout="@layout/item_curve_slope"
+          android:id="@+id/curve_slope60"
+          app:layout_constraintTop_toBottomOf="@id/curve_slope50"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          app:value="@{viewModel.curveSettingsLiveData.slope60PercentsDutyCycle}"
+          app:hint="@{R.string.a_value_for_60_dc}"
+          app:viewModel="@{viewModel}"/>
+
+        <include layout="@layout/item_curve_slope"
+          android:id="@+id/curve_slope70"
+          app:layout_constraintTop_toBottomOf="@id/curve_slope60"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          app:value="@{viewModel.curveSettingsLiveData.slope70PercentsDutyCycle}"
+          app:hint="@{R.string.a_value_for_70_dc}"
+          app:viewModel="@{viewModel}"/>
+
+        <include layout="@layout/item_curve_slope"
+          android:id="@+id/curve_slope80"
+          app:layout_constraintTop_toBottomOf="@id/curve_slope70"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          app:value="@{viewModel.curveSettingsLiveData.slope80PercentsDutyCycle}"
+          app:hint="@{R.string.a_value_for_80_dc}"
+          app:viewModel="@{viewModel}"/>
+
+        <include layout="@layout/item_curve_slope"
+          android:id="@+id/curve_slope90"
+          app:layout_constraintTop_toBottomOf="@id/curve_slope80"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          app:value="@{viewModel.curveSettingsLiveData.slope90PercentsDutyCycle}"
+          app:hint="@{R.string.a_value_for_90_dc}"
+          app:viewModel="@{viewModel}"/>
+
+      </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
+

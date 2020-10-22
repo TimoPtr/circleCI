@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2019 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+  <item android:state_pressed="true">
+    <shape android:shape="rectangle">
+
+      <corners android:radius="@dimen/round_button_radius"/>
+
+      <solid android:color="@color/plaqless_intro_start_dark"/>
+
+    </shape>
+  </item>
+
+  <item>
+    <shape android:shape="rectangle">
+
+      <corners android:radius="@dimen/round_button_radius"/>
+
+      <solid android:color="@color/plaqless_intro_start"/>
+
+    </shape>
+  </item>
+</selector>
+

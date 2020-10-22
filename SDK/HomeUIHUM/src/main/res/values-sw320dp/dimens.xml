@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="UnusedResources">
+
+  <!--
+  BRUSH BETTER CARD ITEM
+  -->
+  <dimen name="brush_better_icon_height">104dp</dimen>
+  <dimen name="brush_better_item_width">161dp</dimen>
+
+  <!--
+  REWARD YOURSELF CARD ITEM
+  -->
+  <dimen name="reward_yourself_icon_height">156dp</dimen>
+  <dimen name="reward_yourself_item_width">200dp</dimen>
+
+  <!--
+  MORE WAYS TO EARN POINTS
+  -->
+  <dimen name="more_ways_to_earn_points_icon_height">40dp</dimen>
+  <dimen name="more_ways_to_earn_points_item_width">200dp</dimen>
+
+  <!--
+  GAMES CARD ITEM
+  -->
+  <dimen name="games_card_item_icon_height">240dp</dimen>
+  <dimen name="games_card_item_width">280dp</dimen>
+
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="@dimen/rounded_dialog_width"
+  android:layout_height="wrap_content"
+  android:background="@drawable/shape_rounded_white"
+  android:gravity="center"
+  android:orientation="vertical">
+
+  <TextView
+    android:textStyle="bold"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/rounded_dialog_margin_normal"
+    android:layout_marginBottom="@dimen/rounded_dialog_margin_big"
+    android:text="@string/finish_brushing_dialog_title"
+    android:textColor="@android:color/black"
+    android:textSize="@dimen/xxxbig_text"/>
+
+  <Button
+    android:id="@+id/finish_brushing_yes"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/round_button_height"
+    style="@style/PrimaryColorRoundButton"
+    android:paddingLeft="@dimen/rounded_dialog_margin_normal"
+    android:paddingRight="@dimen/rounded_dialog_margin_normal"
+    android:minWidth="@dimen/finish_dialog_button_min_width"
+    android:text="@string/finish_brushing_dialog_yes"
+    android:textSize="@dimen/xnormal_text"/>
+
+  <TextView
+    android:id="@+id/finish_brushing_no"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/rounded_dialog_margin_small"
+    android:layout_marginBottom="@dimen/rounded_dialog_margin_big"
+    android:padding="@dimen/finish_dialog_small_padding"
+    android:background="?attr/selectableItemBackground"
+    android:text="@string/finish_brushing_dialog_resume"
+    android:textColor="@color/colorPrimaryDark"
+    android:textSize="@dimen/big_text"/>
+
+</LinearLayout>

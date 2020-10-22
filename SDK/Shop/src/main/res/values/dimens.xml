@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<resources>
+  <dimen name="shop_product_image_width">128dp</dimen>
+  <dimen name="shop_product_height">186dp</dimen>
+  <dimen name="shop_clickable_item_height">@dimen/dot_quin</dimen>
+</resources>

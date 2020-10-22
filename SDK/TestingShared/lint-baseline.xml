@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="5" by="lint 4.0.0" client="gradle" variant="debug" version="4.0.0">
+
+    <issue
+        id="Assert"
+        message="Assertions are never enabled in Android. Use `BuildConfig.DEBUG` conditional checks instead"
+        errorLine1="        assert(false, object : () -> Any {"
+        errorLine2="        ^">
+        <location
+            file="src/main/java/com/kolibree/android/test/utils/failearly/delegate/TestDelegate.kt"
+            line="15"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="abstract class BaseInstrumentationTest {"
+        errorLine2="               ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/test/BaseInstrumentationTest.kt"
+            line="22"
+            column="16"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public abstract class BaseMockWebServerTest&lt;T> extends BaseInstrumentationTest {"
+        errorLine2="                      ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/test/BaseMockWebServerTest.java"
+            line="27"
+            column="23"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="object FallbackTestDelegate : FailEarlyDelegate {"
+        errorLine2="       ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/test/utils/failearly/delegate/FallbackTestDelegate.kt"
+            line="11"
+            column="8"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public class LazyContainer&lt;T> implements Lazy&lt;T> {"
+        errorLine2="             ~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/test/dagger/LazyContainer.java"
+            line="6"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="class LifecycleObserverTester("
+        errorLine2="      ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/test/LifecycleObserverTester.kt"
+            line="27"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="object NoopTestDelegate : FailEarlyDelegate {"
+        errorLine2="       ~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/test/utils/failearly/delegate/NoopTestDelegate.kt"
+            line="14"
+            column="8"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public final class ReflectionUtils {"
+        errorLine2="                   ~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/test/utils/ReflectionUtils.java"
+            line="9"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="class RuntimeTestForcedException : RuntimeException(&quot;Test forced error&quot;)"
+        errorLine2="      ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/test/RuntimeTestForcedException.kt"
+            line="17"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public final class SameThreadExecutorService extends ThreadPoolExecutor {"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/test/utils/SameThreadExecutorService.java"
+            line="11"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public abstract class SharedTestUtils {"
+        errorLine2="                      ~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/test/SharedTestUtils.java"
+            line="9"
+            column="23"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="object TestDelegate : FailEarlyDelegate {"
+        errorLine2="       ~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/android/test/utils/failearly/delegate/TestDelegate.kt"
+            line="12"
+            column="8"/>
+    </issue>
+
+</issues>

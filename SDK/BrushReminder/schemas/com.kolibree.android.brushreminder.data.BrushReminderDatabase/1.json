@@ -1,0 +1,70 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "ec63b3317342cc0a5a62558b53864709",
+    "entities": [
+      {
+        "tableName": "brush_reminder",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`profile_id` INTEGER NOT NULL, `is_morning_reminder_on` INTEGER NOT NULL, `morning_reminder_time` INTEGER NOT NULL, `is_afternoon_reminder_on` INTEGER NOT NULL, `afternoon_reminder_time` INTEGER NOT NULL, `is_evening_reminder_on` INTEGER NOT NULL, `evening_reminder_time` INTEGER NOT NULL, PRIMARY KEY(`profile_id`))",
+        "fields": [
+          {
+            "fieldPath": "profileId",
+            "columnName": "profile_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isMorningReminderOn",
+            "columnName": "is_morning_reminder_on",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "morningReminderTime",
+            "columnName": "morning_reminder_time",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isAfternoonReminderOn",
+            "columnName": "is_afternoon_reminder_on",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "afternoonReminderTime",
+            "columnName": "afternoon_reminder_time",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isEveningReminderOn",
+            "columnName": "is_evening_reminder_on",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "eveningReminderTime",
+            "columnName": "evening_reminder_time",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "profile_id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'ec63b3317342cc0a5a62558b53864709')"
+    ]
+  }
+}

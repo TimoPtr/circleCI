@@ -1,0 +1,24 @@
+<!--
+  ~ Copyright (c) 2019 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  package="com.kolibree.android.unity">
+
+  <application>
+
+    <activity
+      android:name=".GameMiddlewareActivity"
+      android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|fontScale"
+      android:screenOrientation="portrait"
+      android:launchMode="singleInstance"
+      android:theme="@style/UnityActivityTheme"
+      tools:ignore="Instantiatable" />
+  </application>
+</manifest>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="plaqueColor">#007EFF</color>
+
+  <color name="guided_brushing_current">#a08bcb</color>
+  <color name="guided_brushing_missed">#337ec1</color>
+</resources>

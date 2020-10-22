@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2019 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <data>
+
+    <variable
+      name="viewModel"
+      type="com.kolibree.android.brushingquiz.presentation.quiz.QuizViewModel" />
+
+  </data>
+
+  <com.kolibree.android.app.ui.common.NonSwipeableViewPager
+    android:id="@+id/quiz_viewpager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:content="@{viewModel.quizScreens}"
+    app:currentPosition="@{viewModel.currentQuestionIndex}" />
+</layout>
+

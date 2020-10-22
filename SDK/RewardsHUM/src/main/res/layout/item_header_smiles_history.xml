@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2019 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <data>
+
+    <import type="android.view.View" />
+
+    <!--Hack to handle a header with databinding-->
+    <variable
+      name="header"
+      type="com.kolibree.android.rewards.smileshistory.SimilesHistoryHeaderListItem" />
+
+  </data>
+
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/dot_quad"
+    android:layout_marginEnd="@dimen/dot_quad"
+    android:paddingBottom="@dimen/dot_double"
+    android:text="@string/smiles_history_last_events"
+    android:textAppearance="?textAppearanceOverline1"
+    android:textColor="?android:textColorSecondary" />
+</layout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <Blacklist></Blacklist>
+  <Whitelist>
+    <ID>LongMethod:AssetLoader.kt$AssetLoader$loadString</ID>
+    <ID>LongMethod:DebugDelegate.kt$DebugDelegate$invoke</ID>
+    <ID>LongMethod:TextViewExtensions.kt$setPartUnderlineText</ID>
+  </Whitelist>
+</SmellBaseline>

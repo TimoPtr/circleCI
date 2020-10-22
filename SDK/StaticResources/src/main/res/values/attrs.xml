@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<resources>
+
+  <attr name="textColorAccent" format="color" />
+  <attr name="colorBackgroundDark" format="color"/>
+
+  <attr name="textAppearanceOverline1" format="reference" />
+  <attr name="textAppearanceOverline2" format="reference" />
+
+  <attr name="primaryColorButtonStyle" format="reference" />
+  <attr name="accentColorButtonStyle" format="reference" />
+  <attr name="secondaryColorButtonStyle" format="reference" />
+  <attr name="whiteColorButtonStyle" format="reference" />
+  <attr name="borderlessButtonStyle" format="reference" />
+  <attr name="darkRoundButtonStyle" format="reference" />
+
+  <attr name="legacyEditTextStyle" format="reference" />
+  <attr name="textInputTheme" format="reference" />
+  <attr name="autoCompleteTextInputLayoutStyle" format="reference" />
+
+  <attr name="defaultToolbarTheme" format="reference" />
+  <attr name="defaultToolbarPopupTheme" format="reference" />
+  <attr name="defaultToolbarElevation" format="dimension" />
+
+  <attr name="materialButtonIconStyle" format="reference" />
+  <attr name="materialButtonOutlinedIconStyle" format="reference" />
+  <attr name="materialButtonTextStyle" format="reference" />
+  <attr name="materialButtonTextStyleSecondary" format="reference" />
+  <attr name="materialButtonTextStyleTertiary" format="reference" />
+
+  <attr name="alertDialogHeadlineStyle" format="reference" />
+  <attr name="alertDialogBodyTextStyle" format="reference" />
+  <attr name="alertDialogCornerRadius" format="reference" />
+  <attr name="alertDialogVerticalSpacing" format="reference" />
+  <attr name="alertDialogInsetStart" format="reference" />
+  <attr name="alertDialogInsetTop" format="reference" />
+  <attr name="alertDialogInsetEnd" format="reference" />
+  <attr name="alertDialogInsetBottom" format="reference" />
+  <attr name="alertDialogHorizontalBackgroundInset" format="reference" />
+  <attr name="alertDialogMinWidth" format="dimension" />
+
+  <attr name="textColorAccentSecondary" format="color" />
+
+  <attr name="toolbarCollapsedBackground" format="color" />
+  <attr name="toolbarExpandedBackground" format="color" />
+  <attr name="onToolbarCollapsedBackground" format="color" />
+  <attr name="onToolbarExpandedBackground" format="color" />
+  <attr name="toolbarIconTint" format="color" />
+  <attr name="connectedIconAlpha" format="float" />
+  <attr name="disconnectedIconAlpha" format="float" />
+
+  <attr name="badgeImageViewStyle" format="reference" />
+
+  <declare-styleable name="BadgeImageView">
+    <attr name="badgeViewId" format="reference" />
+    <attr name="badgeBorderWidth" format="dimension" />
+  </declare-styleable>
+
+  <attr name="timerViewStyle" format="reference" />
+
+  <attr name="zoneForegroundColor" format="color" />
+  <attr name="zoneBackgroundColor" format="color" />
+  <attr name="zoneOngoingBackgroundColor" format="color" />
+  <attr name="zoneOngoingForegroundColor" format="color" />
+
+  <attr name="inAppBrushingsColor" format="color" />
+  <attr name="offlineBrushingsColor" format="color" />
+
+  <attr name="streakProgressionForegroundColor" format="color" />
+  <attr name="streakProgressionBackgroundColor" format="color" />
+  <attr name="streakProgressionInactiveColor" format="color" />
+
+  <declare-styleable name="TimerView">
+    <attr name="timerTextAppearance" format="reference" />
+    <attr name="timerBubbleColor" format="reference" />
+  </declare-styleable>
+
+  <declare-styleable name="ShadedRecyclerView">
+    <attr name="backgroundScrim" format="color" />
+    <attr name="shadeExpandedHeight" format="dimension" />
+  </declare-styleable>
+
+  <attr name="elevationMediatorViewStyle" format="reference" />
+
+  <declare-styleable name="ElevationMediatorView">
+    <attr name="scrollingView" format="reference" />
+    <attr name="scrollDirection">
+      <flag name="horizontal" value="0" />
+      <flag name="vertical" value="1" />
+    </attr>
+    <attr name="startElevation" format="dimension" />
+    <attr name="endElevation" format="dimension" />
+    <attr name="scrollDistance" format="dimension" />
+  </declare-styleable>
+
+  <attr name="colorPrimaryLight" format="color" />
+  <attr name="colorSecondaryLight" format="color" />
+  <attr name="colorSecondaryMedium" format="color" />
+  <attr name="colorSecondaryDark" format="color" />
+  <attr name="colorTertiaryLight" format="color" />
+  <attr name="colorTertiaryMedium" format="color" />
+  <attr name="colorTertiaryDark" format="color" />
+  <attr name="colorQuaternaryLight" format="color" />
+
+  <attr name="bottomNavigationSelectionColor" format="color" />
+
+  <attr name="googleTextColor" format="color" />
+
+  <attr name="backgroundColorDark" format="color" />
+  <attr name="backgroundColorLight" format="color" />
+
+  <attr name="brushingStreakActionColor" format="color" />
+  <attr name="smilePointsBackgroundColor" format="color" />
+
+  <attr name="guidedBrushingStartTopBackgroundColor" format="color" />
+
+  <attr name="checkupTitleColor" format="color" />
+  <attr name="checkupTitleDotColor" format="color" />
+  <attr name="checkupTitleTextAppearance" format="reference" />
+  <attr name="checkupJawMissedColor" format="color" />
+
+  <attr name="guidedBrushingTitleColor" format="color" />
+  <attr name="guidedBrushingJawCurrentColor" format="color" />
+  <attr name="guidedBrushingJawMissedColor" format="color" />
+  <attr name="guidedBrushingDirectionLegendBackgroundColor" format="color" />
+  <attr name="guidedBrushingIconColor" format="color" />
+
+  <attr name="feedbackMessageTextColor" format="color" />
+  <attr name="feedbackMessageBackgroundColor" format="color" />
+  <attr name="feedbackMessageWrongBackgroundColor" format="color" />
+  <attr name="feedbackMessageWrongTextColor" format="color" />
+
+  <attr name="timerViewTextAppearance" format="reference" />
+
+  <attr name="jawMissedColor" format="color" />
+  <attr name="jawCurrentColor" format="color" />
+
+  <attr name="copiedToClipboardTextColor" format="color" />
+  <attr name="copiedToClipboardBackgroundColor" format="color" />
+  <attr name="copiedToClipboardRippleColor" format="color" />
+
+  <attr name="testBrushingHeaderScaleType" format="integer" />
+  <attr name="testBrushingAnimationScaleType" format="integer" />
+
+  <attr name="completeProfileBubbleBackgroundColor" format="color" />
+  <attr name="completeProfileBubbleActionColor" format="color" />
+
+  <attr name="changeProfileAvatarIconColor" format="color" />
+
+</resources>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <data>
+
+    <import type="android.view.View" />
+
+    <import type="com.kolibree.android.shop.presentation.list.ProductsResult" />
+
+    <variable
+      name="viewModel"
+      type="com.kolibree.android.shop.presentation.list.ShopProductListViewModel" />
+
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/product_list_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/product_list"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/match_constraints"
+      android:clipToPadding="false"
+      android:visibility="invisible"
+      app:adapter="@{viewModel.adapter}"
+      app:diffConfig="@{viewModel.diffConfig}"
+      app:itemBinding="@{viewModel.productBinding}"
+      app:items="@{viewModel.products}"
+      app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:visibilityAnim="@{viewModel.productsResult == ProductsResult.ProductsAvailable ? View.VISIBLE : View.INVISIBLE}" />
+
+    <include
+      android:id="@+id/progress_bar"
+      layout="@layout/view_progress_indicator"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:progressVisible="@{true}"
+      app:visibilityAnim="@{viewModel.productsResult == ProductsResult.Loading ? View.VISIBLE : View.GONE}" />
+
+    <TextView
+      android:id="@+id/no_products"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/shop_no_products"
+      android:textAppearance="?textAppearanceSubtitle1"
+      android:visibility="invisible"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:visibilityAnim="@{viewModel.productsResult == ProductsResult.NoProducts ? View.VISIBLE : View.GONE}" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
+

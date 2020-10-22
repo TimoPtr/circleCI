@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2019 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="@dimen/rounded_dialog_width"
+  android:layout_height="wrap_content"
+  android:orientation="vertical">
+
+  <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/mouth_map_dialog_margin"
+    android:layout_marginTop="@dimen/mouth_map_dialog_margin"
+    android:gravity="top"
+    android:orientation="horizontal">
+
+    <TextView
+      android:id="@+id/clean_score_score"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textAppearance="?textAppearanceHeadline1"
+      android:textColor="@color/mouth_map_text"
+      android:textSize="@dimen/xxxhuge_text"
+      android:textStyle="bold"
+      tools:text="69" />
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:gravity="top"
+      android:paddingTop="@dimen/mouth_map_max_percent_padding"
+      android:text="@string/percent_value_max"
+      android:textAppearance="?textAppearanceHeadline1"
+      android:textColor="@color/mouth_map_text"
+      android:textSize="@dimen/xbig_text" />
+
+  </LinearLayout>
+
+  <TextView
+    android:id="@+id/clean_score_label"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/mouth_map_dialog_margin"
+    android:background="?attr/selectableItemBackground"
+    android:text="@string/mouth_map_clean_score"
+    android:textAppearance="?textAppearanceSubtitle2"
+    android:textColor="@color/mouth_map_text" />
+
+  <com.kolibree.android.mouthmap.widget.progress.CleanScoreProgressView
+    android:id="@+id/clean_score_progress"
+    android:layout_width="@dimen/progress_bar_clean_score_width"
+    android:layout_height="@dimen/progress_bar_clean_score_height"
+    android:layout_marginStart="@dimen/mouth_map_dialog_margin"
+    android:layout_marginTop="@dimen/tiny_margin"
+    android:layout_marginBottom="@dimen/mouth_map_dialog_margin"
+    android:max="100"
+    tools:progress="69" />
+
+  <TextView
+    android:id="@+id/clean_score_cleaned"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/mouth_map_dialog_margin"
+    android:layout_marginEnd="@dimen/mouth_map_dialog_margin"
+    android:textAppearance="?textAppearanceSubtitle1"
+    android:textColor="@android:color/black"
+    tools:text="69% clean" />
+
+  <TextView
+    android:id="@+id/clean_score_remains"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/mouth_map_dialog_margin"
+    android:layout_marginTop="@dimen/tiny_margin"
+    android:layout_marginEnd="@dimen/mouth_map_dialog_margin"
+    android:textAppearance="?textAppearanceSubtitle1"
+    android:textColor="@android:color/black"
+    tools:text="13% build up remains" />
+
+  <TextView
+    android:id="@+id/clean_score_missed"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/mouth_map_dialog_margin"
+    android:layout_marginTop="@dimen/tiny_margin"
+    android:layout_marginEnd="@dimen/mouth_map_dialog_margin"
+    android:textAppearance="?textAppearanceSubtitle1"
+    android:textColor="@android:color/black"
+    tools:text="18% missed" />
+
+  <Button
+    android:id="@+id/clean_score_ok"
+    style="?primaryColorButtonStyle"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/round_button_height"
+    android:layout_marginStart="@dimen/mouth_map_dialog_margin"
+    android:layout_marginTop="@dimen/xhuge_margin"
+    android:layout_marginEnd="@dimen/mouth_map_dialog_margin"
+    android:layout_marginBottom="@dimen/mouth_map_dialog_margin"
+    android:text="@string/mouth_map_dialog_ok" />
+
+</LinearLayout>

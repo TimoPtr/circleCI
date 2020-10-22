@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <data>
+
+    <import type="android.view.View" />
+
+    <variable
+      name="item"
+      type="com.kolibree.android.app.ui.pairing.list.ScanToothbrushItemBindingModel" />
+
+    <variable
+      name="interaction"
+      type="com.kolibree.android.app.ui.pairing.list.ScanToothbrushInteraction" />
+
+    <variable
+      name="position"
+      type="Integer" />
+
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dot_sev"
+    android:background="?selectableItemBackground"
+    android:clickable="@{safeUnbox(item.isRowClickable) ? true : false}"
+    android:onClick="@{() -> interaction.onItemClick(item)}">
+
+    <TextView
+      android:id="@+id/name"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_quad"
+      android:text="@{item.name}"
+      android:textAppearance="?textAppearanceHeadline6"
+      android:textColor="?textColorAccentSecondary"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toStartOf="@id/blink"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:text="KLTB002_4B1A2B" />
+
+    <ProgressBar
+      android:id="@+id/scan_toothbrush_item_blink_in_progress"
+      android:layout_width="wrap_content"
+      android:layout_height="@dimen/match_constraints"
+      android:indeterminate="true"
+      android:padding="@dimen/dot"
+      android:visibility="@{safeUnbox(item.blinkProgressVisible) ? View.VISIBLE : View.GONE}"
+      app:layout_constraintBottom_toBottomOf="@id/blink"
+      app:layout_constraintEnd_toEndOf="@id/blink"
+      app:layout_constraintStart_toStartOf="@id/blink"
+      app:layout_constraintTop_toTopOf="@id/blink"
+      tools:visibility="visible" />
+
+    <Button
+      android:id="@+id/blink"
+      style="?materialButtonTextStyle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="@dimen/dot_half"
+      android:enabled="@{safeUnbox(item.rowClickable) ? true : false}"
+      android:onClick="@{() -> interaction.onBlinkClick(item)}"
+      android:text="@string/pairing_blink_toothbrush_led"
+      android:visibility="@{safeUnbox(item.blinkProgressVisible) ? View.INVISIBLE : View.VISIBLE}"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

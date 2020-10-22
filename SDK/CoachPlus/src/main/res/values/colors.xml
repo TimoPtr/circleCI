@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2019 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<resources>
+  <!-- Plaqless LED colors -->
+  <color name="coach_plus_plaqless_led_white">#A6C8D0</color>
+  <color name="coach_plus_plaqless_led_red">#FF0000</color>
+  <color name="coach_plus_plaqless_led_blue">#007EFF</color>
+</resources>

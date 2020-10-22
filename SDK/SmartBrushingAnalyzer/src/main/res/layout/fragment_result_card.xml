@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/tiny_margin"
+    android:layout_marginBottom="@dimen/tiny_margin"
+    android:layout_marginLeft="@dimen/tiny_margin"
+    android:layout_marginRight="@dimen/tiny_margin"
+    app:cardCornerRadius="@dimen/results_card_radius">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:padding="@dimen/small_margin"
+      android:orientation="vertical">
+
+      <TextView
+        android:id="@+id/result_card_title"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/xtiny_margin"
+        android:textColor="@color/black"
+        android:textSize="@dimen/big_text"
+        tools:text="@string/results_mouth_coverage_title"/>
+
+      <TextView
+        android:id="@+id/result_card_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tiny_margin"
+        android:layout_marginLeft="@dimen/xtiny_margin"
+        android:layout_marginRight="@dimen/xtiny_margin"
+        android:textColor="@color/black"
+        android:textSize="@dimen/big_text"
+        tools:text="@string/mouth_coverage_good"/>
+
+    </LinearLayout>
+
+  </androidx.cardview.widget.CardView>
+
+</LinearLayout>

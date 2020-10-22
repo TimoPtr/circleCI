@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2019 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<!-- specification: https://confluence.kolibree.com/pages/viewpage.action?pageId=7241957#id-3DCoach(Coach+)-4.1.3DmodelforCoach+ -->
+<resources>
+  <color name="coach_plus_feedback_background">#3478f6</color>
+  <color name="coach_plus_gradient_color">#ff003d</color>
+  <color name="coach_plus_warning_color">#a0ff003d</color>// Neon red 63% alpha
+  <color name="coach_plus_severe_warning_color">#ff003d</color>// Neon red
+  <color name="coach_plus_progress_shadow">#808080</color>
+  <color name="coach_plus_default_neglected_color">#ffc39b</color>
+  <color name="coach_plus_default_clean_color">#ffffff</color>
+  <color name="coach_plus_default_background_color">#a6a6a6</color>
+  <color name="coach_plus_default_title_color">#d2010d</color>
+  <color name="coach_plus_default_plaque_color">#26B6FF</color>
+  <color name="coach_plus_background_pause_with_alpha">#BB000000</color>
+</resources>

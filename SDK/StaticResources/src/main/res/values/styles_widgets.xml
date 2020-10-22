@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<resources>
+
+  <style name="Kolibree.ProgressBar.Horizontal.Rounded" parent="@style/Widget.AppCompat.ProgressBar.Horizontal">
+    <item name="android:minHeight">@dimen/progress_bar_rounded_background_height</item>
+    <item name="android:progressDrawable">@drawable/progress_bar_horizontal_rounded</item>
+  </style>
+
+  <style name="Kolibree.ProgressBar.Horizontal.Rounded.Transparent">
+    <item name="android:progressDrawable">@drawable/progress_bar_horizontal_rounded_transparent</item>
+  </style>
+</resources>

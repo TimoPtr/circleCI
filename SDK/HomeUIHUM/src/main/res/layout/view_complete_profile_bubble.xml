@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <data>
+
+    <variable
+      name="viewModel"
+      type="com.kolibree.android.app.ui.home.tab.profile.completeprofile.CompleteProfileBubbleViewModel" />
+
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:visibilityAnim="@{viewModel.profileBubbleVisible}">
+
+    <ImageView
+      android:id="@+id/bottom_arrow"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:src="@drawable/shape_drop_down_tint"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:tint="?completeProfileBubbleBackgroundColor" />
+
+    <View
+      android:id="@+id/background_bubble"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="@dimen/match_constraints"
+      android:background="@drawable/shape_rounded_dot_dynamic_tint"
+      android:backgroundTint="?completeProfileBubbleBackgroundColor"
+      app:layout_constraintBottom_toTopOf="@id/bottom_arrow"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+      android:id="@+id/got_it_button"
+      style="?materialButtonTextStyle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:onClick="@{v -> viewModel.onProfileBubbleGotItClick()}"
+      android:text="@string/profile_incomplete_bubble_button"
+      android:textColor="?completeProfileBubbleActionColor"
+      app:layout_constraintBottom_toBottomOf="@id/background_bubble"
+      app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.kolibree.android.app.ui.home.tab.view.CircleProgressView
+      android:id="@+id/progress_view"
+      android:layout_width="@dimen/dot_six"
+      android:layout_height="@dimen/dot_six"
+      android:layout_centerHorizontal="true"
+      android:layout_marginStart="@dimen/dot_trip"
+      android:layout_marginTop="@dimen/dot_trip"
+      app:color="@{@color/white}"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:progress="@{viewModel.profileBubbleProgress}"
+      app:progressBackgroundColor="@{@color/white10}" />
+
+    <ImageView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:src="@drawable/ic_profile_progress"
+      app:layout_constraintBottom_toBottomOf="@+id/progress_view"
+      app:layout_constraintEnd_toEndOf="@+id/progress_view"
+      app:layout_constraintStart_toStartOf="@+id/progress_view"
+      app:layout_constraintTop_toTopOf="@+id/progress_view" />
+
+    <TextView
+      android:id="@+id/header"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_double"
+      android:layout_marginEnd="@dimen/dot_trip"
+      android:ellipsize="end"
+      android:lines="1"
+      android:text="@string/profile_incomplete_bubble_header"
+      android:textAppearance="?textAppearanceSubtitle2"
+      android:textColor="@color/white"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toEndOf="@id/progress_view"
+      app:layout_constraintTop_toTopOf="@id/progress_view" />
+
+    <TextView
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/dot_half"
+      android:ellipsize="end"
+      android:maxLines="3"
+      android:text="@string/profile_incomplete_bubble_body"
+      android:textAppearance="?textAppearanceBody2"
+      android:textColor="@color/white60"
+      app:layout_constraintBottom_toTopOf="@+id/got_it_button"
+      app:layout_constraintEnd_toEndOf="@id/header"
+      app:layout_constraintStart_toStartOf="@id/header"
+      app:layout_constraintTop_toBottomOf="@id/header"
+      app:layout_constraintVertical_bias="0.0" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

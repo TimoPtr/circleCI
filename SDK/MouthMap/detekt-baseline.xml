@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <Blacklist></Blacklist>
+  <Whitelist>
+    <ID>LongMethod:BrushingResultsMapper.kt$BrushingResultsMapperImpl$map</ID>
+    <ID>LongMethod:CleanScoreDialog.kt$CleanScoreDialog.Companion$show</ID>
+    <ID>LongMethod:MouthMapFragment.kt$MouthMapFragment$execute</ID>
+  </Whitelist>
+</SmellBaseline>

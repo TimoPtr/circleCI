@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <Blacklist></Blacklist>
+  <Whitelist>
+    <ID>LongMethod:CoachFacingAngleMapper.kt$CoachFacingAngleMapper$mapZoneToFacingAngle</ID>
+    <ID>LongMethod:PlaqlessBrushHeadPositionMapper.kt$PlaqlessBrushHeadPositionMapper$mapZoneToPositionMatrix</ID>
+    <ID>LongMethod:RegularBrushHeadPositionMapper.kt$RegularBrushHeadPositionMapper$mapZoneToPositionMatrix</ID>
+    <ID>MagicNumber:CoachPlusRendererImpl.kt$CoachPlusRendererImpl$3</ID>
+  </Whitelist>
+</SmellBaseline>

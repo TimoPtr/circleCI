@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+  android:color="?colorControlHighlight">
+  <item
+    android:id="@android:id/mask"
+    android:bottom="@dimen/dot_half"
+    android:top="@dimen/dot_half">
+    <shape android:shape="rectangle">
+      <solid android:color="?android:attr/colorPrimary" />
+      <corners android:radius="@dimen/dot_trip" />
+    </shape>
+  </item>
+  <item
+    android:bottom="@dimen/dot_half"
+    android:top="@dimen/dot_half">
+    <shape android:shape="rectangle">
+      <stroke
+        android:width="@dimen/tap_to_copy_border_stroke_width"
+        android:color="?colorBackgroundDark"
+        android:dashWidth="@dimen/tap_to_copy_border_dash_width"
+        android:dashGap="@dimen/tap_to_copy_border_dash_gap" />
+      <corners android:radius="@dimen/dot_trip" />
+      <solid android:color="@color/transparent" />
+    </shape>
+  </item>
+</ripple>

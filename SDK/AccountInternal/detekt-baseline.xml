@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <Blacklist></Blacklist>
+  <Whitelist>
+    <ID>LongMethod:MigrationFrom2To3.kt$MigrationFrom2To3$verifyAccountIntegrity</ID>
+    <ID>LongMethod:MigrationFrom2To3.kt$MigrationFrom2To3$verifyProfileIntegrity</ID>
+    <ID>LongMethod:ProfileInternal.kt$ProfileInternal$exportProfile</ID>
+    <ID>TooGenericExceptionCaught:CurrentProfileProvider.kt$CurrentProfileProviderImpl$e: Exception</ID>
+    <ID>TooManyFunctions:AccountDao.kt$AccountDao$AccountDao</ID>
+  </Whitelist>
+</SmellBaseline>

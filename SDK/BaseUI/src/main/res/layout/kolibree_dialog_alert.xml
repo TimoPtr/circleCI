@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:id="@+id/alert_dialog_root_layout"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:clipChildren="false"
+  android:clipToPadding="false"
+  android:minWidth="?alertDialogMinWidth"
+  android:paddingBottom="?alertDialogInsetBottom">
+
+  <ImageView
+    android:id="@+id/feature_image"
+    android:layout_width="@dimen/match_constraints"
+    android:layout_height="wrap_content"
+    android:adjustViewBounds="true"
+    android:scaleType="fitCenter"
+    android:visibility="gone"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <ImageView
+    android:id="@+id/feature_icon"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="?alertDialogInsetTop"
+    android:scaleType="center"
+    android:visibility="gone"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+    android:id="@+id/title_text"
+    style="?materialAlertDialogTitleTextStyle"
+    android:layout_width="@dimen/match_constraints"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="?alertDialogInsetStart"
+    android:layout_marginTop="?alertDialogInsetTop"
+    android:layout_marginEnd="?alertDialogInsetEnd"
+    android:visibility="invisible"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <androidx.constraintlayout.widget.Barrier
+    android:id="@+id/header"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:barrierDirection="bottom"
+    app:constraint_referenced_ids="title_text, feature_image, feature_icon" />
+
+  <TextView
+    android:id="@+id/headline_text"
+    style="?alertDialogHeadlineStyle"
+    android:layout_width="@dimen/match_constraints"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="?alertDialogInsetStart"
+    android:layout_marginTop="@dimen/dot_trip"
+    android:layout_marginEnd="?alertDialogInsetEnd"
+    android:visibility="gone"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/header" />
+
+  <TextView
+    android:id="@+id/body_text"
+    style="?alertDialogBodyTextStyle"
+    android:layout_width="@dimen/match_constraints"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="?alertDialogInsetStart"
+    android:layout_marginTop="@dimen/dot_double"
+    android:layout_marginEnd="?alertDialogInsetEnd"
+    android:layout_marginBottom="@dimen/dot_double"
+    android:visibility="gone"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/headline_text" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

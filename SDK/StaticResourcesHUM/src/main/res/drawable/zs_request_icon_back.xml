@@ -1,0 +1,21 @@
+<!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<!-- This is used to override the navigation icon in Zendesk activity -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+  android:width="16dp"
+  android:height="16dp"
+  android:viewportWidth="24"
+  android:viewportHeight="24">
+
+    <path
+      android:pathData="M17.835,3.87l-1.78,-1.77 -9.89,9.9 9.9,9.9 1.77,-1.77L9.705,12l8.13,-8.13z"
+      android:fillColor="?android:textColorPrimary"/>
+
+</vector>

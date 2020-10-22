@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <style name="Kolibree" />
+
+  <style name="Kolibree.ProgressBar.Horizontal.Rounded.Red">
+    <item name="android:progressDrawable">@drawable/progress_bar_horizontal_rounded_red</item>
+  </style>
+
+  <style name="HomeCardStyle" parent="CardView.Light">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_margin">@dimen/small_margin</item>
+    <item name="android:background">@color/white</item>
+    <item name="cardCornerRadius">@dimen/home_card_background_radius_dp</item>
+  </style>
+
+  <style name="HomeCardTitleStyle" parent="Widget.AppCompat.TextView">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_marginStart">@dimen/activity_horizontal_margin</item>
+    <item name="android:layout_marginTop">@dimen/big_margin</item>
+    <item name="android:layout_marginEnd">@dimen/activity_horizontal_margin</item>
+    <item name="android:fontFamily">sans-serif</item>
+    <item name="android:textAllCaps">true</item>
+    <item name="android:textColor">@color/home_card_title_color</item>
+    <item name="android:textSize">@dimen/medium_text</item>
+    <item name="android:textStyle">bold</item>
+  </style>
+
+</resources>

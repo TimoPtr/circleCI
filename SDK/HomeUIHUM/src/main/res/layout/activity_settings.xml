@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout>
+
+  <data>
+
+    <variable
+      name="viewModel"
+      type="com.kolibree.android.app.ui.settings.SettingsViewModel" />
+
+    <import type="android.view.View" />
+
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.kolibree.android.app.ui.widget.ElevationMediatorView
+      android:id="@+id/elevator"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="@dimen/match_constraints"
+      app:constraint_referenced_ids="appbar"
+      app:endElevation="@dimen/dot_half"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:scrollDistance="@dimen/dot_oct"
+      app:scrollingView="@id/settings_recycler_view"
+      app:startElevation="@dimen/zero" />
+
+    <com.google.android.material.appbar.AppBarLayout
+      android:id="@+id/appbar"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:background="?toolbarCollapsedBackground"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent">
+
+      <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:contentInsetStart="0dp"
+        android:contentInsetLeft="0dp"
+        android:contentInsetEnd="0dp"
+        android:contentInsetRight="0dp"
+        android:theme="?defaultToolbarTheme"
+        app:contentInsetEnd="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetStart="0dp"
+        app:popupTheme="?defaultToolbarPopupTheme">
+
+        <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:background="?attr/selectableItemBackgroundBorderless"
+          android:onClick="@{() -> viewModel.onCloseClick()}"
+          android:padding="@dimen/dot_double"
+          android:src="@drawable/ic_back_arrow"
+          app:tint="?android:textColorPrimary" />
+
+        <TextView
+          android:id="@+id/toolbar_name"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="@dimen/dot_double"
+          android:text="@string/settings_screen_title"
+          android:textAppearance="?textAppearanceHeadline4"
+          android:textColor="?android:textColorPrimary" />
+
+      </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/settings_recycler_view"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/match_constraints"
+      app:adapter="@{viewModel.adapter}"
+      app:itemBinding="@{viewModel.itemsBinding}"
+      app:items="@{viewModel.items}"
+      app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/appbar" />
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@color/white80"
+      android:clickable="true"
+      android:focusable="true"
+      android:visibility="@{viewModel.isProgressVisible ? View.VISIBLE : View.INVISIBLE}" />
+
+    <include
+      layout="@layout/view_progress_indicator"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:visibility="invisible"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:progressVisible="@{viewModel.isProgressVisible}"
+      tools:visibility="visible" />
+
+    <com.kolibree.android.app.widget.snackbar.SnackbarHandler
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="@dimen/match_constraints"
+      app:configuration="@={viewModel.snackbarConfiguration}"
+      tools:ignore="MissingConstraints" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
+

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout>
+
+  <data>
+
+    <variable
+      name="viewModel"
+      type="com.kolibree.android.app.ui.pairing.wake_your_brush.WakeYourBrushViewModel" />
+
+    <import type="android.view.View"/>
+
+    <import type="com.kolibree.android.extensions.ContextExtensionsKt" />
+
+    <import type="com.kolibree.android.homeui.hum.R" />
+
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+      android:id="@+id/content"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="@dimen/match_constraints"
+      android:layout_marginStart="@dimen/dot_quad"
+      android:layout_marginEnd="@dimen/dot_quad"
+      android:layout_marginBottom="@dimen/dot_double"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHeight_percent="0.85"
+      app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+      android:id="@+id/header"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:text="@{@string/pairing_wake_your_brush_title}"
+      android:textAppearance="?textAppearanceHeadline2"
+      app:layout_constraintEnd_toEndOf="@id/content"
+      app:layout_constraintStart_toStartOf="@id/content"
+      app:layout_constraintTop_toTopOf="@id/content"
+      app:textHighlight="@{@string/pairing_wake_your_brush_title_highlight}"
+      app:textHighlightColor="@{ContextExtensionsKt.getColorFromAttr(context, R.attr.colorSecondaryDark)}"
+      tools:text="@string/pairing_wake_your_brush_title" />
+
+    <TextView
+      android:id="@+id/subtitle"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/dot_double"
+      android:text="@string/pairing_wake_your_brush_subtitle"
+      android:textAppearance="?textAppearanceSubtitle1"
+      app:layout_constraintEnd_toEndOf="@id/content"
+      app:layout_constraintStart_toStartOf="@id/content"
+      app:layout_constraintTop_toBottomOf="@id/header" />
+
+    <com.airbnb.lottie.LottieAnimationView
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      app:lottie_rawRes="@raw/tb_powern_on"
+      app:lottie_autoPlay="true"
+      app:lottie_loop="true"
+      app:layout_constraintTop_toBottomOf="@id/subtitle"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintBottom_toTopOf="@id/nothing_happening_button"/>
+
+    <Button
+      android:id="@+id/nothing_happening_button"
+      style="?materialButtonTextStyle"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:alpha="0"
+      android:text="@string/pairing_wake_your_brush_nothing_happening"
+      android:visibility="invisible"
+      android:onClick="@{ v -> viewModel.onNothingHappeningClick()}"
+      app:visibilityAnim="@{viewModel.showNothingIsHappening}"
+      app:layout_constraintBottom_toBottomOf="@id/content"
+      app:layout_constraintEnd_toEndOf="@id/content"
+      app:layout_constraintStart_toStartOf="@id/content"
+      tools:alpha="1" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+

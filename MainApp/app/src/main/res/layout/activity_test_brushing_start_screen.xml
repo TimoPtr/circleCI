@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  tools:ignore="MissingDefaultResource">
+
+  <data>
+
+    <import type="android.view.View" />
+
+    <import type="com.kolibree.android.extensions.ContextExtensionsKt" />
+
+    <import type="com.kolibree.R" />
+
+    <variable
+      name="viewModel"
+      type="com.kolibree.android.app.ui.home.testbrushing.startscreen.TestBrushingStartScreenViewModel" />
+
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/root_content_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/dot_trip">
+
+    <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/half_screen_guideline"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      app:layout_constraintGuide_percent="0.45" />
+
+    <!-- TODO : Implements a wave shape for the colgate branding :
+    https://kolibree.atlassian.net/browse/KLTB002-13167 -->
+    <ImageView
+      android:id="@+id/logo"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/match_constraints"
+      android:background="?colorPrimary"
+      android:scaleType="?attr/testBrushingHeaderScaleType"
+      android:src="@drawable/ic_test_brushing_start_header"
+      app:layout_constraintBottom_toTopOf="@+id/text_content_barrier"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:ignore="ContentDescription" />
+
+    <com.google.android.material.appbar.MaterialToolbar
+      android:id="@+id/toolbar"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:visibility="invisible"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:navigationIcon="@drawable/ic_nav_close"
+      app:onBackNavigationClick="@{v -> viewModel.closeClicked()}"
+      app:visibilityAnim="@{viewModel.showCloseToolbarButton}"
+      tools:visibility="visible" />
+
+    <TextView
+      android:id="@+id/body"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_quad"
+      android:layout_marginEnd="@dimen/dot_quad"
+      android:paddingBottom="@dimen/dot_double"
+      android:text="@string/dialog_test_brushing_body"
+      android:textAppearance="?textAppearanceBody1"
+      android:textColor="?android:textColorSecondary"
+      app:layout_constraintBottom_toTopOf="@+id/no_smiles_body"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/header" />
+
+    <TextView
+      android:id="@+id/header"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_quad"
+      android:layout_marginEnd="@dimen/dot_quad"
+      android:paddingTop="@dimen/dot_double"
+      android:text="@{@string/dialog_test_brushing_headline}"
+      android:textAppearance="?textAppearanceHeadline2"
+      app:layout_constraintBottom_toTopOf="@id/body"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/logo"
+      app:layout_constraintVertical_bias="0.0"
+      app:layout_constraintVertical_chainStyle="packed"
+      app:textHighlight="@{@string/dialog_test_brushing_headline_highlight}"
+      app:textHighlightColor="@{ContextExtensionsKt.getColorFromAttr(context, R.attr.colorPrimary)}"
+      tools:text="@string/dialog_test_brushing_headline" />
+
+    <TextView
+      android:id="@+id/no_smiles_body"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_quad"
+      android:layout_marginEnd="@dimen/dot_quad"
+      android:layout_marginBottom="@dimen/dot_double"
+      android:text="@string/dialog_test_brushing_no_more_smiles"
+      android:textAppearance="?textAppearanceBody2"
+      android:textColor="?android:textColorSecondary"
+      app:layout_constraintBottom_toTopOf="@id/start_button"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/body" />
+
+    <androidx.constraintlayout.widget.Barrier
+      android:id="@+id/text_content_barrier"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:barrierDirection="top"
+      app:constraint_referenced_ids="header, half_screen_guideline" />
+
+    <Button
+      android:id="@+id/start_button"
+      style="?materialButtonStyle"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_quad"
+      android:layout_marginEnd="@dimen/dot_quad"
+      android:onClick="@{v -> viewModel.startClicked()}"
+      android:text="@string/dialog_test_brushing_start_button"
+      android:enabled="@{viewModel.canStart}"
+      app:layout_constraintBottom_toTopOf="@+id/remind_me_later_button"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+      android:id="@+id/remind_me_later_button"
+      style="?materialButtonTextStyleTertiary"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_quad"
+      android:layout_marginTop="@dimen/dot_double"
+      android:layout_marginEnd="@dimen/dot_quad"
+      android:onClick="@{v -> viewModel.remindMeLaterClicked()}"
+      android:text="@string/dialog_test_brushing_remind_later_button"
+      android:visibility="@{viewModel.showRemindMeLater ? View.VISIBLE : View.GONE}"
+      app:layout_constraintBottom_toTopOf="@+id/view_bottom"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:rippleColor="?rippleColorMono" />
+
+    <View
+      android:id="@+id/view_bottom"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="@dimen/zero"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+

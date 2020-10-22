@@ -1,0 +1,56 @@
+apply plugin: 'com.android.library'
+
+apply from: '../buildscripts/kapt.gradle'
+
+android {
+    androidExtensions {
+        experimental = true
+    }
+
+    buildFeatures {
+        dataBinding = true
+    }
+}
+
+dependencies {
+    implementation libraries.kotlinRuntime
+
+    implementation project(path: ':web-service-sdk')
+    implementation project(path: ':commons')
+    implementation project(path: ':base-ui')
+    implementation project(path: ':base-ui-hum')
+    implementation project(path: ':databinding')
+    implementation project(path: ':rewards-logic')
+    implementation project(path: ':tracker-domain')
+    implementation project(path: ':static-resources')
+    implementation project(path: ':static-resources-branded')
+
+    implementation libraries.supportAppCompat
+    implementation libraries.supportConstraintLayout
+
+    implementation libraries.threetenAbp
+
+    implementation libraries.rxJava
+    implementation libraries.rxLint
+
+    //Data binding
+    implementation libraries.bindingCollections
+    implementation libraries.bindingCollectionsRV
+
+    implementation libraries.dagger
+    kapt libraries.daggerCompiler
+    implementation libraries.daggerAndroid
+    kapt libraries.daggerAndroidProcessor
+    implementation libraries.daggerAndroidSupport
+
+    testImplementation project(path: ':testing-unit-base')
+    testImplementation project(path: ':testing-builders')
+    testImplementation libraries.mockitoKotlin2
+    testImplementation libraries.dagger
+
+    androidTestImplementation project(path: ':testing-espresso-base')
+    androidTestImplementation project(path: ':testing-builders')
+    androidTestImplementation libraries.supportTestRunner
+    androidTestImplementation libraries.mockitoKotlin2
+    androidTestImplementation libraries.mockitoAndroid
+}

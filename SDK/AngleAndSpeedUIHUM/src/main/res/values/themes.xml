@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<resources>
+
+  <style name="AppTheme.MindYourSpeed" parent="AppTheme.Inverse.Blue">
+    <item name="zoneForegroundColor">@color/white</item>
+    <item name="zoneBackgroundColor">@color/darkBlue50</item>
+    <item name="zoneOngoingForegroundColor">@color/white</item>
+    <item name="zoneOngoingBackgroundColor">#337ec1</item><!--TODO: use appropriate attribute here or find other solution -->
+  </style>
+
+</resources>

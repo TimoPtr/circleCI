@@ -1,0 +1,27 @@
+<!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+  android:width="208dp"
+  android:height="134dp"
+  android:viewportWidth="208"
+  android:viewportHeight="134">
+  <path
+    android:fillColor="#5398D5"
+    android:fillType="evenOdd"
+    android:pathData="M0,8c0,-4.418 3.582,-8 8,-8h192c4.418,0 8,3.582 8,8v126H0V8z" />
+  <path
+    android:fillColor="#fff"
+    android:fillType="evenOdd"
+    android:pathData="M103.676,22.876l6.449,22.86c8.914,2.764 15.389,11.076 15.389,20.9 0,12.082 -9.796,21.877 -21.879,21.877 -12.083,0 -21.878,-9.795 -21.878,-21.878 0,-9.823 6.474,-18.135 15.388,-20.9l6.449,-22.859c-24.149,0.021 -43.718,19.605 -43.718,43.759 0,24.167 19.59,43.758 43.758,43.758 24.167,0 43.759,-19.591 43.759,-43.758 0,-24.154 -19.569,-43.737 -43.717,-43.759z" />
+  <path
+    android:fillColor="#73CECA"
+    android:fillType="evenOdd"
+    android:pathData="M103.643,22.76l6.482,22.975c3.919,1.216 7.367,3.504 10,6.52l20.748,-8.684c-7.693,-12.485 -21.489,-20.808 -37.23,-20.811zM103.627,22.76l-6.482,22.975c-4.027,1.25 -7.556,3.63 -10.215,6.771l-20.698,-8.664c7.66,-12.635 21.541,-21.08 37.395,-21.082z" />
+</vector>

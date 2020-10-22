@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <Blacklist></Blacklist>
+  <Whitelist>
+    <ID>SwallowedException:BaseRoomMigrationTest.kt$catch (e: SQLiteException) { false }</ID>
+  </Whitelist>
+</SmellBaseline>

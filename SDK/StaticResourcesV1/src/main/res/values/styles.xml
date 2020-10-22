@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!-- Kolibree V2 Theme -->
+  <style name="KolibreeV2Theme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimary</item>
+    <item name="colorAccent">@color/blue_light</item>
+    <item name="colorControlActivated">@color/colorPrimary</item>
+    <item name="android:windowBackground">@color/window_background</item>
+    <item name="android:windowContentOverlay">@null</item><!-- Remove bar shadow -->
+
+    <item name="android:textColorPrimary">@color/grey_light</item>
+    <item name="textColorAccent">@color/colorPrimary</item>
+
+    <!--
+    WIDGETS
+    -->
+
+    <item name="buttonStyle">@style/KolibreeButton</item>
+    <item name="editTextStyle">@style/KolibreeEditText</item>
+    <item name="legacyEditTextStyle">@style/KolibreeLegacyEditTextStyle</item>
+
+    <item name="primaryColorButtonStyle">@style/PrimaryColorRoundButton</item>
+    <item name="accentColorButtonStyle">@style/PrimaryColorRoundButton</item>
+    <item name="secondaryColorButtonStyle">@style/PrimaryColorRoundButton</item>
+    <item name="whiteColorButtonStyle">@style/WhiteRoundButton</item>
+    <item name="borderlessButtonStyle">@style/BorderlessButtonCompat</item>
+
+    <item name="android:actionBarStyle">@style/ToolbarRed</item>
+    <item name="defaultToolbarTheme">@style/ToolbarRed</item>
+    <item name="defaultToolbarElevation">0dp</item>
+    <item name="defaultToolbarPopupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+
+    <!--
+    TEXT
+    -->
+
+    <item name="android:textAppearance">@style/TextAppearance.V1.Body1</item>
+
+    <item name="textAppearanceHeadline1">@style/TextAppearance.V1.Headline1</item>
+    <item name="textAppearanceHeadline2">@style/TextAppearance.V1.Headline2</item>
+    <item name="textAppearanceHeadline3">@style/TextAppearance.V1.Headline3</item>
+    <item name="textAppearanceHeadline4">@style/TextAppearance.V1.Headline4</item>
+    <item name="textAppearanceHeadline5">@style/TextAppearance.V1.Headline5</item>
+    <item name="textAppearanceHeadline6">@style/TextAppearance.V1.Headline6</item>
+
+    <item name="textAppearanceSubtitle1">@style/TextAppearance.V1.Subtitle1</item>
+    <item name="textAppearanceSubtitle2">@style/TextAppearance.V1.Subtitle2</item>
+
+    <item name="textAppearanceBody1">@style/TextAppearance.V1.Body1</item>
+    <item name="textAppearanceBody2">@style/TextAppearance.V1.Body2</item>
+
+    <item name="textAppearanceButton">@style/TextAppearance.V1.Button</item>
+    <item name="android:textAppearanceButton">@style/TextAppearance.V1.Button</item>
+
+    <item name="textAppearanceCaption">@style/TextAppearance.V1.Caption</item>
+
+    <item name="textAppearanceOverline">@style/TextAppearance.V1.Overline1</item>
+    <item name="textAppearanceOverline1">@style/TextAppearance.V1.Overline1</item>
+    <item name="textAppearanceOverline2">@style/TextAppearance.V1.Overline2</item>
+
+  </style>
+
+  <!-- Base application theme. -->
+  <style name="KolibreeNoActionBarTheme" parent="KolibreeV2Theme">
+    <item name="windowActionBar">false</item>
+    <item name="windowNoTitle">true</item>
+  </style>
+
+  <style name="FullScreenActivityTheme" parent="KolibreeNoActionBarTheme">
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:statusBarColor">@color/black30</item>
+    <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    <item name="android:windowFullscreen">true</item>
+    <item name="android:windowContentOverlay">@null</item>
+  </style>
+
+  <style name="FullHeightDialog" parent="Theme.AppCompat.Light.Dialog">
+    <item name="windowNoTitle">true</item>
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/blue_light</item>
+    <item name="colorControlActivated">@color/colorPrimary</item>
+    <item name="colorControlNormal">@color/white</item>
+    <item name="android:windowContentOverlay">@null</item><!-- Remove bar shadow -->
+    <item name="editTextStyle">@style/KolibreeEditText</item>
+    <item name="buttonStyle">@style/KolibreeButton</item>
+    <item name="android:windowBackground">@color/transparent</item>
+    <item name="android:windowIsTranslucent">true</item>
+  </style>
+
+  <!-- Toolbar white background-->
+  <style name="KolibreeToolbar" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+  <style name="ToolbarRed" parent="KolibreeToolbar">
+    <item name="android:titleTextColor">@color/white</item>
+    <item name="android:colorControlNormal">@color/white</item>
+    <item name="android:background">@color/colorPrimary</item>
+  </style>
+
+  <style name="ToolbarWhite" parent="KolibreeToolbar">
+    <item name="android:colorControlNormal">@color/colorPrimary</item> <!-- up arrow -->
+    <item name="android:background">@color/white</item> <!-- up arrow -->
+  </style>
+
+  <style name="ToolbarAvatar">
+    <item name="android:background">@color/transparent</item>
+    <item name="android:layout_marginStart">@dimen/toolbar_avatar_margin</item>
+    <item name="android:elevation">@dimen/toolbar_avatar_elevation</item>
+  </style>
+
+  <style name="ToolbarText">
+    <item name="android:textColor">@color/white</item>
+  </style>
+
+  <style name="ToolbarName" parent="ToolbarText">
+    <item name="android:layout_marginStart">@dimen/toolbar_name_startMargin</item>
+    <item name="android:gravity">top</item>
+    <item name="android:lines">1</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:ellipsize">end</item>
+    <item name="autoSizeMaxTextSize">@dimen/xxbig_text</item>
+    <item name="autoSizeMinTextSize">@dimen/big_text</item>
+    <item name="autoSizeTextType">uniform</item>
+  </style>
+
+  <!-- EditText -->
+  <style name="KolibreeEditText" parent="Widget.AppCompat.EditText">
+    <item name="android:textColor">@color/grey_dark</item>
+    <item name="android:textColorHint">@color/grey_light</item>
+    <item name="android:singleLine">true</item>
+    <item name="android:textSize">@dimen/normal_text</item>
+    <item name="android:backgroundTint">@color/grey_light</item>
+    <item name="android:tint">@color/grey_dark</item>
+  </style>
+
+  <style name="KolibreeEditText.WithMargin">
+    <item name="android:layout_marginTop">@dimen/kolibree_edittext_margin</item>
+    <item name="android:layout_marginBottom">@dimen/kolibree_edittext_margin</item>
+    <item name="android:layout_marginLeft">@dimen/activity_horizontal_margin</item>
+    <item name="android:layout_marginRight">@dimen/activity_horizontal_margin</item>
+  </style>
+
+  <!-- BUTTON STYLE -->
+
+  <style name="KolibreeButton" parent="android:Widget.Button">
+    <item name="android:textAllCaps">false</item>
+  </style>
+
+  <style name="RoundButton" parent="KolibreeButton">
+    <item name="android:minHeight">@dimen/round_button_height</item>
+    <item name="android:gravity">center</item>
+    <item name="android:elevation">@dimen/elevation_low</item>
+  </style>
+
+  <style name="WhiteRoundButton" parent="RoundButton">
+    <item name="android:background">@drawable/bg_sel_round_button_white</item>
+    <item name="android:textColor">@color/kolibree_empty_button_color</item>
+  </style>
+
+  <style name="PrimaryColorRoundButton" parent="RoundButton">
+    <item name="android:background">@drawable/bg_sel_coach_pause_primary_color</item>
+    <item name="android:textColor">@color/white</item>
+  </style>
+
+  <style name="KolibreeEmptyButton" parent="KolibreeButton">
+    <item name="android:background">@drawable/kolibree_empty_button_background</item>
+    <item name="android:textColor">@color/kolibree_empty_button_color</item>
+    <item name="android:textSize">@dimen/xnormal_text</item>
+  </style>
+
+  <style name="ColorPrimaryFilledButton" parent="KolibreeButton">
+    <item name="android:background">@drawable/kolibree_filled_button_background</item>
+    <item name="android:textColor">@color/white</item>
+    <item name="android:textSize">@dimen/xnormal_text</item>
+  </style>
+
+  <style name="WhiteBorderlessButton" parent="WhiteRoundButton">
+    <item name="android:background">@drawable/background_white_round_no_border_button</item>
+    <item name="android:textColor">@null</item>
+    <item name="android:elevation">0dp</item>
+  </style>
+
+  <style name="BorderlessButton" parent="Base.Widget.AppCompat.Button.Borderless">
+    <item name="android:textSize">@dimen/normal_text</item>
+    <item name="android:gravity">center</item>
+  </style>
+
+  <style name="BorderlessButtonCompat">
+    <item name="android:padding">8dp</item>
+    <item name="android:gravity">center</item>
+    <item name="android:textSize">@dimen/xnormal_text</item>
+    <item name="android:textColor">@color/black</item>
+    <item name="android:background">?attr/selectableItemBackground</item>
+  </style>
+
+  <style name="KolibreeDialogButton" parent="KolibreeButton">
+    <item name="android:background">@color/transparent</item>
+    <item name="android:textColor">@color/color_sel_btn_text_only_dark</item>
+    <item name="android:textSize">@dimen/normal_text</item>
+    <item name="android:minHeight">0dp</item>
+    <item name="android:minWidth">0dp</item>
+    <item name="android:paddingTop">@dimen/activity_horizontal_margin</item>
+    <item name="android:paddingLeft">@dimen/activity_horizontal_margin</item>
+  </style>
+
+  <!-- Home tabs -->
+  <style name="KolibreeTabLayout" parent="Widget.Design.TabLayout">
+    <item name="tabIndicatorColor">@color/white</item>
+    <item name="tabIndicatorHeight">@dimen/tab_indicator_height</item>
+    <item name="tabTextAppearance">@style/TabsTextAppearance</item>
+  </style>
+
+  <!-- Home tabs appearance -->
+  <style name="TabsTextAppearance" parent="TextAppearance.Design.Tab">
+    <item name="android:textColor">@color/white</item>
+    <item name="textAllCaps">true</item>
+  </style>
+
+  <!-- Title DEPRECATED  -->
+  <style name="Title">
+    <item name="android:padding">@dimen/title_padding</item>
+    <item name="android:gravity">center_horizontal</item>
+    <item name="android:textColor">@color/colorPrimary</item>
+    <item name="android:textSize">@dimen/xxbig_text</item>
+  </style>
+
+  <style name="LinearLayoutWithDividers">
+    <item name="android:divider">@drawable/listview_divider</item>
+    <item name="android:showDividers">middle</item>
+  </style>
+
+  <style name="KolibreeTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+  <style name="KolibreeTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+  <style name="KolibreeNoActionBarTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+  <style name="KolibreeNoActionBarTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+  <style name="KolibreeDialog" parent="ThemeOverlay.AppCompat.Dialog.Alert">
+    <item name="android:background">@color/white</item>
+    <!-- Used for the buttons -->
+    <item name="colorAccent">@color/colorPrimary</item>
+    <!-- Used for the title and text -->
+    <item name="android:textColorPrimary">@color/grey_light</item>
+
+    <item name="android:textAppearance">?textAppearanceButton</item>
+
+    <!-- Change title style -->
+    <item name="android:windowTitleStyle">@style/DialogWindowTitle</item>
+
+    <item name="buttonBarPositiveButtonStyle">@style/DialogButton.Positive</item>
+    <item name="buttonBarNeutralButtonStyle">@style/DialogButton.Neutral</item>
+    <item name="buttonBarNegativeButtonStyle">@style/DialogButton</item>
+  </style>
+
+  <style name="DialogButton" parent="Base.Widget.AppCompat.Button.Borderless">
+    <item name="android:textAllCaps">true</item>
+    <item name="android:textColor">@color/grey_light</item>
+  </style>
+
+  <style name="DialogButton.Positive">
+    <item name="android:textColor">@color/colorPrimary</item>
+  </style>
+
+  <style name="DialogButton.Neutral">
+    <item name="android:textColor">@color/grey_light</item>
+  </style>
+
+  <style name="DialogWindowTitle" parent="Base.DialogWindowTitle.AppCompat">
+    <item name="android:textColor">@color/colorPrimary</item>
+  </style>
+
+  <style name="BirthdayEditText" parent="KolibreeLegacyEditTextStyle">
+    <item name="android:background">@drawable/bg_sel_checkbirthday_input</item>
+    <item name="android:tag">@drawable/bg_sel_checkbirthday_input</item> <!-- for testing -->
+    <item name="android:textCursorDrawable">@drawable/cursor_primary_color</item>
+    <item name="android:paddingTop">@dimen/welcome_birthday_input_padding_vertical</item>
+    <item name="android:paddingBottom">@dimen/welcome_birthday_input_padding_vertical</item>
+    <item name="android:paddingStart">@dimen/welcome_birthday_input_padding_horizontal</item>
+    <item name="android:paddingEnd">@dimen/welcome_birthday_input_padding_horizontal</item>
+    <item name="android:textColor">@color/black</item>
+    <item name="android:textSize">@dimen/xnormal_text</item>
+    <item name="android:inputType">number</item>
+    <item name="android:gravity">center</item>
+    <item name="android:textAppearance">?textAppearanceSubtitle1</item>
+  </style>
+
+  <style name="BirthdayLabel">
+    <item name="android:textColor">@color/welcome_birthday_label</item>
+    <item name="android:paddingTop">@dimen/welcome_birthday_input_separation</item>
+    <item name="android:textSize">@dimen/medium_text</item>
+    <item name="android:gravity">center</item>
+    <item name="android:textAppearance">?textAppearanceCaption</item>
+  </style>
+
+  <style name="HintPrimaryColor" parent="TextAppearance.Design.Hint">
+    <item name="android:colorPrimary">@color/colorPrimary</item>
+    <item name="android:textColor">@color/colorPrimary</item>
+  </style>
+
+  <style name="TextInputLayoutError" parent="TextAppearance.Design.Error">
+    <item name="android:textColor">@color/welcome_validate_error</item>
+    <item name="android:textSize">12sp</item>
+  </style>
+
+  <style name="KLTextInputEditText" parent="Widget.AppCompat.EditText" />
+
+  <style name="PlaqlessActivityTheme" parent="KolibreeV2Theme">
+    <item name="windowActionBar">false</item>
+    <item name="windowNoTitle">true</item>
+    <item name="android:navigationBarColor">@color/black</item>
+    <item name="android:statusBarColor">@color/black</item>
+  </style>
+
+</resources>

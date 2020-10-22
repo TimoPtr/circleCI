@@ -1,0 +1,23 @@
+{
+  "gru": {},
+  "dsp": {
+    "beta": true,
+    "link": "https://kolibree-firmware.s3.amazonaws.com/prod/dsp/pmm-plaqless-dsp-0-1-2-ND-Jenkins-T.zip?AWSAccessKeyId=AKIAI34BUWYJTE7AFAIA&Expires=1573141980&Signature=Yjb8nVd2yqs5vZ0dHMdlSsugMAI%3D",
+    "dsp": "0.1.2",
+    "filename": "pmm-plaqless-dsp-0-1-2-ND-Jenkins-T.zip"
+  },
+  "bootloader": {
+    "beta": true,
+    "bootloader": "3.0.2",
+    "link": "https://kolibree-firmware.s3.amazonaws.com/prod/bootloader/pmm-bootloader-plaqless-3.0.2.zip?AWSAccessKeyId=AKIAI34BUWYJTE7AFAIA&Expires=1573141980&Signature=skVT%2Fisk9DZX%2FoQR2R1ycJUeKoo%3D",
+    "filename": "pmm-bootloader-plaqless-3.0.2.zip"
+  },
+  "fw": {
+    "crc16": null,
+    "fw": "2.0.4",
+    "filename": "pmm-plaqless-2.0.4.zip",
+    "beta": true,
+    "link": "https://kolibree-firmware.s3.amazonaws.com/prod/fw/pmm-plaqless-2.0.4.zip?AWSAccessKeyId=AKIAI34BUWYJTE7AFAIA&Expires=1573141980&Signature=uVpUC4M6cpOTmOz7MUc2Mgj4FA0%3D",
+    "crc32": null
+  }
+}

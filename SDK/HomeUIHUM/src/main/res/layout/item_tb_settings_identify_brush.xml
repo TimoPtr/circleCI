@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <data>
+
+    <variable
+      name="item"
+      type="com.kolibree.android.app.ui.toothbrushsettings.binding.IdentifyBrushBindingModel" />
+
+    <variable
+      name="interaction"
+      type="com.kolibree.android.app.ui.toothbrushsettings.IdentifyInteraction" />
+
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+      android:id="@+id/divider_top"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/divider_thickness"
+      android:background="?dividerColor"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+      android:id="@+id/header"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_quad"
+      android:layout_marginTop="@dimen/dot_trip"
+      android:layout_marginEnd="@dimen/dot_trip"
+      android:text="@string/tb_settings_identify"
+      android:textAllCaps="true"
+      android:textAppearance="?textAppearanceOverline1"
+      android:textColor="?colorOnSecondary"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/divider_top" />
+
+    <ImageView
+      android:id="@+id/blink_icon"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_quad"
+      android:layout_marginTop="@dimen/dot_double"
+      android:enabled="@{item.identifyPossible}"
+      android:src="@drawable/ic_blink"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/header" />
+
+    <TextView
+      android:id="@+id/make_brush_blink"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_double"
+      android:layout_marginEnd="@dimen/dot_trip"
+      android:enabled="@{item.identifyPossible}"
+      android:text="@string/tb_settings_blink"
+      android:textAppearance="?textAppearanceHeadline6"
+      android:textColor="@color/selector_item_available"
+      app:layout_constraintBottom_toBottomOf="@id/blink_icon"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@id/blink_icon"
+      app:layout_constraintTop_toTopOf="@id/blink_icon" />
+
+    <View
+      android:id="@+id/blink_toothbrush_view"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="@dimen/match_constraints"
+      android:layout_marginBottom="@dimen/dot"
+      android:background="?selectableItemBackground"
+      android:clickable="@{item.identifyPossible}"
+      android:onClick="@{v -> interaction.onIdentifyClick()}"
+      app:layout_constraintBottom_toTopOf="@id/divider_bottom"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/header" />
+
+    <View
+      android:id="@+id/divider_bottom"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/divider_thickness"
+      android:layout_marginTop="@dimen/dot_trip"
+      android:background="?dividerColor"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/blink_icon" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- specification: https://confluence.kolibree.com/pages/viewpage.action?pageId=7241957#id-3DCoach(Coach+)-4.1.3DmodelforCoach+ -->
+<resources>
+  <color name="coach_plus_progress_shadow">#808080</color>
+  <color name="coach_plus_default_neglected_color">#ffc39b</color>
+  <color name="coach_plus_default_clean_color">#ffffff</color>
+  <color name="coach_plus_default_background_color">@color/home_background</color>
+  <color name="coach_plus_default_title_color">@color/coachplus_title_text_color</color>
+</resources>

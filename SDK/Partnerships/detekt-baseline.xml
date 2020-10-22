@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <Blacklist></Blacklist>
+  <Whitelist>
+    <ID>ComplexMethod:HeadspacePersistenceMapper.kt$HeadspacePersistenceMapper$entityToStatus</ID>
+    <ID>LongMethod:PartnershipApiFake.kt$populateHeadspaceStateSequence</ID>
+    <ID>MagicNumber:PartnershipApiFake.kt$200</ID>
+    <ID>MagicNumber:PartnershipApiFake.kt$50</ID>
+  </Whitelist>
+</SmellBaseline>

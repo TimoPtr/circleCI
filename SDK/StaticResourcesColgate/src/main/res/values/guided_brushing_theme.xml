@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<resources>
+
+  <style name="GuidedBrushingTheme" parent="AppTheme.Light">
+    <item name="backgroundColor">@color/subtlegray</item>
+    <item name="android:windowBackground">@color/subtlegray</item>
+    <item name="guidedBrushingTitleColor">@color/red</item>
+    <item name="colorPrimary">@color/white</item>
+    <item name="guidedBrushingDirectionLegendBackgroundColor">@color/lightgray</item>
+    <item name="guidedBrushingIconColor">@color/darkgray</item>
+    <item name="zoneForegroundColor">@color/white</item>
+    <item name="zoneBackgroundColor">@color/orange2</item>
+    <item name="zoneOngoingForegroundColor">@color/orange</item>
+    <item name="zoneOngoingBackgroundColor">@color/lightgray</item>
+    <item name="timerTextAppearance">@style/TextAppearance.Timer</item>
+    <item name="android:windowTranslucentNavigation">true</item>
+    <item name="android:statusBarColor">@color/translucent_system_bar</item>
+  </style>
+
+</resources>

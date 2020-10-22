@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <data>
+
+    <variable
+      name="viewModel"
+      type="com.kolibree.android.app.ui.chart.ChartPlaygroundViewModel"/>
+
+    <import type="com.kolibree.android.app.ui.widget.chart.formatter.DayValueFormatter"/>
+    <import type="com.kolibree.android.app.ui.widget.chart.formatter.IntValueFormatter"/>
+
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.github.mikephil.charting.charts.PieChart
+      android:id="@+id/piechart"
+      android:layout_width="150dp"
+      android:layout_height="150dp"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      tools:ignore="MissingClass"/>
+
+    <com.kolibree.android.app.ui.widget.chart.CombinedChart
+      android:id="@+id/combinedchart"
+      android:layout_width="match_parent"
+      android:layout_height="150dp"
+      app:layout_constraintTop_toBottomOf="@id/piechart"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:xAxisPosition="BOTTOM"
+      app:xAxisGranularity="1"
+      app:xAxisLabelCount="8"
+      app:xAxisMinimum="-1"
+      app:xAxisMaximum="7"
+      app:axisRightEnabled="false"
+      app:axisLeftGranularity="1"
+      app:axisLeftGridColor="?backgroundColor"
+      app:axisLeftDrawAxisLine="false"
+      app:xAxisValueFormatter="@{DayValueFormatter.create()}"
+      app:axisLeftValueFormatter="@{IntValueFormatter.create()}"
+      app:legendEnabled="false"
+      tools:ignore="MissingClass"/>
+
+    <com.kolibree.android.app.ui.home.tab.home.card.frequency.FrequencyChartView
+      android:id="@+id/chart_view_days"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_trip"
+      android:layout_marginTop="@dimen/dot_quad"
+      android:layout_marginEnd="@dimen/dot_trip"
+      android:layout_marginBottom="@dimen/dot_double"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/combinedchart"
+      tools:ignore="MissingClass" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+

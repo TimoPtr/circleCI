@@ -1,0 +1,19 @@
+/*
+ * Copyright (c) 2020 Kolibree. All rights reserved
+ *
+ * Copying this file via any medium without the prior written consent of Kolibree is strictly
+ * prohibited
+ *
+ * Proprietary and confidential
+ */
+
+package com.kolibree.android.app.ui.onboarding.getready
+
+import com.kolibree.android.app.base.BaseAction
+
+internal sealed class GetReadyActions : BaseAction {
+
+    object StartToothbrushPairing : GetReadyActions()
+    object CreateNewAccount : GetReadyActions()
+    object SignIn : GetReadyActions()
+}

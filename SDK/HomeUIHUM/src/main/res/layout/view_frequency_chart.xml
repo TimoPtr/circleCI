@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <data>
+
+    <variable
+      name="viewState"
+      type="com.kolibree.android.app.ui.home.tab.home.card.frequency.FrequencyChartViewState" />
+
+    <variable
+      name="interaction"
+      type="com.kolibree.android.app.ui.home.tab.home.card.frequency.FrequencyChartInteraction" />
+
+  </data>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.kolibree.android.app.ui.home.tab.home.card.frequency.FrequencyWeekView
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/dot_quad"
+      android:layout_marginBottom="@dimen/frequency_chart_bottom_margin"
+      app:interaction="@{interaction}"
+      app:weekDaysType="@{viewState.weekAt(0)}" />
+
+    <com.kolibree.android.app.ui.home.tab.home.card.frequency.FrequencyWeekView
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/dot_quad"
+      android:layout_marginBottom="@dimen/frequency_chart_bottom_margin"
+      app:interaction="@{interaction}"
+      app:weekDaysType="@{viewState.weekAt(1)}" />
+
+    <com.kolibree.android.app.ui.home.tab.home.card.frequency.FrequencyWeekView
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/dot_quad"
+      android:layout_marginBottom="@dimen/frequency_chart_bottom_margin"
+      app:interaction="@{interaction}"
+      app:weekDaysType="@{viewState.weekAt(2)}" />
+
+    <com.kolibree.android.app.ui.home.tab.home.card.frequency.FrequencyWeekView
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/dot_quad"
+      android:layout_marginBottom="@dimen/frequency_chart_bottom_margin"
+      app:interaction="@{interaction}"
+      app:weekDaysType="@{viewState.weekAt(3)}" />
+
+    <com.kolibree.android.app.ui.home.tab.home.card.frequency.FrequencyWeekView
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/dot_quad"
+      android:layout_marginBottom="@dimen/frequency_chart_bottom_margin"
+      app:interaction="@{interaction}"
+      app:weekDaysType="@{viewState.weekAt(4)}" />
+
+    <com.kolibree.android.app.ui.home.tab.home.card.frequency.FrequencyWeekView
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/dot_quad"
+      app:interaction="@{interaction}"
+      app:weekDaysType="@{viewState.weekAt(5)}" />
+
+  </LinearLayout>
+
+</layout>

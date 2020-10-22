@@ -1,0 +1,51 @@
+buildscript {
+    // Gradle will not find vars defined in an external file when referring to them
+    // in the buildscript block, unless you link it from the buildscript block, too.
+    apply from: '../dependencies.gradle'
+
+    repositories {
+        // NOTE:
+        // Jenkins shared library replaces jcenter entries with the combinarion of Kolibree Artifactory + mavenCentral.
+        // This is because jcenter had serious downtimes in Mar'19, that were blocking development.
+        jcenter()
+    }
+
+    dependencies {
+        classpath gradlePlugins.pact
+    }
+}
+
+apply plugin: 'kotlin'
+apply plugin: 'au.com.dius.pact'
+
+publisher.skipDeployment = true
+
+dependencies {
+    implementation project(path: ':common-models')
+
+    api "au.com.dius:pact-jvm-consumer-junit_2.12:$versions.pact"
+    api "au.com.dius:pact-jvm-consumer-java8_2.12:$versions.pact"
+
+    api libraries.retrofit
+    api libraries.gson
+    api libraries.okHttp
+    api libraries.retrofitGsonConverter
+    api libraries.retrofitRxJavaAdapter
+    api libraries.supportAnnotations
+
+    implementation libraries.threetenAbp
+}
+
+pact {
+    reports {
+        defaultReports() // adds the standard console output
+        json // report in json format
+    }
+    publish {
+        pactDirectory = "build/pacts/"
+        pactBrokerUrl = 'https://pact.kolibree.com'
+        pactBrokerUsername = System.getenv('PACT_BROKER_CREDENTIALS_USR')
+        pactBrokerPassword = System.getenv('PACT_BROKER_CREDENTIALS_PSW')
+        version = versions.code
+    }
+}

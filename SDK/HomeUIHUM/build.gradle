@@ -1,0 +1,131 @@
+/*
+ * Copyright (c) 2020 Kolibree. All rights reserved
+ *
+ * Copying this file via any medium without the prior written consent of Kolibree is strictly
+ * prohibited
+ *
+ * Proprietary and confidential
+ */
+
+apply plugin: 'com.android.library'
+
+apply from: '../buildscripts/kapt.gradle'
+
+android {
+    androidExtensions {
+        experimental = true
+    }
+
+    buildFeatures {
+        dataBinding = true
+    }
+
+    defaultConfig {
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    sourceSets {
+        androidTest {
+            java.srcDirs = ['src/androidTest/kotlin']
+        }
+    }
+}
+
+//This is private API module -  do not remove this unless discussed and agreed with the team
+publisher.skipDeployment = true
+
+dependencies {
+    implementation project(path: ':commons')
+    implementation project(path: ':common-models')
+    implementation project(path: ':static-resources-branded')
+    implementation project(path: ':base-ui')
+    implementation project(path: ':base-ui-hum')
+    implementation project(path: ':databinding')
+    implementation project(path: ':guided-brushing-ui')
+    implementation project(path: ':guided-brushing-tips')
+    implementation project(path: ':home-ui')
+    implementation project(path: ':account-internal')
+    implementation project(path: ':account-sdk')
+    implementation project(path: ':shop')
+    implementation project(path: ':processed-brushings-kml')
+    implementation project(path: ':toothbrush-sdk')
+    implementation project(path: ':web-service-sdk')
+    implementation project(path: ':tracker')
+    implementation project(path: ':google-auth')
+    implementation project(path: ':pairing')
+    implementation project(path: ':jaws')
+    implementation project(path: ':stats')
+    implementation project(path: ':features')
+    implementation project(path: ':brushing-quiz')
+    implementation project(path: ':rewards-logic')
+    implementation project(path: ':offline-brushings')
+    implementation project(path: ':toothbrush-update-logic')
+    implementation project(path: ':toothbrush-update-ui-hum')
+    implementation project(path: ':rewards-hum')
+    implementation project(path: ':question-of-the-day')
+    implementation project(path: ':brush-sync-reminder')
+    implementation project(path: ':amazon-dash')
+    implementation project(path: ':toothbrush-battery')
+    implementation project(path: ':brush-reminder')
+    implementation project(path: ':dynamic-cards')
+    implementation project(path: ':headspace')
+
+    implementation libraries.rxJava
+    implementation libraries.rxAndroid
+    implementation libraries.rxLint
+    implementation libraries.rxRelay
+    implementation libraries.rxKotlin
+
+    implementation libraries.supportConstraintLayout
+    implementation libraries.supportExifInterface
+    implementation libraries.fragmentKtx
+
+    implementation libraries.navigationFragment
+    implementation libraries.navigationUI
+
+    implementation libraries.lottie
+
+    implementation libraries.threetenAbp
+
+    implementation libraries.ktxCore
+
+    implementation libraries.supportCore
+    implementation libraries.supportExif
+
+    implementation libraries.playCore
+
+    implementation(libraries.zendesk, {
+        exclude group: "com.android.support", module: "support-annotations"
+    })
+
+    implementation libraries.materialDialogsCore
+    implementation libraries.materialDialogsLifecycle
+    implementation libraries.materialDialogsDateTime
+
+    implementation libraries.licenses
+
+    implementation libraries.dagger
+    kapt libraries.daggerCompiler
+    kapt libraries.daggerAndroidProcessor
+    implementation libraries.daggerAndroid
+    implementation libraries.daggerAndroidSupport
+
+    //WorkManager
+    implementation libraries.workRuntime
+    implementation libraries.workRuntimeKtx
+    implementation libraries.workRxJava2
+
+    testImplementation project(path: ':testing-unit-base')
+    testImplementation project(path: ':testing-builders')
+    testImplementation libraries.mockitoKotlin2
+    testImplementation libraries.mockk
+    testImplementation libraries.kotlinPropertyTesting
+    testImplementation libraries.coroutinesTest
+    testImplementation project(path: ':testing-pact')
+    testImplementation libraries.mockitoKotlin2
+
+    androidTestImplementation project(path: ':testing-espresso-base')
+    androidTestImplementation project(path: ':testing-shared')
+    androidTestImplementation project(path: ':testing-builders')
+    androidTestImplementation libraries.workTesting
+}

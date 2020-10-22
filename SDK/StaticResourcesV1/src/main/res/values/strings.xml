@@ -1,0 +1,1463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ok">"OK"</string>
+
+    <!-- Home menu -->
+    <string name="action_account_settings">"Account"</string>
+    <string name="action_users_settings">"Profiles"</string>
+    <string name="action_go_to_slideshow">"Take the tour"</string>
+    <string name="action_about">"About"</string>
+    <string name="action_logout">"Logout"</string>
+    <string name="action_spread_the_word">"Spread the word"</string>
+    <string name="action_help">"Help Center"</string>
+    <string name="action_change_profile">"Change profile"</string>
+    <string name="action_edit_profile">"Edit profile"</string>
+
+    <!-- LOGIN AND REGISTRATION -->
+    <string name="login">"Login"</string>
+    <string name="connect_">"Connect   &gt;"</string>
+    <string name="male">"Male"</string>
+    <string name="female">"Female"</string>
+    <string name="signup">"Sign up"</string>
+    <string name="create_profile">"Create Profile"</string>
+    <string name="edit_profile">"Edit Profile"</string>
+    <string name="email_hint">"Email address"</string>
+    <string name="password_hint">"Password"</string>
+    <string name="password_confirm_hint">"Confirm password"</string>
+    <string name="firstname_hint">"First name"</string>
+    <string name="lastname_hint">"Last name"</string>
+    <string name="birthday_hint">"Birth date"</string>
+    <string name="create">"Create   &gt;"</string>
+    <string name="btn_next">"Next   &gt;"</string>
+    <string name="choose_picture_hint">"Set profile picture"</string>
+    <string name="choose_picture_gallery">"Select a photo"</string>
+    <string name="choose_picture_take">"Take a photo"</string>
+    <string name="gender_hint">"Your gender"</string>
+    <string name="handedness_hint">"Which hand do you use to brush your teeth?"</string>
+    <string name="country_hint">"Where do you live?"</string>
+    <string name="forgotten_password">"Forgot password?"</string>
+    <string name="email_missing">"Email address is missing"</string>
+    <string name="email_invalid">"Email address is invalid"</string>
+    <string name="firstname_missing">"First name is missing"</string>
+    <string name="lastname_missing">"Last name is missing"</string>
+    <string name="birthday_missing">"Wrong age"</string>
+    <string name="picture_missing">"Please select a picture"</string>
+    <string name="gender_missing">"Gender is undefined"</string>
+    <string name="handedness_missing">"Handedness is missing"</string>
+    <string name="country_missing">"Country is undefined"</string>
+    <string name="password_missing">"Password is missing"</string>
+    <string name="password_confirmation_missing">"Password confirmation is missing"</string>
+    <string name="passwords_dont_match">"Oops, the passwords don't match."</string>
+    <string name="reset_password">"Reset password"</string>
+    <string name="reset_password_ok">"Please check your Inbox and follow the instructions to reset your password."</string>
+    <string name="reset_password_ko">"An error occurred while resetting your password."</string>
+    <string name="terms_of_use_terms">"Terms &amp; Conditions"</string>
+    <string name="terms_of_use_policy">"Privacy Policy"</string>
+    <string name="account_created_title">"Hurray!"</string>
+    <string name="account_created_message">"Your account has been created.
+You are now ready to brush your teeth!"</string>
+    <string name="facebook_login">"Log in with Facebook"</string>
+    <string name="facebook_signup">"Sign up with Facebook"</string>
+    <string name="please_wait">"Please wait…"</string>
+    <string name="choose_picture_local">"Choose from Colgate Connect"</string>
+    <string name="terms_of_use">"I agree to the "<![CDATA[<u><a href=\"%1$s\">%2$s</a></u>]]>" and I acknowledge the "<![CDATA[<u><a href=\"%3$s\">%4$s</a></u>]]>"."</string>
+
+    <!-- ACCOUNT ACTIVITY -->
+    <string name="account">"Account"</string>
+    <string name="change_password">"Change password"</string>
+    <string name="new_password">"New password"</string>
+    <string name="old_password">"Old password"</string>
+    <string name="confirm_new_pasword">"Confirm new password"</string>
+    <string name="help_title">"Help us"</string>
+    <string name="help_message">"Help us improve the accuracy of the motion sensors by sending us your brushing data anonymously.
+(You can edit your preferences anytime in the app settings)"</string>
+    <string name="old_password_missing">"Old password is missing"</string>
+    <string name="new_password_missing">"New password is missing"</string>
+    <string name="new_password_confirm_missing">"New password confirmation is missing"</string>
+    <string name="password_updated">"Your password has been updated"</string>
+    <string name="password_updated_title">"Success"</string>
+    <string name="musicchoosertitle">"Choose music for Coach"</string>
+
+    <!-- EDIT PROFILE ACTIVITY -->
+    <string name="personal_info">"Personal information"</string>
+    <string name="brushing_settings">"Brushing settings"</string>
+    <string name="right_handed">"Right handed"</string>
+    <string name="left_handed">"Left handed"</string>
+    <string name="coach_brushing_time">"Brushing time"</string>
+    <string name="coach_brushing_time_duration">"Duration of a brushing session: %1$s"</string>
+    <string name="coach_sound_value">"Music during a brushing session in Coach: %1$s"</string>
+    <string name="none">"none"</string>
+    <string name="music">"Music"</string>
+    <string name="sounds">"Sounds"</string>
+    <string name="no_music_file">"No file selected"</string>
+    <string name="transition_sounds">"Transition sounds"</string>
+    <string name="no_artist">"No artist"</string>
+    <string name="no_title">"No title"</string>
+    <string name="brushing_time_hint">"Brushing time"</string>
+    <string name="profiles">"Profiles"</string>
+    <string name="delete_profile_title">"Delete profile"</string>
+    <string name="delete_profile_message">"Do you really want to delete this profile?"</string>
+
+    <!-- ADD PROFILE ACTIVITY -->
+    <string name="add_profile">"Add new profile"</string>
+
+    <!-- Leaderboard -->
+    <string name="leaderboard">"Ranking"</string>
+
+    <!-- About -->
+    <string name="kolibree_version">"Version %1$s (%2$s)
+Account %3$s"</string>
+    <string name="kolibree_about">"We believe that technology can help prevent oral diseases and cavities and we are turning this belief into reality."</string>
+    <string name="about_terms">"Terms &amp; Conditions and Privacy Policy."</string>
+    <string name="about">"About"</string>
+    <string name="kolibree_rights">"Colgate Connect, the logo Colgate Connect and all trademarks of Colgate Connect are the property of Colgate Connect.
+All Rights Reserved."</string>
+
+    <!-- Checkup -->
+    <string name="get_tb">"Get one in the store!"</string>
+
+    <!-- Checkup -->
+    <string name="checkup">"Check up"</string>
+    <string name="neglected_areas">"Neglected areas"</string>
+    <string name="well_brushed_areas">"Well-brushed areas"</string>
+    <string name="refresh">"Refresh"</string>
+    <string name="checkup_duration">"Duration"</string>
+    <string name="checkup_not_connected">"No surface data available for this brushing."</string>
+    <string name="checkup_empty">"Connect my toothbrush now"</string>
+    <string name="connect_tb_hint">"Brush your teeth with your Colgate Connect toothbrush and see the areas you may have neglected."</string>
+
+    <!-- Options Menu -->
+    <string name="menu_connect">"Connect a device"</string>
+
+    <!-- SetupToothbrushActivity -->
+    <string name="none_paired">"No devices have been paired"</string>
+    <string name="none_found">"No devices found"</string>
+
+    <!-- ConnectDeviceDialogActivity -->
+    <string name="toothbrushes">"Toothbrushes"</string>
+    <string name="none_connected">"No device connected"</string>
+    <string name="select_a_device">"Available devices"</string>
+    <string name="connect">"Connect"</string>
+    <string name="restart">"Restart"</string>
+    <string name="quit">"Quit"</string>
+    <string name="pause">"Pause"</string>
+    <string name="next">"Next"</string>
+    <string name="cancel">"Cancel"</string>
+    <string name="notnow">"Not now"</string>
+    <string name="information">"Information"</string>
+    <string name="error">"Error"</string>
+
+    <!-- SwitchGame Coach Fragment -->
+    <string name="no_tb_connected">"Toothbrush not connected"</string>
+    <string name="description_no_tb_connected_pirate">"Please connect your toothbrush to start brushing your teeth with Go!Pirate."</string>
+    <string name="description_no_tb_connected_coach">"Do you want to brush your teeth without your Colgate Connect toothbrush?"</string>
+
+    <!-- Coach Game Fragment -->
+    <string name="resume">"Resume"</string>
+    <string name="coach_something_wrong">"Something went wrong. Please try again later."</string>
+
+    <!-- Coach Game Fragment -->
+    <string name="points">"Points"</string>
+
+    <!-- Settings ToothBrush Fragment -->
+    <string name="user_mode_title">"Toothbrush user"</string>
+
+    <!-- Settings ToothBrush Fragment -->
+    <string name="toothbrush_information">"Toothbrush information"</string>
+    <string name="title_toothbrush">"Toothbrush ID"</string>
+    <string name="battery_level">"Battery level"</string>
+    <string name="find_toothbrush">"Identify toothbrush"</string>
+    <string name="blink_toothbrush">"Make your toothbrush blink"</string>
+    <string name="toothbrush_blinking">"Blinking"</string>
+    <string name="ota_toothbrush_title">"Firmware Version"</string>
+    <string name="hardware_version_title">"Hardware Version"</string>
+    <string name="software_version_title">"Firmware Version"</string>
+    <string name="user_mode_not_known">"Please set User"</string>
+    <string name="settings_shared_toothbrush">"Shared toothbrush"</string>
+    <string name="toothbrush_owner_everyone">"Everyone"</string>
+    <string name="toothbrush_firmware_update_available">"Update your toothbrush"</string>
+    <string name="toothbrush_firmware_update_title">"Update your toothbrush"</string>
+    <string name="toothbrush_firmware_update_button">"Update"</string>
+
+    <!-- Fuzzy -->
+    <string name="firmware_upgrade_error">"Something went wrong. Please try again later."</string>
+    <string name="toothbrush_firmware_update_progress_label">"Installing..."</string>
+    <string name="toothbrush_firmware_update_rebooting_label">"Rebooting"</string>
+    <string name="toothbrush_firmware_update_success">"Your Colgate Connect toothbrush has been upgraded!"</string>
+
+    <!-- Settings Pairing Fragment -->
+    <string name="pairing_kolibree_1">"Press and hold the button on your toothbrush until the LED light blinks blue to make it discoverable."</string>
+    <string name="pairing_kolibree_2">"If a pop-up asks you to pair your toothbrush, Enter the pin code :"</string>
+    <string name="pairing_kolibree_4">"0000"</string>
+    <string name="pop_up_connect_fail_title">"O-oh!"</string>
+    <string name="pop_up_connect_fail_msg">"The connection between your toothbrush and your device was not successful. Please verify if your toothbrush is on and try again."</string>
+
+    <!-- Switch Game Fragment -->
+    <string name="coach_game_name">"Coach"</string>
+    <string name="pirate_game_name">"GoPirate"</string>
+    <string name="coach_plus_game_name">"Coach Plus"</string>
+    <string name="sba_game_name">@string/test_brushing_screen_title</string>
+    <string name="rabbids_game_name">"Rabbids"</string>
+    <string name="offline_game_name">"Offline brushing"</string>
+    <string name="coach_game_description">"Coach helps you to master brushing by showing you exactly where to brush. Practice makes perfect!"</string>
+    <string name="pirate_game_description">"Brushing becomes a game: grab the pieces that you find along the way while brushing."</string>
+    <string name="activities_warning">"New brushing data will be assigned to the profile selected above"</string>
+    <string name="transition_game">"transition_game"</string>
+    <string name="game_brush_not_allow_title">"Whoops"</string>
+    <string name="game_brush_not_allow_msg">"Brushing more than three times a day can damage the gums."</string>
+    <string name="upper_arch">"Upper
+Arch"</string>
+    <string name="lower_arch">"Lower
+Arch"</string>
+    <string name="delete_profile">"Delete"</string>
+    <string name="logout_title">"Logout"</string>
+    <string name="logout_message">"Do you really want to log out?"</string>
+    <string name="load_avatar_error">"Uh oh, that's embarrassing…
+Check your network connection in order to load avatar pictures."</string>
+
+    <!-- Connection Lost Dialog -->
+    <string name="lost_connection_dialog_title">"Mayday!"</string>
+    <string name="lost_connection_dialog_msg">"Your toothbrush is not detected. Please reconnect it to complete the configuration."</string>
+    <string name="send">"Send"</string>
+    <string name="points_pts">"+%d pts"</string>
+    <string name="account_settings_help">"Help us improve the accuracy of the motion sensors by sending us your brushing data anonymously."</string>
+    <string name="account_settings_digest">"Receive every week a complete brushing report including the most important information about your oral hygiene."</string>
+    <string name="account_settings_digest_title">"Weekly Digest"</string>
+    <string name="toothbrush_status_connecting">"Connecting…"</string>
+    <string name="toothbrush_status_pairing">"Pairing..."</string>
+    <string name="checkup_hint_1">"To see your dental check-up, brush your teeth with one of the app activities."</string>
+    <string name="checkup_hint_2">"This check up only takes into account your brushing wihilst using the app."</string>
+    <string name="checkup_error_no_data_title">"Oops, we don't have enough data."</string>
+    <string name="checkup_error_no_data_hint">"To see your dental check-up, brush your teeth with one of the app activities."</string>
+    <string name="checkup_error_no_internet_title">"Oops, you're not connected to the internet."</string>
+    <string name="checkup_error_no_internet_hint">"Connect to the internet to update your brushing data."</string>
+    <string name="um_welcome_title">"Hello %s!"</string>
+    <string name="um_warning_title">"Be careful"</string>
+    <string name="um_yes">"Yes"</string>
+    <string name="um_no">"No"</string>
+    <string name="um_cancel">"Cancel"</string>
+    <string name="um_edit">"Change"</string>
+    <string name="um_next">"Next"</string>
+    <string name="um_great">"Great"</string>
+    <string name="um_understood">"I understand"</string>
+    <string name="um_already_associated">"This toothbrush is already linked to a person."</string>
+    <string name="um_already_associated_known">"This toothbrush is already linked to %s."</string>
+    <string name="um_already_associated2_known">"Would you like to link this toothbrush to %s's profile straight away?"</string>
+    <string name="um_already_associated2">"Do you want to modify the settings and link this toothbrush to another person?"</string>
+    <string name="um_already_associated2_self">"Do you want to modify the settings and link this toothbrush to your profile?"</string>
+    <string name="um_warning_message">"The settings of your toothbrush will be modified so that you can use it among all profiles.
+
+Any brushing without the app will no longer be saved."</string>
+    <string name="um_warning_hint">"You can change this sharing mode later in the settings of each of your toothbrushes."</string>
+    <string name="um_pairing_warning_hint">"The previous link will be lost."</string>
+    <string name="um_pairing_um_users_title_one">"A new toothbrush has been detected!
+ Who is using it?"</string>
+    <string name="um_pairing_um_users_title_several">"Who will use this toothbrush?"</string>
+    <string name="um_pairing_um_users_entry">"Only %s"</string>
+    <string name="um_pairing_um_users_entry_several">"Shared toothbrush"</string>
+    <string name="um_shared_tb">"Shared toothbrush"</string>
+    <string name="um_shared_tb_hint">"Other account users can use this brush if they change the brush head. Simply choose the new user before brushing your teeth."</string>
+    <string name="um_dont_forget">"Don't forget!"</string>
+    <string name="um_dont_forget_hint">"If you brush your teeth without using the app, your brushing data will not be saved."</string>
+    <string name="um_new_tb_associated">"A new toothbrush has been detected and added to your profile."</string>
+    <string name="um_warning_message_plural">"The settings of your toothbrushes will be modified so that you can use them among all profiles.
+
+Any brushing without the app will no longer be saved."</string>
+    <string name="um_pairing_um_pairing_confirmation_1">"You can use the toothbrush with or without the Colgate Connect app."</string>
+    <string name="um_pairing_um_pairing_confirmation_2">"Your toothbrush automatically stores your brushing data, but remember to sync it to the Colgate Connect app at least once a week to keep it updated."</string>
+    <string name="um_welcome_hint">"Do you wish to add a new Colgate Connect toothbrush to your profile?"</string>
+
+    <!-- Notifications -->
+    <string name="tb_sync.notification.standard.2">"Remember to sync your brushing to maximize your Colgate Connect experience!"</string>
+    <string name="tb_sync.notification.standard.6">"Sync your toothbrush to save your recorded data even if you have brushed without opening the Colgate Connect app"</string>
+    <string name="tb_sync.notification.standard.7">"Want to know if you brushed well the last few days? Sync your brushing with the Colgate Connect app."</string>
+    <string name="tb_sync.notification.standard.8">"Remember to sync your brushing from time to time so Colgate Connect can analyze your dental health!"</string>
+    <string name="tb_sync.notification.standard.1">"Touch to sync your brushing."</string>
+    <string name="tb_sync.notification.standard.3">"Want to know more about dental health? Touch to sync your brushing."</string>
+    <string name="tb_sync.notification.standard.4">"Are your near your toothbrush? Touch to sync your brushing!"</string>
+    <string name="tb_sync.notification.standard.5">"Tap to sync your brushing and update your dental report."</string>
+    <string name="tb_sync.notification.standard.9">"Sync your brushing now to check your progress."</string>
+    <string name="tb_sync.notification.standard.10">"How effective was your recent brushing? Sync to find out."</string>
+    <string name="tb_sync.notification.standard.11">"Is your toothbrush nearby? Sync your brushing!"</string>
+    <string name="tb_sync.notification.standard.12">"Sync your toothbrush to update your brushing indicators."</string>
+
+    <!-- Fuzzy -->
+    <string name="tb_sync.enable.bluetooth.title">"Enable Bluetooth"</string>
+    <string name="about_attributions_hint">"This application uses the following libraries:"</string>
+    <string name="about_attributions_website">"website"</string>
+    <string name="about_attributions_license">"license"</string>
+
+    <!-- Setup toothbrush tunnel -->
+    <string name="setup_toothbrush_connect_m1_title">"Connect your M1"</string>
+    <string name="setup_toothbrush_connect_kolibree_title">"Connecting your Kolibree V1"</string>
+    <string name="setup_toothbrush_choose_model">"What toothbrush do you have?"</string>
+    <string name="setup_toothbrush_choose_model_ara">"Ara"</string>
+    <string name="setup_toothbrush_another_toothbrush_title">"One more thing!"</string>
+    <string name="setup_toothbrush_another_toothbrush_buy">"Let's go to the store!"</string>
+    <string name="setup_toothbrush_another_toothbrush_to_coach">"Brush with Coach"</string>
+    <string name="setup_toothbrush_choose_model_help"><![CDATA[I don\'t know <b>what toothbrush I have</b>]]></string>
+    <string name="setup_toothbrush_choose_model_help_title">"How to identify my toothbrush?"</string>
+    <string name="setup_toothbrush_get_one">"Get one in the store!"</string>
+    <string name="setup_toothbrush_proceed_without">"Thanks but I'll @proceed without"</string>
+    <string name="setup_toothbrush_model_ara">"Ara"</string>
+    <string name="setup_toothbrush_ara_charger">"Put the toothbrush on the charger and tap the Start button."</string>
+    <string name="setup_toothbrush_m1_instructions">"Shake your Connect M1 to activate the bluetooth pairing process, then click the Search button."</string>
+    <string name="setup_toothbrush_ara_charger_start">"Start"</string>
+    <string name="setup_toothbrush_ara_no_charger">"I don't have a charger"</string>
+    <string name="setup_toothbrush_searching">"Searching…
+%d %%"</string>
+    <string name="setup_toothbrush_connecting">"Connecting…"</string>
+    <string name="setup_toothbrush_ara_wait">"Wait for it!
+The app is looking for your
+toothbrush."</string>
+    <string name="setup_toothbrush_rename_hint">"You can change these new parameters in your toothbrush settings."</string>
+    <string name="setup_toothbrush_rename_ara_done">"Done"</string>
+    <string name="setup_toothbrush_rename_ara_choose_name">"Choose a name"</string>
+    <string name="setup_searching">"Searching for toothbrushes..."</string>
+    <string name="setup_barcode_hint">"Check your toothbrush name, which can be found on the packaging"</string>
+    <string name="setup_permission_popup">"Android requires Location permission to connect any Bluetooth Low Energy device. Please enable it in the following dialog to connect your toothbrush."</string>
+    <string name="setup_popup_help_title">"You don't see your toothbrush?"</string>
+    <string name="setup_popup_help_message">"If your toothbrush is right near you, but doesn't appear here, it's maybe because it's already connected to another device.
+
+Deactivate the bluetooth or forget the toothbrush on the other device.
+
+You'll see the toothbrush appearing here!"</string>
+    <string name="setup_connected_title">"Congratulations %s!
+Your toothbrush is now connected"</string>
+    <string name="setup_connected_hint">"Your toothbrush is called : \"%1$s\"
+You can change it in the settings!"</string>
+    <string name="setup_connected_button">"Let's go!"</string>
+    <string name="setup_summary_message">"Your brushing data will automatically be stored in the toothbrush. Remember to connect your brush to the app at least once a week to save your data."</string>
+    <string name="setup_toothbrush_choose_model_e1">"Connect E1"</string>
+    <string name="setup_toothbrush_connect_ara_title">"Connecting your E1"</string>
+    <string name="setup_toothbrush_another_toothbrush_text">"You can brush with our Coach!
+
+However, without a Colgate Connect toothbrush, you'll miss the full Connect experience.
+
+Hopefully, it\'s not too late to buy one right away :)"</string>
+    <string name="setup_toothbrush_choose_model_help_top">"Colgate Connect E1"</string>
+    <string name="setup_toothbrush_choose_model_help_bottom">"Colgate Connect M1"</string>
+    <string name="setup_toothbrush_choose_model_buy">"Get another Colgate Connect
+toothbrush in the store!"</string>
+    <string name="setup_summary_title">"You can use the toothbrush with or without the Colgate Connect app"</string>
+    <string name="setup_toothbrush_choose_model_another">"I don't have a Colgate Connect toothbrush"</string>
+    <string name="setup_toothbrush_choose_model_m1">"Connect M1"</string>
+
+    <!-- Toothbrush -->
+    <string name="forget_toothbrush">"Forget this toothbrush"</string>
+    <string name="forget_toothbrush_popup_title">"Do you want to forget %s?"</string>
+    <string name="forget_toothbrush_popup_message">"This device will no longer automatically connect to the toothbrush."</string>
+    <string name="forget_toothbrush_forget">"Forget"</string>
+    <string name="my_toothbrushes">"Toothbrushes"</string>
+    <string name="my_toothbrush">"My toothbrush"</string>
+    <string name="my_ara">"My Ara"</string>
+    <string name="my_connect_m1">"My Connect M1"</string>
+    <string name="my_connect_e1">"My Connect E1"</string>
+    <string name="my_kolibree">"My Kolibree V1"</string>
+    <string name="toothbrush_name">"Name"</string>
+    <string name="toothbrush_personalized_name">"Personalized name"</string>
+    <string name="toothbrush_none">"None"</string>
+    <string name="toothbrush_serial_number">"Serial number"</string>
+    <string name="toothbrush_mac">"MAC address"</string>
+    <string name="toothbrush_hardware_version">"Hardware version"</string>
+    <string name="toothbrush_software_version">"Software version"</string>
+    <string name="toothbrush_software_version_ara">"%1$s (%2$s)"</string>
+    <string name="toothbrush_update_now">"Update now"</string>
+    <string name="toothbrush_update_hint">"A new update (%s) is available for your toothbrush."</string>
+
+    <!-- User mode dialog -->
+    <string name="user_mode_dialog_title">"Toothbrush user"</string>
+
+    <!-- Popup toothbrush not available -->
+    <string name="popup_toothbrush_unavailable_title">"No toothbrush connected"</string>
+    <string name="popup_toothbrush_unavailable_alternate_title">"No toothbrush
+connected"</string>
+    <string name="popup_toothbrush_unavailable_message">"Make sure your toothbrush is on and bring it closer to your device, it will connect automatically."</string>
+
+    <!-- Popup choose toothbrush -->
+    <string name="popup_choose_toothbrush_title">"Select a toothbrush to continue"</string>
+    <string name="popup_choose_toothbrush_manual">"Manual toothbrush"</string>
+
+    <!-- Popup brushing records -->
+    <string name="popup_brushing_record_title">"Well done!"</string>
+    <string name="popup_brushing_record_message_singular">"You just synced 1 offline brushing."</string>
+    <string name="popup_brushing_record_message_multiple">"You just synced %d offline brushing sessions."</string>
+
+    <!-- Popup mandatory update -->
+    <string name="popup_mandatory_update_title">"Mandatory update"</string>
+    <string name="popup_mandatory_update_message">"Your toothbrush needs to be updated to function properly."</string>
+    <string name="popup_mandatory_update_button">"Update now"</string>
+    <string name="popup_mandatory_enable_internet">"Connect to the internet to start the update."</string>
+    <string name="firmware_upgrade_downloading">"Downloading..."</string>
+    <string name="firmware_upgrade_rebooting">"Rebooting..."</string>
+    <string name="firmware_upgrade_installing">"Installing..."</string>
+    <string name="firmware_upgrade_cancel">"Cancel"</string>
+    <string name="firmware_upgrade_upgrade">"Upgrade"</string>
+
+    <!-- Fuzzy -->
+    <string name="firmware_upgrade_error_dialog">"Firmware upgrade failed:
+%s"</string>
+    <string name="firmware_success">"Your toothbrush is up to date."</string>
+    <string name="firmware_upgrade_retry">"Retry"</string>
+
+    <!-- Home -->
+    <string name="tab_home">"Home"</string>
+    <string name="tab_brush">"Activities"</string>
+
+    <!-- Home -->
+    <string name="tab_checkup">"Checkup"</string>
+
+    <!-- Dashboard -->
+    <string name="dashboard_hint">"Weekly average"</string>
+    <string name="dashboard_last_session_hint">"Last brushing session"</string>
+    <string name="dashboard_duration">"Duration"</string>
+    <string name="dashboard_frequency">"Frequency"</string>
+    <string name="dashboard_surface">"Surface"</string>
+    <string name="dashboard_coverage">"Coverage"</string>
+    <string name="dashboard_minutes">"Minutes"</string>
+    <string name="dashboard_per_day">"Per day"</string>
+    <string name="dashboard_percentage">"Coverage"</string>
+    <string name="dashboard_no_bluetooth">"Please turn on the Bluetooth on your device"</string>
+    <string name="dashboard_week">"Week"</string>
+    <string name="dashboard_average_duration">"Average duration:
+%s/brushing session"</string>
+    <string name="dashboard_average_duration_hint">"Dentists say that a 2mins brushing session twice a day decreases the risks of tooth decay."</string>
+    <string name="dashboard_average_regularity">"Average brushing sessions:
+%s times/day"</string>
+    <string name="dashboard_average_frequency_hint">"Dentists say that brushing your teeth twice a day decreases the risks of tooth decay.
+
+It's harmful for your gums to brush your teeth over three times per day."</string>
+    <string name="dashboard_average_surface">"Average brushed surface:
+%s"</string>
+    <string name="dashboard_average_surface_hint">"Tooth decay can be found everywhere!
+
+Every surface of every tooth is important, so you should aim for 100% brushed surfaces :)"</string>
+    <string name="dashboard_last_session_empty">"-"</string>
+
+    <!-- Profile -->
+    <string name="edit_profile_smart_brushing_analyser">@string/sba_game_name</string>
+    <string name="profile_information_name">"First Name"</string>
+    <string name="profile_information_name_hint">"Your first name"</string>
+    <string name="profile_information_age">"Age"</string>
+    <string name="profile_information_age_hint">"How old are you?"</string>
+    <string name="profile_information_gender_hint">"Gender"</string>
+    <string name="profile_information_handedness_hint">"Handedness"</string>
+    <string name="profile_years_old">"years old"</string>
+    <string name="profile_picture_dialog_title">"Set your picture"</string>
+    <string name="profile_set_picture">"Add a picture"</string>
+    <string name="profile_created_title">"Hurray!"</string>
+    <string name="profile_created_message">"Your profile has been created. You are now ready to brush your teeth!"</string>
+    <string name="profile_last_sba">"Last Smart Brushing Analysis"</string>
+    <string name="profile_my_profiles">"Profiles"</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_subtitle">"Your smart brushing
+companion"</string>
+    <string name="onboarding_login"><![CDATA[Already have an account? <b>Log in</b>]]></string>
+    <string name="onboarding_start">"Start the experience"</string>
+
+    <!-- Sign up tunnel -->
+    <string name="sign_up_profile_info_title">"Please tell us a little more about yourself"</string>
+    <string name="sign_up_profile_wait">@string/please_wait</string>
+    <string name="sign_up_profile_info_next">"Join Colgate Connect"</string>
+
+    <!-- Delete account popup -->
+    <string name="delete_account">"Delete my account"</string>
+    <string name="delete_account_popup_message">"Are you really sure you want to delete your account? This operation is not reversible."</string>
+    <string name="delete_account_popup_yes">"yes, delete my account"</string>
+
+    <!-- Checkup Popup -->
+    <string name="checkup_popup_title">"Checkup"</string>
+    <string name="checkup_popup_message_last">"This checkup shows your last brushing. Pay extra attention to the yellow areas as these have been neglected and have higher risk of plaque!"</string>
+    <string name="checkup_popup_message">"This checkup shows your brushing. Pay extra attention to the yellow areas as these have been neglected and have higher risk of plaque!"</string>
+
+    <!-- Turn on your toothbrush popup -->
+    <string name="setup_ara_popup_title">"Important!"</string>
+    <string name="setup_ara_popup_message">"Before proceeding, please press your toothbrush button twice."</string>
+
+    <!-- Add ara user activity -->
+    <string name="add_ara_user_add_profile">"Add profile"</string>
+    <string name="add_ara_user_hint">"You can change this link later in your toothbrush settings."</string>
+    <string name="add_ara_user_subtitle">"Who will use this toothbrush?"</string>
+    <string name="add_ara_shared">"Shared"</string>
+
+    <!-- No BLE popup -->
+    <string name="no_ble_popup_message">"This device is not compatible with Bluetooth Low Energy"</string>
+
+    <!-- BRUSH HEAD RENEWAL DIALOG -->
+    <string name="brush_head_dialog_title">"Renew your brushhead, %1$s"</string>
+    <string name="brush_head_dialog_message">"Congratulations! You cumulated more than 120 brushings. It's time to renew your brushhead."</string>
+    <string name="brush_head_buy_now">"Buy now"</string>
+    <string name="brush_head_remind">"Later"</string>
+    <string name="brush_head_no">"No thanks"</string>
+    <string name="title_activity_slideshow">"Slideshow"</string>
+
+    <!-- Popup toothbrush belongs to another user -->
+    <string name="popup_assign_toothbrush_data_dialog">"The active profile is %1$s but you are using %2$s's toothbrush! To whom should the data be assigned?"</string>
+
+    <!-- ORPHAN BRUSHINGS -->
+    <string name="orphan_brushings">"Unassigned brushings"</string>
+    <string name="orphan_brushings_assign_hint">"Assign selected brushings"</string>
+    <string name="orphan_brushings_delete_hint">"Delete selected brushings"</string>
+    <string name="orphan_brushing_subtitle">"Duration: %1$s min %2$s s, Surface %3$d%%"</string>
+    <string name="orphan_brushings_detelete_title">"Are you sure?"</string>
+    <string name="orphan_brushings_detelete_message">"Do you really want to delete these brushings? This action is irreversible."</string>
+    <string name="orphan_brushings_empty">"No unassigned brushings. Great!"</string>
+
+    <!-- PROFILE LIST DIALOG -->
+    <string name="profile_list_dialog_title">"Select a profile"</string>
+
+    <!-- SLIDESHOW -->
+    <string name="slideshow_next">"Next"</string>
+    <string name="slideshow_skip">"Skip"</string>
+    <string name="slideshow_alright_button">"Alright!"</string>
+    <string name="slideshow_here_to_help_title">"We're here to help!"</string>
+    <string name="slideshow_here_to_help_message">"Want Even Cleaner Teeth?
+We’ve created some smart, new features to help get your oral hygiene to the next level."</string>
+    <string name="slideshow_here_to_help_button">"Discover our activities"</string>
+    <string name="slideshow_meet_coach_title">"Meet the coach"</string>
+    <string name="slideshow_meet_coach_message">"We have a coach program to help give you stronger long-term brushing habits
+
+Coach is a 2D view that highlights the zone of the mouth to brush."</string>
+    <string name="slideshow_pirate_title">"Play with Go Pirate!"</string>
+    <string name="slideshow_pirate_message">"Turn your toothbrush into a game console! Collect coins and hunt for Black Beard’s treasure!"</string>
+    <string name="slideshow_pirate_additional_message">"(and more games to come!)"</string>
+    <string name="slideshow_dashboard_title">"Your Dashboard"</string>
+
+    <!-- Slideshow -->
+    <string name="slideshow_dashboard_message">"Clear and valuable info about you and your brushing habits all in one place."</string>
+    <string name="slideshow_taking_care_brush_title">"Taking Care of your brush"</string>
+    <string name="slideshow_taking_care_brush_message">"Regularly clean the handle and charging base with a damp cloth.
+
+This is especially important if your toothpaste contains baking soda or other bicarbonates or peroxide"</string>
+    <string name="slideshow_personalize_brush_title">"Personalize Your Brush"</string>
+    <string name="slideshow_personalize_brush_message">"To change the default brushing time head to settings and into your profile. Set the time you wish under Brushing Time"</string>
+    <string name="slideshow_dentist_tip_title">"Dentist Top Tip"</string>
+    <string name="slideshow_dentist_tip_message">"Place the toothbrush at a 45° angle to your teeth and make small motions from the gums towards the edge of the teeth
+
+For your front teeth don’t forget to brush in front and behind the tooth surface"</string>
+
+    <!-- SPREAD THE WORD -->
+    <string name="spread_the_word">"Spread the word"</string>
+    <string name="spread_review_app">"Review the app"</string>
+    <string name="spread_tell_a_friend">"Tell a friend"</string>
+    <string name="spread_newsletter">"Newsletter"</string>
+    <string name="spread_facebook">"Facebook"</string>
+    <string name="spread_twitter">"Twitter"</string>
+    <string name="spread_instagram">"Instagram"</string>
+    <string name="spread_youtube">"Youtube"</string>
+
+    <!-- TOOTHBRUSH LIST -->
+    <string name="toothbrush_removed">"Toothbrush removed"</string>
+    <string name="undo">"UNDO"</string>
+    <string name="checkup_coverage_100">"Congratulations! That's a perfect brushing session. All your teeth have been brushed for the required amount of time."</string>
+    <string name="checkup_coverage_85">"Well done, your brushing session is close to perfection. Keep it up."</string>
+    <string name="checkup_coverage_50">"You can do better. Next time you brush pay extra attention to the yellow areas. These haven't been brushed for the required amount of time."</string>
+    <string name="checkup_coverage_below_50">"Plaque alert! Next time you brush pay extra attention to the yellow areas. These have been neglected."</string>
+    <string name="checkup_coverage_no_data">"No surface data available for this brushing."</string>
+
+    <!-- User in OTA screen, but no OTA associated to toothbrush -->
+    <string name="firmware_upgrade_ota_not_available">"No update available"</string>
+
+    <!-- Dialog displayed after user pressed cancel button in update ota -->
+    <string name="firmware_upgrade_cancel_dialog_message">"Are you sure you want to cancel the update?"</string>
+    <string name="welcome_email_hint">"What's your email?"</string>
+    <string name="welcome_email_facebook_hint">"We won't post anything to Facebook"</string>
+    <string name="welcome_email_or">"- or -"</string>
+    <string name="welcome_email_facebook_button">"Continue with Facebook"</string>
+    <string name="welcome_password_hint">"What's your password?"</string>
+    <string name="welcome_password_magic_link_button">"E-mail me a link to sign in"</string>
+    <string name="welcome_inbox_title">"Check your inbox"</string>
+    <string name="welcome_inbox_hint">"No need to remember a long or hard to type password. We have just sent you an email to help you log in.
+
+Open it from your smartphone and click on the provided link to log in. But hurry, the link expires after 30 min."</string>
+    <string name="coppa_pending_parental_consent">"Pending parental consent"</string>
+    <string name="coppa_prevent_dialog_title">"Feature disabled"</string>
+    <string name="coppa_prevent_dialog_message">"Parental consent is required to perform this action"</string>
+    <string name="welcome_birthday_title">"When were you born?"</string>
+    <string name="welcome_birthday_day">"Day"</string>
+    <string name="welcome_birthday_month">"Month"</string>
+    <string name="welcome_birthday_year">"Year"</string>
+    <string name="logout_warning_dialog_title">"Warning"</string>
+    <string name="logout_warning_dialog_message">"You have more than 10 brushing sessions recorded on your account. Link your account to your email address or you will lose your data: you won't be able to access your account after logout."</string>
+    <string name="logout_warning_dialog_enter_email">"Enter email"</string>
+    <string name="logout_warning_dialog_button_continue">"No thanks"</string>
+    <string name="save_your_data">"Save your data"</string>
+    <string name="save_your_data_title">"Don't lose your data!"</string>
+    <string name="save_your_data_subtitle">"Secure your stats by entering your email or logging in with Facebook now."</string>
+    <string name="save_your_data_fb_button">"Log in with Facebook"</string>
+    <string name="save_your_data_email_button">"Sign up via email"</string>
+    <string name="save_your_data_cancel_button">"No thanks"</string>
+    <string name="save_your_data_email_hint">"What's your email?"</string>
+    <string name="save_your_data_submit">"Submit"</string>
+    <string name="your_data_saved_title">"Your data is now saved"</string>
+    <string name="your_data_saved_subtitle">"You will be sure to retrieve your data in any cases."</string>
+    <string name="your_data_saved_ok">"OK"</string>
+    <string name="welcome_birthday_invalid_day">"The day is not valid"</string>
+    <string name="welcome_birthday_invalid_month">"The month is not valid"</string>
+    <string name="welcome_birthday_invalid_year">"The year is not valid"</string>
+    <string name="welcome_birthday_invalid_date">"Birthdate is not valid"</string>
+    <string name="terms_of_use_not_clicked">"You must agree to the terms and conditions"</string>
+    <string name="parent_consent_title">"Email"</string>
+    <string name="parent_consent_instructions">"Please provide us with your parent or guardian's email address, and we'll contact him or her with next steps!"</string>
+    <string name="parent_consent_hint">"Parent or guardian email address"</string>
+    <string name="register_email_dialog_title">"Register your email"</string>
+    <string name="register_email_dialog_message">"You have more than 10 brushing sessions recorded on your account. Link your account to your email address or you risk losing your data: you won't be able to access your account in case of logout."</string>
+    <string name="register_email_dialog_ok">"Enter email"</string>
+    <string name="register_email_dialog_cancel">"Not now"</string>
+    <string name="help_us_customize_title">"Help us customize\nyour experience"</string>
+    <string name="setup_toothbrush_m1_search">"Search"</string>
+    <string name="sba_game_description">"Use the Test Brushing to diagnose your brushing habits and identify areas for improvement."</string>
+    <string name="validate_birthday_error">"Due to a server error, the operation failed. Please try again."</string>
+    <string name="edit_profile_birthday">"Your birthday"</string>
+    <string name="error_no_internet">"The internet connection appears to be offline."</string>
+    <string name="something_went_wrong">"Something went wrong. Please try again later."</string>
+    <string name="um_attention_title">"Attention"</string>
+    <string name="get_my_data">"Get my data"</string>
+    <string name="no_email_title">"No email on your account"</string>
+    <string name="no_email_message">"Your account does not have an associated email. Please setup an email to your account before continuing"</string>
+    <string name="title_success">"Success"</string>
+
+    <!-- Fuzzy -->
+    <string name="operation_failed_title">"Operation failed"</string>
+    <string name="operation_failed">"Due to a server error, the operation failed. Please try again later."</string>
+    <string name="email_gdpr">"An email allowing you to retrieve all your data will be sent to %s shortly."</string>
+    <string name="privacy_not_clicked">"You must agree to the privacy policy"</string>
+    <string name="terms_and_condition_agreement">"I agree to the "<![CDATA[<u><a href=\"%1$s\">%2$s</a></u>]]></string>
+    <string name="privacy_agreement">"I acknowledge the "<![CDATA[<u><a href=\"%1$s\">%2$s</a></u>]]></string>
+    <string name="choose_method_title">"Log in"</string>
+    <string name="choose_method_sms">"Log in with SMS"</string>
+    <string name="choose_method_we_chat">"Log in with WeChat"</string>
+    <string name="sms_login_title">"Log in with SMS"</string>
+    <string name="sms_login_hint">"What's your phone number?"</string>
+    <string name="sms_login_get_code">"Get authentication code"</string>
+    <string name="sms_login_code_desc">"Enter the code you've just received by SMS and press the OK button."</string>
+    <string name="sms_login_ok">"OK"</string>
+    <string name="exit">"Exit"</string>
+    <string name="retry">"Retry"</string>
+    <string name="no_facebook_account_linked">"This Facebook account isn’t linked to a Colgate Connect account"</string>
+    <string name="sms_login_invalid_number">"Invalid phone number"</string>
+    <string name="mouth_zone_bottom_incisor_exterior">"Bottom, center, outer surface"</string>
+    <string name="mouth_zone_bottom_incisor_interior">"Bottom, center, inner surface"</string>
+    <string name="mouth_zone_bottom_molar_left_exterior">"Bottom, left, outer surface"</string>
+    <string name="mouth_zone_bottom_molar_left_interior">"Bottom, left, inner surface"</string>
+    <string name="mouth_zone_bottom_molar_left_occlusal">"Bottom, left, chewing surface"</string>
+    <string name="mouth_zone_bottom_molar_right_occlusal">"Bottom, right, chewing surface"</string>
+    <string name="mouth_zone_bottom_molar_right_exterior">"Bottom, right, outer surface"</string>
+    <string name="mouth_zone_bottom_molar_right_interior">"Bottom, right, inner surface"</string>
+    <string name="mouth_zone_top_incisor_exterior">"Top, center, outer surface"</string>
+    <string name="mouth_zone_top_incisor_interior">"Top, center, inner surface"</string>
+    <string name="mouth_zone_top_molar_left_exterior">"Top, left, outer surface"</string>
+    <string name="mouth_zone_top_molar_left_interior">"Top, left, inner surface"</string>
+    <string name="mouth_zone_top_molar_left_occlusal">"Top, left, chewing surface"</string>
+    <string name="mouth_zone_top_molar_right_exterior">"Top, right, outer surface"</string>
+    <string name="mouth_zone_top_molar_right_interior">"Top, right, inner surface"</string>
+    <string name="mouth_zone_top_molar_right_occlusal">"Top, right, chewing surface"</string>
+    <string name="mouth_zone_wrong">"Wrong zone detected"</string>
+    <string name="upgrade_app_title">"Upgrade to continue"</string>
+    <string name="upgrade_app_msg">"To continue with the app, please upgrade to the latest version; We have squashed some critical bugs."</string>
+    <string name="coach_pluse_game_description">"A brand-new 3D brushing experience that guarantees 100% surface coverage."</string>
+    <string name="kolibree_pro_start_popup_title">"Colgate Connect Pro"</string>
+    <string name="kolibree_pro_start_popup_message">"Do you agree to share your brushing data with your dental professional %s so your professional can provide feedback on your brushing habits?"</string>
+    <string name="kolibree_pro_start_popup_accept">"Accept"</string>
+    <string name="kolibree_pro_start_popup_decline">"Not now"</string>
+    <string name="kolibree_pro_settings_title">"Colgate Connect Pro"</string>
+    <string name="kolibree_pro_settings_hint">"Select this option to share your brushing data with your dentist/dental office, so they can have a regular monitoring."</string>
+    <string name="kolibree_pro_practitioners_short">"Here are the professionals who you can allow access to your brushing data. If your dental professional is not listed, please contact us 1-800-468-6502. Learn more."</string>
+    <string name="kolibree_pro_practitioners_short_token">"Learn more"</string>
+    <string name="kolibree_pro_practitioners_full">"Here are the professionals who you can allow access to your brushing data. If your dental professional is not listed, please contact us 1-800-468-6502.
+
+The information collected by the Colgate Connect smart toothbrushing app may help you monitor and better understand your brushing technique. The benefits of this study are to better understand toothbrushing behavior. There are no direct benefits anticipated for you as a participant."</string>
+    <string name="kolibree_pro_practitioners_revoke_title">"Stop sharing data with %s?"</string>
+    <string name="kolibree_pro_practitioners_revoke_message">"By stopping sharing data with this professional, you terminate the personalized Colgate Connect Pro follow-up. If you wish to resume the follow-up later, this dental professional will have to send you a Colgate Connect Pro invitation in order to access your data again.
+
+Are you sure you want to continue?"</string>
+    <string name="kolibree_pro_practitioners_header">"My dental team"</string>
+    <string name="kolibree_pro_quit_popup_title">"Are you sure you want to quit?"</string>
+    <string name="kolibree_pro_quit_popup_message">"By stopping the Colgate Connect Pro process, you wont share your data with your dental practice, and they wont be able to monitor your brushing sessions."</string>
+    <string name="kolibree_pro_quit_popup_continue">"Continue"</string>
+    <string name="kolibree_pro_quit_popup_quit">"Quit anyway"</string>
+    <string name="kolibree_pro_quit_popup_remind_me_later">"Remind me later"</string>
+    <string name="kolibree_pro_channel_name">"Colgate Connect Pro"</string>
+    <string name="kolibree_pro_channel_description">"Colgate Connect Pro notifications"</string>
+    <string name="kolibree_pro_notification_title">"Colgate Connect Pro"</string>
+    <string name="kolibree_pro_notification_description">"Register your toothbrush"</string>
+    <string name="kolibree_practitioners_popup_message">"Do you agree to share your brushing data with your dental professional %1$s so your professional can provide feedback on your brushing habits?"</string>
+    <string name="kolibree_practitioners_accept">"Ok"</string>
+    <string name="kolibree_practitioners_decline">"No thanks"</string>
+    <string name="running_in_background">"Le service de connexion est activé"</string>
+
+    <!-- Dialog displayed after user pressed cancel button in update ota -->
+    <string name="coach_settings_choose_music">"Choose music"</string>
+    <string name="coach_settings_coach_sounds_title">"Coach sounds"</string>
+    <string name="coach_settings_shuffle">"Shuffle"</string>
+    <string name="coach_settings_music">"Music"</string>
+    <string name="coach_settings_transitions_sounds">"Transitions sounds"</string>
+    <string name="coach_settings_display_brushing_movements">"Display brushing movements"</string>
+    <string name="coach_settings_display_helps_texts">"Display helps texts"</string>
+    <string name="coach_settings_sounds">"Sounds"</string>
+    <string name="setup_i_dont_have_connect_e1">"I don't have a Connect E1"</string>
+    <string name="tb_toolbar_connect">"Connect a toothbrush"</string>
+    <string name="tb_toolbar_connected">"Connected"</string>
+    <string name="tb_toolbar_retrieving_brushing">"Retrieving brushings"</string>
+    <string name="tb_toolbar_disconnected">"Disconnected"</string>
+    <string name="tb_toolbar_enable_bleutooth">"Please enable Bluetooth"</string>
+    <string name="tb_toolbar_last_sync_title">"LAST SYNC"</string>
+    <string name="tb_toolbar_last_sync_today">"Today"</string>
+    <string name="tb_toolbar_last_sync_yesterday">"Yesterday"</string>
+    <string name="tb_toolbar_last_sync_never">"Never"</string>
+    <string name="tb_toolbar_connecting">"Connecting"</string>
+    <string name="m1_fake_dialog_title">"Initiating Setup"</string>
+    <string name="m1_fake_dialog_initiating_setup">"Please hold your toothbrush still or place it on a flat surface during setup"</string>
+    <string name="m1_fake_dialog_configuring">"Configuring..."</string>
+    <string name="m1_fake_dialog_calibrating">"Configuring..."</string>
+    <string name="m1_fake_dialog_completed">"Setup Complete!"</string>
+    <string name="m1_fake_dialog_ready_to_use">"Your M1 is ready to use"</string>
+    <string name="m1_fake_dialog_dont_move_brush">"Do not move your M1 during setup"</string>
+    <string name="welcome_title">"Welcome!"</string>
+    <string name="welcome_subtitle">"Start experiencing the\n future of oral care!"</string>
+    <string name="welcome_connect_tb">"Connect my smart toothbrush"</string>
+    <string name="welcome_no_smrt_tb">"I don't have a smart toothbrush"</string>
+    <string name="welcome_have_account">"Already have an account? Log in"</string>
+    <string name="welcome_have_account_login">"Log in"</string>
+    <string name="tb_model_selection_toolbar_title">"Connect your toothbrush"</string>
+    <string name="tb_model_selection_title">"Which toothbrush\n do you have?"</string>
+    <string name="activate_bt_title">"Bluetooth"</string>
+    <string name="activate_bt_button">"Activate Bluetooth"</string>
+    <string name="activate_bt_description">"To connect your toothbrush, please activate Bluetooth on your device"</string>
+    <string name="location_permission_title">"Location permission"</string>
+    <string name="location_permission_button">"Grant permission"</string>
+    <string name="connecting_dialog_title">"Connecting…"</string>
+    <string name="connecting_dialog_stop">"Stop"</string>
+    <string name="connection_successful_dialog_title">"Connection successful"</string>
+    <string name="connection_successful_dialog_message">"Turn your toothbrush off"</string>
+    <string name="connection_error_dialog_title">"Connection error"</string>
+    <string name="tb_connection_title">"Wake your toothbrush up"</string>
+    <string name="tb_connection_subtitle">"Press the XXX button on your toothbrush"</string>
+    <string name="tb_connection_subtitle_manual">"Shake your toothbrush to activate the bluetooth pairing process"</string>
+    <string name="tb_connection_nothing">"Nothing happens?"</string>
+    <string name="detection_popup_title">"A %1$s toothbrush has been detected!"</string>
+    <string name="detection_popup_question">"Can you see a blue blink on your brush?"</string>
+    <string name="detection_popup_yes">"Yes, connect"</string>
+    <string name="detection_popup_no">"No, keep looking for my brush"</string>
+    <string name="e1_troubleshooting_title">"Are you trying to connect a Connect E1 toothbrush?"</string>
+    <string name="e1_troubleshooting_no_tb">"I don’t have a Colgate connected toothbrush"</string>
+    <string name="e1_troubleshooting_yes">"Yes"</string>
+    <string name="e1_troubleshooting_no">"No"</string>
+    <string name="blink_toothbrush_led">"Blink"</string>
+    <string name="test_brushing_start">"Start brushing now"</string>
+    <string name="test_brushing_tip">"Did you know that most people only brush 40% of their teeth surface?"</string>
+    <string name="test_brushing_lets_see_how_you_brush">"Now let's see how you brush:"</string>
+    <string name="test_brushing_instructions_1">"Brush your teeth like you usually do"</string>
+    <string name="test_brushing_instructions_2">"Discover how effectively you brush"</string>
+    <string name="test_brushing_instructions_3">"Improve your brushing with our personalized coaching program"</string>
+    <string name="test_brushing_screen_title">"Test brushing"</string>
+    <string name="dialog_conn_error_title">"We couldn’t find your toothbrush."</string>
+    <string name="dialog_conn_error_description">"Switching the bluetooth off and on again usually solves connection issues."</string>
+    <string name="dialog_conn_error_description_small">"If your toothbrush is near you but still doesn’t appear here, it may be because it needs to be turned on, it has a low battery level, or it’s already connected to another device."</string>
+    <string name="profile_data_saved_info">"Your data will be saved"</string>
+    <string name="profile">"Profile"</string>
+    <string name="birth_date_hint">"We’ll surprise you for your birthday!"</string>
+    <string name="email_already_used_error">"This email address is already used"</string>
+    <string name="tab_rewards">"Rewards"</string>
+    <string name="rewards_tab_challenges">"Challenges"</string>
+    <string name="rewards_tab_tier">"Tier"</string>
+    <string name="rewards_tab_smiles">"Redeem"</string>
+    <string name="header_smiles">"%1$s Smile Points"</string>
+    <string name="rewards_support_url">"https://colgateconnect.zendesk.com/hc/en-us/articles/115005703746"</string>
+    <string name="test_brushing_session_electric_line1">"Turn your toothbrush on,"</string>
+    <string name="test_brushing_session_electric_line2">"and start brushing as you usually do!"</string>
+    <string name="test_brushing_session_manual">"Start brushing as you usually do!"</string>
+    <string name="durring_session_description_step1">"Gently brush your teeth and gums as you would using a regular toothbrush"</string>
+    <string name="durring_session_highlighted_step1">"brush your teeth and gums"</string>
+    <string name="durring_session_description_step2">"Stop brushing when you would normally do"</string>
+    <string name="durring_session_description_step3">"Sonic vibrations help remove dental plaque"</string>
+    <string name="durring_session_highlighted_step3">"Sonic vibrations"</string>
+    <string name="durring_session_description_step3_manual">"Cleaning bristles &amp; polishing cups help remove more plaque, stains and bacteria"</string>
+    <string name="durring_session_highlighted_step3_manual">"Cleaning bristles &amp; polishing cups"</string>
+    <string name="durring_session_description_step4">"We are analyzing your brushing to help you improve your brushing technique"</string>
+    <string name="durring_session_highlighted_step4">"improve your brushing technique"</string>
+
+    <!-- optimize analyser -->
+    <string name="optimize_your_brushing_analysis">"Optimize your brushing analysis"</string>
+    <string name="which_hand_do_you_hold_your_toothbrush_with">"Which hand do you hold your toothbrush in?"</string>
+    <string name="left">"Left"</string>
+    <string name="right">"Right"</string>
+    <string name="how_many_times_a_day_do_you_brush_your_teeth">"How many times a day do you brush your teeth?"</string>
+    <string name="get_my_results">"Get my results"</string>
+    <string name="finish_brushing_dialog_title">"Are you done?"</string>
+    <string name="finish_brushing_dialog_yes">"I'm done"</string>
+    <string name="finish_brushing_dialog_resume">"Not yet, resume"</string>
+    <string name="my_connect_e2">"My Connect E2"</string>
+    <string name="setup_toothbrush_connect_e2_title">"Connect your E2"</string>
+    <string name="results_analysis_successful_title">"Analysis successful"</string>
+    <string name="results_analysis_successful_body">"Discover how good your brushing technique is."</string>
+    <string name="results_mouth_coverage_title">"Mouth coverage"</string>
+    <string name="results_mouth_coverage_hint">"How to read this diagram?"</string>
+    <string name="analysis_in_progress">"Analysis in progress"</string>
+    <string name="brushing_progress_msg_1">"Brushing duration"</string>
+    <string name="brushing_progress_msg_2">"Mouth coverage"</string>
+    <string name="brushing_progress_msg_3">"Angle analysis"</string>
+    <string name="brushing_progress_msg_4">"Brushing movements"</string>
+    <string name="select_a_toothbrush_to_continue">"Select a toothbrush to continue."</string>
+    <string name="results_mouth_coverage_tooth_clean">"It's clean"</string>
+    <string name="results_mouth_coverage_tooth_dirty">"Needs more\nbrushing"</string>
+    <string name="mouth_coverage_perfect">"Congratulations! That's a perfect brushing session."</string>
+    <string name="mouth_coverage_good">"You missed a few areas. Try our brushing coach to reach 100%."</string>
+    <string name="mouth_coverage_medium">"You can do even better. Try our brushing coach so you won't miss any spot."</string>
+    <string name="mouth_coverage_bad">"There's room for improvement. Try our brushing coach so you won't miss any spot."</string>
+    <string name="mouth_coverage_no_data">"No surface data available for this brushing."</string>
+    <string name="read_diagram_dialog_body">"It’s like looking in the mirror, the right side of the jaw on the screen is the right side of your mouth"</string>
+    <string name="read_diagram_dialog_title">"Read the diagram"</string>
+    <string name="read_diagram_dialog_ok">"Got it"</string>
+    <string name="read_diagram_dialog_top">"Top"</string>
+    <string name="read_diagram_dialog_bottom">"Bottom"</string>
+    <string name="read_diagram_dialog_left">"Left"</string>
+    <string name="read_diagram_dialog_right">"Right"</string>
+    <string name="hint_tap_to_change_view">"Tap to change the view"</string>
+    <string name="test_brushing_analysis_screen_title">"Analysis"</string>
+    <string name="dialog_lost_connexion_quit_btn">"Quit (and start again later)"</string>
+    <string name="dialog_lost_connexion_title">"Connection lost"</string>
+    <string name="dialog_lost_connexion_description">"The connection with your toothbrush has been lost.
+Wait for it to reconnect or restart your brushing session later."</string>
+
+    <!-- Pirate game does not work on user's Android version -->
+    <string name="pirate_not_supported_os_version">"Please update to Android 6 or above to use GoPirate."</string>
+    <string name="speed_proper">"Proper
+speed"</string>
+    <string name="speed_too_fast">"Too
+fast"</string>
+    <string name="speed_card_title">"Brushing speed"</string>
+    <string name="speed_card_hint">"Learn more"</string>
+    <string name="speed_learn_more_dialog_title">"Brushing speed"</string>
+    <string name="speed_learn_more_dialog_body_top">"The harder and faster you brush might feel more effective, but brushing with this hard, sawing motion actually promotes unhealthy build up between your teeth and gums."</string>
+    <string name="speed_learn_more_dialog_body_bottom">"Try brushing slower, focusing on one tooth at a time, and allowing the bristles to clean in between the teeth."</string>
+    <string name="speed_learn_more_dialog_help">"Need help to understand the diagram?"</string>
+    <string name="speed_description_by_groups">"Your movements were too fast when you brushed %1$s. Slow down to keep healthy teeth."</string>
+    <string name="speed_description_average">"Your movements were too fast during %1$s of your brushing. Slow down to keep healthy teeth."</string>
+    <string name="speed_description_all_good">"Nothing to report!"</string>
+    <string name="speed_group_occlusal">"your occlusals"</string>
+    <string name="speed_group_outside_molars">"the outside surface of your molars"</string>
+    <string name="speed_group_inside_molars">"the inside surface of your molars"</string>
+    <string name="speed_group_outside_incisives">"the outside surface of your front teeth"</string>
+    <string name="speed_group_inside_incisives">"the inside surface of your front teeth"</string>
+    <string name="speed_quadrant_top_left">"your top left quadrant"</string>
+    <string name="speed_quadrant_top_right">"your top right quadrant"</string>
+    <string name="speed_quadrant_bottom_left">"your bottom left quadrant"</string>
+    <string name="speed_quadrant_bottom_right">"your bottom right quadrant"</string>
+    <string name="speed_too_slow">"Too
+slow"</string>
+    <string name="game_loader_download_game">"Download"</string>
+    <string name="game_loader_game_requires_update">"Mandatory update"</string>
+    <string name="game_loader_game_download_in_progress">"Downloading"</string>
+    <string name="game_loader_update_available">"Update available"</string>
+    <string name="ota.low.battery.subtitle">"Charge/replace your toothbrush battery to perform the update."</string>
+    <string name="ota.low.battery.title">"The toothbrush does not have enough battery"</string>
+    <string name="toothbrush.battery.change.required">"Change your battery immediately."</string>
+    <string name="toothbrush.battery.few.days">"Only few days of battery lifetime available, get ready to replace it."</string>
+    <string name="toothbrush.battery.few.weeks">"Still few weeks of battery lifetime available assuming you use our standard AAA alkaline battery from Energizer. Other types of batteries may lead to lower battery life."</string>
+    <string name="toothbrush.battery.six.months">"More than 6 months of battery lifetime available assuming you use our standard AAA alkaline battery from Energizer. Other types of batteries may lead to lower battery life."</string>
+    <string name="toothbrush.battery.three.months">"More than 3 months of battery lifetime available assuming you use our standard AAA alkaline battery from Energizer. Other types of batteries may lead to lower battery life."</string>
+    <string name="toothbrush.battery.state.change.required">"empty"</string>
+    <string name="toothbrush.battery.state.few.days">"few days"</string>
+    <string name="toothbrush.battery.state.few.weeks">"few weeks"</string>
+    <string name="toothbrush.battery.state.six.months">"6+ months"</string>
+    <string name="toothbrush.battery.state.three.months">"3+ months"</string>
+    <string name="toothbrush.battery.state.unknown">"unknown"</string>
+    <string name="delete_game_dialog_title">"Are you sure you want to delete %1$s?"</string>
+    <string name="delete_game_dialog_body">"You will be able to download it again later."</string>
+    <string name="delete_game_dialog_ok">"Delete"</string>
+    <string name="delete_game_dialog_cancel">"Cancel"</string>
+    <string name="tb_toolbar_enable_location">"Please enable Location"</string>
+    <string name="my_connect_b1">"My Connect B1"</string>
+    <string name="setup_toothbrush_connect_b1_title">"Connect your B1"</string>
+    <string name="challenge_details_won">"won"</string>
+    <string name="challenge_details_close">"Close"</string>
+    <string name="challenge_details_completed_on">"Completed on"</string>
+    <string name="challenge_details_start">"Start this challenge"</string>
+    <string name="challenge_details_not_completed">"Not completed yet"</string>
+    <string name="challenge_details_continue">"Continue this challenge"</string>
+    <string name="current_tier_smiles_label_description">"Each brushing earns %1$s"</string>
+    <string name="next_tier_label">"Next tier"</string>
+    <string name="next_tier_description">"%1$s more challenges to become %2$s!"</string>
+    <string name="future_tier_description">"1 brushing = %1$s smiles"</string>
+    <string name="coach_start_message_title">"Turn on your toothbrush to start your Coached brushing session"</string>
+    <string name="coach_dialog_start_message_title">"Let's start"</string>
+    <string name="coach_dialog_start_message_body">"Use one of the connected toothbrushes to start your Coached brushing session"</string>
+    <string name="coach_dialog_start_message_cancel">"Cancel"</string>
+    <string name="coach_manual_dialog_start_message_body">"Click the button to start your manual Coached brushing session"</string>
+    <string name="coach_manual_dialog_start_message_start">"Start"</string>
+    <string name="buy">"Buy"</string>
+    <string name="smiles_count">"You have %s Smiles"</string>
+    <string name="smiles_history_link">"See smiles history"</string>
+    <string name="challenge_details_action_offline">"What is offline brushing?"</string>
+    <string name="offline_brushing_toolbar_title">"Offline brushing"</string>
+    <string name="offline_brushing_title">"You can use your Colgate Connect toothbrush with or without the app"</string>
+    <string name="offline_brushing_point1">"Brush with Colgate Connect while the app is not open : your brushing technique is still analyzed"</string>
+    <string name="offline_brushing_point2">"You can then synchronize your toothbrush by simply opening your App and discover new insights"</string>
+    <string name="smiles_history">"Smiles history"</string>
+    <string name="smiles_history_brushing">"Brushing"</string>
+    <string name="smiles_history_challenge_completed">"Challenge completed : %s"</string>
+    <string name="smiles_history_offline_brushing">"Offline brushing"</string>
+    <string name="smiles_history_online_brushing">"Brushing with %s"</string>
+    <string name="smiles_history_transfer_from">"%s Smiles received from %s"</string>
+    <string name="smiles_history_transfer_in">"%s Smiles received"</string>
+    <string name="smiles_history_transfer_out">"%s Smiles transferred"</string>
+    <string name="smiles_history_transfer_to">"%s Smiles transferred to %s"</string>
+    <string name="smiles_history_tier_reached">"%s tier reached. Every tooth brushing brings you %s Smiles."</string>
+    <plurals name="challenge_details_more_to_earn">
+        <item quantity="one">"%1$d more to earn %2$d smile!"</item>
+        <item quantity="other">"%1$d more to earn %2$d smiles!"</item>
+    </plurals>
+    <string name="smiles_history_smiles_count">"%s Smiles"</string>
+    <string name="coach_start_message_title_manual">"Shake your toothbrush to start your Coached brushing session"</string>
+
+    <!-- Fuzzy -->
+    <string name="smiles_history_week_streak">"Week streak"</string>
+    <string name="transfer_smiles">"Transfer smiles"</string>
+    <string name="family_smiles">"Family Smiles"</string>
+    <string name="rewards_error_no_internet_connection">"Please enable your internet connection to load Rewards data."</string>
+    <string name="rewards_error_synchronisation_failed">"An error occurred while loading data. Please try again later."</string>
+    <string name="smiles_transfer_title">"Transfer smiles"</string>
+    <string name="smiles_transfer_current_balance">"Current balance"</string>
+    <string name="smiles_transfer_transfer_amount">"Transfer amount"</string>
+    <string name="smiles_transfer_to">"Transfer to"</string>
+    <string name="smiles_transfer_validate">"Transfer"</string>
+    <string name="smiles_transfer_smiles">"Smiles"</string>
+    <string name="smiles_transfer_smiles_won">"%s Smiles won"</string>
+    <string name="smiles_transfer_done">"Transfer is done!"</string>
+    <string name="challenge_feedback_collect_smiles">"Collect my smiles"</string>
+    <string name="multi_challenge_feedback_title">"Congratulation!"</string>
+    <string name="multi_challenge_feedback_message_part1">"You completed"</string>
+    <plurals name="multi_challenge_feedback_message_part2">
+        <item quantity="one">"%1$d new challenge."</item>
+        <item quantity="other">"%1$d new challenges."</item>
+    </plurals>
+    <string name="multi_challenge_feedback_message_part3">"Swipe to discover them."</string>
+    <plurals name="smiles_feedback_good">
+        <item quantity="one">"What a nice brushing!\nYou just won %1$d Smile!"</item>
+        <item quantity="other">"What a nice brushing!\nYou just won %1$d Smiles!"</item>
+    </plurals>
+    <string name="smiles_feedback_bad">"Unfortunately you didn't win any Smiles with this brushing.\nYou need to get at least 50%% surface coverage to win Smiles."</string>
+    <string name="my_plaqless">"My Plaqless Pro"</string>
+    <string name="setup_toothbrush_plaqless_title">"Connect your Plaqless Pro"</string>
+    <string name="new_tier_title">"You've reached %s tier"</string>
+    <string name="new_tier_message">"Congratulations %s, you completed %s challenges. Keep on going!"</string>
+    <string name="new_tier_coins">"From now on every tooth brushing brings you"</string>
+    <string name="feedback_offline_sync">"Hey, you synced %s brushings and won %s Smiles!"</string>
+    <string name="feedback_offline_sync_no_smiles">"Hey, you synced %s brushings but didn't win any Smiles.\nYou need to get at least 50%% surface coverage to win Smiles."</string>
+    <string name="pql_connection_title">"Start by pressing the XXX button on your toothbrush"</string>
+    <string name="pql_connection_description"><![CDATA[Look out for the flashing <b>bluetooth symbol</b>]]></string>
+    <string name="calendar_tab">"Calendar"</string>
+    <string name="detection_popup_pql_no">"Keep looking for my brush"</string>
+    <string name="detection_popup_pql_yes">"Connect"</string>
+    <string name="plaqless_intro_title">"Welcome to Colgate Plaqless Pro"</string>
+    <string name="plaqless_intro_subtitle"><![CDATA[Removing build up every day is <b>key to good oral health.</b>]]></string>
+    <string name="plaqless_intro_type_title">"Plaqless Pro indicates:"</string>
+    <string name="plaqless_intro_type_cleand">"Cleaned"</string>
+    <string name="plaqless_intro_type_remains">"Build up remains"</string>
+    <string name="plaqless_intro_type_missed">"Missed"</string>
+    <string name="plaqless_intro_start">"Get started"</string>
+    <string name="slide1_title">"Learn about the brush"</string>
+    <string name="slide1_description1"><![CDATA[<b>Advanced Smart Sensors</b> detect build up on your teeth]]></string>
+    <string name="slide1_description2"><![CDATA[<b>Indicator light ring</b> illuminates to direct your brushing]]></string>
+    <string name="slide1_description3"><![CDATA[<b>Quadrant timer</b> illuminates every 30 seconds]]></string>
+    <string name="slide2_title">"Indicator Light Ring"</string>
+    <string name="slide2_description1_title">"Blue"</string>
+    <string name="slide2_description1_content1">"Build up is detected"</string>
+    <string name="slide2_description1_content2">"Brush to remove it"</string>
+    <string name="slide2_description2_title">"White"</string>
+    <string name="slide2_description2_content1">"Area is clean"</string>
+    <string name="slide2_description2_content2">"Move on to next section"</string>
+    <string name="slide2_description3_title">"Red"</string>
+    <string name="slide2_description3_content1">"Sensor Obscured"</string>
+    <string name="slide2_description3_content2">"Rinse sensor or change brush angle"</string>
+    <string name="intro_start_test">"Start the test"</string>
+    <string name="dashboard_pql_tip_tricks_title">"Tips &amp; Tricks"</string>
+    <string name="dashboard_pql_tip_tricks_body">"Learn how to optimize your results"</string>
+    <string name="pql_best_results_title">"For best results"</string>
+    <string name="pql_best_results_body">"Hold the toothbrush in a horizontal position to ensure effective technique."</string>
+    <string name="pql_best_results_body_highlight">"horizontal"</string>
+    <string name="pql_best_results_ok">"Got it"</string>
+    <string name="pql_brushing_progress_msg">"Build up analysis"</string>
+    <string name="intro_do_later">"I will do it later"</string>
+    <string name="pql_durring_session_description_step1">"Pay attention to the LED ring color while you brush your teeth"</string>
+    <string name="pql_durring_session_description_step1_highlighted">"LED ring color"</string>
+    <string name="mouth_map_left">"L"</string>
+    <string name="mouth_map_right">"R"</string>
+    <string name="mouth_map_clean_score">"clean score"</string>
+    <string name="mouth_map_close">"Go to home page"</string>
+    <string name="mouth_map_dialog_ok">"Got it"</string>
+    <string name="missed_area_dialog_title">"Missed\narea"</string>
+    <string name="missed_area_dialog_body"><![CDATA[The yellow shows you <b>the areas you didn\'t brush</b>]]></string>
+    <string name="clean_score_dialog_title">"clean score"</string>
+    <string name="clean_score_dialog_clean"><![CDATA[<b>%s</b> clean]]></string>
+    <string name="clean_score_dialog_remains"><![CDATA[<b>%s</b> build up remains]]></string>
+    <string name="clean_score_dialog_missed"><![CDATA[<b>%s</b> missed]]></string>
+    <string name="build_up_remains_dialog_title">"Build up\nremains"</string>
+    <string name="build_up_remains_dialog_body"><![CDATA[The blue shows the areas that <b>have remaining build up</b>. We recommend you re-brush these areas]]></string>
+    <string name="coach_plus_feedback_message_speed_fast">"Be careful, you're brushing too fast!"</string>
+    <string name="coach_plus_feedback_message_speed_slow">"You're brushing too slow!"</string>
+
+    <!-- Fuzzy -->
+    <string name="coach_plus_feedback_message_wrong_angle_incisors_interior">"Adjust your brush head vertical tilt"</string>
+
+    <!-- Fuzzy -->
+    <string name="coach_plus_feedback_message_wrong_angle_other_zones">"Adjust your brush head angle (45°)"</string>
+    <string name="crown_explanation_dialog_title">"Great brushing day"</string>
+    <string name="crown_explanation_dialog_body">"Brush your teeth 2 times a day with more than 80%% of surface coverage per brushing to deserve your crown!"</string>
+    <string name="crown_explanation_dialog_ok">"Got it"</string>
+    <string name="week_streak_dialog_title">"Week Streak!"</string>
+    <string name="week_streak_dialog_body">"Yay, you brushed your teeth 2 times a day 7 days in a row. You won %s Smiles!"</string>
+    <string name="week_streak_dialog_ok">"Collect my %s Smiles"</string>
+    <string name="slide3_title">"Watch the brush in action"</string>
+    <string name="slide3_try_brush_now">"Try the brush out now"</string>
+    <string name="slide3_try_brush_later">"I’ll do it later"</string>
+    <string name="coach_plus_feedback_message_wrong_handle">"Hold your toothbrush horizontally"</string>
+    <string name="brushing_program_button_text">"Brushing Program"</string>
+    <string name="brushing_quiz_label">"Brushing program"</string>
+    <string name="brushing_quiz_screen_1_title">"How would you rate your current oral care routine?"</string>
+    <string name="brushing_quiz_screen_1_answer_1">"Pretty good"</string>
+    <string name="brushing_quiz_screen_1_answer_2">"Average"</string>
+    <string name="brushing_quiz_screen_1_answer_3">"Could be improved"</string>
+    <string name="brushing_quiz_screen_2_title">"How often do you suffer with gum or tooth sensitivity?"</string>
+    <string name="brushing_quiz_screen_2_answer_1">"Not often"</string>
+    <string name="brushing_quiz_screen_2_answer_2">"Often"</string>
+    <string name="brushing_quiz_screen_3_answer_1">"Whiter teeth"</string>
+    <string name="brushing_quiz_screen_3_answer_2">"Fresher breath"</string>
+    <string name="brushing_quiz_screen_3_answer_3">"Protecting sensitive teeth or gums"</string>
+    <string name="brushing_quiz_screen_3_title">"What would you most like to work on today?"</string>
+    <string name="brushing_quiz_screen_2_answer_3">"Daily"</string>
+    <string name="brushing_quiz_confirmation_title">"Thank you for completing the quiz"</string>
+    <string name="brushing_quiz_program_whitening">"Deep Clean"</string>
+    <string name="brushing_quiz_program_sensitive">"Gum Care"</string>
+    <string name="brushing_quiz_program_everyday_care">"Daily Clean"</string>
+    <string name="brushing_quiz_confirmation_brushing_program">"Your brushing program is\n\n%1$s"</string>
+    <string name="brushing_quiz_confirmation_try_it">"Try it now"</string>
+    <string name="brushing_quiz_confirmation_confirm">"Confirm program"</string>
+    <string name="brushing_quiz_confirmation_revert">"Revert"</string>
+    <string name="brushing_quiz_confirmation_try_it_not_paired">"You must have an electric toothbrush connected to your device to test the program"</string>
+
+    <!-- Fuzzy -->
+    <string name="test_angles_activity_name">"Test your angles"</string>
+
+    <!-- Default push notification channel -->
+    <!-- Fuzzy -->
+    <string name="push_notification_channel_general">"General notifications"</string>
+    <string name="brushing_program_dialog_title">"Select your program"</string>
+    <string name="brushing_program_dialog_slow">"Gum Care"</string>
+    <string name="brushing_program_dialog_regular">"Daily Clean"</string>
+    <string name="brushing_program_dialog_strong">"Deep Clean"</string>
+    <string name="brushing_program_dialog_current">"(current)"</string>
+    <string name="test_angles_intro_header">"Test your Angles"</string>
+    <string name="test_angles_intro_body">"Hold your toothbrush at 45 degree angle toward the gum line.
+
+Follow the instructions to evaluate and improve your technique."</string>
+    <string name="test_angles_intro_start_button">"Test your angles now"</string>
+    <string name="login_hint_enable_network">"Please enable internet access to create your account"</string>
+    <string name="test_angles_state_correct">"Good"</string>
+    <string name="test_angles_state_incorrect">"Bad"</string>
+    <string name="test_angles_molar_hint">"Brush your molars outer surface and keep the correct angle for 20 sec"</string>
+    <string name="test_angles_incisor_hint">"Tilt your toothbrush vertically for the inner front teeth surface"</string>
+    <string name="test_angles_confirmation_hint">"That’s it! You can now exit the Test your Angles activity."</string>
+    <string name="test_angles_confirmation_hint_highlight">"exit the Test your Angles activity"</string>
+    <string name="offline_brushing_notification_single_no_smiles_title">"You didn't win any Smiles"</string>
+    <string name="offline_brushing_notification_single_no_smiles_content">"Reach at least 50% surface coverage"</string>
+    <string name="offline_brushing_notification_single_with_smiles_title">"What a nice brushing!"</string>
+    <string name="offline_brushing_notification_single_with_smiles_content">"You just won %1$s Smiles!"</string>
+    <string name="offline_brushing_notification_multiple_no_smiles_title">"You synced %1$s brushings"</string>
+    <string name="offline_brushing_notification_multiple_no_smiles_content">"Reach 50% coverage to win Smiles"</string>
+    <string name="offline_brushing_notification_multiple_with_smiles_title">"You synced %1$s brushings"</string>
+    <string name="offline_brushing_notification_multiple_with_smiles_content">"And won %1$s Smiles!"</string>
+    <string name="coach_plus_feedback_message_out_of_mouth">"Put your toothbrush in your mouth"</string>
+    <string name="coach_plus_feedback_message_rinse_brush_head">"Wash the toothbrush sensor"</string>
+    <string name="coach_plus_title">"Coached brushing"</string>
+    <string name="dashboard_clean_score_title">"Clean"</string>
+    <string name="dashboard_clean_score_subtitle">"Score"</string>
+
+    <!-- Notifications related to brush connectivity -->
+    <string name="push_notification_channel_kolibree_service">"Toothbrush Connectivity"</string>
+
+    <!-- Notifications related to offline brushings retrieval -->
+    <string name="push_notification_channel_night_watch">"Offline Brushings"</string>
+    <string name="speed_control_activity_name">"Speed Control"</string>
+    <string name="speed_control_intro_header">"Speed Control"</string>
+    <string name="speed_control_intro_body">"Brushing your teeth too quickly can damage your gums.
+
+Follow the instructions to evaluate and improve your technique"</string>
+    <string name="speed_control_intro_start_button">"Start brushing now"</string>
+    <string name="speed_control_confirmation_hint">"That's it! You can now exit the Speed Control activity."</string>
+    <string name="speed_control_confirmation_hint_highlight">"exit the Speed Control activity"</string>
+    <string name="speed_control_brushing_stage1_hint">"Brush your Molars
+outer surface"</string>
+    <string name="speed_control_brushing_stage1_hint_highlight">"Molars"</string>
+    <string name="speed_control_brushing_stage2_hint">"Brush your Molars
+chewing surface"</string>
+    <string name="speed_control_brushing_stage2_hint_highlight">"Molars"</string>
+    <string name="speed_control_brushing_stage3_hint">"Brush your front teeth
+outer surface"</string>
+    <string name="speed_control_brushing_stage3_hint_highlight">"front teeth
+outer"</string>
+    <string name="speed_control_feedback_underspeed">"Too slow!"</string>
+    <string name="speed_control_feedback_overspeed">"Too fast!"</string>
+    <string name="speed_control_feedback_correct">" "</string>
+    <string name="activity_not_compatible_with_plaqless">"This activity is not currently compatible with your Plaqless Pro"</string>
+    <string name="personal_challenge_objective">"Objective"</string>
+    <string name="personal_challenge_level">"Level"</string>
+    <string name="personal_challenge_period">"Period"</string>
+    <string name="personal_challenge_objective_streak">"Streak"</string>
+    <string name="personal_challenge_objective_coverage">"Coverage"</string>
+    <string name="personal_challenge_objective_duration">"Duration"</string>
+    <string name="personal_challenge_level_easy">"Easy"</string>
+    <string name="personal_challenge_level_hard">"Hard"</string>
+    <string name="personal_challenge_streak_easy">"Brush once a day for %1$s in a row → %2$d smiles"</string>
+    <string name="personal_challenge_streak_hard">"Brush twice a day for %1$s in a row → %2$d smiles"</string>
+    <string name="personal_challenge_coverage_easy">"Do a brushing session with at least 80%% coverage once a day for %1$s → %2$d smiles"</string>
+    <string name="personal_challenge_coverage_hard">"Do a brushing session with at least 80%% coverage twice a day for %1$s → %2$d smiles"</string>
+    <string name="personal_challenge_duration_easy">"Brush for at least 2 minutes once a day for %1$s → %2$d smiles"</string>
+    <string name="personal_challenge_duration_hard">"Brush for at least 2 minutes twice a day for %1$s → %2$d smiles"</string>
+    <plurals name="duration_days">
+        <item quantity="one">"%1$d day"</item>
+        <item quantity="other">"%1$d days"</item>
+    </plurals>
+    <string name="personal_challenge_proposed_challenge">"PROPOSED CHALLENGE"</string>
+    <string name="personal_challenge_currently_active_challenge">"CURRENT CHALLENGE"</string>
+    <string name="personal_challenge_create">"Create challenge"</string>
+    <string name="personal_challenge_update">"Update existing challenge"</string>
+    <string name="personal_challenge_delete">"Delete active challenge"</string>
+    <string name="personal_challenge_title">"Personal challenge"</string>
+    <string name="personal_challenge_toolbar">"Challenges"</string>
+    <string name="personal_challenge_save">"Save"</string>
+    <string name="personal_challenge_define_your_challenge">"Define your own challenge and get rewarded."</string>
+    <string name="personal_challenge_parameters">"Challenge parameters"</string>
+    <string name="personal_challenge_parameter_target">"Improve my"</string>
+    <string name="personal_challenge_parameter_level">"Level"</string>
+    <string name="personal_challenge_parameter_period">"Challenge period"</string>
+    <string name="personal_challenge_result">"Resulting challenge"</string>
+    <string name="personal_challenge_update_dialog_title">"Update challenge"</string>
+    <string name="personal_challenge_update_dialog_body">"Are you sure that you want to update your current challenge?"</string>
+    <string name="personal_challenge_update_dialog_yes">"Yes"</string>
+    <string name="personal_challenge_update_dialog_no">"No"</string>
+    <string name="personal_challenge_completed_title">"Personal challenge"</string>
+    <string name="personal_challenge_completed_message">"Congratulations! You have completed your personal challenge"</string>
+
+    <!-- CHALLENGE RECOMMENDATIONS -->
+    <string name="easy_coverage_2_days_title_1">"Good start!"</string>
+    <string name="easy_coverage_2_days_body_1">"Do you want to continue to improve your coverage with out Coached brushing activity?"</string>
+    <string name="easy_coverage_2_days_accepted_1">"Do a brushing session with at least 80%% coverage once a day for 2 days"</string>
+    <string name="hard_coverage_2_days_title_2">"Keep it up!"</string>
+    <string name="hard_coverage_2_days_body_2">"You brushed twice a day in the past 3 days. What about working on the quality of your brushings?"</string>
+    <string name="hard_coverage_2_days_accepted_2">"Do a brushing session with at least 80%% coverage twice a day for 2 days"</string>
+    <string name="easy_streak_2_days_title_3">"Where have you been?"</string>
+    <string name="easy_streak_2_days_body_3">"Brush with us every day for 2 days and get %s smile points!"</string>
+    <string name="easy_streak_2_days_accepted_3">"You can do much better!"</string>
+    <string name="easy_streak_2_days_title_4">"You can do much better!"</string>
+    <string name="easy_streak_2_days_body_4">"We rarely saw you brushing with us in the past few days. Do you want to restart?"</string>
+    <string name="easy_streak_2_days_accepted_4">"Brush with us every day for 2 days and get %s smile points!"</string>
+    <string name="hard_streak_2_days_title_5">"Good start!"</string>
+    <string name="hard_streak_2_days_body_5">"You brushed with us every day this past few days. Do you want to do even better?"</string>
+    <string name="hard_streak_2_days_accepted_5">"Brush with us twice a day for 2 days and get %s smile points!"</string>
+    <string name="easy_streak_1_day_title_6">"Discover offline brushing!"</string>
+    <string name="easy_streak_1_day_body_6">"You can brush with us even while you are away from your phone. Try it?"</string>
+    <string name="easy_streak_1_day_accepted_6">"Brush offline today and then check your app to see how you just did"</string>
+    <string name="easy_coverage_1_day_title_7">"Discover our Coached brushing!"</string>
+    <string name="easy_coverage_1_day_body_7">"Discover our Coached brushing! The best way to get results"</string>
+    <string name="easy_coverage_1_day_accepted_7">"Do your first coached brushing today ; the best way to get results!"</string>
+    <string name="hard_streak_7_days_title_8">"Great start!"</string>
+    <string name="hard_streak_7_days_body_8">"You brushed with us every day this past few days. Do you want to do even better?"</string>
+    <string name="hard_streak_7_days_accepted_8">"Brush twice a day in the next 7 days and get %s smile points"</string>
+    <string name="hard_streak_7_days_title_9">"Good start!"</string>
+    <string name="hard_streak_7_days_body_9">"You brushed with us every day this past few days. Do you want to do even better?"</string>
+    <string name="hard_streak_7_days_accepted_9">"Brush twice a day in the next 7 days and get %s smile points"</string>
+    <string name="easy_streak_7_days_title_10">"False start!"</string>
+    <string name="easy_streak_7_days_body_10">"We didn't see you much in the last few days. Do you want take a fresh start?"</string>
+    <string name="easy_streak_7_days_accepted_10">"Brush every day with us in the next 7 days and get %s smile points"</string>
+    <string name="easy_streak_7_days_title_11">"Where have you been?"</string>
+    <string name="easy_streak_7_days_body_11">"We didn't see you brushing with us this past few days. Do you want to restart?"</string>
+    <string name="easy_streak_7_days_accepted_11">"Brush every day with us in the next 7 days and get %s smile points"</string>
+    <string name="easy_streak_7_days_title_12">"You can do much better!"</string>
+    <string name="easy_streak_7_days_body_12">"We rarely saw you brushing with us in the past few days. Do you want to restart?"</string>
+    <string name="easy_streak_7_days_accepted_12">"Brush every day with us in the next 7 days and get %s smile points"</string>
+    <string name="hard_streak_7_days_title_13">"There is room for improvement!"</string>
+    <string name="hard_streak_7_days_body_13">"We rarely saw you brushing with us in the past few days. Do you want to restart?"</string>
+    <string name="hard_streak_7_days_accepted_13">"Brush twice a day in the next 7 days and get %s smile points"</string>
+    <string name="hard_streak_7_days_title_14">"You are on the right path!"</string>
+    <string name="hard_streak_7_days_body_14">"You've done much better this week than before. Keep going this way"</string>
+    <string name="hard_streak_7_days_accepted_14">"Brush twice a day in the next 7 days and get %s smile points"</string>
+    <string name="hard_streak_7_days_title_15">"Great progress!"</string>
+    <string name="hard_streak_7_days_body_15">"You are not far from perfection. Keep it the good work"</string>
+    <string name="hard_streak_7_days_accepted_15">"Brush twice a day in the next 7 days and get %s smile points"</string>
+    <string name="easy_coverage_7_days_title_16">"Keep it up!"</string>
+    <string name="easy_coverage_7_days_body_16">"You brushed twice a day in the past 7 days. What about working on the quality of your brushings?"</string>
+    <string name="easy_coverage_7_days_accepted_16">"Do a brushing session with at least 80%% coverage once a day for 7 days"</string>
+    <string name="hard_coverage_7_days_title_17">"Great week!"</string>
+    <string name="hard_coverage_7_days_body_17">"You brushed twice a day in the past 7 days. What about increasing your surface coverage?"</string>
+    <string name="hard_coverage_7_days_accepted_17">"Do a brushing session with at least 80%% coverage twice a day for 7 days"</string>
+    <string name="hard_coverage_14_days_title_18">"Amazing week!"</string>
+    <string name="hard_coverage_14_days_body_18">"You consistently reached 80%% coverage twice a day in the past 7 days. Let’s try 2 weeks!"</string>
+    <string name="hard_coverage_14_days_accepted_18">"Do a brushing session with at least 80%% coverage twice a day for 14 days"</string>
+    <string name="hard_coverage_30_days_title_19">"Outstanding!"</string>
+    <string name="hard_coverage_30_days_body_19">"You consistently reached 80%% coverage twice a day in the past 2 weeks. Let’s try 1 month!"</string>
+    <string name="hard_coverage_30_days_accepted_19">"Do a brushing session with at least 80%% coverage twice a day for 30 days"</string>
+    <string name="welcome_email_google_button">"Sign in with Google"</string>
+    <string name="easy_coverage_2_days_body_highlighted_1">"Coached brushing"</string>
+    <string name="ongoing_challenge_title_1">"Congrats!"</string>
+    <string name="ongoing_challenge_title_2">"Awesome!"</string>
+    <string name="ongoing_challenge_streak_7_days_easy">"You already brushed everyday for %s days. You need to brush %s more days to earn %s smiles"</string>
+    <string name="ongoing_challenge_streak_7_days_hard">"You already brushed twice a day for %s days. You need to complete %s more days to earn %s smiles"</string>
+    <string name="ongoing_challenge_coverage_7_days_easy">"You already did at least 1 brushing over 80%% coverage each day for %s days. Complete %s more days"</string>
+    <string name="ongoing_challenge_coverage_7_days_hard">"You already brushed twice a day for %s days like a star. Complete %s more days like this"</string>
+    <string name="ongoing_challenge_coverage_14_days_hard">"You already brushed twice a day over 80%% coverage for %s days. Complete %s more days like this"</string>
+    <string name="ongoing_challenge_coverage_30_days_hard">"You already brushed twice a day over 80%% coverage for %s days. Complete %s more days like this"</string>
+    <string name="ongoing_challenge_general_easy">"You already brushed once a day for %s days. Complete %s more days like this"</string>
+    <string name="ongoing_challenge_general_hard">"You already brushed twice a day for %s days. Complete %s more days like this"</string>
+    <string name="ongoing_challenge_completed">"You already brushed every day for %s days"</string>
+    <string name="ongoing_challenge_personal_new">"Brush every day with us in the next %s days and get %s smile points"</string>
+    <string name="ongoing_challenge_personal_title">"Challenge yourself"</string>
+    <string name="ongoing_challenge_no_recommendation_title">"Keep it on track!"</string>
+    <string name="ongoing_challenge_no_recommendation_body">"Continue brushing with us and get a challenge based on your performance."</string>
+    <string name="checkout_toolbar_title">"Shopping Cart"</string>
+    <string name="cart_empty">"Your cart is empty"</string>
+    <string name="cart_total">"Total"</string>
+    <string name="cart_buy_another_method">"Use another payment method"</string>
+    <string name="shop_add_to_cart">"Add to cart"</string>
+    <string name="shop_points">"%s Points"</string>
+    <string name="shop_or_price">"or %s"</string>
+    <string name="shop_no_products">"No products are available"</string>
+
+    <!-- Fuzzy -->
+    <string name="shop_discount_amount">"Save %s"</string>
+
+    <!-- Fuzzy -->
+    <string name="shop_discount_caption">"using our points at checkout!"</string>
+    <string name="shop_web_payment_dialog_title">"Are you sure?"</string>
+    <string name="shop_web_payment_dialog_content">"Quitting this page will cancel the on-going purchase"</string>
+    <string name="shop_web_payment_dialog_positive">"Yes"</string>
+    <string name="shop_web_payment_dialog_negative">"No"</string>
+    <string name="shop_web_payment_toolbar_title">"Checkout"</string>
+    <string name="cart_use_smiles">"Use smiles points"</string>
+    <string name="cart_smiles_amount_hint">"%d smiles points (%s) available"</string>
+    <string name="google_sign_in_error">"Sign in with Google failed."</string>
+    <string name="cart_sub_total">"Subtotal"</string>
+    <string name="cart_smiles_discount_applied">"Points applied discount"</string>
+    <string name="cart_payment_shipping">"Est. Shipping"</string>
+    <string name="cart_payment_tax">"Est. Tax"</string>
+    <string name="cart_use_smile_points">"Use my %s points (-%s)"</string>
+    <string name="cart_empty_title">"your cart is empty"</string>
+    <string name="cart_empty_subtitle">"Start browsing our shop, motivational message here"</string>
+    <string name="cart_tolbar_title">"my shopping cart"</string>
+    <string name="cart_total_title">"estimated total"</string>
+
+    <!-- Fuzzy -->
+    <string name="firmware_upgrade_welcome">"To prevent toothbrush downtime, during the upgrade process:
+1. Please keep the firmware upgrade interface open and do not exit
+2. Keep the toothbrush on the charger
+3. Make sure the mobile phone and toothbrush are within 3 meters"</string>
+    <string name="profile_stats_card_offline_value">"%s Offline brushing"</string>
+    <string name="profile_stats_card_offline_label">"Without using the app"</string>
+    <string name="profile_stats_card_inapp_value">"%s In-app brushing"</string>
+    <string name="profile_stats_card_inapp_label">"Following an activity"</string>
+    <string name="profile_stats_card_current_points">"%d current points"</string>
+    <string name="profile_stats_card_keep_earning_points">"Keep earning points and save more!"</string>
+
+    <!-- Button in Profile Tab -->
+    <string name="profile_settings_button">"profile settings"</string>
+    <string name="get_ready_header">"get ready for a real connection."</string>
+    <string name="get_ready_header_highlight">"."</string>
+    <string name="get_ready_subtitle">"The toothbrush that knows you,
+the app that shows you."</string>
+    <string name="get_ready_sign_in_button">"Sign in"</string>
+    <string name="get_ready_no_brush_button">"I don’t have a brush"</string>
+    <string name="get_ready_connect_brush_button">"Connect my brush"</string>
+    <string name="ota_blocker_must_be_charging">"Please place your toothbrush on the charger"</string>
+    <string name="profile_header_text">"Use your smile to change the world,\ndon’t let the world change your smile!"</string>
+    <string name="welcome_email_subtitle">"You need an email address to access your account."</string>
+    <string name="welcome_email_or_divider">"OR"</string>
+    <string name="welcome_email_button">"Sign in with email"</string>
+    <string name="cart_undo_title">"Product deleted!"</string>
+    <string name="cart_undo_action_title">"UNDO"</string>
+    <string name="cart_visit_shop">"Visit our shop"</string>
+    <string name="activities_tasks_title">"short tasks"</string>
+    <string name="activities_tasks_description">"Keep it interesting and easy to improve your brushing while earning points very quickly."</string>
+    <string name="activities_task_test_brushing_title">"Test your brushing style"</string>
+    <string name="activities_task_test_brushing_description">"Short activity description will be here in two rows of text."</string>
+    <string name="activities_task_points">"+%s pts"</string>
+    <string name="activities_task_speed_title">"Mind your speed"</string>
+    <string name="activities_task_speed_description">"Short activity description will be here in two rows of text."</string>
+    <string name="activities_task_angle_title">"Adjust brushing angle"</string>
+    <string name="activities_task_angle_description">"Short activity description will be here in two rows of text."</string>
+    <string name="activities_guided_brushing_title">"guided brushing"</string>
+    <string name="activities_guided_brushing_description">"Activity description will be here to further convince the user to tap the call to action module."</string>
+    <string name="activities_guided_brushing_points">"+2 points"</string>
+    <string name="change_avatar_take_picture">"Take picture"</string>
+    <string name="change_avatar_choose_from_gallery">"Select picture"</string>
+    <string name="check_email_header">"check your email"</string>
+    <string name="check_email_subtitle">"No need to remember a long or hard to type password"</string>
+    <string name="check_email_body">"We just emailed you a link to log in with.
+For security purposes, the link expires after 30 mins."</string>
+    <string name="no_tb_connected_action_close">"CLOSE"</string>
+    <string name="change_avatar_error_take_picture_result_not_ok">"Something went wrong when taking a picture"</string>
+    <string name="change_avatar_error_select_gallery_result_not_ok">"Something went wrong when selecting a picture"</string>
+
+    <!-- generic error when we couldn't process the image -->
+    <string name="change_avatar_error_bitmap">"Something went wrong processing the picture"</string>
+    <string name="change_avatar_error_gallery_cant_load">"Something went wrong loading the picture from the gallery"</string>
+
+    <!-- OTA update message for non-rechargeable toothbrushes -->
+    <string name="firmware_upgrade_welcome_nonrechargeable">"To prevent toothbrush downtime, during the upgrade process:
+1. Please keep the firmware upgrade interface open and do not exit
+2. Make sure the mobile phone and toothbrush are within 3 meters"</string>
+    <string name="last_brushing_card_title">"my brushing sessions"</string>
+    <string name="last_brushing_card_duration">"Duration"</string>
+    <string name="last_brushing_card_coverage">"Coverage"</string>
+    <string name="last_brushing_card_clean">"CLEAN"</string>
+    <string name="last_brushing_card_missed">"MISSED"</string>
+    <string name="last_brushing_card_no_mouthmap_data">"Start brushing to see your results."</string>
+    <string name="home_toolbar_title_format">"Hi %1$s"</string>
+    <string name="sign_up_header">"create your profile"</string>
+    <string name="sign_up_subtitle">"What's your name?"</string>
+    <string name="sign_up_name_hint">"First name"</string>
+    <string name="sign_up_consent_header">"By clicking this signup button below:"</string>
+    <string name="sign_up_consent">"Yes, I agree to the"</string>
+    <string name="sign_up_consent_terms_conditions_link">"terms &amp; conditions"</string>
+    <string name="sign_up_consent_privacy_policy_link">"privacy policy"</string>
+    <string name="sign_up_google_button">"Sign up with Google"</string>
+    <string name="sign_up_email_button">"Sign up with email"</string>
+    <string name="enter_email_header">"last step, almost there"</string>
+    <string name="finish_button">"Finish"</string>
+
+    <!-- Fuzzy -->
+    <string name="sign_up_error_both_consents_missing">"Please accept Terms and Conditions and Privacy Policy before proceeding"</string>
+
+    <!-- Fuzzy -->
+    <string name="sign_up_error_terms_consent_missing">"Please accept Terms &amp; Conditions before proceeding"</string>
+
+    <!-- Fuzzy -->
+    <string name="sign_up_error_privacy_policy_consents_missing">"Please accept Privacy Policy before proceeding"</string>
+    <string name="cart_proceed_checkout">"Proceed to checkout"</string>
+    <string name="last_brushing_card_no_brushing">"No brushing session recorded"</string>
+
+    <!-- eg. Guided brushing 30/04/20 at 09:40AM -->
+    <string name="last_brushing_card_brushing_description">"%s %s at %s"</string>
+    <string name="last_brushing_card_guided_brushing">"Guided brushing"</string>
+    <string name="last_brushing_card_offline_brushing">"Offline brushing"</string>
+
+    <!-- Label for Smile Points -->
+    <string name="smile_points">"Smile Points"</string>
+
+    <!-- Home Screen Earning Points card -->
+    <string name="earning_points_title">"Earning points"</string>
+    <plurals name="earning_points_subtitle">
+        <item quantity="one">"You earn %1$d point every time you brush."</item>
+        <item quantity="other">"You earn %1$d points every time you brush."</item>
+    </plurals>
+    <string name="earning_points_detail_title">"Earn points with brushing"</string>
+    <string name="earning_points_detail_body"><![CDATA[<p>You can earn points by <b>brushing</b> your teeth with our App. The points earned are shown on your home page.</p>
+At any time you can use your points in <b>our shop</b> to buy refills for you toothbrush or other products for oral care.]]></string>
+    <string name="shipping_billing_title">"shipping and billing"</string>
+    <string name="form_shipping_address_title">"Shipping address"</string>
+    <string name="form_billing_details_title">"Billing details"</string>
+    <string name="form_shipping_name_hint">"Name/Company"</string>
+    <string name="form_shipping_address_hint">"Address"</string>
+    <string name="form_shipping_address_helper">"ex. 70–10 Gordon St."</string>
+    <string name="form_shipping_city_hint">"City"</string>
+    <string name="form_shipping_city_helper">"ex. New York City"</string>
+    <string name="form_shipping_postal_code_hint">"Postal Code"</string>
+    <string name="form_shipping_postal_code_helper">"ex. 11375"</string>
+    <string name="form_shipping_country_hint">"Country"</string>
+    <string name="form_billing_same_as_shipping_title">"Billing Same as the Shipping Address"</string>
+    <string name="cart_proceed_payment">"Proceed to payment"</string>
+    <string name="shipment_taxes_estimation">"Estimate your shipment and taxes"</string>
+    <string name="last_brushing_delete_button">"Delete brushing session"</string>
+    <string name="settings_screen_title">"settings"</string>
+    <string name="settings_item_about">"About"</string>
+    <string name="settings_item_admin_settings">"admin settings"</string>
+    <string name="about_screen_title">"about"</string>
+    <string name="about_screen_description">"The best smiles are more than a look, they're a feeling. And we believe that brushing your teeth should make you feel great. That's why we created hum; a brush that's all about making it easier to brush better."</string>
+    <string name="about_screen_facebook">"Facebook"</string>
+    <string name="about_screen_twitter">"Twitter"</string>
+    <string name="about_screen_website">"Website"</string>
+    <string name="about_screen_app_version">"App version"</string>
+    <string name="about_screen_account_id">"Account ID"</string>
+    <string name="test_brushing_start_brushing_header">"start brushing normally and turn your brush off when done."</string>
+    <string name="test_brushing_start_brushing_highlight">"."</string>
+    <string name="settings_item_logout">"Log out"</string>
+    <string name="test_brushing_ongoing_turn_off">"When you’re done, 
+just turn off the brush."</string>
+    <string name="hum_pairing_something_went_wrong">"Something went wrong. Please try again later."</string>
+    <string name="enable_bluetooth_title">"bluetooth"</string>
+    <string name="enable_bluetooth_description">"To connect your toothbrush, please activate Bluetooth on your device"</string>
+    <string name="enable_bluetooth_button_text">"activate bluetooth"</string>
+    <string name="wake_your_brush_title">"wake up your toothbrush."</string>
+    <string name="wake_your_brush_subtitle">"Press the power button or shake your toothbrush if it’s already on."</string>
+    <string name="wake_your_brush_nothing_happening">"Is nothing happening?"</string>
+    <string name="wake_your_brush_title_highlight">"."</string>
+    <string name="dsp_section_title">"DSP"</string>
+    <string name="dsp_section_content">"Firmware version: %1$s
+Bootloader version: %2$d
+Flash file: %3$s
+Flash file version: %4$s"</string>
+    <string name="dialog_test_brushing_connection_lost">"connection lost"</string>
+    <string name="dialog_test_brushing_connection_lost_body">"The connection with your toothbrush has been lost.
+Wait for it to reconnect or restart your brushing session later"</string>
+    <string name="dialog_test_brushing_connection_lost_button_quit">"Quit (and start again later)"</string>
+    <string name="grant_location_permission_title">"location permission"</string>
+    <string name="grant_location_permission_description">"Android requires Location permission to connect any Bluetooth Low Energy device. Please enable it in the following dialog to connect your toothbrush."</string>
+    <string name="grant_location_permission_action">"Grant permission"</string>
+    <string name="grant_location_permission_error">"Please grant Location permission"</string>
+    <string name="enable_location_title">"activate location"</string>
+    <string name="enable_location_description">"Android requires activated Location to connect any Bluetooth Low Energy device. Please turn it on in the following dialog to connect your toothbrush."</string>
+    <string name="enable_location_action">"Activate location"</string>
+    <string name="test_brushing_paused_healine">"most people miss
+60% of their teeth
+surface, let’s see how you did."</string>
+    <string name="test_brushing_paused_continue_button">"Ooops, I wasn't finished"</string>
+    <string name="test_brushing_paused_complete_button">"See my results"</string>
+    <string name="test_brushing_paused_healine_highlight">"."</string>
+    <string name="brush_found_title">"we found a brush! is it yours?"</string>
+    <string name="brush_found_subtitle">"Do you see the blue light blinking on your brush?"</string>
+    <string name="brush_found_connect">"Yes, connect"</string>
+    <string name="my_hilink">"My HiLink"</string>
+    <string name="my_hum_battery">"My Hum Battery"</string>
+    <string name="my_hum_electric">"My Hum Electric"</string>
+    <string name="is_brush_ready_title">"is your brush ready?"</string>
+    <string name="is_brush_ready_subtitle">"Your brush needs to charge for 24 hours prior to using it for the first time."</string>
+    <string name="is_brush_ready_connect">"yes, connect my brush"</string>
+    <string name="is_brush_ready_help">"need more help"</string>
+    <string name="not_hum_brush_title">"we noticed it’s not hum brush"</string>
+    <string name="not_hum_brush_subtitle">"We detected the Colgate Connect toothbrush. To optimise your brushing experience we recommend you switch to the Colgate Connect app"</string>
+    <string name="not_hum_brush_switch_app">"Switch to Colgate Connect"</string>
+    <string name="not_hum_brush_continue_anyway">"Continue anyway"</string>
+    <string name="no_brush_dialog_title">"you don’t see your toothbrush?"</string>
+    <string name="no_brush_dialog_content1">"If your toothbrush is near but doesn’t appear here, it may be because:"</string>
+    <string name="no_brush_dialog_content2">"•    it’s in standby mode"</string>
+    <string name="no_brush_dialog_content3">"•    has a low battery level"</string>
+    <string name="no_brush_dialog_content4">"•    it’s already connected to another device"</string>
+    <string name="no_brush_dialog_content5">"Turn it on, deactivate the bluetooth or forget the toothbrush on the other device."</string>
+    <string name="no_brush_dialog_content6">"You should now see your toothbrush in the list!"</string>
+    <string name="no_brush_dialog_get_it">"I get it!"</string>
+    <string name="scan_toothbrush_title">"Connect your toothbrush"</string>
+    <string name="scan_toothbrush_description">"Searching for nearby toothbrushes"</string>
+    <string name="brushing_quiz_screen_1_answer_1_hint">"I brush 2 minutes, at least 2 times a day"</string>
+    <string name="brushing_quiz_screen_1_answer_2_hint">"I brush 2 minutes, at least 2 times a day"</string>
+    <string name="brushing_quiz_screen_1_answer_3_hint">"I brush 2 minutes, at least 2 times a day"</string>
+    <string name="brushing_quiz_screen_2_answer_1_hint">"Almost never"</string>
+    <string name="brushing_quiz_screen_2_answer_2_hint">"Once or twice a week"</string>
+    <string name="brushing_quiz_screen_2_answer_3_hint">"At least once a day"</string>
+    <string name="brushing_quiz_screen_3_answer_1_hint">"Strongest vibration"</string>
+    <string name="brushing_quiz_screen_3_answer_2_hint">"Medium vibration"</string>
+    <string name="brushing_quiz_screen_3_answer_3_hint">"Lowest vibration"</string>
+    <string name="brushing_streak_accept_challenge">"Accept challenge"</string>
+    <string name="brushing_quiz_your_program">"your brushing program is"</string>
+    <string name="brushing_quiz_reset">"Reset to default"</string>
+    <string name="brushing_quiz_toolbar_title">"brushing program"</string>
+    <string name="quiz_confirmation_title">"QUIZ COMPLETED"</string>
+    <string name="quiz_program_whitening">"deep clean"</string>
+    <string name="quiz_program_sensitive">"sensitive"</string>
+    <string name="quiz_program_everyday_care">"normal"</string>
+    <string name="quiz_confirmation_brushing_program">"CONFIRM PROGRAM"</string>
+    <string name="brushing_quiz_steps_counter">"STEP %1$s OF %2$s"</string>
+    <string name="brushing_program_dialog_custom">"Custom"</string>
+    <string name="coach_plus_feedback_message_overpressure">"You are brushing too hard!"</string>
+    <string name="brushing_program_dialog_polishing">"Polishing"</string>
+</resources>

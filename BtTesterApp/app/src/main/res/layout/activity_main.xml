@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2019 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+                name="viewModel"
+                type="com.kolibree.bttester.main.MainActivityViewModel"/>
+
+    </data>
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/single_connection_tester"
+                android:onClick="@{(v) -> viewModel.singleConnectionActivityClicked()}"/>
+
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/legacy_connection_tester"
+                android:onClick="@{(v) -> viewModel.legacyMainActivityClicked()}"/>
+
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ota_tester"
+                android:onClick="@{(v) -> viewModel.otaActivityClicked()}"/>
+
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/free_brushing_tester"
+                android:onClick="@{(v) -> viewModel.freeBrushingActivityClicked()}"/>
+
+    </LinearLayout>
+</layout>
+

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content">
+  <TextView
+    android:id="@+id/assign_toothbrush_data_message"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:textColor="@color/grey_dark"
+    android:textSize="@dimen/xnormal_text"/>
+
+  <Button
+    android:id="@+id/assign_toothbrush_data_current_owner"
+    style="@style/KolibreeDialogButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/activity_horizontal_margin"
+    android:layout_alignParentEnd="true"
+    android:layout_below="@id/assign_toothbrush_data_message"
+    android:text="@string/toothbrush_firmware_update_button"/>
+
+  <Button
+    android:id="@+id/assign_toothbrush_data_current_active"
+    style="@style/KolibreeDialogButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/assign_toothbrush_data_message"
+    android:layout_toStartOf="@id/assign_toothbrush_data_current_owner"/>
+
+</RelativeLayout>

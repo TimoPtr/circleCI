@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <data>
+
+    <import type="android.view.View" />
+
+    <variable
+      name="viewModel"
+      type="com.kolibree.android.shop.presentation.checkout.shipping.ShippingBillingViewModel" />
+
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+      android:id="@+id/scroll_view"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="@dimen/match_constraints"
+      app:layout_constraintBottom_toTopOf="@+id/button_divider"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent">
+
+      <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- region Shipping -->
+
+        <TextView
+          android:id="@+id/shipping_address_title"
+          android:layout_width="@dimen/match_constraints"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="@dimen/dot_quad"
+          android:layout_marginTop="@dimen/dot_trip"
+          android:layout_marginEnd="@dimen/dot_quad"
+          android:text="@string/form_shipping_address_title"
+          android:textAppearance="?textAppearanceOverline1"
+          android:textColor="?android:textColorSecondary"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+          android:id="@+id/shipping_first_name"
+          android:layout_width="@dimen/match_constraints"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/dot_double"
+          android:hint="@string/form_shipping_first_name_hint"
+          app:error="@{viewModel.errorShippingFirstName}"
+          app:helperText="@string/form_shipping_first_name_helper"
+          app:helperTextEnabled="true"
+          app:helperTextTextAppearance="?textAppearanceCaption"
+          app:helperTextTextColor="?android:textColorTertiary"
+          app:layout_constraintEnd_toEndOf="@+id/shipping_address_title"
+          app:layout_constraintStart_toStartOf="@+id/shipping_address_title"
+          app:layout_constraintTop_toBottomOf="@+id/shipping_address_title">
+
+          <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/shipping_first_name_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="personGivenName"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="yes"
+            android:inputType="textAutoComplete|textCapWords"
+            android:lines="1"
+            android:maxLines="1"
+            android:text="@={viewModel.shippingFirstName}"
+            android:textColor="?textColorAccentSecondary" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+          android:id="@+id/shipping_last_name"
+          android:layout_width="@dimen/match_constraints"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/dot_double"
+          android:hint="@string/form_shipping_last_name_hint"
+          app:error="@{viewModel.errorShippingLastName}"
+          app:helperText="@string/form_shipping_last_name_helper"
+          app:helperTextEnabled="true"
+          app:helperTextTextAppearance="?textAppearanceCaption"
+          app:helperTextTextColor="?android:textColorTertiary"
+          app:layout_constraintEnd_toEndOf="@+id/shipping_first_name"
+          app:layout_constraintStart_toStartOf="@+id/shipping_first_name"
+          app:layout_constraintTop_toBottomOf="@+id/shipping_first_name">
+
+          <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/shipping_last_name_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="personFamilyName"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="yes"
+            android:inputType="textAutoComplete|textCapWords"
+            android:lines="1"
+            android:maxLines="1"
+            android:text="@={viewModel.shippingLastName}"
+            android:textColor="?textColorAccentSecondary" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+          android:id="@+id/shipping_company"
+          android:layout_width="@dimen/match_constraints"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/dot_double"
+          android:hint="@string/form_shipping_company_hint"
+          app:helperText="@string/form_shipping_company_helper"
+          app:helperTextEnabled="true"
+          app:helperTextTextAppearance="?textAppearanceCaption"
+          app:helperTextTextColor="?android:textColorTertiary"
+          app:layout_constraintEnd_toEndOf="@+id/shipping_last_name"
+          app:layout_constraintStart_toStartOf="@+id/shipping_last_name"
+          app:layout_constraintTop_toBottomOf="@+id/shipping_last_name">
+
+          <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/shipping_company_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"
+            android:inputType="textCapSentences"
+            android:lines="1"
+            android:maxLines="1"
+            android:text="@={viewModel.shippingCompany}"
+            android:textColor="?textColorAccentSecondary" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+          android:id="@+id/shipping_address"
+          android:layout_width="@dimen/match_constraints"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/dot_double"
+          android:hint="@string/form_shipping_address_hint"
+          app:error="@{viewModel.errorShippingStreet}"
+          app:helperText="@string/form_shipping_address_helper"
+          app:helperTextEnabled="true"
+          app:helperTextTextAppearance="?textAppearanceCaption"
+          app:helperTextTextColor="?android:textColorTertiary"
+          app:layout_constraintEnd_toEndOf="@+id/shipping_company"
+          app:layout_constraintStart_toStartOf="@+id/shipping_company"
+          app:layout_constraintTop_toBottomOf="@+id/shipping_company">
+
+          <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/shipping_address_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="streetAddress"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="yes"
+            android:inputType="textPostalAddress|textAutoComplete|textCapWords"
+            android:lines="1"
+            android:maxLines="1"
+            android:text="@={viewModel.shippingStreet}"
+            android:textColor="?textColorAccentSecondary" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+          android:id="@+id/shipping_city"
+          android:layout_width="@dimen/match_constraints"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/dot_double"
+          android:hint="@string/form_shipping_city_hint"
+          app:error="@{viewModel.errorShippingCity}"
+          app:helperText="@string/form_shipping_city_helper"
+          app:helperTextEnabled="true"
+          app:helperTextTextAppearance="?textAppearanceCaption"
+          app:helperTextTextColor="?android:textColorTertiary"
+          app:layout_constraintEnd_toStartOf="@+id/shipping_postal_code"
+          app:layout_constraintHorizontal_bias="0.5"
+          app:layout_constraintHorizontal_chainStyle="spread_inside"
+          app:layout_constraintStart_toStartOf="@+id/shipping_address"
+          app:layout_constraintTop_toBottomOf="@+id/shipping_address">
+
+          <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/shipping_city_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="addressLocality"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="yes"
+            android:inputType="textPostalAddress|textAutoComplete|textCapWords"
+            android:lines="1"
+            android:maxLines="1"
+            android:text="@={viewModel.shippingCity}"
+            android:textColor="?textColorAccentSecondary" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+          android:id="@+id/shipping_postal_code"
+          android:layout_width="@dimen/match_constraints"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="@dimen/dot_double"
+          android:layout_marginTop="@dimen/dot_double"
+          android:hint="@string/form_shipping_postal_code_hint"
+          app:error="@{viewModel.errorShippingPostalCode}"
+          app:helperText="@string/form_shipping_postal_code_helper"
+          app:helperTextEnabled="true"
+          app:helperTextTextAppearance="?textAppearanceCaption"
+          app:helperTextTextColor="?android:textColorTertiary"
+          app:layout_constraintEnd_toEndOf="@+id/shipping_address"
+          app:layout_constraintHorizontal_bias="0.5"
+          app:layout_constraintHorizontal_chainStyle="spread_inside"
+          app:layout_constraintStart_toEndOf="@+id/shipping_city"
+          app:layout_constraintTop_toBottomOf="@+id/shipping_address">
+
+          <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/shipping_postal_code_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="postalCode"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="yes"
+            android:inputType="textCapCharacters"
+            android:lines="1"
+            android:maxLines="1"
+            android:text="@={viewModel.shippingPostalCode}"
+            android:textColor="?textColorAccentSecondary" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+          android:id="@+id/shipping_province"
+          android:layout_width="@dimen/match_constraints"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/dot_double"
+          android:hint="@string/form_shipping_province_hint"
+          app:error="@{viewModel.errorShippingProvince}"
+          app:helperText="@string/form_shipping_province_helper"
+          app:helperTextEnabled="true"
+          app:helperTextTextAppearance="?textAppearanceCaption"
+          app:helperTextTextColor="?android:textColorTertiary"
+          app:layout_constraintEnd_toEndOf="@+id/shipping_postal_code"
+          app:layout_constraintStart_toStartOf="@+id/shipping_city"
+          app:layout_constraintTop_toBottomOf="@+id/shipping_city">
+
+          <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/shipping_province_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="addressRegion"
+            android:imeOptions="actionDone"
+            android:importantForAutofill="yes"
+            android:inputType="textPostalAddress|textAutoComplete|textCapWords"
+            android:lines="1"
+            android:maxLines="1"
+            android:text="@={viewModel.shippingProvince}"
+            android:textColor="?textColorAccentSecondary" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+          android:id="@+id/shipping_country"
+          android:layout_width="@dimen/match_constraints"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/dot_double"
+          android:enabled="false"
+          android:hint="@string/form_shipping_country_hint"
+          app:error="@{viewModel.errorShippingCountry}"
+          app:layout_constraintEnd_toEndOf="@+id/shipping_province"
+          app:layout_constraintStart_toStartOf="@+id/shipping_province"
+          app:layout_constraintTop_toBottomOf="@+id/shipping_province">
+
+          <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/shipping_country_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:imeOptions="actionDone"
+            android:importantForAutofill="no"
+            android:inputType="textPostalAddress|textAutoComplete|textCapWords"
+            android:lines="1"
+            android:maxLines="1"
+            android:text="@={viewModel.shippingCountry}"
+            android:textColor="?textColorAccentSecondary" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- endregion Shipping -->
+
+        <TextView
+          android:id="@+id/billing_indication"
+          android:layout_width="@dimen/match_constraints"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/dot_quad"
+          android:text="@string/form_billing_same_as_shipping_title"
+          app:layout_constraintEnd_toStartOf="@+id/shipping_switch"
+          app:layout_constraintStart_toStartOf="@+id/shipping_country"
+          app:layout_constraintTop_toBottomOf="@+id/shipping_country" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+          android:id="@+id/shipping_switch"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:checked="@={viewModel.isBillingSameAsShipping}"
+          app:layout_constraintBottom_toBottomOf="@+id/billing_indication"
+          app:layout_constraintEnd_toEndOf="@+id/shipping_country"
+          app:layout_constraintTop_toTopOf="@+id/billing_indication" />
+
+        <Space
+          android:id="@+id/shipping_billing_separator"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/dot_quin"
+          app:layout_constraintTop_toBottomOf="@+id/billing_indication" />
+
+        <View
+          android:id="@+id/billing_divider"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/divider_thickness"
+          android:background="@color/divider"
+          app:layout_constraintTop_toBottomOf="@+id/shipping_billing_separator" />
+
+        <!-- region Billing -->
+
+        <TextView
+          android:id="@+id/billing_details"
+          android:layout_width="@dimen/match_constraints"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="@dimen/dot_quad"
+          android:layout_marginTop="@dimen/dot_trip"
+          android:layout_marginEnd="@dimen/dot_quad"
+          android:text="@string/form_billing_details_title"
+          android:textAppearance="?textAppearanceOverline1"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/billing_divider" />
+
+        <com.google.android.material.textfield.TextInputLayout
+          android:id="@+id/billing_first_name"
+          android:layout_width="@dimen/match_constraints"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/dot_double"
+          android:hint="@string/form_shipping_first_name_hint"
+          app:error="@{viewModel.errorBillingFirstName}"
+          app:helperText="@string/form_shipping_first_name_helper"
+          app:helperTextEnabled="true"
+          app:helperTextTextAppearance="?textAppearanceCaption"
+          app:helperTextTextColor="?android:textColorTertiary"
+          app:layout_constraintEnd_toEndOf="@+id/billing_details"
+          app:layout_constraintStart_toStartOf="@+id/billing_details"
+          app:layout_constraintTop_toBottomOf="@+id/billing_details">
+
+          <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/billing_first_name_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="personGivenName"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"
+            android:inputType="textAutoComplete|textCapWords"
+            android:lines="1"
+            android:maxLines="1"
+            android:text="@={viewModel.billingFirstName}"
+            android:textColor="?textColorAccentSecondary" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+          android:id="@+id/billing_last_name"
+          android:layout_width="@dimen/match_constraints"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/dot_double"
+          android:hint="@string/form_shipping_last_name_hint"
+          app:error="@{viewModel.errorBillingLastName}"
+          app:helperText="@string/form_shipping_last_name_helper"
+          app:helperTextEnabled="true"
+          app:helperTextTextAppearance="?textAppearanceCaption"
+          app:helperTextTextColor="?android:textColorTertiary"
+          app:layout_constraintEnd_toEndOf="@+id/billing_first_name"
+          app:layout_constraintStart_toStartOf="@+id/billing_first_name"
+          app:layout_constraintTop_toBottomOf="@+id/billing_first_name">
+
+          <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/billing_last_name_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="personFamilyName"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"
+            android:inputType="textAutoComplete|textCapWords"
+            android:lines="1"
+            android:maxLines="1"
+            android:text="@={viewModel.billingLastName}"
+            android:textColor="?textColorAccentSecondary" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+          android:id="@+id/billing_company"
+          android:layout_width="@dimen/match_constraints"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/dot_double"
+          android:hint="@string/form_shipping_company_hint"
+          app:helperText="@string/form_shipping_company_helper"
+          app:helperTextEnabled="true"
+          app:helperTextTextAppearance="?textAppearanceCaption"
+          app:helperTextTextColor="?android:textColorTertiary"
+          app:layout_constraintEnd_toEndOf="@+id/billing_last_name"
+          app:layout_constraintStart_toStartOf="@+id/billing_last_name"
+          app:layout_constraintTop_toBottomOf="@+id/billing_last_name">
+
+          <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/billing_company_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"
+            android:inputType="textCapSentences"
+            android:lines="1"
+            android:maxLines="1"
+            android:text="@={viewModel.billingCompany}"
+            android:textColor="?textColorAccentSecondary" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+          android:id="@+id/billing_address"
+          android:layout_width="@dimen/match_constraints"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/dot_double"
+          android:hint="@string/form_shipping_address_hint"
+          app:error="@{viewModel.errorBillingStreet}"
+          app:helperText="@string/form_shipping_address_helper"
+          app:helperTextEnabled="true"
+          app:helperTextTextAppearance="?textAppearanceCaption"
+          app:helperTextTextColor="?android:textColorTertiary"
+          app:layout_constraintEnd_toEndOf="@+id/billing_company"
+          app:layout_constraintStart_toStartOf="@+id/billing_company"
+          app:layout_constraintTop_toBottomOf="@+id/billing_company">
+
+          <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/billing_address_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="streetAddress"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"
+            android:inputType="textPostalAddress|textAutoComplete|textCapWords"
+            android:lines="1"
+            android:maxLines="1"
+            android:text="@={viewModel.billingStreet}"
+            android:textColor="?textColorAccentSecondary" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+          android:id="@+id/billing_city"
+          android:layout_width="@dimen/match_constraints"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/dot_double"
+          android:hint="@string/form_shipping_city_hint"
+          app:error="@{viewModel.errorBillingCity}"
+          app:helperText="@string/form_shipping_city_helper"
+          app:helperTextEnabled="true"
+          app:helperTextTextAppearance="?textAppearanceCaption"
+          app:helperTextTextColor="?android:textColorTertiary"
+          app:layout_constraintEnd_toStartOf="@+id/billing_postal_code"
+          app:layout_constraintHorizontal_bias="0.5"
+          app:layout_constraintHorizontal_chainStyle="spread_inside"
+          app:layout_constraintStart_toStartOf="@+id/billing_address"
+          app:layout_constraintTop_toBottomOf="@+id/billing_address">
+
+          <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/billing_city_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="addressLocality"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"
+            android:inputType="textPostalAddress|textAutoComplete|textCapWords"
+            android:lines="1"
+            android:maxLines="1"
+            android:text="@={viewModel.billingCity}"
+            android:textColor="?textColorAccentSecondary" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+          android:id="@+id/billing_postal_code"
+          android:layout_width="@dimen/match_constraints"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="@dimen/dot_double"
+          android:layout_marginTop="@dimen/dot_double"
+          android:hint="@string/form_shipping_postal_code_hint"
+          app:error="@{viewModel.errorBillingPostalCode}"
+          app:helperText="@string/form_shipping_postal_code_helper"
+          app:helperTextEnabled="true"
+          app:helperTextTextAppearance="?textAppearanceCaption"
+          app:helperTextTextColor="?android:textColorTertiary"
+          app:layout_constraintEnd_toEndOf="@+id/billing_address"
+          app:layout_constraintHorizontal_bias="0.5"
+          app:layout_constraintHorizontal_chainStyle="spread_inside"
+          app:layout_constraintStart_toEndOf="@+id/billing_city"
+          app:layout_constraintTop_toBottomOf="@+id/billing_address">
+
+          <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/billing_postal_code_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="postalCode"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"
+            android:inputType="textCapCharacters"
+            android:lines="1"
+            android:maxLines="1"
+            android:text="@={viewModel.billingPostalCode}"
+            android:textColor="?textColorAccentSecondary" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+          android:id="@+id/billing_province"
+          android:layout_width="@dimen/match_constraints"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/dot_double"
+          android:hint="@string/form_shipping_province_hint"
+          app:error="@{viewModel.errorBillingProvince}"
+          app:helperText="@string/form_shipping_province_helper"
+          app:helperTextEnabled="true"
+          app:helperTextTextAppearance="?textAppearanceCaption"
+          app:helperTextTextColor="?android:textColorTertiary"
+          app:layout_constraintEnd_toEndOf="@+id/billing_postal_code"
+          app:layout_constraintStart_toStartOf="@+id/billing_city"
+          app:layout_constraintTop_toBottomOf="@+id/billing_city">
+
+          <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/billing_province_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="addressRegion"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"
+            android:inputType="textPostalAddress|textAutoComplete|textCapWords"
+            android:lines="1"
+            android:maxLines="1"
+            android:text="@={viewModel.billingProvince}"
+            android:textColor="?textColorAccentSecondary" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+          android:id="@+id/billing_country"
+          android:layout_width="@dimen/match_constraints"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/dot_double"
+          android:layout_marginBottom="@dimen/dot_trip"
+          android:hint="@string/form_shipping_country_hint"
+          app:error="@{viewModel.errorBillingCountry}"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="@+id/billing_province"
+          app:layout_constraintStart_toStartOf="@+id/billing_province"
+          app:layout_constraintTop_toBottomOf="@+id/billing_province">
+
+          <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/billing_country_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionDone"
+            android:importantForAutofill="no"
+            android:inputType="textPostalAddress|textAutoComplete|textCapWords"
+            android:lines="1"
+            android:maxLines="1"
+            android:text="@={viewModel.billingCountry}"
+            android:textColor="?textColorAccentSecondary" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.constraintlayout.widget.Group
+          android:id="@+id/billing_group"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:constraint_referenced_ids="billing_country,billing_postal_code,billing_city,billing_address,billing_first_name,billing_last_name,billing_company,billing_details,billing_divider,billing_province"
+          app:visibilityTransition="@{viewModel.billingVisibility ? View.VISIBLE : View.GONE}" />
+
+        <!-- endregion Billing -->
+
+      </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <View
+      android:id="@+id/button_divider"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="@dimen/divider_thickness"
+      android:layout_marginBottom="@dimen/dot_trip"
+      android:background="@color/divider"
+      app:layout_constraintBottom_toTopOf="@+id/cart_proceed_checkout"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+      android:id="@+id/cart_proceed_checkout"
+      style="?materialButtonStyle"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_quad"
+      android:layout_marginEnd="@dimen/dot_quad"
+      android:layout_marginBottom="@dimen/dot_trip"
+      android:text="@string/cart_proceed_payment"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:onClickCloseInput="@{() -> viewModel.onUserClickProceed()}" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

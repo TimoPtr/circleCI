@@ -1,0 +1,34 @@
+{
+  "brushings": {
+    "version": 1278,
+    "updated_ids": [
+      1,
+      2,
+      3
+    ],
+    "deleted_ids": [
+      4,
+      5
+    ]
+  },
+  "profiles": {
+    "version": 185,
+    "updated_ids": [
+      6,
+      7
+    ],
+    "deleted_ids": [
+      8,
+      9
+    ]
+  },
+  "challenges_progress": {
+    "version": 20,
+    "updated_profile_ids": [
+      10
+    ]
+  },
+  "challenges_catalog": {
+    "version": 5
+  }
+}

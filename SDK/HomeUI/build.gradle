@@ -1,0 +1,68 @@
+/*
+ * Copyright (c) 2020 Kolibree. All rights reserved
+ *
+ * Copying this file via any medium without the prior written consent of Kolibree is strictly
+ * prohibited
+ *
+ * Proprietary and confidential
+ */
+
+apply plugin: 'com.android.library'
+
+apply from: '../buildscripts/kapt.gradle'
+
+android {
+    androidExtensions {
+        experimental = true
+    }
+
+    buildFeatures {
+        dataBinding = true
+    }
+
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
+}
+
+//This is private API module -  do not remove this unless discussed and agreed with the team
+publisher.skipDeployment = true
+
+dependencies {
+    implementation project(path: ':features')
+    implementation project(path: ':commons')
+    implementation project(path: ':databinding')
+    implementation project(path: ':static-resources')
+    implementation project(path: ':base-ui')
+    implementation project(path: ':account-sdk')
+    implementation project(path: ':offline-brushings')
+    implementation project(path: ':toothbrush-sdk')
+    implementation project(path: ':toothbrush-update-logic')
+    implementation project(path: ':web-service-sdk')
+
+    // RxJava
+    implementation libraries.rxJava
+    implementation libraries.rxAndroid
+    implementation libraries.rxRelay
+    implementation libraries.rxReplayShare
+    implementation libraries.rxLint
+
+    implementation libraries.threetenAbp
+
+    implementation libraries.navigationFragment
+    implementation libraries.navigationUI
+
+    api libraries.bindingCollections
+    api libraries.bindingCollectionsRV
+
+    implementation libraries.timber
+
+    implementation libraries.dagger
+    kapt libraries.daggerCompiler
+    implementation libraries.daggerAndroid
+
+    testImplementation project(path: ':testing-unit-base')
+    testImplementation project(path: ':testing-builders')
+    testImplementation libraries.mockitoKotlin2
+    testImplementation libraries.mockk
+}

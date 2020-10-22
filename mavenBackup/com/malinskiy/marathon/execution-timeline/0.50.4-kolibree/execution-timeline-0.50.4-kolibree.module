@@ -1,0 +1,95 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.malinskiy.marathon",
+    "module": "execution-timeline",
+    "version": "0.50.4-kolibree",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.2",
+      "buildId": "5rqox4qe2nglviwvbhck7v5qza"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.localToProject": "public",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "files": [
+        {
+          "name": "execution-timeline-0.50.4-kolibree.jar",
+          "url": "execution-timeline-0.50.4-kolibree.jar",
+          "size": 15716,
+          "sha512": "af0c4aec399144946fa15b90c7ba76ecc689d33891f4ce6a8be341f976669b970a8332fcd818978a2e03cadd45714ca327c614218285ba2afe055cc3fedf46c6",
+          "sha256": "f5111da8703bbf5878fd6aace8cf2711b00576776cb33a9e517691348f32c4ff",
+          "sha1": "d6c9661f65a1cd7cfb8b89a367882396b946fe15",
+          "md5": "62ffa1770b86265695d02bd1baab5bc1"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.localToProject": "public",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "com.google.code.gson",
+          "module": "gson",
+          "version": {
+            "requires": "2.8.5"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.4.10"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.3.1"
+          }
+        },
+        {
+          "group": "io.github.microutils",
+          "module": "kotlin-logging",
+          "version": {
+            "requires": "1.4.9"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "execution-timeline-0.50.4-kolibree.jar",
+          "url": "execution-timeline-0.50.4-kolibree.jar",
+          "size": 15716,
+          "sha512": "af0c4aec399144946fa15b90c7ba76ecc689d33891f4ce6a8be341f976669b970a8332fcd818978a2e03cadd45714ca327c614218285ba2afe055cc3fedf46c6",
+          "sha256": "f5111da8703bbf5878fd6aace8cf2711b00576776cb33a9e517691348f32c4ff",
+          "sha1": "d6c9661f65a1cd7cfb8b89a367882396b946fe15",
+          "md5": "62ffa1770b86265695d02bd1baab5bc1"
+        }
+      ]
+    }
+  ]
+}

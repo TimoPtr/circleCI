@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <Blacklist></Blacklist>
+  <Whitelist>
+    <ID>LongMethod:CurlLoggingInterceptor.kt$CurlLoggingInterceptor$intercept</ID>
+    <ID>LongMethod:HeaderInterceptor.kt$HeaderInterceptor$clientSignature</ID>
+    <ID>LongMethod:HeaderInterceptor.kt$HeaderInterceptor$intercept</ID>
+    <ID>LongMethod:TokenAuthenticator.kt$TokenAuthenticator$onAuthenticationError</ID>
+    <ID>SwallowedException:FileDownloaderIntegrationTest.kt$FileDownloaderIntegrationTest$catch (ioe: IOException) { // do nothing }</ID>
+    <ID>SwallowedException:FileDownloaderIntegrationTest.kt$FileDownloaderIntegrationTest$catch (se: SocketException) { socketExceptionCaptured = true }</ID>
+    <ID>SwallowedException:RemoteAccountDoesNotExistDetector.kt$RemoteAccountDoesNotExistDetectorImpl$catch (npe: NullPointerException) { null }</ID>
+    <ID>TooGenericExceptionCaught:RemoteAccountDoesNotExistDetector.kt$RemoteAccountDoesNotExistDetectorImpl$npe: NullPointerException</ID>
+  </Whitelist>
+</SmellBaseline>

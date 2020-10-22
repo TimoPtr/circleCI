@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <Blacklist></Blacklist>
+  <Whitelist>
+    <ID>ComplexMethod:SmilesHistoryMapper.kt$buildHistoryItem</ID>
+    <ID>LongMethod:FeedbackEntity.kt$FeedbackEntity$validatePolymorphism</ID>
+    <ID>LongMethod:HistoryToFeedbackMapper.kt$ChallengeCompletedState$nextState</ID>
+    <ID>LongMethod:SmilesHistoryMapper.kt$buildHistoryItem</ID>
+    <ID>LongMethod:V3RecreatePersonalChallengeTableMigration.kt$V3RecreatePersonalChallengeTableMigration$migrate</ID>
+    <ID>LongMethod:V4UpdateSyncFieldsPersonalChallengeTableMigration.kt$V4UpdateSyncFieldsPersonalChallengeTableMigration$migrate</ID>
+    <ID>MagicNumber:RedeemNetworkServiceImpl.kt$RedeemNetworkServiceImpl$500</ID>
+    <ID>MagicNumber:TransferNetworkServiceImpl.kt$TransferNetworkServiceImpl$500</ID>
+    <ID>MaxLineLength:ProfileTierDao.kt$ProfileTierDao$@Query("SELECT profileId, level, smilesPerBrushing, challengesNeeded, pictureUrl, rank FROM tiers t INNER JOIN profile_tier p ON t.level=p.tierLevel WHERE profileId=:profileId")</ID>
+    <ID>MaxLineLength:RewardsNetworkModule.kt$RewardsNetworkModule$@Binds @IntoSet internal abstract</ID>
+    <ID>MaxLineLength:V5AddLifetimeSmilesTableMigration.kt$V5AddLifetimeSmilesTableMigration$ CREATE TABLE IF NOT EXISTS `lifetime_stats` (`profileId` INTEGER NOT NULL, `lifetimePoints` INTEGER NOT NULL, PRIMARY KEY(`profileId`))</ID>
+    <ID>SpreadOperator:RewardsPersistenceModule.kt$RewardsDatabaseModule$(*RewardsRoomDatabase.migrations)</ID>
+    <ID>TooManyFunctions:RewardsNetworkModule.kt$RewardsNetworkModule$RewardsNetworkModule</ID>
+    <ID>TooManyFunctions:RewardsRoomDatabase.kt$RewardsRoomDatabase$RewardsRoomDatabase</ID>
+    <ID>TooManyFunctions:RewardsSynchronizedVersions.kt$RewardsSynchronizedVersions$RewardsSynchronizedVersions</ID>
+    <ID>TooManyFunctions:SmilesHistoryMapper.kt$com.kolibree.android.rewards.smileshistory.SmilesHistoryMapper.kt</ID>
+  </Whitelist>
+</SmellBaseline>

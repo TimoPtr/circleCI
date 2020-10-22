@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="UnusedResources">
+  <dimen name="divider_thickness">1dp</dimen>
+
+  <dimen name="last_brushing_card_size">130dp</dimen>
+  <dimen name="last_brushing_mouthmap_size">225dp</dimen>
+  <dimen name="last_brushing_mouthmap_height">480dp</dimen>
+  <dimen name="last_brushing_progress_size">120dp</dimen>
+</resources>

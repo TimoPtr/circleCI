@@ -1,0 +1,47 @@
+apply plugin: 'com.android.library'
+
+apply from: '../buildscripts/kapt.gradle'
+
+android {
+    buildFeatures {
+        dataBinding = true
+    }
+}
+
+dependencies {
+    implementation project(path: ':features')
+    implementation project(path: ':commons')
+    implementation project(path: ':base-ui')
+    implementation project(path: ':base-ui-hum')
+    implementation project(path: ':static-resources')
+    implementation project(path: ':static-resources-branded')
+    implementation project(path: ':tracker-domain')
+    implementation project(path: ':databinding')
+    implementation project(path: ':network')
+    implementation project(path: ':account-internal')
+    implementation project(path: ':synchronizator')
+
+    implementation libraries.supportAppCompat
+    implementation libraries.supportConstraintLayout
+
+    implementation libraries.rxJava
+    implementation libraries.rxKotlin
+    implementation libraries.lottie
+    implementation libraries.threetenAbp
+
+    implementation libraries.dagger
+    implementation libraries.daggerAndroid
+    implementation libraries.daggerAndroidSupport
+
+    kapt libraries.daggerCompiler
+    kapt libraries.daggerAndroidProcessor
+
+    testImplementation libraries.mockitoKotlin2
+    testImplementation project(path: ':testing-unit-base')
+    testImplementation project(path: ':testing-builders')
+    testImplementation project(path: ':testing-pact')
+
+    androidTestImplementation project(path: ':testing-espresso-base')
+    androidTestImplementation project(path: ':testing-shared')
+    androidTestImplementation libraries.mockWebServer
+}

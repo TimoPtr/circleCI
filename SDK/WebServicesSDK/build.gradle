@@ -1,0 +1,97 @@
+apply plugin: 'com.android.library'
+
+apply from: '../buildscripts/kapt.gradle'
+
+android {
+    defaultConfig {
+        testInstrumentationRunner 'com.kolibree.sdkws.test.ApiSDKTestRunner'
+
+        kapt {
+            arguments {
+                arg("room.schemaLocation", "$projectDir/schemas".toString())
+            }
+        }
+    }
+
+    sourceSets {
+        //this folder will contained shared resources
+        String sharedSrcDir = 'src/sharedTest/java'
+        String sharedResourcesDir = 'src/sharedTest/resources'
+        test {
+            java.srcDirs = ['src/test/kotlin', 'src/test/java', sharedSrcDir]
+            resources.srcDirs += sharedResourcesDir
+        }
+        androidTest {
+            java.srcDirs = ['src/androidTest/kotlin', 'src/androidTest/java', sharedSrcDir]
+            resources.srcDirs += sharedResourcesDir
+        }
+
+        androidTest.assets.srcDirs += files("$projectDir/schemas".toString())
+    }
+
+    androidExtensions {
+        experimental = true
+    }
+}
+
+dependencies {
+    implementation project(path: ':features')
+    implementation project(path: ':commons')
+    api project(path: ':account-internal')
+    api project(path: ':network')
+    api project(path: ':synchronizator')
+    api project(path: ':stats-offline')
+    implementation project(path: ':processed-brushings-kml')
+    api project(path: ':gruware')
+
+    implementation libraries.supportExifInterface
+
+    api libraries.roomRuntime
+    implementation libraries.roomRxJava2
+    kapt libraries.roomCompiler
+
+    // kotlin
+    implementation libraries.kotlinRuntime
+    implementation libraries.coroutines
+
+    implementation libraries.jackson
+    
+    implementation libraries.rxJava
+    implementation libraries.rxRelay
+    implementation libraries.rxLint
+
+    implementation libraries.dagger
+    kapt libraries.daggerCompiler
+    kaptAndroidTest libraries.daggerCompiler
+    implementation libraries.daggerAndroid
+    kapt libraries.daggerAndroidProcessor
+    kaptAndroidTest libraries.daggerAndroidProcessor
+
+    implementation libraries.timber
+
+    api libraries.retrofit
+    api libraries.gson
+
+    implementation libraries.threetenAbp
+
+    testImplementation project(path: ':testing-unit-base')
+    testImplementation libraries.retrofitMock
+    testImplementation libraries.mockk
+    testImplementation libraries.mockWebServer
+    testImplementation libraries.mockitoKotlin2
+    testImplementation project(path: ':testing-pact')
+    testImplementation project(path: ':testing-builders')
+    testImplementation libraries.coroutinesTest
+
+    //test kotlin
+    androidTestImplementation project(path: ':testing-espresso-base')
+    androidTestImplementation libraries.supportTestRunner
+    androidTestImplementation libraries.retrofitMock
+    androidTestImplementation libraries.mockWebServer
+    androidTestImplementation libraries.mockitoKotlin2
+    androidTestImplementation libraries.mockitoAndroid
+    androidTestImplementation libraries.roomTesting
+    androidTestImplementation libraries.retrofitGsonConverter
+    androidTestImplementation libraries.retrofitRxJavaAdapter
+    androidTestImplementation project(path: ':testing-builders')
+}

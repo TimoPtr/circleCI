@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <data>
+
+    <variable
+      name="viewState"
+      type="com.kolibree.android.app.ui.home.tab.activities.TaskViewState" />
+
+    <import type="android.view.View" />
+
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_task_background"
+    android:paddingStart="@dimen/dot"
+    android:paddingTop="@dimen/dot"
+    android:paddingEnd="@dimen/dot"
+    android:paddingBottom="@dimen/dot_half"
+    android:visibility="@{viewState.visible ? View.VISIBLE : View.GONE}"
+    app:layout_constraintTop_toBottomOf="@id/task_description">
+
+    <ImageView
+      android:id="@+id/task_test_brushing_icon"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:src="@{viewState.icon}"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:src="@drawable/ic_task_test_brushing" />
+
+    <TextView
+      android:id="@+id/task_test_brushing_title"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_double"
+      android:text="@{viewState.title}"
+      android:textAppearance="?textAppearanceSubtitle2"
+      app:layout_constraintEnd_toStartOf="@id/tast_test_brushing_points"
+      app:layout_constraintStart_toEndOf="@id/task_test_brushing_icon"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:text="@string/activities_task_test_brushing_title" />
+
+    <TextView
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:text="@{viewState.description}"
+      android:textAppearance="?textAppearanceBody2"
+      android:textColor="?android:textColorSecondary"
+      app:layout_constraintEnd_toEndOf="@id/task_test_brushing_title"
+      app:layout_constraintStart_toStartOf="@id/task_test_brushing_title"
+      app:layout_constraintTop_toBottomOf="@id/task_test_brushing_title"
+      tools:text="@string/activities_task_test_brushing_description" />
+
+    <TextView
+      android:id="@+id/tast_test_brushing_points"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="@drawable/shape_rounded"
+      android:backgroundTint="?smilePointsBackgroundColor"
+      android:gravity="center"
+      android:paddingStart="@dimen/dot"
+      android:paddingTop="@dimen/dot_quarter"
+      android:paddingEnd="@dimen/dot"
+      android:paddingBottom="@dimen/dot_quarter"
+      android:text="@{viewState.points(context)}"
+      android:textAppearance="?textAppearanceSubtitle2"
+      android:textColor="@color/white"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:text="+50 pts" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

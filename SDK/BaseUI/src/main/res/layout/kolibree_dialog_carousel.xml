@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/alert_dialog_root_layout"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:clipChildren="false"
+  android:clipToPadding="false"
+  android:paddingBottom="?alertDialogInsetBottom">
+
+  <TextView
+    android:id="@+id/title_text"
+    style="?materialAlertDialogTitleTextStyle"
+    android:layout_width="@dimen/match_constraints"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="?alertDialogInsetStart"
+    android:layout_marginTop="?alertDialogInsetTop"
+    android:layout_marginEnd="?alertDialogInsetEnd"
+    android:visibility="gone"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:text="Title"
+    tools:visibility="visible" />
+
+  <TextView
+    android:id="@+id/headline_text"
+    style="?alertDialogHeadlineStyle"
+    android:layout_width="@dimen/match_constraints"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="?alertDialogInsetStart"
+    android:layout_marginTop="@dimen/dot_trip"
+    android:layout_marginEnd="?alertDialogInsetEnd"
+    android:visibility="gone"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/title_text"
+    tools:text="Headline"
+    tools:visibility="visible" />
+
+  <TextView
+    android:id="@+id/body_text"
+    style="?alertDialogBodyTextStyle"
+    android:layout_width="@dimen/match_constraints"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="?alertDialogInsetStart"
+    android:layout_marginTop="@dimen/dot_double"
+    android:layout_marginEnd="?alertDialogInsetEnd"
+    android:layout_marginBottom="@dimen/dot_double"
+    android:visibility="gone"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/headline_text"
+    tools:text="Body"
+    tools:visibility="visible" />
+
+  <androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/carousel"
+    android:layout_width="@dimen/match_constraints"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="?alertDialogInsetStart"
+    android:layout_marginEnd="?alertDialogInsetEnd"
+    android:clipToPadding="false"
+    android:overScrollMode="never"
+    app:layoutManager="com.kolibree.android.app.ui.widget.HorizontalLinearLayoutManager"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/body_text"
+    app:layout_constraintWidth_default="wrap" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

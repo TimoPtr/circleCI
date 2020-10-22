@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2019 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<resources>
+  <string name="molar_brush_initial_position_x" translatable="false">molar_brush_initial_position_x</string>
+  <string name="molar_brush_initial_position_y" translatable="false">molar_brush_initial_position_y</string>
+</resources>

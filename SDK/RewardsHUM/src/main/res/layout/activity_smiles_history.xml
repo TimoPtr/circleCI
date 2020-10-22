@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <data>
+
+    <import type="android.view.View" />
+
+    <variable
+      name="viewModel"
+      type="com.kolibree.android.rewards.smileshistory.SmilesHistoryViewModel" />
+
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.MaterialToolbar
+      android:id="@+id/toolbar"
+      enableBackNavigation="@{true}"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:navigationIcon="@{@drawable/ic_back_arrow}"
+      app:title="@string/smiles_history_title"
+      app:titleTextAppearance="?textAppearanceHeadline4" />
+
+    <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/item_list"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/match_constraints"
+      android:scrollbars="vertical"
+      android:visibility="@{viewModel.isEmpty() ? View.INVISIBLE : View.VISIBLE}"
+      app:itemBinding="@{viewModel.smilesHistoryItemBinding}"
+      app:items="@{viewModel.items}"
+      app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_margin="@dimen/dot_quin"
+      android:gravity="center"
+      android:text="@string/smiles_history_empty"
+      android:textAppearance="?textAppearanceBody2"
+      android:visibility="@{viewModel.isEmpty() ? View.VISIBLE : View.GONE}" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+

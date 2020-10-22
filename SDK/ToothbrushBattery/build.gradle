@@ -1,0 +1,34 @@
+apply plugin: 'com.android.library'
+
+apply from: '../buildscripts/kapt.gradle'
+
+
+dependencies {
+    implementation project(path: ':commons')
+    implementation project(path: ':network')
+    implementation project(path: ':account-internal')
+    implementation project(path: ':account-sdk')
+    implementation project(path: ':toothbrush-sdk')
+
+    implementation libraries.kotlinRuntime
+
+    implementation libraries.rxJava
+    implementation libraries.rxAndroid
+    implementation libraries.rxLint
+
+    implementation libraries.workRuntime
+    implementation libraries.workRuntimeKtx
+    implementation libraries.workRxJava2
+
+    implementation libraries.dagger
+    kapt libraries.daggerCompiler
+
+    testImplementation libraries.mockitoKotlin2
+    testImplementation project(path: ':testing-unit-base')
+    testImplementation project(path: ':testing-builders')
+    testImplementation project(path: ':testing-pact')
+
+    androidTestImplementation project(path: ':testing-espresso-base')
+    androidTestImplementation project(path: ':testing-shared')
+    androidTestImplementation libraries.workTesting
+}

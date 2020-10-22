@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <data>
+
+    <variable
+      name="item"
+      type="com.kolibree.android.app.ui.home.tab.home.card.lastbrushing.BrushingCardData" />
+
+    <variable
+      name="itemClick"
+      type="com.kolibree.android.app.ui.home.tab.home.card.lastbrushing.view.BrushingCardDataItemClick" />
+
+    <variable
+      name="position"
+      type="Integer" />
+
+    <import type="android.view.View" />
+
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="@dimen/last_brushing_card_width"
+    android:layout_height="wrap_content">
+
+    <com.kolibree.android.app.ui.home.tab.view.CoverageDurationProgressView
+      android:id="@+id/coverage_duration_progress"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/dot_double"
+      app:coverage="@{item.coverage}"
+      app:durationPercentage="@{item.durationPercentage}"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+      android:id="@+id/day"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/dot_half"
+      android:text="@{item.dayOfWeek}"
+      android:textAppearance="?textAppearanceCaption"
+      android:textColor="?android:textColorSecondary"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/coverage_duration_progress"
+      tools:text="Mon PM" />
+
+    <TextView
+      android:id="@+id/date"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@{item.day}"
+      android:textAppearance="?textAppearanceSubtitle2"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/day"
+      tools:text="02" />
+
+    <ImageView
+      android:id="@+id/selected"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:scaleType="fitXY"
+      android:src="@drawable/ic_brushing_selected_frame"
+      android:visibility="@{item.selected ? View.VISIBLE : View.INVISIBLE}"
+      tools:ignore="ContentDescription" />
+
+    <View
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="@dimen/match_constraints"
+      android:layout_marginBottom="@dimen/dot_half"
+      android:background="@drawable/ic_brushing_not_selected_frame"
+      android:clickable="@{item.clickable}"
+      android:foreground="@drawable/item_brushing_background"
+      android:onClick="@{v -> itemClick.onClick(position, item)}"
+      android:visibility="@{item.selected ? View.INVISIBLE : View.VISIBLE}"
+      app:layout_constraintBottom_toBottomOf="@id/selected"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:visibility="visible" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

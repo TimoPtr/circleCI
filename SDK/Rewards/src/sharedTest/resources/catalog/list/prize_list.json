@@ -1,0 +1,22 @@
+{
+  "rewards": [
+    {
+      "category_id": 1,
+      "category": "rewards",
+      "details": [
+        {
+          "rewards_id": 1,
+          "title": "GoPirate Gold Amplifier",
+          "description": "You want to get this new ship faster? Speed up your GoPirate progression with an in-game Gold Booster. This booster increases your GoPirate Gold by 1000.",
+          "smiles_required": 500,
+          "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/PirateBooster.png",
+          "voucher_discount": 0.0,
+          "product_id": null,
+          "company": "kolibree",
+          "purchasable": true,
+          "creation_date": "2020-02-13"
+        }
+      ]
+    }
+  ]
+}

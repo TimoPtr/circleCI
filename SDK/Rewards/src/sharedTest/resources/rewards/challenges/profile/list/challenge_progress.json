@@ -1,0 +1,302 @@
+{
+  "total_smiles": 0,
+  "progress": {
+    "catalog": [
+      {
+        "category_id": 5,
+        "category": "Discover Connect",
+        "challenges": [
+          {
+            "challenge_name": "1st Coach",
+            "completion_details": null,
+            "challenge_id": 1,
+            "smiles_reward": 5,
+            "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_Coach_1st.png",
+            "group": null,
+            "completion_time": "",
+            "percentage": 0
+          },
+          {
+            "challenge_name": "1st Coach+",
+            "completion_details": null,
+            "challenge_id": 2,
+            "smiles_reward": 5,
+            "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_Coach%2B_1st.png",
+            "group": null,
+            "completion_time": "",
+            "percentage": 0
+          },
+          {
+            "challenge_name": "1st Pirate",
+            "completion_details": null,
+            "challenge_id": 3,
+            "smiles_reward": 5,
+            "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_GoP.png",
+            "group": null,
+            "completion_time": "",
+            "percentage": 0
+          },
+          {
+            "challenge_name": "1st Offline brushing",
+            "completion_details": null,
+            "challenge_id": 5,
+            "smiles_reward": 3,
+            "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_FirstOfflineBrushing.png",
+            "group": null,
+            "completion_time": "",
+            "percentage": 0
+          },
+          {
+            "challenge_name": "1st Test Brushing",
+            "completion_details": null,
+            "challenge_id": 6,
+            "smiles_reward": 3,
+            "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_FirstSmartBrushingAnalyzer.png",
+            "group": null,
+            "completion_time": "",
+            "percentage": 0
+          }
+        ]
+      },
+      {
+        "category_id": 10,
+        "category": "Expert Smile",
+        "challenges": [
+          {
+            "challenge_name": "Coach+ x5",
+            "completion_details": {
+              "completion": 0,
+              "rules": 5
+            },
+            "challenge_id": 12,
+            "smiles_reward": 10,
+            "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_Coach%2B_5.png",
+            "group": 2,
+            "completion_time": "",
+            "percentage": 0
+          },
+          {
+            "challenge_name": "Activities enthusiast",
+            "completion_details": {
+              "completion": 0,
+              "rules": 3
+            },
+            "challenge_id": 52,
+            "smiles_reward": 30,
+            "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_Activitiesx3.png",
+            "group": null,
+            "completion_time": "",
+            "percentage": 0
+          },
+          {
+            "challenge_name": "Coach x5",
+            "completion_details": {
+              "completion": 0,
+              "rules": 5
+            },
+            "challenge_id": 7,
+            "smiles_reward": 10,
+            "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_Coach_5.png",
+            "group": 1,
+            "completion_time": "",
+            "percentage": 0
+          },
+          {
+            "challenge_name": "Pirate 10min",
+            "completion_details": {
+              "completion": 0,
+              "rules": 10
+            },
+            "challenge_id": 17,
+            "smiles_reward": 10,
+            "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_PirateRunner_10.png",
+            "group": 3,
+            "completion_time": "",
+            "percentage": 0
+          }
+        ]
+      },
+      {
+        "category_id": 20,
+        "category": "Freestyle your Smile",
+        "challenges": [
+          {
+            "challenge_name": "100% Clean",
+            "completion_details": {
+              "completion": 0,
+              "rules": 1
+            },
+            "challenge_id": 47,
+            "smiles_reward": 10,
+            "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_DeutscheQualitat_1.png",
+            "group": 8,
+            "completion_time": "",
+            "percentage": 0
+          },
+          {
+            "challenge_name": "Freestyle brusher x1",
+            "completion_details": {
+              "completion": 0,
+              "rules": 1
+            },
+            "challenge_id": 34,
+            "smiles_reward": 3,
+            "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_OfflineBrusher_1.png",
+            "group": 7,
+            "completion_time": "",
+            "percentage": 0
+          }
+        ]
+      },
+      {
+        "category_id": 30,
+        "category": "Keep good habits",
+        "challenges": [
+          {
+            "challenge_name": "Brush fanatic x10",
+            "completion_details": {
+              "completion": 0,
+              "rules": 10
+            },
+            "challenge_id": 25,
+            "smiles_reward": 5,
+            "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_AppFanatic_10.png",
+            "group": 5,
+            "completion_time": "",
+            "percentage": 0
+          },
+          {
+            "challenge_name": "Daily x7",
+            "completion_details": {
+              "completion": 0,
+              "rules": 7
+            },
+            "challenge_id": 28,
+            "smiles_reward": 10,
+            "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_ConsistentUser_7.png",
+            "group": 6,
+            "completion_time": "",
+            "percentage": 0
+          }
+        ]
+      },
+      {
+        "category_id": 40,
+        "category": "Spread the Smile",
+        "challenges": [
+          {
+            "challenge_name": "Save Water",
+            "completion_details": null,
+            "challenge_id": 59,
+            "smiles_reward": 50,
+            "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_Savewater.png",
+            "group": null,
+            "completion_time": "",
+            "percentage": 0
+          },
+          {
+            "challenge_name": "Holiday brusher",
+            "completion_details": null,
+            "challenge_id": 39,
+            "smiles_reward": 5,
+            "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_Christmas_1.png",
+            "group": null,
+            "completion_time": "",
+            "percentage": 0
+          },
+          {
+            "challenge_name": "Halloween brusher",
+            "completion_details": null,
+            "challenge_id": 40,
+            "smiles_reward": 5,
+            "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_HalloweenBrusher.png",
+            "group": null,
+            "completion_time": "",
+            "percentage": 0
+          },
+          {
+            "challenge_name": "New year's day brusher",
+            "completion_details": null,
+            "challenge_id": 41,
+            "smiles_reward": 5,
+            "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_NewyearBrushert.png",
+            "group": null,
+            "completion_time": "",
+            "percentage": 0
+          },
+          {
+            "challenge_name": "Patrick's day brusher",
+            "completion_details": null,
+            "challenge_id": 42,
+            "smiles_reward": 5,
+            "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_PatricksDayBrusher.png",
+            "group": null,
+            "completion_time": "",
+            "percentage": 0
+          },
+          {
+            "challenge_name": "Valentine's day brusher",
+            "completion_details": null,
+            "challenge_id": 43,
+            "smiles_reward": 5,
+            "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_Valentine.png",
+            "group": null,
+            "completion_time": "",
+            "percentage": 0
+          },
+          {
+            "challenge_name": "Mindfulness day",
+            "completion_details": null,
+            "challenge_id": 54,
+            "smiles_reward": 5,
+            "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_Mindfullness_day.png",
+            "group": null,
+            "completion_time": "",
+            "percentage": 0
+          },
+          {
+            "challenge_name": "Peace day",
+            "completion_details": null,
+            "challenge_id": 55,
+            "smiles_reward": 5,
+            "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_Peace_day.png",
+            "group": null,
+            "completion_time": "",
+            "percentage": 0
+          },
+          {
+            "challenge_name": "Toothbrushing day",
+            "completion_details": null,
+            "challenge_id": 56,
+            "smiles_reward": 5,
+            "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_Toothbrushing_day.png",
+            "group": null,
+            "completion_time": "",
+            "percentage": 0
+          },
+          {
+            "challenge_name": "Thanksgiving",
+            "completion_details": null,
+            "challenge_id": 57,
+            "smiles_reward": 5,
+            "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_Thanksgiving_day.png",
+            "group": null,
+            "completion_time": "",
+            "percentage": 0
+          },
+          {
+            "challenge_name": "Mountain day",
+            "completion_details": null,
+            "challenge_id": 58,
+            "smiles_reward": 5,
+            "picture_url": "https://dyg43gvcnlkrm.cloudfront.net/rewards/Badge_Mountain_day.png",
+            "group": null,
+            "completion_time": "",
+            "percentage": 0
+          }
+        ]
+      }
+    ],
+    "language": "EN"
+  }
+}

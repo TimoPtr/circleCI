@@ -1,0 +1,1107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ok">"OK"</string>
+
+    <!-- Home menu -->
+    <string name="action_account_settings">"Cuenta"</string>
+    <string name="action_users_settings">"Perfiles"</string>
+    <string name="action_go_to_slideshow">"Visita guiada"</string>
+    <string name="action_about">"Acerca de"</string>
+    <string name="action_logout">"Salir"</string>
+    <string name="action_spread_the_word">"Pasa el recado"</string>
+    <string name="action_help">"Ayuda"</string>
+    <string name="action_change_profile">"Cambiar de perfil"</string>
+    <string name="action_edit_profile">"Modificar perfil"</string>
+
+    <!-- LOGIN AND REGISTRATION -->
+    <string name="login">"Conectarse"</string>
+    <string name="connect_">"Conexión &gt;"</string>
+    <string name="male">"Hombre"</string>
+    <string name="female">"Mujer"</string>
+    <string name="signup">"Inscribirse"</string>
+    <string name="create_profile">"Crear un perfil"</string>
+    <string name="edit_profile">"Modificar el perfil"</string>
+    <string name="email_hint">"Email"</string>
+    <string name="password_hint">"Contraseña"</string>
+    <string name="password_confirm_hint">"Confirmar contraseña"</string>
+    <string name="firstname_hint">"Su nombre"</string>
+    <string name="lastname_hint">"Su apellido"</string>
+    <string name="birthday_hint">"Su fecha de cumpleaños"</string>
+    <string name="create">"Crear &gt;"</string>
+    <string name="btn_next">"Siguiente &gt;"</string>
+    <string name="choose_picture_hint">"Añadir su foto"</string>
+    <string name="choose_picture_gallery">"Elegir mi foto"</string>
+    <string name="choose_picture_take">"Sacarse una foto"</string>
+    <string name="gender_hint">"Usted es"</string>
+    <string name="handedness_hint">"¿Qué mano emplea para cepillarse los dientes?"</string>
+    <string name="country_hint">"País"</string>
+    <string name="forgotten_password">"Olvidó su contraseña"</string>
+    <string name="email_missing">"Indique su dirección de email."</string>
+    <string name="email_invalid">"Indique una dirección de email válida."</string>
+    <string name="firstname_missing">"Indique su nombre."</string>
+    <string name="lastname_missing">"Indique su apellido."</string>
+    <string name="birthday_missing">"Indique su edad."</string>
+    <string name="picture_missing">"Elija una foto."</string>
+    <string name="gender_missing">"Indique su género."</string>
+    <string name="handedness_missing">"Indique su lateralidad."</string>
+    <string name="country_missing">"Indique su país."</string>
+    <string name="password_missing">"Indique su contraseña."</string>
+    <string name="password_confirmation_missing">"Confirme su contraseña."</string>
+    <string name="passwords_dont_match">"¡Uy! No coinciden las contraseñas."</string>
+    <string name="reset_password">"Reiniciar"</string>
+    <string name="reset_password_ok">"Siga las instrucciones que ha recibido en su buzón."</string>
+    <string name="reset_password_ko">"Lo siento, se produjo un error…"</string>
+    <string name="terms_of_use_terms">"Términos y condiciones"</string>
+    <string name="terms_of_use_policy">"Política de confidencialidad"</string>
+    <string name="account_created_title">"¡Lo consiguió!"</string>
+    <string name="account_created_message">"Su perfil ha sido creado. ¡Ya está listo para cepillarse los dientes!"</string>
+    <string name="facebook_login">"Conexión con Facebook"</string>
+    <string name="facebook_signup">"Inscribirse en Facebook"</string>
+    <string name="please_wait">"Espere, por favor…"</string>
+    <string name="choose_picture_local">"Elegir Colgate Connect"</string>
+    <string name="terms_of_use">"Acepto los "<![CDATA[<u><a href=\"%1$s\">%2$s</a></u>]]>" y reconozco la "<![CDATA[<u><a href=\"%3$s\">%4$s</a></u>]]>"."</string>
+
+    <!-- ACCOUNT ACTIVITY -->
+    <string name="account">"Cuenta"</string>
+    <string name="change_password">"Cambiar contraseña"</string>
+    <string name="new_password">"Nueva contraseña"</string>
+    <string name="old_password">"Antigua contraseña"</string>
+    <string name="confirm_new_pasword">"Confirmar contraseña"</string>
+    <string name="help_title">"Ayúdenos"</string>
+    <string name="help_message">"Ayúdenos a mejorar la precisión de nuestros sensores de movimiento: envíenos, por favor, sus datos, de manera completamente anónima. (Podrá cambiar sus preferencias en cualquier momento gracias a los ajustes de la aplicación)"</string>
+    <string name="old_password_missing">"Indique su contraseña antigua."</string>
+    <string name="new_password_missing">"Indique su nueva contraseña."</string>
+    <string name="new_password_confirm_missing">"Confirme su nueva contraseña."</string>
+    <string name="password_updated">"¡Su contraseña ha sido modificada con éxito!"</string>
+    <string name="password_updated_title">"¡Gracias!"</string>
+    <string name="musicchoosertitle">"Seleccione la música de su Coach"</string>
+
+    <!-- EDIT PROFILE ACTIVITY -->
+    <string name="personal_info">"Información personal"</string>
+    <string name="brushing_settings">"Ajustes del cepillado"</string>
+    <string name="right_handed">"Diestro(a)"</string>
+    <string name="left_handed">"Zurdo(a)"</string>
+    <string name="coach_brushing_time">"Duración del cepillado"</string>
+    <string name="coach_brushing_time_duration">"Duración del cepillado: %1$s"</string>
+    <string name="coach_sound_value">"Música durante el cepillado con Coach: %1$s"</string>
+    <string name="none">"ninguna"</string>
+    <string name="music">"Música"</string>
+    <string name="sounds">"Sonidos"</string>
+    <string name="no_music_file">"No seleccionó ningún fichero"</string>
+    <string name="transition_sounds">"Sonidos de transición"</string>
+    <string name="no_artist">"Ningún artista"</string>
+    <string name="no_title">"Ningún título"</string>
+    <string name="brushing_time_hint">"Duración del cepillado"</string>
+    <string name="profiles">"Perfiles"</string>
+    <string name="delete_profile_title">"Eliminar perfil"</string>
+    <string name="delete_profile_message">"¿Está seguro(a)? Se borrarán todos los datos referentes a este usuario."</string>
+
+    <!-- ADD PROFILE ACTIVITY -->
+    <string name="add_profile">"Añadir un perfil"</string>
+
+    <!-- Leaderboard -->
+    <string name="leaderboard">"Clasificación"</string>
+
+    <!-- About -->
+    <string name="kolibree_version">"Versión %1$s (%2$s)
+Cuenta %3$s"</string>
+    <string name="kolibree_about">"Creemos que la tecnología puede ayudar a prevenir enfermedades bucodentales. Vamos a transformar esa posibilidad en una realidad."</string>
+    <string name="about_terms">"Términos y condiciones y Política de confidencialidad"</string>
+    <string name="about">"Acerca de"</string>
+    <string name="kolibree_rights">"Colgate Connect, el logotipo Colgate Connect y todas las marcas Colgate Connect son propiedad de la empresa Colgate Connect. Reservados todos los derechos."</string>
+
+    <!-- Checkup -->
+    <string name="get_tb">"Pedir un cepillo de dientes"</string>
+
+    <!-- Checkup -->
+    <string name="checkup">"Balance"</string>
+    <string name="neglected_areas">"Zonas insuficientemente cepilladas"</string>
+    <string name="well_brushed_areas">"Zonas bien cepilladas"</string>
+    <string name="refresh">"Refrescar"</string>
+    <string name="checkup_duration">"Duración"</string>
+    <string name="checkup_not_connected">"Datos de superficie no disponibles para este cepillado."</string>
+    <string name="checkup_empty">"Instalar mi cepillo de dientes"</string>
+    <string name="connect_tb_hint">"Cepille sus dientes con su cepillo de dientes Colgate Connect para ver las áreas que puede haber perdido."</string>
+
+    <!-- Options Menu -->
+    <string name="menu_connect">"Conectar un cepillo de dientes"</string>
+
+    <!-- SetupToothbrushActivity -->
+    <string name="none_paired">"No se ha sincronizado ningún cepillo de dientes"</string>
+    <string name="none_found">"No se ha encontrado cepillo de dientes alguno"</string>
+
+    <!-- ConnectDeviceDialogActivity -->
+    <string name="toothbrushes">"Cepillos de dientes"</string>
+    <string name="none_connected">"No hay conectado ningún cepillo de dientes"</string>
+    <string name="select_a_device">"Cepillos de dientes disponibles"</string>
+    <string name="connect">"Conectar"</string>
+    <string name="restart">"Volver a empezar"</string>
+    <string name="quit">"Salir"</string>
+    <string name="pause">"Pausa"</string>
+    <string name="next">"Siguiente"</string>
+    <string name="cancel">"Anular"</string>
+    <string name="notnow">"Ahora no"</string>
+    <string name="information">"Información"</string>
+    <string name="error">"Error"</string>
+
+    <!-- SwitchGame Coach Fragment -->
+    <string name="no_tb_connected">"Cepillo de dientes no conectado"</string>
+    <string name="description_no_tb_connected_pirate">"¡Conecte su cepillo de dientes para cepillarse los dientes con Go Pirate!"</string>
+    <string name="description_no_tb_connected_coach">"¿Desea cepillarse los dientes sin su cepillo Colgate Connect?"</string>
+
+    <!-- Coach Game Fragment -->
+    <string name="resume">"Continuar"</string>
+    <string name="coach_something_wrong">"Se produjo un problema. Vuelva a intentarlo más tarde, por favor."</string>
+
+    <!-- Coach Game Fragment -->
+    <string name="points">"Puntos"</string>
+
+    <!-- Settings ToothBrush Fragment -->
+    <string name="user_mode_title">"Usuarios"</string>
+
+    <!-- Settings ToothBrush Fragment -->
+    <string name="toothbrush_information">"Información acerca del cepillo de dientes"</string>
+    <string name="title_toothbrush">"Cantidad de cepillos de dientes"</string>
+    <string name="battery_level">"Nivel de carga de la batería"</string>
+    <string name="find_toothbrush">"Poner referencia a mi cepillo de dientes"</string>
+    <string name="blink_toothbrush">"Hacer que parpadee mi cepillo de dientes"</string>
+    <string name="toothbrush_blinking">"Su cepillo está parpadeando"</string>
+    <string name="ota_toothbrush_title">"Versión del software del cepillo de dientes"</string>
+    <string name="hardware_version_title">"Versión del material"</string>
+    <string name="software_version_title">"Versión del software"</string>
+    <string name="user_mode_not_known">"Seleccione un usuario"</string>
+    <string name="settings_shared_toothbrush">"Varios usuarios"</string>
+    <string name="toothbrush_owner_everyone">"Todo el mundo"</string>
+    <string name="toothbrush_firmware_update_available">"Actualizar el cepillo de dientes"</string>
+    <string name="toothbrush_firmware_update_title">"Actualizar el cepillo de dientes"</string>
+    <string name="toothbrush_firmware_update_button">"Actualizar"</string>
+    <string name="firmware_upgrade_error">"la actualización fracasó:
+%s"</string>
+    <string name="toothbrush_firmware_update_progress_label">"Instalando…"</string>
+    <string name="toothbrush_firmware_update_rebooting_label">"Rebooting"</string>
+    <string name="toothbrush_firmware_update_success">"¡Su cepillo de dientes Colgate Connect ha sido actualizado!"</string>
+
+    <!-- Settings Pairing Fragment -->
+    <string name="pairing_kolibree_1">"Mantenga apretado el botón del cepillo hasta que el LED parpadee con color azul."</string>
+    <string name="pairing_kolibree_2">"Cuando en una ventana emergente le soliciten sincronizar su cepillo de dientes, introduzca el código:"</string>
+    <string name="pairing_kolibree_4">"0000"</string>
+    <string name="pop_up_connect_fail_title">"¡Vaya!"</string>
+    <string name="pop_up_connect_fail_msg">"No se ha establecido la conexión entre su cepillo de dientes y su Smartphone. Compruebe que su cepillo está encendido, y vuelva a intentarlo."</string>
+
+    <!-- Switch Game Fragment -->
+    <string name="coach_game_name">"Coach"</string>
+    <string name="pirate_game_name">"GoPirate"</string>
+    <string name="coach_plus_game_name">"Coach Plus"</string>
+    <string name="sba_game_name">@string/test_brushing_screen_title</string>
+    <string name="rabbids_game_name">"Rebeldes"</string>
+    <string name="offline_game_name">"Cepillado offline"</string>
+    <string name="coach_game_description">"Coach le acompaña durante el cepillado para mostrarle las zonas que debe cepillar. ¡Sepa cómo dominar su cepillado!"</string>
+    <string name="pirate_game_description">"El cepillado se transforma en un juego: capture las piezas que se interponen en su camino durante el cepillado."</string>
+    <string name="activities_warning">"Los nuevos datos de cepillado se asocian al perfil activado"</string>
+    <string name="transition_game">"transición_juego"</string>
+    <string name="game_brush_not_allow_title">"¡Cuidado!"</string>
+    <string name="game_brush_not_allow_msg">"Cepillarse más de tres veces al día puede dañar las encías."</string>
+    <string name="upper_arch">"Arriba"</string>
+    <string name="lower_arch">"Abajo"</string>
+    <string name="delete_profile">"Eliminar"</string>
+    <string name="logout_title">"Desconexión"</string>
+    <string name="logout_message">"¿Es cierto que desea desconectarse?"</string>
+    <string name="load_avatar_error">"Humm, algo no marcha… Compruebe su conexión a internet para poder descargarse los perfiles."</string>
+
+    <!-- Connection Lost Dialog -->
+    <string name="lost_connection_dialog_title">"¡Emergencia!"</string>
+    <string name="lost_connection_dialog_msg">"No se detecta su cepillo de dientes. Vuelva a conectarlo para finalizar los ajustes."</string>
+    <string name="send">"Enviar"</string>
+    <string name="points_pts">"+%d pts"</string>
+    <string name="account_settings_help">"Ayúdenos a mejorar la precisión de nuestros sensores de movimiento: envíenos, por favor, sus datos, de manera completamente anónima."</string>
+    <string name="account_settings_digest">"Reciba todas las semanas por email el balance completo de los cepillados de los usuarios de su Colgate Connect."</string>
+    <string name="account_settings_digest_title">"Balance semanal"</string>
+    <string name="toothbrush_status_connecting">"Conexión..."</string>
+    <string name="toothbrush_status_pairing">"Sincronización..."</string>
+    <string name="checkup_hint_1">"Para visualizar su balance dental, cepíllese los dientes con alguna de las actividades de la aplicación."</string>
+    <string name="checkup_hint_2">"El balance tiene en cuenta solamente los cepillados llevados a cabo con las actividades de la aplicación."</string>
+    <string name="checkup_error_no_data_title">"Lo sentimos, no tenemos suficientes datos…"</string>
+    <string name="checkup_error_no_data_hint">"Para visualizar su balance dental, cepíllese los dientes con alguna de las actividades de la aplicación."</string>
+    <string name="checkup_error_no_internet_title">"Lo sentimos, no está conectado a internet."</string>
+    <string name="checkup_error_no_internet_hint">"Conéctese a internet para actualizar sus datos de cepillado."</string>
+    <string name="um_welcome_title">"Buenos días, %s:"</string>
+    <string name="um_warning_title">"Atención"</string>
+    <string name="um_yes">"Sí"</string>
+    <string name="um_no">"No"</string>
+    <string name="um_cancel">"Anular"</string>
+    <string name="um_edit">"Modificar"</string>
+    <string name="um_next">"Siguiente"</string>
+    <string name="um_great">"Súper"</string>
+    <string name="um_understood">"De acuerdo, entendido"</string>
+    <string name="um_already_associated">"El cepillo de dientes está asociado a una persona."</string>
+    <string name="um_already_associated_known">"Este cepillo de dientes está asociado con %s."</string>
+    <string name="um_already_associated2_known">"¿Desea asociar este cepillo de dientes al perfil de %s desde ahora?"</string>
+    <string name="um_already_associated2">"¿Desea modificar los ajustes, y asociar este cepillo de dientes a otra persona?"</string>
+    <string name="um_already_associated2_self">"¿Desea modificar los ajustes, y asociar este cepillo de dientes al perfil suyo?"</string>
+    <string name="um_warning_message">"Se va a modificar el ajuste de su cepillo de dientes para que pueda ser utilizado por todos los perfiles. No se registrarán los cepillados que se lleven a cabo sin la aplicación."</string>
+    <string name="um_warning_hint">"Podrá cambiar esta opción de compartir más adelante, modificando los parámetros de su cepillo de dientes."</string>
+    <string name="um_pairing_warning_hint">"Se perderá la asociación anterior."</string>
+    <string name="um_pairing_um_users_title_one">"¡Se ha detectado un cepillo de dientes nuevo! ¿Quién lo utiliza?"</string>
+    <string name="um_pairing_um_users_title_several">"Quién va a utilizar este cepillo de dientes?"</string>
+    <string name="um_pairing_um_users_entry">"Solamente %s"</string>
+    <string name="um_pairing_um_users_entry_several">"Varios perfiles"</string>
+    <string name="um_shared_tb">"Cepillo de dientes compartido"</string>
+    <string name="um_shared_tb_hint">"Los demás usuarios de este cepillo de dientes podrán utilizar este mismo cepillo de dientes cambiando el cabezal. No tiene más que seleccionar el usuario antes de iniciar el cepillado de dientes."</string>
+    <string name="um_dont_forget">"¡No lo olvide!"</string>
+    <string name="um_dont_forget_hint">"Si se cepilla los dientes sin la aplicación, no se registrarán los datos del cepillado."</string>
+    <string name="um_new_tb_associated">"¡Se ha detectado un nuevo cepillo de dientes que está asociado con su perfil!"</string>
+    <string name="um_warning_message_plural">"No se registrarán los cepillados que se lleven a cabo sin la aplicación"</string>
+    <string name="um_pairing_um_pairing_confirmation_1">"Puede utilizar el cepillo con o sin la aplicación Colgate Connect."</string>
+    <string name="um_pairing_um_pairing_confirmation_2">"Los datos de cepillado se registrarán automáticamente. Para guardarlos, recuerde conectar el cepillo a la aplicación por lo menos una vez por semana."</string>
+    <string name="um_welcome_hint">"¿desea agregar un nuevo cepillo de dientes Colgate Connect a su perfil?"</string>
+
+    <!-- Notifications -->
+    <string name="tb_sync.notification.standard.2">"¡Recuerde sincronizar su cepillado para maximizar el aprovechamiento de su Colgate Connect!"</string>
+    <string name="tb_sync.notification.standard.6">"Sincronice su cepillo de dientes para guardar los datos registrados, incluso aunque se hubiera cepillado sin abrir la aplicación Colgate Connect"</string>
+    <string name="tb_sync.notification.standard.7">"¿Desea saber si se cepilló bien los dientes estos días atrás? Sincronice sus cepillados con la aplicación."</string>
+    <string name="tb_sync.notification.standard.8">"Recuerde sincronizar su cepillado de vez en cuando, para que Colgate Connect pueda analizar su salud dental!"</string>
+    <string name="tb_sync.notification.standard.1">"Pulse para sincronizar sus cepillados."</string>
+    <string name="tb_sync.notification.standard.3">"¿Desea saber más sobre su higiene dental? Pulse para sincronizar sus cepillados."</string>
+    <string name="tb_sync.notification.standard.4">"¿Tiene cerca su cepillo de dientes? ¡Pulse para sincronizar sus cepillados!"</string>
+    <string name="tb_sync.notification.standard.5">"¡Pulse para sincronizar sus cepillados y actualizar su balance dental!"</string>
+    <string name="tb_sync.notification.standard.9">"Sincronice ahora sus cepillados para observar su avance."</string>
+    <string name="tb_sync.notification.standard.10">"¿Cómo fueron llevados a cabo los cepillados más recientes? Sincronícelos para saberlo."</string>
+    <string name="tb_sync.notification.standard.11">"¿Tiene a mano su cepillo de dientes? Sincronice fácilmente sus cepillados."</string>
+    <string name="tb_sync.notification.standard.12">"Sincronice su cepillo de dientes para actualizar las indicaciones sobre cepillado."</string>
+    <string name="tb_sync.enable.bluetooth.title">"Activar Bluetooth"</string>
+    <string name="about_attributions_hint">"Esta aplicación utiliza las bibliotecas siguientes:"</string>
+    <string name="about_attributions_website">"página web"</string>
+    <string name="about_attributions_license">"licencia"</string>
+
+    <!-- Setup toothbrush tunnel -->
+    <string name="setup_toothbrush_connect_m1_title">"Conecte su M1"</string>
+    <string name="setup_toothbrush_connect_kolibree_title">"Conecte su Kolibree V1"</string>
+    <string name="setup_toothbrush_choose_model">"¿Qué cepillo de dientes tiene?"</string>
+    <string name="setup_toothbrush_choose_model_ara">"Ara"</string>
+    <string name="setup_toothbrush_another_toothbrush_title">"Y, por último:"</string>
+    <string name="setup_toothbrush_another_toothbrush_buy">"¡Vamos a la tienda!"</string>
+    <string name="setup_toothbrush_another_toothbrush_to_coach">"Iniciar Coach"</string>
+    <string name="setup_toothbrush_choose_model_help"><![CDATA[No sé cuál es <b>el cepillo de dientes que tengo</b>]]></string>
+    <string name="setup_toothbrush_choose_model_help_title">"¿Cómo puedo identificar mi cepillo de dientes?"</string>
+    <string name="setup_toothbrush_get_one">"¡Elija uno en la tienda!"</string>
+    <string name="setup_toothbrush_proceed_without">"Gracias, pero quiero continuar sin hacerlo"</string>
+    <string name="setup_toothbrush_model_ara">"Ara"</string>
+    <string name="setup_toothbrush_ara_charger">"Coloque el cepillo sobre su cargador, y pulse el botón de Inicio."</string>
+    <string name="setup_toothbrush_m1_instructions">"Sacuda su Connect M1 para activar la conexión. El piloto LED parpadeará con color azul."</string>
+    <string name="setup_toothbrush_ara_charger_start">"Empezar"</string>
+    <string name="setup_toothbrush_ara_no_charger">"No tengo cargador"</string>
+    <string name="setup_toothbrush_searching">"Buscando… %d %%"</string>
+    <string name="setup_toothbrush_connecting">"Conectando..."</string>
+    <string name="setup_toothbrush_ara_wait">"Espere un poco
+La aplicación está buscando su cepillo de dientes."</string>
+    <string name="setup_toothbrush_rename_hint">"Podrá modificar este parámetro en la configuración de su cepillo de dientes"</string>
+    <string name="setup_toothbrush_rename_ara_done">"Acabar"</string>
+    <string name="setup_toothbrush_rename_ara_choose_name">"Elija un nombre"</string>
+    <string name="setup_searching">"Buscando cepillo de dientes..."</string>
+    <string name="setup_barcode_hint">"Confirme el nombre de su cepillo de dientes: figura en la caja de embalaje de su cepillo de dientes."</string>
+    <string name="setup_permission_popup">"Android requiere permiso de ubicación para conectar cualquier dispositivo Bluetooth de baja energía. Por favor habilítelo en el siguiente diálogo para conectar su cepillo de dientes."</string>
+    <string name="setup_popup_help_title">"¿No encuentra su cepillo de dientes?"</string>
+    <string name="setup_popup_help_message">"Si su cepillo de dientes se encuentra cerca pero no la ve en este menú, significa quizás que ya está conectado a otro aparato.
+Desactive Bluetooth o deje su cepillo de dientes en ese otro aparato.
+¡Su cepillo de dientes aparecerá aquí!"</string>
+    <string name="setup_connected_title">"¡Enhorabuena %s!
+Su cepillo de dientes ya está conectado"</string>
+    <string name="setup_connected_hint">"Su cepillo de dientes se llama: \"%1$s\"
+¡Puede cambiarle el nombre en la configuración!"</string>
+    <string name="setup_connected_button">"¡Ya está en marcha!"</string>
+    <string name="setup_summary_message">"Los datos del cepillado se registran automáticamente. Para guardarlos, recuerde conectar el cepillo con la aplicación por lo menos una vez por semana."</string>
+    <string name="setup_toothbrush_choose_model_e1">"Connect E1"</string>
+    <string name="setup_toothbrush_connect_ara_title">"Conecte su E1"</string>
+    <string name="setup_toothbrush_another_toothbrush_text">"¡Puede cepillarse los dientes con nuestro Coach! Pero si no tiene un cepillo de dientes Colgate Connect, su aprovechamiento no resultará completo. ¡Menos mal que todavía está a tiempo de comprar uno inmediatamente!"</string>
+    <string name="setup_toothbrush_choose_model_help_top">"Colgate Connect E1"</string>
+    <string name="setup_toothbrush_choose_model_help_bottom">"Colgate Connect M1"</string>
+    <string name="setup_toothbrush_choose_model_buy">"¡Comprar otro cepillo de dientes Colgate Connect!"</string>
+    <string name="setup_summary_title">"Puede utilizar su cepillo de dientes con o sin la aplicación Colgate Connect"</string>
+    <string name="setup_toothbrush_choose_model_another">"No tengo cepillo de dientes Colgate Connect"</string>
+    <string name="setup_toothbrush_choose_model_m1">"Connect M1"</string>
+
+    <!-- Toothbrush -->
+    <string name="forget_toothbrush">"Eliminar este cepillo de dientes"</string>
+    <string name="forget_toothbrush_popup_title">"¿Desea eliminar %s?"</string>
+    <string name="forget_toothbrush_popup_message">"Su teléfono dejará de conectarse de manera automática a este cepillo de dientes."</string>
+    <string name="forget_toothbrush_forget">"Eliminar"</string>
+    <string name="my_toothbrushes">"Mis cepillos de dientes"</string>
+    <string name="my_toothbrush">"Mi cepillo de dientes"</string>
+    <string name="my_ara">"Mi Ara"</string>
+    <string name="my_connect_m1">"Mi Connect M1"</string>
+    <string name="my_connect_e1">"Mi Connect E1"</string>
+    <string name="my_kolibree">"Mi Kolibree V1"</string>
+    <string name="toothbrush_name">"Nombre"</string>
+    <string name="toothbrush_personalized_name">"Nombre personalizado"</string>
+    <string name="toothbrush_none">"Ninguno"</string>
+    <string name="toothbrush_serial_number">"Número de serie"</string>
+    <string name="toothbrush_mac">"Dirección MAC"</string>
+    <string name="toothbrush_hardware_version">"Versión del aparato"</string>
+    <string name="toothbrush_software_version">"Versión del software"</string>
+    <string name="toothbrush_software_version_ara">"%1$s (%2$s)"</string>
+    <string name="toothbrush_update_now">"Actualizar ahora"</string>
+    <string name="toothbrush_update_hint">"Está disponible una nueva actualización (%s) para su cepillo de dientes."</string>
+
+    <!-- User mode dialog -->
+    <string name="user_mode_dialog_title">"Usuario"</string>
+
+    <!-- Popup toothbrush not available -->
+    <string name="popup_toothbrush_unavailable_title">"No hay conectado ningún cepillo"</string>
+    <string name="popup_toothbrush_unavailable_alternate_title">"No hay conectado
+ningún cepillo de dientes"</string>
+    <string name="popup_toothbrush_unavailable_message">"Acerque su cepillo de dientes para que se conecte automáticamente."</string>
+
+    <!-- Popup choose toothbrush -->
+    <string name="popup_choose_toothbrush_title">"Seleccione un cepillo de dientes para continuar"</string>
+    <string name="popup_choose_toothbrush_manual">"Cepillo de dientes manual"</string>
+
+    <!-- Popup brushing records -->
+    <string name="popup_brushing_record_title">"¡Bravo!"</string>
+    <string name="popup_brushing_record_message_singular">"Acaba de sincronizar un cepillado offline."</string>
+    <string name="popup_brushing_record_message_multiple">"Acaba de sincronizar %d cepillados offline."</string>
+
+    <!-- Popup mandatory update -->
+    <string name="popup_mandatory_update_title">"Actualización obligatoria"</string>
+    <string name="popup_mandatory_update_message">"Su cepillo de dientes necesita actualizarse para funcionar correctamente."</string>
+    <string name="popup_mandatory_update_button">"Actualizar ahora"</string>
+    <string name="popup_mandatory_enable_internet">"Conéctese a internet para iniciar su actualización."</string>
+    <string name="firmware_upgrade_downloading">"Descargando..."</string>
+    <string name="firmware_upgrade_rebooting">"Reiniciando..."</string>
+    <string name="firmware_upgrade_installing">"Instalando..."</string>
+    <string name="firmware_upgrade_cancel">"Anular"</string>
+    <string name="firmware_upgrade_upgrade">"Actualizar"</string>
+    <string name="firmware_upgrade_error_dialog">"La actualización del firmware falló:
+%s"</string>
+    <string name="firmware_success">"Su cepillo de dientes ha sido actualizado."</string>
+    <string name="firmware_upgrade_retry">"Volver a intentarlo"</string>
+
+    <!-- Home -->
+    <string name="tab_home">"Inicio"</string>
+    <string name="tab_brush">"Actividades"</string>
+
+    <!-- Home -->
+    <string name="tab_checkup">"Balance"</string>
+
+    <!-- Dashboard -->
+    <string name="dashboard_hint">"Media semanal"</string>
+    <string name="dashboard_last_session_hint">"Último cepillado"</string>
+    <string name="dashboard_duration">"Duración"</string>
+    <string name="dashboard_frequency">"Frecuencia"</string>
+    <string name="dashboard_surface">"Superficie"</string>
+    <string name="dashboard_coverage">"cubierta"</string>
+    <string name="dashboard_minutes">"Minutos"</string>
+    <string name="dashboard_per_day">"Diaria"</string>
+    <string name="dashboard_percentage">"Porcentaje"</string>
+    <string name="dashboard_no_bluetooth">"¡Por favor, active Bluetooth en su aparato!"</string>
+    <string name="dashboard_week">"Semana"</string>
+    <string name="dashboard_average_duration">"Duración media:
+%s / cepillado"</string>
+    <string name="dashboard_average_duration_hint">"Los dentistas recomiendan lavarse los dientes dos veces al día, dos minutos cada vez, para reducir los riesgos de posibles enfermedades dentales"</string>
+    <string name="dashboard_average_regularity">"Media de cepillados: %s veces al día"</string>
+    <string name="dashboard_average_frequency_hint">"La media de los usuarios de su edad se cepillan los dientes dos veces al día. Los dentistas recomiendan cepillarse los dientes dos veces al día para reducir las posibles enfermedades dentales. Cepillarse los dientes más de 3 veces al día es peligroso para sus encías"</string>
+    <string name="dashboard_average_surface">"Superficie media cepillada: %s"</string>
+    <string name="dashboard_average_surface_hint">"¡En cualquier sitio pueden aparecer caries dentales!
+Todos los dientes son importantes, en toda su superficie."</string>
+    <string name="dashboard_last_session_empty">"-"</string>
+
+    <!-- Profile -->
+    <string name="edit_profile_smart_brushing_analyser">@string/sba_game_name</string>
+    <string name="profile_information_name">"Nombre de pila"</string>
+    <string name="profile_information_name_hint">"Su nombre"</string>
+    <string name="profile_information_age">"Edad"</string>
+    <string name="profile_information_age_hint">"¿Qué edad tiene?"</string>
+    <string name="profile_information_gender_hint">"Género"</string>
+    <string name="profile_information_handedness_hint">"Lateralidad"</string>
+    <string name="profile_years_old">"años"</string>
+    <string name="profile_picture_dialog_title">"Agregar su foto"</string>
+    <string name="profile_set_picture">"Agregar su foto"</string>
+    <string name="profile_created_title">"¡Muy bien!"</string>
+    <string name="profile_created_message">"Su perfil ha sido creado. ¿Ya está listo para cepillarse los dientes!"</string>
+    <string name="profile_last_sba">"Análisis más reciente de Cepillado Inteligente"</string>
+    <string name="profile_my_profiles">"Perfiles"</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_subtitle">"Su compañero de Cepillado Inteligente"</string>
+    <string name="onboarding_login"><![CDATA[¿Ya tiene una cuenta? <b>Conéctese</b>]]></string>
+    <string name="onboarding_start">"Empiece"</string>
+
+    <!-- Sign up tunnel -->
+    <string name="sign_up_profile_info_title">"Sepamos conocernos"</string>
+    <string name="sign_up_profile_wait">"Espere, por favor..."</string>
+    <string name="sign_up_profile_info_next">"Unirse a Colgate Connect"</string>
+
+    <!-- Delete account popup -->
+    <string name="delete_account">"Eliminar mi cuenta"</string>
+    <string name="delete_account_popup_message">"¿Está seguro(a) de que desea eliminar su cuenta?
+Esta acción será irreversible."</string>
+    <string name="delete_account_popup_yes">"sí, eliminar mi cuenta"</string>
+
+    <!-- Checkup Popup -->
+    <string name="checkup_popup_title">"Balance"</string>
+    <string name="checkup_popup_message_last">"En este balance figura su cepillado más reciente. Observe con atención las zonas de color amarillo: no las ha cepillado suficientemente, y existe en ellas un mayor riesgo de que se forme placa."</string>
+    <string name="checkup_popup_message">"En este balance se muestra su cepillado. Observe con atención las zonas de color amarillo: no las ha cepillado suficientemente, y existe en ellas un mayor riesgo de que se forme placa."</string>
+
+    <!-- Turn on your toothbrush popup -->
+    <string name="setup_ara_popup_title">"¡Importante!"</string>
+    <string name="setup_ara_popup_message">"Antes de continuar, pulse dos veces el botón de su cepillo de dientes."</string>
+
+    <!-- Add ara user activity -->
+    <string name="add_ara_user_add_profile">"Agregar un perfil"</string>
+    <string name="add_ara_user_hint">"Podrá cambiar esta asociación más adelante modificando los parámetros de su cepillo de dientes."</string>
+    <string name="add_ara_user_subtitle">"¿Quién va a utilizar este cepillo de dientes?"</string>
+    <string name="add_ara_shared">"Compartido"</string>
+
+    <!-- No BLE popup -->
+    <string name="no_ble_popup_message">"Este aparato no es compatible con Bluetooth Low Energy"</string>
+
+    <!-- BRUSH HEAD RENEWAL DIALOG -->
+    <string name="brush_head_dialog_title">"Cambie su cabezal del cepillo, %1$s"</string>
+    <string name="brush_head_dialog_message">"¡Bravo! Ha acumulado más de 120 cepillados. Ha llegado el momento de cambiar su cabezal del cepillo."</string>
+    <string name="brush_head_buy_now">"Comprar ahora"</string>
+    <string name="brush_head_remind">"Más adelante"</string>
+    <string name="brush_head_no">"No, gracias"</string>
+    <string name="title_activity_slideshow">"Galería de fotos"</string>
+
+    <!-- Popup toothbrush belongs to another user -->
+    <string name="popup_assign_toothbrush_data_dialog">"¡El perfil activo es %1$s, pero está utilizando el cepillo de dientes de %2$s! ¿A quién desea apuntar este cepillado?"</string>
+
+    <!-- ORPHAN BRUSHINGS -->
+    <string name="orphan_brushings">"Cepillados sin asignar"</string>
+    <string name="orphan_brushings_assign_hint">"Asignar los cepillados seleccionados"</string>
+    <string name="orphan_brushings_delete_hint">"Eliminar los cepillados seleccionados"</string>
+    <string name="orphan_brushing_subtitle">"Duración: %1$s min %2$s s, Superficie %3$d%%"</string>
+    <string name="orphan_brushings_detelete_title">"¿Está seguro(a)?"</string>
+    <string name="orphan_brushings_detelete_message">"¿Desea verdaderamente eliminar estos cepillados? Esta acción será irreversible."</string>
+    <string name="orphan_brushings_empty">"Todos los cepillados están asignados. ¡Bravo!"</string>
+
+    <!-- PROFILE LIST DIALOG -->
+    <string name="profile_list_dialog_title">"Seleccione un perfil"</string>
+
+    <!-- SLIDESHOW -->
+    <string name="slideshow_next">"Siguiente"</string>
+    <string name="slideshow_skip">"Saltar"</string>
+    <string name="slideshow_alright_button">"¡Bien!"</string>
+    <string name="slideshow_here_to_help_title">"¡Aquí estamos, para ayudarle!"</string>
+    <string name="slideshow_here_to_help_message">"El equipo Colgate Connect ha estado trabajando para ofrecerle un conjunto de actividades que reforzarán su higiene bucodental."</string>
+    <string name="slideshow_here_to_help_button">"Conozca nuestras actividades"</string>
+    <string name="slideshow_meet_coach_title">"Reunión con el Coach"</string>
+    <string name="slideshow_meet_coach_message">"El Coach le ayuda a desarrollar unos hábitos sólidos de cepillado de dientes a largo plazo."</string>
+    <string name="slideshow_pirate_title">"¡Juegue con Go Pirate!"</string>
+    <string name="slideshow_pirate_message">"Transforme su cepillo de dientes en palanca de juego: ¡Vaya a por las piezas y busque el tesoro de Alí Babá, pero ya!"</string>
+    <string name="slideshow_pirate_additional_message">"(¡Habrá más juegos próximamente!)"</string>
+    <string name="slideshow_dashboard_title">"Su cuadro de control"</string>
+
+    <!-- Slideshow -->
+    <string name="slideshow_dashboard_message">"De un vistazo, tendrá toda la información clara y valiosa acerca de sus cepillados y sus hábitos."</string>
+    <string name="slideshow_taking_care_brush_title">"Cuide su cepillo"</string>
+    <string name="slideshow_taking_care_brush_message">"Limpie periódicamente el mango y el soporte de carga con un paño húmedo. Esto resulta especialmente importante si su dentífrico contiene bicarbonato sódico, u otros bicarbonatos o peróxidos."</string>
+    <string name="slideshow_personalize_brush_title">"Personalice su cepillo"</string>
+    <string name="slideshow_personalize_brush_message">"Para cambiar la duración del cepillado que figura por defecto, ajuste los parámetros en su página de perfil."</string>
+    <string name="slideshow_dentist_tip_title">"Recomendaciones del experto"</string>
+    <string name="slideshow_dentist_tip_message">"Coloque el cepillo de dientes formando un ángulo de 45° respecto a los dientes, y realice pequeños movimientos desde la encía hacia el borde de los dientes. En el caso de los incisivos, no olvide cepillar la superficie del diente por delante y por detrás."</string>
+
+    <!-- SPREAD THE WORD -->
+    <string name="spread_the_word">"Pasa el recado"</string>
+    <string name="spread_review_app">"Revisar la aplicación"</string>
+    <string name="spread_tell_a_friend">"Contárselo a un amigo"</string>
+    <string name="spread_newsletter">"Boletín de noticias"</string>
+    <string name="spread_facebook">"Facebook"</string>
+    <string name="spread_twitter">"Twitter"</string>
+    <string name="spread_instagram">"Instagram"</string>
+    <string name="spread_youtube">"Youtube"</string>
+
+    <!-- TOOTHBRUSH LIST -->
+    <string name="toothbrush_removed">"cepillo de dientes eliminado"</string>
+    <string name="undo">"Anular"</string>
+    <string name="checkup_coverage_100">"¡Enhorabuena! Este cepillado es sencillamente perfecto. Todos son dientes han sido cepillados durante el tiempo requerido."</string>
+    <string name="checkup_coverage_85">"Bien hecho, su cepillado se acerca a la perfección. Siga así."</string>
+    <string name="checkup_coverage_50">"Puede hacerlo mejor. La próxima vez que se cepille los dientes, insista especialmente en las zonas amarillas. Son las que no han sido cepilladas durante el tiempo necesario."</string>
+    <string name="checkup_coverage_below_50">"¡Cuidado con la placa dental! La próxima vez que se cepille, fíjese especialmente en las zonas amarillas. Son las que están descuidadas."</string>
+    <string name="checkup_coverage_no_data">"No hay datos sobre superficies de este cepillado."</string>
+
+    <!-- User in OTA screen, but no OTA associated to toothbrush -->
+    <string name="firmware_upgrade_ota_not_available">"Actualización no disponible"</string>
+
+    <!-- Dialog displayed after user pressed cancel button in update ota -->
+    <string name="firmware_upgrade_cancel_dialog_message">"¿Seguro que quieres cancelar la actualización?"</string>
+    <string name="welcome_email_hint">"¿Cuál es tu email ?"</string>
+    <string name="welcome_email_facebook_hint">"No publicaremos nada en Facebook"</string>
+    <string name="welcome_email_or">"– o –"</string>
+    <string name="welcome_email_facebook_button">"Continuar con Facebook"</string>
+    <string name="welcome_password_hint">"¿Cuál es tu contraseña?"</string>
+    <string name="welcome_password_magic_link_button">"Envíeme un correo electrónico con un enlace para iniciar sesión"</string>
+    <string name="welcome_inbox_title">"Comprobar su bandeja de entrada"</string>
+    <string name="welcome_inbox_hint">"No es necesario recordar una contraseña larga o difícil de escribir. Acabamos de enviarle un correo electrónico para ayudarle a iniciar sesión.
+
+Ábralo desde su teléfono inteligente y haga clic en el enlace provisto para iniciar sesión. Pero apúrese, el enlace expira después de 30 minutos."</string>
+    <string name="coppa_pending_parental_consent">"Pendiente de consentimiento de los padres"</string>
+    <string name="coppa_prevent_dialog_title">"Característica deshabilitada"</string>
+    <string name="coppa_prevent_dialog_message">"Se requiere el consentimiento de los padres para realizar esta acción"</string>
+    <string name="welcome_birthday_title">"¿Cuando naciste?"</string>
+    <string name="welcome_birthday_day">"Día"</string>
+    <string name="welcome_birthday_month">"Mes"</string>
+    <string name="welcome_birthday_year">"Año"</string>
+    <string name="logout_warning_dialog_title">"¡Atención!"</string>
+    <string name="logout_warning_dialog_message">"Tienes más de 10 sesiones de cepillado registradas en tu cuenta. Enlace su cuenta a su dirección de correo electrónico o perderá sus datos: no podrá acceder a su cuenta después de cerrar la sesión."</string>
+    <string name="logout_warning_dialog_enter_email">"Ingrese correo electrónico"</string>
+    <string name="logout_warning_dialog_button_continue">"No, gracias"</string>
+    <string name="save_your_data">"Guardar sus datos"</string>
+    <string name="save_your_data_title">"¡No pierdas tus datos!"</string>
+    <string name="save_your_data_subtitle">"Si introduce su email o inicia sesión a través de Facebook, sus datos siempre estarán disponibles."</string>
+    <string name="save_your_data_fb_button">"Desde Facebook"</string>
+    <string name="save_your_data_email_button">"Vìa email"</string>
+    <string name="save_your_data_cancel_button">"No, gracias"</string>
+    <string name="save_your_data_email_hint">"¿Cuál es tu email ?"</string>
+    <string name="save_your_data_submit">"Enviar"</string>
+    <string name="your_data_saved_title">"Sus datos ahora están guardados"</string>
+    <string name="your_data_saved_subtitle">"Podrá recuperar sus datos en cualquier caso"</string>
+    <string name="your_data_saved_ok">"OK"</string>
+    <string name="welcome_birthday_invalid_day">"Día Inválido"</string>
+    <string name="welcome_birthday_invalid_month">"Mes inválido"</string>
+    <string name="welcome_birthday_invalid_year">"Año no válido"</string>
+    <string name="welcome_birthday_invalid_date">"Fecha de nacimiento no es válida"</string>
+    <string name="terms_of_use_not_clicked">"Debes aceptar los Términos y Condiciones"</string>
+    <string name="parent_consent_title">"Email"</string>
+    <string name="parent_consent_instructions">"Proporcione la dirección de correo electrónico de sus padres o tutores, y lo contactaremos para seguir con los siguientes pasos."</string>
+    <string name="parent_consent_hint">" Dirección de correo electrónico del padre o tutor"</string>
+    <string name="register_email_dialog_title">"Registre su correo electrónico"</string>
+    <string name="register_email_dialog_message">"Tienes más de 10 cepillados registradas en tu cuenta. Enlace su cuenta a su dirección de correo electrónico o perderá sus datos: no podrá acceder a su cuenta después de cerrar la sesión."</string>
+    <string name="register_email_dialog_ok">"Ingrese correo electrónico"</string>
+    <string name="register_email_dialog_cancel">"Ahora no"</string>
+    <string name="help_us_customize_title">"Nos ayudan a personalizar\nsu experiencia"</string>
+    <string name="setup_toothbrush_m1_search">"Buscar"</string>
+    <string name="sba_game_description">"Use el Cepillado de Prueba para diagnosticar sus hábitos de cepillado e identificar áreas de mejora."</string>
+    <string name="validate_birthday_error">"Debido a un error del servidor, la operación falló. Inténtalo de nuevo."</string>
+    <string name="edit_profile_birthday">"Su cumpleaños"</string>
+    <string name="error_no_internet">"Sin conexión a Internet"</string>
+    <string name="something_went_wrong">"Se produjo un problema. Vuelva a intentarlo más tarde, por favor."</string>
+    <string name="um_attention_title">"Atención"</string>
+    <string name="get_my_data">"Obtener mis datos"</string>
+    <string name="no_email_title">"Falta el correo electrónico de la cuenta"</string>
+    <string name="no_email_message">"Su cuenta no tiene un correo electrónico asociado. Configura un correo electrónico en tu cuenta antes de continuar"</string>
+    <string name="title_success">"Éxito"</string>
+    <string name="operation_failed_title">"Operación fallida"</string>
+    <string name="operation_failed">"Debido a un error del servidor, la operación falló. Por favor, inténtelo de nuevo más tarde."</string>
+    <string name="email_gdpr">"Un correo electrónico que le permite recuperar todos sus datos se enviará a %s en breve."</string>
+    <string name="privacy_not_clicked">"Debes aceptar la política de privacidad"</string>
+    <string name="terms_and_condition_agreement">"Acepto los "<![CDATA[<u><a href=\"%1$s\">%2$s</a></u>]]></string>
+    <string name="privacy_agreement">"Reconozco la "<![CDATA[<u><a href=\"%1$s\">%2$s</a></u>]]></string>
+    <string name="choose_method_title">"Iniciar sesión"</string>
+    <string name="choose_method_sms">"Iniciar sesión por SMS"</string>
+    <string name="choose_method_we_chat">"Iniciar sesión por WeChat"</string>
+    <string name="sms_login_title">"Iniciar sesión por SMS"</string>
+    <string name="sms_login_hint">"¿Cuál es tu número de teléfono?"</string>
+    <string name="sms_login_get_code">"Obtener código de autenticación"</string>
+    <string name="sms_login_code_desc">"Ingrese el código que acaba de recibir por SMS y presione el botón OK."</string>
+    <string name="sms_login_ok">"OK"</string>
+    <string name="exit">"Salir"</string>
+    <string name="retry">"Volver a intentarlo"</string>
+    <string name="no_facebook_account_linked">"Esta cuenta de Facebook no está vinculada a una cuenta Colgate Connect"</string>
+    <string name="sms_login_invalid_number">"Numero de telefono invalido"</string>
+    <string name="mouth_zone_bottom_incisor_exterior">"Inferior, incisivos, exterior"</string>
+    <string name="mouth_zone_bottom_incisor_interior">"Inferior, incisivos, interior"</string>
+    <string name="mouth_zone_bottom_molar_left_exterior">"Inferior, izquierda, exterior"</string>
+    <string name="mouth_zone_bottom_molar_left_interior">"Inferior, izquierda, interior"</string>
+    <string name="mouth_zone_bottom_molar_left_occlusal">"Inferior, izquierda, oclusal"</string>
+    <string name="mouth_zone_bottom_molar_right_occlusal">"Inferior, derecha, oclusal"</string>
+    <string name="mouth_zone_bottom_molar_right_exterior">"Inferior, derecha, exterior"</string>
+    <string name="mouth_zone_bottom_molar_right_interior">"Inferior, derecha, interior"</string>
+    <string name="mouth_zone_top_incisor_exterior">"Superior, incisivos, exterior"</string>
+    <string name="mouth_zone_top_incisor_interior">"Superior, incisivos, interior"</string>
+    <string name="mouth_zone_top_molar_left_exterior">"Superior, izquierda, exterior"</string>
+    <string name="mouth_zone_top_molar_left_interior">"Superior, izquierda, interior"</string>
+    <string name="mouth_zone_top_molar_left_occlusal">"Superior, izquierda, oclusal"</string>
+    <string name="mouth_zone_top_molar_right_exterior">"Superior, derecha, exterior"</string>
+    <string name="mouth_zone_top_molar_right_interior">"Superior, derecha, interior"</string>
+    <string name="mouth_zone_top_molar_right_occlusal">"Superior, derecha, oclusal"</string>
+    <string name="mouth_zone_wrong">"Zona incorrecta detectada"</string>
+    <string name="upgrade_app_title">"Actualización requerida"</string>
+    <string name="upgrade_app_msg">"Para continuar con la aplicación, actualice a la última versión; Hemos solucionado algunos errores críticos."</string>
+    <string name="coach_pluse_game_description">"Nuestra nueva experiencia de cepillado en 3D.
+¡El 100% de la cobertura superficial garantizada!"</string>
+    <string name="kolibree_pro_start_popup_title">"Colgate Connect Pro"</string>
+    <string name="kolibree_pro_start_popup_message">"¿Desea compartir sus datos de cepillado con su dentista / consultorio dental %s, para que puedan tener un control regular?"</string>
+    <string name="kolibree_pro_start_popup_accept">"Aceptar"</string>
+    <string name="kolibree_pro_start_popup_decline">"Ahora no"</string>
+    <string name="kolibree_pro_settings_title">"Colgate Connect Pro"</string>
+    <string name="kolibree_pro_settings_hint">"Seleccione esta opción para compartir sus datos de cepillado con su dentista / consultorio dental, para que puedan tener un monitoreo regular."</string>
+    <string name="kolibree_pro_practitioners_short">"Aquí están los profesionales que tienen acceso a sus datos de cepillado. Aprende más"</string>
+    <string name="kolibree_pro_practitioners_short_token">"Saber más"</string>
+    <string name="kolibree_pro_practitioners_full">"Aquí están los profesionales que tienen acceso a sus datos de cepillado.
+
+A través de esta información, pueden seguir la calidad de cepillarse los dientes día a día y brindarle asesoramiento personalizado para mejorar sus hábitos y lograr una higiene dental óptima.
+Es posible dejar de compartir sus datos cuando lo desee. Para obtener más información, visite nuestro sitio web en http://www.connectpro.colgate.com"</string>
+    <string name="kolibree_pro_practitioners_revoke_title">"¿Deje de compartir datos con %s?"</string>
+    <string name="kolibree_pro_practitioners_revoke_message">"Al dejar de compartir datos con este profesional, termina el seguimiento personalizado de Colgate Connect Pro. Si desea reanudar el seguimiento más adelante, este profesional dental tendrá que enviarle una invitación Colgate Connect Pro para poder acceder de nuevo a sus datos. 
+
+¿Está seguro de que quiere continuar?"</string>
+    <string name="kolibree_pro_practitioners_header">"Mis expertos dentales"</string>
+    <string name="kolibree_pro_quit_popup_title">"¿Seguro que quiere abandonar?"</string>
+    <string name="kolibree_pro_quit_popup_message">"Al detener el proceso de Colgate Connect Pro, no compartirá sus datos con su consultorio dental, y ellos no podrán monitorear sus sesiones de cepillado."</string>
+    <string name="kolibree_pro_quit_popup_continue">"Continuar"</string>
+    <string name="kolibree_pro_quit_popup_quit">"Abandonar de todos modos."</string>
+    <string name="kolibree_pro_quit_popup_remind_me_later">"Recuérdame más tarde"</string>
+    <string name="kolibree_pro_channel_name">"Colgate Connect Pro"</string>
+    <string name="kolibree_pro_channel_description">"Notificaciones de Colgate Connect Pro"</string>
+    <string name="kolibree_pro_notification_title">"Colgate Connect Pro"</string>
+    <string name="kolibree_pro_notification_description">"Registre su cepillo de dientes"</string>
+    <string name="kolibree_practitioners_popup_message">"¿Acepta compartir sus datos de cepillado con su consulta dental %1$s para fines de monitoreo?"</string>
+    <string name="kolibree_practitioners_accept">"Ok"</string>
+    <string name="kolibree_practitioners_decline">"No, gracias"</string>
+    <string name="running_in_background">"está conectado a tu cepillo de dientes"</string>
+
+    <!-- Dialog displayed after user pressed cancel button in update ota -->
+    <string name="coach_settings_choose_music">"Elegir música"</string>
+    <string name="coach_settings_coach_sounds_title">"Sonidos Coach"</string>
+    <string name="coach_settings_shuffle">"Aleatorio"</string>
+    <string name="coach_settings_music">"Música"</string>
+    <string name="coach_settings_transitions_sounds">"Sonidos de transiciones"</string>
+    <string name="coach_settings_display_brushing_movements">"Movimientos de cepillado"</string>
+    <string name="coach_settings_display_helps_texts">"Mostrar textos de ayuda"</string>
+    <string name="coach_settings_sounds">"Sonidos"</string>
+    <string name="setup_i_dont_have_connect_e1">"No tengo Connect E1"</string>
+    <string name="tb_toolbar_connect">"Conecte un cepillo de dientes"</string>
+    <string name="tb_toolbar_connected">"Conectado"</string>
+    <string name="tb_toolbar_retrieving_brushing">"Sync…"</string>
+    <string name="tb_toolbar_disconnected">"Desconectado"</string>
+    <string name="tb_toolbar_enable_bleutooth">"Por favor active Bluetooth"</string>
+    <string name="tb_toolbar_last_sync_title">"Última sincro."</string>
+    <string name="tb_toolbar_last_sync_today">"Hoy"</string>
+    <string name="tb_toolbar_last_sync_yesterday">"Ayer"</string>
+    <string name="tb_toolbar_last_sync_never">"Nunca"</string>
+    <string name="tb_toolbar_connecting">"Conexión en progreso"</string>
+    <string name="m1_fake_dialog_title">"Iniciando la configuración"</string>
+    <string name="m1_fake_dialog_initiating_setup">"Mantenga el cepillo de dientes inmóvil o colóquelo sobre una superficie plana durante la instalación"</string>
+    <string name="m1_fake_dialog_configuring">"Configurando…"</string>
+    <string name="m1_fake_dialog_calibrating">"Configurando…"</string>
+    <string name="m1_fake_dialog_completed">"¡Instalación completa!"</string>
+    <string name="m1_fake_dialog_ready_to_use">"Su M1 está lista para usar"</string>
+    <string name="m1_fake_dialog_dont_move_brush">"No mueva su M1 durante la configuración"</string>
+    <string name="welcome_title">"Bienvenido"</string>
+    <string name="welcome_subtitle">"Experimenta la salud\n bucal del futuro."</string>
+    <string name="welcome_connect_tb">"Conecta mi cepillo de dientes inteligente"</string>
+    <string name="welcome_no_smrt_tb">"No tengo un cepillo de dientes inteligente"</string>
+    <string name="welcome_have_account">"¿Ya tiene una cuenta? Inicie sesión"</string>
+    <string name="welcome_have_account_login">"Inicie sesión"</string>
+    <string name="tb_model_selection_toolbar_title">"Conectar su cepillo"</string>
+    <string name="tb_model_selection_title">"¿Qué cepillo de dientes tiene?"</string>
+    <string name="activate_bt_title">"Bluetooth"</string>
+    <string name="activate_bt_button">"Activar bluetooth"</string>
+    <string name="activate_bt_description">"Para conectar su cepillo de dientes, active el Bluetooth de su dispositivo"</string>
+    <string name="location_permission_title">"Permiso de ubicación"</string>
+    <string name="location_permission_button">"Conceder permiso"</string>
+    <string name="connecting_dialog_title">"Conectando..."</string>
+    <string name="connecting_dialog_stop">"Stop"</string>
+    <string name="connection_successful_dialog_title">"Conexión exitosa"</string>
+    <string name="connection_successful_dialog_message">"Apaga tu cepillo de dientes"</string>
+    <string name="connection_error_dialog_title">"Error de conexión"</string>
+    <string name="tb_connection_title">"Despierte su cepillo de dientes"</string>
+    <string name="tb_connection_subtitle">"Presiona el botón XXX en tu cepillo de dientes"</string>
+    <string name="tb_connection_subtitle_manual">"Agitar su cepillo de dientes para activar el proceso de conexión Bluetooth"</string>
+    <string name="tb_connection_nothing">"¿No pasa nada?
+"</string>
+    <string name="detection_popup_title">"Un cepillo de dientes %1$s ha sido detectado!"</string>
+    <string name="detection_popup_question">"¿Puedes ver tu cepillo de dientes parpadear en azul?"</string>
+    <string name="detection_popup_yes">"Si, conectar"</string>
+    <string name="detection_popup_no">"No, sigue buscando mi cepillo de dientes."</string>
+    <string name="e1_troubleshooting_title">"¿Estás tratando de conectar un cepillo de dientes Connect E1?"</string>
+    <string name="e1_troubleshooting_no_tb">"No tengo un cepillo de dientes Colgate Connect"</string>
+    <string name="e1_troubleshooting_yes">"Si"</string>
+    <string name="e1_troubleshooting_no">"No"</string>
+    <string name="blink_toothbrush_led">"Parpadear"</string>
+    <string name="test_brushing_start">"Empezar a cepillar ahora"</string>
+    <string name="test_brushing_tip">"¿Sabía usted que la mayoría de los adultos solo cepillan el 40% de la superficie de sus dientes?"</string>
+    <string name="test_brushing_lets_see_how_you_brush">"Ahora veamos como se cepilla:"</string>
+    <string name="test_brushing_instructions_1">"Cepille sus dientes como lo hace normalmente"</string>
+    <string name="test_brushing_instructions_2">"Descubre cómo efectivamente cepillas"</string>
+    <string name="test_brushing_instructions_3">"Use nuestro Coach para mejorar su técnica"</string>
+    <string name="test_brushing_screen_title">"Cepillado de Prueba"</string>
+    <string name="dialog_conn_error_title">"No pudimos encontrar su cepillo de dientes."</string>
+    <string name="dialog_conn_error_description">"Apagar y encender el bluetooth por lo general resuelve los problemas de conexión."</string>
+    <string name="dialog_conn_error_description_small">"Si su cepillo de dientes está cerca de usted pero aún no aparece aquí, puede deberse a que necesita estar encendido, tiene un nivel de batería bajo o ya está conectado a otro dispositivo."</string>
+    <string name="profile_data_saved_info">"Sus datos serán guardados."</string>
+    <string name="profile">"Perfil"</string>
+    <string name="birth_date_hint">"¡Le sorprenderemos por su cumpleaños!"</string>
+    <string name="email_already_used_error">"Esta dirección de correo electrónico ya está en uso"</string>
+    <string name="tab_rewards">"Recompensas"</string>
+    <string name="rewards_tab_challenges">"Desafíos"</string>
+    <string name="rewards_tab_tier">"Nivel"</string>
+    <string name="rewards_tab_smiles">"Tienda"</string>
+    <string name="header_smiles">"%1$s puntos Smiles"</string>
+    <string name="rewards_support_url">"https://colgateconnect.zendesk.com/hc/en-us/articles/115005703746"</string>
+    <string name="test_brushing_session_electric_line1">"Enciende su cepillo de dientes"</string>
+    <string name="test_brushing_session_electric_line2">"y comenze a cepillar como lo hace normalmente"</string>
+    <string name="test_brushing_session_manual">"¡Empieza a cepillarte los dientes como lo haces habitualmente!"</string>
+    <string name="durring_session_description_step1">"Cepille suavemente sus dientes y encías como lo haría con un cepillo de dientes regular"</string>
+    <string name="durring_session_highlighted_step1">"sus dientes y encías"</string>
+    <string name="durring_session_description_step2">"Deja de cepillarte cuando lo haría normalmente."</string>
+    <string name="durring_session_description_step3">"Las vibraciones sónicas ayudan a eliminar la placa dental."</string>
+    <string name="durring_session_highlighted_step3">"Las vibraciones sónicas"</string>
+    <string name="durring_session_description_step3_manual">"El diseño único del cepillo de dientes ayuda a eliminar más placa, manchas y bacterias."</string>
+    <string name="durring_session_highlighted_step3_manual">"El diseño único del cepillo de dientes"</string>
+    <string name="durring_session_description_step4">"Estamos analizando su cepillado para ayudarte a mejorar su técnica."</string>
+    <string name="durring_session_highlighted_step4">"mejorar su técnica"</string>
+
+    <!-- optimize analyser -->
+    <string name="optimize_your_brushing_analysis">"Optimizar el analisis"</string>
+    <string name="which_hand_do_you_hold_your_toothbrush_with">"¿En qué mano sostiene su cepillo de dientes?"</string>
+    <string name="left">"Izquierda"</string>
+    <string name="right">"Derecha"</string>
+    <string name="how_many_times_a_day_do_you_brush_your_teeth">"¿Cuántas veces al día se cepilla los dientes?"</string>
+    <string name="get_my_results">"Obtener mis resultados"</string>
+    <string name="finish_brushing_dialog_title">"¿Ya terminaste?"</string>
+    <string name="finish_brushing_dialog_yes">"He terminado"</string>
+    <string name="finish_brushing_dialog_resume">"Aún no, reanudar"</string>
+    <string name="my_connect_e2">"Mi Connect E2"</string>
+    <string name="setup_toothbrush_connect_e2_title">"Conecte su E2"</string>
+    <string name="results_analysis_successful_title">"Análisis realizado"</string>
+    <string name="results_analysis_successful_body">"Descubre lo buena que es su técnica de cepillado."</string>
+    <string name="results_mouth_coverage_title">"Superficie cubierta"</string>
+    <string name="results_mouth_coverage_hint">"¿Cómo leer el esquema?"</string>
+    <string name="analysis_in_progress">"Análisis en curso"</string>
+    <string name="brushing_progress_msg_1">"Duración del cepillado"</string>
+    <string name="brushing_progress_msg_2">"Superficie cubierta"</string>
+    <string name="brushing_progress_msg_3">"Análisis de ángulos"</string>
+    <string name="brushing_progress_msg_4">"Movimientos de cepillado"</string>
+    <string name="select_a_toothbrush_to_continue">"Seleccione un cepillo de dientes para continuar."</string>
+    <string name="results_mouth_coverage_tooth_clean">"Limpio"</string>
+    <string name="results_mouth_coverage_tooth_dirty">"Necesita\nmás cepillado"</string>
+    <string name="mouth_coverage_perfect">"Felicidades! Esta es una sesión de cepillado perfecta."</string>
+    <string name="mouth_coverage_good">"Te perdiste algunas áreas. Prueba nuestro entrenador para llegar al 100%."</string>
+    <string name="mouth_coverage_medium">"Puedes hacerlo aún mejor. Prueba nuestro entrenador para que no te pierdas ninguna zona."</string>
+    <string name="mouth_coverage_bad">"Puedes hacerlo mejor. Prueba nuestro Coach para que no te pierdas ninguna zona."</string>
+    <string name="mouth_coverage_no_data">"No hay datos de superficie disponibles para este cepillado."</string>
+    <string name="read_diagram_dialog_body">"Es como mirar en el espejo, el lado derecho de la mandíbula en la pantalla es el lado derecho de la boca."</string>
+    <string name="read_diagram_dialog_title">"Explicación del esquema"</string>
+    <string name="read_diagram_dialog_ok">"OK"</string>
+    <string name="read_diagram_dialog_top">"Parte superior"</string>
+    <string name="read_diagram_dialog_bottom">"Fondo"</string>
+    <string name="read_diagram_dialog_left">"Izquierda"</string>
+    <string name="read_diagram_dialog_right">"Derecha"</string>
+    <string name="hint_tap_to_change_view">"Cambiar la vista"</string>
+    <string name="test_brushing_analysis_screen_title">"Análisis"</string>
+    <string name="dialog_lost_connexion_quit_btn">"Salir (y empezar de nuevo más tarde)"</string>
+    <string name="dialog_lost_connexion_title">"Conexión perdida"</string>
+    <string name="dialog_lost_connexion_description">"La conexión con tu cepillo de dientes se ha perdido.
+Espere a que vuelva a conectarse o reinicie su sesión de cepillado más tarde."</string>
+
+    <!-- Pirate game does not work on user's Android version -->
+    <string name="pirate_not_supported_os_version">"Actualiza a Android 6 o superior para usar GoPirate."</string>
+    <string name="speed_proper">"Buena
+velocidad"</string>
+    <string name="speed_too_fast">"Demasiado
+rápido"</string>
+    <string name="speed_card_title">"Velocidad de cepillado"</string>
+    <string name="speed_card_hint">"Saber más"</string>
+    <string name="speed_learn_more_dialog_title">"Velocidad de cepillado"</string>
+    <string name="speed_learn_more_dialog_body_top">"Un cepillado duro y rápido puede parecer más efectivo, pero en realidad el cepillado con este movimiento promueve la acumulación insalubre entre sus dientes y encías."</string>
+    <string name="speed_learn_more_dialog_body_bottom">"Intente cepillarse más lentamente, concentrándose en un diente a la vez, permitiendo que la cabeza del cepillo limpie el espacio entre los dientes."</string>
+    <string name="speed_learn_more_dialog_help">"¿Necesita ayuda para entender el esquema?"</string>
+    <string name="speed_description_by_groups">"Sus movimientos eran demasiado rápido mientras se cepilla %1$s. Reduzca la velocidad para mantener sus dientes sanos."</string>
+    <string name="speed_description_average">"Sus movimientos eran demasiado rápido para que el %1$s de su cepillado. Reduzca la velocidad para mantener sus dientes sanos."</string>
+    <string name="speed_description_all_good">"¡Nada que reportar!"</string>
+    <string name="speed_group_occlusal">"su superficie de masticación"</string>
+    <string name="speed_group_outside_molars">"la superficie exterior de sus molares"</string>
+    <string name="speed_group_inside_molars">"la superficie interior de sus molares"</string>
+    <string name="speed_group_outside_incisives">"la superficie exterior de sus incisivos"</string>
+    <string name="speed_group_inside_incisives">"la superficie interior de sus incisivos"</string>
+    <string name="speed_quadrant_top_left">"su cuadrante superior izquierdo"</string>
+    <string name="speed_quadrant_top_right">"su cuadrante superior derecho"</string>
+    <string name="speed_quadrant_bottom_left">"su cuadrante inferior izquierdo"</string>
+    <string name="speed_quadrant_bottom_right">"su cuadrante inferior derecho"</string>
+    <string name="speed_too_slow">"Demasiado
+lento"</string>
+    <string name="game_loader_download_game">"Descargar"</string>
+    <string name="game_loader_game_requires_update">"Actualización obligatoria"</string>
+    <string name="game_loader_game_download_in_progress">"Descargando"</string>
+    <string name="game_loader_update_available">"Actualización disponible"</string>
+    <string name="ota.low.battery.subtitle">"Cargue / reemplace la batería del cepillo de dientes para realizar la actualización."</string>
+    <string name="ota.low.battery.title">"El cepillo de dientes no tiene suficiente batería"</string>
+    <string name="toothbrush.battery.change.required">"Cambia tu batería inmediatamente."</string>
+    <string name="toothbrush.battery.few.days">"Solo unos pocos días de duración de la batería disponible, prepárese para reemplazarlo."</string>
+    <string name="toothbrush.battery.few.weeks">"Todavía quedan pocas semanas de vida útil de la batería suponiendo que utiliza nuestra batería alcalina AAA estándar de Energizer. Otros tipos de baterías pueden reducir la vida útil de la batería."</string>
+    <string name="toothbrush.battery.six.months">"Más de 6 meses de duración de la batería disponible suponiendo que utiliza nuestra batería alcalina AAA estándar de Energizer. Otros tipos de baterías pueden reducir la vida útil de la batería."</string>
+    <string name="toothbrush.battery.three.months">"Más de 3 meses de duración de la batería disponible suponiendo que utiliza nuestra batería alcalina AAA estándar de Energizer. Otros tipos de baterías pueden reducir la vida útil de la batería."</string>
+    <string name="toothbrush.battery.state.change.required">"vacío"</string>
+    <string name="toothbrush.battery.state.few.days">"pocos diás"</string>
+    <string name="toothbrush.battery.state.few.weeks">"pocas semanas"</string>
+    <string name="toothbrush.battery.state.six.months">"6+ meses"</string>
+    <string name="toothbrush.battery.state.three.months">"3+ meses"</string>
+    <string name="toothbrush.battery.state.unknown">"desconocido"</string>
+    <string name="delete_game_dialog_title">"Estas seguro que quieres borrarlo %1$s?"</string>
+    <string name="delete_game_dialog_body">"Podrás descargarlo de nuevo más tarde."</string>
+    <string name="delete_game_dialog_ok">"Eliminar"</string>
+    <string name="delete_game_dialog_cancel">"Cancelar"</string>
+    <string name="tb_toolbar_enable_location">"Habilite la ubicación"</string>
+    <string name="my_connect_b1">"Mi Connect B1"</string>
+    <string name="setup_toothbrush_connect_b1_title">"Conecte su B1"</string>
+    <string name="challenge_details_won">"ganado"</string>
+    <string name="challenge_details_close">"Cerrar"</string>
+    <string name="challenge_details_completed_on">"Completado el"</string>
+    <string name="challenge_details_start">"Comience este desafío"</string>
+    <string name="challenge_details_not_completed">"No completado aún"</string>
+    <string name="challenge_details_continue">"Continuar este desafío"</string>
+    <string name="current_tier_smiles_label_description">"Cada cepillado le hace ganar %1$s"</string>
+    <string name="next_tier_label">"Siguiente nivel"</string>
+    <string name="next_tier_description">"Complete %1$s desafíos más para alcanzar el nivel %2$s"</string>
+    <string name="future_tier_description">"Cada cepillado le hará ganar +%1$s"</string>
+    <string name="coach_start_message_title">"Encienda su cepillo para empezar la sesión Coach+"</string>
+    <string name="coach_dialog_start_message_title">"Empezemos"</string>
+    <string name="coach_dialog_start_message_body">"Encienda su cepillo para empezar la sesión Coach+"</string>
+    <string name="coach_dialog_start_message_cancel">"Cancelar"</string>
+    <string name="coach_manual_dialog_start_message_body">"Haga clic para empezar la sesión manual Coach+"</string>
+    <string name="coach_manual_dialog_start_message_start">"Empezar"</string>
+    <string name="buy">"Comprar"</string>
+    <string name="smiles_count">"Tiene %s Smiles"</string>
+    <string name="smiles_history_link">"Ver el historial de smiles"</string>
+    <string name="challenge_details_action_offline">"¿Qué es el cepillado offline?"</string>
+    <string name="offline_brushing_toolbar_title">"Cepillado offline"</string>
+    <string name="offline_brushing_title">"Puede usar su cepillo de dientes Colgate Connect con o sin la aplicación"</string>
+    <string name="offline_brushing_point1">"Cepíllese con Colgate Connect mientras la aplicación no está abierta: aún se analiza su técnica de cepillado"</string>
+    <string name="offline_brushing_point2">"Luego, puede sincronizar su cepillo de dientes simplemente abriendo su aplicación y descubrir nuevas perspectivas"</string>
+    <string name="smiles_history">"Historial de Smiles"</string>
+    <string name="smiles_history_brushing">"Cepillado"</string>
+    <string name="smiles_history_challenge_completed">"Desafío completado : %s"</string>
+    <string name="smiles_history_offline_brushing">"Cepillado offline"</string>
+    <string name="smiles_history_online_brushing">"Cepillado con %s"</string>
+    <string name="smiles_history_transfer_from">"%s Smiles recibidos de %s"</string>
+    <string name="smiles_history_transfer_in">"%s Smiles recibidos"</string>
+    <string name="smiles_history_transfer_out">"%s Smiles transferidos"</string>
+    <string name="smiles_history_transfer_to">"%s Smiles transferidos a %s"</string>
+    <string name="smiles_history_tier_reached">"%s nivel alcanzado. Cada cepillado le trae %s Smiles."</string>
+    <plurals name="challenge_details_more_to_earn">
+        <item quantity="one">"%1$d más para ganar %2$d smile!"</item>
+        <item quantity="other">"%1$d más para ganar %2$d smiles!"</item>
+    </plurals>
+    <string name="smiles_history_smiles_count">"%s Smiles"</string>
+    <string name="coach_start_message_title_manual">"Agita tu cepillo de dientes para comenzar tu sesión de Coach+"</string>
+    <string name="smiles_history_week_streak">"Serie semanal"</string>
+    <string name="transfer_smiles">"Transferir Smiles"</string>
+    <string name="family_smiles">"Miembros de la familia"</string>
+    <string name="rewards_error_no_internet_connection">"Habilite su conexión a Internet para cargar las Recompensas."</string>
+    <string name="rewards_error_synchronisation_failed">"Se ha producido un error al cargar los datos. Por favor, inténtelo de nuevo más tarde."</string>
+    <string name="smiles_transfer_title">"Transferir Smiles"</string>
+    <string name="smiles_transfer_current_balance">"Saldo actual"</string>
+    <string name="smiles_transfer_transfer_amount">"Cantidad a transferir"</string>
+    <string name="smiles_transfer_to">"Transferir a"</string>
+    <string name="smiles_transfer_validate">"Transferir"</string>
+    <string name="smiles_transfer_smiles">"Smiles"</string>
+    <string name="smiles_transfer_smiles_won">"%s Smiles ganados"</string>
+    <string name="smiles_transfer_done">"¡La transferencia está hecha!"</string>
+    <string name="challenge_feedback_collect_smiles">"Recoger mis Smiles"</string>
+    <string name="multi_challenge_feedback_title">"¡Enhorabuena!"</string>
+    <string name="multi_challenge_feedback_message_part1">"Ha completado"</string>
+    <plurals name="multi_challenge_feedback_message_part2">
+        <item quantity="one">"%1$d nuevo desafío."</item>
+        <item quantity="other">"%1$d nuevos desafíos."</item>
+    </plurals>
+    <string name="multi_challenge_feedback_message_part3">"Deslice para descubrirlos."</string>
+
+    <!-- Fuzzy -->
+    <plurals name="smiles_feedback_good">
+        <item quantity="one">"¡Qué buen cepillado!\n¡Acaba de ganar %1$d Smile!"</item>
+        <item quantity="other">"¡Qué buen cepillado!\n¡Acaba de ganar %1$d Smiles!"</item>
+    </plurals>
+    <string name="smiles_feedback_bad">"Desafortunadamente no ha ganado ningún Smiles con este cepillado.\nNecesita cubrir al menos un 50%% de su superficie para ganar Smiles."</string>
+    <string name="my_plaqless">"Mi Plaqless Pro"</string>
+    <string name="setup_toothbrush_plaqless_title">"Conecte su Plaqless Pro"</string>
+    <string name="new_tier_title">"Ha alcanzado el nivel %s"</string>
+    <string name="new_tier_message">"Enhorabuena %s, ha completado %s desafíos. ¡Siga adelante!"</string>
+    <string name="new_tier_coins">"De ahora en adelante, cada cepillado le trae
+"</string>
+    <string name="feedback_offline_sync">"¡Hey, ha sincronizado %s brushings y ha ganado %s Smiles!"</string>
+    <string name="feedback_offline_sync_no_smiles">"Hey, ha sincronizado %s cepillados pero no ha ganado ningún Smile. Necesita obtener al menos un 50%% de cobertura de superficie para ganar Smiles."</string>
+    <string name="pql_connection_title">"Comience presionando el botón XXX en su cepillo de dientes"</string>
+    <string name="pql_connection_description"><![CDATA[Busque el <b>símbolo de bluetooth</b> iluminado]]></string>
+    <string name="calendar_tab">"Calendario"</string>
+    <string name="detection_popup_pql_no">"Seguir buscando mi cepillo"</string>
+    <string name="detection_popup_pql_yes">"Conectar"</string>
+    <string name="plaqless_intro_title">"Bienvenido a Colgate Plaqless Pro"</string>
+    <string name="plaqless_intro_subtitle"><![CDATA[Eliminar la placa dental cada día es la <b>clave de una buena salud bucal.</b>]]></string>
+    <string name="plaqless_intro_type_title">"Plaqless Pro indica:"</string>
+    <string name="plaqless_intro_type_cleand">"Limpio"</string>
+    <string name="plaqless_intro_type_remains">"Placa restante"</string>
+    <string name="plaqless_intro_type_missed">"Sin cepillar"</string>
+    <string name="plaqless_intro_start">"Empezar"</string>
+    <string name="slide1_title">"Aprende sobre el cepillo de dientes"</string>
+    <string name="slide1_description1"><![CDATA[<b>Los sensores avanzados</b> detectan la placa en sus dientes]]></string>
+    <string name="slide1_description2"><![CDATA[<b>La luz indicadora se ilumina</b> para dirigir su cepillado]]></string>
+    <string name="slide1_description3"><![CDATA[<b>El temporizador</b> se ilumina cada 30 segundos]]></string>
+    <string name="slide2_title">"La luz indicadora"</string>
+    <string name="slide2_description1_title">"Azul"</string>
+    <string name="slide2_description1_content1">"Se detecta placa"</string>
+    <string name="slide2_description1_content2">"Cepillo para quitar el"</string>
+    <string name="slide2_description2_title">"Blanca"</string>
+    <string name="slide2_description2_content1">"El área es limpia"</string>
+    <string name="slide2_description2_content2">"Pasar a la siguiente sección"</string>
+    <string name="slide2_description3_title">"Roja"</string>
+    <string name="slide2_description3_content1">"Sensor obscurecido"</string>
+    <string name="slide2_description3_content2">"Aclarar el sensor o cambiar el ángulo del cepillo"</string>
+    <string name="intro_start_test">"Empezar el test"</string>
+    <string name="dashboard_pql_tip_tricks_title">"Consejos"</string>
+    <string name="dashboard_pql_tip_tricks_body">"Aprende a optimizar tus resultados"</string>
+    <string name="pql_best_results_title">"Para mejores resultados"</string>
+    <string name="pql_best_results_body">"Sostenga el cepillo de dientes en posición horizontal para asegurar una técnica efectiva."</string>
+    <string name="pql_best_results_body_highlight">"horizontal"</string>
+    <string name="pql_best_results_ok">"He entendido"</string>
+    <string name="pql_brushing_progress_msg">"Análisis de placa"</string>
+    <string name="intro_do_later">"Lo haré más tarde"</string>
+    <string name="pql_durring_session_description_step1">"Preste atención al color del anillo LED mientras se cepilla los dientes."</string>
+    <string name="pql_durring_session_description_step1_highlighted">"color del anillo LED"</string>
+    <string name="mouth_map_left">"I"</string>
+    <string name="mouth_map_right">"D"</string>
+    <string name="mouth_map_clean_score">"clean score"</string>
+    <string name="mouth_map_close">"Ir a la página principal"</string>
+    <string name="mouth_map_dialog_ok">"He entendido"</string>
+    <string name="missed_area_dialog_title">"Área\nfallada"</string>
+    <string name="missed_area_dialog_body"><![CDATA[El amarillo indica las <b>áreas que no ha cepillado</b>]]></string>
+    <string name="clean_score_dialog_title">"clean score"</string>
+    <string name="clean_score_dialog_clean"><![CDATA[<b>%s</b> limpio]]></string>
+    <string name="clean_score_dialog_remains"><![CDATA[<b>%s</b> placa restante]]></string>
+    <string name="clean_score_dialog_missed"><![CDATA[<b>%s</b> fallado]]></string>
+    <string name="build_up_remains_dialog_title">"Placa\nrestante"</string>
+    <string name="build_up_remains_dialog_body"><![CDATA[El azul indica las áreas donde <b>hay placa</b>. Recomendamos cepillarlas de nuevo]]></string>
+    <string name="coach_plus_feedback_message_speed_fast">"¡Cuidado, está cepillando demasiado rápido!"</string>
+    <string name="coach_plus_feedback_message_speed_slow">"¡Está cepillando demasiado lento!"</string>
+
+    <!-- Fuzzy -->
+    <string name="coach_plus_feedback_message_wrong_angle_incisors_interior">"Ajuste la inclinación vertical de su cepillo"</string>
+
+    <!-- Fuzzy -->
+    <string name="coach_plus_feedback_message_wrong_angle_other_zones">"Ajuste el ángulo de la cabeza de su cepillo (45°)"</string>
+    <string name="crown_explanation_dialog_title">"Día perfecto"</string>
+    <string name="crown_explanation_dialog_body">"¡Cepille sus dientes 2 veces al día con más del 80%% de la superficie cubierta por el cepillado para ganar su corona!"</string>
+    <string name="crown_explanation_dialog_ok">"He entendido"</string>
+    <string name="week_streak_dialog_title">"¡Serie semanal!"</string>
+    <string name="week_streak_dialog_body">"Felicidades, se ha cepillado los dientes 2 veces al día 7 días seguidos. Ha ganado %s Smiles."</string>
+    <string name="week_streak_dialog_ok">"Recoger mis %s Smiles"</string>
+    <string name="slide3_title">"Ver el cepillo en acción"</string>
+    <string name="slide3_try_brush_now">"Probar el cepillo ahora"</string>
+    <string name="slide3_try_brush_later">"Lo haré más tarde"</string>
+    <string name="coach_plus_feedback_message_wrong_handle">"Sostenga el cepillo de dientes horizontalmente"</string>
+    <string name="brushing_program_button_text">"Programa de cepillado"</string>
+    <string name="brushing_quiz_label">"Programa de cepillado"</string>
+    <string name="brushing_quiz_screen_1_title">"¿Cómo calificaría su rutina actual de cuidado bucal?"</string>
+    <string name="brushing_quiz_screen_1_answer_1">"Bastante buena"</string>
+    <string name="brushing_quiz_screen_1_answer_2">"Normal"</string>
+    <string name="brushing_quiz_screen_1_answer_3">"Podría mejorarse"</string>
+    <string name="brushing_quiz_screen_2_title">"¿Con qué frecuencia sufre de encías o de sensibilidad dental?"</string>
+    <string name="brushing_quiz_screen_2_answer_1">"No a menudo"</string>
+    <string name="brushing_quiz_screen_2_answer_2">"A menudo"</string>
+    <string name="brushing_quiz_screen_3_answer_1">"Dientes más blancos"</string>
+    <string name="brushing_quiz_screen_3_answer_2">"Aliento más fresco"</string>
+    <string name="brushing_quiz_screen_3_answer_3">"Protección de dientes o encías sensibles"</string>
+    <string name="brushing_quiz_screen_3_title">"¿Qué le gustaría trabajar hoy?"</string>
+    <string name="brushing_quiz_screen_2_answer_3">"Diariamente"</string>
+    <string name="brushing_quiz_confirmation_title">"Gracias por completar el cuestionario"</string>
+    <string name="brushing_quiz_program_whitening">"Programa de blanqueamiento"</string>
+    <string name="brushing_quiz_program_sensitive">"Programa de sensibilidad"</string>
+    <string name="brushing_quiz_program_everyday_care">"Cuidado diario"</string>
+    <string name="brushing_quiz_confirmation_brushing_program">"Su programa de cepillado es\n\n%1$s"</string>
+    <string name="brushing_quiz_confirmation_try_it">"Probar ahora"</string>
+    <string name="brushing_quiz_confirmation_confirm">"Confirmar programa"</string>
+    <string name="brushing_quiz_confirmation_revert">"Cancelar"</string>
+    <string name="brushing_quiz_confirmation_try_it_not_paired">"Debe tener un cepillo de dientes eléctrico conectado a su dispositivo para probar el programa"</string>
+    <string name="test_angles_activity_name">"Ángulos"</string>
+
+    <!-- Default push notification channel -->
+    <!-- Fuzzy -->
+    <string name="push_notification_channel_general">"Notificaciones generales"</string>
+    <string name="brushing_program_dialog_title">"Seleccione su programa"</string>
+    <string name="brushing_program_dialog_slow">"Programa de sensibilidad"</string>
+    <string name="brushing_program_dialog_regular">"Cuidado diario"</string>
+    <string name="brushing_program_dialog_strong">"Programa de blanqueamiento"</string>
+    <string name="brushing_program_dialog_current">"(actual)"</string>
+    <string name="test_angles_intro_header">"Ángulos"</string>
+    <string name="test_angles_intro_body">"Sostenga su cepillo de dientes en un ángulo de 45 grados hacia la línea de la encía
+
+Siga las instrucciones para evaluar y mejorar su técnica."</string>
+    <string name="test_angles_intro_start_button">"Empezar"</string>
+    <string name="login_hint_enable_network">"Active su conexión a internet para crear una nueva cuenta"</string>
+    <string name="test_angles_state_correct">"Bien"</string>
+    <string name="test_angles_state_incorrect">"Mal"</string>
+    <string name="test_angles_molar_hint">"Cepille la superficie exterior de sus molares y mantenga el ángulo correcto durante 20 segundos"</string>
+    <string name="test_angles_incisor_hint">"Incline su cepillo de dientes verticalmente para la superficie inferior de los incisivos internos"</string>
+    <string name="test_angles_confirmation_hint">"Eso es todo! Ahora puede salir de la actividad Ángulos."</string>
+    <string name="test_angles_confirmation_hint_highlight">"salir de la actividad Ángulos"</string>
+    <string name="offline_brushing_notification_single_no_smiles_title">"No ganaste ningún Smiles"</string>
+    <string name="offline_brushing_notification_single_no_smiles_content">"Requiere 50% de superficie o más"</string>
+    <string name="offline_brushing_notification_single_with_smiles_title">"¡Qué bonito cepillado!"</string>
+    <string name="offline_brushing_notification_single_with_smiles_content">"¡Acabas de ganar %1$s Smiles !"</string>
+    <string name="offline_brushing_notification_multiple_no_smiles_title">"Has sincronizado %1$s cepillados"</string>
+    <string name="offline_brushing_notification_multiple_no_smiles_content">"Obtenga 50% de superficie o más para ganar Smiles"</string>
+    <string name="offline_brushing_notification_multiple_with_smiles_title">"Has sincronizado %1$s cepillados"</string>
+    <string name="offline_brushing_notification_multiple_with_smiles_content">"¡Y ganó %1$s Smiles!"</string>
+    <string name="coach_plus_feedback_message_out_of_mouth">"Ponga el cepillo de dientes en la boca"</string>
+    <string name="coach_plus_feedback_message_rinse_brush_head">"Limpie el sensor del cepillo de dientes"</string>
+    <string name="coach_plus_title">"Coach+"</string>
+    <string name="dashboard_clean_score_title">"Limpio"</string>
+    <string name="dashboard_clean_score_subtitle">"Score"</string>
+
+    <!-- Notifications related to brush connectivity -->
+    <string name="push_notification_channel_kolibree_service">"Conectividad de cepillo de dientes"</string>
+
+    <!-- Notifications related to offline brushings retrieval -->
+    <string name="push_notification_channel_night_watch">"Cepillado fuera de línea"</string>
+    <string name="speed_control_activity_name">"Control de Velocidad"</string>
+    <string name="speed_control_intro_header">"Control de Velocidad"</string>
+    <string name="speed_control_intro_body">"Cepillarse los dientes demasiado rápido puede dañar las encías.
+
+Siga las instrucciones para evaluar y mejorar su técnica"</string>
+    <string name="speed_control_intro_start_button">"Empezar a cepillar ahora"</string>
+    <string name="speed_control_confirmation_hint">"Eso es todo! Ahora puede salir de la actividad Control de Velocidad."</string>
+    <string name="speed_control_confirmation_hint_highlight">"salir de la actividad Control de Velocidad"</string>
+    <string name="speed_control_brushing_stage1_hint">"Cepille sus molares
+superficie externa"</string>
+    <string name="speed_control_brushing_stage1_hint_highlight">"Molares"</string>
+    <string name="speed_control_brushing_stage2_hint">"Cepille sus molares
+superficie de masticación"</string>
+    <string name="speed_control_brushing_stage2_hint_highlight">"Molares"</string>
+    <string name="speed_control_brushing_stage3_hint">"Cepíllese los dientes delanteros 
+superficie externa"</string>
+    <string name="speed_control_brushing_stage3_hint_highlight">"dientes delanteros
+externo"</string>
+    <string name="speed_control_feedback_underspeed">"Demasiado lento!"</string>
+    <string name="speed_control_feedback_overspeed">"Demasiado rápido!"</string>
+    <string name="speed_control_feedback_correct">" "</string>
+    <string name="activity_not_compatible_with_plaqless">"Esta actividad no es actualmente compatible con tu Plaqless Pro"</string>
+    <string name="personal_challenge_objective">"Objetivo"</string>
+    <string name="personal_challenge_level">"Nivel"</string>
+    <string name="personal_challenge_period">"Período"</string>
+    <string name="personal_challenge_objective_streak">"Racha"</string>
+    <string name="personal_challenge_objective_coverage">"Cobertura"</string>
+    <string name="personal_challenge_objective_duration">"Duración"</string>
+    <string name="personal_challenge_level_easy">"Fácil"</string>
+    <string name="personal_challenge_level_hard">"Difícil"</string>
+    <string name="personal_challenge_streak_easy">"Cepíllese una vez al día durante %1$s seguidos → %2$d sonrisas"</string>
+    <string name="personal_challenge_streak_hard">"Cepíllese dos veces al día durante %1$s seguidos → %2$d sonrisas"</string>
+    <string name="personal_challenge_coverage_easy">"Haga una sesión de cepillado con al menos un 80%% de cobertura una vez al día durante %1$s → %2$d sonrisas"</string>
+    <string name="personal_challenge_coverage_hard">"Haga una sesión de cepillado con al menos un 80%% de cobertura dos veces al día durante %1$s → %2$d sonrisas"</string>
+    <string name="personal_challenge_duration_easy">"Cepíllese por lo menos 2 minutos una vez al día durante %1$s → %2$d sonrisas"</string>
+    <string name="personal_challenge_duration_hard">"Cepíllese por lo menos 2 minutos dos veces al día durante %1$s → %2$d sonrisas"</string>
+    <plurals name="duration_days">
+        <item quantity="one">"%1$d día"</item>
+        <item quantity="other">"%1$d días"</item>
+    </plurals>
+    <string name="personal_challenge_proposed_challenge">"DESAFÍO PROPUESTO"</string>
+    <string name="personal_challenge_currently_active_challenge">"DESAFÍO ACTUAL"</string>
+    <string name="personal_challenge_create">"Crear un desafío"</string>
+    <string name="personal_challenge_update">"Actualizar el desafío existente"</string>
+    <string name="personal_challenge_delete">"Eliminar el desafío activo"</string>
+    <string name="personal_challenge_title">"Desafío personal"</string>
+    <string name="personal_challenge_toolbar">"Desafíos"</string>
+    <string name="personal_challenge_save">"Guardar"</string>
+    <string name="personal_challenge_define_your_challenge">"Define tu propio desafío y obtén recompensas."</string>
+    <string name="personal_challenge_parameters">"Parámetros del desafío"</string>
+    <string name="personal_challenge_parameter_target">"Mejorar mi"</string>
+    <string name="personal_challenge_parameter_level">"Nivel"</string>
+    <string name="personal_challenge_parameter_period">"Período de desafío"</string>
+    <string name="personal_challenge_result">"El desafío resultante"</string>
+    <string name="personal_challenge_update_dialog_title">"Actualizar el desafío"</string>
+    <string name="personal_challenge_update_dialog_body">"¿Estás seguro de que quieres actualizar tu desafío actual?"</string>
+    <string name="personal_challenge_update_dialog_yes">"Sí"</string>
+    <string name="personal_challenge_update_dialog_no">"No"</string>
+    <string name="personal_challenge_completed_title">"Desafío personal"</string>
+    <string name="personal_challenge_completed_message">"¡Felicidades! Has completado tu desafío personal"</string>
+    <string name="firmware_upgrade_welcome">"La actualización de su cepillo de dientes llevará algunos minutos. No apague su cepillo de dientes."</string>
+</resources>

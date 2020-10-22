@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="UnusedResources">
+
+  <!--
+  ONBOARDING
+  -->
+
+  <dimen name="onboarding_fade_up_vertical_distance">20dp</dimen>
+  <dimen name="onboarding_checkbox_margin_start">26dp</dimen>
+
+  <!--
+  PROFILE HEADER
+  -->
+
+  <dimen name="profile_header_avatar">96dp</dimen>
+  <dimen name="profile_header_height">301dp</dimen>
+
+  <!--
+  LAST BRUSHING CARD
+  -->
+
+  <dimen name="last_brushing_card_width">70dp</dimen>
+
+  <!--
+  ABOUT SCREEN
+  -->
+
+  <dimen name="about_background_height">150dp</dimen>
+
+  <!--
+  LAST BRUSHING CARD
+  -->
+  <dimen name="frequency_chart_bottom_margin">12dp</dimen>
+
+  <!--
+  BRUSH BETTER CARD ITEM
+  -->
+  <dimen name="brush_better_icon_height">72dp</dimen>
+  <dimen name="brush_better_item_width">111dp</dimen>
+
+  <!--
+  REWARD YOURSELF CARD ITEM
+  -->
+  <dimen name="reward_yourself_icon_height">117dp</dimen>
+  <dimen name="reward_yourself_item_width">150dp</dimen>
+
+  <!--
+  MORE WAYS TO EARN POINTS
+  -->
+  <dimen name="more_ways_to_earn_points_icon_height">30dp</dimen>
+  <dimen name="more_ways_to_earn_points_item_width">150dp</dimen>
+
+  <!--
+  SUPPORT CARD
+  -->
+  <dimen name="support_card_size">132dp</dimen>
+
+  <!--
+  SETTINGS SCREEN
+  -->
+  <dimen name="select_profile_margin">28dp</dimen>
+
+  <!--
+  GAMES CARD ITEM
+  -->
+  <dimen name="games_card_item_icon_height">200dp</dimen>
+  <dimen name="games_card_item_width">230dp</dimen>
+
+</resources>

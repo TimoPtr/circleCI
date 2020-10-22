@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2019 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~ Proprietary and confidential
+  ~
+  -->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:paddingStart="@dimen/dot_double"
+  android:paddingEnd="@dimen/dot_double">
+
+  <EditText
+    android:id="@+id/custom_environment_url"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dot"
+    android:hint="@string/secret_custom_environment_url_hint"
+    android:inputType="textUri|textNoSuggestions"
+    android:autofillHints="customEnvironmentUrl"
+    app:layout_constraintBottom_toTopOf="@id/custom_environment_client_id"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_chainStyle="spread_inside" />
+
+  <EditText
+    android:id="@+id/custom_environment_client_id"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dot"
+    android:hint="@string/secret_custom_environment_clientid_hint"
+    android:inputType="textNoSuggestions"
+    android:autofillHints="customEnvironmentClientId"
+    app:layout_constraintBottom_toTopOf="@id/custom_environment_client_secret"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/custom_environment_url" />
+
+  <EditText
+    android:id="@+id/custom_environment_client_secret"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dot"
+    android:hint="@string/secret_custom_environment_clientsecret_hint"
+    android:inputType="textNoSuggestions"
+    android:autofillHints="customEnvironmentClientSecret"
+    app:layout_constraintBottom_toTopOf="@id/custom_environment_cancel"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/custom_environment_client_id" />
+
+  <Button
+    android:id="@+id/custom_environment_cancel"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/dot"
+    android:text="@string/cancel"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintHorizontal_chainStyle="spread"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toLeftOf="@id/custom_environment_ok"
+    app:layout_constraintTop_toBottomOf="@id/custom_environment_client_secret" />
+
+  <Button
+    android:id="@+id/custom_environment_ok"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:text="@string/ok"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toRightOf="@id/custom_environment_cancel"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="@id/custom_environment_cancel" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

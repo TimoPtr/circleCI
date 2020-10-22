@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<resources>
+  <!-- FACEBOOK ID -->
+  <string name="facebook_id" translatable="false">2028536360760641</string>
+
+  <!-- STAGING -->
+  <string name="kolibree_client_id" translatable="false">"bG9oY2hlaUxlaUI4a2FpeTBpaG8ya2FpQzJpZXJ1b2YzTWUwYWhjOEllZG82ZWVxdWFpdjZuYWlkbzN1bzV4YWkxYWl4ZWV0bzNvaG0zZ2FpNU92MXF1b3BvaHk3ZWlmN29oeWVlRGllMFVwaGlvNW9veGFodmVpcjR0aG9vU2g="</string>
+
+  <string name="kolibree_client_secret" translatable="false">"fzxlua3yzmV4zoO8xu0+ijPO9pAfmQcnLaZGygHZtsKxB72Cjihxex6y5GAMjsPV0kRu3CX2R6K4xgZay5ZHOpy1hgQx+9PmltoMAoFGWTM="</string>
+
+  <string name="kolibree_client_secret_iv" translatable="false">D80D511897E04B8E2DB40B2AB4379B5B</string>
+  <bool name="kolibree_staging_server">true</bool>
+
+  <!-- PRODUCTION -->
+
+  <string name="kolibree_client_id_production" translatable="false">WmllZGFjNGlld2VpZ2h1dXNoNGFoZ2FpZmFleGVpbmc5Y2FoeG9oem9vbTRvb2xhZW00b3phY2h1M0NpbzNub29rb29TaGE0dUIxT29uZzhydThhaG1vaHNoYXV0b29ob2g0dXg2aWE1aWVtYWhUdXc1eGVpcmVlcGhvaG5lM2U=</string>
+
+  <string name="kolibree_client_secret_production" translatable="false">"XyOFTMGDrxfD6/He4pTu9Z+t5h4bpNK7cIlhbiBCSMaVwIt507puQ8PRfWaWx9C1NR9rLmh7NBESLOHZV26H58hlIEF8o1c1gqFxhxqiSKg="</string>
+
+  <string name="kolibree_client_secret_iv_production" translatable="false">1FE93C47553E6F394FD154B7BF08FAD8</string>
+
+
+  <!-- DEV -->
+  <string name="kolibree_client_id_dev" translatable="false">17</string>
+
+  <string name="kolibree_client_secret_dev" translatable="false">"MAk79fSHHRA3XasDRskjJmCNRbBJHybcBZ4OkzwPjeiiccftwEdWNyCZtVaWjp2dv/TlODcFhtAfD/M8eZz0os85Lm4GD1cMOUOGePAFkYk="</string>
+
+  <string name="kolibree_client_secret_iv_dev" translatable="false">6722655CB9024233B8A8815D7B180092</string>
+
+  <!-- Zendesk -->
+  <string name="zendesk_client_id" translatable="false">mobile_sdk_client_7c733f5d212d77936458</string>
+  <string name="zendesk_app_id" translatable="false">c88868d525007019e51a62c22f1089255c2363d41d4a7557</string>
+</resources>

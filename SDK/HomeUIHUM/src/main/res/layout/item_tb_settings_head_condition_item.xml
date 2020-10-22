@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <data>
+
+    <variable
+      name="item"
+      type="com.kolibree.android.app.ui.toothbrushsettings.binding.BrushHeadConditionBindingModel" />
+
+    <variable
+      name="interaction"
+      type="com.kolibree.android.app.ui.toothbrushsettings.BrushHeadConditionInteraction" />
+
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/dot">
+
+    <TextView
+      android:id="@+id/title"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_quad"
+      android:text="@string/tb_settings_head_condition_header"
+      android:textAppearance="?textAppearanceOverline2"
+      android:textColor="?android:textColorSecondary"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+      android:id="@+id/head_condition_description"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_six"
+      android:layout_marginTop="@dimen/dot"
+      android:layout_marginEnd="@dimen/dot_quad"
+      android:text="@{item.headConditionDescription(context)}"
+      android:textAppearance="?textAppearanceHeadline6"
+      android:textColor="?textColorAccentSecondary"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="@id/head_condition_icon"
+      app:layout_constraintTop_toBottomOf="@id/title"
+      tools:text="Getting older" />
+
+    <ImageView
+      android:id="@+id/head_condition_icon"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_quad"
+      android:src="@{item.headConditionIcon()}"
+      android:textAppearance="?textAppearanceHeadline6"
+      android:textColor="?textColorAccentSecondary"
+      app:layout_constraintBottom_toBottomOf="@id/last_replaced_date"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="@id/head_condition_description"
+      tools:src="@drawable/ic_brush_head_half" />
+
+    <TextView
+      android:id="@+id/last_replaced_date"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="@dimen/dot_quad"
+      android:text="@{item.lastReplacementDate(context)}"
+      android:textAppearance="?textAppearanceCaption"
+      android:textColor="?android:textColorSecondary"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="@id/head_condition_description"
+      app:layout_constraintTop_toBottomOf="@id/head_condition_description"
+      tools:text="Last replaced on 16/01/2020" />
+
+    <Button
+      android:id="@+id/buy_new"
+      style="?materialButtonTextStyle"
+      android:layout_width="wrap_content"
+      android:layout_height="@dimen/dot_six"
+      android:layout_marginTop="@dimen/dot"
+      android:layout_marginEnd="@dimen/dot_double"
+      android:onClick="@{() -> interaction.onBuyNewClick()}"
+      android:text="@string/tb_settings_head_condition_buy_new"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/last_replaced_date" />
+
+    <Button
+      android:id="@+id/reset_counter"
+      style="?materialButtonTextStyle"
+      android:layout_width="wrap_content"
+      android:layout_height="@dimen/dot_six"
+      android:layout_marginEnd="@dimen/dot_double"
+      android:onClick="@{() -> interaction.onResetCounterClick()}"
+      android:text="@string/tb_settings_head_condition_reset_counter"
+      app:layout_constraintBottom_toBottomOf="@id/buy_new"
+      app:layout_constraintEnd_toStartOf="@id/buy_new"
+      app:layout_constraintTop_toTopOf="@id/buy_new" />
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/divider_thickness"
+      android:layout_marginTop="@dimen/dot_double"
+      android:background="?dividerColor"
+      app:layout_constraintTop_toBottomOf="@id/reset_counter" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

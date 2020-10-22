@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout>
+
+  <data>
+
+    <variable
+      name="viewModel"
+      type="com.kolibree.android.app.ui.addprofile.AddProfileViewModel" />
+
+    <variable
+      name="linkStyle"
+      type="com.kolibree.android.app.ui.text.TextPaintModifiers" />
+
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+      android:id="@+id/appbar"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:background="?toolbarCollapsedBackground"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent">
+
+      <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        enableBackNavigation="@{true}"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentInsetStart="0dp"
+        android:contentInsetLeft="0dp"
+        android:contentInsetEnd="0dp"
+        android:contentInsetRight="0dp"
+        android:theme="?defaultToolbarTheme"
+        app:contentInsetEnd="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetStart="0dp"
+        app:navigationIcon="@{@drawable/ic_back_arrow}"
+        app:popupTheme="?defaultToolbarPopupTheme" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.kolibree.android.app.ui.widget.ElevationMediatorView
+      android:id="@+id/elevator"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="@dimen/match_constraints"
+      app:constraint_referenced_ids="appbar"
+      app:endElevation="@dimen/elevation_half"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:scrollDistance="@dimen/dot_oct"
+      app:scrollingView="@id/content_scroll_view"
+      app:startElevation="@dimen/zero" />
+
+    <ScrollView
+      android:id="@+id/content_scroll_view"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/match_constraints"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/appbar">
+
+      <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+          android:id="@+id/content"
+          android:layout_width="@dimen/match_constraints"
+          android:layout_height="@dimen/match_constraints"
+          android:layout_marginStart="@dimen/dot_quad"
+          android:layout_marginEnd="@dimen/dot_quad"
+          android:layout_marginBottom="@dimen/dot_quad"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+          android:id="@+id/header"
+          android:layout_width="@dimen/match_constraints"
+          android:layout_height="wrap_content"
+          android:text="@string/select_profile_add_profile"
+          android:textAppearance="?textAppearanceHeadline2"
+          app:layout_constraintEnd_toEndOf="@id/content"
+          app:layout_constraintStart_toStartOf="@id/content"
+          app:layout_constraintTop_toTopOf="@id/content" />
+
+        <ImageView
+          android:id="@+id/add_photo_image"
+          android:layout_width="@dimen/profile_header_avatar"
+          android:layout_height="@dimen/profile_header_avatar"
+          android:layout_marginTop="@dimen/dot_quad"
+          android:onClick="@{v -> viewModel.showChooseAvatar()}"
+          app:avatarUrl="@{viewModel.avatarUrl}"
+          app:layout_constraintEnd_toEndOf="@id/content"
+          app:layout_constraintStart_toStartOf="@id/content"
+          app:layout_constraintTop_toBottomOf="@id/header" />
+
+        <TextView
+          android:id="@+id/add_photo_title"
+          android:layout_width="@dimen/match_constraints"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/dot_double"
+          android:gravity="center"
+          android:text="@string/add_profile_add_a_photo"
+          android:textAppearance="?textAppearanceHeadline5"
+          app:layout_constraintEnd_toEndOf="@id/content"
+          app:layout_constraintStart_toStartOf="@id/content"
+          app:layout_constraintTop_toBottomOf="@id/add_photo_image" />
+
+        <TextView
+          android:id="@+id/name_input_title"
+          android:layout_width="@dimen/match_constraints"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/dot_quad"
+          android:text="@string/onboarding_sign_up_subtitle"
+          android:textAppearance="?textAppearanceHeadline5"
+          app:layout_constraintEnd_toEndOf="@id/content"
+          app:layout_constraintStart_toStartOf="@id/content"
+          app:layout_constraintTop_toBottomOf="@id/add_photo_title" />
+
+        <com.google.android.material.textfield.TextInputLayout
+          android:id="@+id/name_input_layout"
+          android:layout_width="@dimen/match_constraints"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/dot"
+          android:enabled="@{viewModel.nameInputEnabled}"
+          android:hint="@string/onboarding_sign_up_name_hint"
+          app:error="@{viewModel.nameValidationError}"
+          app:layout_constraintEnd_toEndOf="@id/content"
+          app:layout_constraintStart_toStartOf="@id/content"
+          app:layout_constraintTop_toBottomOf="@id/name_input_title">
+
+          <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/name_input_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="@{viewModel.nameInputEnabled}"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName|textNoSuggestions"
+            android:lines="1"
+            android:text="@={viewModel.name}" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+          android:id="@+id/birthday_input_title"
+          android:layout_width="@dimen/match_constraints"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/dot_trip"
+          android:text="@string/add_profile_birthday_title"
+          android:textAppearance="?textAppearanceHeadline5"
+          app:layout_constraintEnd_toEndOf="@id/content"
+          app:layout_constraintStart_toStartOf="@id/content"
+          app:layout_constraintTop_toBottomOf="@id/name_input_layout" />
+
+        <TextView
+          android:id="@+id/birthday_input_optional"
+          android:layout_width="@dimen/match_constraints"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/dot_trip"
+          android:gravity="end"
+          android:text="@string/add_profile_optional"
+          android:textAppearance="?textAppearanceSubtitle1"
+          app:layout_constraintBaseline_toBaselineOf="@id/birthday_input_title"
+          app:layout_constraintEnd_toEndOf="@id/content"
+          app:layout_constraintStart_toStartOf="@id/content" />
+
+        <com.google.android.material.textfield.TextInputLayout
+          android:id="@+id/birthday_input_layout"
+          android:layout_width="@dimen/match_constraints"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/dot"
+          android:enabled="@{viewModel.nameInputEnabled}"
+          android:hint="@string/add_profile_birthday_hint"
+          app:error="@{viewModel.birthdayValidationError}"
+          app:layout_constraintEnd_toEndOf="@id/content"
+          app:layout_constraintStart_toStartOf="@id/content"
+          app:layout_constraintTop_toBottomOf="@id/birthday_input_title">
+
+          <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/birthday_input_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:afterTextChanged="@{viewModel.afterBirthdayChanged}"
+            android:enabled="@{viewModel.nameInputEnabled}"
+            android:imeOptions="actionDone"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal|textNoSuggestions"
+            android:lines="1"
+            android:maxLength="7"
+            android:text="@{viewModel.birthday}" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+          android:id="@+id/gender_input_title"
+          android:layout_width="@dimen/match_constraints"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/dot_trip"
+          android:text="@string/add_profile_gender_title"
+          android:textAppearance="?textAppearanceHeadline5"
+          app:layout_constraintEnd_toEndOf="@id/content"
+          app:layout_constraintStart_toStartOf="@id/content"
+          app:layout_constraintTop_toBottomOf="@id/birthday_input_layout" />
+
+        <TextView
+          android:id="@+id/gender_input_optional"
+          android:layout_width="@dimen/match_constraints"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/dot_trip"
+          android:gravity="end"
+          android:text="@string/add_profile_optional"
+          android:textAppearance="?textAppearanceSubtitle1"
+          app:layout_constraintBaseline_toBaselineOf="@id/gender_input_title"
+          app:layout_constraintEnd_toEndOf="@id/content"
+          app:layout_constraintStart_toStartOf="@id/content" />
+
+        <com.google.android.material.textfield.TextInputLayout
+          android:id="@+id/gender_input_layout"
+          style="?attr/autoCompleteTextInputLayoutStyle"
+          android:layout_width="@dimen/match_constraints"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/dot"
+          android:enabled="@{viewModel.nameInputEnabled}"
+          android:hint="@string/add_profile_choose_hint"
+          app:layout_constraintEnd_toEndOf="@id/content"
+          app:layout_constraintStart_toStartOf="@id/content"
+          app:layout_constraintTop_toBottomOf="@id/gender_input_title">
+
+          <AutoCompleteTextView
+            android:id="@+id/gender_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            android:text="@={viewModel.selectedGender}"
+            app:entries="@{viewModel.genderOptions}"
+            app:itemLayout="@{@layout/item_autocomplete}" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+          android:id="@+id/handedness_input_title"
+          android:layout_width="@dimen/match_constraints"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/dot_trip"
+          android:text="@string/add_profile_handedness_title"
+          android:textAppearance="?textAppearanceHeadline5"
+          app:layout_constraintEnd_toEndOf="@id/content"
+          app:layout_constraintStart_toStartOf="@id/content"
+          app:layout_constraintTop_toBottomOf="@id/gender_input_layout" />
+
+        <TextView
+          android:id="@+id/handedness_input_optional"
+          android:layout_width="@dimen/match_constraints"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/dot_trip"
+          android:gravity="end"
+          android:text="@string/add_profile_optional"
+          android:textAppearance="?textAppearanceSubtitle1"
+          app:layout_constraintBaseline_toBaselineOf="@id/handedness_input_title"
+          app:layout_constraintEnd_toEndOf="@id/content"
+          app:layout_constraintStart_toStartOf="@id/content" />
+
+        <com.google.android.material.textfield.TextInputLayout
+          android:id="@+id/handedness_input_layout"
+          style="?attr/autoCompleteTextInputLayoutStyle"
+          android:layout_width="@dimen/match_constraints"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/dot"
+          android:enabled="@{viewModel.nameInputEnabled}"
+          android:hint="@string/add_profile_choose_hint"
+          app:layout_constraintEnd_toEndOf="@id/content"
+          app:layout_constraintStart_toStartOf="@id/content"
+          app:layout_constraintTop_toBottomOf="@id/handedness_input_title">
+
+          <AutoCompleteTextView
+            android:id="@+id/handedness_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            android:text="@={viewModel.selectedHandedness}"
+            app:entries="@{viewModel.handednessOptions}"
+            app:itemLayout="@{@layout/item_autocomplete}" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+          android:id="@+id/checkbox_subtitle"
+          android:layout_width="@dimen/match_constraints"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/dot_quin"
+          android:text="@string/onboarding_sign_up_consent_header"
+          android:textAppearance="?textAppearanceHeadline6"
+          app:layout_constraintEnd_toEndOf="@id/content"
+          app:layout_constraintStart_toStartOf="@id/content"
+          app:layout_constraintTop_toBottomOf="@id/handedness_input_layout" />
+
+        <CheckBox
+          android:id="@+id/terms_and_conditions_checkbox"
+          style="@style/Widget.MaterialComponents.CompoundButton.CheckBox"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="@dimen/onboarding_checkbox_margin_start"
+          android:checked="@={viewModel.termsAndConditionsAccepted}"
+          android:textAppearance="?textAppearanceBody2"
+          android:textColor="?android:textColorPrimary"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/checkbox_subtitle" />
+
+        <TextView
+          android:id="@+id/terms_and_conditions_part1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="@dimen/dot_quin"
+          android:text="@string/onboarding_sign_up_consent"
+          android:textAppearance="?textAppearanceBody2"
+          app:layout_constraintBaseline_toBaselineOf="@id/terms_and_conditions_checkbox"
+          app:layout_constraintStart_toStartOf="@id/terms_and_conditions_checkbox" />
+
+        <TextView
+          android:id="@+id/terms_and_conditions_part2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@{@string/sign_up_consent_format(@string/onboarding_sign_up_consent_terms_conditions_link)}"
+          android:textAppearance="?textAppearanceBody2"
+          app:layout_constraintBaseline_toBaselineOf="@id/terms_and_conditions_part1"
+          app:layout_constraintEnd_toEndOf="@id/content"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintStart_toEndOf="@id/terms_and_conditions_part1"
+          app:linkStyle="@{linkStyle}"
+          app:linkText="@{@string/onboarding_sign_up_consent_terms_conditions_link}"
+          app:onLinkClick="@{v -> viewModel.onTermsAndConditionsLinkClick()}" />
+
+        <CheckBox
+          android:id="@+id/privacy_policy_checkbox"
+          style="@style/Widget.MaterialComponents.CompoundButton.CheckBox"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="@dimen/onboarding_checkbox_margin_start"
+          android:layout_marginTop="@dimen/dot_quin"
+          android:checked="@={viewModel.privacyPolicyAccepted}"
+          android:textAppearance="?textAppearanceBody2"
+          android:textColor="?android:textColorPrimary"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/checkbox_subtitle" />
+
+        <TextView
+          android:id="@+id/privacy_policy_part1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="@dimen/dot_quin"
+          android:text="@string/onboarding_sign_up_consent"
+          android:textAppearance="?textAppearanceBody2"
+          app:layout_constraintBaseline_toBaselineOf="@id/privacy_policy_checkbox"
+          app:layout_constraintStart_toStartOf="@id/privacy_policy_checkbox" />
+
+        <TextView
+          android:id="@+id/privacy_policy_part2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@{@string/sign_up_consent_format(@string/onboarding_sign_up_consent_privacy_policy_link)}"
+          android:textAppearance="?textAppearanceBody2"
+          app:layout_constraintBaseline_toBaselineOf="@id/privacy_policy_part1"
+          app:layout_constraintEnd_toEndOf="@id/content"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintStart_toEndOf="@id/privacy_policy_part1"
+          app:linkStyle="@{linkStyle}"
+          app:linkText="@{@string/onboarding_sign_up_consent_privacy_policy_link}"
+          app:onLinkClick="@{v -> viewModel.onPrivacyPolicyLinkClick()}" />
+
+        <CheckBox
+          android:id="@+id/promotions_and_updates_checkbox"
+          style="@style/Widget.MaterialComponents.CompoundButton.CheckBox"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="@dimen/onboarding_checkbox_margin_start"
+          android:layout_marginTop="@dimen/dot_ten"
+          android:checked="@={viewModel.promotionsAndUpdatesAccepted}"
+          android:textAppearance="?textAppearanceBody2"
+          android:textColor="?android:textColorPrimary"
+          android:visibility="@{viewModel.promotionsOptionVisibility}"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/checkbox_subtitle" />
+
+        <TextView
+          android:id="@+id/promotions_and_updates_textview"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="@dimen/dot_quin"
+          android:text="@string/onboarding_sign_up_receive_promotions_updates"
+          android:textAppearance="?textAppearanceBody2"
+          android:visibility="@{viewModel.promotionsOptionVisibility}"
+          app:layout_constraintBaseline_toBaselineOf="@id/promotions_and_updates_checkbox"
+          app:layout_constraintEnd_toEndOf="@id/content"
+          app:layout_constraintStart_toStartOf="@id/promotions_and_updates_checkbox" />
+
+        <Button
+          android:id="@+id/add_profile_button"
+          style="@style/Widget.Button"
+          android:layout_width="@dimen/match_constraints"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/dot_quad"
+          android:enabled="@{viewModel.buttonsEnabled}"
+          android:onClick="@{v -> viewModel.onAddProfileClick()}"
+          android:text="@string/select_profile_add_profile"
+          app:layout_constraintBottom_toBottomOf="@id/content"
+          app:layout_constraintEnd_toEndOf="@id/content"
+          app:layout_constraintStart_toStartOf="@id/content"
+          app:layout_constraintTop_toBottomOf="@id/promotions_and_updates_checkbox" />
+
+      </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+    <View
+      android:id="@+id/progress_background"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="?progressOverlayColor"
+      android:clickable="true"
+      android:focusable="true"
+      android:visibility="invisible"
+      android:elevation="@dimen/elevation_half"
+      app:visibilityAnim="@{viewModel.progressVisible}"
+      tools:visibility="visible" />
+
+    <com.google.android.material.card.MaterialCardView
+      android:id="@+id/progress_view"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:elevation="@dimen/elevation_double"
+      android:visibility="invisible"
+      app:cardBackgroundColor="?backgroundColor"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintWidth_percent="0.75"
+      app:visibilityAnim="@{viewModel.progressVisible}"
+      tools:visibility="visible">
+
+      <include
+        layout="@layout/view_progress_indicator_dark"
+        app:progressVisible="@{viewModel.progressVisible}" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.kolibree.android.app.widget.snackbar.SnackbarHandler
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="@dimen/match_constraints"
+      app:configuration="@={viewModel.snackbarConfiguration}"
+      tools:ignore="MissingConstraints" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+

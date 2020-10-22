@@ -1,0 +1,12 @@
+apply plugin: 'java-library'
+
+dependencies {
+    implementation libraries.kotlinRuntime
+    implementation libraries.supportAnnotations
+    //DO NOT ADD ANYTHING ELSE HERE! You will kill the build performance
+}
+
+// Needed for batch unit tests execution
+task testDebugUnitTest {
+    dependsOn test
+}

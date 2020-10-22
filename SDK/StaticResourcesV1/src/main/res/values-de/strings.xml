@@ -1,0 +1,1138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ok">"OK"</string>
+
+    <!-- Home menu -->
+    <string name="action_account_settings">"Benutzerkonto"</string>
+    <string name="action_users_settings">"Profile"</string>
+    <string name="action_go_to_slideshow">"So funktioniert’s"</string>
+    <string name="action_about">"Über uns"</string>
+    <string name="action_logout">"Logout"</string>
+    <string name="action_spread_the_word">"Erzähle anderen von uns"</string>
+    <string name="action_help">"Help Center"</string>
+    <string name="action_change_profile">"Profil wechseln"</string>
+    <string name="action_edit_profile">"Profil bearbeiten"</string>
+
+    <!-- LOGIN AND REGISTRATION -->
+    <string name="login">"Login"</string>
+    <string name="connect_">"Verbinden   &gt;"</string>
+    <string name="male">"Männlich"</string>
+    <string name="female">"Weiblich"</string>
+    <string name="signup">"Registrieren"</string>
+    <string name="create_profile">"Profil erstellen"</string>
+    <string name="edit_profile">"Profil bearbeiten"</string>
+    <string name="email_hint">"E-Mail"</string>
+    <string name="password_hint">"Passwort"</string>
+    <string name="password_confirm_hint">"Passwort bestätigen"</string>
+    <string name="firstname_hint">"Vorname"</string>
+    <string name="lastname_hint">"Nachname"</string>
+    <string name="birthday_hint">"Geburtsdatum"</string>
+    <string name="create">"Erstellen   &gt;"</string>
+    <string name="btn_next">"Weiter   &gt;"</string>
+    <string name="choose_picture_hint">"Profilbild einstellen"</string>
+    <string name="choose_picture_gallery">"Foto auswählen"</string>
+    <string name="choose_picture_take">"Foto machen"</string>
+    <string name="gender_hint">"Geschlecht"</string>
+    <string name="handedness_hint">"Welche Hand benutzt du zum Zähneputzen?"</string>
+    <string name="country_hint">"Wo wohnst du?"</string>
+    <string name="forgotten_password">"Passwort vergessen?"</string>
+    <string name="email_missing">"Die E-Mail-Adresse fehlt"</string>
+    <string name="email_invalid">"Die E-Mail-Adresse ist ungültig"</string>
+    <string name="firstname_missing">"Vorname fehlt"</string>
+    <string name="lastname_missing">"Nachname fehlt"</string>
+    <string name="birthday_missing">"Falsches Alter"</string>
+    <string name="picture_missing">"Bitte Bild auswählen"</string>
+    <string name="gender_missing">"Das Geschlecht ist nicht angegeben"</string>
+    <string name="handedness_missing">"Angabe, ob rechtshändig oder linkshändig, fehlt"</string>
+    <string name="country_missing">"Das Land ist nicht angegeben"</string>
+    <string name="password_missing">"Das Passwort fehlt"</string>
+    <string name="password_confirmation_missing">"Die Passwortbestätigung fehlt"</string>
+    <string name="passwords_dont_match">"Ups, die Passwörter stimmen nicht überein."</string>
+    <string name="reset_password">"Passwort zurücksetzen"</string>
+    <string name="reset_password_ok">"Bitte den Posteingang überprüfen und den Anweisungen folgen, um das Passwort zurückzusetzen."</string>
+    <string name="reset_password_ko">"Beim Zurücksetzen des Passworts ist ein Fehler aufgetreten."</string>
+    <string name="terms_of_use_terms">"Geschäftsbedingungen"</string>
+    <string name="terms_of_use_policy">"Datenschutzerklärung"</string>
+    <string name="account_created_title">"Hurra!"</string>
+    <string name="account_created_message">"Das Benutzerkonto wurde erstellt.
+Nun kannst du deine Zähne putzen!"</string>
+    <string name="facebook_login">"Per Facebook anmelden"</string>
+    <string name="facebook_signup">"Per Facebook registrieren"</string>
+    <string name="please_wait">"Bitte warten…"</string>
+    <string name="choose_picture_local">"Aus Colgate Connect wählen"</string>
+    <string name="terms_of_use">"Ich stimme den "<![CDATA[<u><a href=\"%1$s\">%2$s</a></u>]]>" und "<![CDATA[<u><a href=\"%3$s\">%4$s</a></u>]]>" zu."</string>
+
+    <!-- ACCOUNT ACTIVITY -->
+    <string name="account">"Benutzerkonto"</string>
+    <string name="change_password">"Passwort ändern"</string>
+    <string name="new_password">"Neues Passwort"</string>
+    <string name="old_password">"Altes Passwort"</string>
+    <string name="confirm_new_pasword">"Neues Passwort bestätigen"</string>
+    <string name="help_title">"Hilf uns"</string>
+    <string name="help_message">"Hilf uns, die Genauigkeit der Bewegungssensoren zu verbessern, indem du uns deine Zahnputzdaten anonym übermittelst.
+(Die Vorlieben können in den Einstellungen der App jederzeit geändert werden)"</string>
+    <string name="old_password_missing">"Altes Passwort fehlt"</string>
+    <string name="new_password_missing">"Neues Passwort fehlt"</string>
+    <string name="new_password_confirm_missing">"Bestätigung für neues Passwort fehlt"</string>
+    <string name="password_updated">"Passwort wurde aktualisiert"</string>
+    <string name="password_updated_title">"Erfolgreich"</string>
+    <string name="musicchoosertitle">"Musikauswahl für Coach"</string>
+
+    <!-- EDIT PROFILE ACTIVITY -->
+    <string name="personal_info">"Persönliche Informationen"</string>
+    <string name="brushing_settings">"Einstellungen zum Zähneputzen"</string>
+    <string name="right_handed">"Rechtshändig"</string>
+    <string name="left_handed">"Linkshändig"</string>
+    <string name="coach_brushing_time">"Zahnputzzeit"</string>
+    <string name="coach_brushing_time_duration">"Dauer einer Zahnputzsitzung: %1$s"</string>
+    <string name="coach_sound_value">"Musik während einer Zahnputzsitzung in Coach: %1$s"</string>
+    <string name="none">"keine"</string>
+    <string name="music">"Musik"</string>
+    <string name="sounds">"Töne"</string>
+    <string name="no_music_file">"Keine Datei ausgewählt"</string>
+    <string name="transition_sounds">"Übergangstöne"</string>
+    <string name="no_artist">"Kein Künstler"</string>
+    <string name="no_title">"Kein Titel"</string>
+    <string name="brushing_time_hint">"Zahnputzzeit"</string>
+    <string name="profiles">"Profile"</string>
+    <string name="delete_profile_title">"Profil löschen"</string>
+    <string name="delete_profile_message">"Dieses Profil wirklich löschen?"</string>
+
+    <!-- ADD PROFILE ACTIVITY -->
+    <string name="add_profile">"Neues Profil hinzufügen"</string>
+
+    <!-- Leaderboard -->
+    <string name="leaderboard">"Ranking"</string>
+
+    <!-- About -->
+    <string name="kolibree_version">"Version %1$s (%2$s)
+Konto %3$s"</string>
+    <string name="kolibree_about">"Wir sind überzeugt, dass Technologie helfen kann, Munderkrankungen und Karies zu verhindern und setzen diese Überzeugung in die Tat um."</string>
+    <string name="about_terms">"Geschäftsbedingungen und Datenschutzerklärung."</string>
+    <string name="about">"Über uns"</string>
+    <string name="kolibree_rights">"Colgate Connect, das Logo Colgate Connect sowie alle Markenzeichen von Colgate Connect sind Eigentum der Colgate Connect.
+Alle Rechte vorbehalten."</string>
+
+    <!-- Checkup -->
+    <string name="get_tb">"Sie ist im Laden erhältlich!"</string>
+
+    <!-- Checkup -->
+    <string name="checkup">"Überprüfung"</string>
+    <string name="neglected_areas">"Vernachlässigte Bereiche"</string>
+    <string name="well_brushed_areas">"Gut geputzte Bereiche"</string>
+    <string name="refresh">"Aktualisieren"</string>
+    <string name="checkup_duration">"Dauer"</string>
+    <string name="checkup_not_connected">"Für diesen Putzvorgang sind keine Angaben zu den Flächen verfügbar."</string>
+    <string name="checkup_empty">"Meine Zahnbürste jetzt verbinden"</string>
+    <string name="connect_tb_hint">"Putzen Sie Ihre Zähne mit Ihrer Colgate Connect-Zahnbürste, um die Bereiche zu sehen, die Sie möglicherweise übersehen haben."</string>
+
+    <!-- Options Menu -->
+    <string name="menu_connect">"Gerät verbinden"</string>
+
+    <!-- SetupToothbrushActivity -->
+    <string name="none_paired">"Es wurden keine Geräte verbunden"</string>
+    <string name="none_found">"Keine Geräte gefunden"</string>
+
+    <!-- ConnectDeviceDialogActivity -->
+    <string name="toothbrushes">"Zahnbürsten"</string>
+    <string name="none_connected">"Kein Gerät verbunden"</string>
+    <string name="select_a_device">"Verfügbare Geräte"</string>
+    <string name="connect">"Verbinden"</string>
+    <string name="restart">"Neu starten"</string>
+    <string name="quit">"Verlassen"</string>
+    <string name="pause">"Pause"</string>
+    <string name="next">"Weiter"</string>
+    <string name="cancel">"Abbrechen"</string>
+    <string name="notnow">"Nicht jetzt"</string>
+    <string name="information">"Information"</string>
+    <string name="error">"Fehler"</string>
+
+    <!-- SwitchGame Coach Fragment -->
+    <string name="no_tb_connected">"Zahnbürste nicht verbunden"</string>
+    <string name="description_no_tb_connected_pirate">"Verbinde bitte deine Zahnbürste, um deine Zähne mit Go!Pirate zu putzen."</string>
+    <string name="description_no_tb_connected_coach">"Möchtest du deine Zähne ohne deine Colgate Connect Zahnbürste putzen?"</string>
+
+    <!-- Coach Game Fragment -->
+    <string name="resume">"Ergebnis"</string>
+    <string name="coach_something_wrong">"Etwas ist schief gelaufen. Bitte später erneut versuchen."</string>
+
+    <!-- Coach Game Fragment -->
+    <string name="points">"Punkte"</string>
+
+    <!-- Settings ToothBrush Fragment -->
+    <string name="user_mode_title">"Zahnbürsten-Benutzer"</string>
+
+    <!-- Settings ToothBrush Fragment -->
+    <string name="toothbrush_information">"Zahnbürsten-Information"</string>
+    <string name="title_toothbrush">"Zahnbürsten-ID"</string>
+    <string name="battery_level">"Akkustand"</string>
+    <string name="find_toothbrush">"Zahnbürste erkennen"</string>
+    <string name="blink_toothbrush">"Bring deine Zahnbürste zum blinken"</string>
+    <string name="toothbrush_blinking">"Blinken"</string>
+    <string name="ota_toothbrush_title">"Firmware-Version"</string>
+    <string name="hardware_version_title">"Hardware-Version"</string>
+    <string name="software_version_title">"Firmware-Version"</string>
+    <string name="user_mode_not_known">"Bitte Benutzer eingeben"</string>
+    <string name="settings_shared_toothbrush">"Geteilte Zahnbürste"</string>
+    <string name="toothbrush_owner_everyone">"Jeder"</string>
+    <string name="toothbrush_firmware_update_available">"Aktualisieren Sie Ihre Zahnbürste"</string>
+    <string name="toothbrush_firmware_update_title">"Aktualisieren Sie Ihre Zahnbürste"</string>
+    <string name="toothbrush_firmware_update_button">"Aktualisieren"</string>
+    <string name="firmware_upgrade_error">"Firmware-Upgrade fehlgeschlagen:
+%s"</string>
+    <string name="toothbrush_firmware_update_progress_label">"Installieren..."</string>
+    <string name="toothbrush_firmware_update_rebooting_label">"Rebooting"</string>
+    <string name="toothbrush_firmware_update_success">"Ihre Colgate Connect Zahnbürste wurde aufgerüstet!"</string>
+
+    <!-- Settings Pairing Fragment -->
+    <string name="pairing_kolibree_1">"Halte die Taste an deiner Zahnbürste gedrückt, bis die LED in blauer Farbe blinkt, damit sie entdeckt werden kann."</string>
+    <string name="pairing_kolibree_2">"Wenn du in einem Popup-Fenster aufgefordert wirst, deine Zahnbürste zu verbinden, gibt diesen Pin-Code ein:"</string>
+    <string name="pairing_kolibree_4">"0000"</string>
+    <string name="pop_up_connect_fail_title">"Ups!"</string>
+    <string name="pop_up_connect_fail_msg">"Die Verbindung zwischen deiner Zahnbürste und dem Gerät war nicht erfolgreich. Bitte überprüfe, ob deine Zahnbürste eingeschaltet ist, und versuche es erneut."</string>
+
+    <!-- Switch Game Fragment -->
+    <string name="coach_game_name">"Coach"</string>
+    <string name="pirate_game_name">"GoPirate"</string>
+    <string name="coach_plus_game_name">"Coach Plus"</string>
+    <string name="sba_game_name">@string/test_brushing_screen_title</string>
+    <string name="rabbids_game_name">"Rabbids"</string>
+    <string name="offline_game_name">"Zähneputzen offline"</string>
+    <string name="coach_game_description">"Coach hilft dabei, die Zähne richtig zu putzen, indem er genau zeigt, wo geputzt werden muss. Übung macht den Meister!"</string>
+    <string name="pirate_game_description">"Zähneputzen wird kinderleicht: Schnapp dir die Teile, die du beim Zähneputzen unterwegs findest."</string>
+    <string name="activities_warning">"Neue Zahnputzdaten werden dem oben ausgewählten Profil zugeordnet."</string>
+    <string name="transition_game">"Übergang_Spiel"</string>
+    <string name="game_brush_not_allow_title">"Hoppla"</string>
+    <string name="game_brush_not_allow_msg">"Beim Putzen mehr als dreimal täglich kann das Zahnfleisch geschädigt werden."</string>
+    <string name="upper_arch">"Oberer
+Zahnbogen"</string>
+    <string name="lower_arch">"Unterer
+Zahnbogen"</string>
+    <string name="delete_profile">"Löschen"</string>
+    <string name="logout_title">"Logout"</string>
+    <string name="logout_message">"Möchtest du dich wirklich abmelden?"</string>
+    <string name="load_avatar_error">"Oh, wie peinlich...
+Überprüfe die Netzwerkverbindung, um Avatarbilder zu laden"</string>
+
+    <!-- Connection Lost Dialog -->
+    <string name="lost_connection_dialog_title">"Mayday!"</string>
+    <string name="lost_connection_dialog_msg">"Deine Zahnbürste wurde nicht erkannt. Verbinde sie bitte neu, um die Konfiguration abzuschließen."</string>
+    <string name="send">"Absenden"</string>
+    <string name="points_pts">"+%d pts"</string>
+    <string name="account_settings_help">"Hilf uns, die Genauigkeit der Bewegungssensoren zu verbessern, indem du uns deine Zahnputzdaten anonym übermittelst."</string>
+    <string name="account_settings_digest">"Du erhältst jede Woche einen kompletten Zahnputzbericht einschließlich der wichtigsten Informationen zur Mundhygiene."</string>
+    <string name="account_settings_digest_title">"Wöchentliche Zusammenfassung"</string>
+    <string name="toothbrush_status_connecting">"Verbindung wird hergestellt..."</string>
+    <string name="toothbrush_status_pairing">"Kopplung..."</string>
+    <string name="checkup_hint_1">"Damit du deine Zahnüberprüfung ansehen kannst, die Zähne mit einer der App-Aktivitäten putzen."</string>
+    <string name="checkup_hint_2">"Bei dieser Überprüfung geht es nur um das Zahnputzen bei aktivierter App."</string>
+    <string name="checkup_error_no_data_title">"Ups, wir haben nicht genug Daten."</string>
+    <string name="checkup_error_no_data_hint">"Damit du deine Zahnüberprüfung ansehen kannst, die Zähne mit einer der App-Aktivitäten putzen."</string>
+    <string name="checkup_error_no_internet_title">"Ups, es besteht keine Verbindung zum Internet."</string>
+    <string name="checkup_error_no_internet_hint">"Zum Aktualisieren der Zahnputzdaten Verbindung zum Internet aufbauen."</string>
+    <string name="um_welcome_title">"Hallo %s!"</string>
+    <string name="um_warning_title">"Vorsicht"</string>
+    <string name="um_yes">"Ja"</string>
+    <string name="um_no">"Nein"</string>
+    <string name="um_cancel">"Abbrechen"</string>
+    <string name="um_edit">"Ändern"</string>
+    <string name="um_next">"Weiter"</string>
+    <string name="um_great">"Super"</string>
+    <string name="um_understood">"Ich habe verstanden"</string>
+    <string name="um_already_associated">"Diese Zahnbürste ist schon mit einer Person verknüpft."</string>
+    <string name="um_already_associated_known">"Diese Zahnbürste ist bereits mit %s verknüpft."</string>
+    <string name="um_already_associated2_known">"Soll diese Zahnbürste sofort mit dem Profil von %s verknüpft werden?"</string>
+    <string name="um_already_associated2">"Sollen diese Einstellungen geändert und diese Zahnbürste mit einer anderen Person verbunden werden?"</string>
+    <string name="um_already_associated2_self">"Sollen diese Einstellungen geändert und diese Zahnbürste mit deinem Profil verbunden werden?"</string>
+    <string name="um_warning_message">"Die Einstellungen der Zahnbürste werden so geändert, dass sie in allen Profilen verwendet werden kann.
+
+Das Zähneputzen ohne die App wird nicht mehr gespeichert."</string>
+    <string name="um_warning_hint">"Dieser Freigabemodus kann später in den Einstellungen jeder der Zahnbürsten geändert werden."</string>
+    <string name="um_pairing_warning_hint">"Die vorherige Verbindung geht verloren."</string>
+    <string name="um_pairing_um_users_title_one">"Eine neue Zahnbürste wurde erkannt!
+Wer verwendet ihn?"</string>
+    <string name="um_pairing_um_users_title_several">"Wer verwendet diese Zahnbürste?"</string>
+    <string name="um_pairing_um_users_entry">"Nur %s"</string>
+    <string name="um_pairing_um_users_entry_several">"Geteilte Zahnbürste"</string>
+    <string name="um_shared_tb">"Geteilte Zahnbürste"</string>
+    <string name="um_shared_tb_hint">"Andere Nutzer des Kontos können diese Zahnbürste verwenden, wenn sie den Bürstenkopf wechseln. Einfach vor dem Zähneputzen den neuen Benutzer auswählen."</string>
+    <string name="um_dont_forget">"Nicht vergessen!"</string>
+    <string name="um_dont_forget_hint">"Wenn die Zähne ohne die App geputzt werden, werden die Zahnputzdaten nicht gespeichert."</string>
+    <string name="um_new_tb_associated">"Eine neue Zahnbürste wurde erkannt und dem Profil hinzugefügt."</string>
+    <string name="um_warning_message_plural">"Die Einstellungen der Zahnbürsten werden so geändert, dass sie in allen Profilen verwendet werden können.
+
+Das Zähneputzen ohne die App wird nicht mehr gespeichert."</string>
+    <string name="um_pairing_um_pairing_confirmation_1">"Die Zahnbürste kann mit oder ohne die Colgate Connect App verwendet werden."</string>
+    <string name="um_pairing_um_pairing_confirmation_2">"Die Zahnbürste speichert automatisch die Zahnputzdaten. Denk aber daran, dass sie mindestens einmal pro Woche mit der Colgate Connect App synchronisiert wird, um sie auf dem neuesten Stand zu halten."</string>
+    <string name="um_welcome_hint">"Soll dem Profil eine neue Colgate Connect Zahnbürste hinzugefügt werden?"</string>
+
+    <!-- Notifications -->
+    <string name="tb_sync.notification.standard.2">"Für eine maximale Colgate Connect Erfahrung daran denken, das Zähneputzen zu synchronisieren!"</string>
+    <string name="tb_sync.notification.standard.6">"Die Zahnbürste synchronisieren, um die aufgezeichneten Daten zu speichern, auch wenn die Colgate Connect App nicht geöffnet ist."</string>
+    <string name="tb_sync.notification.standard.7">"Möchtest du wissen, ob du deine Zähne die letzten Tage gut geputzt hast? Das Zahnputzverhalten mit der Colgate Connect App synchronisieren."</string>
+    <string name="tb_sync.notification.standard.8">"Denke daran, das Zähneputzen von Zeit zu Zeit zu synchronisieren, damit Colgate Connect die Zahngesundheit analysieren kann!"</string>
+    <string name="tb_sync.notification.standard.1">"Zum Synchronisieren deines Zahnputzvorgangs berühren."</string>
+    <string name="tb_sync.notification.standard.3">"Möchtest du mehr über die Zahngesundheit erfahren? Zum Synchronisieren deines Zahnputzvorgangs berühren."</string>
+    <string name="tb_sync.notification.standard.4">"Bist du in der Nähe deiner Zahnbürste? Zum Synchronisieren deines Zahnputzvorgangs berühren!"</string>
+    <string name="tb_sync.notification.standard.5">"Zum Synchronisieren des Zahnputzvorgangs und Aktualisieren des Zahnberichts antippen."</string>
+    <string name="tb_sync.notification.standard.9">"Jetzt das Zähneputzen synchronisieren, um den Fortschritt zu überprüfen."</string>
+    <string name="tb_sync.notification.standard.10">"Wie effektiv war das letzte Zähneputzen? Um dies herauszufinden, jetzt synchronisieren."</string>
+    <string name="tb_sync.notification.standard.11">"Befindet sich deine Zahnbürste in der Nähe? Zähneputzen synchronisieren!"</string>
+    <string name="tb_sync.notification.standard.12">"Das Zähneputzen synchronisieren, um die Zahnputzindikatoren zu aktualisieren."</string>
+    <string name="tb_sync.enable.bluetooth.title">"Bluetooth aktivieren"</string>
+    <string name="about_attributions_hint">"Diese Anwendung verwendet die folgenden Bibliotheken:"</string>
+    <string name="about_attributions_website">"Webseite"</string>
+    <string name="about_attributions_license">"Lizenz"</string>
+
+    <!-- Setup toothbrush tunnel -->
+    <string name="setup_toothbrush_connect_m1_title">"Deine M1 verbinden"</string>
+    <string name="setup_toothbrush_connect_kolibree_title">"Deine Kolibree V1 verbinden"</string>
+    <string name="setup_toothbrush_choose_model">"Welche Zahnbürste hast du?"</string>
+    <string name="setup_toothbrush_choose_model_ara">"Ara"</string>
+    <string name="setup_toothbrush_another_toothbrush_title">"Noch etwas!"</string>
+    <string name="setup_toothbrush_another_toothbrush_buy">"Auf zum Laden!"</string>
+    <string name="setup_toothbrush_another_toothbrush_to_coach">"Zahnbürste mit Coach"</string>
+    <string name="setup_toothbrush_choose_model_help"><![CDATA[Ich weiß nicht, <b>welche Zahnbürste ich habe</b>]]></string>
+    <string name="setup_toothbrush_choose_model_help_title">"Wie kann ich meine Zahnbürste erkennen?"</string>
+    <string name="setup_toothbrush_get_one">"Sie ist im Laden erhältlich!"</string>
+    <string name="setup_toothbrush_proceed_without">"Danke, aber ich werde @ohne fortfahren"</string>
+    <string name="setup_toothbrush_model_ara">"Ara"</string>
+    <string name="setup_toothbrush_ara_charger">"Stelle die Zahnbürste in das Ladegerät und tippe auf Start."</string>
+    <string name="setup_toothbrush_m1_instructions">"Deine Connect M1 schütteln, um die Verbindung herzustellen. Die LED blinkt blau."</string>
+    <string name="setup_toothbrush_ara_charger_start">"Start"</string>
+    <string name="setup_toothbrush_ara_no_charger">"Ich habe kein Ladegerät"</string>
+    <string name="setup_toothbrush_searching">"Suche nach…
+%d %%"</string>
+    <string name="setup_toothbrush_connecting">"Verbindung wird hergestellt..."</string>
+    <string name="setup_toothbrush_ara_wait">"Bitte warten!
+Die App sucht nach deiner
+Zahnbürste."</string>
+    <string name="setup_toothbrush_rename_hint">"Diese neuen Parameter können in den Einstellungen der Zahnbürste geändert werden."</string>
+    <string name="setup_toothbrush_rename_ara_done">"Erledigt"</string>
+    <string name="setup_toothbrush_rename_ara_choose_name">"Einen Namen auswählen"</string>
+    <string name="setup_searching">"Auf der Suche nach Zahnbürsten..."</string>
+    <string name="setup_barcode_hint">"Überprüfe den Namen deiner Zahnbürste, der sich auf der Verpackung befindet"</string>
+    <string name="setup_permission_popup">"Android benötigt eine Standortberechtigung, um ein Bluetooth Low Energy-Gerät anzuschließen. Bitte aktivieren Sie es im folgenden Dialog, um Ihre Zahnbürste anzuschließen."</string>
+    <string name="setup_popup_help_title">"Du kannst deine Zahnbürste nicht sehen?"</string>
+    <string name="setup_popup_help_message">"Sollte sich die Zahnbürste in deiner Nähe befinden aber hier nicht angezeigt werden, ist sie evtl. bereits mit einem anderen Gerät verbunden.
+
+Deaktiviere Bluetooth oder vergiss die Zahnbürste am anderen Gerät.
+
+Du wirst die Zahnbürste hier sehen!"</string>
+    <string name="setup_connected_title">"Glückwunsch %s!
+Deine Zahnbürste ist jetzt angeschlossen"</string>
+    <string name="setup_connected_hint">"Deine Zahnbürste heißt: \"%1$s\"
+Du kannst dies in den Einstellungen ändern!"</string>
+    <string name="setup_connected_button">"Auf geht‘s!"</string>
+    <string name="setup_summary_message">"Diese Zahnbürste speichert automatisch deine persönlichen Zahnputzdaten. Denk daran, deine Zahnbürste mindestens einmal pro Woche anzuschließen, um deine Daten zu speichern."</string>
+    <string name="setup_toothbrush_choose_model_e1">"Connect E1"</string>
+    <string name="setup_toothbrush_connect_ara_title">"Deine E1 wird verbunden"</string>
+    <string name="setup_toothbrush_another_toothbrush_text">"Du kannst mit unserem Coach die Zähne putzen!
+
+Ohne eine Colgate Connect Zahnbürste verpasst du aber das volle Connect-Erlebnis.
+
+Hoffentlich ist es nicht zu spät, sofort eine zu kaufen :)"</string>
+    <string name="setup_toothbrush_choose_model_help_top">"Colgate Connect E1"</string>
+    <string name="setup_toothbrush_choose_model_help_bottom">"Colgate Connect M1"</string>
+    <string name="setup_toothbrush_choose_model_buy">"Besorge noch eine Colgate Connect
+Zahnbürste im Laden!"</string>
+    <string name="setup_summary_title">"Du kannst die Zahnbürste mit oder ohne die Colgate Connect App verwenden"</string>
+    <string name="setup_toothbrush_choose_model_another">"Ich habe keine Colgate Connect Zahnbürste"</string>
+    <string name="setup_toothbrush_choose_model_m1">"Connect M1"</string>
+
+    <!-- Toothbrush -->
+    <string name="forget_toothbrush">"Vergiss diese Zahnbürste"</string>
+    <string name="forget_toothbrush_popup_title">"Möchtest du %s vergessen?"</string>
+    <string name="forget_toothbrush_popup_message">"Dieses Gerät wird nicht mehr automatisch mit der Zahnbürste verbunden."</string>
+    <string name="forget_toothbrush_forget">"Vergessen"</string>
+    <string name="my_toothbrushes">"Meine Zahnbürsten"</string>
+    <string name="my_toothbrush">"Meine Zahnbürste"</string>
+    <string name="my_ara">"Meine Ara"</string>
+    <string name="my_connect_m1">"Meine Connect M1"</string>
+    <string name="my_connect_e1">"Meine Connect E1"</string>
+    <string name="my_kolibree">"Meine Kolibree V1"</string>
+    <string name="toothbrush_name">"Name"</string>
+    <string name="toothbrush_personalized_name">"Wunschname"</string>
+    <string name="toothbrush_none">"Keiner"</string>
+    <string name="toothbrush_serial_number">"Seriennummer"</string>
+    <string name="toothbrush_mac">"MAC-Adresse"</string>
+    <string name="toothbrush_hardware_version">"Hardware-Version"</string>
+    <string name="toothbrush_software_version">"Software-Version"</string>
+    <string name="toothbrush_software_version_ara">"%1$s (%2$s)"</string>
+    <string name="toothbrush_update_now">"Jetzt aktualisieren"</string>
+    <string name="toothbrush_update_hint">"Für deine Zahnbürste ist ein neues Update (%s) erhältlich."</string>
+
+    <!-- User mode dialog -->
+    <string name="user_mode_dialog_title">"Zahnbürsten-Benutzer"</string>
+
+    <!-- Popup toothbrush not available -->
+    <string name="popup_toothbrush_unavailable_title">"Keine Zahnbürste verbunden"</string>
+    <string name="popup_toothbrush_unavailable_alternate_title">"Keine Zahnbürste
+verbunden"</string>
+    <string name="popup_toothbrush_unavailable_message">"Überprüfe, ob deine Zahnbürste eingeschaltet ist, und halte sie näher an das Gerät; sie wird sich automatisch verbinden."</string>
+
+    <!-- Popup choose toothbrush -->
+    <string name="popup_choose_toothbrush_title">"Wähle eine Zahnbürste, um fortzufahren"</string>
+    <string name="popup_choose_toothbrush_manual">"Handzahnbürste"</string>
+
+    <!-- Popup brushing records -->
+    <string name="popup_brushing_record_title">"Gut gemacht!"</string>
+    <string name="popup_brushing_record_message_singular">"Soeben wurde 1 Offline-Putzvorgang synchronisiert."</string>
+    <string name="popup_brushing_record_message_multiple">"Soeben wurden %d Offline-Zahnputzsitzungen synchronisiert."</string>
+
+    <!-- Popup mandatory update -->
+    <string name="popup_mandatory_update_title">"Erzwungenes Update"</string>
+    <string name="popup_mandatory_update_message">"Damit deine Zahnbürste richtig funktioniert, muss sie aktualisiert werden."</string>
+    <string name="popup_mandatory_update_button">"Jetzt aktualisieren"</string>
+    <string name="popup_mandatory_enable_internet">"Zum Aktualisieren eine Verbindung zum Internet aufbauen."</string>
+    <string name="firmware_upgrade_downloading">"Download..."</string>
+    <string name="firmware_upgrade_rebooting">"Neustart..."</string>
+    <string name="firmware_upgrade_installing">"Installieren…"</string>
+    <string name="firmware_upgrade_cancel">"Abbrechen"</string>
+    <string name="firmware_upgrade_upgrade">"Aktualisierung"</string>
+    <string name="firmware_upgrade_error_dialog">"Firmware-Upgrade fehlgeschlagen:
+%s"</string>
+    <string name="firmware_success">"Deine Zahnbürste ist auf dem neuesten Stand."</string>
+    <string name="firmware_upgrade_retry">"Erneut versuchen"</string>
+
+    <!-- Home -->
+    <string name="tab_home">"Home"</string>
+    <string name="tab_brush">"Aktivitäten"</string>
+
+    <!-- Home -->
+    <string name="tab_checkup">"Untersuchung"</string>
+
+    <!-- Dashboard -->
+    <string name="dashboard_hint">"Wochendurchschnitt"</string>
+    <string name="dashboard_last_session_hint">"Letzte Zahnputzsitzung"</string>
+    <string name="dashboard_duration">"Dauer"</string>
+    <string name="dashboard_frequency">"Häufigkeit"</string>
+    <string name="dashboard_surface">"Fläche"</string>
+    <string name="dashboard_coverage">"Deckung"</string>
+    <string name="dashboard_minutes">"Minuten"</string>
+    <string name="dashboard_per_day">"Pro Tag"</string>
+    <string name="dashboard_percentage">"Prozentsatz"</string>
+    <string name="dashboard_no_bluetooth">"Bitte das Bluetooth an deinem Gerät einschalten"</string>
+    <string name="dashboard_week">"Woche"</string>
+    <string name="dashboard_average_duration">"Durchschnittsdauer
+%s/Zahnputzsitzung"</string>
+    <string name="dashboard_average_duration_hint">"Zahnärzte sagen, dass Zähneputzen für 2 Minuten zweimal täglich das Risiko von Karies verringert."</string>
+    <string name="dashboard_average_regularity">"Durchschnittliche Zahnputzsitzungen:
+%s mal pro Tag"</string>
+    <string name="dashboard_average_frequency_hint">"Zahnärzte sagen, dass Zähneputzen zweimal täglich das Risiko von Karies verringert.
+
+Wenn die Zähne häufiger als dreimal täglich geputzt werden, ist dies schädlich für das Zahnfleisch."</string>
+    <string name="dashboard_average_surface">"Durchschnittlich geputzte Fläche:
+%s"</string>
+    <string name="dashboard_average_surface_hint">"Karies kann überall entstehen!
+
+Jede Fläche jedes Zahns ist wichtig, darum solltest du auf 100 % geputzte Flächen achten :)"</string>
+    <string name="dashboard_last_session_empty">"-"</string>
+
+    <!-- Profile -->
+    <string name="edit_profile_smart_brushing_analyser">@string/sba_game_name</string>
+    <string name="profile_information_name">"Vorname"</string>
+    <string name="profile_information_name_hint">"Ihr Vorname"</string>
+    <string name="profile_information_age">"Alter"</string>
+    <string name="profile_information_age_hint">"Wie alt bist du?"</string>
+    <string name="profile_information_gender_hint">"Junge oder Mädchen"</string>
+    <string name="profile_information_handedness_hint">"Rechtshänder oder Linkshänder"</string>
+    <string name="profile_years_old">"Jahre alt"</string>
+    <string name="profile_picture_dialog_title">"Stelle dein Bild ein"</string>
+    <string name="profile_set_picture">"Bild hinzufügen"</string>
+    <string name="profile_created_title">"Hurra!"</string>
+    <string name="profile_created_message">"Dein Profil wurde erfolgreich erstellt. Nun kannst du deine Zähne putzen!"</string>
+    <string name="profile_last_sba">"Letzte Analyse für cleveres Zähneputzen"</string>
+    <string name="profile_my_profiles">"Profile"</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_subtitle">"Dein cleverer Putz-
+Begleiter"</string>
+    <string name="onboarding_login"><![CDATA[Benutzerkonto schon vorhanden? <b>Anmelden</b>]]></string>
+    <string name="onboarding_start">"Lass uns das Erlebnis beginnen"</string>
+
+    <!-- Sign up tunnel -->
+    <string name="sign_up_profile_info_title">"Lass uns einander
+kennenlernen"</string>
+    <string name="sign_up_profile_wait">"Bitte warten…"</string>
+    <string name="sign_up_profile_info_next">"Bei Colgate Connect anmelden"</string>
+
+    <!-- Delete account popup -->
+    <string name="delete_account">"Mein Konto löschen"</string>
+    <string name="delete_account_popup_message">"Möchtest du dein Benutzerkonto wirklich löschen? Der Vorgang kann nicht rückgängig gemacht werden."</string>
+    <string name="delete_account_popup_yes">"Ja, mein Konto löschen"</string>
+
+    <!-- Checkup Popup -->
+    <string name="checkup_popup_title">"Untersuchung"</string>
+    <string name="checkup_popup_message_last">"Diese Überprüfung zeigt dein letztes Zähneputzen. Achte ganz besonders auf die gelben Bereiche, da diese vernachlässigt wurden und ein erhöhtes Plaque-Risiko aufweisen!"</string>
+    <string name="checkup_popup_message">"Diese Überprüfung zeigt dein Zähneputzen. Achte ganz besonders auf die gelben Bereiche, da diese vernachlässigt wurden und ein erhöhtes Plaque-Risiko aufweisen!"</string>
+
+    <!-- Turn on your toothbrush popup -->
+    <string name="setup_ara_popup_title">"Wichtig!"</string>
+    <string name="setup_ara_popup_message">"Bevor es weitergeht, bitte zweimal die Taste der Zahnbürste drücken."</string>
+
+    <!-- Add ara user activity -->
+    <string name="add_ara_user_add_profile">"Profil zufügen"</string>
+    <string name="add_ara_user_hint">"Dieser Link kann später in den Einstellungen deiner Zahnbürste geändert werden."</string>
+    <string name="add_ara_user_subtitle">"Wer verwendet diese Zahnbürste?"</string>
+    <string name="add_ara_shared">"Geteilt"</string>
+
+    <!-- No BLE popup -->
+    <string name="no_ble_popup_message">"Dieses Gerät ist nicht mit Bluetooth Low Energy kompatibel"</string>
+
+    <!-- BRUSH HEAD RENEWAL DIALOG -->
+    <string name="brush_head_dialog_title">"Erneuere den Bürstenkopf, %1$s"</string>
+    <string name="brush_head_dialog_message">"Glückwunsch! Du hast über 120 Putzvorgänge ausgeführt. Es ist an der Zeit, den Bürstenkopf zu wechseln."</string>
+    <string name="brush_head_buy_now">"Jetzt kaufen"</string>
+    <string name="brush_head_remind">"Später"</string>
+    <string name="brush_head_no">"Nein, danke"</string>
+    <string name="title_activity_slideshow">"Slideshow"</string>
+
+    <!-- Popup toothbrush belongs to another user -->
+    <string name="popup_assign_toothbrush_data_dialog">"Das aktive Profil ist %1$s, aber es wird die Zahnbürste von %2$s verwendet! Wem sollen die Angaben zugeordnet werden?"</string>
+
+    <!-- ORPHAN BRUSHINGS -->
+    <string name="orphan_brushings">"Nicht zugeordnete Putzvorgänge"</string>
+    <string name="orphan_brushings_assign_hint">"Ausgewählte Putzvorgänge zuordnen"</string>
+    <string name="orphan_brushings_delete_hint">"Ausgewählte Putzvorgänge löschen"</string>
+    <string name="orphan_brushing_subtitle">"Dauer: %1$s Min. %2$s s, Fläche %3$d%%"</string>
+    <string name="orphan_brushings_detelete_title">"Bist du sicher?"</string>
+    <string name="orphan_brushings_detelete_message">"Diese Putzvorgänge wirklich löschen? Diese Aktion kann nicht rückgängig gemacht werden."</string>
+    <string name="orphan_brushings_empty">"Es gibt keine nicht zugeordneten Putzvorgänge. Großartig!"</string>
+
+    <!-- PROFILE LIST DIALOG -->
+    <string name="profile_list_dialog_title">"Profil auswählen"</string>
+
+    <!-- SLIDESHOW -->
+    <string name="slideshow_next">"Weiter"</string>
+    <string name="slideshow_skip">"Überspringen"</string>
+    <string name="slideshow_alright_button">"In Ordnung!"</string>
+    <string name="slideshow_here_to_help_title">"Wir sind hier, um zu helfen!"</string>
+    <string name="slideshow_here_to_help_message">"Sollen die Zähne noch sauberer werden?
+Wir haben einige clevere, neue Funktionen entworfen, damit deine Mundhygiene den nächsten Level erreicht."</string>
+    <string name="slideshow_here_to_help_button">"Entdecke unsere Aktivitäten"</string>
+    <string name="slideshow_meet_coach_title">"Lerne den Coach kennen"</string>
+    <string name="slideshow_meet_coach_message">"Wir haben ein Coach-Programm, um deine Putzgewohnheiten dauerhaft zu verbessern
+
+Coach ist eine 2D-Ansicht zur Anzeige der Bereiche, die im Mund geputzt werden müssen."</string>
+    <string name="slideshow_pirate_title">"Spiel mit Go Pirate!"</string>
+    <string name="slideshow_pirate_message">"Verwandle deine Zahnbürste in eine Spielekonsole! Sammle Münzen und jage den Schatz von Black Beard!"</string>
+    <string name="slideshow_pirate_additional_message">"(Und weitere Spiele folgen!)"</string>
+    <string name="slideshow_dashboard_title">"Dein Dashboard"</string>
+
+    <!-- Slideshow -->
+    <string name="slideshow_dashboard_message">"Alle klaren und wertvollen Infos zu den Zahnputzgewohnheiten an einem Ort."</string>
+    <string name="slideshow_taking_care_brush_title">"Pflege deine Zahnbürste gut"</string>
+    <string name="slideshow_taking_care_brush_message">"Reinige den Griff und die Ladestation regelmäßig mit einem feuchten Tuch.
+
+Dies ist besonders wichtig, wenn die Zahnpasta Backpulver oder andere Bicarbonate oder Peroxid enthält"</string>
+    <string name="slideshow_personalize_brush_title">"Mach deine Zahnbürste unverwechselbar"</string>
+    <string name="slideshow_personalize_brush_message">"Um die Standard-Zahnputzzeit zu ändern, müssen die Einstellungen im Profil geändert werden. Unter „Putzzeit“ die gewünschte Zeit eingeben"</string>
+    <string name="slideshow_dentist_tip_title">"Top-Tipp vom Zahnarzt"</string>
+    <string name="slideshow_dentist_tip_message">"Die Zahnbürste in einem Winkel von 45° auf die Zähne legen und kleine Bewegungen vom Zahnfleisch zum Zahnrand ausführen
+
+Nicht vergessen, die Schneidezähne vorn und hinten zu putzen."</string>
+
+    <!-- SPREAD THE WORD -->
+    <string name="spread_the_word">"Erzähle anderen von uns"</string>
+    <string name="spread_review_app">"Die App überprüfen"</string>
+    <string name="spread_tell_a_friend">"Einen Freund benachrichtigen"</string>
+    <string name="spread_newsletter">"Newsletter"</string>
+    <string name="spread_facebook">"Facebook"</string>
+    <string name="spread_twitter">"Twitter"</string>
+    <string name="spread_instagram">"Instagram"</string>
+    <string name="spread_youtube">"YouTube"</string>
+
+    <!-- TOOTHBRUSH LIST -->
+    <string name="toothbrush_removed">"Zahnbürste entfernt"</string>
+    <string name="undo">"RÜCKGÄNGIG"</string>
+    <string name="checkup_coverage_100">"Glückwunsch! Eine perfekte Zahnputzsitzung. Alle Zähne wurden für die notwendige Dauer geputzt."</string>
+    <string name="checkup_coverage_85">"Gut gemacht, deine Zahnputzsitzung ist fast perfekt. Weiter so."</string>
+    <string name="checkup_coverage_50">"Es geht noch besser. Achte beim nächsten Zähneputzen ganz besonders auf die gelben Bereiche. Sie wurden nicht so lange wie nötig geputzt."</string>
+    <string name="checkup_coverage_below_50">"Plaque-Alarm! Achte beim nächsten Zähneputzen ganz besonders auf die gelben Bereiche. Sie wurden vernachlässigt."</string>
+    <string name="checkup_coverage_no_data">"Für diesen Putzvorgang sind keine Angaben zu den Flächen verfügbar."</string>
+
+    <!-- User in OTA screen, but no OTA associated to toothbrush -->
+    <string name="firmware_upgrade_ota_not_available">"Kein Update verfügbar"</string>
+
+    <!-- Dialog displayed after user pressed cancel button in update ota -->
+    <string name="firmware_upgrade_cancel_dialog_message">"Möchten Sie das Update wirklich abbrechen?"</string>
+    <string name="welcome_email_hint">"Wie ist ihre Emailadresse?"</string>
+    <string name="welcome_email_facebook_hint">"Wir werden nichts auf Facebook posten."</string>
+    <string name="welcome_email_or">"– oder –"</string>
+    <string name="welcome_email_facebook_button">"Weiter mit Facebook"</string>
+    <string name="welcome_password_hint">"Was ist Ihr Passwort?"</string>
+    <string name="welcome_password_magic_link_button">"Mailen Sie mir einen Link, um mich anzumelden"</string>
+    <string name="welcome_inbox_title">"Überprüfe ihren Posteingang"</string>
+    <string name="welcome_inbox_hint">"Keine Notwendigkeit, sich an ein langes oder schweres Kennwort zu erinnern. Wir haben Ihnen gerade eine E-Mail gesendet, um Ihnen bei der Anmeldung zu helfen.
+
+Öffnen Sie es von Ihrem Smartphone und klicken Sie auf den angegebenen Link, um sich anzumelden. Aber beeilen Sie sich, der Link verfällt nach 30 Minuten."</string>
+    <string name="coppa_pending_parental_consent">"Ausstehende Zustimmung der Eltern"</string>
+    <string name="coppa_prevent_dialog_title">"Feature deaktiviert"</string>
+    <string name="coppa_prevent_dialog_message">"Die elterliche Zustimmung ist erforderlich, um diese Aktion durchzuführen"</string>
+    <string name="welcome_birthday_title">"Wann sind Sie geboren worden?"</string>
+    <string name="welcome_birthday_day">"Tag"</string>
+    <string name="welcome_birthday_month">"Monat"</string>
+    <string name="welcome_birthday_year">"Jahr"</string>
+    <string name="logout_warning_dialog_title">"Warnung"</string>
+    <string name="logout_warning_dialog_message">"Sie haben mehr als 10 Sitzungen auf Ihrem Konto aufgezeichnet. Verknüpfen Sie Ihr Konto mit Ihrer E-Mail-Adresse oder Sie verlieren Ihre Daten: Sie können nach dem Abmelden nicht auf Ihr Konto zugreifen."</string>
+    <string name="logout_warning_dialog_enter_email">"Email eingeben"</string>
+    <string name="logout_warning_dialog_button_continue">"Nein, Danke"</string>
+    <string name="save_your_data">"Sichern Sie Ihre Daten"</string>
+    <string name="save_your_data_title">"Verliere keine Daten!"</string>
+    <string name="save_your_data_subtitle">"Wenn Sie Ihre Email angeben oder sich mit Facebook anmelden, stehen Ihnen Ihre Daten immer zur Verfügung."</string>
+    <string name="save_your_data_fb_button">"Per Facebook anmelden"</string>
+    <string name="save_your_data_email_button">"Per email"</string>
+    <string name="save_your_data_cancel_button">"Nein, Danke"</string>
+    <string name="save_your_data_email_hint">"Wie ist ihre Emailadresse?"</string>
+    <string name="save_your_data_submit">"OK"</string>
+    <string name="your_data_saved_title">"Ihre Daten sind jetzt gespeichert"</string>
+    <string name="your_data_saved_subtitle">"Sie werden Ihre Daten in jedem Fall abrufen können."</string>
+    <string name="your_data_saved_ok">"OK"</string>
+    <string name="welcome_birthday_invalid_day">"Ungültiger Tag"</string>
+    <string name="welcome_birthday_invalid_month">"Ungültiger Monat"</string>
+    <string name="welcome_birthday_invalid_year">"Ungültiges Jahr"</string>
+    <string name="welcome_birthday_invalid_date">"Ungültiges Geburtsdatum"</string>
+    <string name="terms_of_use_not_clicked">"Sie müssen den Nutzungsbedingungen zustimmen"</string>
+    <string name="parent_consent_title">"Email"</string>
+    <string name="parent_consent_instructions">"Bitte teilen Sie uns die E-Mail-Adresse Ihres Elternteils oder Erziehungsberechtigten mit, und wir werden ihn oder sie mit den nächsten Schritten kontaktieren!"</string>
+    <string name="parent_consent_hint">"E-Mail-Adresse für Eltern oder Erziehungsberechtigte"</string>
+    <string name="register_email_dialog_title">"Registrieren Sie Ihre E-Mail"</string>
+    <string name="register_email_dialog_message">"Sie haben mehr als 10 Zähneputzen auf Ihrem Konto aufgezeichnet. Verknüpfen Sie Ihr Konto mit Ihrer E-Mail-Adresse oder Sie verlieren Ihre Daten: Sie können nach dem Abmelden nicht auf Ihr Konto zugreifen."</string>
+    <string name="register_email_dialog_ok">"Email eingeben"</string>
+    <string name="register_email_dialog_cancel">"Nicht jetzt"</string>
+    <string name="help_us_customize_title">"Helfen Sie uns, Ihre\nErfahrung anzupassen"</string>
+    <string name="setup_toothbrush_m1_search">"Suchen"</string>
+    <string name="sba_game_description">"Verwenden Sie den Testbürsten, um Ihre Putzgewohnheiten zu diagnostizieren und Bereiche für Verbesserungen zu identifizieren."</string>
+    <string name="validate_birthday_error">"Aufgrund eines Serverfehlers ist der Vorgang fehlgeschlagen. Bitte versuche es erneut."</string>
+    <string name="edit_profile_birthday">"Ihr Geburtstag"</string>
+    <string name="error_no_internet">"Keine Internetverbindung"</string>
+    <string name="something_went_wrong">"Etwas ist schief gelaufen. Bitte später erneut versuchen."</string>
+    <string name="um_attention_title">"Vorsicht"</string>
+    <string name="get_my_data">"Bleiben meine Daten erhalten"</string>
+    <string name="no_email_title">"Fehlende Konto-E-Mail"</string>
+    <string name="no_email_message">"Dein Konto hat keine zugehörige E-Mail. Bitte richten Sie eine E-Mail an Ihr Konto ein, bevor Sie fortfahren"</string>
+    <string name="title_success">"Erfolg"</string>
+    <string name="operation_failed_title">"Operation fehlgeschlagen"</string>
+    <string name="operation_failed">"Aufgrund eines Serverfehlers ist der Vorgang fehlgeschlagen. Bitte versuche es später erneut."</string>
+    <string name="email_gdpr">"Eine E-Mail, mit der Sie alle Ihre Daten abrufen können, wird in Kürze an %s gesendet."</string>
+    <string name="privacy_not_clicked">"Sie müssen den Datenschutzbestimmungen zustimmen"</string>
+    <string name="terms_and_condition_agreement">"Ich stimme den "<![CDATA[<u><a href=\"%1$s\">%2$s</a></u>]]>" zu."</string>
+    <string name="privacy_agreement">"Ich stimme den "<![CDATA[<u><a href=\"%1$s\">%2$s</a></u>]]>" zu."</string>
+    <string name="choose_method_title">"Anmelden"</string>
+    <string name="choose_method_sms">"Melde dich per SMS an"</string>
+    <string name="choose_method_we_chat">"Melde dich per WeChat an"</string>
+    <string name="sms_login_title">"Melde dich per SMS an"</string>
+    <string name="sms_login_hint">"Was ist deine Telefonnummer?"</string>
+    <string name="sms_login_get_code">"Holen Sie sich den Authentifizierungscode"</string>
+    <string name="sms_login_code_desc">"Geben Sie den Code ein, den Sie gerade erhalten haben, und drücken Sie die OK-Taste."</string>
+    <string name="sms_login_ok">"OK"</string>
+    <string name="exit">"Beenden"</string>
+    <string name="retry">"Erneut versuchen"</string>
+    <string name="no_facebook_account_linked">"Dieses Facebook-Konto ist nicht mit einem Colgate Connect-Konto verbunden"</string>
+    <string name="sms_login_invalid_number">"Ungültige Telefonnummer"</string>
+    <string name="mouth_zone_bottom_incisor_exterior">"Unten, Mitte, Außenfläche"</string>
+    <string name="mouth_zone_bottom_incisor_interior">"Unten, Mitte, Innenfläche"</string>
+    <string name="mouth_zone_bottom_molar_left_exterior">"Unten, links, Außenfläche"</string>
+    <string name="mouth_zone_bottom_molar_left_interior">"Unten, links, Innenfläche"</string>
+    <string name="mouth_zone_bottom_molar_left_occlusal">"Unten, links, Kaufläche"</string>
+    <string name="mouth_zone_bottom_molar_right_occlusal">"Unten, rechts, Kaufläche"</string>
+    <string name="mouth_zone_bottom_molar_right_exterior">"Unten, rechts, Außenfläche"</string>
+    <string name="mouth_zone_bottom_molar_right_interior">"Unten, rechts, Innenfläche"</string>
+    <string name="mouth_zone_top_incisor_exterior">"Oben, Mitte, Außenfläche"</string>
+    <string name="mouth_zone_top_incisor_interior">"Oben, Mitte, Innenfläche"</string>
+    <string name="mouth_zone_top_molar_left_exterior">"Oben, links, Außenfläche"</string>
+    <string name="mouth_zone_top_molar_left_interior">"Oben, links, Innenfläche"</string>
+    <string name="mouth_zone_top_molar_left_occlusal">"Oben, links, Kaufläche"</string>
+    <string name="mouth_zone_top_molar_right_exterior">"Oben, rechts, Außenfläche"</string>
+    <string name="mouth_zone_top_molar_right_interior">"Oben, rechts, Innenfläche"</string>
+    <string name="mouth_zone_top_molar_right_occlusal">"Oben, rechts, Kaufläche"</string>
+    <string name="mouth_zone_wrong">"Falsche Zone detektiert"</string>
+    <string name="upgrade_app_title">"Aktualisierung erforderlich"</string>
+    <string name="upgrade_app_msg">"Um mit der App fortzufahren, aktualisieren Sie bitte auf die neueste Version. Wir haben einige kritische Fehler behoben."</string>
+    <string name="coach_pluse_game_description">"Unser brandneues 3D-Bürsten-Erlebnis.
+100%% der Deckung garantiert!"</string>
+    <string name="kolibree_pro_start_popup_title">"Colgate Connect Pro"</string>
+    <string name="kolibree_pro_start_popup_message">"Möchten Sie Ihre Bürstdaten mit Ihrem Zahnarzt / Zahnarztbüro %s teilen, damit sie regelmäßig überwacht werden können?"</string>
+    <string name="kolibree_pro_start_popup_accept">"Akzeptieren"</string>
+    <string name="kolibree_pro_start_popup_decline">"Nicht jetzt"</string>
+    <string name="kolibree_pro_settings_title">"Colgate Connect Pro"</string>
+    <string name="kolibree_pro_settings_hint">"Wählen Sie diese Option, um Ihre Bürstendaten mit Ihrem Zahnarzt / Ihrer Zahnarztpraxis zu teilen, damit sie regelmäßig überwacht werden können."</string>
+    <string name="kolibree_pro_practitioners_short">"Hier sind die Profis, die Zugriff auf Ihre Bürstendaten haben. Mehr erfahren"</string>
+    <string name="kolibree_pro_practitioners_short_token">"Mehr Infos"</string>
+    <string name="kolibree_pro_practitioners_full">"Hier sind die Profis, die Zugriff auf Ihre Bürstendaten haben.
+
+Durch diese Informationen sind sie in der Lage, Tag für Tag der Qualität Ihrer Zähne zu folgen und Sie persönlich zu beraten, um Ihre Gewohnheiten zu verbessern und Ihnen eine optimale Zahnhygiene zu ermöglichen.
+Es ist möglich, Ihre Daten nicht mehr zu teilen, wenn Sie dies wünschen. Für weitere Informationen besuchen Sie unsere Website unter http://www.connectpro.colgate.com"</string>
+    <string name="kolibree_pro_practitioners_revoke_title">"Stoppen Sie die Freigabe von Daten mit %s?"</string>
+    <string name="kolibree_pro_practitioners_revoke_message">"Durch Deaktivierung des Datenaustauschs mit diesem Fachmann, beenden Sie die personalisierte Colgate Connect Pro Follow-up Option. Wenn Sie Ihr Follow-up später fortsetzen möchten, muss dieser Zahnarzt Ihnen eine Colgate Connect Pro Einladung senden, um wieder Zugang zu Ihre Daten zu erhalten. 
+
+Möchten Sie diesen Vorgang wirklich fortsetzen?"</string>
+    <string name="kolibree_pro_practitioners_header">"Meine Zahnexperten"</string>
+    <string name="kolibree_pro_quit_popup_title">"Möchten Sie wirklich beenden?"</string>
+    <string name="kolibree_pro_quit_popup_message">"Die Colgate Connect Pro Prozess Durch das Stoppen Sie nicht Ihre Daten mit Ihrem Zahnarztpraxis teilen, und sie nicht Ihre Bürsten Sitzungen überwachen können."</string>
+    <string name="kolibree_pro_quit_popup_continue">"Weiter"</string>
+    <string name="kolibree_pro_quit_popup_quit">"Dennoch beenden."</string>
+    <string name="kolibree_pro_quit_popup_remind_me_later">"Erinnere mich später"</string>
+    <string name="kolibree_pro_channel_name">"Colgate Connect Pro"</string>
+    <string name="kolibree_pro_channel_description">"Colgate Connect Pro Benachrichtigungen"</string>
+    <string name="kolibree_pro_notification_title">"Colgate Connect Pro"</string>
+    <string name="kolibree_pro_notification_description">"Registrieren Sie Ihre Zahnbürste"</string>
+    <string name="kolibree_practitioners_popup_message">"Sind Sie damit einverstanden, Ihre Bürstendaten mit Ihrer Zahnarztpraxis %1$s für Überwachungszwecke zu teilen?"</string>
+    <string name="kolibree_practitioners_accept">"OK"</string>
+    <string name="kolibree_practitioners_decline">"Nein, danke"</string>
+    <string name="running_in_background">"ist mit Ihrer Zahnbürste verbunden"</string>
+
+    <!-- Dialog displayed after user pressed cancel button in update ota -->
+    <string name="coach_settings_choose_music">"Musik auswählen"</string>
+    <string name="coach_settings_coach_sounds_title">"Töne des Coachs"</string>
+    <string name="coach_settings_shuffle">"Zufällig"</string>
+    <string name="coach_settings_music">"Musik"</string>
+    <string name="coach_settings_transitions_sounds">"Transitions Klänge"</string>
+    <string name="coach_settings_display_brushing_movements">"Anzeige Bürstbewegungen"</string>
+    <string name="coach_settings_display_helps_texts">"Anzeige hilft Texte"</string>
+    <string name="coach_settings_sounds">"Klänge"</string>
+    <string name="setup_i_dont_have_connect_e1">"Ich habe keine Connect E1"</string>
+    <string name="tb_toolbar_connect">"Verbinde eine Zahnbürste"</string>
+    <string name="tb_toolbar_connected">"Verbunden"</string>
+    <string name="tb_toolbar_retrieving_brushing">"Bürstensitzungen abrufen"</string>
+    <string name="tb_toolbar_disconnected">"Getrennt"</string>
+    <string name="tb_toolbar_enable_bleutooth">"Bitte aktivieren Sie Bluetooth"</string>
+    <string name="tb_toolbar_last_sync_title">"Letzter Sync"</string>
+    <string name="tb_toolbar_last_sync_today">"Heute"</string>
+    <string name="tb_toolbar_last_sync_yesterday">"Gestern"</string>
+    <string name="tb_toolbar_last_sync_never">"Noch nie"</string>
+    <string name="tb_toolbar_connecting">"Verbindung wird hergestellt"</string>
+    <string name="m1_fake_dialog_title">"Setup wird gestartet…"</string>
+    <string name="m1_fake_dialog_initiating_setup">"Bitte halten Sie Ihre Zahnbürste still oder legen Sie sie während der Einrichtung auf eine flache Oberfläche"</string>
+    <string name="m1_fake_dialog_configuring">"Konfigurieren…"</string>
+    <string name="m1_fake_dialog_calibrating">"Konfigurieren…"</string>
+    <string name="m1_fake_dialog_completed">"Setup abgeschlossen!"</string>
+    <string name="m1_fake_dialog_ready_to_use">"Ihr M1 ist einsatzbereit"</string>
+    <string name="m1_fake_dialog_dont_move_brush">"Bewegen Sie Ihren M1 nicht während der Einrichtung"</string>
+    <string name="welcome_title">"Willkommen"</string>
+    <string name="welcome_subtitle">"Erleben Sie die Mundgesundheit der Zukunft"</string>
+    <string name="welcome_connect_tb">"Verbinde meine intelligente Zahnbürste"</string>
+    <string name="welcome_no_smrt_tb">"Ich habe keine intelligente Zahnbürste"</string>
+    <string name="welcome_have_account">"Sie haben bereits einen Account? Einloggen"</string>
+    <string name="welcome_have_account_login">"Einloggen"</string>
+    <string name="tb_model_selection_toolbar_title">"Verbinde Ihre Zahnbürste"</string>
+    <string name="tb_model_selection_title">"Welche Zahnbürste haben Sie ?"</string>
+    <string name="activate_bt_title">"Bluetooth"</string>
+    <string name="activate_bt_button">"Aktivieren Sie Bluetooth"</string>
+    <string name="activate_bt_description">"Um Ihre Zahnbürste anzuschließen, aktivieren Sie bitte die Bluetooth-Funktion Ihres Geräts"</string>
+    <string name="location_permission_title">"Ort Erlaubnis"</string>
+    <string name="location_permission_button">"Erlaubnis erteilen"</string>
+    <string name="connecting_dialog_title">"Verbindung…"</string>
+    <string name="connecting_dialog_stop">"Stop"</string>
+    <string name="connection_successful_dialog_title">"Verbindung erfolgreich"</string>
+    <string name="connection_successful_dialog_message">"Schalten Sie Ihre Zahnbürste aus"</string>
+    <string name="connection_error_dialog_title">"Verbindungsfehler"</string>
+    <string name="tb_connection_title">"Weck Ihre Zahnbürste auf"</string>
+    <string name="tb_connection_subtitle">"Drücken Sie die XXX Taste an Ihrer Zahnbürste"</string>
+    <string name="tb_connection_subtitle_manual">"Schütteln Sie Ihre Zahnbürste, um den Bluetooth-Verbindungsprozess zu aktivieren"</string>
+    <string name="tb_connection_nothing">"Nichts passiert?"</string>
+    <string name="detection_popup_title">"Eine %1$s-Zahnbürste wurde erkannt!"</string>
+    <string name="detection_popup_question">"Können Sie ihre Zahnbürste blau blinken sehen?"</string>
+    <string name="detection_popup_yes">"Ja, verbinden"</string>
+    <string name="detection_popup_no">"Nein, setzen Sie fort zu schauen"</string>
+    <string name="e1_troubleshooting_title">"Versuchen Sie, eine Verbindung zur Connect E1-Zahnbürste herzustellen?"</string>
+    <string name="e1_troubleshooting_no_tb">"Ich habe keine Colgate Connect-Zahnbürste"</string>
+    <string name="e1_troubleshooting_yes">"Ja"</string>
+    <string name="e1_troubleshooting_no">"Nein"</string>
+    <string name="blink_toothbrush_led">"Blinzeln"</string>
+    <string name="test_brushing_start">"Beginnen Sie jetzt mit dem Bürsten"</string>
+    <string name="test_brushing_tip">"Wussten Sie, dass die meisten Erwachsenen nur 40% ihrer Zähne putzen ?"</string>
+    <string name="test_brushing_lets_see_how_you_brush">"Mal sehen, wie du putzst :"</string>
+    <string name="test_brushing_instructions_1">"Putzen Sie Ihre Zähne wie gewohnt"</string>
+    <string name="test_brushing_instructions_2">"Entdecken Sie, wie effektiv Sie bürsten"</string>
+    <string name="test_brushing_instructions_3">"Verwenden Sie unseren Coach, um Ihre Technik zu verbessern"</string>
+    <string name="test_brushing_screen_title">"Testbürsten"</string>
+    <string name="dialog_conn_error_title">"Wir konnten Ihre Zahnbürste nicht finden."</string>
+    <string name="dialog_conn_error_description">"Das Aus- und Wiedereinschalten des Bluetooth-Geräts löst normalerweise Verbindungsprobleme."</string>
+    <string name="dialog_conn_error_description_small">"Wenn sich Ihre Zahnbürste in Ihrer Nähe befindet, aber immer noch nicht hier angezeigt wird, kann dies daran liegen, dass sie eingeschaltet sein muss, der Akku fast leer ist oder bereits mit einem anderen Gerät verbunden ist."</string>
+    <string name="profile_data_saved_info">"Ihre Daten werden gespeichert"</string>
+    <string name="profile">"Profil"</string>
+    <string name="birth_date_hint">"Wir überraschen Sie zu Ihrem Geburtstag!"</string>
+    <string name="email_already_used_error">"Diese E-Mail-Adresse wird bereits verwendet"</string>
+    <string name="tab_rewards">"Belohnungen"</string>
+    <string name="rewards_tab_challenges">"Missions"</string>
+    <string name="rewards_tab_tier">"Level"</string>
+    <string name="rewards_tab_smiles">"Geschäft"</string>
+    <string name="header_smiles">"%1$s Smiles Punkte"</string>
+    <string name="rewards_support_url">"https://colgateconnect.zendesk.com/hc/en-us/articles/115005703746"</string>
+    <string name="test_brushing_session_electric_line1">"Schalten Sie Ihre Zahnbürste auf"</string>
+    <string name="test_brushing_session_electric_line2">"und beginnen Bürsten, wie Sie in der Regel tun!"</string>
+    <string name="test_brushing_session_manual">"Fang an, deine Zähne zu putzen, wie du es normalerweise tust!"</string>
+    <string name="durring_session_description_step1">"Bürsten Sie Ihre Zähne und Zahnfleisch, wie Sie mit einer normalen Zahnbürste tun würde"</string>
+    <string name="durring_session_highlighted_step1">"Zähne und Zahnfleisch"</string>
+    <string name="durring_session_description_step2">"Hören Sie auf zu putzen, wenn Sie es normalerweise tun würden"</string>
+    <string name="durring_session_description_step3">"Schallschwingungen helfen, Zahnbelag zu entfernen"</string>
+    <string name="durring_session_highlighted_step3">"Schallschwingungen"</string>
+    <string name="durring_session_description_step3_manual">"Das einzigartige Design der Zahnbürste hilft, mehr Plaque, Flecken und Bakterien zu entfernen."</string>
+    <string name="durring_session_highlighted_step3_manual">"Das einzigartige Design der Zahnbürste"</string>
+    <string name="durring_session_description_step4">"Wir analysieren Ihre Bürsten, um Ihnen zu helfen, Ihre Putztechnik zu verbessern"</string>
+    <string name="durring_session_highlighted_step4">"Ihre Putztechnik zu verbessern"</string>
+
+    <!-- optimize analyser -->
+    <string name="optimize_your_brushing_analysis">"Optimieren Sie die Analyse"</string>
+    <string name="which_hand_do_you_hold_your_toothbrush_with">"In welcher Hand halten Sie Ihre Zahnbürste?"</string>
+    <string name="left">"Links"</string>
+    <string name="right">"Rechts"</string>
+    <string name="how_many_times_a_day_do_you_brush_your_teeth">"Wie viele Male am Tag putzen Sie Ihre Zähne?"</string>
+    <string name="get_my_results">"Holen Sie sich meine Ergebnisse"</string>
+    <string name="finish_brushing_dialog_title">"Bist du fertig?"</string>
+    <string name="finish_brushing_dialog_yes">"Ich bin fertig"</string>
+    <string name="finish_brushing_dialog_resume">"Noch nicht"</string>
+    <string name="my_connect_e2">"Meine Connect E2"</string>
+    <string name="setup_toothbrush_connect_e2_title">"Verbinden Sie Ihre E2"</string>
+    <string name="results_analysis_successful_title">"Analyse durchgeführt"</string>
+    <string name="results_analysis_successful_body">"Entdecken Sie, wie gut Ihre Putztechnik ist."</string>
+    <string name="results_mouth_coverage_title">"Bedeckte Oberfläche"</string>
+    <string name="results_mouth_coverage_hint">"Wie das Schema zu lesen?"</string>
+    <string name="analysis_in_progress">"Analyse läuft"</string>
+    <string name="brushing_progress_msg_1">"Putzdauer"</string>
+    <string name="brushing_progress_msg_2">"Bedeckte Oberfläche"</string>
+    <string name="brushing_progress_msg_3">"Winkelanalyse"</string>
+    <string name="brushing_progress_msg_4">"Bürstenbewegungen"</string>
+    <string name="select_a_toothbrush_to_continue">"Wählen Sie eine Zahnbürste um fortzufahren."</string>
+    <string name="results_mouth_coverage_tooth_clean">"Sauber"</string>
+    <string name="results_mouth_coverage_tooth_dirty">"Benötigen\nmehr Bürsten"</string>
+    <string name="mouth_coverage_perfect">"Herzlichen Glückwunsch ! Das ist eine perfekte Putzsitzung."</string>
+    <string name="mouth_coverage_good">"Sie haben ein paar Bereiche verpasst. Probieren Sie unseren Coach aus, um 100% zu erreichen."</string>
+    <string name="mouth_coverage_medium">"Sie können sogar besser machen. Probieren Sie unseren Coach aus, um keine Bereiche zu verpassen."</string>
+    <string name="mouth_coverage_bad">"Du kannst es besser machen. Probieren Sie unseren Coach aus, um keine Bereiche zu verpassen."</string>
+    <string name="mouth_coverage_no_data">"Für dieses Bürsten sind keine Oberflächendaten verfügbar."</string>
+    <string name="read_diagram_dialog_body">"Es ist, als würde man in den Spiegel schauen, die rechte Seite des Kiefers auf dem Bildschirm ist die rechte Seite des Mundes"</string>
+    <string name="read_diagram_dialog_title">"Schema Erklärung"</string>
+    <string name="read_diagram_dialog_ok">"OK"</string>
+    <string name="read_diagram_dialog_top">"Oben"</string>
+    <string name="read_diagram_dialog_bottom">"Unterseite"</string>
+    <string name="read_diagram_dialog_left">"Links"</string>
+    <string name="read_diagram_dialog_right">"Rechts"</string>
+    <string name="hint_tap_to_change_view">"Ändern Sie die Ansicht"</string>
+    <string name="test_brushing_analysis_screen_title">"Analyse"</string>
+    <string name="dialog_lost_connexion_quit_btn">"Beenden (und später erneut beginnen)"</string>
+    <string name="dialog_lost_connexion_title">"Verbindung verloren"</string>
+    <string name="dialog_lost_connexion_description">"Die Verbindung zu Ihrer Zahnbürste ist verloren gegangen.
+Warten Sie, bis die Verbindung später wieder hergestellt wird."</string>
+
+    <!-- Pirate game does not work on user's Android version -->
+    <string name="pirate_not_supported_os_version">"Bitte aktualisieren Sie auf Android 6 oder höher, um GoPirate zu verwenden."</string>
+    <string name="speed_proper">"Gute
+Geschwindigkeit"</string>
+    <string name="speed_too_fast">"Zu
+schnell"</string>
+    <string name="speed_card_title">"Bürstgeschwindigkeit"</string>
+    <string name="speed_card_hint">"Mehr Infos"</string>
+    <string name="speed_learn_more_dialog_title">"Bürstgeschwindigkeit"</string>
+    <string name="speed_learn_more_dialog_body_top">"Ein hartes und schnelles Zähneputzen mag sich effektiver anfühlen, aber das Bürsten mit dieser Bewegung fördert das ungesunde Aufstauen zwischen Zähnen und Zahnfleisch."</string>
+    <string name="speed_learn_more_dialog_body_bottom">"Versuchen Sie, langsamer zu putzen, und konzentrieren Sie sich dabei jeweils auf einen Zahn. Der Bürstenkopf kann den Zwischenraum zwischen den Zähnen reinigen."</string>
+    <string name="speed_learn_more_dialog_help">"Benötigen Sie Hilfe, um das Schema zu verstehen?"</string>
+    <string name="speed_description_by_groups">"Ihre Bewegungen waren beim Putzen %1$s zu schnell. Verlangsamen Sie Ihre Zähne, damit Ihre Zähne gesund bleiben."</string>
+    <string name="speed_description_average">"Ihre Bewegungen waren für %1$s Ihrer Bürsten zu schnell. Verlangsamen Sie Ihre Zähne, damit Ihre Zähne gesund bleiben."</string>
+    <string name="speed_description_all_good">"Nichts zu berichten !"</string>
+    <string name="speed_group_occlusal">"Ihre Kaufläche"</string>
+    <string name="speed_group_outside_molars">"die äußere Oberfläche Ihrer Backenzähne"</string>
+    <string name="speed_group_inside_molars">"die innere Oberfläche Ihrer Backenzähne"</string>
+    <string name="speed_group_outside_incisives">"die äußere Oberfläche Ihrer Schneidezähne"</string>
+    <string name="speed_group_inside_incisives">"die innere Oberfläche Ihrer Schneidezähne"</string>
+    <string name="speed_quadrant_top_left">"Ihr oberer linker Quadrant"</string>
+    <string name="speed_quadrant_top_right">"Ihr rechter Quadrant"</string>
+    <string name="speed_quadrant_bottom_left">"Ihr unterer linker Quadrant"</string>
+    <string name="speed_quadrant_bottom_right">"Ihr unterer rechter Quadrant"</string>
+    <string name="speed_too_slow">"Zu
+langsam"</string>
+    <string name="game_loader_download_game">"Herunterladen"</string>
+    <string name="game_loader_game_requires_update">"Obligatorisches Update"</string>
+    <string name="game_loader_game_download_in_progress">"Wird heruntergeladen"</string>
+    <string name="game_loader_update_available">"Update verfügbar"</string>
+    <string name="ota.low.battery.subtitle">"Laden / ersetzen Sie den Akku Ihrer Zahnbürste, um das Update durchzuführen."</string>
+    <string name="ota.low.battery.title">"Die Zahnbürste hat nicht genügend Akkuladung"</string>
+    <string name="toothbrush.battery.change.required">"Wechseln Sie sofort Ihre Batterie."</string>
+    <string name="toothbrush.battery.few.days">"Nur noch wenige Tage Batterielebensdauer verfügbar, machen Sie sich bereit, sie zu ersetzen."</string>
+    <string name="toothbrush.battery.few.weeks">"Noch einige Wochen Batterielebensdauer verfügbar unter der Annahme, dass Sie unsere Standard-AAA-Alkaline-Batterie von Energizer verwenden. Andere Batterietypen können zu einer geringeren Batterielebensdauer führen."</string>
+    <string name="toothbrush.battery.six.months">"Mehr als 6 Monate Batterielebensdauer verfügbar unter der Voraussetzung, dass Sie unsere Standard-AAA-Alkaline-Batterie von Energizer verwenden. Andere Batterietypen können zu einer geringeren Batterielebensdauer führen."</string>
+    <string name="toothbrush.battery.three.months">"Mehr als 3 Monate Batterielebensdauer verfügbar unter der Voraussetzung, dass Sie unsere Standard-AAA-Alkaline-Batterie von Energizer verwenden. Andere Batterietypen können zu einer geringeren Batterielebensdauer führen."</string>
+    <string name="toothbrush.battery.state.change.required">"leer"</string>
+    <string name="toothbrush.battery.state.few.days">"ein paar Tage"</string>
+    <string name="toothbrush.battery.state.few.weeks">"ein paar Wochen"</string>
+    <string name="toothbrush.battery.state.six.months">"6+ Monate"</string>
+    <string name="toothbrush.battery.state.three.months">"3+ Monate"</string>
+    <string name="toothbrush.battery.state.unknown">"unbekannte"</string>
+    <string name="delete_game_dialog_title">"Sind Sie sicher, dass Sie löschen möchten %1$s?"</string>
+    <string name="delete_game_dialog_body">"Sie können es später erneut herunterladen."</string>
+    <string name="delete_game_dialog_ok">"Löschen"</string>
+    <string name="delete_game_dialog_cancel">"Abbrechen"</string>
+    <string name="tb_toolbar_enable_location">"Aktivieren Sie den Ortungsdienst"</string>
+    <string name="my_connect_b1">"Meine Connect B1"</string>
+    <string name="setup_toothbrush_connect_b1_title">"Deine B1 verbinden"</string>
+    <string name="challenge_details_won">"gewonnen"</string>
+    <string name="challenge_details_close">"Schließen"</string>
+    <string name="challenge_details_completed_on">"Abgeschlossen am"</string>
+    <string name="challenge_details_start">"Beginnen Sie dieser Mission"</string>
+    <string name="challenge_details_not_completed">"Noch nicht abgeschlossen"</string>
+    <string name="challenge_details_continue">"Setzen Sie dieser Mission fort"</string>
+    <string name="current_tier_smiles_label_description">"Mit jedem Zähneputzen gewinnen Sie %1$s"</string>
+    <string name="next_tier_label">"Nächste Level"</string>
+    <string name="next_tier_description">"Schließe %1$s weitere Missionen ab, um Level %2$s zu erreichen"</string>
+    <string name="future_tier_description">"Mit jedem Bürsten werden Sie +%1$s gewonnen"</string>
+    <string name="coach_start_message_title">"Schalten Sie Ihre Zahnbürste ein, um Ihre Coach+ sitzung zu beginnen"</string>
+    <string name="coach_dialog_start_message_title">"Lasst uns beginnen"</string>
+    <string name="coach_dialog_start_message_body">"Schalten Sie Ihre Zahnbürste ein, um Ihre Coach+ sitzung zu beginnen"</string>
+    <string name="coach_dialog_start_message_cancel">"Annullieren"</string>
+    <string name="coach_manual_dialog_start_message_body">"Klicken Sie auf die Schaltfläche, um die manuelle Coach+ Sitzung zu starten"</string>
+    <string name="coach_manual_dialog_start_message_start">"Start"</string>
+    <string name="buy">"Kaufen"</string>
+    <string name="smiles_count">"Sie haben %s Smiles"</string>
+    <string name="smiles_history_link">"Smiles Punkte Verlauf sehen"</string>
+    <string name="challenge_details_action_offline">"Was ist Offline-Bürsten?"</string>
+    <string name="offline_brushing_toolbar_title">"Offline-Zähneputzen"</string>
+    <string name="offline_brushing_title">"Sie können Ihre Colgate Connect-Zahnbürste mit oder ohne App verwenden"</string>
+    <string name="offline_brushing_point1">"Putzen Sie mit Colgate Connect, während die App nicht geöffnet ist: Ihre Putztechnik wird noch analysiert"</string>
+    <string name="offline_brushing_point2">"Sie können dann Ihre Zahnbürste synchronisieren, indem Sie einfach Ihre App öffnen und neue Erkenntnisse entdecken"</string>
+    <string name="smiles_history">"Smiles Geschichte"</string>
+    <string name="smiles_history_brushing">"Bürsten"</string>
+    <string name="smiles_history_challenge_completed">"Herausforderung abgeschlossen : %s"</string>
+    <string name="smiles_history_offline_brushing">"Offline-Zähneputzen"</string>
+    <string name="smiles_history_online_brushing">"Bürsten mit %s"</string>
+    <string name="smiles_history_transfer_from">"%s Smiles von %s erhalten"</string>
+    <string name="smiles_history_transfer_in">"%s Smiles erhalten"</string>
+    <string name="smiles_history_transfer_out">"%s Smiles übertragen"</string>
+    <string name="smiles_history_transfer_to">"%s Smiles auf %s übertragen"</string>
+    <string name="smiles_history_tier_reached">"%s Tier erreicht. Jedes Zähneputzen bringt Ihnen %s Smiles."</string>
+    <plurals name="challenge_details_more_to_earn">
+        <item quantity="one">"%1$d weitere, um %2$d smile zu verdienen!"</item>
+        <item quantity="other">"%1$d weitere, um %2$d smiles zu verdienen!"</item>
+    </plurals>
+    <string name="smiles_history_smiles_count">"%s Smiles"</string>
+    <string name="coach_start_message_title_manual">"Schütteln Sie Ihre Zahnbürste, um Ihre Coach+ Sitzung zu beginnen"</string>
+    <string name="smiles_history_week_streak">"Wöchentliche Serie"</string>
+    <string name="transfer_smiles">"Übergaben Smiles"</string>
+    <string name="family_smiles">"Familienmitglieder"</string>
+    <string name="rewards_error_no_internet_connection">"Bitte aktivieren Sie Ihre Internetverbindung, um Belohnungen Daten zu laden."</string>
+    <string name="rewards_error_synchronisation_failed">"Beim Laden der Daten ist ein Fehler aufgetreten. Bitte versuchen Sie es später noch einmal."</string>
+    <string name="smiles_transfer_title">"Übergaben Smiles"</string>
+    <string name="smiles_transfer_current_balance">"Aktuelles Guthaben"</string>
+    <string name="smiles_transfer_transfer_amount">"Übertragener Betrag"</string>
+    <string name="smiles_transfer_to">"Übertragung nach"</string>
+    <string name="smiles_transfer_validate">"Transfer"</string>
+    <string name="smiles_transfer_smiles">"Smiles"</string>
+    <string name="smiles_transfer_smiles_won">"%s Smiles gewonnen"</string>
+    <string name="smiles_transfer_done">"Der Transfer ist fertig!"</string>
+    <string name="challenge_feedback_collect_smiles">"Sammle mein Smiles"</string>
+    <string name="multi_challenge_feedback_title">"Glückwunsch!"</string>
+    <string name="multi_challenge_feedback_message_part1">"Du hast"</string>
+    <plurals name="multi_challenge_feedback_message_part2">
+        <item quantity="one">"%1$d neue Herausforderung."</item>
+        <item quantity="other">"%1$d neue Herausforderungen."</item>
+    </plurals>
+    <string name="multi_challenge_feedback_message_part3">"Streichen Sie, um sie zu entdecken."</string>
+
+    <!-- Fuzzy -->
+    <plurals name="smiles_feedback_good">
+        <item quantity="one">"Was für ein schönes Bürsten!\nDu hast gerade %1$d Smile gewonnen!"</item>
+        <item quantity="other">"Was für ein schönes Bürsten!\nDu hast gerade %1$d Smiles gewonnen!"</item>
+    </plurals>
+    <string name="smiles_feedback_bad">"Leider haben Sie mit diesem Bürsten kein Smiles gewonnen.\nSie müssen mindestens 50%% der Oberfläche bedecken, um Smiles zu gewinnen."</string>
+    <string name="my_plaqless">"Mein Plaqless Pro"</string>
+    <string name="setup_toothbrush_plaqless_title">"Schließen Sie Ihr Plaqless Pro an"</string>
+    <string name="new_tier_title">"Sie haben die Stufe %s erreicht"</string>
+    <string name="new_tier_message">"Herzlichen Glückwunsch %s, du hast %s Herausforderungen gemeistert. Geh weiter!"</string>
+    <string name="new_tier_coins">"Von nun an bringt Ihnen jedes Zähneputzen"</string>
+    <string name="feedback_offline_sync">"Hey, du hast %s Brushings synchronisiert und %s Smiles gewonnen!"</string>
+    <string name="feedback_offline_sync_no_smiles">"Hey, du hast %s Brushings synchronisiert, aber kein Lächeln gewonnen.\nSie müssen mindestens 50%% der Oberfläche bedecken, um Smiles zu gewinnen."</string>
+    <string name="pql_connection_title">"Drücken Sie zunächst die XXX Taste an Ihrer Zahnbürste"</string>
+    <string name="pql_connection_description"><![CDATA[Achten Sie auf das blinkende <b>Bluetooth-Symbol</b>]]></string>
+    <string name="calendar_tab">"Kalender"</string>
+    <string name="detection_popup_pql_no">"Suche weiter nach meinem Zahnbürste"</string>
+    <string name="detection_popup_pql_yes">"Verbinden"</string>
+    <string name="plaqless_intro_title">"Willkommen bei Colgate Plaqless Pro"</string>
+    <string name="plaqless_intro_subtitle"><![CDATA[Das tägliche Entfernen von Ablagerungen ist <b>der Schlüssel zu einer guten Mundgesundheit.</b>]]></string>
+    <string name="plaqless_intro_type_title">"Plaqless Pro zeigt an:"</string>
+    <string name="plaqless_intro_type_cleand">"Gereinigt"</string>
+    <string name="plaqless_intro_type_remains">"Plaque überreste"</string>
+    <string name="plaqless_intro_type_missed">"Verpasst"</string>
+    <string name="plaqless_intro_start">"Loslegen"</string>
+    <string name="slide1_title">"Erfahren Sie mehr über die Zahnbürste"</string>
+    <string name="slide1_description1"><![CDATA[<b>Erweiterte intelligente Sensoren</b> erkennen Ablagerungen an Ihren Zähnen]]></string>
+    <string name="slide1_description2"><![CDATA[<b>Kontrollleuchten</b> leuchtet auf, um das Bürsten zu steuern]]></string>
+    <string name="slide1_description3"><![CDATA[<b>Timer</b> leuchtet alle 30 Sekunden]]></string>
+    <string name="slide2_title">"Die Kontrollleuchte"</string>
+    <string name="slide2_description1_title">"Blau"</string>
+    <string name="slide2_description1_content1">"Plaque wird erkannt"</string>
+    <string name="slide2_description1_content2">"Bürste, um es zu entfernen"</string>
+    <string name="slide2_description2_title">"Weiß"</string>
+    <string name="slide2_description2_content1">"Der Bereich ist sauber"</string>
+    <string name="slide2_description2_content2">"Weiter zum nächsten Abschnitt"</string>
+    <string name="slide2_description3_title">"Rot"</string>
+    <string name="slide2_description3_content1">"Sensor verdeckt"</string>
+    <string name="slide2_description3_content2">"Sensor spülen oder Bürstenwinkel ändern"</string>
+    <string name="intro_start_test">"Starten Sie den Test"</string>
+    <string name="dashboard_pql_tip_tricks_title">"Tipps"</string>
+    <string name="dashboard_pql_tip_tricks_body">"Erfahren Sie, wie Sie Ihre Ergebnisse optimieren können"</string>
+    <string name="pql_best_results_title">"Für beste Ergebnisse"</string>
+    <string name="pql_best_results_body">"Halten Sie die Zahnbürste waagerecht, um eine effektive Technik zu gewährleisten."</string>
+    <string name="pql_best_results_body_highlight">"waagerecht"</string>
+    <string name="pql_best_results_ok">"OK"</string>
+    <string name="pql_brushing_progress_msg">"Plaque analyse"</string>
+    <string name="intro_do_later">"Ich werde es später tun"</string>
+    <string name="pql_durring_session_description_step1">"Achten Sie beim Zähneputzen auf die Farbe des LED-Rings."</string>
+    <string name="pql_durring_session_description_step1_highlighted">"die Farbe des LED-Rings"</string>
+    <string name="mouth_map_left">"L"</string>
+    <string name="mouth_map_right">"R"</string>
+    <string name="mouth_map_clean_score">"sauber punktzahl"</string>
+    <string name="mouth_map_close">"Gehe zur startseite"</string>
+    <string name="mouth_map_dialog_ok">"OK"</string>
+    <string name="missed_area_dialog_title">"Verpasster\nBereich"</string>
+    <string name="missed_area_dialog_body"><![CDATA[Gelb zeigt <b>Bereiche an, die Sie nicht gebürstet haben</b>]]></string>
+    <string name="clean_score_dialog_title">"sauber punktzahl"</string>
+    <string name="clean_score_dialog_clean"><![CDATA[<b>%s</b> sauber]]></string>
+    <string name="clean_score_dialog_remains"><![CDATA[<b>%s</b> restliche Platte]]></string>
+    <string name="clean_score_dialog_missed"><![CDATA[<b>%s</b> verpasst]]></string>
+    <string name="build_up_remains_dialog_title">"Plaque\nüberreste"</string>
+    <string name="build_up_remains_dialog_body"><![CDATA[Blau zeigt die Bereiche an, <b>in denen sich Plaque befindet</b>. Wir empfehlen, sie erneut zu bürsten]]></string>
+    <string name="coach_plus_feedback_message_speed_fast">"Seien Sie vorsichtig, Sie putzen zu schnell!"</string>
+    <string name="coach_plus_feedback_message_speed_slow">"Du putzt zu langsam!"</string>
+
+    <!-- Fuzzy -->
+    <string name="coach_plus_feedback_message_wrong_angle_incisors_interior">"Passen Sie Ihre Zahnbürste vertikale Neigung"</string>
+
+    <!-- Fuzzy -->
+    <string name="coach_plus_feedback_message_wrong_angle_other_zones">"Stellen Sie Ihren Zahnbürstenkopfwinkel ein (45 °)"</string>
+    <string name="crown_explanation_dialog_title">"Perfekter Tag"</string>
+    <string name="crown_explanation_dialog_body">"Putzen Sie Ihre Zähne zweimal täglich, wobei über 80%% der Oberfläche mit Bürsten bedeckt sind, um Ihre Krone zu erhalten!"</string>
+    <string name="crown_explanation_dialog_ok">"OK"</string>
+    <string name="week_streak_dialog_title">"Wöchentliche Serie !"</string>
+    <string name="week_streak_dialog_body">"Glückwunsch, Sie haben Ihre Zähne 2 Mal am Tag 7 Tage hintereinander gebürstet. Sie haben %s Smiles gewonnen."</string>
+    <string name="week_streak_dialog_ok">"Sammle meine %s Smiles"</string>
+    <string name="slide3_title">"Beobachten Sie den Zahnbürste in Aktion"</string>
+    <string name="slide3_try_brush_now">"Probieren Sie den Zahnbürste jetzt aus"</string>
+    <string name="slide3_try_brush_later">"Ich werde es später machen"</string>
+    <string name="coach_plus_feedback_message_wrong_handle">"Halten Sie Ihre Zahnbürste waagerecht"</string>
+    <string name="brushing_program_button_text">"Bürsten Programm"</string>
+    <string name="brushing_quiz_label">"Bürsten Programm"</string>
+    <string name="brushing_quiz_screen_1_title">"Wie beurteilen Sie Ihre derzeitige Mundpflege?"</string>
+    <string name="brushing_quiz_screen_1_answer_1">"Ziemlich gut"</string>
+    <string name="brushing_quiz_screen_1_answer_2">"Durchschnittlich"</string>
+    <string name="brushing_quiz_screen_1_answer_3">"Könnte verbessert werden"</string>
+    <string name="brushing_quiz_screen_2_title">"Wie oft leiden Sie an Zahnfleisch oder Zahnempfindlichkeit?"</string>
+    <string name="brushing_quiz_screen_2_answer_1">"Nicht oft"</string>
+    <string name="brushing_quiz_screen_2_answer_2">"Häufig"</string>
+    <string name="brushing_quiz_screen_3_answer_1">"Weißere Zähne"</string>
+    <string name="brushing_quiz_screen_3_answer_2">"Frischer Atem"</string>
+    <string name="brushing_quiz_screen_3_answer_3">"Schutz für empfindliche Zähne oder Zahnfleisch"</string>
+    <string name="brushing_quiz_screen_3_title">"Woran möchten Sie heute am liebsten arbeiten?"</string>
+    <string name="brushing_quiz_screen_2_answer_3">"Täglich"</string>
+    <string name="brushing_quiz_confirmation_title">"Vielen Dank, dass Sie das Quiz abgeschlossen haben"</string>
+    <string name="brushing_quiz_program_whitening">"Bleaching-Programm"</string>
+    <string name="brushing_quiz_program_sensitive">"Sensibles Programm"</string>
+    <string name="brushing_quiz_program_everyday_care">"Alltagspflege"</string>
+    <string name="brushing_quiz_confirmation_brushing_program">"Ihr Putzprogramm ist\n\n%1$s"</string>
+    <string name="brushing_quiz_confirmation_try_it">"Versuchen Sie es jetzt"</string>
+    <string name="brushing_quiz_confirmation_confirm">"Programm bestätigen"</string>
+    <string name="brushing_quiz_confirmation_revert">"Stornieren"</string>
+    <string name="brushing_quiz_confirmation_try_it_not_paired">"Sie müssen eine elektrische Zahnbürste an Ihr Gerät angeschlossen haben, um das Programm zu testen"</string>
+    <string name="test_angles_activity_name">"Winkel"</string>
+
+    <!-- Default push notification channel -->
+    <!-- Fuzzy -->
+    <string name="push_notification_channel_general">"Allgemeine Benachrichtigungen"</string>
+    <string name="brushing_program_dialog_title">"Wählen Sie Ihr Programm"</string>
+    <string name="brushing_program_dialog_slow">"Sensibles Programm"</string>
+    <string name="brushing_program_dialog_regular">"Alltagspflege"</string>
+    <string name="brushing_program_dialog_strong">"Bleaching-Programm"</string>
+    <string name="brushing_program_dialog_current">"(aktuell)"</string>
+    <string name="test_angles_intro_header">"Winkel"</string>
+    <string name="test_angles_intro_body">"Halten Sie Ihre Zahnbürste in einem Winkel von 45 Grad zum Zahnfleischrand
+
+Befolgen Sie die Anweisungen, um Ihre Technik zu bewerten und zu verbessern."</string>
+    <string name="test_angles_intro_start_button">"Start"</string>
+    <string name="login_hint_enable_network">"Bitte aktivieren Sie den Internetzugang, um Ihr Konto zu erstellen"</string>
+    <string name="test_angles_state_correct">"Gut"</string>
+    <string name="test_angles_state_incorrect">"Schlecht"</string>
+    <string name="test_angles_molar_hint">"Bürsten Sie die Außenseite Ihres Backenzahns und halten Sie den richtigen Winkel für 20 Sekunden"</string>
+    <string name="test_angles_incisor_hint">"Kippen Sie Ihre Zahnbürste vertikal, um die untere Oberfläche der inneren Schneidezähne zu erreichen"</string>
+    <string name="test_angles_confirmation_hint">"Das ist es! Sie können jetzt die Aktivität Winkel beenden."</string>
+    <string name="test_angles_confirmation_hint_highlight">"die Aktivität Winkel beenden"</string>
+    <string name="offline_brushing_notification_single_no_smiles_title">"Sie haben keinen Smiles gewonnen"</string>
+    <string name="offline_brushing_notification_single_no_smiles_content">"Benötigt 50% Oberfläche oder mehr"</string>
+    <string name="offline_brushing_notification_single_with_smiles_title">"Was für ein schönes Bürsten!"</string>
+    <string name="offline_brushing_notification_single_with_smiles_content">"Sie haben gerade %1$s Smiles gewonnen!"</string>
+    <string name="offline_brushing_notification_multiple_no_smiles_title">"Sie haben %1$s Bürsten synchronisiert"</string>
+    <string name="offline_brushing_notification_multiple_no_smiles_content">"Holen Sie sich 50% Oberfläche oder mehr, um Smiles zu gewinnen"</string>
+    <string name="offline_brushing_notification_multiple_with_smiles_title">"Sie haben %1$s Bürsten synchronisiert"</string>
+    <string name="offline_brushing_notification_multiple_with_smiles_content">"Und %1$s Smiles gewonnen!"</string>
+    <string name="coach_plus_feedback_message_out_of_mouth">"Nehmen Sie Ihre Zahnbürste in den Mund"</string>
+    <string name="coach_plus_feedback_message_rinse_brush_head">"Reinigen Sie den Zahnbürstensensor"</string>
+    <string name="coach_plus_title">"Coach+"</string>
+    <string name="dashboard_clean_score_title">"Sauber"</string>
+    <string name="dashboard_clean_score_subtitle">"Punktzahl"</string>
+
+    <!-- Notifications related to brush connectivity -->
+    <string name="push_notification_channel_kolibree_service">"Konnektivität für Zahnbürsten"</string>
+
+    <!-- Notifications related to offline brushings retrieval -->
+    <string name="push_notification_channel_night_watch">"Offline-Bürsten"</string>
+    <string name="speed_control_activity_name">"Geschwindigkeitskontrolle"</string>
+    <string name="speed_control_intro_header">"Geschwindigkeitskontrolle"</string>
+    <string name="speed_control_intro_body">"Zu schnelles Zähneputzen kann das Zahnfleisch beschädigen.
+
+Befolgen Sie die Anweisungen, um Ihre Technik zu bewerten und zu verbessern"</string>
+    <string name="speed_control_intro_start_button">"Beginnen Sie jetzt mit dem Bürsten"</string>
+    <string name="speed_control_confirmation_hint">"Das ist es! Sie können jetzt die Aktivität Geschwindigkeitsregelung beenden."</string>
+    <string name="speed_control_confirmation_hint_highlight">"die Aktivität Geschwindigkeitsregelung beenden"</string>
+    <string name="speed_control_brushing_stage1_hint">"Putzen Sie Ihre Backenzähne
+äußere Oberfläche"</string>
+    <string name="speed_control_brushing_stage1_hint_highlight">"Backenzähne"</string>
+    <string name="speed_control_brushing_stage2_hint">"Putzen Sie Ihre Backenzähne
+Kaufläche"</string>
+    <string name="speed_control_brushing_stage2_hint_highlight">"Backenzähne"</string>
+    <string name="speed_control_brushing_stage3_hint">"Putzen Sie Ihre Vorderzähne
+äußere Oberfläche"</string>
+    <string name="speed_control_brushing_stage3_hint_highlight">"Vorderzähne
+äußere"</string>
+    <string name="speed_control_feedback_underspeed">"Zu langsam !"</string>
+    <string name="speed_control_feedback_overspeed">"Zu schnell !"</string>
+    <string name="speed_control_feedback_correct">" "</string>
+    <string name="activity_not_compatible_with_plaqless">"Diese Aktivität ist derzeit nicht mit Ihrem Plaqless Pro kompatibel."</string>
+    <string name="personal_challenge_objective">"Zielsetzung"</string>
+    <string name="personal_challenge_level">"Ebene"</string>
+    <string name="personal_challenge_period">"Zeitraum"</string>
+    <string name="personal_challenge_objective_streak">"Streifen"</string>
+    <string name="personal_challenge_objective_coverage">"Reichweite"</string>
+    <string name="personal_challenge_objective_duration">"Dauer"</string>
+    <string name="personal_challenge_level_easy">"Einfach"</string>
+    <string name="personal_challenge_level_hard">"Hart"</string>
+    <string name="personal_challenge_streak_easy">"Einmal am Tag bürsten für %1$s in Folge → %2$d lächelt"</string>
+    <string name="personal_challenge_streak_hard">"Zweimal am Tag bürsten für %1$s hintereinander → %2$d lächelt"</string>
+    <string name="personal_challenge_coverage_easy">"Machen Sie eine Bürstensitzung mit mindestens 80%% Deckung einmal täglich für %1$s → %2$d lächelt"</string>
+    <string name="personal_challenge_coverage_hard">"Machen Sie eine Bürstensitzung mit mindestens 80%% Deckung zweimal am Tag für %1$s → %2$d lächelt"</string>
+    <string name="personal_challenge_duration_easy">"Einmal am Tag mindestens 2 Minuten lang bürsten für %1$s → %2$d lächelt"</string>
+    <string name="personal_challenge_duration_hard">"Zweimal am Tag mindestens 2 Minuten lang bürsten für %1$s → %2$d lächelt"</string>
+    <plurals name="duration_days">
+        <item quantity="one">"%1$d Tag"</item>
+        <item quantity="other">"%1$d Tage"</item>
+    </plurals>
+    <string name="personal_challenge_proposed_challenge">"VORGESCHLAGENE HERAUSFORDERUNG"</string>
+    <string name="personal_challenge_currently_active_challenge">"AKTUELLE HERAUSFORDERUNG"</string>
+    <string name="personal_challenge_create">"Herausforderung erstellen"</string>
+    <string name="personal_challenge_update">"Bestehende Herausforderung aktualisieren"</string>
+    <string name="personal_challenge_delete">"Aktive Herausforderung löschen"</string>
+    <string name="personal_challenge_title">"Persönliche Herausforderung"</string>
+    <string name="personal_challenge_toolbar">"Herausforderungen"</string>
+    <string name="personal_challenge_save">"Sparen"</string>
+    <string name="personal_challenge_define_your_challenge">"Definieren Sie Ihre eigene Herausforderung und lassen Sie sich belohnen."</string>
+    <string name="personal_challenge_parameters">"Parameter der Herausforderung"</string>
+    <string name="personal_challenge_parameter_target">"Verbessern Sie meine"</string>
+    <string name="personal_challenge_parameter_level">"Ebene"</string>
+    <string name="personal_challenge_parameter_period">"Zeitraum der Herausforderung"</string>
+    <string name="personal_challenge_result">"Resultierende Herausforderung"</string>
+    <string name="personal_challenge_update_dialog_title">"Update-Herausforderung"</string>
+    <string name="personal_challenge_update_dialog_body">"Sind Sie sicher, dass Sie Ihre aktuelle Herausforderung aktualisieren wollen?"</string>
+    <string name="personal_challenge_update_dialog_yes">"Ja"</string>
+    <string name="personal_challenge_update_dialog_no">"Nein"</string>
+    <string name="personal_challenge_completed_title">"Persönliche Herausforderung"</string>
+    <string name="personal_challenge_completed_message">"Herzlichen Glückwunsch! Sie haben Ihre persönliche Herausforderung abgeschlossen"</string>
+    <string name="firmware_upgrade_welcome">"Das Aktualisieren der Zahnbürste dauert nur wenige Minuten; bitte die Zahnbürste nicht ausschalten."</string>
+</resources>

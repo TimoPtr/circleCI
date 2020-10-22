@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <Blacklist></Blacklist>
+  <Whitelist>
+    <ID>ComplexMethod:SecretSettingsActivity.kt$SecretSettingsActivity$onQuickActionClick</ID>
+    <ID>LongMethod:ChartPlaygroundActivity.kt$ChartPlaygroundActivity$initBarChart</ID>
+    <ID>LongMethod:KolibreeModule.kt$KolibreeModule.Companion$providesCredentials</ID>
+    <ID>LongMethod:SecretSettingsActivity.kt$SecretSettingsActivity$onQuickActionClick</ID>
+    <ID>LongMethod:SecretSettingsActivity.kt$SecretSettingsActivity$showMaterialDialog</ID>
+    <ID>LongMethod:SecretSettingsViewModel.kt$SecretSettingsViewModel$updateStateWithNewFeatureToggleValue</ID>
+    <ID>LongParameterList:EspressoTestBrushingModule.kt$EspressoTestBrushingGameLogicModule$( rnnWeightProvider: RnnWeightProvider?, angleProvider: AngleProvider, kpiSpeedProvider: KpiSpeedProvider?, transitionProvider: TransitionProvider, thresholdProvider: ThresholdProvider, zoneValidatorProvider: ZoneValidatorProvider )</ID>
+    <ID>MagicNumber:ChartPlaygroundActivity.kt$ChartPlaygroundActivity$1400</ID>
+    <ID>MagicNumber:ChartPlaygroundActivity.kt$ChartPlaygroundActivity$2.5f</ID>
+    <ID>MagicNumber:ChartPlaygroundActivity.kt$ChartPlaygroundActivity$2000</ID>
+    <ID>MagicNumber:ChartPlaygroundActivity.kt$ChartPlaygroundActivity$3f</ID>
+    <ID>MagicNumber:ChartPlaygroundActivity.kt$ChartPlaygroundActivity$45.0f</ID>
+    <ID>MagicNumber:ChartPlaygroundActivity.kt$ChartPlaygroundActivity$50f</ID>
+    <ID>MagicNumber:ChartPlaygroundActivity.kt$ChartPlaygroundActivity$55.0f</ID>
+    <ID>MagicNumber:ChartPlaygroundActivity.kt$ChartPlaygroundActivity$5f</ID>
+    <ID>MagicNumber:ChartPlaygroundActivity.kt$ChartPlaygroundActivity$6f</ID>
+    <ID>MagicNumber:ChartPlaygroundActivity.kt$ChartPlaygroundActivity$7f</ID>
+    <ID>PackageNaming:NoOpKolibreeProReminders.kt$package com.kolibree.android.app.ui.kolibree_pro</ID>
+    <ID>ProtectedMemberInFinalClass:SecretSettingsActivity.kt$SecretSettingsActivity$protected fun disableSecretSettings()</ID>
+    <ID>TooManyFunctions:AppComponent.kt$AppComponent$AppComponent</ID>
+    <ID>TooManyFunctions:AppModule.kt$AppModule$Companion</ID>
+    <ID>TooManyFunctions:DialogsPlaygroundViewModel.kt$DialogsPlaygroundViewModel$DialogsPlaygroundViewModel</ID>
+    <ID>TopLevelPropertyNaming:AppUpdateUseCase.kt$private val RANGE_PRIORITY_FOR_OPTIONAL_UPDATE = MIN_PRIORITY_FOR_OPTIONAL_UPDATE..MAX_PRIORITY_FOR_OPTIONAL_UPDATE</ID>
+  </Whitelist>
+</SmellBaseline>

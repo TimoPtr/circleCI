@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <data>
+
+    <variable
+      name="viewModel"
+      type="com.kolibree.android.app.ui.settings.secret.badges.BadgesPlaygroundActivityViewModel" />
+
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?colorTertiaryDark"
+    android:fitsSystemWindows="false">
+
+    <ImageView
+      android:id="@+id/patterned_background"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:adjustViewBounds="true"
+      android:fitsSystemWindows="true"
+      android:scaleType="fitCenter"
+      android:src="@drawable/dialog_feature_image"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <com.kolibree.android.app.ui.widget.BadgeImageView
+      android:id="@+id/patterned_cart"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:src="@drawable/ic_shopping_cart"
+      app:tint="@color/white"
+      app:badgeViewId="@id/patterned_cart_badge"
+      app:layout_constraintBottom_toBottomOf="@id/patterned_background"
+      app:layout_constraintEnd_toEndOf="@id/patterned_background"
+      app:layout_constraintStart_toStartOf="@id/patterned_background"
+      app:layout_constraintTop_toTopOf="@id/patterned_background"
+      tools:ignore="MissingClass" />
+
+    <TextView
+      android:id="@+id/patterned_cart_badge"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:background="@drawable/badge_background"
+      android:backgroundTint="?colorPrimaryDark"
+      android:gravity="center"
+      tools:text="6"
+      android:textColor="@color/white"
+      android:textSize="7sp"
+      app:layout_constraintDimensionRatio="v,1:1"
+      app:layout_constraintEnd_toEndOf="@id/patterned_cart"
+      app:layout_constraintTop_toTopOf="@id/patterned_cart"
+      tools:ignore="SmallSp" />
+
+    <ImageView
+      android:id="@+id/badgeless_cart"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:src="@drawable/ic_shopping_cart"
+      app:tint="@color/white"
+      tools:ignore="MissingConstraints" />
+
+    <com.kolibree.android.app.ui.widget.BadgeImageView
+      android:id="@+id/flat_cart"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:src="@drawable/ic_shopping_cart"
+      app:tint="@color/white"
+      app:badgeViewId="@id/flat_cart_badge"
+      tools:ignore="MissingConstraints,MissingClass" />
+
+    <TextView
+      android:id="@+id/flat_cart_badge"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:background="@drawable/badge_background"
+      android:backgroundTint="?colorPrimaryDark"
+      android:gravity="center"
+      tools:text="26"
+      android:textColor="@color/white"
+      android:textSize="7sp"
+      app:layout_constraintDimensionRatio="v,1:1"
+      app:layout_constraintEnd_toEndOf="@id/flat_cart"
+      app:layout_constraintTop_toTopOf="@id/flat_cart"
+      tools:ignore="SmallSp" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+      android:id="@+id/flat_flow"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:constraint_referenced_ids="badgeless_cart, flat_cart"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/patterned_background" />
+
+    <com.kolibree.android.app.ui.widget.BadgeImageView
+      android:id="@+id/avatar"
+      android:layout_width="128dp"
+      android:layout_height="128dp"
+      android:onClick="@{() -> viewModel.simulateZone8Update()}"
+      android:src="@drawable/badge_background"
+      app:tint="?colorAccent"
+      app:badgeBorderWidth="3dp"
+      app:badgeViewId="@id/avatar_badge"
+      app:layout_constraintBottom_toBottomOf="@id/patterned_background"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/patterned_background"
+      tools:ignore="MissingClass" />
+
+    <ImageView
+      android:id="@+id/avatar_badge"
+      android:layout_width="32dp"
+      android:layout_height="32dp"
+      android:background="@drawable/badge_background"
+      android:backgroundTint="?colorSecondaryDark"
+      android:padding="6dp"
+      android:src="@drawable/ic_nav_close"
+      app:layout_constraintEnd_toEndOf="@id/avatar"
+      app:layout_constraintTop_toTopOf="@id/avatar" />
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="@dimen/dot_quad"
+      android:background="?colorSecondaryDark"
+      android:gravity="center"
+      android:orientation="vertical"
+      android:padding="@dimen/dot_trip"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent">
+
+      <com.kolibree.android.app.widget.zone.ZoneProgressBarView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dot"
+        android:layout_marginBottom="@dimen/dot_double"
+        app:zoneData="@{viewModel.zone8}"
+        tools:ignore="MissingClass" />
+
+      <com.kolibree.android.app.widget.zone.ZoneProgressBarView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dot"
+        android:layout_marginBottom="@dimen/dot_double"
+        app:zoneData="@{viewModel.zone16}"
+        tools:ignore="MissingClass" />
+
+      <com.kolibree.android.app.widget.zone.ZoneProgressBarView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dot"
+        app:zoneData="@{viewModel.zone4}"
+        tools:ignore="MissingClass" />
+
+    </LinearLayout>
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+

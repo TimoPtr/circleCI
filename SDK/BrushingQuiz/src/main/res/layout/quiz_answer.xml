@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2019 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <data>
+
+    <variable
+      name="answer"
+      type="com.kolibree.android.brushingquiz.logic.models.QuizAnswer" />
+
+    <variable
+      name="itemClickListener"
+      type="com.kolibree.android.brushingquiz.presentation.quiz.QuizAnswerClickListener" />
+
+    <import type="android.view.View" />
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:onClick="@{(v) -> itemClickListener.onAnswerSelected(answer)}"
+    android:orientation="vertical">
+
+    <View
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="@dimen/match_constraints"
+      android:background="@drawable/question_top"
+      android:visibility="@{answer.first ? View.VISIBLE : View.GONE}"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="@dimen/match_constraints"
+      android:background="@drawable/question_bottom"
+      android:visibility="@{answer.last ? View.VISIBLE : View.GONE}"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="@dimen/match_constraints"
+      android:background="?backgroundColor"
+      android:visibility="@{answer.inMiddle ? View.VISIBLE : View.GONE}"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent">
+
+      <View
+        android:layout_width="@dimen/divider_thickness"
+        android:layout_height="match_parent"
+        android:background="?android:textColorTertiary"
+        android:layout_alignParentEnd="true" />
+
+      <View
+        android:layout_width="@dimen/divider_thickness"
+        android:layout_height="match_parent"
+        android:background="?android:textColorTertiary"
+        android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+    <com.google.android.material.radiobutton.MaterialRadioButton
+      android:id="@+id/quiz_answer_radiobutton"
+      android:layout_width="wrap_content"
+      android:layout_height="@dimen/match_constraints"
+      android:background="@null"
+      android:checked="@{answer.selected}"
+      android:clickable="false"
+      android:duplicateParentState="true"
+      android:focusable="false"
+      app:buttonTint="@drawable/radio_button_selector"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toStartOf="@id/quiz_answer_message"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:checked="true" />
+
+    <TextView
+      android:id="@+id/quiz_answer_message"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_oct"
+      android:layout_marginTop="@dimen/dot_trip"
+      android:clickable="false"
+      android:focusable="false"
+      android:text="@{answer.message}"
+      android:textAppearance="?textAppearanceHeadline6"
+      android:textColor="?textColorAccentSecondary"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:text="@string/brushing_quiz_screen_3_answer_2" />
+
+    <TextView
+      android:id="@+id/quiz_answer_hint"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="@dimen/dot_trip"
+      android:clickable="false"
+      android:focusable="false"
+      android:onClick="@{(v) -> itemClickListener.onAnswerSelected(answer)}"
+      android:text="@{answer.hint}"
+      android:textAppearance="?textAppearanceBody2"
+      android:textColor="?android:textColorSecondary"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="@id/quiz_answer_message"
+      app:layout_constraintTop_toBottomOf="@id/quiz_answer_message"
+      tools:text="@string/brushing_quiz_screen_3_answer_2_hint" />
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

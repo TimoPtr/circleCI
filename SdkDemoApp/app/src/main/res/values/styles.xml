@@ -1,0 +1,61 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme.SDKDemo" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorControlActivated">@android:color/white</item>
+        <item name="colorControlHighlight">@android:color/white</item>
+    </style>
+
+    <style name="PrimaryColorRoundButton" parent="RoundButton">
+        <item name="android:background">@drawable/bg_primary_color</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="RoundButton" parent="android:Widget.Button">
+        <item name="android:layout_width">@dimen/round_button_width</item>
+        <item name="android:layout_height">@dimen/round_button_height</item>
+        <item name="android:gravity">center</item>
+        <item name="android:elevation">@dimen/elevation_low</item>
+    </style>
+
+    <!-- Title -->
+    <style name="Title">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/title_padding</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/xxbig_text</item>
+    </style>
+
+    <style name="KpiView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+    </style>
+
+    <style name="FeatureCardView" parent="CardView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="cardCornerRadius">4dp</item>
+        <item name="cardElevation">4dp</item>
+        <item name="android:padding">20dp</item>
+    </style>
+
+    <style name="ActivityButton">
+        <item name="android:layout_width">@dimen/round_button_width</item>
+        <item name="android:layout_height">@dimen/round_button_height</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:background">@drawable/bg_primary_color</item>
+        <item name="android:elevation">1dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_marginTop">30dp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <Blacklist></Blacklist>
+  <Whitelist>
+    <ID>ComplexMethod:TestBrushingResourceProvider.kt$TestBrushingResourceProvider$provideDuringSessionFinishStepVideo</ID>
+    <ID>LargeClass:TestBrushingTranslationKey.kt$TestBrushingTranslationKey$TestBrushingTranslationKey</ID>
+    <ID>LongMethod:BrushingModule.kt$TestBrushingCreatorModule$provideTestBrushingCreator</ID>
+    <ID>LongMethod:CarouselIndicatorView.kt$Indicator$update</ID>
+    <ID>LongMethod:ResultsFragment.kt$ResultsFragment$renderAction</ID>
+    <ID>LongMethod:ResultsViewModel.kt$ResultsViewModel$refreshViewState</ID>
+    <ID>LongMethod:TestBrushingCreatorKML.kt$TestBrushingCreatorKML$create</ID>
+    <ID>LongMethod:TestBrushingCreatorPlaqless.kt$TestBrushingCreatorPlaqless$create</ID>
+    <ID>LongMethod:TestBrushingDuringSessionFragment.kt$TestBrushingDuringSessionFragment$action</ID>
+    <ID>LongParameterList:BrushingModule.kt$TestBrushingCreatorModule$( rnnWeightProvider: RnnWeightProvider?, kpiSpeedProvider: KpiSpeedProvider?, angleProvider: AngleProvider, transitionProvider: TransitionProvider, thresholdProvider: ThresholdProvider, zoneValidatorProvider: ZoneValidatorProvider, checkupCalculator: CheckupCalculator, connector: IKolibreeConnector, avroCreator: KmlAvroCreator, appVersions: KolibreeAppVersions, model: ToothbrushModel )</ID>
+    <ID>LongParameterList:TestBrushingResourceProviderTest.kt$TestBrushingResourceProviderTest$( expectedAra: Int, expectedE1: Int, expectedE2: Int, expectedM1: Int, expectedB1: Int, expectedPQL: Int, block: (model: ToothbrushModel, expected: Int) -&gt; Unit )</ID>
+    <ID>MagicNumber:TestBrushProgressFragment.kt$TestBrushProgressFragment$0.3f</ID>
+    <ID>MagicNumber:TestBrushProgressFragment.kt$TestBrushProgressFragment$3</ID>
+    <ID>MagicNumber:TestBrushProgressFragment.kt$TestBrushProgressFragment$4</ID>
+    <ID>MagicNumber:TestBrushProgressViewModel.kt$TestBrushProgressViewModel$3L</ID>
+    <ID>MagicNumber:TestBrushProgressViewModel.kt$TestBrushProgressViewModel$4L</ID>
+    <ID>MagicNumber:TestBrushProgressViewModel.kt$TestBrushProgressViewModel$5L</ID>
+    <ID>ReturnCount:SpeedDescriptionProvider.kt$SpeedDescriptionProvider$ override fun description(result: SpeedResult): String</ID>
+    <ID>SwallowedException:TestBrushingCreatorPlaqlessImplTest.kt$TestBrushingCreatorPlaqlessImplTest$catch (e: ProcessedBrushingNotAvailableException) { assertTrue(subscripption.isDisposed) }</ID>
+    <ID>TooManyFunctions:TestBrushingEventTracker.kt$TestBrushingEventTracker$TestBrushingEventTracker</ID>
+    <ID>UnnecessaryAbstractClass:LegacyBaseTestBrushingViewState.kt$LegacyBaseTestBrushingViewState</ID>
+  </Whitelist>
+</SmellBaseline>

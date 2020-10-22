@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <Blacklist></Blacklist>
+  <Whitelist>
+    <ID>ComplexMethod:SmilesItemResourcesMapper.kt$SmilesItemResourcesMapper$map</ID>
+  </Whitelist>
+</SmellBaseline>

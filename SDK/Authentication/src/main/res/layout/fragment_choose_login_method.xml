@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:gravity="center_horizontal"
+  android:orientation="vertical">
+
+  <androidx.appcompat.widget.Toolbar
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/colorPrimary"
+    android:minHeight="?attr/actionBarSize"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+    <TextView
+      android:id="@+id/sms_login_title"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:text="@string/choose_method_title"
+      android:textColor="@color/white"
+      android:textSize="@dimen/big_text"/>
+
+  </androidx.appcompat.widget.Toolbar>
+
+  <RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/xxxhuge_margin">
+
+    <Button
+      android:id="@+id/choose_login_sms"
+      android:layout_width="@dimen/round_button_width"
+      android:layout_height="50dp"
+      android:background="@drawable/bg_sel_coach_pause_primary_color"
+      android:text="@string/choose_method_sms"
+      android:textColor="@color/white"/>
+
+    <ImageView
+      android:layout_width="30dp"
+      android:layout_height="30dp"
+      android:layout_marginStart="15dp"
+      android:layout_centerVertical="true"
+      android:background="@drawable/ic_sms"/>
+
+  </RelativeLayout>
+
+  <TextView
+    android:id="@+id/welcome_email_or"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:text="@string/welcome_email_or"/>
+
+  <RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <Button
+      android:id="@+id/choose_login_we_chat"
+      android:layout_width="@dimen/round_button_width"
+      android:layout_height="50dp"
+      android:background="@drawable/bg_sel_choose_method_we_chat"
+      android:text="@string/choose_method_we_chat"
+      android:textColor="@color/white"/>
+
+    <ImageView
+      android:layout_width="30dp"
+      android:layout_height="24dp"
+      android:layout_marginStart="15dp"
+      android:layout_centerVertical="true"
+      android:background="@drawable/ic_wechat"/>
+
+  </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <Blacklist></Blacklist>
+  <Whitelist>
+    <ID>LargeClass:LegacyBaseGameViewModel.kt$LegacyBaseGameViewModel$LegacyBaseGameViewModel</ID>
+    <ID>LargeClass:MVIUnityPlayerLifecycleActivity.kt$MVIUnityPlayerLifecycleActivity$MVIUnityPlayerLifecycleActivity</ID>
+    <ID>LongMethod:BrushingCreator.kt$BrushingCreatorImpl$getProfileFromAssignmentDialog</ID>
+    <ID>LongMethod:BrushingCreator.kt$BrushingCreatorImpl$maybeAskForSelectedProfileAndSendData</ID>
+    <ID>LongMethod:BrushingCreator.kt$BrushingCreatorImpl$onBrushingCompleted</ID>
+    <ID>LongMethod:GameInteractor.kt$GameInteractor$onVibratorStateChanged</ID>
+    <ID>LongMethod:KmlAvroCreator.kt$KmlAvroCreatorImpl$createBrushingSession</ID>
+    <ID>LongMethod:LegacyBaseGameViewModel.kt$LegacyBaseGameViewModel$init</ID>
+    <ID>LongMethod:LegacyBaseGameViewModel.kt$LegacyBaseGameViewModel$maybeAskForSelectedProfileAndSendData</ID>
+    <ID>LongMethod:LegacyBaseGameViewModel.kt$LegacyBaseGameViewModel$onUserAnswered</ID>
+    <ID>LongMethod:MVIUnityPlayerLifecycleActivity.kt$MVIUnityPlayerLifecycleActivity$checkBundlesAndLaunch</ID>
+    <ID>LongMethod:MVIUnityPlayerLifecycleActivity.kt$MVIUnityPlayerLifecycleActivity$ifGameCanBeStarted</ID>
+    <ID>LongMethod:MVIUnityPlayerLifecycleActivity.kt$MVIUnityPlayerLifecycleActivity$startUnityGame</ID>
+    <ID>LongMethod:MVIUnityPlayerLifecycleActivity.kt$MVIUnityPlayerLifecycleActivity$tearDownUnityPlayer</ID>
+    <ID>LongMethod:MonitorCurrentBrushingInteractor.kt$MonitorCurrentBrushingInteractor$maybeSendMonitorCurrentBrushing</ID>
+    <ID>LongMethod:UnityPlayerLifecycleActivity.kt$UnityPlayerLifecycleActivity$startUnityGame</ID>
+    <ID>LongMethod:UnityPlayerLifecycleActivity.kt$UnityPlayerLifecycleActivity$tearDownUnityPlayer</ID>
+    <ID>LongMethod:UnityPlayerLifecycleActivity.kt$UnityPlayerLifecycleActivity.TransitionAnimator$hideGame</ID>
+    <ID>MaxLineLength:BaseGameViewModel.kt$BaseGameViewModel$ @VisibleForTesting fun maybeForceVibratorOffOnConnectionActive( state: LostConnectionHandler.State ): Completable</ID>
+    <ID>MaxLineLength:GameInteractor.kt$GameInteractor$"onVibratorStateChanged for %s is vibrating %s. Previous connection is %s. vibratorOn is %s. connection was lost %s"</ID>
+    <ID>SwallowedException:BaseSensorInteractorTest.kt$BaseSensorInteractorTest$catch (e: UninitializedPropertyAccessException) { // ignore unitinialized = true }</ID>
+    <ID>TooGenericExceptionCaught:MVIUnityPlayerLifecycleActivity.kt$MVIUnityPlayerLifecycleActivity$t: Throwable</ID>
+    <ID>TooManyFunctions:LegacyBaseGameViewModel.kt$LegacyBaseGameViewModel$LegacyBaseGameViewModel</ID>
+    <ID>TooManyFunctions:MVIUnityPlayerLifecycleActivity.kt$MVIUnityPlayerLifecycleActivity$MVIUnityPlayerLifecycleActivity</ID>
+  </Whitelist>
+</SmellBaseline>

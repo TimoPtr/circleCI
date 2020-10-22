@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <Blacklist></Blacklist>
+  <Whitelist>
+    <ID>LongMethod:SynchronizeAccountResponse.kt$SynchronizeAccountResponseTypeAdapter$createConsumable</ID>
+    <ID>MaxLineLength:SynchronizableTrackingEntityDao.kt$SynchronizableTrackingEntityDao$@Query("SELECT * FROM synchronizable_item_tracking WHERE bundleKey = :bundlekey AND uploadStatus IN (:uploadStatus)")</ID>
+    <ID>MaxLineLength:SynchronizatorModule.kt$SynchronizatorModule$@Binds internal abstract</ID>
+    <ID>SpreadOperator:ReadByUploadStatusUseCase.kt$ReadByUploadStatusUseCase$(key(), *uploadStatus)</ID>
+    <ID>SwallowedException:SynchronizeQueueOperationTest.kt$SynchronizeQueueOperationTest$catch (e: TestForcedException) { // ignore }</ID>
+    <ID>SwallowedException:SynchronizeQueueOperationTest.kt$SynchronizeQueueOperationTest$catch (synchronizatorException: SynchronizatorException) { verify(operation).internalProcessCatalogBundleConsumable(catalogConsumable1) verify(operation).internalProcessCatalogBundleConsumable(catalogConsumable2) verify(operation).internalProcessReadOnlyBundleConsumable(readOnlyConsumable) verify(operation).internalProcessItemBundleConsumable(itemConsumable) }</ID>
+    <ID>TooGenericExceptionCaught:QueueOperationExecutor.kt$FifoQueueOperationExecutor$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:RemoteCreateOrEditOperation.kt$RemoteCreateOrEditQueueOperation$e: Throwable</ID>
+    <ID>TooGenericExceptionCaught:SynchronizeOperation.kt$SynchronizeQueueOperation$exception: Exception</ID>
+    <ID>TooGenericExceptionCaught:SynchronizeOperation.kt$e: Exception</ID>
+  </Whitelist>
+</SmellBaseline>

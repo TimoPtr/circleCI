@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2019 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<resources xmlns:tools="http://schemas.android.com/tools">
+  <item name="personal_challenge_completed_message_reference" type="string" tools:ignore="MissingTranslation" />
+  <item name="personal_challenge_completed_title_reference" type="string" tools:ignore="MissingTranslation" />
+</resources>

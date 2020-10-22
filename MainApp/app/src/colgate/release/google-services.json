@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "672899494615",
+    "firebase_url": "https://cp-chaa-prd-oral-care.firebaseio.com",
+    "project_id": "cp-chaa-prd-oral-care",
+    "storage_bucket": "cp-chaa-prd-oral-care.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:672899494615:android:56c40e0dc43e391892b692",
+        "android_client_info": {
+          "package_name": "com.colgate.colgateconnect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "672899494615-370ffodphkfehm7pcf4bp226bja4nrfa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDep5a3-mOWYp5S6hB-Sac40OE4ehhP71s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "672899494615-370ffodphkfehm7pcf4bp226bja4nrfa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

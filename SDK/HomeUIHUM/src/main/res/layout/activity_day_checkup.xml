@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <data>
+
+    <import type="com.kolibree.android.app.ui.checkup.CheckupUtils" />
+
+    <import type="android.view.View" />
+
+    <variable
+      name="viewModel"
+      type="com.kolibree.android.app.ui.checkup.day.DayCheckupViewModel" />
+
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:theme="@style/CheckupTheme">
+
+    <ImageView
+      android:id="@+id/checkup_back"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="?attr/selectableItemBackgroundBorderless"
+      android:onClick="@{() -> viewModel.onBackButtonClick()}"
+      android:padding="@dimen/dot_double"
+      android:src="@drawable/ic_nav_close"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:tint="@color/black"
+      tools:ignore="ContentDescription" />
+
+    <TextView
+      android:id="@+id/checkup_date"
+      style="@style/CheckupBrushingSummary"
+      android:layout_width="match_parent"
+      android:layout_marginBottom="@dimen/dot"
+      android:gravity="center"
+      android:text="@{CheckupUtils.formatBrushingDate(context, viewModel.brushingDateLiveData, viewModel.brushingTypeLiveData)}"
+      app:layout_constraintTop_toBottomOf="@id/checkup_back" />
+
+    <com.kolibree.android.app.ui.widget.CheckupChartsView
+      android:id="@+id/checkup_charts"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/dot_double"
+      app:coverage="@{viewModel.coverageLiveData}"
+      app:durationPercentage="@{viewModel.durationPercentageLiveData}"
+      app:durationSeconds="@{viewModel.durationSecondsLiveData}"
+      app:layout_constraintTop_toBottomOf="@id/checkup_date" />
+
+    <com.google.android.material.tabs.TabLayout
+      android:id="@+id/checkup_pager_indicator"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_double"
+      android:layout_marginEnd="@dimen/dot_double"
+      android:visibility="@{safeUnbox(viewModel.pagerIndicatorVisibleLiveData) ? View.VISIBLE : View.GONE}"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:tabBackground="@drawable/pager_tab_selector"
+      app:tabGravity="center"
+      app:tabIndicatorHeight="0dp" />
+
+    <Button
+      android:id="@+id/checkup_delete"
+      style="@style/CheckupDeleteButton"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/dot"
+      android:onClick="@{() -> viewModel.onDeleteButtonClick()}"
+      app:layout_constraintBottom_toTopOf="@id/checkup_pager_indicator" />
+
+    <androidx.viewpager2.widget.ViewPager2
+      android:id="@+id/checkup_pager"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/match_constraints"
+      app:checkupDataList="@{viewModel.checkupDataListLiveData}"
+      app:layout_constraintBottom_toTopOf="@id/checkup_delete"
+      app:layout_constraintTop_toBottomOf="@id/checkup_charts" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
+

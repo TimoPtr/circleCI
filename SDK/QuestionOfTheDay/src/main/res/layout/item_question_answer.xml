@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  tools:context=".ui.QuestionOfTheDayActivity">
+
+  <data>
+
+    <variable
+      name="answer"
+      type="com.kolibree.android.questionoftheday.ui.QuestionOfTheDayViewState.Answer" />
+
+    <variable
+      name="interaction"
+      type="com.kolibree.android.questionoftheday.ui.QuestionOfTheDayInteraction" />
+
+  </data>
+
+  <com.google.android.material.button.MaterialButton
+    android:id="@+id/question_of_the_day_answer"
+    style="@style/Widget.QuestionOfTheDay.Answer"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:onClick="@{() -> interaction.onAnswerClick(answer)}"
+    app:answer="@{answer}"
+    tools:layout_gravity="center"
+    tools:text="Sample answer" />
+
+</layout>

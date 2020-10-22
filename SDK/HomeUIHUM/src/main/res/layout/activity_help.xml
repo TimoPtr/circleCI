@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout>
+
+  <data>
+
+    <variable
+      name="viewModel"
+      type="com.kolibree.android.app.ui.settings.help.HelpViewModel" />
+
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.MaterialToolbar
+      android:id="@+id/toolbar"
+      enableBackNavigation="@{true}"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:navigationIcon="@{@drawable/ic_back_arrow}"
+      app:onBackNavigationClick="@{v -> viewModel.onCloseClick()}"
+      app:title="@string/settings_help_title"
+      app:titleTextAppearance="?textAppearanceHeadline4"
+      tools:visibility="visible" />
+
+    <TextView
+      android:id="@+id/help_description"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_nine"
+      android:layout_marginTop="@dimen/dot_quin"
+      android:layout_marginEnd="@dimen/dot_nine"
+      android:layout_marginBottom="@dimen/dot_quin"
+      android:gravity="center"
+      android:text="@string/help_description"
+      android:textAppearance="?textAppearanceBody1"
+      android:textColor="?android:textColorSecondary"
+      app:layout_constraintBottom_toTopOf="@id/help_center_button"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <Button
+      android:id="@+id/help_center_button"
+      style="?materialButtonIconStyle"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_quad"
+      android:layout_marginEnd="@dimen/dot_quad"
+      android:onClick="@{v -> viewModel.onClickHelpCenter()}"
+      android:text="@string/help_center"
+      app:icon="@drawable/ic_tb_settings_help_icon"
+      app:layout_constraintBottom_toTopOf="@id/contact_us_button"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/help_description" />
+
+    <Button
+      android:id="@+id/contact_us_button"
+      style="?materialButtonStyle"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_quad"
+      android:layout_marginTop="@dimen/dot_double"
+      android:layout_marginEnd="@dimen/dot_quad"
+      android:onClick="@{v -> viewModel.onClickContactUs()}"
+      android:text="@string/contact_us"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/help_center_button" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+

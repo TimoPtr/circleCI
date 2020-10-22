@@ -1,0 +1,19 @@
+{
+  "gru": {
+    "gru": "11.2.0",
+    "crc16": "",
+    "filename": "ota/kltb002/GRU_DATA_0x0B020000_058345fb.bin",
+    "beta": true,
+    "link": "ota/kltb002/GRU_DATA_0x0B020000_058345fb.bin",
+    "crc32": "058345fb"
+  },
+  "bootloader": {},
+  "fw": {
+    "crc16": "",
+    "fw": "1.18.0",
+    "filename": "ota/kltb002/KLTB002_HW_0x00020004_FW_0x010F0000_9d752091.bin",
+    "beta": true,
+    "link": "ota/kltb002/KLTB002_HW_0x00020004_FW_0x010F0000_9d752091.bin",
+    "crc32": "9d752091"
+  }
+}

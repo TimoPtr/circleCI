@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <data>
+
+    <import type="android.view.View" />
+
+    <variable
+      name="item"
+      type="com.kolibree.android.headspace.trial.card.HeadspaceTrialCardBindingModel" />
+
+    <variable
+      name="interaction"
+      type="com.kolibree.android.headspace.trial.card.HeadspaceTrialCardInteraction" />
+
+    <import type="com.kolibree.android.extensions.ContextExtensionsKt" />
+
+    <import type="com.kolibree.android.headspace.R" />
+
+  </data>
+
+  <com.google.android.material.card.MaterialCardView
+    android:id="@+id/headspace_trial_card"
+    style="@style/Widget.CardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dot_double"
+    android:clickable="true"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:focusable="true"
+    android:onClick="@{v -> interaction.onToggleDescriptionClick()}">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:minHeight="@dimen/min_touch_zone">
+
+      <ImageView
+        android:id="@+id/headspace_trial_card_icon"
+        android:layout_width="@dimen/match_constraints"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/headspace_trial_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+      <FrameLayout
+        android:layout_width="@dimen/min_touch_zone"
+        android:layout_height="@dimen/min_touch_zone"
+        android:background="@drawable/ripple_rounded"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="@{v -> interaction.onCloseClicked()}"
+        android:visibility="@{item.isUnlocked ? View.VISIBLE : View.GONE}"
+        app:layout_constraintEnd_toEndOf="@id/headspace_trial_card_icon"
+        app:layout_constraintTop_toTopOf="@id/headspace_trial_card_icon">
+
+        <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:src="@drawable/ic_close_btn" />
+      </FrameLayout>
+
+      <ImageView
+        android:id="@+id/headspace_trial_card_logo"
+        android:layout_width="@dimen/match_constraints"
+        android:layout_height="wrap_content"
+        android:src="@drawable/headspace_logo"
+        app:layout_constraintBottom_toBottomOf="@id/headspace_trial_card_icon"
+        app:layout_constraintEnd_toEndOf="@id/headspace_trial_card_icon"
+        app:layout_constraintStart_toStartOf="@id/headspace_trial_card_icon"
+        app:layout_constraintTop_toBottomOf="@id/headspace_trial_card_icon" />
+
+      <TextView
+        android:id="@+id/headspace_trial_card_title"
+        android:layout_width="@dimen/match_constraints"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dot_trip"
+        android:layout_marginTop="@dimen/dot_double"
+        android:layout_marginEnd="@dimen/dot_double"
+        android:text="@string/headspace_card_title"
+        android:textAppearance="?textAppearanceHeadline3"
+        app:layout_constraintEnd_toStartOf="@id/headspace_trial_card_expand_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headspace_trial_card_logo" />
+
+      <ImageView
+        android:id="@+id/headspace_trial_card_expand_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dot_trip"
+        android:src="@{item.toggleDescriptionVisibilityIcon}"
+        app:layout_constraintBottom_toBottomOf="@id/headspace_trial_card_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/headspace_trial_card_title"
+        app:layout_constraintTop_toTopOf="@id/headspace_trial_card_title"
+        tools:src="@drawable/ic_icon_navigation_expand_down_24_px"
+        tools:visibility="visible" />
+
+      <TextView
+        android:id="@+id/headspace_trial_card_description"
+        android:layout_width="@dimen/match_constraints"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dot_trip"
+        android:layout_marginTop="@dimen/dot_double"
+        android:layout_marginEnd="@dimen/dot_trip"
+        android:text="@{item.descriptionText(context)}"
+        android:textAppearance="?textAppearanceBody1"
+        android:textColor="?android:textColorSecondary"
+        android:visibility="@{item.descriptionVisible ? View.VISIBLE : View.GONE}"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headspace_trial_card_title"
+        tools:text="@string/headspace_card_description"
+        tools:visibility="gone" />
+
+      <TextView
+        android:id="@+id/headspace_trial_card_description_mutable"
+        textAppearance="?textAppearanceBody1"
+        android:layout_width="@dimen/match_constraints"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dot_trip"
+        android:layout_marginTop="@dimen/dot_double"
+        android:layout_marginEnd="@dimen/dot_trip"
+        android:text="@{item.mutableDescriptionText(context)}"
+        android:textColor="?android:textColorSecondary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headspace_trial_card_description"
+        tools:text="@string/headspace_card_unlock_description" />
+
+      <ProgressBar
+        android:id="@+id/headspace_trial_card_progressbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="@dimen/match_constraints"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dot_trip"
+        android:layout_marginEnd="@dimen/dot_trip"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="@{item.progress}"
+        android:progressBackgroundTint="?backgroundColor"
+        android:progressTint="?colorSecondaryDark"
+        android:visibility="@{item.isProgressVisible ? View.VISIBLE : View.GONE}"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headspace_trial_card_description_mutable"
+        tools:progress="23"
+        tools:visibility="gone" />
+
+      <!-- This will prevent button misclicks -->
+      <View
+        android:layout_width="@dimen/match_constraints"
+        android:layout_height="@dimen/match_constraints"
+        android:clickable="true"
+        android:visibility="@{item.callToActionVisible ? View.VISIBLE : View.GONE}"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headspace_trial_card_description_mutable"
+        tools:ignore="KeyboardInaccessibleWidget" />
+
+      <!-- button.setChecked(true) prevents from switching state back to false (Tap to copy text)-->
+      <!--suppress AndroidUnknownAttribute -->
+      <ToggleButton
+        android:id="@+id/headspace_trial_card_copy_code_button"
+        style="@style/Widget.Button.TapToCopy"
+        android:layout_width="@dimen/match_constraints"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dot_trip"
+        android:layout_marginTop="@dimen/dot_double"
+        android:layout_marginEnd="@dimen/dot_trip"
+        android:checked="@{item.copiedToClipboard}"
+        android:onCheckedChanged="@{(button, checked) -> button.setChecked(true)}"
+        android:onClick="@{v -> interaction.onTapToCopyClicked()}"
+        android:text="@{item.copyCodeButtonText(context)}"
+        android:textOff="@{item.copyCodeButtonText(context)}"
+        android:textOn="@{item.copyCodeButtonText(context)}"
+        android:visibility="@{item.isUnlocked ? View.VISIBLE : View.GONE}"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headspace_trial_card_description_mutable"
+        tools:checked="false"
+        tools:textOff="Tap to copy promo code: HUM50"
+        tools:visibility="visible" />
+
+      <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/headspace_trial_button_barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:barrierMargin="@dimen/dot_half"
+        app:constraint_referenced_ids="headspace_trial_card_progressbar,headspace_trial_card_copy_code_button" />
+
+      <Button
+        android:id="@+id/headspace_trial_card_unlock_btn"
+        style="?primaryColorButtonStyle"
+        android:layout_width="@dimen/match_constraints"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dot_trip"
+        android:layout_marginEnd="@dimen/dot_trip"
+        android:onClick="@{v -> interaction.onCallToActionClicked()}"
+        android:text="@{item.callToActionText(context)}"
+        android:visibility="@{item.callToActionVisible ? View.VISIBLE : View.GONE}"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headspace_trial_button_barrier"
+        tools:text="@string/headspace_card_visit_headspace"
+        tools:visibility="visible" />
+
+      <Space
+        android:id="@+id/bottom_space"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dot_double"
+        app:layout_constraintTop_toBottomOf="@id/headspace_trial_card_unlock_btn" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+  </com.google.android.material.card.MaterialCardView>
+
+</layout>

@@ -1,0 +1,47 @@
+<!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="81dp"
+    android:height="80dp"
+    android:viewportWidth="81"
+    android:viewportHeight="80">
+  <path
+      android:pathData="M40.5,80c22.091,0 40,-17.909 40,-40S62.591,0 40.5,0 0.5,17.909 0.5,40s17.909,40 40,40z"
+      android:fillColor="#F4F5F6"
+      android:fillType="evenOdd"/>
+  <path
+      android:pathData="M44.58,55h7.364c2.21,0 4,-1.791 4,-4V33.544c0,-2.21 -1.794,-4 -4.003,-4H26.31c-2.21,0 -4.003,1.79 -4.003,4v17.454c0,2.21 1.79,4 4,4h7.136"
+      android:strokeLineJoin="round"
+      android:strokeWidth="4"
+      android:fillColor="#00000000"
+      android:strokeColor="#E75650"/>
+  <path
+      android:pathData="M30.66,53.182L33.643,53.182A1.818,1.818 0,0 1,35.461 55L35.461,55A1.818,1.818 0,0 1,33.643 56.818L30.66,56.818A1.818,1.818 0,0 1,28.842 55L28.842,55A1.818,1.818 0,0 1,30.66 53.182z"
+      android:fillColor="#E75650"/>
+  <path
+      android:pathData="M43.742,53.182L46.725,53.182A1.818,1.818 0,0 1,48.543 55L48.543,55A1.818,1.818 0,0 1,46.725 56.818L43.742,56.818A1.818,1.818 0,0 1,41.924 55L41.924,55A1.818,1.818 0,0 1,43.742 53.182z"
+      android:fillColor="#E75650"/>
+  <path
+      android:pathData="M29.907,36.818c0,-1.004 0.814,-1.818 1.818,-1.818s1.818,0.814 1.818,1.818v10.91c0,1.003 -0.814,1.817 -1.818,1.817s-1.818,-0.814 -1.818,-1.818V36.818z"
+      android:fillColor="#E75650"
+      android:fillType="evenOdd"/>
+  <path
+      android:pathData="M37.18,36.818c0,-1.004 0.814,-1.818 1.818,-1.818s1.818,0.814 1.818,1.818v10.91c0,1.003 -0.814,1.817 -1.818,1.817s-1.818,-0.814 -1.818,-1.818V36.818zM44.453,36.818c0,-1.004 0.813,-1.818 1.818,-1.818 1.004,0 1.818,0.814 1.818,1.818v10.91c0,1.003 -0.814,1.817 -1.818,1.817 -1.005,0 -1.819,-0.814 -1.819,-1.818V36.818z"
+      android:fillColor="#E75650"
+      android:fillAlpha="0.2"
+      android:fillType="evenOdd"/>
+  <path
+      android:pathData="M55.944,35h1.566c1.657,0 3,1.343 3,3v8.285c0,1.657 -1.343,3 -3,3h-1.566V35z"
+      android:fillColor="#E75650"/>
+  <path
+      android:pathData="M43.742,56.818c1.004,0 1.818,-0.814 1.818,-1.818s-0.814,-1.818 -1.818,-1.818 -1.818,0.814 -1.818,1.818 0.814,1.818 1.818,1.818z"
+      android:fillColor="#73CECA"
+      android:fillType="evenOdd"/>
+</vector>

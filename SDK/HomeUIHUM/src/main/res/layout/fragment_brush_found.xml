@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout>
+
+  <data>
+
+    <variable
+      name="viewModel"
+      type="com.kolibree.android.app.ui.pairing.brush_found.BrushFoundViewModel" />
+
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+      android:id="@+id/content"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="@dimen/match_constraints"
+      android:layout_marginStart="@dimen/dot_quad"
+      android:layout_marginEnd="@dimen/dot_quad"
+      android:layout_marginBottom="@dimen/dot_double"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHeight_percent="0.85"
+      app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+      android:id="@+id/header"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:text="@string/pairing_brush_found_title"
+      android:textAppearance="?textAppearanceHeadline2"
+      app:layout_constraintEnd_toEndOf="@id/content"
+      app:layout_constraintStart_toStartOf="@id/content"
+      app:layout_constraintTop_toTopOf="@id/content" />
+
+    <TextView
+      android:id="@+id/subtitle"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/dot_double"
+      android:text="@string/pairing_brush_found_subtitle"
+      android:textAppearance="?textAppearanceSubtitle1"
+      app:layout_constraintEnd_toEndOf="@id/content"
+      app:layout_constraintStart_toStartOf="@id/content"
+      app:layout_constraintTop_toBottomOf="@id/header" />
+
+    <ImageView
+      android:id="@+id/hum_tb_image"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_margin="@dimen/dot_trip"
+      app:srcCompat="@drawable/ic_toothbrush_found"
+      app:layout_constrainedHeight="true"
+      app:layout_constraintBottom_toTopOf="@id/connect_brush_button"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/subtitle" />
+
+    <Button
+      android:id="@+id/connect_brush_button"
+      style="?materialButtonStyle"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="@dimen/dot"
+      android:alpha="0"
+      android:text="@string/pairing_brush_found_connect"
+      android:onClick="@{v -> viewModel.confirmConnectionClick()}"
+      app:layout_constraintBottom_toTopOf="@id/not_right_brush_button"
+      app:layout_constraintEnd_toEndOf="@id/content"
+      app:layout_constraintStart_toStartOf="@id/content"
+      tools:alpha="1" />
+
+    <Button
+      android:id="@+id/not_right_brush_button"
+      style="?materialButtonOutlinedStyle"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="@dimen/dot"
+      android:alpha="0"
+      android:text="@string/um_no"
+      android:onClick="@{v -> viewModel.notRightConnectionClick()}"
+      app:layout_constraintBottom_toBottomOf="@id/content"
+      app:layout_constraintEnd_toEndOf="@id/content"
+      app:layout_constraintStart_toStartOf="@id/content"
+      tools:alpha="1" />
+
+    <com.kolibree.android.app.widget.AnimatorGroup
+      android:id="@+id/bottom_animator_group"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:constraint_referenced_ids="connect_brush_button,not_right_brush_button"
+      tools:ignore="MissingConstraints" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+

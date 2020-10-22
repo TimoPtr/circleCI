@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="test_brushing_tip_color">#333333</color>
+  <color name="test_brushing_background">#f7f9ff</color>
+  <color name="during_session_step2">#EFEFEF</color>
+  <color name="during_session_step3_manual">#F1F0F0</color>
+  <color name="during_session_step2_manual">#F3F3F3</color>
+  <color name="during_session_step_pql">#F0EFEF</color>
+  <color name="results_bottom_background">#f1f1f1</color>
+  <color name="progress_step_disabled">#B2B2B2</color>
+  <color name="results_ring_title">#989898</color>
+  <color name="results_dark_text">#1c2c3e</color>
+  <color name="intro_top_background">#F8FAFE</color>
+</resources>

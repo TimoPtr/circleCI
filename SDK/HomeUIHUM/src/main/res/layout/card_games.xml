@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  tools:context="com.kolibree.android.app.ui.home.HomeScreenActivity">
+
+  <data>
+
+    <import type="android.view.View" />
+
+    <variable
+      name="viewModel"
+      type="com.kolibree.android.app.ui.home.tab.activities.card.games.GamesCardViewModel" />
+
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/games_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="@{viewModel.cardVisible ? View.VISIBLE : View.GONE}">
+
+    <TextView
+      android:id="@+id/games_card_title"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_double"
+      android:layout_marginTop="@dimen/dot_double"
+      android:layout_marginEnd="@dimen/dot_double"
+      android:text="@string/games_card_title"
+      android:textAppearance="?textAppearanceHeadline4"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_goneMarginEnd="@dimen/dot_double" />
+
+    <TextView
+      android:id="@+id/games_card_body"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_double"
+      android:layout_marginTop="@dimen/dot"
+      android:layout_marginEnd="@dimen/dot_double"
+      android:text="@string/games_card_body"
+      android:textAppearance="?textAppearanceCaption"
+      android:textColor="?android:textColorSecondary"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/games_card_title" />
+
+    <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/games_card_items"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:clipToPadding="false"
+      android:overScrollMode="never"
+      android:paddingStart="@dimen/dot"
+      android:paddingTop="@dimen/dot_double"
+      android:paddingEnd="@dimen/dot"
+      android:paddingBottom="@dimen/dot"
+      app:interaction="@{viewModel}"
+      app:items="@{viewModel.items}"
+      app:layoutManager="com.kolibree.android.app.ui.widget.HorizontalLinearLayoutManager"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/games_card_body"
+      tools:listitem="@layout/item_games_card" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

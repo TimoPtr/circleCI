@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<resources>
+  <!--TODO update https://kolibree.atlassian.net/browse/KLTB002-13343-->
+  <string name="twitter_social_link">"https://twitter.com/colgate"</string>
+  <string name="instagram_social_link">"https://www.instagram.com/humbycolgate/"</string>
+  <string name="facebook_social_link">"https://www.facebook.com/humbyColgate"</string>
+  <string name="website_link">"https://hum.colgate.com/"</string>
+</resources>

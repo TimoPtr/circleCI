@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+      android:id="@+id/unity_view"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent" />
+
+    <LinearLayout
+      android:id="@+id/menu"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@color/white"
+      android:orientation="vertical"
+      android:padding="@dimen/dot_double">
+
+      <Button
+        android:id="@+id/launch_rabbids_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Launch Rabbids Fragment"
+        tools:ignore="HardcodedText" />
+
+      <Button
+        android:id="@+id/launch_archaeology_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Launch Archaeology Fragment"
+        tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+  </FrameLayout>
+</layout>

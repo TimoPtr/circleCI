@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/pairing_nav_graph"
+  app:startDestination="@id/fragment_wake_your_brush">
+
+  <fragment
+    android:id="@+id/fragment_wake_your_brush"
+    android:name="com.kolibree.android.app.ui.pairing.wake_your_brush.WakeYourBrushFragment"
+    android:label="WakeYourBrush"
+    tools:layout="@layout/fragment_wake_your_brush">
+    <action
+      android:id="@+id/action_fragment_wake_your_brush_to_fragment_brush_found"
+      app:destination="@id/fragment_brush_found"
+      app:enterAnim="@anim/hum_fragment_enter"
+      app:exitAnim="@anim/hum_fragment_exit"
+      app:popEnterAnim="@anim/hum_fragment_pop_enter"
+      app:popExitAnim="@anim/hum_fragment_pop_exit" />
+    <action
+      android:id="@+id/action_fragment_wake_your_brush_to_enable_bluetooth"
+      app:destination="@id/fragment_enable_bluetooth"
+      app:enterAnim="@anim/hum_fragment_enter"
+      app:exitAnim="@anim/hum_fragment_exit"
+      app:popEnterAnim="@anim/hum_fragment_pop_enter"
+      app:popExitAnim="@anim/hum_fragment_pop_exit"
+      app:popUpTo="@id/fragment_wake_your_brush"
+      app:popUpToInclusive="true" />
+    <action
+      android:id="@+id/action_fragment_wake_your_brush_to_is_brush_ready"
+      app:destination="@id/fragment_is_brush_ready"
+      app:enterAnim="@anim/hum_fragment_enter"
+      app:exitAnim="@anim/hum_fragment_exit" />
+    <action
+      android:id="@+id/action_fragment_wake_your_brush_to_location"
+      app:destination="@id/fragment_location"
+      app:enterAnim="@anim/hum_fragment_enter"
+      app:exitAnim="@anim/hum_fragment_exit"
+      app:popEnterAnim="@anim/hum_fragment_pop_enter"
+      app:popExitAnim="@anim/hum_fragment_pop_exit"
+      app:popUpTo="@id/fragment_wake_your_brush"
+      app:popUpToInclusive="true" />
+  </fragment>
+
+  <fragment
+    android:id="@+id/fragment_brush_found"
+    android:name="com.kolibree.android.app.ui.pairing.brush_found.BrushFoundFragment"
+    android:label="BrushFound"
+    tools:layout="@layout/fragment_brush_found">
+    <action
+      android:id="@+id/action_fragment_brush_found_to_wake_your_brush"
+      app:destination="@id/fragment_wake_your_brush"
+      app:popEnterAnim="@anim/hum_fragment_pop_enter"
+      app:popExitAnim="@anim/hum_fragment_pop_exit"
+      app:popUpTo="@id/fragment_brush_found"
+      app:popUpToInclusive="true" />
+
+    <action
+      android:id="@+id/action_fragment_brush_found_to_fragment_sign_up"
+      app:destination="@id/fragment_sign_up"
+      app:enterAnim="@anim/hum_fragment_enter"
+      app:exitAnim="@anim/hum_fragment_exit"
+      app:popEnterAnim="@anim/hum_fragment_pop_enter"
+      app:popExitAnim="@anim/hum_fragment_pop_exit" />
+
+    <action
+      android:id="@+id/action_fragment_brush_found_to_fragment_model_mismatch"
+      app:destination="@id/fragment_model_mismatch"
+      app:enterAnim="@anim/hum_fragment_enter"
+      app:exitAnim="@anim/hum_fragment_exit"
+      app:popEnterAnim="@anim/hum_fragment_pop_enter"
+      app:popExitAnim="@anim/hum_fragment_pop_exit" />
+
+    <action
+      android:id="@+id/action_fragment_brush_found_to_scan_list"
+      app:destination="@id/fragment_scan_results"
+      app:enterAnim="@anim/hum_fragment_enter"
+      app:exitAnim="@anim/hum_fragment_exit"
+      app:popEnterAnim="@anim/hum_fragment_pop_enter"
+      app:popExitAnim="@anim/hum_fragment_pop_exit"
+      app:popUpTo="@id/fragment_wake_your_brush"
+      app:popUpToInclusive="false" />
+
+  </fragment>
+
+  <fragment
+    android:id="@+id/fragment_enable_bluetooth"
+    android:name="com.kolibree.android.app.ui.pairing.enablebluetooth.EnableBluetoothFragment"
+    android:label="EnableBluetooth"
+    tools:layout="@layout/fragment_enable_bluetooth">
+    <action
+      android:id="@+id/action_fragment_enable_bluetooth_to_wake_your_brush"
+      app:destination="@id/fragment_wake_your_brush"
+      app:enterAnim="@anim/hum_fragment_enter"
+      app:exitAnim="@anim/hum_fragment_exit"
+      app:popEnterAnim="@anim/hum_fragment_pop_enter"
+      app:popExitAnim="@anim/hum_fragment_pop_exit"
+      app:popUpTo="@id/fragment_enable_bluetooth"
+      app:popUpToInclusive="true" />
+  </fragment>
+
+  <fragment
+    android:id="@+id/fragment_location"
+    android:name="com.kolibree.android.app.ui.pairing.location.LocationFragment"
+    android:label="Location"
+    tools:layout="@layout/fragment_location">
+    <action
+      android:id="@+id/action_fragment_location_to_wake_your_brush"
+      app:destination="@id/fragment_wake_your_brush"
+      app:enterAnim="@anim/hum_fragment_enter"
+      app:exitAnim="@anim/hum_fragment_exit"
+      app:popEnterAnim="@anim/hum_fragment_pop_enter"
+      app:popExitAnim="@anim/hum_fragment_pop_exit"
+      app:popUpTo="@id/fragment_location"
+      app:popUpToInclusive="true" />
+  </fragment>
+
+  <fragment
+    android:id="@+id/fragment_is_brush_ready"
+    android:name="com.kolibree.android.app.ui.pairing.is_brush_ready.IsBrushReadyFragment"
+    android:label="IsBrushReady"
+    tools:layout="@layout/fragment_is_brush_ready">
+    <action
+      android:id="@+id/action_fragment_is_brush_ready_to_wake_your_brush"
+      app:destination="@id/fragment_wake_your_brush"
+      app:enterAnim="@anim/hum_fragment_enter"
+      app:exitAnim="@anim/hum_fragment_exit"
+      app:popEnterAnim="@anim/hum_fragment_pop_enter"
+      app:popExitAnim="@anim/hum_fragment_pop_exit"
+      app:popUpTo="@id/fragment_wake_your_brush"
+      app:popUpToInclusive="true" />
+  </fragment>
+
+  <fragment
+    android:id="@+id/fragment_model_mismatch"
+    android:name="com.kolibree.android.app.ui.pairing.model_mismatch.ModelMismatchFragment"
+    android:label="ModelMismatch"
+    tools:layout="@layout/fragment_model_mismatch">
+    <action
+      android:id="@+id/action_fragment_model_mismatch_to_fragment_sign_up"
+      app:destination="@id/fragment_sign_up"
+      app:enterAnim="@anim/hum_fragment_enter"
+      app:exitAnim="@anim/hum_fragment_exit"
+      app:popEnterAnim="@anim/hum_fragment_pop_enter"
+      app:popExitAnim="@anim/hum_fragment_pop_exit" />
+  </fragment>
+
+  <fragment
+    android:id="@+id/fragment_scan_results"
+    android:name="com.kolibree.android.app.ui.pairing.list.ScanToothbrushListFragment"
+    android:label="ToothbrushList"
+    tools:layout="@layout/fragment_scan_toothbrush_list">
+
+    <action
+      android:id="@+id/action_scan_list_to_fragment_sign_up"
+      app:destination="@id/fragment_sign_up"
+      app:enterAnim="@anim/hum_fragment_enter"
+      app:exitAnim="@anim/hum_fragment_exit"
+      app:popEnterAnim="@anim/hum_fragment_pop_enter"
+      app:popExitAnim="@anim/hum_fragment_pop_exit" />
+
+    <action
+      android:id="@+id/action_scan_list_to_fragment_model_mismatch"
+      app:destination="@id/fragment_model_mismatch"
+      app:enterAnim="@anim/hum_fragment_enter"
+      app:exitAnim="@anim/hum_fragment_exit"
+      app:popEnterAnim="@anim/hum_fragment_pop_enter"
+      app:popExitAnim="@anim/hum_fragment_pop_exit" />
+
+    <action
+      android:id="@+id/action_scan_list_to_wake_your_brush"
+      app:destination="@id/fragment_wake_your_brush"
+      app:popEnterAnim="@anim/hum_fragment_pop_enter"
+      app:popExitAnim="@anim/hum_fragment_pop_exit"
+      app:popUpTo="@id/fragment_scan_results"
+      app:popUpToInclusive="true" />
+    <action
+      android:id="@+id/action_scan_list_to_enable_bluetooth"
+      app:destination="@id/fragment_enable_bluetooth"
+      app:enterAnim="@anim/hum_fragment_enter"
+      app:exitAnim="@anim/hum_fragment_exit"
+      app:popEnterAnim="@anim/hum_fragment_pop_enter"
+      app:popExitAnim="@anim/hum_fragment_pop_exit" />
+    <action
+      android:id="@+id/action_scan_list_to_location"
+      app:destination="@id/fragment_location"
+      app:enterAnim="@anim/hum_fragment_enter"
+      app:exitAnim="@anim/hum_fragment_exit"
+      app:popEnterAnim="@anim/hum_fragment_pop_enter"
+      app:popExitAnim="@anim/hum_fragment_pop_exit" />
+  </fragment>
+
+</navigation>

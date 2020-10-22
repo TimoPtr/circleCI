@@ -1,0 +1,44 @@
+### Android ###
+# Built application files
+/build
+*.apk
+*.ap_
+*/build
+*/target
+
+# Files for the Dalvik VM
+*.dex
+
+# Java class files
+*.class
+
+#Log files
+*.log
+
+# Generated files
+bin/
+gen/
+!LegacyUnityGameSDK/src/main/assets/bin
+
+*.iml
+.gradle
+/local.properties
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+.idea/caches/build_file_checksums.ser
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+/release
+/local_release
+CHANGELOG.html
+release*.tar
+android-sdk-demo-app/
+maven_local/
+
+*.orig
+
+# Android Studio captures folder
+captures/

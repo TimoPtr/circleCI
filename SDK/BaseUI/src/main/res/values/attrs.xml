@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+<resources>
+  <declare-styleable name="CombinedChart">
+    <attr name="doubleTapToZoomEnabled" format="boolean"/>
+
+    <attr name="description" format="string|reference"/>
+
+    <attr name="legendEnabled" format="boolean"/>
+
+    <attr name="xAxisPosition" format="enum">
+      <!-- check com.github.mikephil.charting.components.XAxisPosition -->
+      <enum name="TOP" value="0"/>
+      <enum name="BOTTOM" value="1"/>
+      <enum name="BOTH_SIDED" value="2"/>
+      <enum name="TOP_INSIDE" value="3"/>
+      <enum name="BOTTOM_INSIDE" value="4"/>
+    </attr>
+
+    <!-- Axis enabled -->
+    <attr name="xAxisEnabled" format="boolean"/>
+    <attr name="axisLeftEnabled" format="boolean"/>
+    <attr name="axisRightEnabled" format="boolean"/>
+
+    <!-- Draw Axis line -->
+    <attr name="xAxisDrawAxisLine" format="boolean"/>
+    <attr name="axisLeftDrawAxisLine" format="boolean"/>
+    <attr name="axisRightDrawAxisLine" format="boolean"/>
+
+    <!-- Draw gridLines -->
+    <attr name="xAxisDrawGridLines" format="boolean"/>
+    <attr name="axisLeftDrawGridLines" format="boolean"/>
+    <attr name="axisRightDrawGridLines" format="boolean"/>
+
+    <!-- Grid color -->
+    <attr name="xAxisGridColor" format="color|reference"/>
+    <attr name="axisLeftGridColor" format="color|reference"/>
+    <attr name="axisRightGridColor" format="color|reference"/>
+
+    <!-- Granularity -->
+    <attr name="xAxisGranularity" format="float"/>
+    <attr name="axisLeftGranularity" format="float"/>
+    <attr name="axisRightGranularity" format="float"/>
+
+    <!-- Label count -->
+    <attr name="xAxisLabelCount" format="integer"/>
+    <attr name="axisLeftLabelCount" format="integer"/>
+    <attr name="axisRightLabelCount" format="integer"/>
+
+    <!-- Axis Minimum -->
+    <attr name="xAxisMinimum" format="float"/>
+    <attr name="axisLeftMinimum" format="float"/>
+    <attr name="axisRightMinimum" format="float"/>
+
+    <!-- Axis Maximum -->
+    <attr name="xAxisMaximum" format="float"/>
+    <attr name="axisLeftMaximum" format="float"/>
+    <attr name="axisRightMaximum" format="float"/>
+
+  </declare-styleable>
+</resources>

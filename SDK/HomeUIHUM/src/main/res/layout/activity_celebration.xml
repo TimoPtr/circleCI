@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  tools:context="com.kolibree.android.app.ui.celebration.EarnPointsCelebrationActivity">
+
+  <data>
+
+    <variable
+      name="viewModel"
+      type="com.kolibree.android.app.ui.celebration.EarnPointsCelebrationViewModel" />
+
+  </data>
+
+  <FrameLayout
+    android:id="@+id/earn_points_celebration"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.kolibree.android.app.ui.common.NonSwipeableViewPager
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      app:currentPositionSmooth="@{viewModel.selectedIndex}"
+      app:itemBinding="@{viewModel.itemBinding()}"
+      app:items="@{viewModel.items}" />
+
+    <!-- Just for preview -->
+    <include
+      layout="@layout/item_celebration"
+      android:visibility="gone"
+      tools:visibility="visible" />
+
+  </FrameLayout>
+
+</layout>

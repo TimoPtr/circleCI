@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2019 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<resources>
+  <color name="brush_start_preview_background">#EFEFEF</color>
+  <color name="confirmation_background">#f7f8ff</color>
+  <color name="background_black_transparent">#740E0E0E</color>
+</resources>

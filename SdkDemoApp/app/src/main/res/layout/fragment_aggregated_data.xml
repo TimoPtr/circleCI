@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <androidx.cardview.widget.CardView style="@style/FeatureCardView">
+
+      <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <TextView
+          android:id="@+id/title_day"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/day"
+          app:layout_constraintLeft_toLeftOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+          android:id="@+id/day_button"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:text="@string/select_a_day"
+          app:layout_constraintTop_toBottomOf="@id/title_day" />
+
+        <TextView
+          android:id="@+id/title_days"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:text="@string/days"
+          app:layout_constraintLeft_toLeftOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/day_button" />
+
+        <Button
+          android:id="@+id/add_date_button"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:text="@string/add_a_day"
+          app:layout_constraintLeft_toLeftOf="@id/day_button"
+          app:layout_constraintTop_toBottomOf="@id/title_days" />
+
+        <TextView
+          android:id="@+id/selected_days"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="5dp"
+          android:minHeight="60dp"
+          android:text="@string/selected_days"
+          app:layout_constraintLeft_toRightOf="@id/add_date_button"
+          app:layout_constraintRight_toLeftOf="@id/date_confirm_button"
+          app:layout_constraintTop_toTopOf="@id/add_date_button" />
+
+        <Button
+          android:id="@+id/date_confirm_button"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:text="@string/confirm"
+          app:layout_constraintRight_toRightOf="parent"
+          app:layout_constraintTop_toTopOf="@id/add_date_button" />
+
+
+        <TextView
+          android:id="@+id/title_weeks"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:text="@string/weeks"
+          app:layout_constraintLeft_toLeftOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/selected_days" />
+
+        <Button
+          android:id="@+id/add_week_button"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:text="@string/add_a_week"
+          app:layout_constraintLeft_toLeftOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/title_weeks" />
+
+        <TextView
+          android:id="@+id/selected_weeks"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="5dp"
+          android:minHeight="60dp"
+          android:text="@string/selected_weeks"
+          app:layout_constraintLeft_toRightOf="@id/add_week_button"
+          app:layout_constraintRight_toLeftOf="@id/weeks_confirm_button"
+          app:layout_constraintTop_toTopOf="@id/add_week_button" />
+
+        <Button
+          android:id="@+id/weeks_confirm_button"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:text="@string/confirm"
+          app:layout_constraintRight_toRightOf="parent"
+          app:layout_constraintTop_toTopOf="@id/add_week_button" />
+
+
+        <TextView
+          android:id="@+id/title_month"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:text="@string/month"
+          app:layout_constraintLeft_toLeftOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/selected_weeks" />
+
+        <Button
+          android:id="@+id/month_button"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:text="@string/select_a_month"
+          app:layout_constraintLeft_toLeftOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/title_month" />
+
+
+        <TextView
+          android:id="@+id/title_months"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:text="@string/months"
+          app:layout_constraintLeft_toLeftOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/month_button" />
+
+        <Button
+          android:id="@+id/add_month_button"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:text="@string/add_a_month"
+          app:layout_constraintLeft_toLeftOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/title_months" />
+
+        <TextView
+          android:id="@+id/selected_months"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="5dp"
+          android:minHeight="60dp"
+          android:text="@string/selected_months"
+          app:layout_constraintLeft_toRightOf="@id/add_month_button"
+          app:layout_constraintRight_toLeftOf="@id/months_confirm_button"
+          app:layout_constraintTop_toTopOf="@id/add_month_button" />
+
+        <Button
+          android:id="@+id/months_confirm_button"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:text="@string/confirm"
+          app:layout_constraintRight_toRightOf="parent"
+          app:layout_constraintTop_toTopOf="@id/add_month_button" />
+
+        <TextView
+          android:id="@+id/title_period"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:text="@string/period"
+          app:layout_constraintLeft_toLeftOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/selected_months" />
+
+        <Button
+          android:id="@+id/period_start_button"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:text="@string/start_date"
+          app:layout_constraintLeft_toLeftOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/title_period" />
+
+        <Button
+          android:id="@+id/period_end_button"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:text="@string/end_date"
+          app:layout_constraintLeft_toRightOf="@id/period_start_button"
+          app:layout_constraintTop_toBottomOf="@id/title_period" />
+
+        <Button
+          android:id="@+id/period_confirm_button"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:text="@string/confirm"
+          app:layout_constraintRight_toRightOf="parent"
+          app:layout_constraintTop_toTopOf="@id/period_end_button" />
+      </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+      android:id="@+id/card_view"
+      style="@style/FeatureCardView"
+      android:layout_marginTop="30dp">
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+          android:id="@+id/data_brushing_between_title"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="@string/data_brushing_between_title"
+          android:textStyle="bold" />
+
+        <TextView
+          android:id="@+id/data_brushing_between_begin"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="20dp" />
+
+        <TextView
+          android:id="@+id/data_brushing_between_end"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="20dp" />
+
+        <Button
+          android:id="@+id/data_brushing_between_button"
+          android:layout_width="@dimen/round_button_width"
+          android:layout_height="@dimen/round_button_height"
+          android:layout_gravity="center_horizontal"
+          android:layout_marginTop="30dp"
+          android:background="@drawable/bg_primary_color"
+          android:elevation="1dp"
+          android:text="@string/data_brushing_between_button"
+          android:textColor="@android:color/white" />
+
+        <TextView
+          android:id="@+id/data_brushing_between_result"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="20dp"
+          android:visibility="gone" />
+
+      </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+  </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
+
+

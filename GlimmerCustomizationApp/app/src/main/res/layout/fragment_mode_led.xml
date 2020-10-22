@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout>
+
+  <data>
+
+    <variable
+      name="viewModel"
+      type="com.kolibree.android.glimmer.tweaker.led.mode.ModeLedViewModel" />
+
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/dot_double"
+    android:paddingTop="@dimen/dot_double"
+    android:paddingEnd="@dimen/dot_double">
+
+    <TextView
+      android:id="@+id/mode_led_hint"
+      style="@style/SettingsHint"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/match_constraints"
+      android:paddingBottom="@dimen/dot_double"
+      android:text="@string/mode_led_hint"
+      android:textColor="@color/colorAccent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+      android:id="@+id/mode_led_apply"
+      style="?android:attr/buttonBarButtonStyle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:onClick="@{() -> viewModel.onPlayButtonClick()}"
+      android:text="@string/play_mode_leds_pattern"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/match_constraints"
+      android:orientation="vertical"
+      app:layout_constraintBottom_toTopOf="@id/mode_led_apply"
+      app:layout_constraintTop_toBottomOf="@id/mode_led_hint">
+
+      <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dot">
+
+        <com.kolibree.android.glimmer.utils.NumberPicker
+          android:id="@+id/mode_led_pwm1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:enabled="@{true}"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:max="@{100}"
+          app:min="@{0}"
+          app:value="@{viewModel.pwmLed1LiveData}" />
+
+        <TextView
+          android:id="@+id/mode_led_pwm_hint1"
+          style="@style/SettingsHint"
+          android:layout_width="@dimen/match_constraints"
+          android:layout_height="@dimen/match_constraints"
+          android:text="@string/led_1_pwm"
+          app:layout_constraintBottom_toBottomOf="@id/mode_led_pwm1"
+          app:layout_constraintEnd_toStartOf="@id/mode_led_pwm1"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="@id/mode_led_pwm1" />
+
+      </androidx.constraintlayout.widget.ConstraintLayout>
+
+      <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dot">
+
+        <com.kolibree.android.glimmer.utils.NumberPicker
+          android:id="@+id/mode_led_pwm2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:enabled="@{true}"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:max="@{100}"
+          app:min="@{0}"
+          app:value="@{viewModel.pwmLed2LiveData}" />
+
+        <TextView
+          android:id="@+id/mode_led_pwm_hint2"
+          style="@style/SettingsHint"
+          android:layout_width="@dimen/match_constraints"
+          android:layout_height="@dimen/match_constraints"
+          android:text="@string/led_2_pwm"
+          app:layout_constraintBottom_toBottomOf="@id/mode_led_pwm2"
+          app:layout_constraintEnd_toStartOf="@id/mode_led_pwm2"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="@id/mode_led_pwm2" />
+
+      </androidx.constraintlayout.widget.ConstraintLayout>
+
+      <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dot">
+
+        <com.kolibree.android.glimmer.utils.NumberPicker
+          android:id="@+id/mode_led_pwm3"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:enabled="@{true}"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:max="@{100}"
+          app:min="@{0}"
+          app:value="@{viewModel.pwmLed3LiveData}" />
+
+        <TextView
+          android:id="@+id/mode_led_pwm_hint3"
+          style="@style/SettingsHint"
+          android:layout_width="@dimen/match_constraints"
+          android:layout_height="@dimen/match_constraints"
+          android:text="@string/led_3_pwm"
+          app:layout_constraintBottom_toBottomOf="@id/mode_led_pwm3"
+          app:layout_constraintEnd_toStartOf="@id/mode_led_pwm3"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="@id/mode_led_pwm3" />
+
+      </androidx.constraintlayout.widget.ConstraintLayout>
+
+      <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dot">
+
+        <com.kolibree.android.glimmer.utils.NumberPicker
+          android:id="@+id/mode_led_pwm4"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:enabled="@{true}"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:max="@{100}"
+          app:min="@{0}"
+          app:value="@{viewModel.pwmLed4LiveData}" />
+
+        <TextView
+          android:id="@+id/mode_led_pwm_hint4"
+          style="@style/SettingsHint"
+          android:layout_width="@dimen/match_constraints"
+          android:layout_height="@dimen/match_constraints"
+          android:text="@string/led_4_pwm"
+          app:layout_constraintBottom_toBottomOf="@id/mode_led_pwm4"
+          app:layout_constraintEnd_toStartOf="@id/mode_led_pwm4"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="@id/mode_led_pwm4" />
+
+      </androidx.constraintlayout.widget.ConstraintLayout>
+
+      <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dot">
+
+        <com.kolibree.android.glimmer.utils.NumberPicker
+          android:id="@+id/mode_led_pwm5"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:enabled="@{true}"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:max="@{100}"
+          app:min="@{0}"
+          app:value="@{viewModel.pwmLed5LiveData}" />
+
+        <TextView
+          android:id="@+id/mode_led_pwm_hint5"
+          style="@style/SettingsHint"
+          android:layout_width="@dimen/match_constraints"
+          android:layout_height="@dimen/match_constraints"
+          android:text="@string/led_5_pwm"
+          app:layout_constraintBottom_toBottomOf="@id/mode_led_pwm5"
+          app:layout_constraintEnd_toStartOf="@id/mode_led_pwm5"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="@id/mode_led_pwm5" />
+
+      </androidx.constraintlayout.widget.ConstraintLayout>
+
+      <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dot">
+
+        <com.kolibree.android.glimmer.utils.NumberPicker
+          android:id="@+id/mode_led_duration"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:enabled="@{true}"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:max="@{65535}"
+          app:min="@{0}"
+          app:value="@{viewModel.durationLiveData}" />
+
+        <TextView
+          android:id="@+id/mode_led_duration_hint2"
+          style="@style/SettingsHint"
+          android:layout_width="@dimen/match_constraints"
+          android:layout_height="@dimen/match_constraints"
+          android:text="@string/duration_ms"
+          app:layout_constraintBottom_toBottomOf="@id/mode_led_duration"
+          app:layout_constraintEnd_toStartOf="@id/mode_led_duration"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="@id/mode_led_duration" />
+
+      </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
+

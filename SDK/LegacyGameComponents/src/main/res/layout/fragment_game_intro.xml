@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2019 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <data>
+
+    <variable
+      name="viewModel"
+      type="com.kolibree.android.app.mvi.intro.GameIntroViewModel" />
+
+    <variable
+      name="resourcesProvider"
+      type="com.kolibree.android.app.mvi.intro.GameIntroResourceProvider" />
+
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+      android:id="@+id/header"
+      style="@style/Text.GameIntro.Header"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_marginStart="@dimen/huge_margin"
+      android:layout_marginTop="@dimen/xhuge_margin_plus"
+      android:layout_marginEnd="@dimen/huge_margin"
+      android:gravity="bottom"
+      android:lines="1"
+      android:text="@{resourcesProvider.headerTextResId}"
+      app:autoSizeMaxTextSize="@dimen/xxhuge_text"
+      app:autoSizeMinTextSize="@dimen/big_text"
+      app:autoSizeStepGranularity="@dimen/auto_size_step"
+      app:autoSizeTextType="uniform"
+      app:layout_constraintBottom_toTopOf="@id/body"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHeight_percent="0.1"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_chainStyle="spread_inside"
+      tools:text="Generic header" />
+
+    <TextView
+      android:id="@+id/body"
+      style="@style/Text.GameIntro.Body"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_marginStart="@dimen/huge_margin"
+      android:layout_marginTop="@dimen/xhuge_margin_plus"
+      android:layout_marginEnd="@dimen/huge_margin"
+      android:text="@{resourcesProvider.bodyTextResId}"
+      app:autoSizeMaxTextSize="@dimen/big_text"
+      app:autoSizeMinTextSize="@dimen/average_text"
+      app:autoSizeStepGranularity="@dimen/auto_size_step"
+      app:autoSizeTextType="uniform"
+      app:layout_constraintBottom_toTopOf="@id/logo"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHeight_percent="0.2"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/header"
+      tools:text="Generic game body text" />
+
+    <ImageView
+      android:id="@+id/logo"
+      animatedGif="@{resourcesProvider.animatedGifResId}"
+      gifInCircle="@{true}"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:layout_marginTop="@dimen/xhuge_margin_plus"
+      android:layout_marginBottom="@dimen/xhuge_margin_plus"
+      android:minHeight="@dimen/min_touch_zone"
+      app:layout_constraintBottom_toTopOf="@+id/start_game_button"
+      app:layout_constraintDimensionRatio="1:1"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHeight_percent="0.3"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/body"
+      tools:ignore="ContentDescription"
+      tools:src="@drawable/activity_test_angles" />
+
+    <Button
+      android:id="@+id/start_game_button"
+      style="@style/Button.GameIntro.White"
+      android:layout_width="0dp"
+      android:layout_height="@dimen/round_button_height"
+      android:layout_marginStart="@dimen/huge_margin"
+      android:layout_marginEnd="@dimen/huge_margin"
+      android:layout_marginBottom="@dimen/huge_margin"
+      android:onClick="@{(v) -> viewModel.startButtonClick()}"
+      android:text="@{resourcesProvider.startButtonTextResId()}"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      tools:text="Start Game" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
+

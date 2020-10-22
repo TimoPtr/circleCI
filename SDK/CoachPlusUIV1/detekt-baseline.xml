@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <Blacklist></Blacklist>
+  <Whitelist>
+    <ID>ComplexMethod:FeedBackMessageResources.kt$FeedBackMessageResources.Companion$from</ID>
+    <ID>ComplexMethod:StartMessageTypeProvider.kt$StartMessageTypeProvider$modelResource</ID>
+    <ID>LongMethod:V1ZoneHintProvider.kt$V1ZoneHintProvider$mapZoneToHintRes</ID>
+  </Whitelist>
+</SmellBaseline>

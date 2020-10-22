@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <data>
+
+    <import type="android.view.View" />
+
+    <variable
+      name="item"
+      type="com.kolibree.android.headspace.mindful.ui.card.HeadspaceMindfulMomentCardBindingModel" />
+
+    <variable
+      name="interaction"
+      type="com.kolibree.android.headspace.mindful.ui.card.HeadspaceMindfulMomentCardInteraction" />
+
+    <import type="com.kolibree.android.headspace.R" />
+
+  </data>
+
+  <com.google.android.material.card.MaterialCardView
+    android:id="@+id/headspace_mindful_moment_card"
+    style="@style/Widget.CardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dot_double"
+    android:clickable="true"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:focusable="true"
+    android:onClick="@{(v) -> interaction.onClick()}">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@color/headspace_yellow"
+      android:minHeight="@dimen/min_touch_zone">
+
+      <ImageView
+        android:layout_width="@dimen/match_constraints"
+        android:layout_height="@dimen/match_constraints"
+        android:layout_marginBottom="@dimen/dot_quin"
+        android:scaleType="fitStart"
+        android:src="@drawable/headspace_mindful_moment_smile_left"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.5" />
+
+      <ImageView
+        android:layout_width="@dimen/match_constraints"
+        android:layout_height="@dimen/match_constraints"
+        android:layout_marginTop="@dimen/dot_quad"
+        android:scaleType="fitEnd"
+        android:src="@drawable/headspace_mindful_moment_smile_right"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.33" />
+
+      <TextView
+        android:id="@+id/headspace_mindful_moment_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dot_trip"
+        android:text="@string/headspace_mindful_moment_card_title"
+        android:textAppearance="?textAppearanceHeadline5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+      <TextView
+        android:id="@+id/headspace_mindful_moment_check_it"
+        style="@style/Widget.TextView.CheckItOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dot_double"
+        android:text="@string/headspace_mindful_moment_card_check_it_out"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headspace_mindful_moment_title" />
+
+      <TextView
+        android:id="@+id/headspace_mindful_moment_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dot_double"
+        android:gravity="center_horizontal"
+        android:text="@string/headspace_mindful_moment_card_brought_by"
+        android:textAppearance="?textAppearanceOverline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headspace_mindful_moment_check_it" />
+
+      <ImageView
+        android:id="@+id/headspace_trial_card_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dot"
+        android:layout_marginBottom="@dimen/dot_trip"
+        android:src="@drawable/headspace_logo_transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headspace_mindful_moment_subtitle" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+  </com.google.android.material.card.MaterialCardView>
+</layout>

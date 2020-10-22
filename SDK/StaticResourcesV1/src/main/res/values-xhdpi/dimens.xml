@@ -1,0 +1,20 @@
+<resources>
+  <!-- Common -->
+  <dimen name="kolibree_edittext_margin">16dp</dimen>
+
+  <!-- Welcome screen -->
+  <dimen name="signup_terms_top_margin">70dp</dimen>
+  <dimen name="signup_facebook_top_margin">50dp</dimen>
+
+  <!-- About Screen -->
+  <dimen name="about_text_size">19sp</dimen>
+
+  <!-- CardGame -->
+  <dimen name="card_margin">16dp</dimen>
+  <dimen name="card_game_margin_start_end">60dp</dimen>
+  <dimen name="card_game_margin_between_card">20dp</dimen>
+
+  <!--DASHBOARD-->
+  <dimen name="dashboard_text_size">@dimen/xxbig_text</dimen>
+  <dimen name="dashboard_chart_text_size">@dimen/big_text</dimen>
+</resources>

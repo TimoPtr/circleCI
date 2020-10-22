@@ -1,0 +1,211 @@
+/*
+ * Copyright (c) 2020 Kolibree. All rights reserved
+ *
+ * Copying this file via any medium without the prior written consent of Kolibree is strictly
+ * prohibited
+ *
+ * Proprietary and confidential
+ */
+
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+apply from: '../../SDK/buildscripts/spotless.gradle'
+
+android {
+    compileSdkVersion versions.compileSdk
+
+    defaultConfig {
+        applicationId "com.kolibree.android.glimmer"
+        minSdkVersion versions.minSdk
+        targetSdkVersion versions.targetSdk
+        versionCode 1
+        versionName versions.name
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro', '../SDK/Databinding/proguard-rules.pro'
+        }
+    }
+
+    signingConfigs {
+        release {
+            if (project.hasProperty('storeFilePath')) {
+                storeFile file(project["storeFilePath"])
+                keyAlias project["alias"]
+                storePassword project["aliasPass"]
+                keyPassword project["keyPass"]
+            }
+        }
+
+        debug {
+            storeFile file("${rootProject.rootDir}/../keystores/debug.keystore")
+            keyAlias 'androiddebugkey'
+            storePassword 'android'
+            keyPassword 'android'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+
+            lintOptions {
+                abortOnError true
+                warningsAsErrors true // Don't change this ;)
+            }
+
+            signingConfig signingConfigs.release
+
+            manifestPlaceholders = [appNameSuffix: ""]
+            buildConfigField "String", "VERSION_NAME_SUFFIX", "\"" + versionNameSuffix + "\""
+        }
+
+        debug {
+            debuggable true
+            testCoverageEnabled false
+            minifyEnabled false
+            shrinkResources false
+
+            applicationIdSuffix ".debug"
+
+            versionNameSuffix '-SNAPSHOT'
+            manifestPlaceholders = [appNameSuffix: " Debug"]
+            buildConfigField "String", "VERSION_NAME_SUFFIX", "\"" + versionNameSuffix + "\""
+        }
+    }
+
+    sourceSets {
+        main.java.srcDirs += "src/main/kotlin"
+        test.java.srcDirs += "src/test/kotlin"
+    }
+
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    packagingOptions {
+        exclude 'META-INF/ASL2.0'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/rxjava.properties'
+        exclude 'META-INF/atomicfu.kotlin_module'
+    }
+
+    dataBinding {
+        enabled = true
+    }
+
+    androidExtensions {
+        experimental = true
+    }
+}
+
+dependencies {
+
+    implementation libraries.kotlinRuntime
+    implementation libraries.ktxCore
+    implementation libraries.lifecycleRuntime
+    implementation libraries.lifecycleExtensions
+    implementation libraries.supportAppCompat
+    implementation libraries.supportRecyclerView
+    implementation libraries.supportViewPager2
+    implementation libraries.supportDesign
+    implementation libraries.supportConstraintLayout
+
+    // Kolibree SDK
+    implementation "com.kolibree.android:base-ui:$versions.name"
+    implementation "com.kolibree.android:features:$versions.name"
+    implementation "com.kolibree.android:commons:$versions.name"
+    implementation "com.kolibree.android:toothbrush-sdk:$versions.name"
+    implementation "com.kolibree.android:toothbrush-update-logic:$versions.name"
+    implementation "com.kolibree.android:toothbrush-update-ui-v1:$versions.name"
+    implementation "com.kolibree.android:web-service-sdk:$versions.name"
+    implementation "com.kolibree.android:crypto:$versions.name"
+    implementation "com.kolibree.android:pairing:$versions.name"
+    implementation "com.kolibree.android:synchronizator:$versions.name"
+    implementation "com.kolibree.android:auditor:$versions.name"
+    implementation "com.kolibree.android:databinding:$versions.name"
+    implementation "com.kolibree.android:stats-offline:$versions.name"
+    implementation "com.kolibree.android:processed-brushings-kml:$versions.name"
+    implementation "com.kolibree.android:game:$versions.name"
+    implementation "com.kolibree.android:translations-support:$versions.name"
+
+    // Data binding
+    implementation libraries.bindingCollections
+    implementation libraries.bindingCollectionsRV
+
+    // Dagger
+    implementation libraries.dagger
+    kapt libraries.daggerCompiler
+    kaptAndroidTest libraries.daggerCompiler
+    implementation libraries.daggerAndroid
+    implementation libraries.daggerAndroidSupport
+    kapt libraries.daggerAndroidProcessor
+
+    // Navigation
+    implementation libraries.navigationFragment
+    implementation libraries.navigationUI
+
+    // ReactiveX
+    implementation libraries.rxJava
+    implementation libraries.rxAndroid
+
+    // Time
+    implementation libraries.threetenAbp
+
+    // View injection (otherwise BaseMVIActivity crashes)
+    implementation(libraries.butterKnife) {
+        exclude group: 'com.android.support'
+    }
+    kapt libraries.butterKnifeCompiler
+
+    // Horizontal number picker
+    implementation 'com.github.travijuu:numberpicker:1.0.7'
+
+    // Testing
+    testImplementation libraries.junit
+    testImplementation "com.kolibree.android:testing-unit-base:$versions.name"
+    testImplementation "com.kolibree.android:testing-builders:$versions.name"
+}
+
+tasks.withType(JavaCompile).configureEach {
+    //enable incremental compilation
+    options.incremental = true
+}
+
+tasks.withType(Test).configureEach {
+    maxParallelForks = Runtime.runtime.availableProcessors().intdiv(2) ?: 1
+    forkEvery = 100
+}
+
+configurations.all {
+    resolutionStrategy {
+        forcedModules = [
+                "org.jetbrains.kotlin:kotlin-stdlib:$versions.kotlin",
+                "org.jetbrains.kotlin:kotlin-reflect:$versions.kotlin",
+                libraries.fullThreetenBp,
+                libraries.okHttp,
+                libraries.rxJava
+        ]
+    }
+}
+
+apply from: '../../SDK/buildscripts/detekt/detekt.gradle'
+apply from: '../../SDK/buildscripts/lint/lint.gradle'
+apply from: '../../SDK/buildscripts/kapt.gradle'
+apply from: '../../SDK/buildscripts/ndk.gradle'
+apply from: '../../SDK/buildscripts/marathon.gradle'
+

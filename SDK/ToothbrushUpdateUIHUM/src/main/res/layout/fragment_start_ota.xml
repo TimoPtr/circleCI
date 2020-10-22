@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <data>
+
+    <import type="android.view.View" />
+
+    <import type="com.kolibree.android.extensions.ContextExtensionsKt" />
+
+    <import type="com.kolibree.android.app.ui.ota.R" />
+
+    <variable
+      name="viewModel"
+      type="com.kolibree.android.app.ui.ota.start.StartOtaViewModel" />
+
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/half_screen_guideline"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      app:layout_constraintGuide_percent="0.45" />
+
+    <View
+      android:id="@+id/top_section"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/match_constraints"
+      android:background="?backgroundColor"
+      app:layout_constrainedHeight="true"
+      app:layout_constraintBottom_toTopOf="@id/text_content_barrier"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="@dimen/match_constraints"
+      android:padding="@dimen/dot_double"
+      android:scaleType="centerInside"
+      android:src="@drawable/ic_start_ota"
+      app:layout_constraintBottom_toBottomOf="@id/top_section"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+      android:id="@+id/title"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_quad"
+      android:layout_marginTop="@dimen/dot_quad"
+      android:layout_marginEnd="@dimen/dot_quad"
+      android:text="@{@string/start_ota_title}"
+      android:textAppearance="?textAppearanceHeadline2"
+      app:layout_constraintBottom_toTopOf="@id/content"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/top_section"
+      app:layout_constraintVertical_bias="0.0"
+      app:layout_constraintVertical_chainStyle="packed"
+      app:textHighlight="@{@string/start_ota_title_highlight}"
+      app:textHighlightColor="@{ContextExtensionsKt.getColorFromAttr(context, R.attr.colorPrimary)}"
+      tools:text="Start the update" />
+
+    <androidx.constraintlayout.widget.Barrier
+      android:id="@+id/text_content_barrier"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:barrierDirection="top"
+      app:constraint_referenced_ids="title, half_screen_guideline" />
+
+    <TextView
+      android:id="@+id/content"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_quad"
+      android:layout_marginTop="@dimen/dot_double"
+      android:layout_marginEnd="@dimen/dot_quad"
+      android:text="@string/start_ota_content"
+      android:textAppearance="?textAppearanceBody1"
+      app:layout_constraintBottom_toTopOf="@id/subcontent1"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/title" />
+
+    <TextView
+      android:id="@+id/subcontent1"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_quad"
+      android:layout_marginTop="@dimen/dot_trip"
+      android:layout_marginEnd="@dimen/dot_quad"
+      android:text="@string/start_ota_subcontent1"
+      android:textAppearance="?textAppearanceBody2"
+      app:layout_constraintBottom_toTopOf="@id/subcontent2"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/content" />
+
+    <TextView
+      android:id="@+id/subcontent2"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_quad"
+      android:layout_marginTop="@dimen/dot"
+      android:layout_marginEnd="@dimen/dot_quad"
+      android:text="@string/start_ota_subcontent2"
+      android:textAppearance="?textAppearanceBody2"
+      app:layout_constraintBottom_toTopOf="@id/barrier"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/subcontent1" />
+
+    <TextView
+      android:id="@+id/subcontent3"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_quad"
+      android:layout_marginTop="@dimen/dot"
+      android:layout_marginEnd="@dimen/dot_quad"
+      android:layout_marginBottom="@dimen/dot_trip"
+      android:text="@string/start_ota_subcontent3"
+      android:textAppearance="?textAppearanceBody2"
+      android:visibility="@{viewModel.isRechargeableBrush ? View.VISIBLE : View.GONE}"
+      app:layout_constraintBottom_toTopOf="@id/upgrade_button"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/subcontent2" />
+
+    <View
+      android:id="@+id/minimum_space"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="@dimen/dot_trip"
+      android:visibility="@{viewModel.isRechargeableBrush ? View.GONE : View.VISIBLE}"
+      app:layout_constraintBottom_toTopOf="@id/upgrade_button"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/subcontent2" />
+
+    <androidx.constraintlayout.widget.Barrier
+      android:id="@+id/barrier"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:barrierDirection="top"
+      app:constraint_referenced_ids="minimum_space,subcontent3" />
+
+    <Button
+      android:id="@+id/upgrade_button"
+      style="?materialButtonStyle"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_quad"
+      android:layout_marginEnd="@dimen/dot_quad"
+      android:onClick="@{v -> viewModel.onUpgradeClick()}"
+      android:text="@string/start_ota_upgrade"
+      app:layout_constraintBottom_toTopOf="@id/cancel_button" />
+
+    <Button
+      android:id="@+id/cancel_button"
+      style="?materialButtonTextStyleTertiary"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal"
+      android:layout_marginStart="@dimen/dot_quad"
+      android:layout_marginTop="@dimen/dot"
+      android:layout_marginEnd="@dimen/dot_quad"
+      android:layout_marginBottom="@dimen/dot_trip"
+      android:onClick="@{v -> viewModel.onCancelClick()}"
+      android:text="@{viewModel.isMandatoryUpdate ? @string/start_ota_cancel_mandatory : @string/cancel}"
+      app:layout_constraintBottom_toBottomOf="parent" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+

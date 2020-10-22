@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <Blacklist></Blacklist>
+  <Whitelist>
+    <ID>LongMethod:ProfileFacade.kt$ProfileFacadeImpl$createProfile</ID>
+    <ID>LongMethod:ProfileFacade.kt$ProfileFacadeImpl$editProfile</ID>
+    <ID>LongMethod:ReassignSharedToothbrushHook.kt$ReassignSharedToothbrushHook$setConnectionsOwnerCompletable</ID>
+    <ID>LongMethod:ResetActiveProfileHook.kt$ResetActiveProfileHook$onProfileDeleted</ID>
+    <ID>MaxLineLength:FacadeModule.kt$ProfileDeletedHooksModule$@Binds @IntoSet abstract</ID>
+    <ID>TooManyFunctions:AccountFacade.kt$AccountFacade$AccountFacade</ID>
+  </Whitelist>
+</SmellBaseline>

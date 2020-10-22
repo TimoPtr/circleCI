@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+  android:shape="ring"
+  android:thickness="@dimen/dot"
+  android:useLevel="false">
+
+  <solid android:color="@color/porcelain" />
+
+</shape>

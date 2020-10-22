@@ -1,0 +1,763 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="5" by="lint 4.0.0" client="gradle" variant="debug" version="4.0.0">
+
+    <issue
+        id="RxLeakedSubscription"
+        message="No reference to the disposable is kept"
+        errorLine1="    Single.defer(() -> brushingRep.addBrushing(data, profile, accountInternal.getId()))"
+        errorLine2="    ^">
+        <location
+            file="src/main/java/com/kolibree/sdkws/core/KolibreeConnector.java"
+            line="167"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="RxLeakedSubscription"
+        message="No reference to the disposable is kept"
+        errorLine1="    changeProfilePictureSingle(profile, picturePath)"
+        errorLine2="    ^">
+        <location
+            file="src/main/java/com/kolibree/sdkws/core/KolibreeConnector.java"
+            line="494"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="RxLeakedSubscription"
+        message="No reference to the disposable is kept"
+        errorLine1="    profileRepository"
+        errorLine2="    ^">
+        <location
+            file="src/main/java/com/kolibree/sdkws/core/ProfileWrapper.java"
+            line="168"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="RxLeakedSubscription"
+        message="No reference to the disposable is kept"
+        errorLine1="    profileRepository"
+        errorLine2="    ^">
+        <location
+            file="src/main/java/com/kolibree/sdkws/core/ProfileWrapper.java"
+            line="186"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="CheckResult"
+        message="The result of `subscribe` is not used"
+        errorLine1="    Single.defer(() -> brushingRep.addBrushing(data, profile, accountInternal.getId()))"
+        errorLine2="    ^">
+        <location
+            file="src/main/java/com/kolibree/sdkws/core/KolibreeConnector.java"
+            line="167"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="CheckResult"
+        message="The result of `subscribe` is not used"
+        errorLine1="    changeProfilePictureSingle(profile, picturePath)"
+        errorLine2="    ^">
+        <location
+            file="src/main/java/com/kolibree/sdkws/core/KolibreeConnector.java"
+            line="494"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="CheckResult"
+        message="The result of `blockingGet` is not used"
+        errorLine1="        brushingsRepository.get().countBrushings(0).blockingGet()"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/sdkws/room/MigrateAccountsFacade.kt"
+            line="46"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="CheckResult"
+        message="The result of `subscribe` is not used"
+        errorLine1="    profileRepository"
+        errorLine2="    ^">
+        <location
+            file="src/main/java/com/kolibree/sdkws/core/ProfileWrapper.java"
+            line="168"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="CheckResult"
+        message="The result of `subscribe` is not used"
+        errorLine1="    profileRepository"
+        errorLine2="    ^">
+        <location
+            file="src/main/java/com/kolibree/sdkws/core/ProfileWrapper.java"
+            line="186"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="CheckResult"
+        message="The result of `blockingGet` is not used"
+        errorLine1="        kolibreeConnector.editProfile(data, localProfile).blockingGet();"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/sdkws/core/SynchronizerJobService.java"
+            line="442"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `String.format(Locale, ...)` instead"
+        errorLine1="    super(RequestMethod.PUT, String.format(Constants.SERVICE_CHANGE_PASSWORD, accountId));"
+        errorLine2="                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/sdkws/api/request/ChangePasswordRequest.java"
+            line="10"
+            column="30"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `toLowerCase(Locale)` instead. For strings meant to be internal use `Locale.ROOT`, otherwise `Locale.getDefault()`."
+        errorLine1="            country.toLowerCase()));"
+        errorLine2="                    ~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/sdkws/api/request/CheckUnderagedRequest.java"
+            line="20"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `String.format(Locale, ...)` instead"
+        errorLine1="        String.format(Constants.SERVICE_GET_GO_PIRATE_DATA, accountId, profileId));"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/sdkws/api/request/GetGoPirateDataRequest.java"
+            line="11"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `String.format(Locale, ...)` instead"
+        errorLine1="        String.format(Constants.SERVICE_GET_PRACTITIONERS, accountId, profileId));"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/sdkws/api/request/GetPractitionerRequest.java"
+            line="11"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `String.format(Locale, ...)` instead"
+        errorLine1="        String.format(Constants.SERVICE_UPDATE_GO_PIRATE_DATA, accountId, profileId));"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/sdkws/api/request/UpdateGoPirateRequest.java"
+            line="12"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="BinaryOperationInTimber"
+        message="Replace String concatenation with Timber&apos;s string formatting"
+        errorLine1="                        &quot;An error  occurred while synchronizing brushing (&quot; + localBrushing.dateTime +"
+        errorLine2="                        ^">
+        <location
+            file="src/main/java/com/kolibree/sdkws/brushing/persistence/repo/BrushingsRepositoryImpl.kt"
+            line="126"
+            column="25"/>
+    </issue>
+
+    <issue
+        id="BinaryOperationInTimber"
+        message="Replace String concatenation with Timber&apos;s string formatting"
+        errorLine1="            &quot;JSON error Brushing (&quot; + localBrushing.dateTime +"
+        errorLine2="            ^">
+        <location
+            file="src/main/java/com/kolibree/sdkws/brushing/persistence/repo/BrushingsRepositoryImpl.kt"
+            line="159"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="BinaryOperationInTimber"
+        message="Replace String concatenation with Timber&apos;s string formatting"
+        errorLine1="                  Timber.d(&quot;Successfully updated Go Pirate data for profile id &quot; + profile.getId());"
+        errorLine2="                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/sdkws/core/KolibreeConnector.java"
+            line="1465"
+            column="28"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="data class AccountData("
+        errorLine2="           ~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/sdkws/sms/data/AccountData.kt"
+            line="14"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public class AccountV3 {"
+        errorLine2="             ~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/sdkws/core/AccountV3.java"
+            line="7"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="class AlreadySavedBrushingException : Throwable(&quot;This brushing has already been added&quot;)"
+        errorLine2="      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/sdkws/exception/AlreadySavedBrushingException.kt"
+            line="3"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public interface ApiSDKUtils {"
+        errorLine2="                 ~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/sdkws/utils/ApiSDKUtils.java"
+            line="15"
+            column="18"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public final class AvatarResponse {"
+        errorLine2="                   ~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/sdkws/api/response/AvatarResponse.java"
+            line="8"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="data class BetaData(@SerializedName(&quot;beta&quot;) internal val beta: Boolean)"
+        errorLine2="           ~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/sdkws/data/request/BetaData.kt"
+            line="9"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public class ChangePasswordRequest extends Request {"
+        errorLine2="             ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/sdkws/api/request/ChangePasswordRequest.java"
+            line="8"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public class CheckAccountHasPasswordRequest extends Request {"
+        errorLine2="             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/sdkws/api/request/CheckAccountHasPasswordRequest.java"
+            line="13"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public class CheckGRUDataRequest extends Request {"
+        errorLine2="             ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/sdkws/api/request/CheckGRUDataRequest.java"
+            line="9"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public class CheckGRUDataResponse {"
+        errorLine2="             ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/sdkws/api/response/CheckGRUDataResponse.java"
+            line="7"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public class CheckUnderagedRequest extends Request {"
+        errorLine2="             ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/sdkws/api/request/CheckUnderagedRequest.java"
+            line="9"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="interface ConnectivityApiManager {"
+        errorLine2="          ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/sdkws/api/ConnectivityApiManager.kt"
+            line="5"
+            column="11"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public interface Constants {"
+        errorLine2="                 ~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/sdkws/Constants.java"
+            line="10"
+            column="18"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public class FacebookLoginRequest extends Request {"
+        errorLine2="             ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/sdkws/api/request/FacebookLoginRequest.java"
+            line="8"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public final class FirmwareUpdateResponse {"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/sdkws/api/response/FirmwareUpdateResponse.java"
+            line="7"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="interface ForceAppUpdateChecker {"
+        errorLine2="          ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/sdkws/core/ForceAppUpdateChecker.kt"
+            line="9"
+            column="11"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public final class GetAvroUploadUrlRequest extends Request {"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/sdkws/api/request/GetAvroUploadUrlRequest.java"
+            line="12"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public final class GetDefaultAvatarRequest extends Request {"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/sdkws/api/request/GetDefaultAvatarRequest.java"
+            line="7"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public final class GetGoPirateDataRequest extends Request {"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/sdkws/api/request/GetGoPirateDataRequest.java"
+            line="7"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public final class GetInstructionsRequest extends Request {"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/sdkws/api/request/GetInstructionsRequest.java"
+            line="12"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public final class GetPractitionerRequest extends Request {"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/sdkws/api/request/GetPractitionerRequest.java"
+            line="7"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public final class GetVideoUploadUrlRequest extends Request {"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/sdkws/api/request/GetVideoUploadUrlRequest.java"
+            line="16"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public interface GoPirateContract {"
+        errorLine2="                 ~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/sdkws/data/database/contract/GoPirateContract.java"
+            line="4"
+            column="18"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public class InstructionsResponse {"
+        errorLine2="             ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/sdkws/api/response/InstructionsResponse.java"
+            line="7"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public final class IntegerSyncableField extends SyncableField&lt;Integer> {"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/sdkws/core/sync/IntegerSyncableField.java"
+            line="4"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public interface JSONModel {"
+        errorLine2="                 ~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/sdkws/data/JSONModel.java"
+            line="7"
+            column="18"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public final class LoginRequest extends Request {"
+        errorLine2="                   ~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/sdkws/api/request/LoginRequest.java"
+            line="9"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public class MagicLinkLoginRequest extends Request {"
+        errorLine2="             ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/sdkws/api/request/MagicLinkLoginRequest.java"
+            line="10"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public class MagicLinkRequest extends Request {"
+        errorLine2="             ~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/sdkws/api/request/MagicLinkRequest.java"
+            line="9"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="class MarkAccountAsBetaFeatureToggleCompanion @Inject constructor("
+        errorLine2="      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/sdkws/core/feature/MarkAccountAsBetaFeatureToggleCompanion.kt"
+            line="20"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="data class NoExistingBrushingException(val profileId: Long) :"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/sdkws/exception/NoExistingBrushingException.kt"
+            line="3"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public interface OfflineUpdateContract {"
+        errorLine2="                 ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/sdkws/data/database/contract/OfflineUpdateContract.java"
+            line="4"
+            column="18"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public final class OfflineUpdateInternal {"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/sdkws/internal/OfflineUpdateInternal.java"
+            line="19"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="data class PictureResponse("
+        errorLine2="           ~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/sdkws/profile/models/PictureResponse.kt"
+            line="8"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public final class RefreshBroadcast {"
+        errorLine2="                   ~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/sdkws/core/RefreshBroadcast.java"
+            line="7"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public class Request {"
+        errorLine2="             ~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/sdkws/api/request/Request.java"
+            line="8"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public enum RequestMethod {"
+        errorLine2="            ~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/sdkws/networking/RequestMethod.java"
+            line="4"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public class ResetPasswordRequest extends Request {"
+        errorLine2="             ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/sdkws/api/request/ResetPasswordRequest.java"
+            line="8"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public final class Response {"
+        errorLine2="                   ~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/sdkws/networking/Response.java"
+            line="7"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public final class RevokePractitionerRequest extends Request {"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/sdkws/api/request/RevokePractitionerRequest.java"
+            line="7"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public class SaveAccountByFacebookRequest extends Request {"
+        errorLine2="             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/sdkws/api/request/SaveAccountByFacebookRequest.java"
+            line="8"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="class SmsAccountManagerImpl"
+        errorLine2="      ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/sdkws/sms/SmsAccountManagerImpl.kt"
+            line="6"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public final class StringSyncableField extends SyncableField&lt;String> {"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/sdkws/core/sync/StringSyncableField.java"
+            line="4"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public class SyncableField&lt;T> {"
+        errorLine2="             ~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/sdkws/core/sync/SyncableField.java"
+            line="7"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public class SynchronizerJobService extends JobService {"
+        errorLine2="             ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/sdkws/core/SynchronizerJobService.java"
+            line="50"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public final class UpdateAccountV3Data {"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/sdkws/data/request/UpdateAccountV3Data.java"
+            line="7"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public class UpdateFirmwareRequest extends Request {"
+        errorLine2="             ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/sdkws/api/request/UpdateFirmwareRequest.java"
+            line="9"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public final class UpdateGoPirateRequest extends Request {"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/sdkws/api/request/UpdateGoPirateRequest.java"
+            line="8"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public final class UpdateToothbrushRequest extends Request {"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/sdkws/api/request/UpdateToothbrushRequest.java"
+            line="13"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public final class UpdateToothbrushResponse {"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/sdkws/api/response/UpdateToothbrushResponse.java"
+            line="14"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="DeobfuscatedPublicSdkClass"
+        message="Please make it `internal`, or add `@Keep` if you want to keep it public or `@VisibleForApp` if you want to keep it public for the app only"
+        errorLine1="public final class ValidateCodeRequest extends Request {"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/kolibree/sdkws/api/request/ValidateCodeRequest.java"
+            line="9"
+            column="20"/>
+    </issue>
+
+</issues>

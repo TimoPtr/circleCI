@@ -1,0 +1,138 @@
+def getGitHash = { ->
+    def stdout = new ByteArrayOutputStream()
+    exec {
+        commandLine 'git', 'rev-parse', '--short', 'HEAD'
+        standardOutput = stdout
+    }
+    return stdout.toString().trim()
+}
+
+def getCountCurrentBranch = { ->
+    def stdout = new ByteArrayOutputStream()
+    exec {
+        commandLine 'git', 'rev-list', 'HEAD', '--count'
+        standardOutput = stdout
+    }
+    return stdout.toString().trim().toInteger()
+}
+
+def getCountMasterBranch = { ->
+    // For some reason production version number was ahead of rev-list --count, so we force +100
+    return getCountCurrentBranch() + 100
+}
+
+def getVersion = { ->
+    def stdout = new ByteArrayOutputStream()
+    exec {
+        commandLine 'git', '--version'
+        standardOutput = stdout
+    }
+    def res = stdout.toString().trim()
+    return res
+}
+
+def getTicketNumber = { ->
+    def stdout = new ByteArrayOutputStream()
+    exec {
+        commandLine 'git', 'rev-parse', '--abbrev-ref', 'HEAD'
+        standardOutput = stdout
+    }
+    def branchName = stdout.toString().trim()
+    def ticketNb = branchName.replaceAll("[^\\d.]", "")
+    return ticketNb
+}
+
+def getHumProdVersionNumber = { ->
+    def version = new Properties()
+    def stream
+    try {
+        def versionFile = new File(project.rootDir, 'version.properties')
+        stream = new FileInputStream(versionFile)
+        version.load(stream)
+    } catch (FileNotFoundException ignore) {
+    } finally {
+        if (stream != null) stream.close()
+    }
+    // safety defaults in case file is missing
+    if (!version['hum_major']) version['hum_major'] = "1"
+    if (!version['hum_minor']) version['hum_minor'] = "0"
+    if (!version['hum_build']) version['hum_build'] = "0"
+    return "${version['hum_major']}.${version['hum_minor']}.${version['hum_build']}"
+}
+
+def getColgateProdVersionNumber = { ->
+    def version = new Properties()
+    def stream
+    try {
+        def versionFile = new File(project.rootDir, 'version.properties')
+        stream = new FileInputStream(versionFile)
+        version.load(stream)
+    } catch (FileNotFoundException ignore) {
+    } finally {
+        if (stream != null) stream.close()
+    }
+    // safety defaults in case file is missing
+    if (!version['colgate_major']) version['colgate_major'] = "1"
+    if (!version['colgate_minor']) version['colgate_minor'] = "0"
+    if (!version['colgate_build']) version['colgate_build'] = "0"
+    return "${version['colgate_major']}.${version['colgate_minor']}.${version['colgate_build']}"
+}
+
+def CALCULATE_DYNAMIC_VERSION_CODE = "calculateDynamicVersionCode"
+
+def calculateDynamicVersionCode = {
+    return (project.hasProperty(CALCULATE_DYNAMIC_VERSION_CODE)) ?
+        Boolean.valueOf(project[CALCULATE_DYNAMIC_VERSION_CODE]) : true
+}
+
+ext {
+    versionD = 1
+    dynamicColgateProdVersionName = getColgateProdVersionNumber()
+    dynamicHumProdVersionName = getHumProdVersionNumber()
+    dynamicVersionName = "1.0.0"
+    dynamicProdVersionCode = 1
+    dynamicVersionCode = 1
+    dynamicVersionCodeTime = 0
+    dynamicVersionLongName = "1.0.0"
+}
+
+android.applicationVariants.all { variant ->
+    if (variant.buildType.name != 'debug') {
+        ext.versionD = getVersion()
+        ext.dynamicVersionName = getGitHash()
+        ext.dynamicVersionCodeTime = new Date().format('MMddHHmm') // not used but could be added
+        ext.dynamicVersionLongName = "${dynamicVersionCode}-${getTicketNumber()}-${dynamicVersionName}"
+        variant.outputs.each { output ->
+            if (calculateDynamicVersionCode()) {
+                dynamicProdVersionCode = getCountMasterBranch()
+                dynamicVersionCode = getCountCurrentBranch()
+            } else {
+                dynamicProdVersionCode = 1
+                dynamicVersionCode = 1
+            }
+            if (variant.buildType.name == 'release') {
+                output.versionCodeOverride = dynamicProdVersionCode
+            } else {
+                output.versionCodeOverride = dynamicVersionCode
+            }
+            buildConfigField("int", "VERSION_CODE_OVERRIDE", "${output.versionCodeOverride}")
+        }
+    } else {
+        dynamicVersionCode = 1
+        buildConfigField("int", "VERSION_CODE_OVERRIDE", "${dynamicVersionCode}")
+    }
+}
+
+task colgateProdVersion {
+    description = "Get the version name of Colgate Connect app"
+    doLast {
+        println "version=" + getColgateProdVersionNumber()
+    }
+}
+
+task humProdVersion {
+    description = "Get the version name of HUM app"
+    doLast {
+        println "version=" + getHumProdVersionNumber()
+    }
+}

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <data>
+
+    <variable
+      name="item"
+      type="com.kolibree.android.app.ui.toothbrushsettings.binding.BrushHeaderBindingModel" />
+
+    <variable
+      name="interaction"
+      type="com.kolibree.android.app.ui.toothbrushsettings.BrushHeaderInteraction" />
+
+    <import type="com.kolibree.android.homeui.hum.R" />
+
+    <import type="android.view.View" />
+
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/start_margin_guideline"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      app:layout_constraintGuide_begin="@dimen/dot_quad" />
+
+    <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/end_margin_guideline"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      app:layout_constraintGuide_end="@dimen/dot_quad" />
+
+    <FrameLayout
+      android:id="@+id/tb_status_icon"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/dot_double"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent">
+
+      <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_tb_connected"
+        android:visibility="@{item.isConnectedIconVisible() ? View.VISIBLE : View.INVISIBLE}" />
+
+      <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="@{item.isConnectedIconVisible() ? View.INVISIBLE : View.VISIBLE}"
+        app:lottie_autoPlay="@{false}"
+        app:lottie_delayedMaxFrame="@{85}"
+        app:lottie_delayedMinFrame="@{37}"
+        app:lottie_loop="@{true}"
+        app:lottie_playAnimation="@{item.isConnectingAnimationOn()}"
+        app:lottie_rawRes="@{R.raw.tb_connecting}" />
+
+    </FrameLayout>
+
+    <TextView
+      android:id="@+id/tb_connection_status"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/dot_trip"
+      android:gravity="center"
+      android:text="@{item.toothbrushConnectionStatus(context)}"
+      android:textAppearance="?textAppearanceHeadline4"
+      app:layout_constraintEnd_toEndOf="@id/end_margin_guideline"
+      app:layout_constraintStart_toStartOf="@id/start_margin_guideline"
+      app:layout_constraintTop_toBottomOf="@id/tb_status_icon"
+      tools:text="HUM1 connected" />
+
+    <TextView
+      android:id="@+id/tb_last_sync"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_quad"
+      android:layout_marginTop="@dimen/dot_half"
+      android:layout_marginEnd="@dimen/dot_quad"
+      android:gravity="center"
+      android:text="@{item.lastSyncDate(context, item.lastSyncDate)}"
+      android:textAppearance="?textAppearanceCaption"
+      android:textColor="?android:textColorSecondary"
+      android:visibility="@{item.lastSyncDateVisible ? View.VISIBLE : View.GONE}"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/tb_connection_status"
+      tools:text="Last sync: 1 day ago"
+      tools:visibility="visible" />
+
+    <TextView
+      android:id="@+id/tb_wait_connecting"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/dot_half"
+      android:gravity="center"
+      android:text="@string/tb_settings_waiting"
+      android:textAppearance="?textAppearanceCaption"
+      android:textColor="?android:textColorSecondary"
+      android:visibility="@{item.waitingVisible ? View.VISIBLE : View.GONE}"
+      app:layout_constraintEnd_toEndOf="@id/end_margin_guideline"
+      app:layout_constraintStart_toStartOf="@id/start_margin_guideline"
+      app:layout_constraintTop_toBottomOf="@id/tb_last_sync"
+      tools:visibility="gone" />
+
+    <Button
+      android:id="@+id/not_connecting"
+      style="?materialButtonOutlinedIconStyle"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/dot_trip"
+      android:onClick="@{() -> interaction.onNotConnectingClick()}"
+      android:text="@string/tb_settings_not_connecting"
+      android:visibility="@{item.notConnectingVisible ? View.VISIBLE : View.GONE}"
+      app:icon="@drawable/ic_not_connecting"
+      app:layout_constraintEnd_toStartOf="@id/end_margin_guideline"
+      app:layout_constraintStart_toStartOf="@id/start_margin_guideline"
+      app:layout_constraintTop_toBottomOf="@id/optional_ota_view"
+      tools:visibility="gone" />
+
+    <View
+      android:id="@+id/optional_ota_view"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="@dimen/match_constraints"
+      android:layout_marginTop="@dimen/dot_trip"
+      android:background="@drawable/shape_rounded_dot_half"
+      android:backgroundTint="?textColorAccentSecondary"
+      android:minHeight="@dimen/dot_six"
+      android:visibility="visible"
+      app:layout_constraintBottom_toBottomOf="@+id/optional_ota_title"
+      app:layout_constraintEnd_toEndOf="@+id/connect_new_brush"
+      app:layout_constraintStart_toStartOf="@+id/connect_new_brush"
+      app:layout_constraintTop_toBottomOf="@id/tb_last_sync" />
+
+    <TextView
+      android:id="@+id/optional_ota_title"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_double"
+      android:layout_marginEnd="@dimen/dot_double"
+      android:gravity="center_vertical"
+      android:minHeight="@dimen/dot_six"
+      android:paddingTop="@dimen/dot"
+      android:paddingBottom="@dimen/dot"
+      android:text="@{item.otaText()}"
+      android:textAppearance="?textAppearanceSubtitle2"
+      android:textColor="@color/white"
+      app:layout_constraintEnd_toStartOf="@+id/optional_ota_button"
+      app:layout_constraintStart_toStartOf="@id/optional_ota_view"
+      app:layout_constraintTop_toTopOf="@id/optional_ota_view" />
+
+    <Button
+      android:id="@+id/optional_ota_button"
+      style="?materialButtonTextStyle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:onClick="@{v -> interaction.onOTAClick()}"
+      android:text="@{item.otaActionText()}"
+      app:layout_constraintBottom_toBottomOf="@id/optional_ota_view"
+      app:layout_constraintEnd_toEndOf="@id/optional_ota_view"
+      app:layout_constraintHorizontal_bias="1.0"
+      app:layout_constraintStart_toEndOf="@id/optional_ota_title"
+      app:layout_constraintTop_toTopOf="@id/optional_ota_view" />
+
+    <Button
+      android:id="@+id/connect_new_brush"
+      style="?materialButtonIconStyle"
+      android:layout_width="@dimen/match_constraints"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal"
+      android:backgroundTint="?colorPrimary"
+      android:onClick="@{v -> interaction.onConnectNewBrushClick()}"
+      android:text="@string/tb_settings_connect_new_tb"
+      app:icon="@drawable/ic_add_new_tb"
+      app:layout_constraintEnd_toStartOf="@id/end_margin_guideline"
+      app:layout_constraintStart_toStartOf="@id/start_margin_guideline"
+      app:layout_constraintTop_toBottomOf="@id/not_connecting"
+      app:layout_goneMarginTop="@dimen/dot_trip" />
+
+    <androidx.constraintlayout.widget.Group
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:visibility="@{item.isOtaAvailable() ? View.VISIBLE : View.GONE}"
+      app:constraint_referenced_ids="optional_ota_button, optional_ota_title, optional_ota_view"
+      tools:visibility="visible" />
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/divider_thickness"
+      android:layout_marginTop="@dimen/dot_trip"
+      android:background="?dividerColor"
+      app:layout_constraintTop_toBottomOf="@id/connect_new_brush" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

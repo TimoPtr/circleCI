@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <data>
+
+    <import type="com.kolibree.android.app.ui.checkup.CheckupUtils" />
+
+    <import type="com.kolibree.android.extensions.ContextExtensionsKt" />
+
+    <import type="com.kolibree.android.homeui.hum.R" />
+
+    <variable
+      name="viewModel"
+      type="com.kolibree.android.app.ui.checkup.results.CheckupResultsViewModel" />
+
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:theme="@style/CheckupTheme">
+
+    <ImageView
+      android:id="@+id/checkup_back"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="?attr/selectableItemBackgroundBorderless"
+      android:onClick="@{() -> viewModel.onBackButtonClick()}"
+      android:padding="@dimen/dot_double"
+      android:src="@drawable/ic_nav_close"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:tint="@color/black"
+      tools:ignore="ContentDescription" />
+
+    <TextView
+      android:id="@+id/checkup_header"
+      android:layout_width="wrap_content"
+      android:layout_height="@dimen/match_constraints"
+      android:layout_marginStart="@dimen/dot_double"
+      android:text="@{viewModel.title}"
+      app:textHighlight="@{@string/checkup_title_highlight}"
+      app:textHighlightColor="@{ContextExtensionsKt.getColorFromAttr(context, R.attr.checkupTitleDotColor)}"
+      android:textAppearance="?checkupTitleTextAppearance"
+      android:gravity="center_vertical"
+      android:textColor="?checkupTitleColor"
+      app:layout_constraintBottom_toBottomOf="@id/checkup_back"
+      app:layout_constraintStart_toEndOf="@id/checkup_back"
+      app:layout_constraintTop_toTopOf="@id/checkup_back" />
+
+    <TextView
+      android:id="@+id/checkup_date"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_double"
+      android:layout_marginTop="@dimen/dot"
+      android:text="@{CheckupUtils.formatBrushingDate(context, viewModel.brushingDateLiveData, viewModel.brushingTypeLiveData)}"
+      android:textAppearance="?textAppearanceBody1"
+      android:textColor="?android:textColorSecondary"
+      app:layout_constraintTop_toBottomOf="@id/checkup_back" />
+
+    <TextView
+      android:id="@+id/checkup_brushing_summary"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_double"
+      android:layout_marginTop="@dimen/dot"
+      android:text="@string/checkup_brushing_summary"
+      android:textAppearance="?textAppearanceHeadline4"
+      android:textColor="?android:textColorPrimary"
+      app:layout_constraintTop_toBottomOf="@id/checkup_date" />
+
+    <com.kolibree.android.app.ui.widget.CheckupChartsView
+      android:id="@+id/checkup_charts"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/dot_double"
+      app:coverage="@{viewModel.coverageLiveData}"
+      app:durationPercentage="@{viewModel.durationPercentageLiveData}"
+      app:durationSeconds="@{viewModel.durationSecondsLiveData}"
+      app:layout_constraintTop_toBottomOf="@id/checkup_brushing_summary"/>
+
+    <com.kolibree.android.app.ui.widget.CheckupView
+      android:id="@+id/checkup_view"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/match_constraints"
+      app:checkupData="@{viewModel.checkupDataLiveData}"
+      app:layout_constraintBottom_toTopOf="@+id/last_brushing_card_action"
+      app:layout_constraintTop_toBottomOf="@id/checkup_charts"
+      app:manualBrushing="@{viewModel.isManualBrushingLiveData}"
+      app:shouldRender="@{true}"
+      app:showData="@{true}"
+      app:cleanZoneColor="@{@color/white}"
+      app:neglectedZoneColor="@{ContextExtensionsKt.getColorFromAttr(context, R.attr.checkupJawMissedColor)}"/>
+
+    <Button
+      android:id="@+id/last_brushing_card_action"
+      style="?materialButtonStyle"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dot_double"
+      android:layout_marginTop="@dimen/dot_double"
+      android:layout_marginEnd="@dimen/dot_double"
+      android:layout_marginBottom="@dimen/dot"
+      android:onClick="@{() -> viewModel.onFinishClick()}"
+      android:text="@{viewModel.isManualBrushingLiveData ? @string/checkup_manual_brushing_end : @string/challenge_feedback_collect_smiles}"
+      app:layout_constraintBottom_toTopOf="@+id/checkup_delete" />
+
+    <Button
+      android:id="@+id/checkup_delete"
+      style="@style/CheckupDeleteButton"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="@dimen/dot"
+      android:onClick="@{() -> viewModel.onDeleteButtonClick()}"
+      app:layout_constraintBottom_toBottomOf="parent" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
+

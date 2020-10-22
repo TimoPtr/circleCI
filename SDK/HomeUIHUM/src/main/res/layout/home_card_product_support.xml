@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <data>
+
+    <import type="android.view.View" />
+
+    <variable
+      name="item"
+      type="com.kolibree.android.app.ui.home.tab.home.card.support.product.ProductSupportCardBindingModel" />
+
+    <variable
+      name="interaction"
+      type="com.kolibree.android.app.ui.home.tab.home.card.support.product.ProductSupportCardInteraction" />
+
+  </data>
+
+  <com.google.android.material.card.MaterialCardView
+    android:id="@+id/product_support_card"
+    style="?materialCardViewStyle"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/support_card_size"
+    android:layout_margin="@dimen/dot_double"
+    android:clickable="true"
+    android:focusable="true"
+    android:onClick="@{(v) -> interaction.onProductSupportClick()}">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+      <ImageView
+        android:id="@+id/product_support_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/match_constraints"
+        android:layout_marginTop="@dimen/dot_trip"
+        android:src="@drawable/ic_product_support"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/product_support_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1" />
+
+      <TextView
+        android:id="@+id/product_support_title"
+        android:layout_width="@dimen/match_constraints"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/support_card_size"
+        android:layout_marginEnd="@dimen/dot_double"
+        android:gravity="start"
+        android:paddingTop="@dimen/dot_double"
+        android:text="@string/product_support_card_title"
+        android:textAppearance="?textAppearanceHeadline4"
+        app:layout_constraintBottom_toTopOf="@+id/product_support_subtitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+      <TextView
+        android:id="@+id/product_support_subtitle"
+        android:layout_width="@dimen/match_constraints"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/support_card_size"
+        android:layout_marginEnd="@dimen/dot_double"
+        android:gravity="start"
+        android:paddingBottom="@dimen/dot_double"
+        android:text="@string/product_support_card_subtitle"
+        android:textAppearance="?textAppearanceBody2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/product_support_title" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+  </com.google.android.material.card.MaterialCardView>
+
+</layout>

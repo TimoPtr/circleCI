@@ -1,0 +1,83 @@
+apply plugin: 'com.android.library'
+
+apply from: '../buildscripts/kapt.gradle'
+
+android {
+    defaultConfig {
+        kapt {
+            arguments {
+                arg("room.schemaLocation", "$projectDir/schemas".toString())
+            }
+        }
+    }
+
+    sourceSets {
+        test {
+            java.srcDirs = ['src/test/java', 'src/test/kotlin']
+        }
+
+        androidTest {
+            java.srcDirs = ['src/androidTest/java', 'src/androidTest/kotlin']
+            assets.srcDirs += files("$projectDir/schemas".toString())
+        }
+    }
+}
+
+dependencies {
+
+    implementation project(path: ':features')
+    implementation project(path: ':account-internal')
+    implementation project(path: ':commons')
+    implementation project(path: ':common-models')
+    implementation project(path: ':crypto')
+    implementation project(path: ':gruware')
+    implementation project(path: ':translations-support')
+    implementation project(path: ':processed-brushings-kml')
+
+    // Android support
+    implementation libraries.supportAnnotations
+
+    implementation libraries.nrfBle
+    implementation libraries.nrfDfu
+    implementation libraries.nrfScanner
+
+    implementation libraries.dagger
+    kapt libraries.daggerCompiler
+
+    implementation libraries.roomRuntime
+    implementation libraries.roomRxJava2
+    kapt libraries.roomCompiler
+
+    implementation libraries.rxJava
+    implementation libraries.rxRelay
+    implementation libraries.rxReplayShare
+    implementation libraries.rxAndroid
+    implementation libraries.rxLint
+
+    implementation libraries.leakCanaryWatcher
+
+    implementation libraries.timber
+
+    implementation libraries.threetenAbp
+
+    implementation libraries.lifecycleRuntime
+    kapt libraries.lifecycleCompiler
+
+    implementation libraries.kotlinRuntime
+
+    testImplementation project(path: ':testing-unit-base')
+    testImplementation project(path: ':testing-builders')
+    testImplementation project(path: ':testing-shared')
+    testImplementation libraries.mockitoKotlin2
+    testImplementation libraries.kotlinPropertyTesting
+
+    androidTestImplementation project(path: ':testing-shared')
+    androidTestImplementation libraries.mockitoAndroid
+    androidTestImplementation libraries.roomTesting
+    androidTestImplementation libraries.supportTestRunner
+    androidTestImplementation libraries.supportTestRules
+    androidTestImplementation(libraries.architectureCoreTesting) {
+        exclude group: 'com.android.support', module: 'support-compat'
+        exclude group: 'com.android.support', module: 'support-annotations'
+    }
+}

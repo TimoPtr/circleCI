@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <Blacklist></Blacklist>
+  <Whitelist>
+    <ID>LargeClass:CoachPlusKmlControllerImpl.kt$CoachPlusKmlControllerImpl$CoachPlusKmlControllerImpl</ID>
+    <ID>LargeClass:CoachPlusViewModel.kt$CoachPlusViewModel$CoachPlusViewModel</ID>
+    <ID>LongMethod:CoachPlusActivityLogicModule.kt$CoachPlusActivityLogicModule.Companion$providesViewModelFactory</ID>
+    <ID>LongMethod:CoachPlusColorSet.kt$CoachPlusColorSet.Companion$create</ID>
+    <ID>LongMethod:CoachPlusControllerInternalModule.kt$CoachPlusControllerInternalModule$providesSupervisedBrushingAppContext16</ID>
+    <ID>LongMethod:CoachPlusFeedbackMapper.kt$CoachPlusFeedbackMapper$getFeedbackToDisplay</ID>
+    <ID>LongMethod:CoachPlusKmlControllerImpl.kt$CoachPlusKmlControllerImpl$createBrushingData</ID>
+    <ID>LongMethod:CoachPlusKmlControllerImpl.kt$CoachPlusKmlControllerImpl$onBrushedResultWithFeedback</ID>
+    <ID>LongMethod:CoachPlusKmlControllerImpl.kt$CoachPlusKmlControllerImpl$onGoodZoneBrushed</ID>
+    <ID>LongMethod:CoachPlusKmlControllerImpl.kt$CoachPlusKmlControllerImpl$onWrongZoneBrushed</ID>
+    <ID>LongMethod:CoachPlusViewModel.kt$CoachPlusViewModel.Factory$create</ID>
+    <ID>LongParameterList:CoachPlusControllerInternalModule.kt$CoachPlusControllerInternalModule$( @Named(DI_GOAL_BRUSHING_TIME) goalBrushingTime: Duration, @Named(DI_MAX_FAIL_TIME) maxFailTime: Long, checkupCalculator: CheckupCalculator, argumentProvider: CoachPlusArgumentProvider, supervisedBrushingAppContext16Provider: Provider&lt;SupervisedBrushingAppContext16&gt;, durationAdjuster: ZoneDurationAdjuster )</ID>
+    <ID>LongParameterList:CoachPlusControllerInternalModule.kt$CoachPlusControllerInternalModule$( rnnWeightProvider: RnnWeightProvider?, kpiSpeedProvider: KpiSpeedProvider?, angleProvider: AngleProvider, transitionProvider: TransitionProvider, thresholdProvider: ThresholdProvider, zoneValidatorProvider: ZoneValidatorProvider, toothbrushModel: ToothbrushModel? )</ID>
+    <ID>MagicNumber:CoachPlusProgressView.kt$CoachPlusProgressView$10f</ID>
+    <ID>MagicNumber:CoachPlusProgressView.kt$CoachPlusProgressView$360f</ID>
+    <ID>TooManyFunctions:CoachPlusController.kt$CoachPlusController$CoachPlusController</ID>
+    <ID>TooManyFunctions:CoachPlusKmlControllerImpl.kt$CoachPlusKmlControllerImpl$CoachPlusKmlControllerImpl</ID>
+    <ID>TooManyFunctions:CoachPlusViewModel.kt$CoachPlusViewModel$CoachPlusViewModel</ID>
+  </Whitelist>
+</SmellBaseline>

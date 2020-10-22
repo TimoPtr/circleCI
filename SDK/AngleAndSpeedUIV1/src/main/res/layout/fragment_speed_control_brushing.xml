@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2019 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <data>
+
+    <import type="com.kolibree.android.angleandspeed.speedcontrol.mvi.brushing.SpeedControlBrushingViewState" />
+
+    <variable
+      name="viewModel"
+      type="com.kolibree.android.angleandspeed.speedcontrol.mvi.brushing.SpeedControlBrushingViewModel" />
+
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/speed_background"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintHorizontal_bias="0.5"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <TextView
+      android:id="@+id/speed_timer"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@{@string/speed_control_remaining_time_format(viewModel.remainingTimeSeconds)}"
+      android:textColor="@android:color/black"
+      android:textSize="@dimen/xxbig_text"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toTopOf="@+id/speed_status"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:text="00:23" />
+
+    <TextView
+      android:id="@+id/speed_status"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@{viewModel.speedStatusText}"
+      android:textSize="@dimen/xxbig_text"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toTopOf="@+id/speedometer_background"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/speed_timer"
+      app:textColorResource="@{viewModel.speedStatusTextColor}"
+      tools:text="@string/speed_control_feedback_underspeed"
+      tools:textColor="@color/speed_control_feedback_underspeed" />
+
+    <ImageView
+      android:id="@+id/speedometer_background"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:background="@drawable/speedometer_background"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintDimensionRatio="831:417"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintWidth_percent="0.8"
+      tools:ignore="ContentDescription" />
+
+    <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/top_arrow_guideline"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:orientation="horizontal"
+      app:layout_constraintGuide_percent="0.47" />
+
+    <ImageView
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:src="@drawable/speedometer_arrow"
+      speedFeedback="@{viewModel.speedFeedback}"
+      app:layout_constraintBottom_toBottomOf="@+id/speedometer_background"
+      app:layout_constraintDimensionRatio="48:270"
+      app:layout_constraintEnd_toEndOf="@+id/speedometer_background"
+      app:layout_constraintStart_toStartOf="@+id/speedometer_background"
+      app:layout_constraintTop_toTopOf="@+id/top_arrow_guideline"
+      tools:ignore="ContentDescription" />
+
+    <ProgressBar
+      android:id="@+id/speed_progress_bar"
+      style="@style/Kolibree.ProgressBar.Horizontal.Rounded.Red"
+      progressMaxDuration="@{SpeedControlBrushingViewState.STAGE_DURATION}"
+      progressState="@{viewModel.progressState}"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="@dimen/xxhuge_margin_plus"
+      android:layout_marginRight="@dimen/xxhuge_margin_plus"
+      android:layout_marginBottom="@dimen/xbig_margin"
+      app:layout_constraintBottom_toTopOf="@id/speed_hint" />
+
+    <TextView
+      android:id="@+id/speed_hint"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@android:color/white"
+      android:gravity="center"
+      android:lines="3"
+      android:paddingLeft="@dimen/huge_margin"
+      android:paddingTop="@dimen/small_margin"
+      android:paddingRight="@dimen/huge_margin"
+      android:paddingBottom="@dimen/small_margin"
+      android:text="@{viewModel.speedHintText}"
+      android:textColor="@android:color/black"
+      android:textSize="@dimen/xxbig_text"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:textHighlight="@{viewModel.speedHintHighlightText}"
+      app:textHighlightColor="@{@color/colorPrimary}"
+      tools:text="@string/speed_control_brushing_stage1_hint" />
+
+    <View
+      android:id="@+id/separator"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/separator_height"
+      android:background="@color/colorPrimary"
+      app:layout_constraintBottom_toTopOf="@+id/speed_hint"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+

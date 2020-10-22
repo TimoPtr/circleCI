@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#e13b26</color>
+    <color name="colorPrimaryDark">#570600</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="dashboard_grey">#cdcdcd</color>
+    <color name="blue">#70c0c7</color>
+    <color name="grey_dark">#454545</color>
+    <color name="grey_light">#939597</color>
+    <color name="kolibree_gray">#f4f4f4</color>
+
+    <!-- Welcome -->
+    <color name="welcome_birthday_input_bg">#eeeeee</color>
+    <color name="welcome_birthday_label">#939597</color>
+    <color name="welcome_validate_error">#fb5a5e</color>
+
+    <!-- Bottom navigation -->
+    <color name="bottom_nav_background">#F5F5F5</color>
+    <color name="bottom_nav_disabled">#8A8A8A</color>
+    <color name="bottom_nav_enabled">@color/colorPrimary</color>
+
+</resources>

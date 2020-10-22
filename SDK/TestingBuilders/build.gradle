@@ -1,0 +1,48 @@
+apply plugin: 'com.android.library'
+
+android {
+    defaultConfig {
+        defaultPublishConfig "colgateDebug"
+
+        //explanation in https://github.com/kolibree-git/android-modules-SDK/pull/388#discussion_r
+        missingDimensionStrategy 'branding', 'colgate'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+}
+
+publisher.skipDeployment = true
+
+dependencies {
+    api project(path: ':testing-shared')
+
+    implementation project(path: ':game')
+    implementation project(path: ':rewards-logic')
+    implementation project(path: ':pairing')
+    implementation project(path: ':toothbrush-sdk')
+    implementation project(path: ':account-sdk')
+    implementation project(path: ':account-internal')
+    implementation project(path: ':offline-brushings')
+    implementation project(path: ':web-service-sdk')
+    implementation project(path: ':processed-brushings-kml')
+
+    compileOnly libraries.fullThreetenBp
+
+    compileOnly libraries.rxRelay
+
+    implementation libraries.retrofit
+
+    implementation(libraries.kotlinRuntime) {
+        exclude group: 'org.jetbrains', module: 'annotations'
+    }
+
+    compileOnly libraries.mockitoCore
+    compileOnly libraries.mockitoKotlin2
+
+    implementation libraries.supportFragment
+    implementation libraries.roomRuntime
+}

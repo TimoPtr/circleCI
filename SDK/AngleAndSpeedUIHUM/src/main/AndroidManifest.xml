@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2019 Kolibree. All rights reserved
+  ~
+  ~ Copying this file via any medium without the prior written consent of Kolibree is strictly
+  ~ prohibited
+  ~
+  ~ Proprietary and confidential
+  -->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.kolibree.android.angleandspeed.ui">
+
+  <application>
+
+    <activity android:name="com.kolibree.android.angleandspeed.ui.mindyourspeed.MindYourSpeedActivity"
+      android:screenOrientation="portrait"
+      android:theme="@style/AppTheme.MindYourSpeed"/>
+
+  </application>
+
+</manifest>

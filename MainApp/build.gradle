@@ -1,0 +1,72 @@
+buildscript {
+    apply from: '../SDK/dependencies.gradle'
+
+    repositories {
+        /**
+         * NOTE: this local maven is added only to prevent issues with plugins that cannot be resolved
+         * at any point in time, for ex. in Jenkins. Do not populate any content there unless it's absolutely
+         * necessary.
+         */
+        maven { url "${rootProject.rootDir}/../mavenBackup/" }
+        google()
+        // NOTE:
+        // Jenkins shared library replaces jcenter entries with the combinarion of Kolibree Artifactory + mavenCentral.
+        // This is because jcenter had serious downtimes in Mar'19, that were blocking development.
+        jcenter()
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+        maven {
+            url = kolibree_artifactory_url + "/libs-release"
+            credentials {
+                username kolibree_artifactory_username
+                password kolibree_artifactory_password
+            }
+        }
+    }
+
+    dependencies {
+        classpath gradlePlugins.android
+        classpath gradlePlugins.kotlin
+        classpath gradlePlugins.spotless
+        classpath gradlePlugins.detekt
+        classpath gradlePlugins.poeditor
+        classpath gradlePlugins.poeditorGradle
+        classpath gradlePlugins.marathonGradle
+        classpath gradlePlugins.googleServices
+        classpath gradlePlugins.crashlyticsGradle
+        classpath gradlePlugins.licensesGradle
+        classpath gradlePlugins.screenshotGradle
+    }
+}
+
+allprojects {
+    repositories {
+        maven { url "${rootProject.rootDir}/../mavenBackup/" }
+        google()
+        // NOTE: please check note in buildscript section
+        jcenter()
+        maven {
+            url = kolibree_artifactory_url + "/libs-release"
+            credentials {
+                username kolibree_artifactory_username
+                password kolibree_artifactory_password
+            }
+        }
+        maven {
+            url = kolibree_artifactory_url + "/libs-snapshot"
+            credentials {
+                username kolibree_artifactory_username
+                password kolibree_artifactory_password
+            }
+        }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir	
+}
+
+ext {
+    detektRulePath = "../../SDK/buildscripts/detekt"
+}

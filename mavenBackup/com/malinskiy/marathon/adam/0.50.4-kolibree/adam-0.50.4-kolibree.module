@@ -1,0 +1,144 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.malinskiy.marathon",
+    "module": "adam",
+    "version": "0.50.4-kolibree",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.2",
+      "buildId": "5rqox4qe2nglviwvbhck7v5qza"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.localToProject": "public",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "files": [
+        {
+          "name": "adam-0.50.4-kolibree.jar",
+          "url": "adam-0.50.4-kolibree.jar",
+          "size": 261,
+          "sha512": "4f9c9fa1f840002cac4e3883cda38fb78786c882cc6ea01da21ed926aeeddbbd2bd2a3dc60559f2bbf80593f04ebd5dd1bece1f2cec3db49750f78ace217a380",
+          "sha256": "b8c43c75d8bedc41b045994bcc755dcad9d26bfb0d5b84f988d5ab171bc7c246",
+          "sha1": "08a295a5b9f908fcf4a9d44b8169ccceb991a292",
+          "md5": "c852cc00a5e214f244badbe00fbfd890"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.localToProject": "public",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.4.10"
+          }
+        },
+        {
+          "group": "io.qameta.allure",
+          "module": "allure-java-commons",
+          "version": {
+            "requires": "2.8.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.3.1"
+          }
+        },
+        {
+          "group": "io.github.microutils",
+          "module": "kotlin-logging",
+          "version": {
+            "requires": "1.4.9"
+          }
+        },
+        {
+          "group": "com.android.tools.ddms",
+          "module": "ddmlib",
+          "version": {
+            "requires": "27.1.0"
+          }
+        },
+        {
+          "group": "com.linkedin.dextestparser",
+          "module": "parser",
+          "version": {
+            "requires": "2.2.1"
+          }
+        },
+        {
+          "group": "com.shazam",
+          "module": "axmlparser",
+          "version": {
+            "requires": "1.0"
+          }
+        },
+        {
+          "group": "com.fasterxml.jackson.core",
+          "module": "jackson-annotations",
+          "version": {
+            "requires": "2.9.5"
+          }
+        },
+        {
+          "group": "org.imgscalr",
+          "module": "imgscalr-lib",
+          "version": {
+            "requires": "4.2"
+          }
+        },
+        {
+          "group": "com.malinskiy.marathon",
+          "module": "core",
+          "version": {
+            "requires": "0.50.4-kolibree"
+          }
+        },
+        {
+          "group": "ch.qos.logback",
+          "module": "logback-classic",
+          "version": {
+            "requires": "1.2.3"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "adam-0.50.4-kolibree.jar",
+          "url": "adam-0.50.4-kolibree.jar",
+          "size": 261,
+          "sha512": "4f9c9fa1f840002cac4e3883cda38fb78786c882cc6ea01da21ed926aeeddbbd2bd2a3dc60559f2bbf80593f04ebd5dd1bece1f2cec3db49750f78ace217a380",
+          "sha256": "b8c43c75d8bedc41b045994bcc755dcad9d26bfb0d5b84f988d5ab171bc7c246",
+          "sha1": "08a295a5b9f908fcf4a9d44b8169ccceb991a292",
+          "md5": "c852cc00a5e214f244badbe00fbfd890"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+# Danger is a highly customizable tool for automatic code review.
+# On its own, it does nothing except interpreting the custom rules we provide in this file.
+
+# However, it has plugins (like 'danger-android_lint') which can allow us to digest reports, like lint.
+
+# Official and well detailed documentation of this tool can be found here : https://danger.systems/ruby/
+# The upper link also provides an exhaustive list of all Danger plugins which can be installed.
+
+# All the Danger scoped variable can be found here : https://danger.systems/reference.html
+
+build_number = ENV['BUILD_NUMBER']
+job_base_name = ENV['JOB_BASE_NAME']
+
+download_message = "<table><tr><th width=\"100%\" colspan=\"3\">Download Links</th></tr>"
+
+download_message << "<tr>"
+download_message << "<td><a href=\"https://ci.kolibree.com/job/kolibree-git-android/job/android-monorepo/job/" + job_base_name + "/" + build_number + "/artifact/MainApp/app/build/outputs/apk/hum/beta/app-hum-beta.apk\">:link: Hum Beta App</a></td>"
+download_message << "<td><a href=\"https://ci.kolibree.com/job/kolibree-git-android/job/android-monorepo/job/" + job_base_name + "/" + build_number + "/artifact/MainApp/app/build/outputs/apk/colgate/beta/app-colgate-beta.apk\">:link: Colgate Beta App</a></td>"
+download_message << "<td><a href=\"https://ci.kolibree.com/job/kolibree-git-android/job/android-monorepo/job/" + job_base_name + "/" + build_number + "/artifact/SdkDemoApp/app/build/outputs/apk/colgateProduction/release/app-colgate-production-release.apk\">:link: Sdk Demo App</a></td>"
+download_message << "</tr>"
+
+download_message << "</table>"
+
+message download_message
