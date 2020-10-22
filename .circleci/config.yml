@@ -10,6 +10,16 @@ jobs:
     steps:
       - checkout
       - run:
+          command: |
+            #TODO make this generic
+            echo "kolibree_artifactory_url=$kolibree_artifactory_url" >> SDK/gradle.properties
+            echo "kolibree_artifactory_username=$kolibree_artifactory_username" >> SDK/gradle.properties
+            echo "kolibree_artifactory_password=$kolibree_artifactory_password" >> SDK/gradle.properties
+
+            echo "kolibree_artifactory_url=$kolibree_artifactory_url" >> MainApp/gradle.properties
+            echo "kolibree_artifactory_username=$kolibree_artifactory_username" >> MainApp/gradle.properties
+            echo "kolibree_artifactory_password=$kolibree_artifactory_password" >> MainApp/gradle.properties
+      - run:
           working_directory: SDK
           command: ./gradlew assembleRelease
 
