@@ -13,9 +13,9 @@ commands:
       - run:
           command: |
             #TODO make this generic
-            echo "kolibree_artifactory_url=$kolibree_artifactory_url" >> $project_dir/gradle.properties
-            echo "kolibree_artifactory_username=$kolibree_artifactory_username" >> $project_dir/gradle.properties
-            echo "kolibree_artifactory_password=$kolibree_artifactory_password" >> $project_dir/gradle.properties
+            echo "kolibree_artifactory_url=$kolibree_artifactory_url" >> << parameters.project_dir> >/gradle.properties
+            echo "kolibree_artifactory_username=$kolibree_artifactory_username" >> << parameters.project_dir >>/gradle.properties
+            echo "kolibree_artifactory_password=$kolibree_artifactory_password" >> << parameters.project_dir >>/gradle.properties
 
 jobs:
   build:
