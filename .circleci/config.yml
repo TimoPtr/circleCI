@@ -10,9 +10,10 @@ commands:
       project_dir:
         type: string
     steps:
-      - run: |
+      - run:
+          command: |
             #TODO make this generic
-            echo "kolibree_artifactory_url=$kolibree_artifactory_url" >> << parameters.project_dir> >/gradle.properties
+            echo "kolibree_artifactory_url=$kolibree_artifactory_url" >> << parameters.project_dir >>/gradle.properties
             echo "kolibree_artifactory_username=$kolibree_artifactory_username" >> << parameters.project_dir >>/gradle.properties
             echo "kolibree_artifactory_password=$kolibree_artifactory_password" >> << parameters.project_dir >>/gradle.properties
 
@@ -24,9 +25,9 @@ jobs:
 
     steps:
       - checkout
-      - inject_artifactory_credentials
+      - inject_artifactory_credentials:
           project_dir: "MainApp"
-      - inject_artifactory_credentials
+      - inject_artifactory_credentials:
           project_dir: "SDK"
       - run:
           name: Read versions
@@ -91,7 +92,10 @@ jobs:
 
     steps:
       - checkout
-      - inject_artifactory_credentials
+      - inject_artifactory_credentials:
+          project_dir: "MainApp"
+      - inject_artifactory_credentials:
+          project_dir: "SDK"
 
   ui-test:
     executor: android/android
@@ -99,10 +103,10 @@ jobs:
 
     steps:
       - checkout
-      - inject_artifactory_credentials
-        project_dir: "MainApp"
-      - inject_artifactory_credentials
-        project_dir: "SDK"
+      - inject_artifactory_credentials:
+          project_dir: "MainApp"
+      - inject_artifactory_credentials:
+          project_dir: "SDK"
 
 
   deploy:
@@ -111,10 +115,10 @@ jobs:
 
     steps:
       - checkout
-      - inject_artifactory_credentials
-        project_dir: "MainApp"
-      - inject_artifactory_credentials
-        project_dir: "SDK"
+      - inject_artifactory_credentials:
+          project_dir: "MainApp"
+      - inject_artifactory_credentials:
+          project_dir: "SDK"
 
 
 workflows:
