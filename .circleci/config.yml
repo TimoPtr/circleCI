@@ -21,6 +21,108 @@ jobs:
             echo "kolibree_artifactory_username=$kolibree_artifactory_username" >> MainApp/gradle.properties
             echo "kolibree_artifactory_password=$kolibree_artifactory_password" >> MainApp/gradle.properties
       - run:
+          name: Read versions
+          working_directory:
+          command: |
+            echo "export CHANGELOG=\"$(git log -n 1 --pretty=format:'%h - %an : %s')\" >> $BASH_ENV
+            echo "export SDK_VERSION=\"$(cat SDK/dependencies.gradle | grep name | awk -F"'" '{ print \$2}')\" >> $BASH_ENV
+            echo "export COLGATE_MAIN_APP_VERSION=\"$(cd MainApp && ./gradlew colgateProdVersion | grep version= | cut -d "=" -f 2)\" >> $BASH_ENV
+            echo "export HUM_MAIN_APP_VERSION=\"$(cd MainApp && ./gradlew $GRADLE_PROPERTY_FLAGS humProdVersion | grep version= | cut -d "=" -f 2)\" >> $BASH_ENV
+      - run:
+          name: Build SDK Release
           working_directory: SDK
+          #TODO inject credentials
           command: ./gradlew assembleRelease
+      #- store_artifacts:
+      #    path: test-results.xml
+      #    destination: deliverable.xml
+      - run:
+          name: Prepare Hum build
+          working_directory: SDK
+          command: |
+            sed -i.bak "s/def isHumBuild = .*/def isHumBuild = true/g" StaticResourcesBranded/build.gradle
+      - run:
+          name: Build Hum Release
+          working_directory: MainApp
+          #TODO inject credentials
+          command: ./gradlew assembleHumBeta bundleHumRelease
+      - store_artifacts:
+          path: MainApp/app/build/outputs/apk/hum/beta/app-hum-beta.apk
+          destination: app-hum-beta.apk
+      - store_artifacts:
+          path: MainApp/app/build/outputs/bundles/hum/release/app-hum-release.aab
+          destination: app-hum-release.aab
+      - run:
+          name: Prepare CC build
+          working_directory: SDK
+          command: |
+            sed -i.bak "s/def isHumBuild = .*/def isHumBuild = false/g" StaticResourcesBranded/build.gradle
+      - run:
+          name: Build CC Release
+          working_directory: MainApp
+          #TODO inject credentials
+          command: ./gradlew assembleColgateBeta bundleColgateRelease
+      - store_artifacts:
+          path: MainApp/app/build/outputs/apk/colgate/beta/app-colgate-beta.apk
+          destination: app-colgate-beta.apk
+      - store_artifacts:
+          path: MainApp/app/build/outputs/bundles/colgate/release/app-colgate-release.aab
+          destination: app-colgate-release.aab
+      # Save workspace for subsequent jobs (i.e. test)
+      - persist_to_workspace:
+          root: .
+          paths:
+            - .
+
+  analyse:
+    executor: android/android
+    resource_class: xlarge
+
+    steps:
+      - checkout
+      - run:
+          command: |
+            #TODO make this generic
+            echo "kolibree_artifactory_url=$kolibree_artifactory_url" >> SDK/gradle.properties
+            echo "kolibree_artifactory_username=$kolibree_artifactory_username" >> SDK/gradle.properties
+            echo "kolibree_artifactory_password=$kolibree_artifactory_password" >> SDK/gradle.properties
+
+            echo "kolibree_artifactory_url=$kolibree_artifactory_url" >> MainApp/gradle.properties
+            echo "kolibree_artifactory_username=$kolibree_artifactory_username" >> MainApp/gradle.properties
+            echo "kolibree_artifactory_password=$kolibree_artifactory_password" >> MainApp/gradle.properties
+
+  ui-test:
+    executor: android/android
+    resource_class: xlarge
+
+    steps:
+      - checkout
+      - run:
+          command: |
+            #TODO make this generic
+            echo "kolibree_artifactory_url=$kolibree_artifactory_url" >> SDK/gradle.properties
+            echo "kolibree_artifactory_username=$kolibree_artifactory_username" >> SDK/gradle.properties
+            echo "kolibree_artifactory_password=$kolibree_artifactory_password" >> SDK/gradle.properties
+
+            echo "kolibree_artifactory_url=$kolibree_artifactory_url" >> MainApp/gradle.properties
+            echo "kolibree_artifactory_username=$kolibree_artifactory_username" >> MainApp/gradle.properties
+            echo "kolibree_artifactory_password=$kolibree_artifactory_password" >> MainApp/gradle.properties
+
+
+workflows:
+  version: 2
+  build-test-and-approval-deploy:
+    jobs:
+      - build  # your custom job from your config, that builds your code
+      - analyse
+      - ui-test
+      - hold: # <<< A job that will require manual approval in the CircleCI web application.
+          type: approval # <<< This key-value pair will set your workflow to a status of "On Hold"
+          requires: # We only run the "hold" job when test2 has succeeded
+            - build,analyse,ui-test
+      # On approval of the `hold` job, any successive job that requires the `hold` job will run.
+      # In this case, a user is manually triggering the deploy job.
+      - deploy:
+          requires:
+            - hold
 
