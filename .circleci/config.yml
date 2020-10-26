@@ -5,6 +5,7 @@ orbs:
 
 jobs:
   build:
+    # TODO tweak it
     executor: android/android
     resource_class: xlarge
 
@@ -28,14 +29,7 @@ jobs:
             echo "export SDK_VERSION=\"$(cat SDK/dependencies.gradle | grep name | awk -F"'" '{ print \$2}')\" >> $BASH_ENV
             echo "export COLGATE_MAIN_APP_VERSION=\"$(cd MainApp && ./gradlew colgateProdVersion | grep version= | cut -d "=" -f 2)\" >> $BASH_ENV
             echo "export HUM_MAIN_APP_VERSION=\"$(cd MainApp && ./gradlew $GRADLE_PROPERTY_FLAGS humProdVersion | grep version= | cut -d "=" -f 2)\" >> $BASH_ENV
-      - run:
-          name: Build SDK Release
-          working_directory: SDK
-          #TODO inject credentials
-          command: ./gradlew assembleRelease
-      #- store_artifacts:
-      #    path: test-results.xml
-      #    destination: deliverable.xml
+      # Hum part
       - run:
           name: Prepare Hum build
           working_directory: SDK
@@ -52,6 +46,7 @@ jobs:
       - store_artifacts:
           path: MainApp/app/build/outputs/bundles/hum/release/app-hum-release.aab
           destination: app-hum-release.aab
+      # CC part
       - run:
           name: Prepare CC build
           working_directory: SDK
@@ -68,6 +63,15 @@ jobs:
       - store_artifacts:
           path: MainApp/app/build/outputs/bundles/colgate/release/app-colgate-release.aab
           destination: app-colgate-release.aab
+      # SDK part
+      - run:
+          name: Build SDK Release
+          working_directory: SDK
+          #TODO inject credentials
+          command: ./gradlew assembleRelease
+      #- store_artifacts:
+      #    path: test-results.xml
+      #    destination: deliverable.xml
       # Save workspace for subsequent jobs (i.e. test)
       - persist_to_workspace:
           root: .
@@ -92,6 +96,23 @@ jobs:
             echo "kolibree_artifactory_password=$kolibree_artifactory_password" >> MainApp/gradle.properties
 
   ui-test:
+    executor: android/android
+    resource_class: xlarge
+
+    steps:
+      - checkout
+      - run:
+          command: |
+            #TODO make this generic
+            echo "kolibree_artifactory_url=$kolibree_artifactory_url" >> SDK/gradle.properties
+            echo "kolibree_artifactory_username=$kolibree_artifactory_username" >> SDK/gradle.properties
+            echo "kolibree_artifactory_password=$kolibree_artifactory_password" >> SDK/gradle.properties
+
+            echo "kolibree_artifactory_url=$kolibree_artifactory_url" >> MainApp/gradle.properties
+            echo "kolibree_artifactory_username=$kolibree_artifactory_username" >> MainApp/gradle.properties
+            echo "kolibree_artifactory_password=$kolibree_artifactory_password" >> MainApp/gradle.properties
+
+  deploy:
     executor: android/android
     resource_class: xlarge
 
